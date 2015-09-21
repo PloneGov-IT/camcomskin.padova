@@ -1,7 +1,6 @@
 *.egg-info
 *.mo
 *.pyc
-.eggs
 .installed.cfg
 .mr.developer.cfg
 .project
@@ -20,4 +19,4 @@ htmlcov/
 output.xml
 *.swp
 .sass-cache/
-.egg/
+.eggs/
