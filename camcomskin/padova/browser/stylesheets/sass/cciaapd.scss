@@ -1,0 +1,68 @@
+@import "cciaapd_variables";
+@import "import_bootstrap";
+@import "mixins_utility";
+@import "plonefix";
+@import "sunburst_public";
+@import "base_styles";
+
+
+/////// SIZES AND CONTAINERS
+#portal-header,
+#portal-siteactions,
+#content,
+#portal-breadcrumbs,
+#portal-column-content dl.portalMessage,
+ul.projectSteps,
+#projectAnchors,
+.projectTitleWrapper,
+#content-core .projectPending,
+#viewlet-below-content-title { @extend .container; }
+img { max-width: 100%; }
+
+
+// elimino gli stili .row sui contenitori esterni
+#portal-top,
+#portal-columns,
+#portal-footer-wrapper,
+#viewlet-below-content .row { margin-left: 0; margin-right: 0; }
+#content,
+#viewlet-below-content-title { padding:0;}
+
+// dove c'è la colonna...
+.portaltype-plone-site #portal-columns { @extend .container; 
+                                         padding: {top: 15px; bottom: 15px; };
+    #content,
+    #content-views                     { width: auto;}
+    #viewlet-above-content             { display: none; }
+}
+#viewlet-below-content a.managePortletsFallback { display: none !important;  }
+
+// fix per responsive
+@media (max-width: $screen-xs-max) {
+    .row                            { margin-left: 0;
+                                     margin-right: 0;
+    }
+    .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding-left:0; padding-right: 0;}
+}
+
+
+#portal-personaltools-wrapper         {
+    .userrole-anonymous &             { display: none; }
+    #user-name                        { @extend .bold;
+                                        text-transform: uppercase;
+    }
+}
+
+
+
+
+
+
+
+/// SITEMAP
+#portal-sitemap {margin-top: 15px;}
+#portal-sitemap > li { border:0;}
+
+
+//// PER LA STAMPA
+//@media print {@include make-grid(md);}

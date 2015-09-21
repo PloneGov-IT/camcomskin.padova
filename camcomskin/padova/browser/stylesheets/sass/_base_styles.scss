@@ -1,0 +1,89 @@
+/////// font and links
+.light      { font-weight: 300; }
+.regular    { font-weight: 400; }
+.semibold   { font-weight: 600; }
+.bold       { font-weight: 700; }
+
+a {text-decoration: none !important;}
+#portal-columns a,
+a%a-style:not(.btn)   { border-bottom: $borderLinkWidth $borderLinkStyle $borderLinkColor;
+              @include transition(all .2s ease-in);
+  &:focus,
+  &:hover   { background-color: $grayVeryLighty; 
+              border-radius: 3px;
+              text-decoration: none; 
+              border-bottom: $borderLinkHoverWidth $borderLinkHoverStyle $borderLinkHoverColor;
+  }
+}
+a%basic:not(.btn) { color: $link-color;
+		  border-bottom: 1px solid $link-color;
+		  background-color: $tr;
+	&:focus,
+  	&:hover { color: $link-hover-color; }
+}
+dl.portlet a,
+#content a,  
+#content p a { @extend %a-style; }
+#portletPageColumns {@extend .clearfix;}
+
+.richTextWidget      { padding-top: 10px;
+    .fieldTextFormat { display: none; }
+}
+
+////// Personal Bar
+#portal-personaltools-wrapper   { background-color: #660000;
+                                  background: linear-gradient(to right,$red 0,$red 33%,#660000 66%,#000 100%);
+                                  padding: 3px $grid-gutter-width/2;
+                                  margin: 0 0;
+                                  font-size: 1em;
+                                  border-bottom: 4px solid #FFF;
+    .brand                  { text-shadow: none;
+    						  @extend .pull-left;
+                              color: #FFF;
+                              margin: 5px 20px 0 0;
+                              padding:0;
+                              font-size: 0.9em;
+                              text-transform: uppercase;
+                              font-weight: bold;
+    }
+    ul#portal_personaltools { text-align: right;
+                              margin:3px 0;
+        li                  {
+            a               { color: #FFF ;
+                              font-size: 0.85em;
+                              padding: 0.1em 0.7em;
+                              margin: 0 0.5em;
+                              border:0 !important;
+                              border-radius:5px;
+                &:hover     { background-color: #ff6600; }
+            }
+        }
+    }
+    #user-name img          {display: none;}
+}
+
+// CONTENT
+#content 					{
+	.documentDescription,
+  	#description              { @extend .semibold;
+                              font-size: 1.1em;
+                              line-height: 1.5em;
+  	}
+  	#archetypes-fieldname-description textarea#description {
+                              font-weight: normal;
+  	}
+  	.pullquote                { font-size: 1.3em; 
+                              letter-spacing: normal !important;
+                              font-family: $headings-font-family;
+  	}  
+	.callout            	  { background: transparentize($brand-primary, .9);
+                      		    border: 1px dotted $brand-primary;
+	}
+}
+
+//// FOLDER LISTING
+.template-folder_listing      {
+  #content-core               {
+    > dl dt                   { margin-top: 0.5em; }
+  }
+}

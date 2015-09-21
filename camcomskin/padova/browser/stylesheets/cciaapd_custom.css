@@ -1,0 +1,61 @@
+
+/**** EDIT BY CEKK *******/
+.emptyTile,
+.editableTile {
+    outline: 2px dashed #e8e8e8;
+    min-height: 1.5em;
+}
+
+.ubigreenTile .tile-edit-link {
+    float: right;
+    display: none;
+}
+
+div[id^='formfield-form-widgets-monitoraggio_'] td.datagridwidget-manipulator {
+    display: none;
+}
+
+div.policyText {
+  margin: 15px 0;
+  padding: 2%;
+  width: 95%;
+  border: 1px solid #ccc;
+  background-color: #FaFaFa;
+  height: 10em;
+  overflow: auto;
+}
+
+.policyField.required .label:after {
+  content: "■ obbligatorio";
+  color: Red;
+  padding-left: 0.2em;
+}
+
+.elencoRowDisplayValue {
+  display: block;
+}
+
+/* dashboard */
+.dashboardProjectTitle {
+  display: block;
+  margin-left: 0.5em;
+}
+
+/* cose nascoste solo agli enti! */
+body.userrole-editor #plone-document-byline,
+body.portaltype-projectcard.userrole-editor .portalMessage,
+body.userrole-editor #portal-breadcrumbs {
+  display: none;
+}
+
+.editAttach {
+  margin-top: 1em;
+}
+
+.attachmentsWrapper .box img {
+  /* padding: 1em; */
+}
+
+.mapEmptyBudgetWrapper * {
+  display: none !important;
+}

@@ -1,0 +1,72 @@
+/////// BREAK INSIDE (usato con columns)
+@mixin break-inside($value) {
+	// value: auto | avoid
+	-webkit-column-break-inside: $value;
+    page-break-inside: $value;
+    break-inside: $value;
+}
+
+/////// ICONE
+@mixin make-icon($file: "icon_sprites.png", $width: 0, $height: 0, $vertical: 'top', $horizontal: left ) { 
+	display: inline-block;
+	overflow: hidden;
+	@include size($width, $height);
+	background: {
+		image: url($img-path + $file);
+		position: $horizontal $vertical;
+		repeat: no-repeat;
+		color: transparent;
+	}
+}
+@mixin make-fa ($code, $color: inherit) { 
+	display: inline-block;
+  	font-family: FontAwesome;
+  	content: $code;
+  	color: $color;
+}
+
+
+// center vertical
+@mixin align-vertical() {
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   -webkit-transform: translate(0, -50%);
+   -ms-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+}  
+@mixin align-center() {
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;    
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@mixin ellipsis($height, $rows: 5) {                   
+      display: block; /* Fallback for non-webkit */
+      display: -webkit-box;
+      height: $height; /* Fallback for non-webkit */
+      -webkit-line-clamp: $rows;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+}
+
+// GESTIONE COLORI BANDI
+@mixin define-bando ($bando, $bgcolor: $brand-primary, $color: #FFF) {
+    .template-project_view #content #infos .tab-content .info-bando.#{$bando} h5,
+    .template-search-projects #portal-columns #searchResultsWrapper #gmap #markerInfo .markerInfo-bando-wrapper.#{$bando},
+    .fade-projects-item.#{$bando} .fade-prj .prj-bando { 
+        color: $color; 
+        background: $bgcolor; 
+    }
+    .template-project_view #content #infos .tab-content #contacts .altri-prj-ente .altro-prj.#{$bando} .prj-bando,
+    .flip-projects .flip-projects-item.#{$bando} .prj-front .prj-bando { 
+       background-color: fade-out($bgcolor, .1);  
+        color: $color; 
+    }
+}
