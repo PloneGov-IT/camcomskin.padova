@@ -5,37 +5,28 @@
 @import "sunburst_public";
 @import "base_styles";
 
+body { @extend .light; }
 
 /////// SIZES AND CONTAINERS
 #portal-header,
 #portal-siteactions,
-#content,
-#portal-breadcrumbs,
-#portal-column-content dl.portalMessage,
-ul.projectSteps,
-#projectAnchors,
-.projectTitleWrapper,
-#content-core .projectPending,
-#viewlet-below-content-title { @extend .container; }
+.topbarContent,
+.breadcrumbsContent,
+#portal-columns,
+#portal-globalnav { @extend .container; }
+
 img { max-width: 100%; }
 
 
 // elimino gli stili .row sui contenitori esterni
 #portal-top,
-#portal-columns,
 #portal-footer-wrapper,
 #viewlet-below-content .row { margin-left: 0; margin-right: 0; }
+
 #content,
+#portal-columns,
 #viewlet-below-content-title { padding:0;}
 
-// dove c'è la colonna...
-.portaltype-plone-site #portal-columns { @extend .container; 
-                                         padding: {top: 15px; bottom: 15px; };
-    #content,
-    #content-views                     { width: auto;}
-    #viewlet-above-content             { display: none; }
-}
-#viewlet-below-content a.managePortletsFallback { display: none !important;  }
 
 // fix per responsive
 @media (max-width: $screen-xs-max) {
@@ -45,24 +36,149 @@ img { max-width: 100%; }
     .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding-left:0; padding-right: 0;}
 }
 
-
-#portal-personaltools-wrapper         {
+#portal-personaltools-wrapper         { border-bottom: 0;
     .userrole-anonymous &             { display: none; }
     #user-name                        { @extend .bold;
                                         text-transform: uppercase;
     }
 }
 
+// header
+#portal-top                 { margin-bottom: 40px; }
+#portal-header              { padding-right: 0; }
+#topbar                     { background-color: #EBEBEB; 
+                              border-bottom: 1px solid #d3d3d3;
+                              padding: 5px 0;
+                              color: #717171;
+    .topbarContent          { padding-right: 0; }
+    a                       { color: #717171; 
+        &:focus,
+        &:hover             { color: $link-color;}
+    }
+    .claim                  { @extend .pull-left; 
+                              margin: 6px 0 0;
+                              text-transform: uppercase;
+                              font-size: 0.85em;
+                              @extend .semibold;
+    }                          
+    #top-link-group         { @extend .pull-right;  
+                              margin:0;
+                              font-size: 0.9em;
+                              white-space: nowrap;
+        li                  { margin: 0 8px;
+                              white-space: nowrap;
+        }
+        .socialFb a:before  { @include make-fa('\f09a'); }
+        .socialTw a:before  { @include make-fa('\f099'); }
+        .socialGp a:before  { @include make-fa('\f0d5'); }
+        [class^='social']   { font-size: 18px;  
+                              position: relative;
+                              top: 3px;
+            span { @extend .sr-only; }
+            a:before        { cursor: pointer; }
+        }
+        .linkEng            { border-left: 1px solid #bbb;
+                              padding-left: 20px;
+        }
+    }
+}
 
+// SEARCH
+#searchbox                  { @extend .pull-right;
+    a.btnSearch             { display: block;
+                              background-color: $brand-primary;
+                              padding: 14px 12px;
+        &:focus,
+        &:hover             { background-color: lighten($brand-primary, 10); }
+        &:active            { background-color: $gray;}
+        &:before            { @include make-flaticon('magnifier13', 50px); 
+                              color: #FFF;
+        }
+        span                { @extend .sr-only; }
+    }
+}
 
+// LOGO
+#portal-logo                { margin: 20px 0 0;
+                              @extend .pull-left;
+    img                     { max-width: 250px;
+                              height: auto; 
+    }
+}
 
+// MENU
+.globalnavWrapper           { background-color: $bgmenu; 
+                              @extend .clearfix; 
+    #portal-globalnav       { background: $tr url($img-path + 'bg_menu.jpg') no-repeat center center;
+                              background-size: cover;
+                              margin-bottom: 0;
+                              font-size: 1.05em;
+                              padding: 0;
+                              @extend .clearfix; 
+        li                  { width: 20%;
+                              display: block;
+                              float: left;
+            a               { background-color: $tr; 
+                              border-color: #AAA;
+                              color: #eef2f4;
+                              display: block;
+                              padding: 12px 7%;
+                              position: relative;
+                              background-color: transparentize($blu, .4); 
+                span:first-child { color: #FFF;
+                                   @extend .semibold;
+                }
+                &:focus,
+                &:hover        { background-color: transparentize($gray, .15); 
+                    span       { color: #FFF !important;}
+                }
+                &:after        { @include make-fa('\f107', #fff); 
+                                 opacity: .5;
+                                 position: absolute;
+                                 bottom: 10px;
+                                 right: 7%;
+                                 font-size: 18px;
+                                 line-height: 1em;
+                }
+            }
+            &.selected a   { background-color: transparentize($gray, .15); }
+            &:last-child a { border-right: 0;}
+        }
+    }
+}
 
-
+// BREADCRUMBS
+#breadcrumbs                { background-color: $lightColor;
+    .breadcrumbsContent     { padding: {top: 15px; bottom: 12px; }; 
+        a                   { color: $text-color;
+            &:focus,
+            &:hover         { color: $link-color; }
+        }
+        .breadcrumbTop      { display: inline-block; 
+                              font-size: 1.6em;
+            span            { display: inline-block; }
+            &.withSeparator {
+                span:after  { @include make-flaticon('right161'); 
+                              margin-left: 0.7em;
+                }
+            }
+        }
+        .breadcrumbSeparator:before { @include make-fa('\f105'); 
+                               margin: 0 0.5em;
+        }
+    }
+}
 
 /// SITEMAP
 #portal-sitemap {margin-top: 15px;}
 #portal-sitemap > li { border:0;}
 
+// DEFINISCO LE AREE PER I COLORI
+@include define-area(0, $area0, 'avvia-attivita-impresa');
+@include define-area(1, $area1, 'conosci-gestisci-impresa');
+@include define-area(2, $area2, 'promuovi-in-italia-e-estero');
+@include define-area(3, $area3, 'finanziamenti-innovazione');
+@include define-area(4, $area4, 'tutela-impresa-e-consumatore');
 
 //// PER LA STAMPA
 //@media print {@include make-grid(md);}

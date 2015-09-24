@@ -2,7 +2,7 @@ title:string=camcomskin_padova's color, font, logo and border defaults
 
 plone_skin:string=camcomskin_padova
 
-logoName:string=logo.jpg
+logoName:string=logo_cciaa_padova.png
 
 fontFamily:string="Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif
 fontBaseSize:string=69%

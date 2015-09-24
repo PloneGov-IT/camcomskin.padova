@@ -1,40 +1,29 @@
 // Path Img
-$img-path: "++resource++ubigreen.plonetheme.images/";
+$img-path: "++resource++camcomskin.padova.images/";
 
-// Fonts
-//@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Open+Sans+Condensed:700);
 
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-colophon:          #1c1c1c;
-$gray-footer:            #222;   
-$gray-footer-text:       #919191;
+$bludark:          #1e282f; // colophon
+$blu:              #283641; // footer   
+$bgmenu:           #4f575e;
 
 $gray-darker:            #2b2b2b; 
-$gray-dark:              #3c3c3c;  // bg top
+$gray-dark:              #313131;
 $gray:                   #555; 
 $gray-light:             #777; 
-$gray-lighter:           #CCC; 
+$gray-lighter:           #CCC;
+$gray-bg:                #EEE; 
 
-$brand-primary:         #a9c54b;
+$brand-primary:         #9c3524;
 $brand-success:         #5cb85c;
 $brand-info:            #5bc0de;
 $brand-warning:         #f0ad4e;
 $brand-danger:          #d9534f;
 $tr: 				 transparent;
 
-$gradient-green:        #81b57e;
-$gradient-blu:          #0791bd;
-
-
-$brand-ubi:          #e8e4db; // beige di "ubi"
-$yellow: 			 #FFFAC0;
-$bando_connessione:   #a5c149;
-$bando_gestione-acque: #53c7bd;
-$bando_biodiversita: #598527;
-$bando_acque: #276c9c;
 
 // compatibilita' con public.css sunburst
 $red:          		 #960E0E;
@@ -42,8 +31,15 @@ $lightRed: 			 #f2dede;
 $dark:         		 #3a3a3a;
 $grayLighty:         #EFEFEF;
 $grayVeryLighty:	 #F2F2F2;
-$lightColor:         #f0f1f2; // grigio chiaro sfondo header
+$lightColor:         #e6e9eb; // grigio chiaro sfondo breadcrumbs
 
+
+// colori aree tematiche
+$area0: #599793; // avviare attivita
+$area1: #bb7c35; // conosci e gestici
+$area2: #5b859a; // Promuovi
+$area3: #97a763; // finanziammenti
+$area4: #bf9b48; // tutela
 
 
 //== Scaffolding
@@ -56,7 +52,7 @@ $body-bg:               #fff;
 $text-color:            $gray-dark;
 
 //** Global textual link color.
-$link-color:            #7e9826;
+$link-color:            #9c3524;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      $gray;
 
@@ -67,13 +63,13 @@ $link-hover-color:      $gray;
 
 $font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
-$font-family-condensed:  "Open Sans Condensed";
+//$font-family-condensed:  "Open Sans Condensed";
 
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          14px;
+$font-size-base:          15px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
@@ -85,7 +81,7 @@ $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.95));
 
 //** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        1.428571429; // 20/14
+$line-height-base:        1.5; 
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
 

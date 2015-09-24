@@ -28,7 +28,7 @@ setup(name='camcomskin.padova',
           # -*- Extra requirements: -*-
           'z3c.jbot',
           'collective.portletpage',
-          'Products.ContentWellPortlets',
+          'Products.ContentWellPortlets == 4.3.0',
           'collective.contentleadimage',
           'rer.portlet.er_navigation',
           'redturtle.portlet.collection',

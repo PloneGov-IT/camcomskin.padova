@@ -5,6 +5,8 @@ p.hiddenStructure,
 .state-published { color: inherit !important; }
 body.largeText {font-size: 170%;}
 
+#visual-portal-wrapper {@extend .clearfix;}
+
 // BTN e FORM
 select,
 input[type]                     { margin-bottom:0;
@@ -35,7 +37,7 @@ input.destructive               { @extend .btn-danger; }
 #content,
 div.overlay,
 .portlets-manager             {
-  legend                      { padding:0;
+  legend                      { padding: 1em 0 0;
                                 font-size: 1.3em;
   }
   input, select                { font-size: 1em;}
@@ -323,20 +325,27 @@ body#content.mceContentBody {font-family: $font-family-sans-serif; font-size: 13
 
 }
 
-div.width-1\3a 2 { @extend .col-sm-6; } /* .width-1:2 */
+//div.width-1\3a 2 { @extend .col-sm-6; } /* .width-1:2 */
 div.width-1\3a 4 { @extend .col-sm-3; } /* .width-1:4 */
+div.width-1\3a 2, 
 div.width-3\3a 4 { @extend .col-sm-9; } /* .width-3:4 */
 div.width-full   { @extend .col-sm-12; padding-left: 0; padding-right: 0;}
 div.width-1\3a 3 { @extend .col-sm-4; } /* .width-1:3 */
 div.width-2\3a 3 { @extend .col-sm-8; } /* .width-2:3 */
 
 // column-one + column-content
-#portal-column-one.width-1\3a 4.position-0 { @extend .col-sm-pull-9; } 
-#portal-column-content.width-3\3a 4.position-1\3a 4 { @extend .col-sm-push-3; } 
+#portal-column-one.width-1\3a 4.position-0 { width: 20%; right: 80%; } 
+#portal-column-content.width-3\3a 4.position-1\3a 4 { left: 20%; width: 80%;  padding-left: 4%;} 
+
+// column-content + column-two
+#portal-column-content.width-3\3a 4.position-0 #content { @extend .col-sm-9; padding-left:0; padding-right:0; } 
+#portal-column-content.width-3\3a 4.position-0 #portal-column-two { padding-left: 3%; }
 
 // column-one + column-content + column-two
-#portal-column-content.width-1\3a 2.position-1\3a 4 + #portal-column-one.width-1\3a 4.position-0 { @extend .col-sm-pull-6; } 
-#portal-column-content.width-1\3a 2.position-1\3a 4 { @extend .col-sm-push-3; } 
+#portal-column-content.width-1\3a 2.position-1\3a 4 + #portal-column-one.width-1\3a 4.position-0 { } 
+#portal-column-content.width-1\3a 2.position-1\3a 4 { left: 20%;  width: 80%; padding-left: 4%; } 
+#portal-column-content.width-1\3a 2.position-1\3a 4 #content { @extend .col-sm-9; padding-left:0; } 
+#portal-column-content.width-full {padding-left: 4%; padding-right: 4%;}
 
 /* Define classes for 1/5ths and 1/6ths widths and positions. */
 // div.position-1\3a 5 {margin-left:   0;} /* .position-1:5 */
@@ -350,6 +359,11 @@ div.width-2\3a 3 { @extend .col-sm-8; } /* .width-2:3 */
 
 // footer
 #portlets-footer.row { margin-left:0; }
+
+
+// vista provini
+.photoAlbumEntry { background-position: right top; width: 157px; }
+
 
 
 

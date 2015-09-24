@@ -10,6 +10,7 @@
       />
 
   <include package="z3c.jbot" file="meta.zcml" />
+
   <browser:jbot
         directory="jbot"
         layer=".interfaces.IThemeSpecific" />
@@ -20,8 +21,18 @@
         manager="plone.app.layout.viewlets.interfaces.IPortalTop"
         class="plone.app.layout.viewlets.common.PersonalBarViewlet"
         permission="zope2.View"
-        layer=".interfaces.IThemeSpecific" />
-    />
+        layer=".interfaces.IThemeSpecific"
+        />
+
+   <!-- The breadcrumbs -->
+    <browser:viewlet
+        name="plone.path_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class="plone.app.layout.viewlets.common.PathBarViewlet"
+        permission="zope2.View"        
+        layer=".interfaces.IThemeSpecific"
+        />
+
 
 
   <!-- Resource directory for images -->
