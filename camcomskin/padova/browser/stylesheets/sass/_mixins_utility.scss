@@ -88,11 +88,19 @@
 // GESTIONE COLORI AREE TEMATICHE
 
 @mixin define-area ($n_area, $color, $id-sezione) {
+    // per il menu
     .globalnavWrapper #portal-globalnav li#portaltab-#{$n_area} {
       a:focus,
       a:hover { background-color: transparentize($color, .3); }
       &.selected a { background-color: transparentize($color, .3); }
+      &.tabOpen a { background-color: $color; }
     }
+    .globalnavWrapper #submenu-details.submenu-#{$n_area} {
+                                              border-color: $color;
+      .staticItem:first-child h5,
+      .submenuDynamicWrapper ul li:before { color: $color; }      
+    }
+
     .section-#{$id-sezione} {
       #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after,
       #breadcrumbs .breadcrumbsContent .breadcrumbSeparator:before {color: $color;}

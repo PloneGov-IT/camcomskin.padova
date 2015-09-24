@@ -13,6 +13,7 @@ body { @extend .light; }
 .topbarContent,
 .breadcrumbsContent,
 #portal-columns,
+.submenuDetailsContent,
 #portal-globalnav { @extend .container; }
 
 img { max-width: 100%; }
@@ -146,6 +147,108 @@ img { max-width: 100%; }
         }
     }
 }
+// SUBMENU
+#submenu-details            { background-color: $gray-bg;
+                              border-top: 8px solid $gray;
+                              border-bottom: 1px solid $gray;   
+    .submenuDetailsContent  { @extend .clearfix; 
+                              position: relative;
+    }                           
+    a                       { color: $text-color;
+        &:focus,
+        &:hover             { color: $link-color; }
+    }
+    h5                      { text-transform: uppercase;
+                              @extend .semibold;
+                              margin: 0 0 1em;
+    }
+    ul                      { @extend .list-unstyled;
+                              display: block;
+        li                  { display: block; 
+                              margin-bottom: 0.35em;
+                              position: relative;
+                              color: $gray-light;
+        }
+    }
+    strong                  { @extend .semibold; }    
+    .submenuStaticWrapper   { @extend .col-sm-7; padding:0; }
+    .staticItem             { @extend .col-sm-6; 
+                               padding: 30px; 
+        &:first-child       { background-color: #FAFAFA; }
+        ul                  {
+            li              { margin-bottom: 0.5em;
+                              padding: 0 0 0.5em 14px;
+                              border-bottom: 1px solid #BBB;
+                              line-height: 1.4em;
+                &:before    { @include make-fa('\f105', $link-color); 
+                              position: absolute;
+                              top: 0em;
+                              left: 0;
+                }
+                &:last-child { border-bottom: 0; }
+                a           { display: inline-block;
+                    &.external-link { 
+                        &:after     { position: absolute;
+                                      @include make-fa('\f08e', $gray-light);
+                                      right: 0;
+                                      top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .submenuDynamicWrapper  { @extend .col-sm-5;
+                              padding: 30px $grid-gutter-width 30px 0;         
+        ul                  { @include content-columns(2); 
+                              //@media (max-width: 1035px) { @include content-columns(1); }
+            li              { display: block; 
+                              @include break-inside(avoid); 
+                              margin-bottom: 0.35em;
+                              position: relative;
+                              padding-left: 25px;
+                &:before    { @include make-flaticon('exit13', 12px); 
+                               position: absolute;
+                               top: 0.3em;
+                               left: 0;
+                }
+            }
+        }
+        a.dynamicSectionExploreLabel { color: $link-color;
+                                       font-size: 1.1em;
+                                       margin-top: 15px;
+                                       display: inline-block; 
+                                       @extend .regular;                                       
+                                        padding: 0.1em 0.5em;
+                                        border-radius: 2px;
+                                        @include transition(all .1s ease-in);
+            &:before                 { @include make-flaticon('right161', 15px); 
+                                       margin-right: 7px;
+                                       color: $gray-light;
+            }
+            &:focus,
+            &:hover                  { background-color: $link-color;
+                                        color: #fff;
+                &:before             { color: #FFF;}
+            }
+        }
+    }
+    .closeSubmenu           { position: absolute;
+                              bottom: 10px;
+                              right: 0;
+        a                   { color: $gray-light;
+                              font-size: 0.9em;
+                              text-transform: uppercase;
+                              @extend .semibold;
+                              display: inline-block;
+            &:focus,
+            &:hover         { color: $link-color; }
+            &:before        { @include make-flaticon('close42', 15px); 
+                              margin-right: 5px; 
+            }
+        }
+    }
+}
 
 // BREADCRUMBS
 #breadcrumbs                { background-color: $lightColor;
@@ -164,7 +267,7 @@ img { max-width: 100%; }
             }
         }
         .breadcrumbSeparator:before { @include make-fa('\f105'); 
-                               margin: 0 0.5em;
+                                       margin: 0 0.5em;
         }
     }
 }
