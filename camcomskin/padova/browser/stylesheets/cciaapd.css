@@ -810,7 +810,7 @@ pre {
     clear: both; }
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, #submenu-details .staticItem, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, #center-and-left-area #center-area, div.width-1\3a 2,
-div.width-3\3a 4, #portal-column-content.width-3\3a 4.position-0 #content, #portal-column-content.width-1\3a 2.position-1\3a 4 #content, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .col-md-12, .col-lg-12 {
+div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -974,7 +974,7 @@ div.width-3\3a 4, #portal-column-content.width-3\3a 4.position-0 #content, #port
 
 @media (min-width: 769px) {
   .col-sm-1, .col-sm-2, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-sm-6, #submenu-details .staticItem, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-sm-8, div.width-2\3a 3, .col-sm-9, #center-and-left-area #center-area, div.width-1\3a 2,
-  div.width-3\3a 4, #portal-column-content.width-3\3a 4.position-0 #content, #portal-column-content.width-1\3a 2.position-1\3a 4 #content, .col-sm-10, .col-sm-11, .col-sm-12, div.width-full {
+  div.width-3\3a 4, .col-sm-10, .col-sm-11, .col-sm-12, div.width-full {
     float: left; }
 
   .col-sm-1 {
@@ -1002,7 +1002,7 @@ div.width-3\3a 4, #portal-column-content.width-3\3a 4.position-0 #content, #port
     width: 66.6666666667%; }
 
   .col-sm-9, #center-and-left-area #center-area, div.width-1\3a 2,
-  div.width-3\3a 4, #portal-column-content.width-3\3a 4.position-0 #content, #portal-column-content.width-1\3a 2.position-1\3a 4 #content {
+  div.width-3\3a 4 {
     width: 75%; }
 
   .col-sm-10 {
@@ -5309,7 +5309,7 @@ button.list-group-item-danger {
 .flaticon-email147 {
   content: "\e006"; }
 
-.flaticon-exit13, #submenu-details .submenuDynamicWrapper ul li:before {
+.flaticon-exit13, #submenu-details .submenuDynamicWrapper ul li:before, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li:before {
   content: "\e007"; }
 
 .flaticon-file242 {
@@ -5716,32 +5716,32 @@ div.width-full {
 /* .width-1:3 */
 /* .width-2:3 */
 #portal-column-one.width-1\3a 4.position-0 {
-  width: 20%;
-  right: 80%; }
+  width: 21%;
+  right: 76%; }
 
 #portal-column-content.width-3\3a 4.position-1\3a 4 {
-  left: 20%;
-  width: 80%;
-  padding-left: 4%; }
+  left: 23%;
+  width: 76%; }
 
-#portal-column-content.width-3\3a 4.position-0 #content {
-  padding-left: 0;
-  padding-right: 0; }
+#portal-column-content.width-3\3a 4.position-0 {
+  width: 81%; }
 
-#portal-column-content.width-3\3a 4.position-0 #portal-column-two {
-  padding-left: 3%; }
+#portal-column-content.width-1\3a 2.position-1\3a 4 + #portal-column-one.width-1\3a 4.position-0 {
+  width: 21%;
+  right: 60%; }
 
 #portal-column-content.width-1\3a 2.position-1\3a 4 {
-  left: 20%;
-  width: 80%;
-  padding-left: 4%; }
+  width: 58%;
+  margin-right: 2%;
+  left: 23%; }
 
-#portal-column-content.width-1\3a 2.position-1\3a 4 #content {
-  padding-left: 0; }
+#portal-column-two {
+  width: 19%;
+  padding-right: 0; }
 
 #portal-column-content.width-full {
-  padding-left: 4%;
-  padding-right: 4%; }
+  padding-left: 15px;
+  padding-right: 15px; }
 
 /* Define classes for 1/5ths and 1/6ths widths and positions. */
 #portlets-footer.row {
@@ -6190,11 +6190,12 @@ input.inputLabelActive {
 .light, body {
   font-weight: 300; }
 
-.regular, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel {
+.regular, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel, dl[class*='ortletNavigation'] dt.portletHeader .tile,
+dl[class*='ortletNavigation'] dt.portletHeader a.tile {
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
-#content #description, #topbar .claim, .globalnavWrapper #portal-globalnav li a span:first-child, #submenu-details h5, #submenu-details strong, #submenu-details .closeSubmenu a {
+#content #description, #topbar .claim, .globalnavWrapper #portal-globalnav li a span:first-child, #submenu-details h5, #submenu-details strong, #submenu-details .closeSubmenu a, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeCurrentItem, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath {
   font-weight: 600; }
 
 .bold, #portal-personaltools-wrapper #user-name {
@@ -6414,6 +6415,13 @@ img {
           line-height: 1em; }
       .globalnavWrapper #portal-globalnav li.selected a {
         background-color: rgba(85, 85, 85, 0.85); }
+      .globalnavWrapper #portal-globalnav li.tabOpen a {
+        background-color: rgba(85, 85, 85, 0.85); }
+        .globalnavWrapper #portal-globalnav li.tabOpen a:after {
+          display: inline-block;
+          font-family: FontAwesome;
+          content: "";
+          color: #fff; }
       .globalnavWrapper #portal-globalnav li:last-child a {
         border-right: 0; }
 
@@ -6559,6 +6567,60 @@ img {
       content: "";
       color: inherit;
       margin: 0 0.5em; }
+
+dl[class*='ortletNavigation'] dt.portletHeader {
+  padding: 0;
+  background-color: transparent; }
+  dl[class*='ortletNavigation'] dt.portletHeader .tile,
+  dl[class*='ortletNavigation'] dt.portletHeader a.tile {
+    display: inline-block;
+    background-color: #283641;
+    color: #fff;
+    font-size: 1.05em;
+    padding: 0.4em 1em; }
+  dl[class*='ortletNavigation'] dt.portletHeader a:focus, dl[class*='ortletNavigation'] dt.portletHeader a:hover {
+    background-color: #555; }
+dl[class*='ortletNavigation'] dd.portletItem {
+  padding: 8px 0 0; }
+  dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 ul {
+    margin: 6px 0 5px 15px; }
+  dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem {
+    padding: 6px 0;
+    border-bottom: 1px dashed #283641;
+    line-height: 1.35em;
+    margin: 0; }
+    dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeCurrentItem {
+      background-color: transparent;
+      border-left: 0;
+      margin-left: 0;
+      margin-right: 0; }
+    dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a {
+      display: block;
+      padding: 0.1em 0.3em;
+      -webkit-transition: all 0.1s ease-in;
+      -o-transition: all 0.1s ease-in;
+      transition: all 0.1s ease-in; }
+      dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a:focus, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a:hover {
+        color: #9c3524 !important;
+        background-color: #F2F2F2; }
+      dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath {
+        color: #283641 !important; }
+    dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 > li > div > a {
+      font-size: 0.9em; }
+    dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li {
+      position: relative;
+      padding-left: 15px;
+      line-height: 1.35em;
+      margin: 0 0 6px; }
+      dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li:before {
+        font-family: Flaticon;
+        font-size: 11px;
+        font-style: normal;
+        display: inline-block;
+        position: absolute;
+        top: 0.2em;
+        left: 0;
+        color: #9c3524; }
 
 #portal-sitemap {
   margin-top: 15px; }

@@ -143,6 +143,9 @@ img { max-width: 100%; }
                 }
             }
             &.selected a   { background-color: transparentize($gray, .15); }
+            &.tabOpen a    { background-color: transparentize($gray, .15); 
+                &:after    { @include make-fa('\f106', #fff); }
+            }
             &:last-child a { border-right: 0;}
         }
     }
@@ -268,6 +271,66 @@ img { max-width: 100%; }
         }
         .breadcrumbSeparator:before { @include make-fa('\f105'); 
                                        margin: 0 0.5em;
+        }
+    }
+}
+
+// PORTLET NAVIGAZIONE
+dl[class*='ortletNavigation']       {
+    dt.portletHeader                { padding:0;
+                                      background-color: $tr;
+        .tile,
+        a.tile                      { display: inline-block;
+                                      background-color: $blu;
+                                      color: #fff;
+                                      @extend .regular;
+                                      font-size: 1.05em;
+                                      padding: 0.4em 1em;
+        }
+        a                           {
+            &:focus,
+            &:hover                 { background-color: $gray; }
+        }
+    }
+    dd.portletItem                  { padding: 8px 0 0;
+        ul.navTreeLevel0            {
+            ul                      { margin: 6px 0 5px 15px; }
+            > li.navTreeItem        { padding: 6px 0; 
+                                      border-bottom: 1px dashed $blu;
+                                      line-height: 1.35em;
+                                      margin: 0;
+                .navTreeCurrentItem { background-color: $tr;
+                                      border-left: 0; 
+                                      @extend .semibold;
+                                      margin: {left:0; right:0;};
+                }
+                a                   { display: block;
+                                      padding: 0.1em 0.3em;
+                                      @include transition(all .1s ease-in); 
+                    &:focus,
+                    &:hover         { color: $link-color !important;
+                                       background-color: $grayVeryLighty;
+                    }
+                    &.navTreeItemInPath { @extend .semibold;
+                                          color: $blu !important;
+                    }
+                }
+                .navTreeLevel1      { 
+                    > li > div > a  { font-size: 0.9em; }
+                    li              { position: relative;
+                                      padding-left: 15px;
+                                      line-height: 1.35em;
+                                      margin: 0 0 6px;
+                        &:before    { @include make-flaticon('exit13', 11px); 
+                                      position: absolute;
+                                      top: 0.2em;
+                                      left: 0;
+                                      color: $link-color;
+                        }
+                        a           { }
+                    }
+                }
+            }
         }
     }
 }

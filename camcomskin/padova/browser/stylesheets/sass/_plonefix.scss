@@ -334,18 +334,25 @@ div.width-1\3a 3 { @extend .col-sm-4; } /* .width-1:3 */
 div.width-2\3a 3 { @extend .col-sm-8; } /* .width-2:3 */
 
 // column-one + column-content
-#portal-column-one.width-1\3a 4.position-0 { width: 20%; right: 80%; } 
-#portal-column-content.width-3\3a 4.position-1\3a 4 { left: 20%; width: 80%;  padding-left: 4%;} 
+#portal-column-one.width-1\3a 4.position-0 { width: 21%; right: 76%; } 
+#portal-column-content.width-3\3a 4.position-1\3a 4 { left: 23%; width: 76%; } 
 
 // column-content + column-two
-#portal-column-content.width-3\3a 4.position-0 #content { @extend .col-sm-9; padding-left:0; padding-right:0; } 
-#portal-column-content.width-3\3a 4.position-0 #portal-column-two { padding-left: 3%; }
+#portal-column-content.width-3\3a 4.position-0 { width: 81%; }
 
 // column-one + column-content + column-two
-#portal-column-content.width-1\3a 2.position-1\3a 4 + #portal-column-one.width-1\3a 4.position-0 { } 
-#portal-column-content.width-1\3a 2.position-1\3a 4 { left: 20%;  width: 80%; padding-left: 4%; } 
-#portal-column-content.width-1\3a 2.position-1\3a 4 #content { @extend .col-sm-9; padding-left:0; } 
-#portal-column-content.width-full {padding-left: 4%; padding-right: 4%;}
+#portal-column-content.width-1\3a 2.position-1\3a 4 + #portal-column-one.width-1\3a 4.position-0 { width: 21%; right: 60%; } 
+#portal-column-content.width-1\3a 2.position-1\3a 4 { width: 58%; margin-right: 2%;left: 23%; } 
+#portal-column-two { width: 19%; padding-right:0; }
+
+// solo content
+#portal-column-content.width-full {padding-left: $grid-gutter-width/2; padding-right: $grid-gutter-width/2;}
+
+
+// column-one + column-content + column-two
+//#portal-column-content.width-1\3a 2.position-1\3a 4 + #portal-column-one.width-1\3a 4.position-0 { } 
+//#portal-column-content.width-1\3a 2.position-1\3a 4 { left: 20%;  width: 80%; padding-left: 4%; } 
+
 
 /* Define classes for 1/5ths and 1/6ths widths and positions. */
 // div.position-1\3a 5 {margin-left:   0;} /* .position-1:5 */
