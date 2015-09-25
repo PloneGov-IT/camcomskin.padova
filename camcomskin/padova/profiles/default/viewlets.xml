@@ -7,6 +7,12 @@
       <viewlet name="plone.global_sections" />
       <viewlet name="plone.path_bar" />
   </order>
+  <order manager="plone.portalfooter" skinname="camcomskin_padova">
+    <viewlet name="plone.site_actions" />
+    <viewlet name="contentwellportlets.footerportlets" />
+    <viewlet name="plone.colophon" />
+    <viewlet name="plone.analytics" />
+  </order>
 
   <hidden manager="plone.portalheader" skinname="camcomskin_padova">
     <viewlet name="plone.personal_bar" />

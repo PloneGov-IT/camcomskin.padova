@@ -103,6 +103,16 @@
 
     .section-#{$id-sezione} {
       #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after,
-      #breadcrumbs .breadcrumbsContent .breadcrumbSeparator:before {color: $color;}
+      #breadcrumbs .breadcrumbsContent .breadcrumbSeparator:before,
+      dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem {
+        a.navTreeItemInPath { color: $color !important; }
+       .navTreeLevel1 li:before {color: $color;}
+      }
+      dl[class*='ortletNavigation'] dd.portletItem { border-color: $color; }
+      dl[class*='ortletNavigation'] dt.portletHeader .tile, 
+      dl[class*='ortletNavigation'] dt.portletHeader a.tile { background-color: $color; 
+        &:focus,
+        &:hover { background-color: darken($color, 20); }
+      }
     }
 }
