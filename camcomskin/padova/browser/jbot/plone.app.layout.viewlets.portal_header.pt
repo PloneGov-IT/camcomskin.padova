@@ -1,0 +1,14 @@
+<div id="topbar">
+    <div class="topbarContent">
+        <p class="claim">Opportunit&agrave; di sviluppo</p>
+        <ul id="top-link-group">
+            <li class="socialFb"><a href="https://www.facebook.com/pdcamcom" target="_blank"><span>Facebook</span></a></li>
+            <li class="socialTw"><a href="https://twitter.com/pdcamcom" target="_blank"><span>Twitter</span></a></li>
+            <li class="socialGp"><a href="https://plus.google.com/+pdcamcom/posts" target="_blank"><span>Google Plus</span></a></li>
+            <li class="linkEng"><a href="#">English info</a></li>
+        </ul>
+    </div>
+</div>
+<header id="portal-header">    
+    <div tal:replace="structure provider:plone.portalheader" />
+</header>

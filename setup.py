@@ -26,7 +26,8 @@ setup(name='camcomskin.padova',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
-          'Products.ContentWellPortlets',
+          'collective.portletpage',
+          'Products.ContentWellPortlets == 4.3.0',
           'collective.contentleadimage',
           'collective.editablemenu',
           'collective.portletpage',

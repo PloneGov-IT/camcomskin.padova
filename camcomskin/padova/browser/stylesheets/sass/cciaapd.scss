@@ -5,37 +5,29 @@
 @import "sunburst_public";
 @import "base_styles";
 
+body { @extend .light; }
 
 /////// SIZES AND CONTAINERS
 #portal-header,
 #portal-siteactions,
-#content,
-#portal-breadcrumbs,
-#portal-column-content dl.portalMessage,
-ul.projectSteps,
-#projectAnchors,
-.projectTitleWrapper,
-#content-core .projectPending,
-#viewlet-below-content-title { @extend .container; }
+.topbarContent,
+.breadcrumbsContent,
+#portal-columns,
+.submenuDetailsContent,
+#portal-globalnav { @extend .container; }
+
 img { max-width: 100%; }
 
 
 // elimino gli stili .row sui contenitori esterni
 #portal-top,
-#portal-columns,
 #portal-footer-wrapper,
 #viewlet-below-content .row { margin-left: 0; margin-right: 0; }
+
 #content,
+#portal-columns,
 #viewlet-below-content-title { padding:0;}
 
-// dove c'è la colonna...
-.portaltype-plone-site #portal-columns { @extend .container; 
-                                         padding: {top: 15px; bottom: 15px; };
-    #content,
-    #content-views                     { width: auto;}
-    #viewlet-above-content             { display: none; }
-}
-#viewlet-below-content a.managePortletsFallback { display: none !important;  }
 
 // fix per responsive
 @media (max-width: $screen-xs-max) {
@@ -45,24 +37,314 @@ img { max-width: 100%; }
     .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding-left:0; padding-right: 0;}
 }
 
-
-#portal-personaltools-wrapper         {
+#portal-personaltools-wrapper         { border-bottom: 0;
     .userrole-anonymous &             { display: none; }
     #user-name                        { @extend .bold;
                                         text-transform: uppercase;
     }
 }
 
+// header
+#portal-top                 { margin-bottom: 40px; }
+#portal-header              { padding-right: 0; }
+#topbar                     { background-color: #EBEBEB; 
+                              border-bottom: 1px solid #d3d3d3;
+                              padding: 5px 0;
+                              color: #717171;
+    .topbarContent          { padding-right: 0; }
+    a                       { color: #717171; 
+        &:focus,
+        &:hover             { color: $link-color;}
+    }
+    .claim                  { @extend .pull-left; 
+                              margin: 6px 0 0;
+                              text-transform: uppercase;
+                              font-size: 0.85em;
+                              @extend .semibold;
+    }                          
+    #top-link-group         { @extend .pull-right;  
+                              margin:0;
+                              font-size: 0.9em;
+                              white-space: nowrap;
+        li                  { margin: 0 8px;
+                              white-space: nowrap;
+        }
+        .socialFb a:before  { @include make-fa('\f09a'); }
+        .socialTw a:before  { @include make-fa('\f099'); }
+        .socialGp a:before  { @include make-fa('\f0d5'); }
+        [class^='social']   { font-size: 18px;  
+                              position: relative;
+                              top: 3px;
+            span { @extend .sr-only; }
+            a:before        { cursor: pointer; }
+        }
+        .linkEng            { border-left: 1px solid #bbb;
+                              padding-left: 20px;
+        }
+    }
+}
 
+// SEARCH
+#searchbox                  { @extend .pull-right;
+    a.btnSearch             { display: block;
+                              background-color: $brand-primary;
+                              padding: 14px 12px;
+        &:focus,
+        &:hover             { background-color: lighten($brand-primary, 10); }
+        &:active            { background-color: $gray;}
+        &:before            { @include make-flaticon('magnifier13', 50px); 
+                              color: #FFF;
+        }
+        span                { @extend .sr-only; }
+    }
+}
 
+// LOGO
+#portal-logo                { margin: 20px 0 0;
+                              @extend .pull-left;
+    img                     { max-width: 250px;
+                              height: auto; 
+    }
+}
 
+// MENU
+.globalnavWrapper           { background-color: $bgmenu; 
+                              @extend .clearfix; 
+    #portal-globalnav       { background: $tr url($img-path + 'bg_menu.jpg') no-repeat center center;
+                              background-size: cover;
+                              margin-bottom: 0;
+                              font-size: 1.05em;
+                              padding: 0;
+                              @extend .clearfix; 
+        li                  { width: 20%;
+                              display: block;
+                              float: left;
+            a               { background-color: $tr; 
+                              border-color: #AAA;
+                              color: #eef2f4;
+                              display: block;
+                              padding: 12px 7%;
+                              position: relative;
+                              background-color: transparentize($blu, .4); 
+                span:first-child { color: #FFF;
+                                   @extend .semibold;
+                }
+                &:focus,
+                &:hover        { background-color: transparentize($gray, .15); 
+                    span       { color: #FFF !important;}
+                }
+                &:after        { @include make-fa('\f107', #fff); 
+                                 opacity: .5;
+                                 position: absolute;
+                                 bottom: 10px;
+                                 right: 7%;
+                                 font-size: 18px;
+                                 line-height: 1em;
+                }
+            }
+            &.selected a   { background-color: transparentize($gray, .15); }
+            &.tabOpen a    { background-color: transparentize($gray, .15); 
+                &:after    { @include make-fa('\f106', #fff); }
+            }
+            &:last-child a { border-right: 0;}
+        }
+    }
+}
+// SUBMENU
+#submenu-details            { background-color: $gray-bg;
+                              border-top: 8px solid $gray;
+                              border-bottom: 1px solid $gray;   
+    .submenuDetailsContent  { @extend .clearfix; 
+                              position: relative;
+    }                           
+    a                       { color: $text-color;
+        &:focus,
+        &:hover             { color: $link-color; }
+    }
+    h5                      { text-transform: uppercase;
+                              @extend .semibold;
+                              margin: 0 0 1em;
+    }
+    ul                      { @extend .list-unstyled;
+                              display: block;
+        li                  { display: block; 
+                              margin-bottom: 0.35em;
+                              position: relative;
+                              color: $gray-light;
+        }
+    }
+    strong                  { @extend .semibold; }    
+    .submenuStaticWrapper   { @extend .col-sm-7; padding:0; }
+    .staticItem             { @extend .col-sm-6; 
+                               padding: 30px; 
+        &:first-child       { background-color: #FAFAFA; }
+        ul                  {
+            li              { margin-bottom: 0.5em;
+                              padding: 0 0 0.5em 14px;
+                              border-bottom: 1px solid #BBB;
+                              line-height: 1.4em;
+                &:before    { @include make-fa('\f105', $link-color); 
+                              position: absolute;
+                              top: 0em;
+                              left: 0;
+                }
+                &:last-child { border-bottom: 0; }
+                a           { display: inline-block;
+                    &.external-link { 
+                        &:after     { position: absolute;
+                                      @include make-fa('\f08e', $gray-light);
+                                      right: 0;
+                                      top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .submenuDynamicWrapper  { @extend .col-sm-5;
+                              padding: 30px $grid-gutter-width 30px 0;         
+        ul                  { @include content-columns(2); 
+                              //@media (max-width: 1035px) { @include content-columns(1); }
+            li              { display: block; 
+                              @include break-inside(avoid); 
+                              margin-bottom: 0.35em;
+                              position: relative;
+                              padding-left: 25px;
+                &:before    { @include make-flaticon('exit13', 12px); 
+                               position: absolute;
+                               top: 0.3em;
+                               left: 0;
+                }
+            }
+        }
+        a.dynamicSectionExploreLabel { color: $link-color;
+                                       font-size: 1.1em;
+                                       margin-top: 15px;
+                                       display: inline-block; 
+                                       @extend .regular;                                       
+                                        padding: 0.1em 0.5em;
+                                        border-radius: 2px;
+                                        @include transition(all .1s ease-in);
+            &:before                 { @include make-flaticon('right161', 15px); 
+                                       margin-right: 7px;
+                                       color: $gray-light;
+            }
+            &:focus,
+            &:hover                  { background-color: $link-color;
+                                        color: #fff;
+                &:before             { color: #FFF;}
+            }
+        }
+    }
+    .closeSubmenu           { position: absolute;
+                              bottom: 10px;
+                              right: 0;
+        a                   { color: $gray-light;
+                              font-size: 0.9em;
+                              text-transform: uppercase;
+                              @extend .semibold;
+                              display: inline-block;
+            &:focus,
+            &:hover         { color: $link-color; }
+            &:before        { @include make-flaticon('close42', 15px); 
+                              margin-right: 5px; 
+            }
+        }
+    }
+}
 
+// BREADCRUMBS
+#breadcrumbs                { background-color: $lightColor;
+    .breadcrumbsContent     { padding: {top: 15px; bottom: 12px; }; 
+        a                   { color: $text-color;
+            &:focus,
+            &:hover         { color: $link-color; }
+        }
+        .breadcrumbTop      { display: inline-block; 
+                              font-size: 1.6em;
+            span            { display: inline-block; }
+            &.withSeparator {
+                span:after  { @include make-flaticon('right161'); 
+                              margin-left: 0.7em;
+                }
+            }
+        }
+        .breadcrumbSeparator:before { @include make-fa('\f105'); 
+                                       margin: 0 0.5em;
+        }
+    }
+}
 
+// PORTLET NAVIGAZIONE
+dl[class*='ortletNavigation']       {
+    dt.portletHeader                { padding:0;
+                                      background-color: $tr;
+        .tile,
+        a.tile                      { display: inline-block;
+                                      background-color: $blu;
+                                      color: #fff;
+                                      @extend .regular;
+                                      font-size: 1.05em;
+                                      padding: 0.4em 1em;
+        }
+        a                           {
+            &:focus,
+            &:hover                 { background-color: $gray; }
+        }
+    }
+    dd.portletItem                  { padding: 8px 0 0;
+        ul.navTreeLevel0            {
+            ul                      { margin: 6px 0 5px 15px; }
+            > li.navTreeItem        { padding: 6px 0; 
+                                      border-bottom: 1px dashed $blu;
+                                      line-height: 1.35em;
+                                      margin: 0;
+                .navTreeCurrentItem { background-color: $tr;
+                                      border-left: 0; 
+                                      @extend .semibold;
+                                      margin: {left:0; right:0;};
+                }
+                a                   { display: block;
+                                      padding: 0.1em 0.3em;
+                                      @include transition(all .1s ease-in); 
+                    &:focus,
+                    &:hover         { color: $link-color !important;
+                                       background-color: $grayVeryLighty;
+                    }
+                    &.navTreeItemInPath { @extend .semibold;
+                                          color: $blu !important;
+                    }
+                }
+                .navTreeLevel1      { 
+                    > li > div > a  { font-size: 0.9em; }
+                    li              { position: relative;
+                                      padding-left: 15px;
+                                      line-height: 1.35em;
+                                      margin: 0 0 6px;
+                        &:before    { @include make-flaticon('exit13', 11px); 
+                                      position: absolute;
+                                      top: 0.2em;
+                                      left: 0;
+                                      color: $link-color;
+                        }
+                        a           { }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /// SITEMAP
 #portal-sitemap {margin-top: 15px;}
 #portal-sitemap > li { border:0;}
 
+// DEFINISCO LE AREE PER I COLORI
+@include define-area(0, $area0, 'avvia-attivita-impresa');
+@include define-area(1, $area1, 'conosci-gestisci-impresa');
+@include define-area(2, $area2, 'promuovi-in-italia-e-estero');
+@include define-area(3, $area3, 'finanziamenti-innovazione');
+@include define-area(4, $area4, 'tutela-impresa-e-consumatore');
 
 //// PER LA STAMPA
 //@media print {@include make-grid(md);}

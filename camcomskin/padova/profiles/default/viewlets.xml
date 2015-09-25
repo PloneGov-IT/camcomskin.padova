@@ -4,11 +4,16 @@
          based-on="Sunburst Theme">
       <viewlet name="plone.personal_bar" />
       <viewlet name="plone.header" />
+      <viewlet name="plone.global_sections" />
+      <viewlet name="plone.path_bar" />
   </order>
 
   <hidden manager="plone.portalheader" skinname="camcomskin_padova">
     <viewlet name="plone.personal_bar" />
     <viewlet name="plone.global_sections" />
+  </hidden>
+  <hidden manager="plone.abovecontent" skinname="camcomskin_padova">
+      <viewlet name="plone.path_bar" />
   </hidden>
   <!-- hidden manager="plone.belowcontent" skinname="camcomskin_padova">
     <viewlet name="plone.belowcontenttitle.keywords" />

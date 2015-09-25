@@ -15,7 +15,6 @@
         <property name="allowed_sizes" type="lines" purge="False">
             <element value="news 300:300"/>
             <element value="hpslider 1260:270"/>
-            <!--element value="searchevents 200:130"/ -->
         </property>
     </object -->
     <object name="navtree_properties" meta_type="Plone Property Sheet">
