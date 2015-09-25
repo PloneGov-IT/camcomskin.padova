@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from Acquisition import aq_inner
 from plone.app.layout.viewlets.common import ViewletBase
+from plone import api
 
 
 class SecondaryMenuViewlet(ViewletBase):
@@ -9,8 +10,9 @@ class SecondaryMenuViewlet(ViewletBase):
 
     @property
     def menu_tabs(self):
-        context = self.context.aq_inner
-        support_view = context.restrictedTraverse("@@secondary_menu_support_view", None)
+        support_view = api.portal.get().restrictedTraverse(
+            "@@secondary_menu_support_view",
+            None)
         if not support_view:
             return []
         tabs = support_view.get_menu_tabs()
