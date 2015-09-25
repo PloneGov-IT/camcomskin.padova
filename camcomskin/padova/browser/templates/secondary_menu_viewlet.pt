@@ -1,0 +1,25 @@
+<tal:sections tal:define="menu_tabs view/menu_tabs"
+     tal:condition="menu_tabs"
+     i18n:domain="plone">
+     <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <div class="secondaryMenu">
+    <ul>
+      <tal:tabs tal:repeat="tab menu_tabs">
+        <li tal:define="tid python: tab.get('index')"
+            class="secondaryMenuItem"
+            tal:attributes="id string:secondarymenu-${tid}">
+          <a class="btn btn-lg popovers"
+             role="button"
+             href="#"
+             data-toggle="popover"
+             data-placement="bottom"
+             data-trigger="click"
+             tal:attributes="data-content tab/menu_structure"
+             tal:content="structure tab/title">
+          </a>
+        </li>
+      </tal:tabs>
+    </ul>
+  </div>
+</tal:sections>
