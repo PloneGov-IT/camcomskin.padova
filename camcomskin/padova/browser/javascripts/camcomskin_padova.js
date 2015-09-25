@@ -7,6 +7,7 @@
       }
     });
     $("li.secondaryMenuItem a.popovers").click(function(e) {
+      e.preventDefault();
       if ($(this).next(".popover").length !== 0) {
         $(this).popover('hide');
       }
