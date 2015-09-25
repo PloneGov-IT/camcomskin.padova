@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <!-- object name="document_actions" meta_type="CMF Action Category">
+  <property name="title"></property>
+  <object name="rss" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">RSS feed</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">object/@@syndication-util/rss_url</property>
+   <property name="link_target"></property>
+   <property name="icon_expr">string:$portal_url/rss.png</property>
+   <property
+      name="available_expr">object/@@syndication-util/context_enabled</property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">False</property>
+  </object>
+  <object name="print" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Print this</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:javascript:this.print();</property>
+   <property name="link_target"></property>
+   <property name="icon_expr">string:$portal_url/print_icon.png</property>
+   <property name="available_expr"></property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">False</property>
+  </object>
+  <object name="full_screen" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Toggle full screen mode</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:javascript:toggleFullScreenMode();</property>
+   <property name="link_target"></property>
+   <property
+      name="icon_expr">string:$portal_url/fullscreenexpand_icon.png</property>
+   <property name="available_expr">python:member is not None</property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">False</property>
+  </object>
+  <object name="extedit" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title"
+      i18n:translate="">Edit with external application</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:$object_url/external_edit</property>
+   <property name="link_target"></property>
+   <property name="icon_expr">string:$portal_url/extedit_icon.png</property>
+   <property name="available_expr">object/externalEditorEnabled</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+ </object -->
+ <object name="site_actions" meta_type="CMF Action Category">
+  <object name="amm-trasp" meta_type="CMF Action">
+   <property name="title">Amministrazione Trasparente</property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/trasparenza</property>
+   <property name="visible">True</property>
+  </object>
+  <object name="albo" meta_type="CMF Action">
+   <property name="title">Albo Camerale</property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/albo-camerale</property>
+   <property name="visible">True</property>
+  </object>
+  <object name="chi-siamo" meta_type="CMF Action">
+   <property name="title">Chi siamo</property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/camera-commercio/chi-siamo</property>
+   <property name="visible">True</property>
+  </object>
+  <object name="privacy" meta_type="CMF Action">
+   <property name="title">Privacy Policy</property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/privacy</property>
+   <property name="visible">True</property>
+  </object>
+  <object name="sitemap" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Site Map</property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/sitemap</property>
+   <property name="visible">True</property>
+  </object>
+  <object name="accessibility" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Accessibility</property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/accessibility-info</property>
+   <property name="visible">True</property>
+  </object>
+  <object name="note-legali" meta_type="CMF Action">
+   <property name="title">Note legali</property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/note-legali</property>
+   <property name="visible">True</property>
+  </object>
+  <object name="bandi" meta_type="CMF Action">
+   <property name="title">Bandi di gara e di concorso</property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/gare-e-contratti</property>
+   <property name="visible">True</property>
+  </object>
+  <object name="contact" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Contact</property>
+   <property name="visible">False</property>
+  </object>
+  <object name="plone_setup" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Site Setup</property>
+   <property name="visible">False</property>
+  </object>
+ </object>
+ 
+</object>
