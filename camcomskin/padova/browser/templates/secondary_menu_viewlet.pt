@@ -14,7 +14,7 @@
              href="#"
              data-toggle="popover"
              data-placement="bottom"
-             data-trigger="click"
+             data-trigger="manual"
              tal:attributes="data-content tab/menu_structure"
              tal:content="structure tab/title">
           </a>
