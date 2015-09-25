@@ -4,55 +4,22 @@
                  is_rtl view/is_rtl">
 
   <div class="breadcrumbsContent">
-
-<!-- commento l'originale e metto uno statico segnaposto che mi aiuta per gli stili... -->
-
-<!--
-    <span id="breadcrumbs-you-are-here" i18n:translate="you_are_here">You
-  are here:</span>
-    <span id="breadcrumbs-home">
-        <a i18n:translate="tabs_home"
-           tal:attributes="href view/navigation_root_url">Home</a>
-        <span tal:condition="breadcrumbs" class="breadcrumbSeparator">
-            <tal:ltr condition="not: is_rtl">/</tal:ltr>
-            <tal:rtl condition="is_rtl">\</tal:rtl>
-        </span>
-    </span>
-    <span tal:repeat="crumb breadcrumbs"
-          tal:attributes="dir python:is_rtl and 'rtl' or 'ltr';
-                          id string:breadcrumbs-${repeat/crumb/number}">
-        <tal:item tal:define="is_last repeat/crumb/end;
-                              url crumb/absolute_url;
-                              title crumb/Title">
-            <a href="#"
-               tal:omit-tag="not: url"
-               tal:condition="python:not is_last"
-               tal:attributes="href url"
-               tal:content="title">
-                crumb
-            </a>
-            <span class="breadcrumbSeparator" tal:condition="not: is_last">
-                <tal:ltr condition="not: is_rtl">/</tal:ltr>
-                <tal:rtl condition="is_rtl">\</tal:rtl>
-            </span>
-            <span id="breadcrumbs-current"
-                  tal:condition="is_last"
-                  tal:content="title">crumb</span>
-         </tal:item>
-    </span>
-
-  -->
-
-    <div class="breadcrumbTopWrapper">
-      <a class="breadcrumbTop withSeparator" href="#">
-        <span>Albo delle imprese artigiane</span>
-        <!-- NB la classe withSeparator c'e' solo se ho dei breadcrumbOther -->
-      </a>
-    </div> 
-    <a class="breadcrumbOther" href="#">Voce di terzo livello</a> 
-    <span class="breadcrumbSeparator"></span> <!-- serve la tal:condition="not: is_last" -->
-    <a class="breadcrumbOther" href="#">Voce di quarto livello</a> <!-- e a seguire tutte con la stessa classe... -->
-    <!-- attenzione: non ci va lo span finale del contenuto corrente -->
-
+    <tal:breadcrumbs condition="python:len(breadcrumbs) > 1">
+      <div class="breadcrumbTopWrapper">
+        <a tal:attributes="href python:breadcrumbs[1].get('absolute_url');
+                           class python:len(breadcrumbs) > 2 and 'breadcrumbTop withSeparator' or 'breadcrumbTop'">
+          <span tal:content="python:breadcrumbs[1].get('Title')" />
+        </a>
+      </div>
+      <tal:other_breadcrumbs repeat="crumb python:breadcrumbs[2:-1]">
+        <a class="breadcrumbOther"
+           tal:attributes="href crumb/absolute_url"
+           tal:content="crumb/Title">
+           Voce di terzo livello
+        </a>
+        <span tal:condition="not:repeat/crumb/end"
+              class="breadcrumbSeparator"></span>
+      </tal:other_breadcrumbs>
+    </tal:breadcrumbs>
   </div>
 </div>
