@@ -14,7 +14,8 @@ body { @extend .light; }
 .breadcrumbsContent,
 #portal-columns,
 .submenuDetailsContent,
-#portal-globalnav { @extend .container; }
+#portal-globalnav,
+.colophonWrapper { @extend .container; }
 
 img { max-width: 100%; }
 
@@ -289,16 +290,22 @@ dl[class*='ortletNavigation']       {
         }
         a                           {
             &:focus,
-            &:hover                 { background-color: $gray; }
+            &:hover                 { background-color: $gray; 
+                                      color: #fff !important;
+            }
         }
     }
     dd.portletItem                  { padding: 8px 0 0;
-        ul.navTreeLevel0            {
-            ul                      { margin: 6px 0 5px 15px; }
+                                      border-bottom: 3px solid $blu;
+        ul.navTreeLevel0            { margin-bottom: 6px;
+            ul                      { margin: 6px 0 5px 15px; 
+                &.navTreeLevel1 ul  { margin-left: -6px; }
+            }
             > li.navTreeItem        { padding: 6px 0; 
                                       border-bottom: 1px dashed $blu;
                                       line-height: 1.35em;
                                       margin: 0;
+                &:last-child        { border-bottom: 0; }
                 .navTreeCurrentItem { background-color: $tr;
                                       border-left: 0; 
                                       @extend .semibold;
@@ -315,8 +322,8 @@ dl[class*='ortletNavigation']       {
                                           color: $blu !important;
                     }
                 }
-                .navTreeLevel1      { 
-                    > li > div > a  { font-size: 0.9em; }
+                .navTreeLevel1      {                     
+                    > li   { font-size: 0.9em; }
                     li              { position: relative;
                                       padding-left: 15px;
                                       line-height: 1.35em;
@@ -332,6 +339,54 @@ dl[class*='ortletNavigation']       {
                 }
             }
         }
+    }
+}
+
+// FORMATTAZIONI
+#content                            { margin: 0 0 $grid-gutter-width;
+    h1.documentFirstHeading         { @extend .light;
+                                      font-size: 2.4em;
+                                      position: relative;
+                                      margin: 0 0 $grid-gutter-width;
+                                      padding-bottom: 10px;
+        &:before                    { display: block;
+                                      content: '';
+                                      background-color: lighten($blu, 20);
+                                      border-radius: 3px;
+                                      height: 3px;
+                                      width: 60px;
+                                      position: absolute;
+                                      left:0;
+                                      bottom:0;
+        }
+    }
+    .documentDescription            { @extend .regular;
+                                      margin-bottom: 20px;
+    }
+}
+
+// FOOTER
+#portal-footer-wrapper              { background-color: $blu;
+                                      color: $grayLighty;
+                                      margin-top: $grid-gutter-width/2;
+    a                               { color: #FFF;
+                                      @include transition(all .1s ease-in);
+        &:focus,
+        &:hover                     { color: $grayVeryLighty !important;
+                                      background-color: transparentize(#FFF, .9);
+                                      border-radius: 2px;
+        }
+    }
+    #portal-colophon                { background-color: $bludark; 
+                                      color: $grayLighty;
+                                      margin-bottom: 0;
+                                      font-size: 0.9em;
+                                      text-align: right;
+        .colophonWrapper            { }
+    }
+
+    #portal-siteactions             { text-align: left;
+                                      padding: $grid-gutter-width/2 0 $grid-gutter-width;
     }
 }
 
