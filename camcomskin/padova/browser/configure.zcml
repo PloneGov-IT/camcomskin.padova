@@ -34,6 +34,17 @@
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
     />
+  <!-- Editable menu viewlet -->
+  <configure package="collective.editablemenu">
+    <browser:viewlet
+        name="plone.global_sections"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class="collective.editablemenu.browser.viewlets.CustomGlobalSectionsViewlet"
+        template="browser/templates/custom_sections.pt"
+        layer="camcomskin.padova.browser.interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+  </configure>
 
     <!-- The breadcrumbs -->
     <browser:viewlet

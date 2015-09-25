@@ -17,7 +17,7 @@
   </hidden>
   <!-- hidden manager="plone.belowcontent" skinname="camcomskin_padova">
     <viewlet name="plone.belowcontenttitle.keywords" />
-  </hidden -->    
+  </hidden -->
   <hidden manager="plone.portalfooter" skinname="camcomskin_padova">
     <viewlet name="plone.footer" />
   </hidden>
