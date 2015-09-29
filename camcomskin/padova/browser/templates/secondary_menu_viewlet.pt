@@ -6,16 +6,18 @@
   <div class="secondaryMenu">
     <ul>
       <tal:tabs tal:repeat="tab menu_tabs">
-        <li tal:define="tid python: tab.get('index')"
+        <li tal:define="tid python: tab.get('index');
+                        menu_structure python:tab.get('menu_structure')"
             class="secondaryMenuItem"
-            tal:attributes="id string:secondarymenu-${tid}">
+            tal:attributes="id string:secondarymenu-${tid}"
+            tal:condition="menu_structure">
           <a class="btn btn-lg popovers"
              role="button"
              href="#"
              data-toggle="popover"
              data-placement="bottom"
-             data-trigger="click"
-             tal:attributes="data-content tab/menu_structure"
+             data-trigger="manual"
+             tal:attributes="data-content menu_structure"
              tal:content="structure tab/title">
           </a>
         </li>
