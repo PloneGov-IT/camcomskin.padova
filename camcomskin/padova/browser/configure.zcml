@@ -99,4 +99,11 @@
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
       />
+
+     <browser:viewlet
+        name="plone.belowcontenttitle.documentbyline"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+        class="plone.app.layout.viewlets.content.DocumentBylineViewlet"
+        permission="zope2.View"
+    />
 </configure>
