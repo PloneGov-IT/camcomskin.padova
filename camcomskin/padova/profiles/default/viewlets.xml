@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 <object>
+  <order manager="plone.portalheader" skinname="camcomskin_padova"
+         based-on="Sunburst Theme">
+      <viewlet name="plone.searchbox" />
+      <viewlet name="camcomskin.secondarymenu" />
+      <viewlet name="plone.logo" />
+  </order>
   <order manager="plone.portaltop" skinname="camcomskin_padova"
          based-on="Sunburst Theme">
       <viewlet name="plone.personal_bar" />
