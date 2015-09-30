@@ -1,8 +1,6 @@
 <tal:sections tal:define="menu_tabs view/menu_tabs"
      tal:condition="menu_tabs"
-     i18n:domain="plone">
-     <!-- Latest compiled and minified CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     i18n:domain="plone">     
   <div class="secondaryMenu">
     <ul>
       <tal:tabs tal:repeat="tab menu_tabs">
@@ -11,7 +9,7 @@
             class="secondaryMenuItem"
             tal:attributes="id string:secondarymenu-${tid}"
             tal:condition="menu_structure">
-          <a class="btn btn-lg popovers"
+          <a class="popovers"
              role="button"
              href="#"
              data-toggle="popover"

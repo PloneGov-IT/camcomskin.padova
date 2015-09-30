@@ -25,6 +25,14 @@
         layer=".interfaces.IThemeSpecific" />
     />
 
+  <!-- The search box -->
+  <browser:viewlet
+      name="camomskin.searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      template="templates/search_viewlet.pt"
+      permission="zope2.View"
+      />
+
   <!-- secondary menu viewlet -->
   <browser:viewlet
       name="camcomskin.secondarymenu"
