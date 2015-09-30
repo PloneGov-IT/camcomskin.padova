@@ -19,6 +19,16 @@
     <viewlet name="plone.colophon" />
     <viewlet name="plone.analytics" />
   </order>
+  <order manager="plone.portalheader" skinname="camcomskin_padova">
+    <viewlet name="camomskin.searchbox"/>
+    <viewlet name="plone.logo"/>
+    <viewlet name="plone.personal_bar"/>
+    <viewlet name="plone.searchbox"/>
+    <viewlet name="plone.app.i18n.locales.languageselector"/>
+    <viewlet name="camcomskin.secondarymenu"/>
+    <viewlet name="plone.global_sections"/>
+    <viewlet name="plone.skip_links"/>
+  </order>
 
   <hidden manager="plone.portalheader" skinname="camcomskin_padova">
     <viewlet name="plone.personal_bar" />

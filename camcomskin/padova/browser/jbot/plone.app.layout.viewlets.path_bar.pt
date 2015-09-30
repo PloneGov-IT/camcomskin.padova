@@ -1,17 +1,19 @@
 <div id="breadcrumbs"
      i18n:domain="plone"
      tal:define="breadcrumbs view/breadcrumbs;
-                 is_rtl view/is_rtl">
+                 breadcrumbs python:breadcrumbs[1:-1];
+                 is_rtl view/is_rtl"
+     tal:condition="python:len(breadcrumbs)">
 
   <div class="breadcrumbsContent">
-    <tal:breadcrumbs condition="python:len(breadcrumbs) > 1">
+    <tal:breadcrumbs>
       <div class="breadcrumbTopWrapper">
-        <a tal:attributes="href python:breadcrumbs[1].get('absolute_url');
-                           class python:len(breadcrumbs) > 2 and 'breadcrumbTop withSeparator' or 'breadcrumbTop'">
-          <span tal:content="python:breadcrumbs[1].get('Title')" />
+        <a tal:attributes="href python:breadcrumbs[0].get('absolute_url');
+                           class python:len(breadcrumbs) > 1 and 'breadcrumbTop withSeparator' or 'breadcrumbTop'">
+          <span tal:content="python:breadcrumbs[0].get('Title')" />
         </a>
       </div>
-      <tal:other_breadcrumbs repeat="crumb python:breadcrumbs[2:-1]">
+      <tal:other_breadcrumbs repeat="crumb python:breadcrumbs[1:]">
         <a class="breadcrumbOther"
            tal:attributes="href crumb/absolute_url"
            tal:content="crumb/Title">
