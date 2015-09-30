@@ -26,15 +26,15 @@ setup(name='camcomskin.padova',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
-          'collective.portletpage',
-          'Products.ContentWellPortlets == 4.3.0',
           'collective.contentleadimage',
           'collective.editablemenu',
           'collective.portletpage',
+          'Products.ContentWellPortlets == 4.3.0',
           'redturtle.portlet.collection',
           'redturtle.smartlink',
           'rer.portlet.advanced_static',
           'rer.portlet.er_navigation',
+          'sc.social.like',
           'z3c.jbot',
       ],
       entry_points="""
