@@ -101,6 +101,48 @@ img { max-width: 100%; }
         span                { @extend .sr-only; }
     }
 }
+#camcomskin-searchbox       { text-align: center;
+                              padding: 20px 0;
+  .searchFieldWrapper       { display: inline-block;
+                              position: relative;
+                              max-width: 600px; 
+                              width: 100%;
+                              white-space: nowrap;
+    &:before                { @include make-flaticon('magnifier13', 28px);
+                              color: $gray-lighter;
+                              display: inline-block;
+                              position: absolute;
+                              left: 10px;
+                              top: 5px;
+                              z-index: 100;
+    }
+  }
+  input.searchField         { box-shadow: none;
+                              border-radius: 0;
+                              border:0;
+                              background-color: #f4f4f2;
+                              font-size: 1.6em;
+                              padding: 0.3em 0.7em 0.3em 54px;
+                              height: auto;
+                              color: #000;
+  }
+  input.searchButton        { border-radius: 0;
+                              font-size: 1.3em;
+                              text-transform: uppercase;
+                              @extend .light; 
+                              background-color: $blu;
+                              border:0;
+                              margin: -0.5em 0 0 -4px;
+                              padding: 0.5em 1em;
+  }
+  a.closeLink               { display: inline-block;
+    &:before                { @include make-fa('\f00d', $text-color);
+                              font-size: 24px;
+                              margin-left: 10px;
+    }
+    span                    { @extend .sr-only; }
+  }
+}
 
 // LOGO
 #portal-logo                { margin: 20px 0 0;
@@ -124,6 +166,9 @@ img { max-width: 100%; }
                               text-transform: uppercase;
                               color: #4a4a4a;
                               display: block;
+                              @include transition(all .1s ease-in);
+        &:focus,
+        &:hover             { color: $link-color;}
         &:after             { @include make-fa('\f107', $link-color); 
                                font-size: 18px;
                                margin-left: 12px;
@@ -131,21 +176,26 @@ img { max-width: 100%; }
                                top: 0.1em;
         }
       }
+      &.tabOpen a           { color: $link-color;
+        &:after             { @include make-fa('\f106', $blu); }
+      }
     }
   }
-  .popover                  { max-width: none;}
+  .popover                  { max-width: none;
+    .popover-content        { padding: 10px 15px; }
+  }
   .submenuWrapper           { @extend .clearfix; 
                               width: 660px;
   }
   .submenuItem              { float: left;
-                              width: 200px;
-                              margin-left: 30px;
+                              width: 230px;
+                              padding-left: 30px;
                               font-size: 1.05em;
                               @extend .light;
     p                       { font-size: 0.9em;                               
                               color: $gray-light;
     }                              
-    &:first-child           { margin-left: 0; }
+    &:first-child           { padding-left: 0; width: 200px; }
     a                       { color: $text-color;
         &:focus,
         &:hover             { color: $link-color; }
@@ -165,15 +215,36 @@ img { max-width: 100%; }
                               position: relative;
                               color: $gray-light;
                               line-height: 1.3em;
+          a                 { display: inline-block;
+            &.external-link { padding-right: 20px;
+              &:after       { position: absolute;
+                              @include make-fa('\f08e', $gray-lighter);
+                              right: 0;
+                              top: 0;
+              }
+            }
+          }
         }
     }
     strong                  { @extend .semibold; }       
+    // solo colonna servizi online
+    &.servizi-online        { background-color: $grayVeryLighty;
+                              padding-bottom: 10px;
+      h5                    { color: $link-color; }
+      ul li                 { padding-left: 13px;
+        &:before            { @include make-fa('\f105', $link-color); 
+                              top: 0em;
+                              left:0;
+                              position: absolute;
+        }
+      }
+    }
   }
   // solo per voce contatti
   #secondarymenu-2          { 
     .submenuItem:nth-child(2) { border-left: 1px dashed $gray-lighter; 
                                 margin-left: 20px;
-                                padding-left: 30px;
+                                width: 210px;
     }
   }
 }

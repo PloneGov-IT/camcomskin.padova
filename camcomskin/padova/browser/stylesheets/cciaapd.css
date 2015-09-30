@@ -332,7 +332,7 @@ hr {
   border: 0;
   border-top: 1px solid #CCC; }
 
-.sr-only, #topbar #top-link-group [class^='social'] span, #searchbox a.btnSearch span {
+.sr-only, #topbar #top-link-group [class^='social'] span, #searchbox a.btnSearch span, #camcomskin-searchbox a.closeLink span {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -5343,7 +5343,7 @@ button.list-group-item-danger {
 .flaticon-file242 {
   content: "\e008"; }
 
-.flaticon-magnifier13, #searchbox a.btnSearch:before {
+.flaticon-magnifier13, #searchbox a.btnSearch:before, #camcomskin-searchbox .searchFieldWrapper:before {
   content: "\e009"; }
 
 .flaticon-man379 {
@@ -6213,7 +6213,7 @@ input.inputLabelActive {
 .template-folder_contents .newsImageContainer {
   display: none; }
 
-.light, body, .secondaryMenu .submenuItem, #content h1.documentFirstHeading, #portal-footer-wrapper #portlets-footer h4, #portal-footer-wrapper #portlets-footer h5 {
+.light, body, #camcomskin-searchbox input.searchButton, .secondaryMenu .submenuItem, #content h1.documentFirstHeading, #portal-footer-wrapper #portlets-footer h4, #portal-footer-wrapper #portlets-footer h5 {
   font-weight: 300; }
 
 .regular, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel, dl[class*='ortletNavigation'] dt.portletHeader .tile,
@@ -6396,6 +6396,53 @@ img {
     display: inline-block;
     color: #FFF; }
 
+#camcomskin-searchbox {
+  text-align: center;
+  padding: 20px 0; }
+  #camcomskin-searchbox .searchFieldWrapper {
+    display: inline-block;
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    white-space: nowrap; }
+    #camcomskin-searchbox .searchFieldWrapper:before {
+      font-family: Flaticon;
+      font-size: 28px;
+      font-style: normal;
+      display: inline-block;
+      color: #CCC;
+      display: inline-block;
+      position: absolute;
+      left: 10px;
+      top: 5px;
+      z-index: 100; }
+  #camcomskin-searchbox input.searchField {
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+    background-color: #f4f4f2;
+    font-size: 1.6em;
+    padding: 0.3em 0.7em 0.3em 54px;
+    height: auto;
+    color: #000; }
+  #camcomskin-searchbox input.searchButton {
+    border-radius: 0;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    background-color: #283641;
+    border: 0;
+    margin: -0.5em 0 0 -4px;
+    padding: 0.5em 1em; }
+  #camcomskin-searchbox a.closeLink {
+    display: inline-block; }
+    #camcomskin-searchbox a.closeLink:before {
+      display: inline-block;
+      font-family: FontAwesome;
+      content: "";
+      color: #313131;
+      font-size: 24px;
+      margin-left: 10px; }
+
 #portal-logo {
   margin: 20px 0 0; }
   #portal-logo img {
@@ -6417,7 +6464,12 @@ img {
         font-size: 1.1em;
         text-transform: uppercase;
         color: #4a4a4a;
-        display: block; }
+        display: block;
+        -webkit-transition: all 0.1s ease-in;
+        -o-transition: all 0.1s ease-in;
+        transition: all 0.1s ease-in; }
+        .secondaryMenu > ul > li.secondaryMenuItem > a:focus, .secondaryMenu > ul > li.secondaryMenuItem > a:hover {
+          color: #9c3524; }
         .secondaryMenu > ul > li.secondaryMenuItem > a:after {
           display: inline-block;
           font-family: FontAwesome;
@@ -6427,20 +6479,30 @@ img {
           margin-left: 12px;
           position: relative;
           top: 0.1em; }
+      .secondaryMenu > ul > li.secondaryMenuItem.tabOpen a {
+        color: #9c3524; }
+        .secondaryMenu > ul > li.secondaryMenuItem.tabOpen a:after {
+          display: inline-block;
+          font-family: FontAwesome;
+          content: "";
+          color: #283641; }
   .secondaryMenu .popover {
     max-width: none; }
+    .secondaryMenu .popover .popover-content {
+      padding: 10px 15px; }
   .secondaryMenu .submenuWrapper {
     width: 660px; }
   .secondaryMenu .submenuItem {
     float: left;
-    width: 200px;
-    margin-left: 30px;
+    width: 230px;
+    padding-left: 30px;
     font-size: 1.05em; }
     .secondaryMenu .submenuItem p {
       font-size: 0.9em;
       color: #777; }
     .secondaryMenu .submenuItem:first-child {
-      margin-left: 0; }
+      padding-left: 0;
+      width: 200px; }
     .secondaryMenu .submenuItem a {
       color: #313131; }
       .secondaryMenu .submenuItem a:focus, .secondaryMenu .submenuItem a:hover {
@@ -6460,10 +6522,37 @@ img {
         position: relative;
         color: #777;
         line-height: 1.3em; }
+        .secondaryMenu .submenuItem ul li a {
+          display: inline-block; }
+          .secondaryMenu .submenuItem ul li a.external-link {
+            padding-right: 20px; }
+            .secondaryMenu .submenuItem ul li a.external-link:after {
+              position: absolute;
+              display: inline-block;
+              font-family: FontAwesome;
+              content: "";
+              color: #CCC;
+              right: 0;
+              top: 0; }
+    .secondaryMenu .submenuItem.servizi-online {
+      background-color: #F2F2F2;
+      padding-bottom: 10px; }
+      .secondaryMenu .submenuItem.servizi-online h5 {
+        color: #9c3524; }
+      .secondaryMenu .submenuItem.servizi-online ul li {
+        padding-left: 13px; }
+        .secondaryMenu .submenuItem.servizi-online ul li:before {
+          display: inline-block;
+          font-family: FontAwesome;
+          content: "";
+          color: #9c3524;
+          top: 0em;
+          left: 0;
+          position: absolute; }
   .secondaryMenu #secondarymenu-2 .submenuItem:nth-child(2) {
     border-left: 1px dashed #CCC;
     margin-left: 20px;
-    padding-left: 30px; }
+    width: 210px; }
 
 .globalnavWrapper {
   background-color: #4f575e; }

@@ -4,11 +4,11 @@
         action="@@search"
         tal:attributes="action string:${context/portal_url}/@@search;">
 
-      <label class="hiddenStructure"
-             for="SearchableText"
+      <span class="searchFieldWrapper">
+        <label class="hiddenStructure"
+            for="SearchableText"
              i18n:translate="text_search">Search Site</label>
-
-      <input name="SearchableText"
+        <input name="SearchableText"
              type="text"
              size="18"
              value=""
@@ -21,10 +21,11 @@
              id="SearchableText"
              class="searchField" />
 
-      <input class="searchButton"
+        <input class="searchButton"
              type="submit"
              value="Search"
              i18n:attributes="value label_search;" />
+        <a class="closeLink" href="#"><span>Close</span></a>
+      </span>
   </form>
-  <a class="closeLink" href="#">Close</a>
 </div>
