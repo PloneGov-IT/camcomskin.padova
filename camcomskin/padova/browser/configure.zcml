@@ -31,6 +31,7 @@
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       template="templates/search_viewlet.pt"
       permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
       />
 
   <!-- secondary menu viewlet -->
