@@ -31,7 +31,9 @@ img { max-width: 100%; }
 #portal-columns,
 #viewlet-below-content-title { padding:0;}
 
-#portal-column-two           { padding-top: 50px; padding-bottom: 30px; }
+#portal-column-two           { padding-top: 50px; padding-bottom: 30px; 
+  .managePortletsLink        { margin-top: 20px; }
+}
 
 
 // fix per responsive
@@ -498,6 +500,9 @@ dl[class*='ortletNavigation']       {
                                       border-top: 1px solid #A6A6A6;
                                       padding: 25px 0 20px 15px;
                                       font-size: 0.95em;
+  #portal-column-two > div:first-child & { border-top:0;
+                                           padding-top: 0;
+  }
   h4.boxHeader                      { font-size: 1em;
                                       @extend .semibold;
                                       margin:0 0 15px;
@@ -543,7 +548,7 @@ dl[class*='ortletNavigation']       {
           &:before                  { background-color: $text-color; }
         }
       }
-      &.linkPdf a:before            { content: '\f1c1'; }
+      &.linkFilePdf a:before        { content: '\f1c1'; }
       &.linkItem a                  { 
         &:before                    { @include make-flaticon('right161', 14px); 
                                       color: $link-color;
@@ -560,8 +565,9 @@ dl[class*='ortletNavigation']       {
 
 // PORTLET NORMATIVA                
 .boxNorme                           { 
-  ul.listLink li a                  { padding-left: 24px;
-    &:before                        { content: '\f138';
+  ul.listLink li a,
+  ul.listLink li.linkItem a         { padding-left: 24px;
+    &:before                        { @include make-fa('\f138');
                                       background-color: $tr;
                                       color: $link-color;
                                       top: 2px;
@@ -578,8 +584,7 @@ dl[class*='ortletNavigation']       {
 }
 
 // PORTLET UFFICIO
-.boxOffice                          { padding-top: 0;
-                                      border-top: 0;
+.boxOffice                          { 
   h5.officeTitle                    { font-size: 1.1em;
                                       margin: 0 0 10px;
                                       line-height: 1.5em;                                      
@@ -635,6 +640,63 @@ dl[class*='ortletNavigation']       {
   }
 }
 
+// UFFICIO
+.officeTag                          { @extend .regular;
+                                      color: #999;
+                                      text-transform: uppercase;
+                                      font-size: 1.2em;
+                                      padding-bottom: 5px;
+}
+.officeContactsWrapper              { background-color: $gray-bg;
+                                      padding: 10px 30px;
+                                      margin: 40px 0;                                      
+  .officeContactsContent            { display: table;
+                                      position: relative;
+                                      table-layout: fixed;
+                                      width: 100%;
+  }  
+  h4                                { text-transform: uppercase;
+                                      color: $gray-light;
+                                      font-size: 1.2em;
+  }
+  h5                                { font-size: 1.1em; 
+                                      margin-bottom: 0.5em;
+  }
+  .officeLocation,
+  .officeContacts,
+  .officeExecutive                  { display: table-cell;
+                                      vertical-align: top;
+  }
+  .officeLocation                   { width: 38%;
+                                      padding-right: 4%;
+  }
+  .officeContacts                   { border-left: 1px dashed $gray-light;
+                                      width: 38%;
+                                      padding: 0 4%;
+  }
+  .officeExecutive                  { border-left: 1px dashed $gray-light;
+                                      width: 24%;
+                                      padding-left: 4%;
+  }
+  .officeLoc                        {
+    p                               { margin-left: 20px; }
+  }
+  .officeTime                       { padding-top: 5px;
+    ul                              { 
+      &,
+      #content &                    { @extend .list-unstyled; 
+                                      margin-left: 20px;
+      }
+    }
+  }
+  .officePhone                      { @extend .clearfix;
+    h6                              { @extend .col-xs-3;
+                                      text-align: right;
+    }
+    p                               { @extend .col-xs-9; }
+  }
+}
+
 // FORMATTAZIONI
 #content                            { margin: 0 0 $grid-gutter-width;
     h1.documentFirstHeading         { @extend .light;
@@ -659,6 +721,34 @@ dl[class*='ortletNavigation']       {
 }
 #plone-document-byline              { text-align: right;
   .documentModified                 { font-style: italic; color: $gray-light; }
+}
+
+// CORRELATI
+#relatedItemBox                     { margin-top: 30px;
+                                      padding-top: 10px;
+                                      position: relative;
+  &:before                          { display: block;
+                                      content: '';
+                                      background-color: lighten($blu, 20);
+                                      border-radius: 2px;
+                                      height: 2px;
+                                      width: 40px;
+                                      position: absolute;
+                                      left:0;
+                                      top:0;
+  }
+  ul                                { @extend .list-unstyled; 
+                                      margin: 0;
+                li                  { margin-bottom: 7px; 
+                                      position: relative;
+                                      padding-left: 15px;
+                    &:before        { @include make-fa('\f105'); 
+                                      position: absolute;
+                                      left: 0;
+                                      top: 0;                                      
+                    }
+                }
+            }
 }
 
 // FOOTER
