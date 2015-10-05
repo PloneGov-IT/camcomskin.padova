@@ -9,6 +9,61 @@
       name="camcomskin_padova"
       />
 
+  <include package="z3c.jbot" file="meta.zcml" />
+  <include package="collective.editablemenu" />
+
+  <browser:jbot
+        directory="jbot"
+        layer=".interfaces.IThemeSpecific" />
+
+  <!-- The personal bar -->
+  <browser:viewlet
+        name="plone.personal_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class="plone.app.layout.viewlets.common.PersonalBarViewlet"
+        permission="zope2.View"
+        layer=".interfaces.IThemeSpecific" />
+    />
+
+  <!-- The search box -->
+  <browser:viewlet
+      name="camomskin.searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      template="templates/search_viewlet.pt"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <!-- secondary menu viewlet -->
+  <browser:viewlet
+      name="camcomskin.secondarymenu"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.SecondaryMenuViewlet"
+      template="templates/secondary_menu_viewlet.pt"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+    />
+  <!-- Editable menu viewlet -->
+  <configure package="collective.editablemenu">
+    <browser:viewlet
+        name="plone.global_sections"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class="collective.editablemenu.browser.viewlets.CustomGlobalSectionsViewlet"
+        template="browser/templates/custom_sections.pt"
+        layer="camcomskin.padova.browser.interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+  </configure>
+
+    <!-- The breadcrumbs -->
+    <browser:viewlet
+        name="plone.path_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class="plone.app.layout.viewlets.common.PathBarViewlet"
+        permission="zope2.View"
+        layer=".interfaces.IThemeSpecific"
+        />
+
   <!-- Resource directory for images -->
   <browser:resourceDirectory
       name="camcomskin.padova.images"
@@ -22,5 +77,34 @@
       directory="stylesheets"
       layer=".interfaces.IThemeSpecific"
       />
+  <!-- Resource directory for javascripts -->
+  <browser:resourceDirectory
+      name="camcomskin.padova.javascripts"
+      directory="javascripts"
+      layer=".interfaces.IThemeSpecific"
+      />
 
+  <!-- Secondary editable menu settings -->
+  <browser:page
+      name="editable-secondarymenu-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".menu_controlpanel.EditableSecondaryMenuSettingsView"
+      permission="collective.editablemenu.permissions.ManageSettings"
+      layer=".interfaces.IThemeSpecific"
+      />
+  <!-- Secondary editable menu settings -->
+  <browser:page
+      name="secondary_menu_support_view"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".menu_controlpanel.SecondaryMenuSupportView"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+     <browser:viewlet
+        name="plone.belowcontenttitle.documentbyline"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+        class="plone.app.layout.viewlets.content.DocumentBylineViewlet"
+        permission="zope2.View"
+    />
 </configure>

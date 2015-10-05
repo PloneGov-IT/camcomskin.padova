@@ -1,0 +1,118 @@
+/////// BREAK INSIDE (usato con columns)
+@mixin break-inside($value) {
+	// value: auto | avoid
+	-webkit-column-break-inside: $value;
+    page-break-inside: $value;
+    break-inside: $value;
+}
+
+/////// ICONE
+/*
+@mixin make-icon($file: "icon_sprites.png", $width: 0, $height: 0, $vertical: 'top', $horizontal: left ) { 
+	display: inline-block;
+	overflow: hidden;
+	@include size($width, $height);
+	background: {
+		image: url($img-path + $file);
+		position: $horizontal $vertical;
+		repeat: no-repeat;
+		color: transparent;
+	}
+}
+*/
+@mixin make-fa ($code, $color: inherit) { 
+	display: inline-block;
+  	font-family: FontAwesome;
+  	content: $code;
+  	color: $color;
+}
+// FLATICON
+@mixin make-flaticon ($name, $size: 20px) {
+  font-family: Flaticon;
+  font-size: $size;
+  font-style: normal;
+  display: inline-block;
+  @extend .flaticon-#{$name};
+}
+// set icone
+.flaticon-businessman137 { content: "\e000"; }
+.flaticon-calendar133 { content: "\e001"; }
+.flaticon-calendar66 { content: "\e002"; }
+.flaticon-checkin { content: "\e003"; }
+.flaticon-close42 { content: "\e004"; }
+.flaticon-creditcard3 { content: "\e005"; }
+.flaticon-email147 { content: "\e006"; }
+.flaticon-exit13 { content: "\e007"; }
+.flaticon-file242 { content: "\e008"; }
+.flaticon-magnifier13 { content: "\e009"; }
+.flaticon-man379 { content: "\e00a"; }
+.flaticon-opened4 { content: "\e00b"; }
+.flaticon-printer70 { content: "\e00c"; }
+.flaticon-right161 { content: "\e00d"; }
+.flaticon-teacher4 { content: "\e00e"; }
+.flaticon-textfile5 { content: "\e00f"; }
+.flaticon-time74 { content: "\e010"; }
+.flaticon-youtube17 { content: "\e011"; }
+
+
+// center vertical
+@mixin align-vertical() {
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   -webkit-transform: translate(0, -50%);
+   -ms-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+}  
+@mixin align-center() {
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;    
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@mixin ellipsis($height, $rows: 5) {                   
+      display: block; /* Fallback for non-webkit */
+      display: -webkit-box;
+      height: $height; /* Fallback for non-webkit */
+      -webkit-line-clamp: $rows;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+}
+
+// GESTIONE COLORI AREE TEMATICHE
+
+@mixin define-area ($n_area, $color, $id-sezione) {
+    // per il menu
+    .globalnavWrapper #portal-globalnav li#portaltab-#{$n_area} {
+      a:focus,
+      a:hover { background-color: transparentize($color, .3); }
+      &.selected a { background-color: transparentize($color, .3); }
+      &.tabOpen a { background-color: $color; }
+    }
+    .globalnavWrapper #submenu-details.submenu-#{$n_area} {
+                                              border-color: $color;
+      .staticItem:first-child h5,
+      .submenuDynamicWrapper ul li:before { color: $color; }      
+    }
+
+    .section-#{$id-sezione} {
+      #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after,
+      #breadcrumbs .breadcrumbsContent .breadcrumbSeparator:before,
+      dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem {
+        a.navTreeItemInPath { color: $color !important; }
+       .navTreeLevel1 li:before {color: $color;}
+      }
+      dl[class*='ortletNavigation'] dd.portletItem { border-color: $color; }
+      dl[class*='ortletNavigation'] dt.portletHeader .tile, 
+      dl[class*='ortletNavigation'] dt.portletHeader a.tile { background-color: $color; 
+        &:focus,
+        &:hover { background-color: darken($color, 20); }
+      }
+    }
+}

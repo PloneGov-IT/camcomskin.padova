@@ -1,0 +1,31 @@
+<div id="camcomskin-searchbox"
+     i18n:domain="plone">
+  <form id="searchGadget_form"
+        action="@@search"
+        tal:attributes="action string:${context/portal_url}/@@search;">
+
+      <span class="searchFieldWrapper">
+        <label class="hiddenStructure"
+            for="SearchableText"
+             i18n:translate="text_search">Search Site</label>
+        <input name="SearchableText"
+             type="text"
+             size="18"
+             value=""
+             title="Search Site"
+             placeholder="Search Site"
+             accesskey="4"
+             i18n:attributes="title title_search_site;
+                              placeholder title_search_site"
+             tal:attributes="value request/form/SearchableText|nothing;"
+             id="SearchableText"
+             class="searchField" />
+
+        <input class="searchButton"
+             type="submit"
+             value="Search"
+             i18n:attributes="value label_search;" />
+        <a class="closeLink" href="#"><span>Close</span></a>
+      </span>
+  </form>
+</div>

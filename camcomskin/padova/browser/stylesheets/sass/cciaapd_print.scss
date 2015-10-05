@@ -1,0 +1,44 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+@import "cciaapd_variables";
+
+// link stampati tra parentesi
+a[href]:after { content: none !important; }
+
+img {width: auto !important; max-width: 100%;}
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; 
+    display: table; 
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+body { font-size: 9pt; font-family: $font-family-base !important;}
+p,
+#content p { margin: 0 0 4pt; line-height: 1.4em; }
+
+h1, h2 { letter-spacing: normal; font-weight: 500; }
+h1, h2, h3, h4, h5, h6, strong, ul, li, #content p, span, div  { font-family: $font-family-base !important; }
+h1 { font-size: 15pt; }
+h2 { font-size: 14pt; }
+h3 { font-size: 12pt; font-weight: 600; }
+
+
+#toplinks-wrapper,
+.searchTile,
+#portal-footer-wrapper,
+#search-filters,
+#pie-prj,
+.chart-title-below,
+.btn_mostra_filtri,
+.sortFilter-wrapper,
+#projectAnchors,
+#portal-personaltools-wrapper,
+.documentByLine,
+#intro-video video          { display: none; }

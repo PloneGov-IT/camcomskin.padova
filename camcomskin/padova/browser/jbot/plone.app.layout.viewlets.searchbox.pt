@@ -1,0 +1,8 @@
+<div id="searchbox"
+     i18n:domain="plone">
+
+  <a tal:attributes="href string:${context/portal_url}/@@search"
+     class="btnSearch">
+     <span>Cerca nel sito</span>
+  </a>
+</div>

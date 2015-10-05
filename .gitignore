@@ -19,3 +19,6 @@ htmlcov/
 output.xml
 *.swp
 /*.egg
+.sass-cache/
+.eggs/
+*.codekit

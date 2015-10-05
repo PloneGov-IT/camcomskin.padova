@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+    <object name="site_properties" meta_type="Plone Property Sheet">
+      <property name="icon_visibility" type="string">authenticated</property>
+      <property name="allowAnonymousViewAbout" type="boolean">True</property>
+    </object>
+    <object name="rer_staticportlet_properties" meta_type="Plone Property Sheet">
+        <property name="title">RER Advanced static portlet properties</property>
+        <property name="portlet_styles_menu" type="lines">
+            <!-- element
+                value="intestazioneScheda imgStemma|Intestazione della scheda con stemma" / -->            
+        </property>
+    </object>
+    <!-- object name="imaging_properties"
+            meta_type="Plone Property Sheet">
+        <property name="allowed_sizes" type="lines" purge="False">
+            <element value="news 300:300"/>
+            <element value="hpslider 1260:270"/>
+        </property>
+    </object -->
+    <object name="navtree_properties" meta_type="Plone Property Sheet">
+      <property name="title">NavigationTree properties</property>
+      <property name="currentFolderOnlyInNavtree" type="boolean">False</property>
+    </object>
+</object>
