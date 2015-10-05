@@ -830,13 +830,25 @@ pre {
   .row:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .officeContactsWrapper .officePhone h6, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, #submenu-details .staticItem, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .officeContactsWrapper .officePhone h6,
+.officeContactsWrapper .officeFax h6,
+.officeContactsWrapper .officeEmail h6,
+.officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, #submenu-details .staticItem, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officeFax p,
+.officeContactsWrapper .officeEmail p,
+.officeContactsWrapper .officePec p, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .officeContactsWrapper .officePhone h6, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .officeContactsWrapper .officePhone p, .col-xs-10, .col-xs-11, .col-xs-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .officeContactsWrapper .officePhone h6,
+.officeContactsWrapper .officeFax h6,
+.officeContactsWrapper .officeEmail h6,
+.officeContactsWrapper .officePec h6, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officeFax p,
+.officeContactsWrapper .officeEmail p,
+.officeContactsWrapper .officePec p, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left; }
 
 .col-xs-1 {
@@ -845,7 +857,10 @@ pre {
 .col-xs-2 {
   width: 16.6666666667%; }
 
-.col-xs-3, .officeContactsWrapper .officePhone h6 {
+.col-xs-3, .officeContactsWrapper .officePhone h6,
+.officeContactsWrapper .officeFax h6,
+.officeContactsWrapper .officeEmail h6,
+.officeContactsWrapper .officePec h6 {
   width: 25%; }
 
 .col-xs-4 {
@@ -863,7 +878,10 @@ pre {
 .col-xs-8 {
   width: 66.6666666667%; }
 
-.col-xs-9, .officeContactsWrapper .officePhone p {
+.col-xs-9, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officeFax p,
+.officeContactsWrapper .officeEmail p,
+.officeContactsWrapper .officePec p {
   width: 75%; }
 
 .col-xs-10 {
@@ -5087,10 +5105,19 @@ button.list-group-item-danger {
     border-left-color: #fff;
     bottom: -10px; }
 
-.clearfix:before, #visual-portal-wrapper:before, .ArchetypesQueryWidget .criteria:before, #edit-bar:before, #portletPageColumns:before, .secondaryMenu .submenuWrapper:before, .globalnavWrapper:before, .globalnavWrapper #portal-globalnav:before, #submenu-details .submenuDetailsContent:before, .officeContactsWrapper .officePhone:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after {
+.clearfix:before, #visual-portal-wrapper:before, .ArchetypesQueryWidget .criteria:before, #edit-bar:before, #portletPageColumns:before, .secondaryMenu .submenuWrapper:before, .globalnavWrapper:before, .globalnavWrapper #portal-globalnav:before, #submenu-details .submenuDetailsContent:before, .officeContactsWrapper .officePhone:before,
+.officeContactsWrapper .officeFax:before,
+.officeContactsWrapper .officeEmail:before,
+.officeContactsWrapper .officePec:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
+.officeContactsWrapper .officeFax:after,
+.officeContactsWrapper .officeEmail:after,
+.officeContactsWrapper .officePec:after {
   content: " ";
   display: table; }
-.clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after {
+.clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
+.officeContactsWrapper .officeFax:after,
+.officeContactsWrapper .officeEmail:after,
+.officeContactsWrapper .officePec:after {
   clear: both; }
 
 .center-block {
@@ -6232,7 +6259,10 @@ dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, 
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
-#content #description, strong, #topbar .claim, .secondaryMenu .submenuItem h5, .secondaryMenu .submenuItem strong, .globalnavWrapper #portal-globalnav li a span:first-child, #submenu-details h5, #submenu-details strong, #submenu-details .closeSubmenu a, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeCurrentItem, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath, .boxScheda h4.boxHeader {
+#content #description, strong, #topbar .claim, .secondaryMenu .submenuItem h5, .secondaryMenu .submenuItem strong, .globalnavWrapper #portal-globalnav li a span:first-child, #submenu-details h5, #submenu-details strong, #submenu-details .closeSubmenu a, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeCurrentItem, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath, .boxScheda h4.boxHeader, .officeContactsWrapper .officePhone h6,
+.officeContactsWrapper .officeFax h6,
+.officeContactsWrapper .officeEmail h6,
+.officeContactsWrapper .officePec h6 {
   font-weight: 600; }
 
 .bold, #portal-personaltools-wrapper #user-name {
@@ -7000,23 +7030,31 @@ dl[class*='ortletNavigation'] dd.portletItem {
     vertical-align: top; }
   .officeContactsWrapper .officeLocation {
     width: 38%;
-    padding-right: 4%; }
+    padding-right: 3%; }
   .officeContactsWrapper .officeContacts {
     border-left: 1px dashed #777;
-    width: 38%;
-    padding: 0 4%; }
+    width: 42%;
+    padding: 0 3%; }
   .officeContactsWrapper .officeExecutive {
     border-left: 1px dashed #777;
-    width: 24%;
-    padding-left: 4%; }
+    width: 20%;
+    padding-left: 3%; }
   .officeContactsWrapper .officeLoc p {
     margin-left: 20px; }
   .officeContactsWrapper .officeTime {
     padding-top: 5px; }
     .officeContactsWrapper .officeTime ul, #content .officeContactsWrapper .officeTime ul {
       margin-left: 20px; }
-  .officeContactsWrapper .officePhone h6 {
-    text-align: right; }
+  .officeContactsWrapper .officePhone h6,
+  .officeContactsWrapper .officeFax h6,
+  .officeContactsWrapper .officeEmail h6,
+  .officeContactsWrapper .officePec h6 {
+    text-align: right;
+    margin: 0.2em 0 0;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    white-space: nowrap; }
 
 #content {
   margin: 0 0 30px; }

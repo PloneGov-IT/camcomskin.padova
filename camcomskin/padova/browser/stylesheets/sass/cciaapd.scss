@@ -668,15 +668,15 @@ dl[class*='ortletNavigation']       {
                                       vertical-align: top;
   }
   .officeLocation                   { width: 38%;
-                                      padding-right: 4%;
+                                      padding-right: 3%;
   }
   .officeContacts                   { border-left: 1px dashed $gray-light;
-                                      width: 38%;
-                                      padding: 0 4%;
+                                      width: 42%;
+                                      padding: 0 3%;
   }
   .officeExecutive                  { border-left: 1px dashed $gray-light;
-                                      width: 24%;
-                                      padding-left: 4%;
+                                      width: 20%;
+                                      padding-left: 3%;
   }
   .officeLoc                        {
     p                               { margin-left: 20px; }
@@ -689,9 +689,18 @@ dl[class*='ortletNavigation']       {
       }
     }
   }
-  .officePhone                      { @extend .clearfix;
+  .officePhone,
+  .officeFax,
+  .officeEmail,
+  .officePec                        { @extend .clearfix;
     h6                              { @extend .col-xs-3;
                                       text-align: right;
+                                      margin:0.2em 0 0;
+                                      padding-right: 0;
+                                      text-transform: uppercase;
+                                      font-size: 0.9em;
+                                      @extend .semibold; 
+                                      white-space: nowrap;
     }
     p                               { @extend .col-xs-9; }
   }
