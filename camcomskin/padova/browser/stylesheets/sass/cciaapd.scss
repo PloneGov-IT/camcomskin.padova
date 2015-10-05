@@ -648,7 +648,7 @@ dl[class*='ortletNavigation']       {
                                       padding-bottom: 5px;
 }
 .officeContactsWrapper              { background-color: $gray-bg;
-                                      padding: 10px 30px;
+                                      padding: 10px 30px 20px;
                                       margin: 40px 0;                                      
   .officeContactsContent            { display: table;
                                       position: relative;
@@ -659,7 +659,7 @@ dl[class*='ortletNavigation']       {
                                       color: $gray-light;
                                       font-size: 1.2em;
   }
-  h5                                { font-size: 1.1em; 
+  h5                                { font-size: 1.05em; 
                                       margin-bottom: 0.5em;
   }
   .officeLocation,
@@ -677,6 +677,14 @@ dl[class*='ortletNavigation']       {
   .officeExecutive                  { border-left: 1px dashed $gray-light;
                                       width: 20%;
                                       padding-left: 3%;
+                                      vertical-align: middle;
+                                      text-align: center;                                                                            
+    &:before                        { @include make-flaticon('businessman137', 78px); 
+                                      color: $link-color;
+                                      display: block;
+                                      padding-bottom: 20px;
+    }    
+    h5                              { text-transform: uppercase; }
   }
   .officeLoc                        {
     p                               { margin-left: 20px; }
@@ -693,16 +701,59 @@ dl[class*='ortletNavigation']       {
   .officeFax,
   .officeEmail,
   .officePec                        { @extend .clearfix;
+                                      padding-bottom: 3px;
     h6                              { @extend .col-xs-3;
                                       text-align: right;
-                                      margin:0.2em 0 0;
+                                      margin:0.3em 0 0;
                                       padding-right: 0;
                                       text-transform: uppercase;
-                                      font-size: 0.9em;
+                                      font-size: 0.85em;
                                       @extend .semibold; 
                                       white-space: nowrap;
     }
-    p                               { @extend .col-xs-9; }
+    p                               { @extend .col-xs-9; 
+                                      margin-bottom: 0 !important;
+    }
+    .officeEmail                    { padding-top: 10px; }
+  }
+}
+.officeDuties                       {
+  h4                                { font-size: 1.4em; }
+}
+#content .proceedingsList           {
+  h2                                { margin: 30px 0 20px; 
+                                      padding-top: 20px;
+                                      position: relative;
+                                      @extend .light;
+    &:before                        { display: block;
+                                      content: '';
+                                      background-color: lighten($blu, 20);
+                                      border-radius: 3px;
+                                      height: 3px;
+                                      width: 60px;
+                                      position: absolute;
+                                      left:0;
+                                      top:0;
+    }
+  }
+  dl                                {
+    dd                              { padding-left: 30px; 
+                                      font-size: 0.9em;
+                                      color: $gray-light;
+                                      margin:4px 0 0;
+    }
+    dt                              { font-size: 1.15em;
+                                      @extend .regular;
+                                      padding-left: 30px;
+                                      margin-top: 10px;
+                                      position: relative;
+      &:before                      { @include make-flaticon('exit13', 17px);
+                                      position: absolute;
+                                      left:0;
+                                      top:0;
+                                      color: $gray-light;
+      }
+    }
   }
 }
 

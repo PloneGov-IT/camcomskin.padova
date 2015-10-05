@@ -5343,7 +5343,7 @@ button.list-group-item-danger {
 	}
 }
 */
-.flaticon-businessman137 {
+.flaticon-businessman137, .officeContactsWrapper .officeExecutive:before {
   content: "\e000"; }
 
 .flaticon-calendar133 {
@@ -5364,7 +5364,7 @@ button.list-group-item-danger {
 .flaticon-email147 {
   content: "\e006"; }
 
-.flaticon-exit13, #submenu-details .submenuDynamicWrapper ul li:before, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li:before {
+.flaticon-exit13, #submenu-details .submenuDynamicWrapper ul li:before, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li:before, #content .proceedingsList dl dt:before {
   content: "\e007"; }
 
 .flaticon-file242 {
@@ -6251,11 +6251,11 @@ input.inputLabelActive {
 .template-folder_contents .newsImageContainer {
   display: none; }
 
-.light, body, #camcomskin-searchbox input.searchButton, .secondaryMenu .submenuItem, #content h1.documentFirstHeading, #portal-footer-wrapper #portlets-footer h4, #portal-footer-wrapper #portlets-footer h5 {
+.light, body, #camcomskin-searchbox input.searchButton, .secondaryMenu .submenuItem, #content .proceedingsList h2, #content h1.documentFirstHeading, #portal-footer-wrapper #portlets-footer h4, #portal-footer-wrapper #portlets-footer h5 {
   font-weight: 300; }
 
 .regular, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel, dl[class*='ortletNavigation'] dt.portletHeader .tile,
-dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .documentDescription, #portal-footer-wrapper #portal-colophon a, #portal-footer-wrapper #portlets-footer dt.portletHeader {
+dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #portal-footer-wrapper #portal-colophon a, #portal-footer-wrapper #portlets-footer dt.portletHeader {
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
@@ -7009,7 +7009,7 @@ dl[class*='ortletNavigation'] dd.portletItem {
 
 .officeContactsWrapper {
   background-color: #EEE;
-  padding: 10px 30px;
+  padding: 10px 30px 20px;
   margin: 40px 0; }
   .officeContactsWrapper .officeContactsContent {
     display: table;
@@ -7021,7 +7021,7 @@ dl[class*='ortletNavigation'] dd.portletItem {
     color: #777;
     font-size: 1.2em; }
   .officeContactsWrapper h5 {
-    font-size: 1.1em;
+    font-size: 1.05em;
     margin-bottom: 0.5em; }
   .officeContactsWrapper .officeLocation,
   .officeContactsWrapper .officeContacts,
@@ -7038,23 +7038,87 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .officeContactsWrapper .officeExecutive {
     border-left: 1px dashed #777;
     width: 20%;
-    padding-left: 3%; }
+    padding-left: 3%;
+    vertical-align: middle;
+    text-align: center; }
+    .officeContactsWrapper .officeExecutive:before {
+      font-family: Flaticon;
+      font-size: 78px;
+      font-style: normal;
+      display: inline-block;
+      color: #9c3524;
+      display: block;
+      padding-bottom: 20px; }
+    .officeContactsWrapper .officeExecutive h5 {
+      text-transform: uppercase; }
   .officeContactsWrapper .officeLoc p {
     margin-left: 20px; }
   .officeContactsWrapper .officeTime {
     padding-top: 5px; }
     .officeContactsWrapper .officeTime ul, #content .officeContactsWrapper .officeTime ul {
       margin-left: 20px; }
-  .officeContactsWrapper .officePhone h6,
-  .officeContactsWrapper .officeFax h6,
-  .officeContactsWrapper .officeEmail h6,
-  .officeContactsWrapper .officePec h6 {
-    text-align: right;
-    margin: 0.2em 0 0;
-    padding-right: 0;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    white-space: nowrap; }
+  .officeContactsWrapper .officePhone,
+  .officeContactsWrapper .officeFax,
+  .officeContactsWrapper .officeEmail,
+  .officeContactsWrapper .officePec {
+    padding-bottom: 3px; }
+    .officeContactsWrapper .officePhone h6,
+    .officeContactsWrapper .officeFax h6,
+    .officeContactsWrapper .officeEmail h6,
+    .officeContactsWrapper .officePec h6 {
+      text-align: right;
+      margin: 0.3em 0 0;
+      padding-right: 0;
+      text-transform: uppercase;
+      font-size: 0.85em;
+      white-space: nowrap; }
+    .officeContactsWrapper .officePhone p,
+    .officeContactsWrapper .officeFax p,
+    .officeContactsWrapper .officeEmail p,
+    .officeContactsWrapper .officePec p {
+      margin-bottom: 0 !important; }
+    .officeContactsWrapper .officePhone .officeEmail,
+    .officeContactsWrapper .officeFax .officeEmail,
+    .officeContactsWrapper .officeEmail .officeEmail,
+    .officeContactsWrapper .officePec .officeEmail {
+      padding-top: 10px; }
+
+.officeDuties h4 {
+  font-size: 1.4em; }
+
+#content .proceedingsList h2 {
+  margin: 30px 0 20px;
+  padding-top: 20px;
+  position: relative; }
+  #content .proceedingsList h2:before {
+    display: block;
+    content: '';
+    background-color: #4f6a80;
+    border-radius: 3px;
+    height: 3px;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    top: 0; }
+#content .proceedingsList dl dd {
+  padding-left: 30px;
+  font-size: 0.9em;
+  color: #777;
+  margin: 4px 0 0; }
+#content .proceedingsList dl dt {
+  font-size: 1.15em;
+  padding-left: 30px;
+  margin-top: 10px;
+  position: relative; }
+  #content .proceedingsList dl dt:before {
+    font-family: Flaticon;
+    font-size: 17px;
+    font-style: normal;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #777; }
 
 #content {
   margin: 0 0 30px; }
