@@ -140,6 +140,15 @@ input.label:empty               { display: inline-block; }
         .description            { font-size: 0.9em; }
     }
 }
+
+#content .field textarea[name$=".description"], 
+#archetypes-fieldname-description textarea#description {
+    font-family: inherit;
+    font-size: 1em;
+    color: inherit;
+    font-weight: 500;
+    padding: 0.4em 0.5em;
+}
 .contentActions { position: relative;
                   top: 7px;
 }
@@ -307,10 +316,11 @@ textarea#htmlSource { max-height: 300px; }
 
 
 /*** Tiny ***/
-body#content.mceContentBody {font-family: $font-family-sans-serif; font-size: 135%;}
+body#content.mceContentBody {font-family: $font-family-sans-serif; font-size: 140%;}
 .ploneSkin table.mceLayout td.mceToolbar { background-color: #FAFAFA !important; }
 .ploneSkin .mceText,
 .ploneSkin .mceOpen                      { border-bottom-width: 1px !important; }
+.plonepopup .mceAlert .mceOk             { height: auto; }
 // link per disabilitare tiny
 //#content .suppressVisualEditor {display: block !important;}
 
