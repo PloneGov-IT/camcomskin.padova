@@ -5355,7 +5355,7 @@ button.list-group-item-danger {
 .flaticon-printer70 {
   content: "\e00c"; }
 
-.flaticon-right161, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel:before, #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after, .boxOffice h5.officeTitle:after {
+.flaticon-right161, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel:before, #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after, .boxScheda ul.listLink li.linkItem a:before, .boxOffice h5.officeTitle:after {
   content: "\e00d"; }
 
 .flaticon-teacher4 {
@@ -6232,10 +6232,10 @@ dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, 
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
-#content #description, strong, #topbar .claim, .secondaryMenu .submenuItem h5, .secondaryMenu .submenuItem strong, .globalnavWrapper #portal-globalnav li a span:first-child, #submenu-details h5, #submenu-details strong, #submenu-details .closeSubmenu a, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeCurrentItem, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath {
+#content #description, strong, #topbar .claim, .secondaryMenu .submenuItem h5, .secondaryMenu .submenuItem strong, .globalnavWrapper #portal-globalnav li a span:first-child, #submenu-details h5, #submenu-details strong, #submenu-details .closeSubmenu a, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeCurrentItem, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath, .boxScheda h4.boxHeader {
   font-weight: 600; }
 
-.bold, #portal-personaltools-wrapper #user-name, .boxScheda h4.boxHeader {
+.bold, #portal-personaltools-wrapper #user-name {
   font-weight: 700; }
 
 a {
@@ -6325,7 +6325,8 @@ img {
   padding: 0; }
 
 #portal-column-two {
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 30px; }
 
 @media (max-width: 768px) {
   .row {
@@ -6827,18 +6828,19 @@ dl[class*='ortletNavigation'] dd.portletItem {
 
 .boxScheda {
   border-left: 1px solid #A6A6A6;
-  padding: 0 0 30px 15px;
-  position: relative;
+  border-top: 1px solid #A6A6A6;
+  padding: 25px 0 20px 15px;
   font-size: 0.95em; }
   .boxScheda h4.boxHeader {
-    font-size: 0.9em;
+    font-size: 1em;
     margin: 0 0 15px;
+    position: relative;
     color: #000;
     text-transform: uppercase; }
     .boxScheda h4.boxHeader:before {
       position: absolute;
       top: 0;
-      left: -6px;
+      left: -22px;
       content: '';
       width: 12px;
       height: 12px;
@@ -6853,42 +6855,112 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .boxScheda p,
   .boxScheda ul {
     margin: 0; }
+  .boxScheda ul.listLink li {
+    margin-top: 14px; }
+    .boxScheda ul.listLink li:first-child {
+      margin-top: 0; }
+    .boxScheda ul.listLink li a {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      color: #313131;
+      line-height: 1.4em; }
+      .boxScheda ul.listLink li a:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: "";
+        color: #FFF;
+        background-color: #9c3524;
+        padding: 2px 5px 1px;
+        border-radius: 2px;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .boxScheda ul.listLink li a:focus, .boxScheda ul.listLink li a:hover {
+        color: #9c3524; }
+        .boxScheda ul.listLink li a:focus:before, .boxScheda ul.listLink li a:hover:before {
+          background-color: #313131; }
+    .boxScheda ul.listLink li.linkPdf a:before {
+      content: '\f1c1'; }
+    .boxScheda ul.listLink li.linkItem a:before {
+      font-family: Flaticon;
+      font-size: 14px;
+      font-style: normal;
+      display: inline-block;
+      color: #9c3524;
+      background-color: transparent; }
+    .boxScheda ul.listLink li.linkItem a:focus:before, .boxScheda ul.listLink li.linkItem a:hover:before {
+      color: #313131; }
 
-.boxOffice h5.officeTitle {
-  font-size: 1.1em;
-  margin: 0 0 10px;
-  line-height: 1.5em; }
-  .boxOffice h5.officeTitle:after {
-    font-family: Flaticon;
-    font-size: 11px;
-    font-style: normal;
-    display: inline-block;
-    color: #313131;
-    margin-left: 4px; }
-  .boxOffice h5.officeTitle:focus:after, .boxOffice h5.officeTitle:hover:after {
-    color: red; }
-.boxOffice .officeTime ul {
-  position: relative;
-  padding-left: 20px;
-  margin-top: 10px; }
-  .boxOffice .officeTime ul:before {
-    display: inline-block;
-    font-family: FontAwesome;
-    content: "";
-    color: #777;
-    position: absolute;
-    left: 0;
-    top: -2px;
-    font-size: 17px; }
-.boxOffice .officeEmail a,
-.boxOffice .officePec a {
-  color: #313131;
-  border-bottom: 1px dotted #313131; }
-  .boxOffice .officeEmail a:focus, .boxOffice .officeEmail a:hover,
-  .boxOffice .officePec a:focus,
-  .boxOffice .officePec a:hover {
+.boxNorme ul.listLink li a {
+  padding-left: 24px; }
+  .boxNorme ul.listLink li a:before {
+    content: '\f138';
+    background-color: transparent;
     color: #9c3524;
-    border-bottom: 1px solid #9c3524; }
+    top: 2px;
+    padding: 0;
+    font-size: 16px; }
+  .boxNorme ul.listLink li a:focus:before, .boxNorme ul.listLink li a:hover:before {
+    color: #313131;
+    background-color: transparent; }
+
+.boxOffice {
+  padding-top: 0;
+  border-top: 0; }
+  .boxOffice h5.officeTitle {
+    font-size: 1.1em;
+    margin: 0 0 10px;
+    line-height: 1.5em; }
+    .boxOffice h5.officeTitle:after {
+      font-family: Flaticon;
+      font-size: 11px;
+      font-style: normal;
+      display: inline-block;
+      color: #313131;
+      margin-left: 4px; }
+    .boxOffice h5.officeTitle:focus:after, .boxOffice h5.officeTitle:hover:after {
+      color: red; }
+  .boxOffice .officeTime ul {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 10px; }
+    .boxOffice .officeTime ul:before {
+      display: inline-block;
+      font-family: FontAwesome;
+      content: "";
+      color: #777;
+      position: absolute;
+      left: 0;
+      top: -2px;
+      font-size: 17px; }
+  .boxOffice .officeEmail a,
+  .boxOffice .officePec a {
+    color: #313131;
+    border-bottom: 1px dotted #313131; }
+    .boxOffice .officeEmail a:focus, .boxOffice .officeEmail a:hover,
+    .boxOffice .officePec a:focus,
+    .boxOffice .officePec a:hover {
+      color: #9c3524;
+      border-bottom: 1px solid #9c3524; }
+
+.boxArchivio {
+  padding-bottom: 0; }
+  .boxArchivio h4.boxHeader {
+    margin-bottom: 0;
+    top: 3px; }
+    .boxArchivio h4.boxHeader:before {
+      top: 3px; }
+    .boxArchivio h4.boxHeader a {
+      display: inline-block; }
+      .boxArchivio h4.boxHeader a:after {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: "";
+        color: #313131;
+        margin-left: 10px; }
+      .boxArchivio h4.boxHeader a:focus:after, .boxArchivio h4.boxHeader a:hover:after {
+        color: #9c3524; }
 
 #content {
   margin: 0 0 30px; }

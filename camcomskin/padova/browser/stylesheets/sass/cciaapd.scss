@@ -31,7 +31,7 @@ img { max-width: 100%; }
 #portal-columns,
 #viewlet-below-content-title { padding:0;}
 
-#portal-column-two           { padding-top: 50px; }
+#portal-column-two           { padding-top: 50px; padding-bottom: 30px; }
 
 
 // fix per responsive
@@ -495,17 +495,18 @@ dl[class*='ortletNavigation']       {
 
 // PORTLET PER SCHEDA ATTIVITA'
 .boxScheda                          { border-left: 1px solid #A6A6A6;
-                                      padding: 0 0 $grid-gutter-width $grid-gutter-width/2;
-                                      position: relative;
+                                      border-top: 1px solid #A6A6A6;
+                                      padding: 25px 0 20px 15px;
                                       font-size: 0.95em;
-  h4.boxHeader                      { font-size: 0.9em;
-                                      @extend .bold;
+  h4.boxHeader                      { font-size: 1em;
+                                      @extend .semibold;
                                       margin:0 0 15px;
+                                      position: relative;
                                       color: #000;
                                       text-transform: uppercase;
     &:before                        { position: absolute;
                                       top: 0;
-                                      left: -6px;
+                                      left: -22px;
                                       content: '';
                                       width: 12px;
                                       height:12px;
@@ -520,11 +521,65 @@ dl[class*='ortletNavigation']       {
                                       margin: 15px 0 5px;
   }
   p,
-  ul                               { margin:0; }
+  ul                                { margin:0; }
+  ul.listLink                       {
+    li                              { margin-top: 14px;
+      &:first-child                 { margin-top: 0; }
+      a                             { display: block;
+                                      position: relative;
+                                      padding-left: 30px;
+                                      color: $text-color;
+                                      line-height: 1.4em;
+        &:before                    { @include make-fa('\f0f6', #FFF);
+                                      background-color: $link-color;
+                                      padding: 2px 5px 1px;
+                                      border-radius: 2px;
+                                      position: absolute;
+                                      top: 0;
+                                      left: 0;
+        }                                      
+        &:focus,
+        &:hover                     { color: $link-color;
+          &:before                  { background-color: $text-color; }
+        }
+      }
+      &.linkPdf a:before            { content: '\f1c1'; }
+      &.linkItem a                  { 
+        &:before                    { @include make-flaticon('right161', 14px); 
+                                      color: $link-color;
+                                      background-color: $tr;
+        }
+        &:focus,
+        &:hover                     {
+          &:before                  { color: $text-color; }
+        }          
+      }
+    }    
+  }
+}
+
+// PORTLET NORMATIVA                
+.boxNorme                           { 
+  ul.listLink li a                  { padding-left: 24px;
+    &:before                        { content: '\f138';
+                                      background-color: $tr;
+                                      color: $link-color;
+                                      top: 2px;
+                                      padding:0;
+                                      font-size: 16px;
+    }
+    &:focus,
+    &:hover                         {
+      &:before                      { color: $text-color; 
+                                      background-color: $tr;
+      }
+    }
+  }
 }
 
 // PORTLET UFFICIO
-.boxOffice                          { 
+.boxOffice                          { padding-top: 0;
+                                      border-top: 0;
   h5.officeTitle                    { font-size: 1.1em;
                                       margin: 0 0 10px;
                                       line-height: 1.5em;                                      
@@ -558,6 +613,23 @@ dl[class*='ortletNavigation']       {
       &:focus,
       &:hover                       { color: $link-color; 
                                       border-bottom: 1px solid $link-color;
+      }
+    }
+  }
+}
+
+// PORTLET ARCHIVIO
+.boxArchivio                        { padding-bottom: 0;
+  h4.boxHeader                      { margin-bottom: 0; 
+                                      top: 3px;
+    &:before                        { top: 3px; }
+    a                               { display: inline-block;
+      &:after                       { @include make-fa('\f115', $text-color); 
+                                      margin-left: 10px;
+      }
+      &:focus,
+      &:hover                       {
+        &:after                     { color: $link-color; }
       }
     }
   }
