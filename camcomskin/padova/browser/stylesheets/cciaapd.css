@@ -5368,7 +5368,7 @@ button.list-group-item-danger {
 .flaticon-creditcard3 {
   content: "\e005"; }
 
-.flaticon-email147 {
+.flaticon-email147, #content .documentActions ul li#document-action-sendto a:before {
   content: "\e006"; }
 
 .flaticon-exit13, #submenu-details .submenuDynamicWrapper ul li:before, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li:before, #content .proceedingsList dl dt:before {
@@ -5386,7 +5386,7 @@ button.list-group-item-danger {
 .flaticon-opened4 {
   content: "\e00b"; }
 
-.flaticon-printer70 {
+.flaticon-printer70, #content .documentActions ul li#document-action-print a:before {
   content: "\e00c"; }
 
 .flaticon-right161, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel:before, #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after, .boxScheda ul.listLink li.linkItem a:before, .boxOffice h5.officeTitle:after {
@@ -7161,7 +7161,24 @@ dl[class*='ortletNavigation'] dd.portletItem {
     #content .documentActions ul li:first-child {
       margin-right: 20px; }
     #content .documentActions ul li a {
-      color: #777; }
+      color: #777;
+      border: 0;
+      text-transform: uppercase;
+      font-size: 0.9em; }
+      #content .documentActions ul li a:before {
+        color: #9c3524;
+        vertical-align: middle;
+        margin-right: 8px; }
+    #content .documentActions ul li#document-action-print a:before {
+      font-family: Flaticon;
+      font-size: 30px;
+      font-style: normal;
+      display: inline-block; }
+    #content .documentActions ul li#document-action-sendto a:before {
+      font-family: Flaticon;
+      font-size: 30px;
+      font-style: normal;
+      display: inline-block; }
 
 #relatedItemBox {
   margin-top: 30px;

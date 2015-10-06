@@ -789,7 +789,17 @@ dl[class*='ortletNavigation']       {
     li                              { display: inline-block;
                                       list-style: none;
       &:first-child                 { margin-right: 20px; }
-      a                             { color: $gray-light; }
+      a                             { color: $gray-light; 
+                                      border:0;
+                                      text-transform: uppercase;
+                                      font-size: 0.9em;
+        &:before                    { color: $link-color;
+                                      vertical-align: middle;
+                                      margin-right: 8px;
+        }
+      }
+      &#document-action-print a:before { @include make-flaticon('printer70', 30px); }
+      &#document-action-sendto a:before { @include make-flaticon('email147', 30px); }
     }
   }
 }
