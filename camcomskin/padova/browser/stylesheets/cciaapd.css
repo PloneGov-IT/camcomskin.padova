@@ -5377,7 +5377,7 @@ button.list-group-item-danger {
 .flaticon-file242 {
   content: "\e008"; }
 
-.flaticon-magnifier13, #searchbox a.btnSearch:before, #camcomskin-searchbox .searchFieldWrapper:before {
+.flaticon-magnifier13, #searchbox a.btnSearch:before, #camcomskin-searchbox .searchFieldWrapper:before, #search-field:before {
   content: "\e009"; }
 
 .flaticon-man379 {
@@ -6258,7 +6258,7 @@ input.inputLabelActive {
 .template-folder_contents .newsImageContainer {
   display: none; }
 
-.light, body, #camcomskin-searchbox input.searchButton, .secondaryMenu .submenuItem, #content .proceedingsList h2, #content h1.documentFirstHeading, #portal-footer-wrapper #portlets-footer h4, #portal-footer-wrapper #portlets-footer h5 {
+.light, body, #camcomskin-searchbox input.searchButton, #search-field input.searchButton, .secondaryMenu .submenuItem, #content .proceedingsList h2, #content h1.documentFirstHeading, #portal-footer-wrapper #portlets-footer h4, #portal-footer-wrapper #portlets-footer h5 {
   font-weight: 300; }
 
 .regular, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel, dl[class*='ortletNavigation'] dt.portletHeader .tile,
@@ -6496,6 +6496,43 @@ img {
       color: #313131;
       font-size: 24px;
       margin-left: 10px; }
+
+#search-field {
+  position: relative;
+  max-width: 550px;
+  white-space: nowrap;
+  margin: 0 auto; }
+  #search-field:before {
+    font-family: Flaticon;
+    font-size: 35px;
+    font-style: normal;
+    display: inline-block;
+    color: #CCC;
+    display: inline-block;
+    position: absolute;
+    left: 14px;
+    top: 22px;
+    z-index: 100; }
+  #search-field input[name='SearchableText'] {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #ddd;
+    background-color: #f4f4f2;
+    font-size: 1.6em;
+    padding: 0.3em 0.7em 0.3em 60px;
+    height: auto;
+    color: #000; }
+  #search-field input.searchButton {
+    border-radius: 0;
+    text-transform: uppercase;
+    background-color: #283641;
+    border: 0;
+    margin: -0.65em 0 0 -4px;
+    padding: 0.7em 1em;
+    font-size: 1.5em !important; }
+
+.searchResults cite {
+  font-size: 0.9em; }
 
 #portal-logo {
   margin: 20px 0 0; }
@@ -7134,6 +7171,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
     position: relative;
     margin: 0 0 30px;
     padding-bottom: 10px; }
+    .template-search #content h1.documentFirstHeading {
+      margin-bottom: 10px; }
     #content h1.documentFirstHeading:before {
       display: block;
       content: '';
@@ -7179,6 +7218,19 @@ dl[class*='ortletNavigation'] dd.portletItem {
       font-size: 30px;
       font-style: normal;
       display: inline-block; }
+
+#content .listingBar {
+  padding-top: 20px; }
+  #content .listingBar span {
+    color: #777; }
+  #content .listingBar a {
+    border: 1px solid #839db2;
+    border-radius: 3px;
+    color: #283641;
+    margin: 0 2px; }
+    #content .listingBar a:focus, #content .listingBar a:hover {
+      background-color: #839db2;
+      color: #FFF !important; }
 
 #relatedItemBox {
   margin-top: 30px;

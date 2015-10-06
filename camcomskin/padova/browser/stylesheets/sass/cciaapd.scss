@@ -147,6 +147,42 @@ img { max-width: 100%; }
     span                    { @extend .sr-only; }
   }
 }
+// PAGINA RICERCA
+#search-field                     { position: relative;
+                                    max-width: 550px;
+                                    white-space: nowrap;
+                                    margin: 0 auto;
+  &:before                        { @include make-flaticon('magnifier13', 35px);
+                                    color: $gray-lighter;
+                                    display: inline-block;
+                                    position: absolute;
+                                    left: 14px;
+                                    top: 22px;
+                                    z-index: 100;
+  }
+  input[name='SearchableText']    { 
+                                    box-shadow: none;
+                                    border-radius: 0;
+                                    border:1px solid #ddd;
+                                    background-color: #f4f4f2;
+                                    font-size: 1.6em;
+                                    padding: 0.3em 0.7em 0.3em 60px;
+                                    height: auto;
+                                    color: #000;
+  }
+  input.searchButton              { border-radius: 0;
+                                    text-transform: uppercase;
+                                    @extend .light; 
+                                    background-color: $blu;
+                                    border:0;
+                                    margin: -0.65em 0 0 -4px;
+                                    padding: 0.7em 1em;
+                                    font-size: 1.5em !important;
+  }
+}
+.searchResults                    {
+  cite                            { font-size: 0.9em; }
+}
 
 // LOGO
 #portal-logo                { margin: 20px 0 0;
@@ -764,16 +800,17 @@ dl[class*='ortletNavigation']       {
                                       position: relative;
                                       margin: 0 0 $grid-gutter-width;
                                       padding-bottom: 10px;
-        &:before                    { display: block;
-                                      content: '';
-                                      background-color: lighten($blu, 20);
-                                      border-radius: 3px;
-                                      height: 3px;
-                                      width: 60px;
-                                      position: absolute;
-                                      left:0;
-                                      bottom:0;
-        }
+      .template-search &            { margin-bottom: 10px; }
+      &:before                    { display: block;
+                                    content: '';
+                                    background-color: lighten($blu, 20);
+                                    border-radius: 3px;
+                                    height: 3px;
+                                    width: 60px;
+                                    position: absolute;
+                                    left:0;
+                                    bottom:0;
+      }
     }
     .documentDescription            { @extend .regular;
                                       margin-bottom: 20px;
@@ -800,6 +837,20 @@ dl[class*='ortletNavigation']       {
       }
       &#document-action-print a:before { @include make-flaticon('printer70', 30px); }
       &#document-action-sendto a:before { @include make-flaticon('email147', 30px); }
+    }
+  }
+}
+
+// LISTING BAR (PAGINAZIONE)
+#content .listingBar                 { padding-top: 20px;
+  span                               { color: $gray-light; }
+  a                                  { border: 1px solid lighten($blu, 40);
+                                       border-radius: 3px;
+                                       color: $blu;
+                                       margin: 0 2px;
+    &:focus,
+    &:hover                          { background-color: lighten($blu, 40);
+                                       color: #FFF !important;
     }
   }
 }
