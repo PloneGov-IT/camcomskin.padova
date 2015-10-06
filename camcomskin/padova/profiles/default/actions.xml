@@ -2,7 +2,7 @@
 <object name="portal_actions" meta_type="Plone Actions Tool"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
- <object name="document_actions" meta_type="CMF Action Category">  
+ <object name="document_actions" meta_type="CMF Action Category">
   <object name="print" meta_type="CMF Action" i18n:domain="plone">
    <property name="title" i18n:translate="">Print this</property>
    <property name="url_expr">string:javascript:this.print();</property>
@@ -10,7 +10,7 @@
   </object>
   <object name="sendto" meta_type="CMF Action">
    <property name="title">Invia</property>
-   <property name="url_expr"></property>
+   <property name="url_expr">string:$object_url/sendto_form</property>
    <property name="link_target"></property>
    <property name="icon_expr"></property>
    <property name="available_expr"></property>
