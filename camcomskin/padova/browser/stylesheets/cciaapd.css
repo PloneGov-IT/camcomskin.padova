@@ -7317,6 +7317,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .section-avvia-attivita-impresa dl[class*='ortletNavigation'] dt.portletHeader a.tile:focus,
   .section-avvia-attivita-impresa dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #213e3b; }
+.section-avvia-attivita-impresa #content h1.documentFirstHeading:before {
+  background-color: #45807A; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-1 a:focus,
 .globalnavWrapper #portal-globalnav li#portaltab-1 a:hover {
@@ -7349,6 +7351,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .section-conosci-gestisci-impresa dl[class*='ortletNavigation'] dt.portletHeader a.tile:focus,
   .section-conosci-gestisci-impresa dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #6c471e; }
+.section-conosci-gestisci-impresa #content h1.documentFirstHeading:before {
+  background-color: #bb7c35; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-2 a:focus,
 .globalnavWrapper #portal-globalnav li#portaltab-2 a:hover {
@@ -7381,6 +7385,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .section-promuovi-in-italia-e-estero dl[class*='ortletNavigation'] dt.portletHeader a.tile:focus,
   .section-promuovi-in-italia-e-estero dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #354e5a; }
+.section-promuovi-in-italia-e-estero #content h1.documentFirstHeading:before {
+  background-color: #5b859a; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-3 a:focus,
 .globalnavWrapper #portal-globalnav li#portaltab-3 a:hover {
@@ -7413,6 +7419,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .section-finanziamenti-innovazione dl[class*='ortletNavigation'] dt.portletHeader a.tile:focus,
   .section-finanziamenti-innovazione dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #5e693b; }
+.section-finanziamenti-innovazione #content h1.documentFirstHeading:before {
+  background-color: #97a763; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-4 a:focus,
 .globalnavWrapper #portal-globalnav li#portaltab-4 a:hover {
@@ -7445,3 +7453,5 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .section-tutela-impresa-e-consumatore dl[class*='ortletNavigation'] dt.portletHeader a.tile:focus,
   .section-tutela-impresa-e-consumatore dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #77602a; }
+.section-tutela-impresa-e-consumatore #content h1.documentFirstHeading:before {
+  background-color: #bf9b48; }

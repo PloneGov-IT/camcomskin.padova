@@ -114,5 +114,6 @@
         &:focus,
         &:hover { background-color: darken($color, 20); }
       }
+      #content h1.documentFirstHeading:before { background-color: $color; }
     }
 }
