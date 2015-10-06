@@ -7,8 +7,12 @@
     <object name="rer_staticportlet_properties" meta_type="Plone Property Sheet">
         <property name="title">RER Advanced static portlet properties</property>
         <property name="portlet_styles_menu" type="lines">
-            <!-- element
-                value="intestazioneScheda imgStemma|Intestazione della scheda con stemma" / -->            
+            <element
+                value="portletBg|Sfondo grigio" />
+            <element
+                value="portletBg portletImg|Sfondo grigio e foto dietro al titolo" />
+            <element
+                value="portletServiziOnline|Box Servizi Online" />
         </property>
     </object>
     <!-- object name="imaging_properties"

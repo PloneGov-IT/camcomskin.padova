@@ -116,5 +116,14 @@
       }
       #content h1.documentFirstHeading:before,
       #content .proceedingsList h2:before { background-color: $color; }
+      dl.rerPortletAdvancedStatic,
+      div.rerPortletAdvancedStatic        { 
+        dt.portletHeader                  { border-color: $color;
+                                            color: $color;
+          a.tile                          { color: $color; }
+        }
+        dd.portletItem,
+        .portletItem                      { border-color: $color; }
+      }
     }
 }
