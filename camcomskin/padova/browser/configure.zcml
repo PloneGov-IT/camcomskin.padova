@@ -25,6 +25,15 @@
         layer=".interfaces.IThemeSpecific" />
     />
 
+  <!-- Document actions -->
+     <browser:viewlet
+        name="plone.abovecontenttitle.documentactions"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+        class="plone.app.layout.viewlets.content.DocumentActionsViewlet"
+        permission="zope2.View"
+        layer=".interfaces.IThemeSpecific"
+        />
+
   <!-- The search box -->
   <browser:viewlet
       name="camomskin.searchbox"

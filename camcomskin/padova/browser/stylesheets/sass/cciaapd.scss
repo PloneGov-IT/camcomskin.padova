@@ -750,7 +750,7 @@ dl[class*='ortletNavigation']       {
       &:before                      { @include make-flaticon('exit13', 17px);
                                       position: absolute;
                                       left:0;
-                                      top:0;
+                                      top:0.1em;
                                       color: $gray-light;
       }
     }
@@ -781,6 +781,17 @@ dl[class*='ortletNavigation']       {
 }
 #plone-document-byline              { text-align: right;
   .documentModified                 { font-style: italic; color: $gray-light; }
+}
+
+// DOCUMENT ACTIONS
+#content .documentActions           { @extend .pull-right; 
+  ul                                { display: inline-block;
+    li                              { display: inline-block;
+                                      list-style: none;
+      &:first-child                 { margin-right: 20px; }
+      a                             { color: $gray-light; }
+    }
+  }
 }
 
 // CORRELATI

@@ -640,7 +640,8 @@ blockquote {
 blockquote.pull-right,
 #topbar blockquote#top-link-group,
 blockquote#searchbox,
-blockquote.secondaryMenu {
+blockquote.secondaryMenu,
+#content blockquote.documentActions {
   padding-right: 15px;
   padding-left: 0;
   border-right: 5px solid #CCC;
@@ -653,14 +654,17 @@ blockquote.secondaryMenu {
   #topbar blockquote#top-link-group footer:before,
   blockquote#searchbox footer:before,
   blockquote.secondaryMenu footer:before,
+  #content blockquote.documentActions footer:before,
   blockquote.pull-right small:before,
   #topbar blockquote#top-link-group small:before,
   blockquote#searchbox small:before,
   blockquote.secondaryMenu small:before,
+  #content blockquote.documentActions small:before,
   blockquote.pull-right .small:before,
   #topbar blockquote#top-link-group .small:before,
   blockquote#searchbox .small:before,
-  blockquote.secondaryMenu .small:before {
+  blockquote.secondaryMenu .small:before,
+  #content blockquote.documentActions .small:before {
     content: ''; }
   .blockquote-reverse footer:after,
   .blockquote-reverse small:after,
@@ -669,14 +673,17 @@ blockquote.secondaryMenu {
   #topbar blockquote#top-link-group footer:after,
   blockquote#searchbox footer:after,
   blockquote.secondaryMenu footer:after,
+  #content blockquote.documentActions footer:after,
   blockquote.pull-right small:after,
   #topbar blockquote#top-link-group small:after,
   blockquote#searchbox small:after,
   blockquote.secondaryMenu small:after,
+  #content blockquote.documentActions small:after,
   blockquote.pull-right .small:after,
   #topbar blockquote#top-link-group .small:after,
   blockquote#searchbox .small:after,
-  blockquote.secondaryMenu .small:after {
+  blockquote.secondaryMenu .small:after,
+  #content blockquote.documentActions .small:after {
     content: '\00A0 \2014'; }
 
 address {
@@ -5125,7 +5132,7 @@ button.list-group-item-danger {
   margin-left: auto;
   margin-right: auto; }
 
-.pull-right, #topbar #top-link-group, #searchbox, .secondaryMenu {
+.pull-right, #topbar #top-link-group, #searchbox, .secondaryMenu, #content .documentActions {
   float: right !important; }
 
 .pull-left, #portal-personaltools-wrapper .brand, #topbar .claim, #portal-logo {
@@ -7117,7 +7124,7 @@ dl[class*='ortletNavigation'] dd.portletItem {
     display: inline-block;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0.1em;
     color: #777; }
 
 #content {
@@ -7145,6 +7152,16 @@ dl[class*='ortletNavigation'] dd.portletItem {
   #plone-document-byline .documentModified {
     font-style: italic;
     color: #777; }
+
+#content .documentActions ul {
+  display: inline-block; }
+  #content .documentActions ul li {
+    display: inline-block;
+    list-style: none; }
+    #content .documentActions ul li:first-child {
+      margin-right: 20px; }
+    #content .documentActions ul li a {
+      color: #777; }
 
 #relatedItemBox {
   margin-top: 30px;
@@ -7317,7 +7334,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .section-avvia-attivita-impresa dl[class*='ortletNavigation'] dt.portletHeader a.tile:focus,
   .section-avvia-attivita-impresa dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #213e3b; }
-.section-avvia-attivita-impresa #content h1.documentFirstHeading:before {
+.section-avvia-attivita-impresa #content h1.documentFirstHeading:before,
+.section-avvia-attivita-impresa #content .proceedingsList h2:before {
   background-color: #45807A; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-1 a:focus,
@@ -7351,7 +7369,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .section-conosci-gestisci-impresa dl[class*='ortletNavigation'] dt.portletHeader a.tile:focus,
   .section-conosci-gestisci-impresa dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #6c471e; }
-.section-conosci-gestisci-impresa #content h1.documentFirstHeading:before {
+.section-conosci-gestisci-impresa #content h1.documentFirstHeading:before,
+.section-conosci-gestisci-impresa #content .proceedingsList h2:before {
   background-color: #bb7c35; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-2 a:focus,
@@ -7385,7 +7404,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .section-promuovi-in-italia-e-estero dl[class*='ortletNavigation'] dt.portletHeader a.tile:focus,
   .section-promuovi-in-italia-e-estero dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #354e5a; }
-.section-promuovi-in-italia-e-estero #content h1.documentFirstHeading:before {
+.section-promuovi-in-italia-e-estero #content h1.documentFirstHeading:before,
+.section-promuovi-in-italia-e-estero #content .proceedingsList h2:before {
   background-color: #5b859a; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-3 a:focus,
@@ -7419,7 +7439,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .section-finanziamenti-innovazione dl[class*='ortletNavigation'] dt.portletHeader a.tile:focus,
   .section-finanziamenti-innovazione dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #5e693b; }
-.section-finanziamenti-innovazione #content h1.documentFirstHeading:before {
+.section-finanziamenti-innovazione #content h1.documentFirstHeading:before,
+.section-finanziamenti-innovazione #content .proceedingsList h2:before {
   background-color: #97a763; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-4 a:focus,
@@ -7453,5 +7474,6 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .section-tutela-impresa-e-consumatore dl[class*='ortletNavigation'] dt.portletHeader a.tile:focus,
   .section-tutela-impresa-e-consumatore dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #77602a; }
-.section-tutela-impresa-e-consumatore #content h1.documentFirstHeading:before {
+.section-tutela-impresa-e-consumatore #content h1.documentFirstHeading:before,
+.section-tutela-impresa-e-consumatore #content .proceedingsList h2:before {
   background-color: #bf9b48; }

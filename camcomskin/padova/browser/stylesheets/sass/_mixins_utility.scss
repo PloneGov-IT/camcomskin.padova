@@ -114,6 +114,7 @@
         &:focus,
         &:hover { background-color: darken($color, 20); }
       }
-      #content h1.documentFirstHeading:before { background-color: $color; }
+      #content h1.documentFirstHeading:before,
+      #content .proceedingsList h2:before { background-color: $color; }
     }
 }
