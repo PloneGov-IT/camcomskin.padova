@@ -397,6 +397,7 @@ img { max-width: 100%; }
                                top: 0.3em;
                                left: 0;
                 }
+                a.subitemSelected { @extend .semibold; }
             }
         }
         a.dynamicSectionExploreLabel { color: $link-color;
@@ -467,10 +468,10 @@ img { max-width: 100%; }
 // PORTLET STATICA
 dl.rerPortletAdvancedStatic,
 div.rerPortletAdvancedStatic        { 
-  dt.portletHeader                  { @extend .semibold;
-                                      font-size: 1.1em;
+  dt.portletHeader                  { @extend .regular;
+                                      font-size: 1.3em;
                                       padding: {left: 0; right:0; }
-                                      border-bottom: 3px solid $blu;
+                                      border-bottom: 2px solid $blu;
                                       color: $blu;
                                       background-color: $tr;
     a.tile                          { color: $blu; 
@@ -480,7 +481,6 @@ div.rerPortletAdvancedStatic        {
   }
   dd.portletItem,
   .portletItem                      { padding: 15px 0 0; 
-                                      border-bottom: 3px solid $blu;
     p                               { 
       &,
       #content &                    { margin-bottom: 0.5em; }
@@ -502,6 +502,7 @@ div.rerPortletAdvancedStatic        {
                                       font-style: italic;
                                       font-style: italic;
                                       font-size: 0.9em;
+                                      border-top: 2px solid $blu;
     a                               { border:0;
                                       @extend .regular;
       &:after                       { @include make-flaticon('right161', 11px); 
@@ -515,10 +516,11 @@ div.rerPortletAdvancedStatic        {
     div.portletItem                 {
       ul                            {
         li                          { padding-left: 0;
+                                      @extend .regular;
           &:before                  { display: none; }
           a                         { border:0;
             &:after                 { @include make-flaticon('right161', 11px); 
-                                      color: $text-color;
+                                      color: $link-color;
                                       margin-left: 8px;
             }
           }
@@ -540,7 +542,7 @@ div.portletBg                       { background-color: $gray-bg;
       &:hover                       { color: $link-color !important; }
     }
   }
-  dd.portletFooter                  { padding: { left: 10px; right: 10px;} }
+  dd.portletFooter                  { padding: { left: 10px; right: 10px; bottom: 5px;} }
 }
 
 // con foto nel titolo
@@ -549,6 +551,14 @@ dl.portletImg                       { padding:0;
                                       position: relative;
                                       font-size: 1.2em;
                                       border:0;
+    .portletTopLeft                 { display: block;
+                                      position: absolute;
+                                      top: 0;
+                                      left: 0;
+                                      height: 100%;
+                                      width: 100%;
+                                      background-color: rgba(0,0,0,.25);
+    }
     .tile,
     a.tile                          { color: #FFF !important;
                                       position: absolute;
@@ -563,6 +573,55 @@ dl.portletImg                       { padding:0;
     hr                              { border-top-color: $gray-light; 
                                       margin-top: 20px;
                                       margin-bottom: 16px; 
+    }
+  }
+}
+
+// SERVIZI ONLINE
+dl.portletServiziOnline             { border: 1px solid $link-color;
+  dt.portletHeader                  { background-color: $link-color;
+                                      border:0;
+                                      padding: 10px 15px;
+                                      position: relative;
+                                      padding-right: 30px;
+                                      color: #FFF !important; 
+    a.tile                          { color: #FFF !important;
+      &:focus,
+      &:hover                       { color: #EAE7B9 !important; }
+    }
+    &:after                         { @include make-flaticon('man379', 44px);
+                                      color: #FFF;
+                                      position: absolute;
+                                      right: 3px;
+                                      bottom: -7px;
+    }
+  }
+  dd.portletItem                    { padding: 8px 15px;
+    ul                              { margin:0;
+      li                            { padding: 0.6em 0;
+                                      margin: 0;
+                                      border-top: 1px dashed $gray-light;
+        &:first-child               { border:0;}
+        &:before                    { display: none; }
+        a                           { display: block;
+                                      color: $text-color;
+                                      position: relative;
+                                      border:0;
+                                      padding-left: 30px;
+          &:before                  { position: absolute; 
+                                      left: 0;
+                                      top: 2px;
+                                      color: $link-color;
+                                      font-family: FontAwesome;
+                                      font-size: 18px;
+          }
+          &:focus,
+          &:hover                   { color: $link-color !important; 
+            &:before                { color: $text-color; }
+          }
+          &.external-link:before    { content: '\f08e'; }
+        }
+      }
     }
   }
 }

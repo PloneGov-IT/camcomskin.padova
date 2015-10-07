@@ -5380,7 +5380,7 @@ button.list-group-item-danger {
 .flaticon-magnifier13, #searchbox a.btnSearch:before, #camcomskin-searchbox .searchFieldWrapper:before, #search-field:before {
   content: "\e009"; }
 
-.flaticon-man379 {
+.flaticon-man379, dl.portletServiziOnline dt.portletHeader:after {
   content: "\e00a"; }
 
 .flaticon-opened4 {
@@ -6265,15 +6265,18 @@ input.inputLabelActive {
 .light, body, #camcomskin-searchbox input.searchButton, #search-field input.searchButton, .secondaryMenu .submenuItem, #content .proceedingsList h2, #content h1.documentFirstHeading, #portal-footer-wrapper #portlets-footer h4, #portal-footer-wrapper #portlets-footer h5 {
   font-weight: 300; }
 
-.regular, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel, dl.rerPortletAdvancedStatic dd.portletFooter a,
-div.rerPortletAdvancedStatic dd.portletFooter a, dl.portletImg dt.portletHeader .tile,
+.regular, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel, dl.rerPortletAdvancedStatic dt.portletHeader,
+div.rerPortletAdvancedStatic dt.portletHeader, dl.rerPortletAdvancedStatic dd.portletFooter a,
+div.rerPortletAdvancedStatic dd.portletFooter a, dl.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li,
+dl.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li,
+div.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li,
+div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li, dl.portletImg dt.portletHeader .tile,
 dl.portletImg dt.portletHeader a.tile, dl[class*='ortletNavigation'] dt.portletHeader .tile,
 dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #portal-footer-wrapper #portal-colophon a, #portal-footer-wrapper #portlets-footer dt.portletHeader {
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
-#content #description, strong, #topbar .claim, .secondaryMenu .submenuItem h5, .secondaryMenu .submenuItem strong, .globalnavWrapper #portal-globalnav li a span:first-child, #submenu-details h5, #submenu-details strong, #submenu-details .closeSubmenu a, dl.rerPortletAdvancedStatic dt.portletHeader,
-div.rerPortletAdvancedStatic dt.portletHeader, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeCurrentItem, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath, .boxScheda h4.boxHeader, .officeContactsWrapper .officePhone h6,
+#content #description, strong, #topbar .claim, .secondaryMenu .submenuItem h5, .secondaryMenu .submenuItem strong, .globalnavWrapper #portal-globalnav li a span:first-child, #submenu-details h5, #submenu-details strong, #submenu-details .submenuDynamicWrapper ul li a.subitemSelected, #submenu-details .closeSubmenu a, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeCurrentItem, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath, .boxScheda h4.boxHeader, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
 .officeContactsWrapper .officePec h6 {
@@ -6852,10 +6855,10 @@ img {
 
 dl.rerPortletAdvancedStatic dt.portletHeader,
 div.rerPortletAdvancedStatic dt.portletHeader {
-  font-size: 1.1em;
+  font-size: 1.3em;
   padding-left: 0;
   padding-right: 0;
-  border-bottom: 3px solid #283641;
+  border-bottom: 2px solid #283641;
   color: #283641;
   background-color: transparent; }
   dl.rerPortletAdvancedStatic dt.portletHeader a.tile,
@@ -6869,8 +6872,7 @@ dl.rerPortletAdvancedStatic dd.portletItem,
 dl.rerPortletAdvancedStatic .portletItem,
 div.rerPortletAdvancedStatic dd.portletItem,
 div.rerPortletAdvancedStatic .portletItem {
-  padding: 15px 0 0;
-  border-bottom: 3px solid #283641; }
+  padding: 15px 0 0; }
   dl.rerPortletAdvancedStatic dd.portletItem p, #content dl.rerPortletAdvancedStatic dd.portletItem p,
   dl.rerPortletAdvancedStatic .portletItem p, #content
   dl.rerPortletAdvancedStatic .portletItem p,
@@ -6908,7 +6910,8 @@ div.rerPortletAdvancedStatic dd.portletFooter {
   text-align: right;
   font-style: italic;
   font-style: italic;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  border-top: 2px solid #283641; }
   dl.rerPortletAdvancedStatic dd.portletFooter a,
   div.rerPortletAdvancedStatic dd.portletFooter a {
     border: 0; }
@@ -6943,7 +6946,7 @@ div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li {
       font-size: 11px;
       font-style: normal;
       display: inline-block;
-      color: #313131;
+      color: #9c3524;
       margin-left: 8px; }
 
 dl.portletBg,
@@ -6974,7 +6977,8 @@ div.portletBg {
   dl.portletBg dd.portletFooter,
   div.portletBg dd.portletFooter {
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    padding-bottom: 5px; }
 
 dl.portletImg {
   padding: 0; }
@@ -6983,6 +6987,14 @@ dl.portletImg {
     position: relative;
     font-size: 1.2em;
     border: 0; }
+    dl.portletImg dt.portletHeader .portletTopLeft {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.25); }
     dl.portletImg dt.portletHeader .tile,
     dl.portletImg dt.portletHeader a.tile {
       color: #FFF !important;
@@ -6998,6 +7010,60 @@ dl.portletImg {
       border-top-color: #777;
       margin-top: 20px;
       margin-bottom: 16px; }
+
+dl.portletServiziOnline {
+  border: 1px solid #9c3524; }
+  dl.portletServiziOnline dt.portletHeader {
+    background-color: #9c3524;
+    border: 0;
+    padding: 10px 15px;
+    position: relative;
+    padding-right: 30px;
+    color: #FFF !important; }
+    dl.portletServiziOnline dt.portletHeader a.tile {
+      color: #FFF !important; }
+      dl.portletServiziOnline dt.portletHeader a.tile:focus, dl.portletServiziOnline dt.portletHeader a.tile:hover {
+        color: #EAE7B9 !important; }
+    dl.portletServiziOnline dt.portletHeader:after {
+      font-family: Flaticon;
+      font-size: 44px;
+      font-style: normal;
+      display: inline-block;
+      color: #FFF;
+      position: absolute;
+      right: 3px;
+      bottom: -7px; }
+  dl.portletServiziOnline dd.portletItem {
+    padding: 8px 15px; }
+    dl.portletServiziOnline dd.portletItem ul {
+      margin: 0; }
+      dl.portletServiziOnline dd.portletItem ul li {
+        padding: 0.6em 0;
+        margin: 0;
+        border-top: 1px dashed #777; }
+        dl.portletServiziOnline dd.portletItem ul li:first-child {
+          border: 0; }
+        dl.portletServiziOnline dd.portletItem ul li:before {
+          display: none; }
+        dl.portletServiziOnline dd.portletItem ul li a {
+          display: block;
+          color: #313131;
+          position: relative;
+          border: 0;
+          padding-left: 30px; }
+          dl.portletServiziOnline dd.portletItem ul li a:before {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #9c3524;
+            font-family: FontAwesome;
+            font-size: 18px; }
+          dl.portletServiziOnline dd.portletItem ul li a:focus, dl.portletServiziOnline dd.portletItem ul li a:hover {
+            color: #9c3524 !important; }
+            dl.portletServiziOnline dd.portletItem ul li a:focus:before, dl.portletServiziOnline dd.portletItem ul li a:hover:before {
+              color: #313131; }
+          dl.portletServiziOnline dd.portletItem ul li a.external-link:before {
+            content: '\f08e'; }
 
 dl[class*='ortletNavigation'] dt.portletHeader {
   padding: 0;
@@ -7587,8 +7653,10 @@ dl[class*='ortletNavigation'] dd.portletItem {
     color: #45807A; }
 .section-avvia-attivita-impresa dl.rerPortletAdvancedStatic dd.portletItem,
 .section-avvia-attivita-impresa dl.rerPortletAdvancedStatic .portletItem,
+.section-avvia-attivita-impresa dl.rerPortletAdvancedStatic dd.portletFooter,
 .section-avvia-attivita-impresa div.rerPortletAdvancedStatic dd.portletItem,
-.section-avvia-attivita-impresa div.rerPortletAdvancedStatic .portletItem {
+.section-avvia-attivita-impresa div.rerPortletAdvancedStatic .portletItem,
+.section-avvia-attivita-impresa div.rerPortletAdvancedStatic dd.portletFooter {
   border-color: #45807A; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-1 a:focus,
@@ -7634,8 +7702,10 @@ dl[class*='ortletNavigation'] dd.portletItem {
     color: #bb7c35; }
 .section-conosci-gestisci-impresa dl.rerPortletAdvancedStatic dd.portletItem,
 .section-conosci-gestisci-impresa dl.rerPortletAdvancedStatic .portletItem,
+.section-conosci-gestisci-impresa dl.rerPortletAdvancedStatic dd.portletFooter,
 .section-conosci-gestisci-impresa div.rerPortletAdvancedStatic dd.portletItem,
-.section-conosci-gestisci-impresa div.rerPortletAdvancedStatic .portletItem {
+.section-conosci-gestisci-impresa div.rerPortletAdvancedStatic .portletItem,
+.section-conosci-gestisci-impresa div.rerPortletAdvancedStatic dd.portletFooter {
   border-color: #bb7c35; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-2 a:focus,
@@ -7681,8 +7751,10 @@ dl[class*='ortletNavigation'] dd.portletItem {
     color: #5b859a; }
 .section-promuovi-in-italia-e-estero dl.rerPortletAdvancedStatic dd.portletItem,
 .section-promuovi-in-italia-e-estero dl.rerPortletAdvancedStatic .portletItem,
+.section-promuovi-in-italia-e-estero dl.rerPortletAdvancedStatic dd.portletFooter,
 .section-promuovi-in-italia-e-estero div.rerPortletAdvancedStatic dd.portletItem,
-.section-promuovi-in-italia-e-estero div.rerPortletAdvancedStatic .portletItem {
+.section-promuovi-in-italia-e-estero div.rerPortletAdvancedStatic .portletItem,
+.section-promuovi-in-italia-e-estero div.rerPortletAdvancedStatic dd.portletFooter {
   border-color: #5b859a; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-3 a:focus,
@@ -7728,8 +7800,10 @@ dl[class*='ortletNavigation'] dd.portletItem {
     color: #97a763; }
 .section-finanziamenti-innovazione dl.rerPortletAdvancedStatic dd.portletItem,
 .section-finanziamenti-innovazione dl.rerPortletAdvancedStatic .portletItem,
+.section-finanziamenti-innovazione dl.rerPortletAdvancedStatic dd.portletFooter,
 .section-finanziamenti-innovazione div.rerPortletAdvancedStatic dd.portletItem,
-.section-finanziamenti-innovazione div.rerPortletAdvancedStatic .portletItem {
+.section-finanziamenti-innovazione div.rerPortletAdvancedStatic .portletItem,
+.section-finanziamenti-innovazione div.rerPortletAdvancedStatic dd.portletFooter {
   border-color: #97a763; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-4 a:focus,
@@ -7775,6 +7849,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
     color: #bf9b48; }
 .section-tutela-impresa-e-consumatore dl.rerPortletAdvancedStatic dd.portletItem,
 .section-tutela-impresa-e-consumatore dl.rerPortletAdvancedStatic .portletItem,
+.section-tutela-impresa-e-consumatore dl.rerPortletAdvancedStatic dd.portletFooter,
 .section-tutela-impresa-e-consumatore div.rerPortletAdvancedStatic dd.portletItem,
-.section-tutela-impresa-e-consumatore div.rerPortletAdvancedStatic .portletItem {
+.section-tutela-impresa-e-consumatore div.rerPortletAdvancedStatic .portletItem,
+.section-tutela-impresa-e-consumatore div.rerPortletAdvancedStatic dd.portletFooter {
   border-color: #bf9b48; }

@@ -1,7 +1,7 @@
 <div id="breadcrumbs"
      i18n:domain="plone"
      tal:define="breadcrumbs view/breadcrumbs;
-                 breadcrumbs python:breadcrumbs[1:-1];
+                 breadcrumbs python:breadcrumbs[:-1];
                  is_rtl view/is_rtl"
      tal:condition="python:len(breadcrumbs)">
 

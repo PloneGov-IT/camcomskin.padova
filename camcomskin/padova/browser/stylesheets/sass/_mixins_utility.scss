@@ -123,7 +123,8 @@
           a.tile                          { color: $color; }
         }
         dd.portletItem,
-        .portletItem                      { border-color: $color; }
+        .portletItem,
+        dd.portletFooter                  { border-color: $color; }
       }
     }
 }
