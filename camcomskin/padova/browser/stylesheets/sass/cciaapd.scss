@@ -35,6 +35,11 @@ img { max-width: 100%; }
   .managePortletsLink        { margin-top: 20px; }
 }
 
+// PORTLETPAGE
+.colonna-1-di-2         { @extend .col-sm-6; }
+.colonna-1-di-3         { @extend .col-sm-4; }
+.colonna-1-di-4         { @extend .col-sm-3; } 
+
 
 // fix per responsive
 @media (max-width: $screen-xs-max) {
@@ -814,7 +819,9 @@ dl[class*='ortletNavigation']       {
       }
     }
   }
-  .officePhone                      { @extend .regular; }
+  .officePhone                      { @extend .regular; 
+    span                            { display: block; }
+  }
   .officeEmail,
   .officePec                        { 
     a                               { color: $text-color;
@@ -918,6 +925,7 @@ dl[class*='ortletNavigation']       {
     p                               { @extend .col-xs-9; 
                                       margin-bottom: 0 !important;
     }
+    span                            { display: block;}
     .officeEmail                    { padding-top: 10px; }
   }
 }
@@ -959,6 +967,12 @@ dl[class*='ortletNavigation']       {
       }
     }
   }
+}
+
+// PAGINA INTRO SEZIONE (PORTLET PAGE)
+.portaltype-portlet-page            {
+  #viewlet-below-content-title      { @extend .pull-right; }
+  #portletPageColumns               { clear: both; }
 }
 
 // FORMATTAZIONI

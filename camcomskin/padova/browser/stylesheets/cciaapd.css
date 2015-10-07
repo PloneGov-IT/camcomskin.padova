@@ -641,6 +641,7 @@ blockquote.pull-right,
 #topbar blockquote#top-link-group,
 blockquote#searchbox,
 blockquote.secondaryMenu,
+.portaltype-portlet-page blockquote#viewlet-below-content-title,
 #content blockquote.documentActions {
   padding-right: 15px;
   padding-left: 0;
@@ -654,16 +655,19 @@ blockquote.secondaryMenu,
   #topbar blockquote#top-link-group footer:before,
   blockquote#searchbox footer:before,
   blockquote.secondaryMenu footer:before,
+  .portaltype-portlet-page blockquote#viewlet-below-content-title footer:before,
   #content blockquote.documentActions footer:before,
   blockquote.pull-right small:before,
   #topbar blockquote#top-link-group small:before,
   blockquote#searchbox small:before,
   blockquote.secondaryMenu small:before,
+  .portaltype-portlet-page blockquote#viewlet-below-content-title small:before,
   #content blockquote.documentActions small:before,
   blockquote.pull-right .small:before,
   #topbar blockquote#top-link-group .small:before,
   blockquote#searchbox .small:before,
   blockquote.secondaryMenu .small:before,
+  .portaltype-portlet-page blockquote#viewlet-below-content-title .small:before,
   #content blockquote.documentActions .small:before {
     content: ''; }
   .blockquote-reverse footer:after,
@@ -673,16 +677,19 @@ blockquote.secondaryMenu,
   #topbar blockquote#top-link-group footer:after,
   blockquote#searchbox footer:after,
   blockquote.secondaryMenu footer:after,
+  .portaltype-portlet-page blockquote#viewlet-below-content-title footer:after,
   #content blockquote.documentActions footer:after,
   blockquote.pull-right small:after,
   #topbar blockquote#top-link-group small:after,
   blockquote#searchbox small:after,
   blockquote.secondaryMenu small:after,
+  .portaltype-portlet-page blockquote#viewlet-below-content-title small:after,
   #content blockquote.documentActions small:after,
   blockquote.pull-right .small:after,
   #topbar blockquote#top-link-group .small:after,
   blockquote#searchbox .small:after,
   blockquote.secondaryMenu .small:after,
+  .portaltype-portlet-page blockquote#viewlet-below-content-title .small:after,
   #content blockquote.documentActions .small:after {
     content: '\00A0 \2014'; }
 
@@ -840,7 +847,7 @@ pre {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, #submenu-details .staticItem, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .colonna-1-di-4, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, .colonna-1-di-2, #submenu-details .staticItem, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
 .officeContactsWrapper .officePec p, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .col-md-12, .col-lg-12 {
@@ -1018,7 +1025,7 @@ pre {
   margin-left: 100%; }
 
 @media (min-width: 769px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-sm-6, div.width-1\3a 2, #submenu-details .staticItem, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-sm-8, div.width-2\3a 3, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .col-sm-11, .col-sm-12, div.width-full {
+  .col-sm-1, .col-sm-2, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .colonna-1-di-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-sm-6, div.width-1\3a 2, .colonna-1-di-2, #submenu-details .staticItem, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-sm-8, div.width-2\3a 3, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .col-sm-11, .col-sm-12, div.width-full {
     float: left; }
 
   .col-sm-1 {
@@ -1027,16 +1034,16 @@ pre {
   .col-sm-2 {
     width: 16.6666666667%; }
 
-  .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4 {
+  .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .colonna-1-di-4 {
     width: 25%; }
 
-  .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3 {
+  .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3 {
     width: 33.3333333333%; }
 
   .col-sm-5, #submenu-details .submenuDynamicWrapper {
     width: 41.6666666667%; }
 
-  .col-sm-6, div.width-1\3a 2, #submenu-details .staticItem {
+  .col-sm-6, div.width-1\3a 2, .colonna-1-di-2, #submenu-details .staticItem {
     width: 50%; }
 
   .col-sm-7, #submenu-details .submenuStaticWrapper {
@@ -5132,7 +5139,7 @@ button.list-group-item-danger {
   margin-left: auto;
   margin-right: auto; }
 
-.pull-right, #topbar #top-link-group, #searchbox, .secondaryMenu, #content .documentActions {
+.pull-right, #topbar #top-link-group, #searchbox, .secondaryMenu, .portaltype-portlet-page #viewlet-below-content-title, #content .documentActions {
   float: right !important; }
 
 .pull-left, #portal-personaltools-wrapper .brand, #topbar .claim, #portal-logo {
@@ -5754,6 +5761,9 @@ table.sequencewidget td {
 
 textarea#htmlSource {
   max-height: 300px; }
+
+.template-portlets.portaltype-portlet-page #portletPageColumns hr {
+  clear: both; }
 
 /*** Tiny ***/
 body#content.mceContentBody {
@@ -7245,6 +7255,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
     left: 0;
     top: -2px;
     font-size: 17px; }
+.boxOffice .officePhone span {
+  display: block; }
 .boxOffice .officeEmail a,
 .boxOffice .officePec a {
   color: #313131;
@@ -7349,6 +7361,11 @@ dl[class*='ortletNavigation'] dd.portletItem {
     .officeContactsWrapper .officeEmail p,
     .officeContactsWrapper .officePec p {
       margin-bottom: 0 !important; }
+    .officeContactsWrapper .officePhone span,
+    .officeContactsWrapper .officeFax span,
+    .officeContactsWrapper .officeEmail span,
+    .officeContactsWrapper .officePec span {
+      display: block; }
     .officeContactsWrapper .officePhone .officeEmail,
     .officeContactsWrapper .officeFax .officeEmail,
     .officeContactsWrapper .officeEmail .officeEmail,
@@ -7391,6 +7408,9 @@ dl[class*='ortletNavigation'] dd.portletItem {
     left: 0;
     top: 0.1em;
     color: #777; }
+
+.portaltype-portlet-page #portletPageColumns {
+  clear: both; }
 
 #content {
   margin: 0 0 30px; }

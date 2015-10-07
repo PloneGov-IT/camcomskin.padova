@@ -13,6 +13,8 @@
                 value="portletBg portletImg|Sfondo grigio e foto dietro al titolo" />
             <element
                 value="portletServiziOnline|Box Servizi Online" />
+            <element
+                value="portletNav lista-link|Elenco in stile menu" />
         </property>
     </object>
     <!-- object name="imaging_properties"
