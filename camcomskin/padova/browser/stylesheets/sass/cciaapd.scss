@@ -19,7 +19,7 @@ strong { @extend .semibold; }
 .colophonWrapper,
 #portlets-footer { @extend .container; }
 
-img { max-width: 100%; }
+//img { max-width: 100%; }
 
 
 // elimino gli stili .row sui contenitori esterni
@@ -971,8 +971,16 @@ dl[class*='ortletNavigation']       {
 
 // PAGINA INTRO SEZIONE (PORTLET PAGE)
 .portaltype-portlet-page            {
+  #portal-columns                   { width: auto; }
   #viewlet-below-content-title      { @extend .pull-right; }
-  #portletPageColumns               { clear: both; }
+  #portletPageColumns               { clear: both; margin-top: 40px; 
+    .portletPageColumn              { @extend .clearfix; }
+
+    // riga grigio (first)
+    #portletPageTopRow              { background-color: $gray-row;
+                                      padding: 20px 0;
+    }
+  }
 }
 
 // FORMATTAZIONI
@@ -997,6 +1005,7 @@ dl[class*='ortletNavigation']       {
     .documentDescription            { @extend .regular;
                                       margin-bottom: 20px;
     }
+    .portlet dt                     { @extend .regular; }
 }
 #plone-document-byline              { text-align: right;
   .documentModified                 { font-style: italic; color: $gray-light; }
@@ -1139,13 +1148,17 @@ dl[class*='ortletNavigation']       {
                                       display: inline-block;
                                       margin-top: 0.8em;
                                       border-radius: 2px;
-          a:focus,
-          a:hover                   { border: 1px solid #FFF; }
+          &:focus,
+          &:hover                   { border: 1px solid #FFF; }
         }
-        dl.portlet                  { margin-bottom: 0; }
+        dl.portlet                  { margin-bottom: 0; 
+                                      padding: 0 20px;
+        }
         dt.portletHeader            { background-color: $tr;
                                       color: #FFF;
-                                      @extend .regular;
+                                      @extend .semibold;
+                                      font-size: 1em;
+                                      border-bottom: 0;
         }
         .lista-link                 { color: $gray-lighter;
                                       position: relative;

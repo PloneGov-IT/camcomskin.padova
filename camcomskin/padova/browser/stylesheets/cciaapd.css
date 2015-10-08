@@ -5122,16 +5122,16 @@ button.list-group-item-danger {
 .clearfix:before, #visual-portal-wrapper:before, .ArchetypesQueryWidget .criteria:before, #edit-bar:before, #portletPageColumns:before, .secondaryMenu .submenuWrapper:before, .globalnavWrapper:before, .globalnavWrapper #portal-globalnav:before, #submenu-details .submenuDetailsContent:before, .officeContactsWrapper .officePhone:before,
 .officeContactsWrapper .officeFax:before,
 .officeContactsWrapper .officeEmail:before,
-.officeContactsWrapper .officePec:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
+.officeContactsWrapper .officePec:before, .portaltype-portlet-page #portletPageColumns .portletPageColumn:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
-.officeContactsWrapper .officePec:after {
+.officeContactsWrapper .officePec:after, .portaltype-portlet-page #portletPageColumns .portletPageColumn:after {
   content: " ";
   display: table; }
 .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
-.officeContactsWrapper .officePec:after {
+.officeContactsWrapper .officePec:after, .portaltype-portlet-page #portletPageColumns .portletPageColumn:after {
   clear: both; }
 
 .center-block {
@@ -6282,14 +6282,14 @@ dl.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li,
 div.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li,
 div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li, dl.portletImg dt.portletHeader .tile,
 dl.portletImg dt.portletHeader a.tile, dl[class*='ortletNavigation'] dt.portletHeader .tile,
-dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #portal-footer-wrapper #portal-colophon a, #portal-footer-wrapper #portlets-footer dt.portletHeader {
+dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #portal-footer-wrapper #portal-colophon a {
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
 #content #description, strong, #topbar .claim, .secondaryMenu .submenuItem h5, .secondaryMenu .submenuItem strong, .globalnavWrapper #portal-globalnav li a span:first-child, #submenu-details h5, #submenu-details strong, #submenu-details .submenuDynamicWrapper ul li a.subitemSelected, #submenu-details .closeSubmenu a, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeCurrentItem, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath, .boxScheda h4.boxHeader, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6 {
+.officeContactsWrapper .officePec h6, #portal-footer-wrapper #portlets-footer dt.portletHeader {
   font-weight: 600; }
 
 .bold, #portal-personaltools-wrapper #user-name {
@@ -6366,9 +6366,6 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
 
 .template-folder_listing #content-core > dl dt {
   margin-top: 0.5em; }
-
-img {
-  max-width: 100%; }
 
 #portal-top,
 #portal-footer-wrapper,
@@ -7409,8 +7406,14 @@ dl[class*='ortletNavigation'] dd.portletItem {
     top: 0.1em;
     color: #777; }
 
+.portaltype-portlet-page #portal-columns {
+  width: auto; }
 .portaltype-portlet-page #portletPageColumns {
-  clear: both; }
+  clear: both;
+  margin-top: 40px; }
+  .portaltype-portlet-page #portletPageColumns #portletPageTopRow {
+    background-color: #E0E0E0;
+    padding: 20px 0; }
 
 #content {
   margin: 0 0 30px; }
@@ -7584,14 +7587,16 @@ dl[class*='ortletNavigation'] dd.portletItem {
       display: inline-block;
       margin-top: 0.8em;
       border-radius: 2px; }
-      #portal-footer-wrapper #portlets-footer a.btnSimple a:focus,
-      #portal-footer-wrapper #portlets-footer a.btnSimple a:hover {
+      #portal-footer-wrapper #portlets-footer a.btnSimple:focus, #portal-footer-wrapper #portlets-footer a.btnSimple:hover {
         border: 1px solid #FFF; }
     #portal-footer-wrapper #portlets-footer dl.portlet {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      padding: 0 20px; }
     #portal-footer-wrapper #portlets-footer dt.portletHeader {
       background-color: transparent;
-      color: #FFF; }
+      color: #FFF;
+      font-size: 1em;
+      border-bottom: 0; }
     #portal-footer-wrapper #portlets-footer .lista-link {
       color: #CCC;
       position: relative; }
