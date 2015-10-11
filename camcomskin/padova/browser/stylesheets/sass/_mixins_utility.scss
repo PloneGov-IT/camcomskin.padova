@@ -7,19 +7,6 @@
 }
 
 /////// ICONE
-/*
-@mixin make-icon($file: "icon_sprites.png", $width: 0, $height: 0, $vertical: 'top', $horizontal: left ) { 
-	display: inline-block;
-	overflow: hidden;
-	@include size($width, $height);
-	background: {
-		image: url($img-path + $file);
-		position: $horizontal $vertical;
-		repeat: no-repeat;
-		color: transparent;
-	}
-}
-*/
 @mixin make-fa ($code, $color: inherit) { 
 	display: inline-block;
   	font-family: FontAwesome;

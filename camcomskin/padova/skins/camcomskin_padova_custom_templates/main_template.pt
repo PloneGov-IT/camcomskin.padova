@@ -121,6 +121,7 @@
                                      Page body text
                                  </metal:text>
                              </div>
+                             
                              <div id="viewlet-below-content-body" tal:content="structure provider:plone.belowcontentbody" tal:condition="not:ajax_load" />
 
                             </metal:bodytext>
@@ -136,6 +137,7 @@
 
             <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" tal:condition="not:ajax_load" />
         </div>
+
 
         <tal:notajax tal:condition="not:ajax_load">
         <div id="portal-column-one"
@@ -160,6 +162,12 @@
         </tal:notajax>
     </div>
 
+
+    <div id="below-content">
+                         <metal:text define-slot="below-content" tal:content="nothing">
+                             PortletPage portlets
+                         </metal:text>
+                     </div>
 
     <div id="portal-footer-wrapper"
         class="row"

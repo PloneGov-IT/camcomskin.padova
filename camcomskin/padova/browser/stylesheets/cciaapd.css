@@ -246,10 +246,11 @@ th {
   .label {
     border: 1px solid #000; }
 
-  .table {
+  .table, #content table.modulisticaListing {
     border-collapse: collapse !important; }
-    .table td,
-    .table th {
+    .table td, #content table.modulisticaListing td,
+    .table th,
+    #content table.modulisticaListing th {
       background-color: #fff !important; }
 
   .table-bordered th,
@@ -756,7 +757,7 @@ pre {
 .submenuDetailsContent,
 #portal-globalnav,
 .colophonWrapper,
-#portlets-footer {
+#portlets-footer, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -769,7 +770,7 @@ pre {
   .submenuDetailsContent:before,
   #portal-globalnav:before,
   .colophonWrapper:before,
-  #portlets-footer:before, .container:after, #portal-header:after,
+  #portlets-footer:before, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow:before, .container:after, #portal-header:after,
   #portal-siteactions:after,
   .topbarContent:after,
   .breadcrumbsContent:after,
@@ -777,7 +778,7 @@ pre {
   .submenuDetailsContent:after,
   #portal-globalnav:after,
   .colophonWrapper:after,
-  #portlets-footer:after {
+  #portlets-footer:after, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow:after {
     content: " ";
     display: table; }
   .container:after, #portal-header:after,
@@ -788,7 +789,7 @@ pre {
   .submenuDetailsContent:after,
   #portal-globalnav:after,
   .colophonWrapper:after,
-  #portlets-footer:after {
+  #portlets-footer:after, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow:after {
     clear: both; }
   @media (min-width: 769px) {
     .container, #portal-header,
@@ -799,7 +800,7 @@ pre {
     .submenuDetailsContent,
     #portal-globalnav,
     .colophonWrapper,
-    #portlets-footer {
+    #portlets-footer, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
       width: auto; } }
   @media (min-width: 992px) {
     .container, #portal-header,
@@ -810,7 +811,7 @@ pre {
     .submenuDetailsContent,
     #portal-globalnav,
     .colophonWrapper,
-    #portlets-footer {
+    #portlets-footer, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
       width: auto; } }
   @media (min-width: 1300px) {
     .container, #portal-header,
@@ -821,7 +822,7 @@ pre {
     .submenuDetailsContent,
     #portal-globalnav,
     .colophonWrapper,
-    #portlets-footer {
+    #portlets-footer, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
       width: 1300px; } }
 
 .container-fluid {
@@ -844,37 +845,37 @@ pre {
   .row:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .officeContactsWrapper .officePhone h6,
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .colonna-1-di-4, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, .colonna-1-di-2, #submenu-details .staticItem, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officePec h6, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .colonna-1-di-4, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, .colonna-1-di-2, #submenu-details .staticItem, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
-.officeContactsWrapper .officePec p, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .col-md-12, .col-lg-12 {
+.officeContactsWrapper .officePec p, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .officeContactsWrapper .officePhone h6,
+.col-xs-1, .col-xs-2, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officePec h6, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
-.officeContactsWrapper .officePec p, .col-xs-10, .col-xs-11, .col-xs-12 {
+.officeContactsWrapper .officePec p, .col-xs-11, .col-xs-12 {
   float: left; }
 
 .col-xs-1 {
   width: 8.3333333333%; }
 
-.col-xs-2 {
-  width: 16.6666666667%; }
-
-.col-xs-3, .officeContactsWrapper .officePhone h6,
+.col-xs-2, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
 .officeContactsWrapper .officePec h6 {
+  width: 16.6666666667%; }
+
+.col-xs-3 {
   width: 25%; }
 
 .col-xs-4 {
@@ -892,13 +893,13 @@ pre {
 .col-xs-8 {
   width: 66.6666666667%; }
 
-.col-xs-9, .officeContactsWrapper .officePhone p,
+.col-xs-9 {
+  width: 75%; }
+
+.col-xs-10, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
 .officeContactsWrapper .officePec p {
-  width: 75%; }
-
-.col-xs-10 {
   width: 83.3333333333%; }
 
 .col-xs-11 {
@@ -1504,41 +1505,56 @@ caption {
 th {
   text-align: left; }
 
-.table {
+.table, #content table.modulisticaListing {
   width: 100%;
   max-width: 100%;
   margin-bottom: 22px; }
-  .table > thead > tr > th,
+  .table > thead > tr > th, #content table.modulisticaListing > thead > tr > th,
   .table > thead > tr > td,
+  #content table.modulisticaListing > thead > tr > td,
   .table > tbody > tr > th,
+  #content table.modulisticaListing > tbody > tr > th,
   .table > tbody > tr > td,
+  #content table.modulisticaListing > tbody > tr > td,
   .table > tfoot > tr > th,
-  .table > tfoot > tr > td {
+  #content table.modulisticaListing > tfoot > tr > th,
+  .table > tfoot > tr > td,
+  #content table.modulisticaListing > tfoot > tr > td {
     padding: 8px;
     line-height: 1.5;
     vertical-align: top;
     border-top: 1px solid #ddd; }
-  .table > thead > tr > th {
+  .table > thead > tr > th, #content table.modulisticaListing > thead > tr > th {
     vertical-align: bottom;
     border-bottom: 2px solid #ddd; }
-  .table > caption + thead > tr:first-child > th,
+  .table > caption + thead > tr:first-child > th, #content table.modulisticaListing > caption + thead > tr:first-child > th,
   .table > caption + thead > tr:first-child > td,
+  #content table.modulisticaListing > caption + thead > tr:first-child > td,
   .table > colgroup + thead > tr:first-child > th,
+  #content table.modulisticaListing > colgroup + thead > tr:first-child > th,
   .table > colgroup + thead > tr:first-child > td,
+  #content table.modulisticaListing > colgroup + thead > tr:first-child > td,
   .table > thead:first-child > tr:first-child > th,
-  .table > thead:first-child > tr:first-child > td {
+  #content table.modulisticaListing > thead:first-child > tr:first-child > th,
+  .table > thead:first-child > tr:first-child > td,
+  #content table.modulisticaListing > thead:first-child > tr:first-child > td {
     border-top: 0; }
-  .table > tbody + tbody {
+  .table > tbody + tbody, #content table.modulisticaListing > tbody + tbody {
     border-top: 2px solid #ddd; }
-  .table .table {
+  .table .table, #content table.modulisticaListing .table, .table #content table.modulisticaListing, #content .table table.modulisticaListing, #content table.modulisticaListing table.modulisticaListing {
     background-color: #fff; }
 
-.table-condensed > thead > tr > th,
+.table-condensed > thead > tr > th, #content table.modulisticaListing > thead > tr > th,
 .table-condensed > thead > tr > td,
+#content table.modulisticaListing > thead > tr > td,
 .table-condensed > tbody > tr > th,
+#content table.modulisticaListing > tbody > tr > th,
 .table-condensed > tbody > tr > td,
+#content table.modulisticaListing > tbody > tr > td,
 .table-condensed > tfoot > tr > th,
-.table-condensed > tfoot > tr > td {
+#content table.modulisticaListing > tfoot > tr > th,
+.table-condensed > tfoot > tr > td,
+#content table.modulisticaListing > tfoot > tr > td {
   padding: 5px; }
 
 .table-bordered {
@@ -1571,80 +1587,125 @@ table th[class*="col-"] {
   float: none;
   display: table-cell; }
 
-.table > thead > tr > td.active,
-.table > thead > tr > th.active, .table > thead > tr.active > td, .table > thead > tr.active > th,
+.table > thead > tr > td.active, #content table.modulisticaListing > thead > tr > td.active,
+.table > thead > tr > th.active,
+#content table.modulisticaListing > thead > tr > th.active, .table > thead > tr.active > td, #content table.modulisticaListing > thead > tr.active > td, .table > thead > tr.active > th, #content table.modulisticaListing > thead > tr.active > th,
 .table > tbody > tr > td.active,
+#content table.modulisticaListing > tbody > tr > td.active,
 .table > tbody > tr > th.active,
+#content table.modulisticaListing > tbody > tr > th.active,
 .table > tbody > tr.active > td,
+#content table.modulisticaListing > tbody > tr.active > td,
 .table > tbody > tr.active > th,
+#content table.modulisticaListing > tbody > tr.active > th,
 .table > tfoot > tr > td.active,
+#content table.modulisticaListing > tfoot > tr > td.active,
 .table > tfoot > tr > th.active,
+#content table.modulisticaListing > tfoot > tr > th.active,
 .table > tfoot > tr.active > td,
-.table > tfoot > tr.active > th {
+#content table.modulisticaListing > tfoot > tr.active > td,
+.table > tfoot > tr.active > th,
+#content table.modulisticaListing > tfoot > tr.active > th {
   background-color: #f5f5f5; }
 
 .table-hover > tbody > tr > td.active:hover,
 .table-hover > tbody > tr > th.active:hover, .table-hover > tbody > tr.active:hover > td, .table-hover > tbody > tr:hover > .active, .table-hover > tbody > tr.active:hover > th {
   background-color: #e8e8e8; }
 
-.table > thead > tr > td.success,
-.table > thead > tr > th.success, .table > thead > tr.success > td, .table > thead > tr.success > th,
+.table > thead > tr > td.success, #content table.modulisticaListing > thead > tr > td.success,
+.table > thead > tr > th.success,
+#content table.modulisticaListing > thead > tr > th.success, .table > thead > tr.success > td, #content table.modulisticaListing > thead > tr.success > td, .table > thead > tr.success > th, #content table.modulisticaListing > thead > tr.success > th,
 .table > tbody > tr > td.success,
+#content table.modulisticaListing > tbody > tr > td.success,
 .table > tbody > tr > th.success,
+#content table.modulisticaListing > tbody > tr > th.success,
 .table > tbody > tr.success > td,
+#content table.modulisticaListing > tbody > tr.success > td,
 .table > tbody > tr.success > th,
+#content table.modulisticaListing > tbody > tr.success > th,
 .table > tfoot > tr > td.success,
+#content table.modulisticaListing > tfoot > tr > td.success,
 .table > tfoot > tr > th.success,
+#content table.modulisticaListing > tfoot > tr > th.success,
 .table > tfoot > tr.success > td,
-.table > tfoot > tr.success > th {
+#content table.modulisticaListing > tfoot > tr.success > td,
+.table > tfoot > tr.success > th,
+#content table.modulisticaListing > tfoot > tr.success > th {
   background-color: #dff0d8; }
 
 .table-hover > tbody > tr > td.success:hover,
 .table-hover > tbody > tr > th.success:hover, .table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr:hover > .success, .table-hover > tbody > tr.success:hover > th {
   background-color: #d0e9c6; }
 
-.table > thead > tr > td.info,
-.table > thead > tr > th.info, .table > thead > tr.info > td, .table > thead > tr.info > th,
+.table > thead > tr > td.info, #content table.modulisticaListing > thead > tr > td.info,
+.table > thead > tr > th.info,
+#content table.modulisticaListing > thead > tr > th.info, .table > thead > tr.info > td, #content table.modulisticaListing > thead > tr.info > td, .table > thead > tr.info > th, #content table.modulisticaListing > thead > tr.info > th,
 .table > tbody > tr > td.info,
+#content table.modulisticaListing > tbody > tr > td.info,
 .table > tbody > tr > th.info,
+#content table.modulisticaListing > tbody > tr > th.info,
 .table > tbody > tr.info > td,
+#content table.modulisticaListing > tbody > tr.info > td,
 .table > tbody > tr.info > th,
+#content table.modulisticaListing > tbody > tr.info > th,
 .table > tfoot > tr > td.info,
+#content table.modulisticaListing > tfoot > tr > td.info,
 .table > tfoot > tr > th.info,
+#content table.modulisticaListing > tfoot > tr > th.info,
 .table > tfoot > tr.info > td,
-.table > tfoot > tr.info > th {
+#content table.modulisticaListing > tfoot > tr.info > td,
+.table > tfoot > tr.info > th,
+#content table.modulisticaListing > tfoot > tr.info > th {
   background-color: #d9edf7; }
 
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover, .table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr:hover > .info, .table-hover > tbody > tr.info:hover > th {
   background-color: #c4e3f3; }
 
-.table > thead > tr > td.warning,
-.table > thead > tr > th.warning, .table > thead > tr.warning > td, .table > thead > tr.warning > th,
+.table > thead > tr > td.warning, #content table.modulisticaListing > thead > tr > td.warning,
+.table > thead > tr > th.warning,
+#content table.modulisticaListing > thead > tr > th.warning, .table > thead > tr.warning > td, #content table.modulisticaListing > thead > tr.warning > td, .table > thead > tr.warning > th, #content table.modulisticaListing > thead > tr.warning > th,
 .table > tbody > tr > td.warning,
+#content table.modulisticaListing > tbody > tr > td.warning,
 .table > tbody > tr > th.warning,
+#content table.modulisticaListing > tbody > tr > th.warning,
 .table > tbody > tr.warning > td,
+#content table.modulisticaListing > tbody > tr.warning > td,
 .table > tbody > tr.warning > th,
+#content table.modulisticaListing > tbody > tr.warning > th,
 .table > tfoot > tr > td.warning,
+#content table.modulisticaListing > tfoot > tr > td.warning,
 .table > tfoot > tr > th.warning,
+#content table.modulisticaListing > tfoot > tr > th.warning,
 .table > tfoot > tr.warning > td,
-.table > tfoot > tr.warning > th {
+#content table.modulisticaListing > tfoot > tr.warning > td,
+.table > tfoot > tr.warning > th,
+#content table.modulisticaListing > tfoot > tr.warning > th {
   background-color: #fcf8e3; }
 
 .table-hover > tbody > tr > td.warning:hover,
 .table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr:hover > .warning, .table-hover > tbody > tr.warning:hover > th {
   background-color: #faf2cc; }
 
-.table > thead > tr > td.danger,
-.table > thead > tr > th.danger, .table > thead > tr.danger > td, .table > thead > tr.danger > th,
+.table > thead > tr > td.danger, #content table.modulisticaListing > thead > tr > td.danger,
+.table > thead > tr > th.danger,
+#content table.modulisticaListing > thead > tr > th.danger, .table > thead > tr.danger > td, #content table.modulisticaListing > thead > tr.danger > td, .table > thead > tr.danger > th, #content table.modulisticaListing > thead > tr.danger > th,
 .table > tbody > tr > td.danger,
+#content table.modulisticaListing > tbody > tr > td.danger,
 .table > tbody > tr > th.danger,
+#content table.modulisticaListing > tbody > tr > th.danger,
 .table > tbody > tr.danger > td,
+#content table.modulisticaListing > tbody > tr.danger > td,
 .table > tbody > tr.danger > th,
+#content table.modulisticaListing > tbody > tr.danger > th,
 .table > tfoot > tr > td.danger,
+#content table.modulisticaListing > tfoot > tr > td.danger,
 .table > tfoot > tr > th.danger,
+#content table.modulisticaListing > tfoot > tr > th.danger,
 .table > tfoot > tr.danger > td,
-.table > tfoot > tr.danger > th {
+#content table.modulisticaListing > tfoot > tr.danger > td,
+.table > tfoot > tr.danger > th,
+#content table.modulisticaListing > tfoot > tr.danger > th {
   background-color: #f2dede; }
 
 .table-hover > tbody > tr > td.danger:hover,
@@ -1661,14 +1722,19 @@ table th[class*="col-"] {
       overflow-y: hidden;
       -ms-overflow-style: -ms-autohiding-scrollbar;
       border: 1px solid #ddd; }
-      .table-responsive > .table {
+      .table-responsive > .table, #content .table-responsive > table.modulisticaListing {
         margin-bottom: 0; }
-        .table-responsive > .table > thead > tr > th,
+        .table-responsive > .table > thead > tr > th, #content .table-responsive > table.modulisticaListing > thead > tr > th,
         .table-responsive > .table > thead > tr > td,
+        #content .table-responsive > table.modulisticaListing > thead > tr > td,
         .table-responsive > .table > tbody > tr > th,
+        #content .table-responsive > table.modulisticaListing > tbody > tr > th,
         .table-responsive > .table > tbody > tr > td,
+        #content .table-responsive > table.modulisticaListing > tbody > tr > td,
         .table-responsive > .table > tfoot > tr > th,
-        .table-responsive > .table > tfoot > tr > td {
+        #content .table-responsive > table.modulisticaListing > tfoot > tr > th,
+        .table-responsive > .table > tfoot > tr > td,
+        #content .table-responsive > table.modulisticaListing > tfoot > tr > td {
           white-space: nowrap; }
       .table-responsive > .table-bordered {
         border: 0; }
@@ -4050,7 +4116,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
 .submenuDetailsContent > .navbar-header,
 #portal-globalnav > .navbar-header,
 .colophonWrapper > .navbar-header,
-#portlets-footer > .navbar-header,
+#portlets-footer > .navbar-header, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-header,
 .container > .navbar-collapse,
 #portal-header > .navbar-collapse,
 #portal-siteactions > .navbar-collapse,
@@ -4061,6 +4127,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
 #portal-globalnav > .navbar-collapse,
 .colophonWrapper > .navbar-collapse,
 #portlets-footer > .navbar-collapse,
+.portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
@@ -4074,7 +4141,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     .submenuDetailsContent > .navbar-header,
     #portal-globalnav > .navbar-header,
     .colophonWrapper > .navbar-header,
-    #portlets-footer > .navbar-header,
+    #portlets-footer > .navbar-header, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-header,
     .container > .navbar-collapse,
     #portal-header > .navbar-collapse,
     #portal-siteactions > .navbar-collapse,
@@ -4085,6 +4152,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     #portal-globalnav > .navbar-collapse,
     .colophonWrapper > .navbar-collapse,
     #portlets-footer > .navbar-collapse,
+    .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-collapse,
     .container-fluid > .navbar-header,
     .container-fluid > .navbar-collapse {
       margin-right: 0;
@@ -4136,7 +4204,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     .navbar > .submenuDetailsContent .navbar-brand,
     .navbar > #portal-globalnav .navbar-brand,
     .navbar > .colophonWrapper .navbar-brand,
-    .navbar > #portlets-footer .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    .navbar > #portlets-footer .navbar-brand, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper .navbar > #portletPageTopRow .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
 .navbar-toggle {
@@ -4750,78 +4818,120 @@ button.list-group-item-danger {
 .list-group + .panel-footer {
   border-top-width: 0; }
 
-.panel > .table,
+.panel > .table, #content .panel > table.modulisticaListing,
 .panel > .table-responsive > .table,
-.panel > .panel-collapse > .table {
+#content .panel > .table-responsive > table.modulisticaListing,
+.panel > .panel-collapse > .table,
+#content .panel > .panel-collapse > table.modulisticaListing {
   margin-bottom: 0; }
-  .panel > .table caption,
+  .panel > .table caption, #content .panel > table.modulisticaListing caption,
   .panel > .table-responsive > .table caption,
-  .panel > .panel-collapse > .table caption {
+  #content .panel > .table-responsive > table.modulisticaListing caption,
+  .panel > .panel-collapse > .table caption,
+  #content .panel > .panel-collapse > table.modulisticaListing caption {
     padding-left: 15px;
     padding-right: 15px; }
-.panel > .table:first-child,
-.panel > .table-responsive:first-child > .table:first-child {
+.panel > .table:first-child, #content .panel > table.modulisticaListing:first-child,
+.panel > .table-responsive:first-child > .table:first-child,
+#content .panel > .table-responsive:first-child > table.modulisticaListing:first-child {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px; }
-  .panel > .table:first-child > thead:first-child > tr:first-child,
+  .panel > .table:first-child > thead:first-child > tr:first-child, #content .panel > table.modulisticaListing:first-child > thead:first-child > tr:first-child,
   .panel > .table:first-child > tbody:first-child > tr:first-child,
+  #content .panel > table.modulisticaListing:first-child > tbody:first-child > tr:first-child,
   .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
-  .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
+  #content .panel > .table-responsive:first-child > table.modulisticaListing:first-child > thead:first-child > tr:first-child,
+  .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
+  #content .panel > .table-responsive:first-child > table.modulisticaListing:first-child > tbody:first-child > tr:first-child {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
-    .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+    .panel > .table:first-child > thead:first-child > tr:first-child td:first-child, #content .panel > table.modulisticaListing:first-child > thead:first-child > tr:first-child td:first-child,
     .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+    #content .panel > table.modulisticaListing:first-child > thead:first-child > tr:first-child th:first-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+    #content .panel > table.modulisticaListing:first-child > tbody:first-child > tr:first-child td:first-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+    #content .panel > table.modulisticaListing:first-child > tbody:first-child > tr:first-child th:first-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+    #content .panel > .table-responsive:first-child > table.modulisticaListing:first-child > thead:first-child > tr:first-child td:first-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+    #content .panel > .table-responsive:first-child > table.modulisticaListing:first-child > thead:first-child > tr:first-child th:first-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
-    .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+    #content .panel > .table-responsive:first-child > table.modulisticaListing:first-child > tbody:first-child > tr:first-child td:first-child,
+    .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+    #content .panel > .table-responsive:first-child > table.modulisticaListing:first-child > tbody:first-child > tr:first-child th:first-child {
       border-top-left-radius: 3px; }
-    .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+    .panel > .table:first-child > thead:first-child > tr:first-child td:last-child, #content .panel > table.modulisticaListing:first-child > thead:first-child > tr:first-child td:last-child,
     .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+    #content .panel > table.modulisticaListing:first-child > thead:first-child > tr:first-child th:last-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+    #content .panel > table.modulisticaListing:first-child > tbody:first-child > tr:first-child td:last-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+    #content .panel > table.modulisticaListing:first-child > tbody:first-child > tr:first-child th:last-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+    #content .panel > .table-responsive:first-child > table.modulisticaListing:first-child > thead:first-child > tr:first-child td:last-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+    #content .panel > .table-responsive:first-child > table.modulisticaListing:first-child > thead:first-child > tr:first-child th:last-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
-    .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+    #content .panel > .table-responsive:first-child > table.modulisticaListing:first-child > tbody:first-child > tr:first-child td:last-child,
+    .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+    #content .panel > .table-responsive:first-child > table.modulisticaListing:first-child > tbody:first-child > tr:first-child th:last-child {
       border-top-right-radius: 3px; }
-.panel > .table:last-child,
-.panel > .table-responsive:last-child > .table:last-child {
+.panel > .table:last-child, #content .panel > table.modulisticaListing:last-child,
+.panel > .table-responsive:last-child > .table:last-child,
+#content .panel > .table-responsive:last-child > table.modulisticaListing:last-child {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px; }
-  .panel > .table:last-child > tbody:last-child > tr:last-child,
+  .panel > .table:last-child > tbody:last-child > tr:last-child, #content .panel > table.modulisticaListing:last-child > tbody:last-child > tr:last-child,
   .panel > .table:last-child > tfoot:last-child > tr:last-child,
+  #content .panel > table.modulisticaListing:last-child > tfoot:last-child > tr:last-child,
   .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
-  .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
+  #content .panel > .table-responsive:last-child > table.modulisticaListing:last-child > tbody:last-child > tr:last-child,
+  .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
+  #content .panel > .table-responsive:last-child > table.modulisticaListing:last-child > tfoot:last-child > tr:last-child {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px; }
-    .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+    .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child, #content .panel > table.modulisticaListing:last-child > tbody:last-child > tr:last-child td:first-child,
     .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+    #content .panel > table.modulisticaListing:last-child > tbody:last-child > tr:last-child th:first-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+    #content .panel > table.modulisticaListing:last-child > tfoot:last-child > tr:last-child td:first-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+    #content .panel > table.modulisticaListing:last-child > tfoot:last-child > tr:last-child th:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+    #content .panel > .table-responsive:last-child > table.modulisticaListing:last-child > tbody:last-child > tr:last-child td:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+    #content .panel > .table-responsive:last-child > table.modulisticaListing:last-child > tbody:last-child > tr:last-child th:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
-    .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+    #content .panel > .table-responsive:last-child > table.modulisticaListing:last-child > tfoot:last-child > tr:last-child td:first-child,
+    .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+    #content .panel > .table-responsive:last-child > table.modulisticaListing:last-child > tfoot:last-child > tr:last-child th:first-child {
       border-bottom-left-radius: 3px; }
-    .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+    .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child, #content .panel > table.modulisticaListing:last-child > tbody:last-child > tr:last-child td:last-child,
     .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+    #content .panel > table.modulisticaListing:last-child > tbody:last-child > tr:last-child th:last-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+    #content .panel > table.modulisticaListing:last-child > tfoot:last-child > tr:last-child td:last-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+    #content .panel > table.modulisticaListing:last-child > tfoot:last-child > tr:last-child th:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+    #content .panel > .table-responsive:last-child > table.modulisticaListing:last-child > tbody:last-child > tr:last-child td:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+    #content .panel > .table-responsive:last-child > table.modulisticaListing:last-child > tbody:last-child > tr:last-child th:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
-    .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+    #content .panel > .table-responsive:last-child > table.modulisticaListing:last-child > tfoot:last-child > tr:last-child td:last-child,
+    .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+    #content .panel > .table-responsive:last-child > table.modulisticaListing:last-child > tfoot:last-child > tr:last-child th:last-child {
       border-bottom-right-radius: 3px; }
-.panel > .panel-body + .table,
+.panel > .panel-body + .table, #content .panel > .panel-body + table.modulisticaListing,
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
+#content .panel > table.modulisticaListing + .panel-body,
 .panel > .table-responsive + .panel-body {
   border-top: 1px solid #ddd; }
-.panel > .table > tbody:first-child > tr:first-child th,
-.panel > .table > tbody:first-child > tr:first-child td {
+.panel > .table > tbody:first-child > tr:first-child th, #content .panel > table.modulisticaListing > tbody:first-child > tr:first-child th,
+.panel > .table > tbody:first-child > tr:first-child td,
+#content .panel > table.modulisticaListing > tbody:first-child > tr:first-child td {
   border-top: 0; }
 .panel > .table-bordered,
 .panel > .table-responsive > .table-bordered {
@@ -5344,19 +5454,6 @@ button.list-group-item-danger {
 @media print {
   .hidden-print {
     display: none !important; } }
-/*
-@mixin make-icon($file: "icon_sprites.png", $width: 0, $height: 0, $vertical: 'top', $horizontal: left ) { 
-	display: inline-block;
-	overflow: hidden;
-	@include size($width, $height);
-	background: {
-		image: url($img-path + $file);
-		position: $horizontal $vertical;
-		repeat: no-repeat;
-		color: transparent;
-	}
-}
-*/
 .flaticon-businessman137, .officeContactsWrapper .officeExecutive:before {
   content: "\e000"; }
 
@@ -6282,7 +6379,7 @@ dl.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li,
 div.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li,
 div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li, dl.portletImg dt.portletHeader .tile,
 dl.portletImg dt.portletHeader a.tile, dl[class*='ortletNavigation'] dt.portletHeader .tile,
-dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #portal-footer-wrapper #portal-colophon a {
+dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #portal-footer-wrapper #portal-colophon a, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label {
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
@@ -7311,15 +7408,14 @@ dl[class*='ortletNavigation'] dd.portletItem {
     vertical-align: top; }
   .officeContactsWrapper .officeLocation {
     width: 38%;
-    padding-right: 3%; }
+    padding-right: 2%; }
   .officeContactsWrapper .officeContacts {
     border-left: 1px dashed #777;
-    width: 42%;
-    padding: 0 3%; }
+    width: 48%;
+    padding: 0 2%; }
   .officeContactsWrapper .officeExecutive {
     border-left: 1px dashed #777;
-    width: 20%;
-    padding-left: 3%;
+    padding-left: 2%;
     vertical-align: middle;
     text-align: center; }
     .officeContactsWrapper .officeExecutive:before {
@@ -7357,17 +7453,22 @@ dl[class*='ortletNavigation'] dd.portletItem {
     .officeContactsWrapper .officeFax p,
     .officeContactsWrapper .officeEmail p,
     .officeContactsWrapper .officePec p {
-      margin-bottom: 0 !important; }
+      margin-bottom: 0 !important;
+      padding-right: 0; }
     .officeContactsWrapper .officePhone span,
     .officeContactsWrapper .officeFax span,
     .officeContactsWrapper .officeEmail span,
     .officeContactsWrapper .officePec span {
       display: block; }
-    .officeContactsWrapper .officePhone .officeEmail,
-    .officeContactsWrapper .officeFax .officeEmail,
-    .officeContactsWrapper .officeEmail .officeEmail,
-    .officeContactsWrapper .officePec .officeEmail {
-      padding-top: 10px; }
+  .officeContactsWrapper .officeEmail {
+    padding-top: 10px; }
+  .officeContactsWrapper .officeEmail p a,
+  .officeContactsWrapper .officePec p a {
+    border: 0 !important;
+    display: inline-block;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden; }
 
 .officeDuties h4 {
   font-size: 1.4em; }
@@ -7406,14 +7507,44 @@ dl[class*='ortletNavigation'] dd.portletItem {
     top: 0.1em;
     color: #777; }
 
-.portaltype-portlet-page #portal-columns {
-  width: auto; }
 .portaltype-portlet-page #portletPageColumns {
   clear: both;
-  margin-top: 40px; }
-  .portaltype-portlet-page #portletPageColumns #portletPageTopRow {
+  margin-top: 10px; }
+  .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper {
     background-color: #E0E0E0;
     padding: 20px 0; }
+    .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic,
+    .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic {
+      position: relative; }
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic:before, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic:after,
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic:before,
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic:after {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 15px;
+        left: 15px;
+        top: 0;
+        background-color: #FFF; }
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic:after,
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic:after {
+        left: auto;
+        right: 15px; }
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic dt.portletHeader,
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic dt.portletHeader {
+        padding: 15px;
+        background-color: #FFF; }
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic dd.portletItem,
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic div.portletItem,
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic dd.portletItem,
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic div.portletItem {
+        padding: 15px;
+        background-color: #fff; }
+    .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.portletServiziOnline {
+      border: 0; }
+      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.portletServiziOnline dt.portletHeader {
+        background-color: #9c3524;
+        z-index: 1; }
 
 #content {
   margin: 0 0 30px; }
@@ -7628,6 +7759,19 @@ dl[class*='ortletNavigation'] dd.portletItem {
             top: 0; }
           #portal-footer-wrapper #portlets-footer .lista-link ul li a {
             border: 0; }
+
+#content table.modulisticaListing tr.odd th.modulisticaDocument {
+  border: 1px solid #999; }
+#content table.modulisticaListing th.modulisticaDocument {
+  background-color: #FFF; }
+  #content table.modulisticaListing th.modulisticaDocument a[name] {
+    display: inline; }
+  #content table.modulisticaListing th.modulisticaDocument h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #000; }
+  #content table.modulisticaListing th.modulisticaDocument p {
+    margin-bottom: 0.5em; }
 
 #portal-sitemap {
   margin-top: 15px; }
