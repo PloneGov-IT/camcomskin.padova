@@ -16,6 +16,28 @@
         directory="jbot"
         layer=".interfaces.IThemeSpecific" />
 
+  <!-- RESOURCE DIRECTORIES -->
+  <!-- Resource directory for images -->
+  <browser:resourceDirectory
+      name="camcomskin.padova.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <!-- Resource directory for stylesheets -->
+  <browser:resourceDirectory
+      name="camcomskin.padova.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IThemeSpecific"
+      />
+  <!-- Resource directory for javascripts -->
+  <browser:resourceDirectory
+      name="camcomskin.padova.javascripts"
+      directory="javascripts"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <!-- VIEWLETS -->
   <!-- The personal bar -->
   <browser:viewlet
         name="plone.personal_bar"
@@ -72,27 +94,14 @@
         permission="zope2.View"
         layer=".interfaces.IThemeSpecific"
         />
+    <browser:viewlet
+       name="plone.belowcontenttitle.documentbyline"
+       manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+       class="plone.app.layout.viewlets.content.DocumentBylineViewlet"
+       permission="zope2.View"
+   />
 
-  <!-- Resource directory for images -->
-  <browser:resourceDirectory
-      name="camcomskin.padova.images"
-      directory="images"
-      layer=".interfaces.IThemeSpecific"
-      />
-
-  <!-- Resource directory for stylesheets -->
-  <browser:resourceDirectory
-      name="camcomskin.padova.stylesheets"
-      directory="stylesheets"
-      layer=".interfaces.IThemeSpecific"
-      />
-  <!-- Resource directory for javascripts -->
-  <browser:resourceDirectory
-      name="camcomskin.padova.javascripts"
-      directory="javascripts"
-      layer=".interfaces.IThemeSpecific"
-      />
-
+  <!-- VIEWS -->
   <!-- Secondary editable menu settings -->
   <browser:page
       name="editable-secondarymenu-settings"
@@ -110,10 +119,22 @@
       layer=".interfaces.IThemeSpecific"
       />
 
-     <browser:viewlet
-        name="plone.belowcontenttitle.documentbyline"
-        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
-        class="plone.app.layout.viewlets.content.DocumentBylineViewlet"
-        permission="zope2.View"
-    />
+  <!-- Portletpage homepage view -->
+  <browser:page
+      for="collective.portletpage.interfaces.IPortletPage"
+      name="pp_homepage_view"
+      template="templates/pp_homepage_view.pt"
+      class="collective.portletpage.browser.portletpage.TwoColumns"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+  <browser:menuItem
+      for="collective.portletpage.interfaces.IPortletPage"
+      menu="plone_displayviews"
+      title="Vista Homepage"
+      action="@@pp_homepage_view"
+      description="A view for the homepage"
+      layer=".interfaces.IThemeSpecific"
+      />
+
 </configure>
