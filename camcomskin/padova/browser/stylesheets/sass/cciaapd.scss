@@ -629,6 +629,19 @@ dl.portletServiziOnline             { border: 1px solid $link-color;
       }
     }
   }
+  &.colonna-1-di-2                  { // metto le voci su due colonne
+    dd.portletItem                  {
+      ul                            { @include content-columns(2); 
+        li                          { @include break-inside(avoid); 
+                                      border-top:0;
+                                      padding: 5px 0;
+        }
+      }
+    }
+    dt.portletHeader                {
+      &:after                       { font-size: 60px; bottom: -9px;}
+    }
+  }
 }
 
 // PORTLET NAVIGAZIONE
@@ -979,6 +992,7 @@ dl[class*='ortletNavigation']       {
 }
 
 // PAGINA INTRO SEZIONE (PORTLET PAGE)
+/*
 .portaltype-portlet-page            {
   #portal-columns                   {  }
   #viewlet-below-content-title      { @extend .pull-right; }
@@ -991,6 +1005,7 @@ dl[class*='ortletNavigation']       {
       #portletPageTopRow            { @extend .container; 
         dl.rerPortletAdvancedStatic,
         div.rerPortletAdvancedStatic { position: relative;
+                                       margin-bottom: 0;
             &:before, &:after       { position: absolute;
                                       content:'';
                                       height: 100%;
@@ -1006,7 +1021,10 @@ dl[class*='ortletNavigation']       {
                                       background-color: #FFF;
           }
           dd.portletItem,
-          div.portletItem           { padding: 15px; background-color: #fff;}          
+          div.portletItem           { padding: 15px; 
+                                      background-color: #fff;
+                                      min-height: 260px;
+          }          
         }
         dl.portletServiziOnline     { border:0;
           dt.portletHeader          { background-color: $link-color;
@@ -1017,6 +1035,7 @@ dl[class*='ortletNavigation']       {
     }
   }
 }
+*/
 
 // FORMATTAZIONI
 #content                            { margin: 0 0 $grid-gutter-width;

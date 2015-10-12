@@ -642,7 +642,6 @@ blockquote.pull-right,
 #topbar blockquote#top-link-group,
 blockquote#searchbox,
 blockquote.secondaryMenu,
-.portaltype-portlet-page blockquote#viewlet-below-content-title,
 #content blockquote.documentActions {
   padding-right: 15px;
   padding-left: 0;
@@ -656,19 +655,16 @@ blockquote.secondaryMenu,
   #topbar blockquote#top-link-group footer:before,
   blockquote#searchbox footer:before,
   blockquote.secondaryMenu footer:before,
-  .portaltype-portlet-page blockquote#viewlet-below-content-title footer:before,
   #content blockquote.documentActions footer:before,
   blockquote.pull-right small:before,
   #topbar blockquote#top-link-group small:before,
   blockquote#searchbox small:before,
   blockquote.secondaryMenu small:before,
-  .portaltype-portlet-page blockquote#viewlet-below-content-title small:before,
   #content blockquote.documentActions small:before,
   blockquote.pull-right .small:before,
   #topbar blockquote#top-link-group .small:before,
   blockquote#searchbox .small:before,
   blockquote.secondaryMenu .small:before,
-  .portaltype-portlet-page blockquote#viewlet-below-content-title .small:before,
   #content blockquote.documentActions .small:before {
     content: ''; }
   .blockquote-reverse footer:after,
@@ -678,19 +674,16 @@ blockquote.secondaryMenu,
   #topbar blockquote#top-link-group footer:after,
   blockquote#searchbox footer:after,
   blockquote.secondaryMenu footer:after,
-  .portaltype-portlet-page blockquote#viewlet-below-content-title footer:after,
   #content blockquote.documentActions footer:after,
   blockquote.pull-right small:after,
   #topbar blockquote#top-link-group small:after,
   blockquote#searchbox small:after,
   blockquote.secondaryMenu small:after,
-  .portaltype-portlet-page blockquote#viewlet-below-content-title small:after,
   #content blockquote.documentActions small:after,
   blockquote.pull-right .small:after,
   #topbar blockquote#top-link-group .small:after,
   blockquote#searchbox .small:after,
   blockquote.secondaryMenu .small:after,
-  .portaltype-portlet-page blockquote#viewlet-below-content-title .small:after,
   #content blockquote.documentActions .small:after {
     content: '\00A0 \2014'; }
 
@@ -757,7 +750,7 @@ pre {
 .submenuDetailsContent,
 #portal-globalnav,
 .colophonWrapper,
-#portlets-footer, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
+#portlets-footer {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -770,7 +763,7 @@ pre {
   .submenuDetailsContent:before,
   #portal-globalnav:before,
   .colophonWrapper:before,
-  #portlets-footer:before, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow:before, .container:after, #portal-header:after,
+  #portlets-footer:before, .container:after, #portal-header:after,
   #portal-siteactions:after,
   .topbarContent:after,
   .breadcrumbsContent:after,
@@ -778,7 +771,7 @@ pre {
   .submenuDetailsContent:after,
   #portal-globalnav:after,
   .colophonWrapper:after,
-  #portlets-footer:after, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow:after {
+  #portlets-footer:after {
     content: " ";
     display: table; }
   .container:after, #portal-header:after,
@@ -789,7 +782,7 @@ pre {
   .submenuDetailsContent:after,
   #portal-globalnav:after,
   .colophonWrapper:after,
-  #portlets-footer:after, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow:after {
+  #portlets-footer:after {
     clear: both; }
   @media (min-width: 769px) {
     .container, #portal-header,
@@ -800,7 +793,7 @@ pre {
     .submenuDetailsContent,
     #portal-globalnav,
     .colophonWrapper,
-    #portlets-footer, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
+    #portlets-footer {
       width: auto; } }
   @media (min-width: 992px) {
     .container, #portal-header,
@@ -811,7 +804,7 @@ pre {
     .submenuDetailsContent,
     #portal-globalnav,
     .colophonWrapper,
-    #portlets-footer, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
+    #portlets-footer {
       width: auto; } }
   @media (min-width: 1300px) {
     .container, #portal-header,
@@ -822,7 +815,7 @@ pre {
     .submenuDetailsContent,
     #portal-globalnav,
     .colophonWrapper,
-    #portlets-footer, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
+    #portlets-footer {
       width: 1300px; } }
 
 .container-fluid {
@@ -4116,7 +4109,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
 .submenuDetailsContent > .navbar-header,
 #portal-globalnav > .navbar-header,
 .colophonWrapper > .navbar-header,
-#portlets-footer > .navbar-header, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-header,
+#portlets-footer > .navbar-header,
 .container > .navbar-collapse,
 #portal-header > .navbar-collapse,
 #portal-siteactions > .navbar-collapse,
@@ -4127,7 +4120,6 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
 #portal-globalnav > .navbar-collapse,
 .colophonWrapper > .navbar-collapse,
 #portlets-footer > .navbar-collapse,
-.portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
@@ -4141,7 +4133,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     .submenuDetailsContent > .navbar-header,
     #portal-globalnav > .navbar-header,
     .colophonWrapper > .navbar-header,
-    #portlets-footer > .navbar-header, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-header,
+    #portlets-footer > .navbar-header,
     .container > .navbar-collapse,
     #portal-header > .navbar-collapse,
     #portal-siteactions > .navbar-collapse,
@@ -4152,7 +4144,6 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     #portal-globalnav > .navbar-collapse,
     .colophonWrapper > .navbar-collapse,
     #portlets-footer > .navbar-collapse,
-    .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-collapse,
     .container-fluid > .navbar-header,
     .container-fluid > .navbar-collapse {
       margin-right: 0;
@@ -4204,7 +4195,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     .navbar > .submenuDetailsContent .navbar-brand,
     .navbar > #portal-globalnav .navbar-brand,
     .navbar > .colophonWrapper .navbar-brand,
-    .navbar > #portlets-footer .navbar-brand, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper .navbar > #portletPageTopRow .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    .navbar > #portlets-footer .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
 .navbar-toggle {
@@ -5232,16 +5223,16 @@ button.list-group-item-danger {
 .clearfix:before, #visual-portal-wrapper:before, .ArchetypesQueryWidget .criteria:before, #edit-bar:before, #portletPageColumns:before, .secondaryMenu .submenuWrapper:before, .globalnavWrapper:before, .globalnavWrapper #portal-globalnav:before, #submenu-details .submenuDetailsContent:before, .officeContactsWrapper .officePhone:before,
 .officeContactsWrapper .officeFax:before,
 .officeContactsWrapper .officeEmail:before,
-.officeContactsWrapper .officePec:before, .portaltype-portlet-page #portletPageColumns .portletPageColumn:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
+.officeContactsWrapper .officePec:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
-.officeContactsWrapper .officePec:after, .portaltype-portlet-page #portletPageColumns .portletPageColumn:after {
+.officeContactsWrapper .officePec:after {
   content: " ";
   display: table; }
 .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
-.officeContactsWrapper .officePec:after, .portaltype-portlet-page #portletPageColumns .portletPageColumn:after {
+.officeContactsWrapper .officePec:after {
   clear: both; }
 
 .center-block {
@@ -5249,7 +5240,7 @@ button.list-group-item-danger {
   margin-left: auto;
   margin-right: auto; }
 
-.pull-right, #topbar #top-link-group, #searchbox, .secondaryMenu, .portaltype-portlet-page #viewlet-below-content-title, #content .documentActions {
+.pull-right, #topbar #top-link-group, #searchbox, .secondaryMenu, #content .documentActions {
   float: right !important; }
 
 .pull-left, #portal-personaltools-wrapper .brand, #topbar .claim, #portal-logo {
@@ -7168,6 +7159,22 @@ dl.portletServiziOnline {
               color: #313131; }
           dl.portletServiziOnline dd.portletItem ul li a.external-link:before {
             content: '\f08e'; }
+  dl.portletServiziOnline.colonna-1-di-2 dd.portletItem ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px; }
+    dl.portletServiziOnline.colonna-1-di-2 dd.portletItem ul li {
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      border-top: 0;
+      padding: 5px 0; }
+  dl.portletServiziOnline.colonna-1-di-2 dt.portletHeader:after {
+    font-size: 60px;
+    bottom: -9px; }
 
 dl[class*='ortletNavigation'] dt.portletHeader {
   padding: 0;
@@ -7507,45 +7514,50 @@ dl[class*='ortletNavigation'] dd.portletItem {
     top: 0.1em;
     color: #777; }
 
-.portaltype-portlet-page #portletPageColumns {
-  clear: both;
-  margin-top: 10px; }
-  .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper {
-    background-color: #E0E0E0;
-    padding: 20px 0; }
-    .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic,
-    .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic {
-      position: relative; }
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic:before, .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic:after,
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic:before,
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic:after {
-        position: absolute;
-        content: '';
-        height: 100%;
-        width: 15px;
-        left: 15px;
-        top: 0;
-        background-color: #FFF; }
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic:after,
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic:after {
-        left: auto;
-        right: 15px; }
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic dt.portletHeader,
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic dt.portletHeader {
-        padding: 15px;
-        background-color: #FFF; }
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic dd.portletItem,
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic div.portletItem,
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic dd.portletItem,
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic div.portletItem {
-        padding: 15px;
-        background-color: #fff; }
-    .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.portletServiziOnline {
-      border: 0; }
-      .portaltype-portlet-page #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.portletServiziOnline dt.portletHeader {
-        background-color: #9c3524;
-        z-index: 1; }
+/*
+.portaltype-portlet-page            {
+  #portal-columns                   {  }
+  #viewlet-below-content-title      { @extend .pull-right; }
+  #portletPageColumns               { clear: both; margin-top: 10px; 
+    .portletPageColumn              { @extend .clearfix; }
 
+    // riga grigio (first)
+    #portletPageTopRowWrapper       { background-color: $gray-row;
+                                      padding: 20px 0;
+      #portletPageTopRow            { @extend .container; 
+        dl.rerPortletAdvancedStatic,
+        div.rerPortletAdvancedStatic { position: relative;
+                                       margin-bottom: 0;
+            &:before, &:after       { position: absolute;
+                                      content:'';
+                                      height: 100%;
+                                      width: 15px;
+                                      left:15px;
+                                      top:0;
+                                      background-color: #FFF;
+            }
+            &:after                 { left: auto;
+                                      right:15px;
+            }
+          dt.portletHeader          { padding: 15px; 
+                                      background-color: #FFF;
+          }
+          dd.portletItem,
+          div.portletItem           { padding: 15px; 
+                                      background-color: #fff;
+                                      min-height: 260px;
+          }          
+        }
+        dl.portletServiziOnline     { border:0;
+          dt.portletHeader          { background-color: $link-color;
+                                      z-index: 1;
+          }
+        }
+      }
+    }
+  }
+}
+*/
 #content {
   margin: 0 0 30px; }
   #content h1.documentFirstHeading {

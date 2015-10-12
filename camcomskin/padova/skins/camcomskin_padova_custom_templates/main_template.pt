@@ -164,10 +164,10 @@
 
 
     <div id="below-content">
-                         <metal:text define-slot="below-content" tal:content="nothing">
-                             PortletPage portlets
-                         </metal:text>
-                     </div>
+         <metal:text define-slot="below-content" tal:content="nothing">
+             PortletPage portlets
+         </metal:text>
+    </div>
 
     <div id="portal-footer-wrapper"
         class="row"
