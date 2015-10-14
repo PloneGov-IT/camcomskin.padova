@@ -30,7 +30,7 @@
     <viewlet name="plone.skip_links"/>
   </order>
   <order manager="plone.abovecontenttitle" skinname="camcomskin_padova">
-    <viewlet name="plone.abovecontenttitle.documentactions " />
+    <viewlet name="plone.abovecontenttitle.documentactions" />
   </order>
 
   <hidden manager="plone.portalheader" skinname="camcomskin_padova">
@@ -51,7 +51,7 @@
   </hidden>
 
   <hidden manager="plone.belowcontentbody" skinname="camcomskin_padova">
-    <viewlet name="plone.abovecontenttitle.documentactions " />
+    <viewlet name="plone.abovecontenttitle.documentactions" />
   </hidden>
 
 
