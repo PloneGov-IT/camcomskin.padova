@@ -17,9 +17,9 @@
 </metal:content-core>
 
 <metal:below-content fill-slot="below-content">
-<metal:block define-macro="content-core">
 
-  <div id="portletPageColumns bau"
+  <div id="portletPageColumns"
+
       tal:define="bothColumns python:view.hasColumnFirst() and view.hasColumnSecond()">
 
     <div id="portletPageTopRowWrapper">
@@ -47,8 +47,6 @@
         />
 
   </div>
-
-</metal:block>
 </metal:below-content>
 </body>
 </html>
