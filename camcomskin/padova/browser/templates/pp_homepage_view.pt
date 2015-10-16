@@ -19,14 +19,16 @@
 <metal:below-content fill-slot="below-content">
 <metal:block define-macro="content-core">
 
-  <div id="portletPageColumns"
+  <div id="portletPageColumns bau"
       tal:define="bothColumns python:view.hasColumnFirst() and view.hasColumnSecond()">
+
     <div id="portletPageTopRowWrapper">
       <div id="portletPageTopRow" class="portletPageColumn"
           tal:condition="view/hasColumnTop"
           tal:content="structure provider:collective.portletpage.toprow"
           />
     </div>
+    
     <div id="portletPageFirstColumn" class="portletPageColumn portletPageLeftColumn"
         tal:condition="view/hasColumnFirst"
         tal:content="structure provider:collective.portletpage.firstcolumn"
