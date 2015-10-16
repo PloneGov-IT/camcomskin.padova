@@ -102,7 +102,12 @@
         &:hover { background-color: darken($color, 20); }
       }
       #content h1.documentFirstHeading:before,
-      #content .proceedingsList h2:before { background-color: $color; }
+      #content .proceedingsList h2:before,
+      #portal-column-content dl.portletCollection dt.portletHeader:before,
+      #portal-column-content .boxCollezione h4.boxHeader:before { background-color: $color; }
+      dl.portletCollection dt.portletHeader a,
+      #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before, 
+      #visual-portal-wrapper div.lista-link div.portletItem ul li:before { color: $color !important; }
       dl.rerPortletAdvancedStatic,
       div.rerPortletAdvancedStatic        { 
         dt.portletHeader                  { border-color: $color;
@@ -112,6 +117,11 @@
         dd.portletItem,
         .portletItem,
         dd.portletFooter                  { border-color: $color; }
+      }
+      #portal-column-one,
+      #portal-column-two                  {
+        .boxCollezione h4.boxHeader,
+        .boxCollezione .boxFooter         { border-color: $color;  color: $color; }
       }
     }
 }

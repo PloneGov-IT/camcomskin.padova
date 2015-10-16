@@ -5475,7 +5475,8 @@ button.list-group-item-danger {
 .flaticon-email147, #content .documentActions ul li#document-action-sendto a:before {
   content: "\e006"; }
 
-.flaticon-exit13, #submenu-details .submenuDynamicWrapper ul li:before, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li:before, #content .proceedingsList dl dt:before {
+.flaticon-exit13, #submenu-details .submenuDynamicWrapper ul li:before, #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before, #visual-portal-wrapper
+div.lista-link div.portletItem ul li:before, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li:before, #content .proceedingsList dl dt:before {
   content: "\e007"; }
 
 .flaticon-file242 {
@@ -7115,6 +7116,36 @@ dl.portletImg {
       margin-top: 20px;
       margin-bottom: 16px; }
 
+dl.lista-link dd.portletItem ul,
+div.lista-link div.portletItem ul {
+  margin: 0; }
+  dl.lista-link dd.portletItem ul li,
+  div.lista-link div.portletItem ul li {
+    position: relative;
+    padding-left: 22px;
+    margin: 0 0 8px;
+    color: #777; }
+    #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before, #visual-portal-wrapper
+    div.lista-link div.portletItem ul li:before {
+      font-family: Flaticon;
+      font-size: 11px;
+      font-style: normal;
+      display: inline-block;
+      position: absolute;
+      top: 0.1em;
+      left: 0;
+      color: #9c3524; }
+    dl.lista-link dd.portletItem ul li a,
+    div.lista-link div.portletItem ul li a {
+      border: 0 !important; }
+      #visual-portal-wrapper dl.lista-link dd.portletItem ul li a, #visual-portal-wrapper
+      div.lista-link div.portletItem ul li a {
+        color: #313131; }
+        #visual-portal-wrapper dl.lista-link dd.portletItem ul li a:focus, #visual-portal-wrapper dl.lista-link dd.portletItem ul li a:hover, #visual-portal-wrapper
+        div.lista-link div.portletItem ul li a:focus, #visual-portal-wrapper
+        div.lista-link div.portletItem ul li a:hover {
+          color: #9c3524 !important; }
+
 dl.portletServiziOnline {
   border: 1px solid #9c3524; }
   dl.portletServiziOnline dt.portletHeader {
@@ -7417,10 +7448,6 @@ dl[class*='ortletNavigation'] dd.portletItem {
         position: absolute;
         left: 0;
         bottom: 0; }
-    .boxCollezione h4.boxHeader a.tile {
-      color: #283641; }
-      .boxCollezione h4.boxHeader a.tile:focus, .boxCollezione h4.boxHeader a.tile:hover {
-        color: #9c3524; }
   .boxCollezione .boxItem {
     padding: 10px 0;
     border-top: 1px dashed #777; }
@@ -7676,7 +7703,7 @@ dl.portletCollection {
         right: 15px; }
       .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic dt.portletHeader,
       .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic dt.portletHeader {
-        padding: 15px;
+        padding: 20px 15px 10px;
         background-color: #FFF; }
       .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic dd.portletItem,
       .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic div.portletItem,
@@ -7689,7 +7716,8 @@ dl.portletCollection {
       border: 0; }
       .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.portletServiziOnline dt.portletHeader {
         background-color: #9c3524;
-        z-index: 1; }
+        z-index: 1;
+        padding: 15px; }
 
 #content {
   margin: 0 0; }
@@ -7960,8 +7988,14 @@ dl.portletCollection {
   .section-avvia-attivita-impresa dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #213e3b; }
 .section-avvia-attivita-impresa #content h1.documentFirstHeading:before,
-.section-avvia-attivita-impresa #content .proceedingsList h2:before {
+.section-avvia-attivita-impresa #content .proceedingsList h2:before,
+.section-avvia-attivita-impresa #portal-column-content dl.portletCollection dt.portletHeader:before,
+.section-avvia-attivita-impresa #portal-column-content .boxCollezione h4.boxHeader:before {
   background-color: #45807A; }
+.section-avvia-attivita-impresa dl.portletCollection dt.portletHeader a,
+.section-avvia-attivita-impresa #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before,
+.section-avvia-attivita-impresa #visual-portal-wrapper div.lista-link div.portletItem ul li:before {
+  color: #45807A !important; }
 .section-avvia-attivita-impresa dl.rerPortletAdvancedStatic dt.portletHeader,
 .section-avvia-attivita-impresa div.rerPortletAdvancedStatic dt.portletHeader {
   border-color: #45807A;
@@ -7976,6 +8010,12 @@ dl.portletCollection {
 .section-avvia-attivita-impresa div.rerPortletAdvancedStatic .portletItem,
 .section-avvia-attivita-impresa div.rerPortletAdvancedStatic dd.portletFooter {
   border-color: #45807A; }
+.section-avvia-attivita-impresa #portal-column-one .boxCollezione h4.boxHeader,
+.section-avvia-attivita-impresa #portal-column-one .boxCollezione .boxFooter,
+.section-avvia-attivita-impresa #portal-column-two .boxCollezione h4.boxHeader,
+.section-avvia-attivita-impresa #portal-column-two .boxCollezione .boxFooter {
+  border-color: #45807A;
+  color: #45807A; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-1 a:focus,
 .globalnavWrapper #portal-globalnav li#portaltab-1 a:hover {
@@ -8009,8 +8049,14 @@ dl.portletCollection {
   .section-conosci-gestisci-impresa dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #6c471e; }
 .section-conosci-gestisci-impresa #content h1.documentFirstHeading:before,
-.section-conosci-gestisci-impresa #content .proceedingsList h2:before {
+.section-conosci-gestisci-impresa #content .proceedingsList h2:before,
+.section-conosci-gestisci-impresa #portal-column-content dl.portletCollection dt.portletHeader:before,
+.section-conosci-gestisci-impresa #portal-column-content .boxCollezione h4.boxHeader:before {
   background-color: #bb7c35; }
+.section-conosci-gestisci-impresa dl.portletCollection dt.portletHeader a,
+.section-conosci-gestisci-impresa #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before,
+.section-conosci-gestisci-impresa #visual-portal-wrapper div.lista-link div.portletItem ul li:before {
+  color: #bb7c35 !important; }
 .section-conosci-gestisci-impresa dl.rerPortletAdvancedStatic dt.portletHeader,
 .section-conosci-gestisci-impresa div.rerPortletAdvancedStatic dt.portletHeader {
   border-color: #bb7c35;
@@ -8025,6 +8071,12 @@ dl.portletCollection {
 .section-conosci-gestisci-impresa div.rerPortletAdvancedStatic .portletItem,
 .section-conosci-gestisci-impresa div.rerPortletAdvancedStatic dd.portletFooter {
   border-color: #bb7c35; }
+.section-conosci-gestisci-impresa #portal-column-one .boxCollezione h4.boxHeader,
+.section-conosci-gestisci-impresa #portal-column-one .boxCollezione .boxFooter,
+.section-conosci-gestisci-impresa #portal-column-two .boxCollezione h4.boxHeader,
+.section-conosci-gestisci-impresa #portal-column-two .boxCollezione .boxFooter {
+  border-color: #bb7c35;
+  color: #bb7c35; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-2 a:focus,
 .globalnavWrapper #portal-globalnav li#portaltab-2 a:hover {
@@ -8058,8 +8110,14 @@ dl.portletCollection {
   .section-promuovi-in-italia-e-estero dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #354e5a; }
 .section-promuovi-in-italia-e-estero #content h1.documentFirstHeading:before,
-.section-promuovi-in-italia-e-estero #content .proceedingsList h2:before {
+.section-promuovi-in-italia-e-estero #content .proceedingsList h2:before,
+.section-promuovi-in-italia-e-estero #portal-column-content dl.portletCollection dt.portletHeader:before,
+.section-promuovi-in-italia-e-estero #portal-column-content .boxCollezione h4.boxHeader:before {
   background-color: #5b859a; }
+.section-promuovi-in-italia-e-estero dl.portletCollection dt.portletHeader a,
+.section-promuovi-in-italia-e-estero #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before,
+.section-promuovi-in-italia-e-estero #visual-portal-wrapper div.lista-link div.portletItem ul li:before {
+  color: #5b859a !important; }
 .section-promuovi-in-italia-e-estero dl.rerPortletAdvancedStatic dt.portletHeader,
 .section-promuovi-in-italia-e-estero div.rerPortletAdvancedStatic dt.portletHeader {
   border-color: #5b859a;
@@ -8074,6 +8132,12 @@ dl.portletCollection {
 .section-promuovi-in-italia-e-estero div.rerPortletAdvancedStatic .portletItem,
 .section-promuovi-in-italia-e-estero div.rerPortletAdvancedStatic dd.portletFooter {
   border-color: #5b859a; }
+.section-promuovi-in-italia-e-estero #portal-column-one .boxCollezione h4.boxHeader,
+.section-promuovi-in-italia-e-estero #portal-column-one .boxCollezione .boxFooter,
+.section-promuovi-in-italia-e-estero #portal-column-two .boxCollezione h4.boxHeader,
+.section-promuovi-in-italia-e-estero #portal-column-two .boxCollezione .boxFooter {
+  border-color: #5b859a;
+  color: #5b859a; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-3 a:focus,
 .globalnavWrapper #portal-globalnav li#portaltab-3 a:hover {
@@ -8107,8 +8171,14 @@ dl.portletCollection {
   .section-finanziamenti-innovazione dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #5e693b; }
 .section-finanziamenti-innovazione #content h1.documentFirstHeading:before,
-.section-finanziamenti-innovazione #content .proceedingsList h2:before {
+.section-finanziamenti-innovazione #content .proceedingsList h2:before,
+.section-finanziamenti-innovazione #portal-column-content dl.portletCollection dt.portletHeader:before,
+.section-finanziamenti-innovazione #portal-column-content .boxCollezione h4.boxHeader:before {
   background-color: #97a763; }
+.section-finanziamenti-innovazione dl.portletCollection dt.portletHeader a,
+.section-finanziamenti-innovazione #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before,
+.section-finanziamenti-innovazione #visual-portal-wrapper div.lista-link div.portletItem ul li:before {
+  color: #97a763 !important; }
 .section-finanziamenti-innovazione dl.rerPortletAdvancedStatic dt.portletHeader,
 .section-finanziamenti-innovazione div.rerPortletAdvancedStatic dt.portletHeader {
   border-color: #97a763;
@@ -8123,6 +8193,12 @@ dl.portletCollection {
 .section-finanziamenti-innovazione div.rerPortletAdvancedStatic .portletItem,
 .section-finanziamenti-innovazione div.rerPortletAdvancedStatic dd.portletFooter {
   border-color: #97a763; }
+.section-finanziamenti-innovazione #portal-column-one .boxCollezione h4.boxHeader,
+.section-finanziamenti-innovazione #portal-column-one .boxCollezione .boxFooter,
+.section-finanziamenti-innovazione #portal-column-two .boxCollezione h4.boxHeader,
+.section-finanziamenti-innovazione #portal-column-two .boxCollezione .boxFooter {
+  border-color: #97a763;
+  color: #97a763; }
 
 .globalnavWrapper #portal-globalnav li#portaltab-4 a:focus,
 .globalnavWrapper #portal-globalnav li#portaltab-4 a:hover {
@@ -8156,8 +8232,14 @@ dl.portletCollection {
   .section-tutela-impresa-e-consumatore dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
     background-color: #77602a; }
 .section-tutela-impresa-e-consumatore #content h1.documentFirstHeading:before,
-.section-tutela-impresa-e-consumatore #content .proceedingsList h2:before {
+.section-tutela-impresa-e-consumatore #content .proceedingsList h2:before,
+.section-tutela-impresa-e-consumatore #portal-column-content dl.portletCollection dt.portletHeader:before,
+.section-tutela-impresa-e-consumatore #portal-column-content .boxCollezione h4.boxHeader:before {
   background-color: #bf9b48; }
+.section-tutela-impresa-e-consumatore dl.portletCollection dt.portletHeader a,
+.section-tutela-impresa-e-consumatore #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before,
+.section-tutela-impresa-e-consumatore #visual-portal-wrapper div.lista-link div.portletItem ul li:before {
+  color: #bf9b48 !important; }
 .section-tutela-impresa-e-consumatore dl.rerPortletAdvancedStatic dt.portletHeader,
 .section-tutela-impresa-e-consumatore div.rerPortletAdvancedStatic dt.portletHeader {
   border-color: #bf9b48;
@@ -8172,3 +8254,9 @@ dl.portletCollection {
 .section-tutela-impresa-e-consumatore div.rerPortletAdvancedStatic .portletItem,
 .section-tutela-impresa-e-consumatore div.rerPortletAdvancedStatic dd.portletFooter {
   border-color: #bf9b48; }
+.section-tutela-impresa-e-consumatore #portal-column-one .boxCollezione h4.boxHeader,
+.section-tutela-impresa-e-consumatore #portal-column-one .boxCollezione .boxFooter,
+.section-tutela-impresa-e-consumatore #portal-column-two .boxCollezione h4.boxHeader,
+.section-tutela-impresa-e-consumatore #portal-column-two .boxCollezione .boxFooter {
+  border-color: #bf9b48;
+  color: #bf9b48; }
