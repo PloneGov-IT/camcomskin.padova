@@ -5476,7 +5476,7 @@ button.list-group-item-danger {
   content: "\e006"; }
 
 .flaticon-exit13, #submenu-details .submenuDynamicWrapper ul li:before, #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before, #visual-portal-wrapper
-div.lista-link div.portletItem ul li:before, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li:before, #content .proceedingsList dl dt:before {
+div.lista-link div.portletItem ul li:before, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li:before, #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem:before, #content .proceedingsList dl dt:before {
   content: "\e007"; }
 
 .flaticon-file242 {
@@ -6380,7 +6380,7 @@ dl.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li,
 div.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li,
 div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li, dl.portletImg dt.portletHeader .tile,
 dl.portletImg dt.portletHeader a.tile, dl[class*='ortletNavigation'] dt.portletHeader .tile,
-dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #portal-footer-wrapper #portal-colophon a, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label {
+dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #content blockquote.pullquote, #portal-footer-wrapper #portal-colophon a, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label {
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
@@ -6476,9 +6476,13 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
 #viewlet-below-content-title {
   padding: 0; }
 
+#portal-column-one {
+  font-size: 0.95em; }
+
 #portal-column-two {
   padding-top: 50px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  font-size: 0.95em; }
   #portal-column-two .managePortletsLink {
     margin-top: 20px; }
 
@@ -7239,7 +7243,7 @@ dl[class*='ortletNavigation'] dd.portletItem {
       dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 ul.navTreeLevel1 ul {
         margin-left: -6px; }
     dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem {
-      padding: 6px 0;
+      padding: 4px 0;
       border-bottom: 1px dashed #283641;
       line-height: 1.35em;
       margin: 0; }
@@ -7267,7 +7271,7 @@ dl[class*='ortletNavigation'] dd.portletItem {
         position: relative;
         padding-left: 15px;
         line-height: 1.35em;
-        margin: 0 0 6px; }
+        margin: 0 0 3px; }
         dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li:before {
           font-family: Flaticon;
           font-size: 11px;
@@ -7277,6 +7281,46 @@ dl[class*='ortletNavigation'] dd.portletItem {
           top: 0.2em;
           left: 0;
           color: #9c3524; }
+#portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader {
+  font-size: 1.3em;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 2px solid #283641;
+  color: #283641;
+  background-color: transparent; }
+  #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader a.tile {
+    color: #283641;
+    background-color: transparent;
+    padding: 0 0 8px;
+    border: 0; }
+    #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader a.tile:focus, #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader a.tile:hover {
+      color: #9c3524; }
+#portletPageColumns dl[class*='ortletNavigation'] dd.portletItem {
+  border-bottom: 0;
+  padding-top: 15px; }
+  #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 {
+    margin: 0; }
+    #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem {
+      padding: 0 0 0 22px;
+      border-bottom: 0;
+      margin-bottom: 6px;
+      position: relative; }
+      #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a {
+        display: inline-block;
+        padding: 0;
+        border: 0; }
+        #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a:focus, #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a:hover {
+          color: #9c3524 !important;
+          background-color: transparent; }
+      #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem:before {
+        font-family: Flaticon;
+        font-size: 11px;
+        font-style: normal;
+        display: inline-block;
+        position: absolute;
+        top: 0.2em;
+        left: 0;
+        color: #9c3524; }
 
 .box .boxContent ul li {
   display: block; }
@@ -7740,6 +7784,21 @@ dl.portletCollection {
       bottom: 0; }
   #content .documentDescription {
     margin-bottom: 20px; }
+  #content blockquote.pullquote {
+    color: #313131; }
+  #content pre {
+    word-break: normal;
+    white-space: normal;
+    background-color: rgba(40, 54, 65, 0.7);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.05em;
+    line-height: 1.5em; }
+    #content pre a {
+      color: #FFF !important;
+      border-bottom: 1px dotted #FFF !important; }
+      #content pre a:focus, #content pre a:hover {
+        border-bottom: 1px solid #FFF !important;
+        color: #FFF !important; }
 
 #plone-document-byline {
   text-align: right;
@@ -7996,6 +8055,12 @@ dl.portletCollection {
 .section-avvia-attivita-impresa #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before,
 .section-avvia-attivita-impresa #visual-portal-wrapper div.lista-link div.portletItem ul li:before {
   color: #45807A !important; }
+.section-avvia-attivita-impresa #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader {
+  border-color: #45807A; }
+  .section-avvia-attivita-impresa #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader a.tile {
+    color: #45807A; }
+.section-avvia-attivita-impresa #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem:before {
+  color: #45807A; }
 .section-avvia-attivita-impresa dl.rerPortletAdvancedStatic dt.portletHeader,
 .section-avvia-attivita-impresa div.rerPortletAdvancedStatic dt.portletHeader {
   border-color: #45807A;
@@ -8057,6 +8122,12 @@ dl.portletCollection {
 .section-conosci-gestisci-impresa #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before,
 .section-conosci-gestisci-impresa #visual-portal-wrapper div.lista-link div.portletItem ul li:before {
   color: #bb7c35 !important; }
+.section-conosci-gestisci-impresa #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader {
+  border-color: #bb7c35; }
+  .section-conosci-gestisci-impresa #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader a.tile {
+    color: #bb7c35; }
+.section-conosci-gestisci-impresa #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem:before {
+  color: #bb7c35; }
 .section-conosci-gestisci-impresa dl.rerPortletAdvancedStatic dt.portletHeader,
 .section-conosci-gestisci-impresa div.rerPortletAdvancedStatic dt.portletHeader {
   border-color: #bb7c35;
@@ -8118,6 +8189,12 @@ dl.portletCollection {
 .section-promuovi-in-italia-e-estero #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before,
 .section-promuovi-in-italia-e-estero #visual-portal-wrapper div.lista-link div.portletItem ul li:before {
   color: #5b859a !important; }
+.section-promuovi-in-italia-e-estero #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader {
+  border-color: #5b859a; }
+  .section-promuovi-in-italia-e-estero #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader a.tile {
+    color: #5b859a; }
+.section-promuovi-in-italia-e-estero #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem:before {
+  color: #5b859a; }
 .section-promuovi-in-italia-e-estero dl.rerPortletAdvancedStatic dt.portletHeader,
 .section-promuovi-in-italia-e-estero div.rerPortletAdvancedStatic dt.portletHeader {
   border-color: #5b859a;
@@ -8179,6 +8256,12 @@ dl.portletCollection {
 .section-finanziamenti-innovazione #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before,
 .section-finanziamenti-innovazione #visual-portal-wrapper div.lista-link div.portletItem ul li:before {
   color: #97a763 !important; }
+.section-finanziamenti-innovazione #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader {
+  border-color: #97a763; }
+  .section-finanziamenti-innovazione #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader a.tile {
+    color: #97a763; }
+.section-finanziamenti-innovazione #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem:before {
+  color: #97a763; }
 .section-finanziamenti-innovazione dl.rerPortletAdvancedStatic dt.portletHeader,
 .section-finanziamenti-innovazione div.rerPortletAdvancedStatic dt.portletHeader {
   border-color: #97a763;
@@ -8240,6 +8323,12 @@ dl.portletCollection {
 .section-tutela-impresa-e-consumatore #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before,
 .section-tutela-impresa-e-consumatore #visual-portal-wrapper div.lista-link div.portletItem ul li:before {
   color: #bf9b48 !important; }
+.section-tutela-impresa-e-consumatore #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader {
+  border-color: #bf9b48; }
+  .section-tutela-impresa-e-consumatore #portletPageColumns dl[class*='ortletNavigation'] dt.portletHeader a.tile {
+    color: #bf9b48; }
+.section-tutela-impresa-e-consumatore #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem:before {
+  color: #bf9b48; }
 .section-tutela-impresa-e-consumatore dl.rerPortletAdvancedStatic dt.portletHeader,
 .section-tutela-impresa-e-consumatore div.rerPortletAdvancedStatic dt.portletHeader {
   border-color: #bf9b48;

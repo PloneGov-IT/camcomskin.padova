@@ -108,6 +108,12 @@
       dl.portletCollection dt.portletHeader a,
       #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before, 
       #visual-portal-wrapper div.lista-link div.portletItem ul li:before { color: $color !important; }
+      #portletPageColumns dl[class*='ortletNavigation'] {
+        dt.portletHeader                                { border-color: $color;
+          a.tile                                        {color: $color; }
+        }
+        dd.portletItem ul.navTreeLevel0 > li.navTreeItem:before { color: $color;}
+      }
       dl.rerPortletAdvancedStatic,
       div.rerPortletAdvancedStatic        { 
         dt.portletHeader                  { border-color: $color;

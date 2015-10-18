@@ -31,7 +31,9 @@ strong { @extend .semibold; }
 #portal-columns,
 #viewlet-below-content-title { padding:0;}
 
+#portal-column-one           { font-size: 0.95em;}
 #portal-column-two           { padding-top: 50px; padding-bottom: 30px; 
+                               font-size: 0.95em;
   .managePortletsLink        { margin-top: 20px; }
 }
 
@@ -689,48 +691,88 @@ dl[class*='ortletNavigation']       {
     }
     dd.portletItem                  { padding: 8px 0 0;
                                       border-bottom: 3px solid $blu;
-        ul.navTreeLevel0            { margin-bottom: 6px;
-            ul                      { margin: 6px 0 5px 15px; 
-                &.navTreeLevel1 ul  { margin-left: -6px; }
-            }
-            > li.navTreeItem        { padding: 6px 0; 
+      ul.navTreeLevel0              { margin-bottom: 6px;
+        ul                          { margin: 6px 0 5px 15px; 
+            &.navTreeLevel1 ul      { margin-left: -6px; }
+        }
+        > li.navTreeItem            { padding: 4px 0; 
                                       border-bottom: 1px dashed $blu;
                                       line-height: 1.35em;
                                       margin: 0;
-                &:last-child        { border-bottom: 0; }
-                .navTreeCurrentItem { background-color: $tr;
+          &:last-child              { border-bottom: 0; }
+          .navTreeCurrentItem       { background-color: $tr;
                                       border-left: 0; 
                                       @extend .semibold;
                                       margin: {left:0; right:0;};
-                }
-                a                   { display: block;
+          }
+          a                         { display: block;
                                       padding: 0.1em 0.3em;
                                       @include transition(all .1s ease-in); 
-                    &:focus,
-                    &:hover         { color: $link-color !important;
-                                       background-color: $grayVeryLighty;
-                    }
-                    &.navTreeItemInPath { @extend .semibold;
-                                          color: $blu !important;
-                    }
-                }
-                .navTreeLevel1      {                     
-                    > li            { font-size: 0.95em; }
-                    li              { position: relative;
+            &:focus,
+            &:hover                 { color: $link-color !important;
+                                      background-color: $grayVeryLighty;
+            }
+            &.navTreeItemInPath     { @extend .semibold;
+                                      color: $blu !important;
+            }
+          }
+          .navTreeLevel1            {                     
+            > li                    { font-size: 0.95em; }
+            li                      { position: relative;
                                       padding-left: 15px;
                                       line-height: 1.35em;
-                                      margin: 0 0 6px;
-                        &:before    { @include make-flaticon('exit13', 11px); 
+                                      margin: 0 0 3px;
+              &:before              { @include make-flaticon('exit13', 11px); 
                                       position: absolute;
                                       top: 0.2em;
                                       left: 0;
                                       color: $link-color;
-                        }
-                    }
-                }
+              }
             }
+          }
         }
+      }
     }
+  // se in pagina...
+  #portletPageColumns &           { 
+    dt.portletHeader              { font-size: 1.3em;
+                                    padding: {left: 0; right:0; }
+                                    border-bottom: 2px solid $blu;
+                                    color: $blu;
+                                    background-color: $tr;
+      a.tile                      { color: $blu; 
+                                    background-color: $tr;
+                                    padding: 0 0 8px;
+                                    border:0;
+        &:focus,
+        &:hover                   { color: $link-color; }
+      }
+    }
+    dd.portletItem                { border-bottom: 0;
+                                    padding-top: 15px; 
+      ul.navTreeLevel0            { margin: 0;          
+        > li.navTreeItem          { padding: 0 0 0 22px; 
+                                    border-bottom: 0;
+                                    margin-bottom: 6px;
+                                    position: relative;
+          a                       { display: inline-block;
+                                    padding: 0;
+                                    border:0;
+            &:focus,
+            &:hover               { color: $link-color !important;
+                                    background-color: $tr;
+            }
+          }
+          &:before                { @include make-flaticon('exit13', 11px); 
+                                    position: absolute;
+                                    top: 0.2em;
+                                    left: 0;
+                                    color: $link-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 .box                                {
@@ -1207,6 +1249,18 @@ dl.portletCollection                { margin-bottom: 20px;
                                       margin-bottom: 20px;
     }
     .portlet dt                     { @extend .regular; }
+    blockquote.pullquote            { @extend .regular; color: $text-color; }
+    pre                             { word-break: normal; 
+                                      white-space: normal;
+                                      background-color: transparentize($blu, .3);
+                                      font-family: $font-family-base;
+                                      font-size: 1.05em;
+                                      line-height: 1.5em;
+      a                             { color: #FFF !important; border-bottom: 1px dotted #FFF !important; 
+        &:focus,
+        &:hover                     { border-bottom: 1px solid #FFF !important; color: #FFF !important;}
+      }
+    }
 }
 #plone-document-byline              { text-align: right;
                                       font-size: 0.9em;
