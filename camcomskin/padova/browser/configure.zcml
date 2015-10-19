@@ -119,6 +119,22 @@
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
       />
+  <!-- Tabular view for offices -->
+  <browser:page
+      name="uffici_list_view"
+      for="plone.app.collection.interfaces.ICollection"
+      class=".uffici_list_view.UfficiListView"
+      permission="zope2.View"
+      template="templates/uffici_list_view.pt"
+      />
+  <browser:menuItems
+    for="plone.app.collection.interfaces.ICollection"
+    menu="plone_displayviews">
+    <browser:menuItem
+      title="Elenco Uffici"
+      action="uffici_list_view"
+    />
+  </browser:menuItems>
 
   <!-- Portletpage homepage view -->
   <browser:page
