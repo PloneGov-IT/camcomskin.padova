@@ -5430,7 +5430,7 @@ button.list-group-item-danger {
     display: inline-block !important; } }
 
 @media (max-width: 768px) {
-  .hidden-xs, #portal-footer-wrapper #portlets-footer .lista-link:before {
+  .hidden-xs, #portal-footer-wrapper #portlets-footer .lista-links:before {
     display: none !important; } }
 @media (min-width: 769px) and (max-width: 991px) {
   .hidden-sm {
@@ -8005,13 +8005,13 @@ dl.portletCollection {
       color: #FFF;
       font-size: 1em;
       border-bottom: 0; }
-    #portal-footer-wrapper #portlets-footer .lista-link {
+    #portal-footer-wrapper #portlets-footer .lista-links {
       color: #CCC;
       position: relative; }
       @media (min-width: 769px) {
-        #portal-footer-wrapper #portlets-footer .lista-link {
+        #portal-footer-wrapper #portlets-footer .lista-links {
           min-height: 225px; } }
-      #portal-footer-wrapper #portlets-footer .lista-link:before {
+      #portal-footer-wrapper #portlets-footer .lista-links:before {
         display: block;
         position: absolute;
         width: 1px;
@@ -8020,13 +8020,13 @@ dl.portletCollection {
         top: 0;
         background-color: #777;
         content: ''; }
-      #portal-footer-wrapper #portlets-footer .lista-link ul {
+      #portal-footer-wrapper #portlets-footer .lista-links ul {
         margin: 0; }
-        #portal-footer-wrapper #portlets-footer .lista-link ul li {
+        #portal-footer-wrapper #portlets-footer .lista-links ul li {
           margin-bottom: 7px;
           position: relative;
           padding-left: 15px; }
-          #portal-footer-wrapper #portlets-footer .lista-link ul li:before {
+          #portal-footer-wrapper #portlets-footer .lista-links ul li:before {
             display: inline-block;
             font-family: FontAwesome;
             content: "";
@@ -8034,8 +8034,11 @@ dl.portletCollection {
             position: absolute;
             left: 0;
             top: 0; }
-          #portal-footer-wrapper #portlets-footer .lista-link ul li a {
-            border: 0; }
+          #portal-footer-wrapper #portlets-footer .lista-links ul li a {
+            border: 0;
+            color: #FFF; }
+            #portal-footer-wrapper #portlets-footer .lista-links ul li a:focus, #portal-footer-wrapper #portlets-footer .lista-links ul li a:hover {
+              color: #FFF; }
 
 #content table.modulisticaListing tr.odd th.modulisticaDocument {
   border: 1px solid #999; }
