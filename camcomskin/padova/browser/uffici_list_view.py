@@ -7,7 +7,13 @@ class UfficiListView(BrowserView):
         self.request = request
 
     def get_offices(self):
-        return self.context.queryCatalog()
+        item_list = self.context.queryCatalog()
+        check_list = [x.portal_type == 'Ufficio' for x in item_list]
+
+        if not all(check_list):
+            return []
+
+        return item_list
 
     def get_phone(self,item):
          return item.getObject().phone

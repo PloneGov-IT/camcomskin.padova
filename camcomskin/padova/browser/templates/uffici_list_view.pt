@@ -11,7 +11,9 @@
     <metal:fill fill-slot="main">
 
 <table class="table"
-       tal:define="offices_list view/get_offices">
+       tal:define="offices_list view/get_offices"
+       tal:condition="offices_list"
+       >
       <caption></caption>
       <thead>
         <tr>
@@ -23,16 +25,16 @@
       </thead>
       <tbody>
         <tal:loop tal:repeat="office offices_list">
-        <tr>
-          <th scope="row"><a tal:attributes="href python: view.get_url(office)"
-                             tal:content="office/Title">
-                          </a>
-          </th>
-          <td tal:content="python: view.get_phone(office)"></td>
-          <td tal:content="python: view.get_email(office)"></td>
-          <td tal:content="python: view.get_pec(office)"></td>
-        </tr>
-      </tal:loop>
+          <tr>
+            <th scope="row"><a tal:attributes="href python: view.get_url(office)"
+                               tal:content="office/Title">
+                            </a>
+            </th>
+            <td tal:content="python: view.get_phone(office)"></td>
+            <td tal:content="python: view.get_email(office)"></td>
+            <td tal:content="python: view.get_pec(office)"></td>
+          </tr>
+        </tal:loop>
       </tbody>
     </table>
   </metal:fill>
