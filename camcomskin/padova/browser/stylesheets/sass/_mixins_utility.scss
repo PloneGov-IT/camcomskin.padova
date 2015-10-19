@@ -72,6 +72,18 @@
       text-overflow: ellipsis;
 }
 
+@mixin sfumagiu() {
+  &:after { content: "";
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            height: 44px;
+            bottom: 0;
+            left: 0;
+            @include gradient-vertical(rgba(255, 255, 255, 0.5), #FFF, 0, 70%);
+  }
+}
+
 // GESTIONE COLORI AREE TEMATICHE
 
 @mixin define-area ($n_area, $color, $id-sezione) {
@@ -104,7 +116,7 @@
       #content h1.documentFirstHeading:before,
       #content .proceedingsList h2:before,
       #portal-column-content dl.portletCollection dt.portletHeader:before,
-      #portal-column-content .boxCollezione h4.boxHeader:before { background-color: $color; }
+      #portal-column-content .boxCollezioneBase h4.boxHeader:before { background-color: $color; }
       dl.portletCollection dt.portletHeader a,
       #visual-portal-wrapper dl.lista-link dd.portletItem ul li:before, 
       #visual-portal-wrapper div.lista-link div.portletItem ul li:before { color: $color !important; }
@@ -126,8 +138,9 @@
       }
       #portal-column-one,
       #portal-column-two                  {
-        .boxCollezione h4.boxHeader,
-        .boxCollezione .boxFooter         { border-color: $color;  color: $color; }
+        .boxCollezioneBase h4.boxHeader,
+        .boxCollezioneBase .boxFooter         { border-color: $color;  color: $color; }
       }
+      .boxCollezioneRigaNotizie .boxCollezioneContentWrapper { background-color: transparentize($color, .3); }
     }
 }

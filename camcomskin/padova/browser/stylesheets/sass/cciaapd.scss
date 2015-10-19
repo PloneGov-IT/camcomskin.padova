@@ -948,7 +948,7 @@ dl[class*='ortletNavigation']       {
 
 
 // PORTLET COLLEZIONE CUSTOM
-.boxCollezione                      { margin-bottom: 20px;
+.boxCollezioneBase                      { margin-bottom: 20px;
   h4.boxHeader                      { font-size: 1.3em;
                                       padding: 0 0 6px;
                                       margin:0;
@@ -1245,9 +1245,79 @@ dl.portletCollection                { margin-bottom: 20px;
       }
     }
     #portletPageMiddleRowWrapper    { @extend .clearfix; }
+
+    // sotto alle portlet
+    + #viewlet-below-content        { 
+      #plone-document-byline        { @extend .container; }
+    }
+  }  
+
+  #below-content                    { 
+    // Riga di notizie con sfondo
+    .boxCollezioneRigaNotizie       { 
+      .boxCollezioneContent         { @extend .container; padding: 30px 0; }
+    }
+    #plone-document-byline          { display: none;}
   }
+  #portal-footer-wrapper            { margin-top:0; }
 }
 
+// PORTLET IN RIGA PER NOTIZIE
+// (la lascio fuori... può servire anche altrove)
+.boxCollezioneRigaNotizie         { background: $tr url($img-path + 'bg-notizie.jpg') no-repeat center center;
+                                    background-size: cover;
+  .boxCollezioneContentWrapper    { background-color: transparentize($link-color, .3); }
+  .boxCollezioneContent           { padding: 30px 0; }
+  h4.boxHeader                    { color: #FFF; 
+                                    padding: 0 $grid-gutter-width/2;
+                                    margin: 0 0 20px;
+                                    font-size: 1.3em;
+    &:before                      { @include make-fa('\f02b'); 
+                                    font-size: 22px;
+                                    margin-right: 5px;
+    }
+  }
+  .boxItem                        { @extend .col-sm-3;     
+                                    padding: 0 $grid-gutter-width/2;                               
+    .boxItemContent               { background-color: #FFF;
+                                    padding: 10px;
+                                    height: 200px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    @include sfumagiu;
+      p.dataItem                  { margin-bottom: 10px;
+                                    font-size: 0.95em;
+                                    color: $gray-light;
+      }
+      h5.titleItem                { font-size: 1.15em;
+                                    margin:0 0 8px;
+        a                         {
+          &,
+          #content &              { color: $text-color; 
+            &:focus,
+            &:hover               { color: $link-color; }
+          }
+        }
+      }
+      p.descItem                  { margin:0; }
+    }
+  }
+  .boxFooter                      { clear:both;
+                                    text-align: center;
+                                    padding: 30px 0 10px;
+    a                             { color: #FFF; 
+                                    display: inline-block;
+                                    text-transform: uppercase;
+                                    border: 1px solid #FFF;
+                                    border-radius: 2px;
+                                    padding: 5px 10px;
+                                    font-size: 0.9em;
+                                    @extend .semibold;
+      &:focus,
+      &:hover                     { background-color: transparentize($blu, .5)}
+    }
+  }
+}
 
 // FORMATTAZIONI
 #content                            { margin: 0 0;
@@ -1455,20 +1525,20 @@ dl.portletCollection                { margin-bottom: 20px;
                                       content: '';
             }
             ul                      { margin: 0;
-                li                  { margin-bottom: 7px; 
+              li                    { margin-bottom: 7px; 
                                       position: relative;
                                       padding-left: 15px;
-                    &:before        { @include make-fa('\f105'); 
+                &:before            { @include make-fa('\f105'); 
                                       position: absolute;
                                       left: 0;
                                       top: 0;                                      
-                    }
-                    a               { border:0; 
-                                      color: #FFF;
-                      &:focus,
-                      &:hover       { color: #FFF; }
-                    }
                 }
+                a                   { border:0; 
+                                      color: #FFF;
+                  &:focus,
+                  &:hover           { color: #FFF; }
+                }
+              }
             }
         }
     }

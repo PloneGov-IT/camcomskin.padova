@@ -16,10 +16,11 @@
 
     <div class=""
         tal:attributes="id view/data/div_id;
-                        class string:box boxCollezione boxCollezioneBase ${class}"
+                        class string:box boxCollezione boxCollezioneRigaNotizie ${class}"
         tal:define="collection_url view/collection_url;
                     class view/data/css_class|nothing;">
-
+    <div class="boxCollezioneContentWrapper">
+      <div class="boxCollezioneContent">
         <h4 class="boxHeader">       
 
             <a class="rss_feed" title="RSS feed"
@@ -35,13 +36,13 @@
             tal:define="item_path obj/getPath;
                         firstItem repeat/obj/start;"
             tal:attributes="class python:firstItem and 'boxItem firstItem' or 'boxItem'">
+          <div class="boxItemContent">
+            <p class="dataItem" tal:condition="view/data/show_dates">
+              <span tal:condition="python: obj.EffectiveDate != 'None'"
+                 tal:content="python: obj.effective.strftime('%d/%m/%Y')">12/12/2013
+              </span>
+            </p>
             <h5 class="titleItem">
-              <tal:data condition="view/data/show_dates">
-                <span tal:condition="python: obj.EffectiveDate != 'None'"
-                   class="dataItem"
-                   tal:content="python: obj.effective.strftime('%d/%m/%Y')">12/12/2013
-                </span>
-               </tal:data>
                 <a href="#"
                          tal:attributes="href obj/getURL;">
                         <span tal:replace="obj/Title">
@@ -49,6 +50,8 @@
                         </span>
                     </a>
               </h5>
+              <p tal:condition="obj/Description" class="descItem" tal:content="obj/Description"></p>
+          </div>
         </div>
         </tal:events>
 
@@ -67,7 +70,8 @@
       </div>
 
     </div>
-
+  </div>
+</div>
 
 </metal:listingmacro>
 
