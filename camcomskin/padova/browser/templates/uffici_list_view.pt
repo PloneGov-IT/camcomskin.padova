@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="camcomskin.padova">
+
+  <body>
+    <metal:fill fill-slot="main">
+
+<table class="table"
+       tal:define="offices_list view/get_offices">
+      <caption></caption>
+      <thead>
+        <tr>
+          <th>Ufficio</th>
+          <th>Telefono</th>
+          <th>Email</th>
+          <th>PEC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tal:loop tal:repeat="office offices_list">
+        <tr>
+          <th scope="row"><a tal:attributes="href python: view.get_url(office)"
+                             tal:content="office/Title">
+                          </a>
+          </th>
+          <td tal:content="python: view.get_phone(office)"></td>
+          <td tal:content="python: view.get_email(office)"></td>
+          <td tal:content="python: view.get_pec(office)"></td>
+        </tr>
+      </tal:loop>
+      </tbody>
+    </table>
+  </metal:fill>
+  </body>
+</html>
