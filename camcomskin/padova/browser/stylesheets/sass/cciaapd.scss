@@ -31,7 +31,9 @@ strong { @extend .semibold; }
 #portal-columns,
 #viewlet-below-content-title { padding:0;}
 
+#portal-column-one           { font-size: 0.95em;}
 #portal-column-two           { padding-top: 50px; padding-bottom: 30px; 
+                               font-size: 0.95em;
   .managePortletsLink        { margin-top: 20px; }
 }
 
@@ -582,6 +584,30 @@ dl.portletImg                       { padding:0;
   }
 }
 
+// con lista di link in stile NAV
+dl.lista-link dd.portletItem,
+div.lista-link div.portletItem      {
+  ul                                { margin:0;
+    li                              { position: relative;
+                                      padding-left: 22px;
+                                      margin: 0 0 8px;
+                                      color: $gray-light;
+      #visual-portal-wrapper &:before { @include make-flaticon('exit13', 11px); 
+                                      position: absolute;
+                                      top: 0.1em;
+                                      left: 0;
+                                      color: $link-color;
+      }
+      a                             { border: 0 !important;
+        #visual-portal-wrapper &    { color: $text-color; 
+          &:focus,
+          &:hover                   { color: $link-color !important; }
+        }
+      }
+    }
+  }
+}
+
 // SERVIZI ONLINE
 dl.portletServiziOnline             { border: 1px solid $link-color;
   dt.portletHeader                  { background-color: $link-color;
@@ -665,48 +691,88 @@ dl[class*='ortletNavigation']       {
     }
     dd.portletItem                  { padding: 8px 0 0;
                                       border-bottom: 3px solid $blu;
-        ul.navTreeLevel0            { margin-bottom: 6px;
-            ul                      { margin: 6px 0 5px 15px; 
-                &.navTreeLevel1 ul  { margin-left: -6px; }
-            }
-            > li.navTreeItem        { padding: 6px 0; 
+      ul.navTreeLevel0              { margin-bottom: 6px;
+        ul                          { margin: 6px 0 5px 15px; 
+            &.navTreeLevel1 ul      { margin-left: -6px; }
+        }
+        > li.navTreeItem            { padding: 4px 0; 
                                       border-bottom: 1px dashed $blu;
                                       line-height: 1.35em;
                                       margin: 0;
-                &:last-child        { border-bottom: 0; }
-                .navTreeCurrentItem { background-color: $tr;
+          &:last-child              { border-bottom: 0; }
+          .navTreeCurrentItem       { background-color: $tr;
                                       border-left: 0; 
                                       @extend .semibold;
                                       margin: {left:0; right:0;};
-                }
-                a                   { display: block;
+          }
+          a                         { display: block;
                                       padding: 0.1em 0.3em;
                                       @include transition(all .1s ease-in); 
-                    &:focus,
-                    &:hover         { color: $link-color !important;
-                                       background-color: $grayVeryLighty;
-                    }
-                    &.navTreeItemInPath { @extend .semibold;
-                                          color: $blu !important;
-                    }
-                }
-                .navTreeLevel1      {                     
-                    > li            { font-size: 0.95em; }
-                    li              { position: relative;
+            &:focus,
+            &:hover                 { color: $link-color !important;
+                                      background-color: $grayVeryLighty;
+            }
+            &.navTreeItemInPath     { @extend .semibold;
+                                      color: $blu !important;
+            }
+          }
+          .navTreeLevel1            {                     
+            > li                    { font-size: 0.95em; }
+            li                      { position: relative;
                                       padding-left: 15px;
                                       line-height: 1.35em;
-                                      margin: 0 0 6px;
-                        &:before    { @include make-flaticon('exit13', 11px); 
+                                      margin: 0 0 3px;
+              &:before              { @include make-flaticon('exit13', 11px); 
                                       position: absolute;
                                       top: 0.2em;
                                       left: 0;
                                       color: $link-color;
-                        }
-                    }
-                }
+              }
             }
+          }
         }
+      }
     }
+  // se in pagina...
+  #portletPageColumns &           { 
+    dt.portletHeader              { font-size: 1.3em;
+                                    padding: {left: 0; right:0; }
+                                    border-bottom: 2px solid $blu;
+                                    color: $blu;
+                                    background-color: $tr;
+      a.tile                      { color: $blu; 
+                                    background-color: $tr;
+                                    padding: 0 0 8px;
+                                    border:0;
+        &:focus,
+        &:hover                   { color: $link-color; }
+      }
+    }
+    dd.portletItem                { border-bottom: 0;
+                                    padding-top: 15px; 
+      ul.navTreeLevel0            { margin: 0;          
+        > li.navTreeItem          { padding: 0 0 0 22px; 
+                                    border-bottom: 0;
+                                    margin-bottom: 6px;
+                                    position: relative;
+          a                       { display: inline-block;
+                                    padding: 0;
+                                    border:0;
+            &:focus,
+            &:hover               { color: $link-color !important;
+                                    background-color: $tr;
+            }
+          }
+          &:before                { @include make-flaticon('exit13', 11px); 
+                                    position: absolute;
+                                    top: 0.2em;
+                                    left: 0;
+                                    color: $link-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 .box                                {
@@ -864,6 +930,130 @@ dl[class*='ortletNavigation']       {
   }
 }
 
+
+// PORTLET COLLEZIONE CUSTOM
+.boxCollezione                      { margin-bottom: 20px;
+  h4.boxHeader                      { font-size: 1.3em;
+                                      padding: 0 0 6px;
+                                      margin:0;
+                                      position: relative; 
+    #portal-column-one &,
+    #portal-column-two &            { border-bottom: 2px solid $blu;
+                                      color: $blu;
+    }                   
+    #portal-column-content &        { padding-bottom: 10px; 
+      &:before                      { display: block;
+                                      content: '';
+                                      background-color: lighten($blu, 20);
+                                      border-radius: 3px;
+                                      height: 3px;
+                                      width: 60px;
+                                      position: absolute;
+                                      left:0;
+                                      bottom:0;
+      }
+    }   
+  }
+  .boxItem                          { padding: 10px 0; 
+                                      border-top: 1px dashed $gray-light;
+    &.firstItem                     { border:0; padding-top: 14px; }
+    h5.titleItem                    { font-size: 1em; 
+                                      margin:0;
+                                      @extend .light;
+    }
+    .dataItem                       { display: block; 
+                                      font-size: 0.9em;
+                                      color: $gray-light;
+                                      padding-bottom: 3px;
+    }
+  }
+  .boxFooter                        { text-align: right;
+                                      font-size: 0.85em;
+                                      @extend .bold;
+                                      text-transform: uppercase;
+    a                               { color: $text-color;
+                                      display: inline-block;
+      &:focus,
+      &:hover                       { color: $link-color; }
+      &:after                       { @include make-flaticon('right161', 15px); 
+                                      margin-left: 7px;
+                                      color: $gray;
+      }
+    }
+    #portal-column-one &,
+    #portal-column-two &            { border-top: 2px solid $blu;
+                                      color: $blu;
+                                      padding-top: 10px;
+                                      margin-top: 4px;
+    }
+  }
+}
+
+// PORTLET COLLEZIONE OLD
+dl.portletCollection                { margin-bottom: 20px;
+  dt.portletHeader                  { font-size: 1.3em;
+                                      padding: 0 0 6px;
+                                      margin:0;
+                                      position: relative;
+                                      background-color: $tr;
+    #portal-column-one &,
+    #portal-column-two &            { border-bottom: 2px solid $blu;
+                                      color: $blu;
+    }                   
+    #portal-column-content &        { padding-bottom: 10px; 
+      &:before                      { display: block;
+                                      content: '';
+                                      background-color: lighten($blu, 20);
+                                      border-radius: 3px;
+                                      height: 3px;
+                                      width: 60px;
+                                      position: absolute;
+                                      left:0;
+                                      bottom:0;
+      }
+    }                                      
+    a                               { color: $blu !important; 
+                                      border:0 !important;
+      &:focus,
+      &:hover                       { color: $link-color !important;}
+    }
+  }
+  dd.portletItem                    { padding: 10px 0; 
+                                      border-top: 1px dashed $gray-light;
+    a                               { border:0 !important;}
+    .portletItemDetails             { display: block; 
+                                      font-size: 0.9em;
+                                      color: $gray-light;
+                                      padding-top: 4px;
+                                      margin:0;
+    }
+  }
+  dt.portletHeader + dd.portletItem { border:0; }
+  dd.portletFooter                  { text-align: right;
+                                      font-size: 0.85em;
+                                      @extend .bold;
+                                      text-transform: uppercase;
+                                      padding:0;
+    a                               { color: $text-color !important;
+                                      display: inline-block;
+                                      border:0 !important;
+      &:focus,
+      &:hover                       { color: $link-color; }
+      &:after                       { @include make-flaticon('right161', 15px); 
+                                      margin-left: 7px;
+                                      color: $gray;
+      }
+    }
+    #portal-column-one &,
+    #portal-column-two &            { border-top: 2px solid $blu;
+                                      color: $blu;
+                                      padding-top: 10px;
+                                      margin-top: 4px;
+    }
+  }
+}
+
+
 // UFFICIO
 .officeTag                          { @extend .regular;
                                       color: #999;
@@ -992,9 +1182,7 @@ dl[class*='ortletNavigation']       {
 }
 
 // PAGINA INTRO SEZIONE (PORTLET PAGE)
-/*
-.portaltype-portlet-page            {
-  #portal-columns                   {  }
+.template-pp_homepage_view          {
   #viewlet-below-content-title      { @extend .pull-right; }
   #portletPageColumns               { clear: both; margin-top: 10px; 
     .portletPageColumn              { @extend .clearfix; }
@@ -1017,7 +1205,7 @@ dl[class*='ortletNavigation']       {
             &:after                 { left: auto;
                                       right:15px;
             }
-          dt.portletHeader          { padding: 15px; 
+          dt.portletHeader          { padding: 20px 15px 10px; 
                                       background-color: #FFF;
           }
           dd.portletItem,
@@ -1029,16 +1217,17 @@ dl[class*='ortletNavigation']       {
         dl.portletServiziOnline     { border:0;
           dt.portletHeader          { background-color: $link-color;
                                       z-index: 1;
+                                      padding: 15px;
           }
         }
       }
     }
   }
 }
-*/
+
 
 // FORMATTAZIONI
-#content                            { margin: 0 0 $grid-gutter-width;
+#content                            { margin: 0 0;
     h1.documentFirstHeading         { @extend .light;
                                       font-size: 2.4em;
                                       position: relative;
@@ -1060,8 +1249,22 @@ dl[class*='ortletNavigation']       {
                                       margin-bottom: 20px;
     }
     .portlet dt                     { @extend .regular; }
+    blockquote.pullquote            { @extend .regular; color: $text-color; }
+    pre                             { word-break: normal; 
+                                      white-space: normal;
+                                      background-color: transparentize($blu, .3);
+                                      font-family: $font-family-base;
+                                      font-size: 1.05em;
+                                      line-height: 1.5em;
+      a                             { color: #FFF !important; border-bottom: 1px dotted #FFF !important; 
+        &:focus,
+        &:hover                     { border-bottom: 1px solid #FFF !important; color: #FFF !important;}
+      }
+    }
 }
 #plone-document-byline              { text-align: right;
+                                      font-size: 0.9em;
+                                      margin-bottom: 20px;
   .documentModified                 { font-style: italic; color: $gray-light; }
 }
 
@@ -1093,7 +1296,7 @@ dl[class*='ortletNavigation']       {
 }
 
 // LISTING BAR (PAGINAZIONE)
-#content .listingBar                 { padding-top: 20px;
+#viewlet-below-content .listingBar   { padding-top: 20px;
   span                               { color: $gray-light; }
   a                                  { border: 1px solid lighten($blu, 40);
                                        border-radius: 3px;
@@ -1104,6 +1307,7 @@ dl[class*='ortletNavigation']       {
                                        color: #FFF !important;
     }
   }
+  a.previous                         { }
 }
 
 // CORRELATI
@@ -1258,6 +1462,7 @@ dl[class*='ortletNavigation']       {
   td                                {
     label                           { @extend .regular; }
   }
+  > tbody:first-child > tr:first-child > td     { border-top-color: #999; }
 }
 
 /// SITEMAP

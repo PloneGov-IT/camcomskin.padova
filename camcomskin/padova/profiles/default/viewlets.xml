@@ -52,6 +52,7 @@
 
   <hidden manager="plone.belowcontentbody" skinname="camcomskin_padova">
     <viewlet name="plone.abovecontenttitle.documentactions" />
+    <viewlet name="plone.belowcontenttitle.documentbyline" />
   </hidden>
 
 
