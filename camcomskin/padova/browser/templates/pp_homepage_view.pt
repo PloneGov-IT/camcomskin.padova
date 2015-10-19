@@ -22,24 +22,25 @@
 
       tal:define="bothColumns python:view.hasColumnFirst() and view.hasColumnSecond()">
 
-    <div id="portletPageTopRowWrapper">
+    <div id="portletPageTopRowWrapper" tal:condition="view/hasColumnTop">
       <div id="portletPageTopRow" class="portletPageColumn"
-          tal:condition="view/hasColumnTop"
           tal:content="structure provider:collective.portletpage.toprow"
           />
     </div>
     
-    <div id="portletPageFirstColumn" class="portletPageColumn portletPageLeftColumn"
-        tal:condition="view/hasColumnFirst"
-        tal:content="structure provider:collective.portletpage.firstcolumn"
-        tal:attributes="class python:bothColumns and 'portletPageColumn portletPageLeftColumn' or 'portletPageColumn'"
-        />
+    <div id="portletPageMiddleRowWrapper" tal:condition="view/hasColumnFirst|view/hasColumnSecond" >
+      <div id="portletPageFirstColumn" class="portletPageColumn portletPageLeftColumn"
+          tal:condition="view/hasColumnFirst"
+          tal:content="structure provider:collective.portletpage.firstcolumn"
+          tal:attributes="class python:bothColumns and 'portletPageColumn portletPageLeftColumn' or 'portletPageColumn'"
+          />
 
-    <div id="portletPageSecondColumn" class="portletPageColumn portletPageRightColumn"
-        tal:condition="view/hasColumnSecond"
-        tal:content="structure provider:collective.portletpage.secondcolumn"
-        tal:attributes="class python:bothColumns and 'portletPageColumn portletPageRightColumn' or 'portletPageColumn'"
-        />
+      <div id="portletPageSecondColumn" class="portletPageColumn portletPageRightColumn"
+          tal:condition="view/hasColumnSecond"
+          tal:content="structure provider:collective.portletpage.secondcolumn"
+          tal:attributes="class python:bothColumns and 'portletPageColumn portletPageRightColumn' or 'portletPageColumn'"
+          />
+    </div>
 
     <div id="portletPageBottomRow" class="portletPageColumn"
         tal:condition="view/hasColumnBottom"

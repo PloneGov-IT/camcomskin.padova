@@ -757,7 +757,9 @@ pre {
 .submenuDetailsContent,
 #portal-globalnav,
 .colophonWrapper,
-#portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
+#portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
+.template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper,
+.template-pp_homepage_view #portletPageColumns #portletPageBottomRow {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -770,7 +772,9 @@ pre {
   .submenuDetailsContent:before,
   #portal-globalnav:before,
   .colophonWrapper:before,
-  #portlets-footer:before, .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow:before, .container:after, #portal-header:after,
+  #portlets-footer:before, .template-pp_homepage_view #portletPageColumns #portletPageTopRow:before,
+  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:before,
+  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:before, .container:after, #portal-header:after,
   #portal-siteactions:after,
   .topbarContent:after,
   .breadcrumbsContent:after,
@@ -778,7 +782,9 @@ pre {
   .submenuDetailsContent:after,
   #portal-globalnav:after,
   .colophonWrapper:after,
-  #portlets-footer:after, .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow:after {
+  #portlets-footer:after, .template-pp_homepage_view #portletPageColumns #portletPageTopRow:after,
+  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after,
+  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:after {
     content: " ";
     display: table; }
   .container:after, #portal-header:after,
@@ -789,7 +795,9 @@ pre {
   .submenuDetailsContent:after,
   #portal-globalnav:after,
   .colophonWrapper:after,
-  #portlets-footer:after, .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow:after {
+  #portlets-footer:after, .template-pp_homepage_view #portletPageColumns #portletPageTopRow:after,
+  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after,
+  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:after {
     clear: both; }
   @media (min-width: 769px) {
     .container, #portal-header,
@@ -800,7 +808,9 @@ pre {
     .submenuDetailsContent,
     #portal-globalnav,
     .colophonWrapper,
-    #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
+    #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
+    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper,
+    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow {
       width: auto; } }
   @media (min-width: 992px) {
     .container, #portal-header,
@@ -811,7 +821,9 @@ pre {
     .submenuDetailsContent,
     #portal-globalnav,
     .colophonWrapper,
-    #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
+    #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
+    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper,
+    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow {
       width: auto; } }
   @media (min-width: 1300px) {
     .container, #portal-header,
@@ -822,7 +834,9 @@ pre {
     .submenuDetailsContent,
     #portal-globalnav,
     .colophonWrapper,
-    #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
+    #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
+    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper,
+    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow {
       width: 1300px; } }
 
 .container-fluid {
@@ -4116,7 +4130,9 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
 .submenuDetailsContent > .navbar-header,
 #portal-globalnav > .navbar-header,
 .colophonWrapper > .navbar-header,
-#portlets-footer > .navbar-header, .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-header,
+#portlets-footer > .navbar-header, .template-pp_homepage_view #portletPageColumns #portletPageTopRow > .navbar-header,
+.template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper > .navbar-header,
+.template-pp_homepage_view #portletPageColumns #portletPageBottomRow > .navbar-header,
 .container > .navbar-collapse,
 #portal-header > .navbar-collapse,
 #portal-siteactions > .navbar-collapse,
@@ -4127,7 +4143,9 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
 #portal-globalnav > .navbar-collapse,
 .colophonWrapper > .navbar-collapse,
 #portlets-footer > .navbar-collapse,
-.template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-collapse,
+.template-pp_homepage_view #portletPageColumns #portletPageTopRow > .navbar-collapse,
+.template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper > .navbar-collapse,
+.template-pp_homepage_view #portletPageColumns #portletPageBottomRow > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
@@ -4141,7 +4159,9 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     .submenuDetailsContent > .navbar-header,
     #portal-globalnav > .navbar-header,
     .colophonWrapper > .navbar-header,
-    #portlets-footer > .navbar-header, .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-header,
+    #portlets-footer > .navbar-header, .template-pp_homepage_view #portletPageColumns #portletPageTopRow > .navbar-header,
+    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper > .navbar-header,
+    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow > .navbar-header,
     .container > .navbar-collapse,
     #portal-header > .navbar-collapse,
     #portal-siteactions > .navbar-collapse,
@@ -4152,7 +4172,9 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     #portal-globalnav > .navbar-collapse,
     .colophonWrapper > .navbar-collapse,
     #portlets-footer > .navbar-collapse,
-    .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow > .navbar-collapse,
+    .template-pp_homepage_view #portletPageColumns #portletPageTopRow > .navbar-collapse,
+    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper > .navbar-collapse,
+    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow > .navbar-collapse,
     .container-fluid > .navbar-header,
     .container-fluid > .navbar-collapse {
       margin-right: 0;
@@ -4204,7 +4226,9 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     .navbar > .submenuDetailsContent .navbar-brand,
     .navbar > #portal-globalnav .navbar-brand,
     .navbar > .colophonWrapper .navbar-brand,
-    .navbar > #portlets-footer .navbar-brand, .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper .navbar > #portletPageTopRow .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    .navbar > #portlets-footer .navbar-brand, .template-pp_homepage_view #portletPageColumns .navbar > #portletPageTopRow .navbar-brand,
+    .template-pp_homepage_view #portletPageColumns .navbar > #portletPageMiddleRowWrapper .navbar-brand,
+    .template-pp_homepage_view #portletPageColumns .navbar > #portletPageBottomRow .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
 .navbar-toggle {
@@ -5232,16 +5256,16 @@ button.list-group-item-danger {
 .clearfix:before, #visual-portal-wrapper:before, .ArchetypesQueryWidget .criteria:before, #edit-bar:before, #portletPageColumns:before, .secondaryMenu .submenuWrapper:before, .globalnavWrapper:before, .globalnavWrapper #portal-globalnav:before, #submenu-details .submenuDetailsContent:before, .officeContactsWrapper .officePhone:before,
 .officeContactsWrapper .officeFax:before,
 .officeContactsWrapper .officeEmail:before,
-.officeContactsWrapper .officePec:before, .template-pp_homepage_view #portletPageColumns .portletPageColumn:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
+.officeContactsWrapper .officePec:before, .template-pp_homepage_view #portletPageColumns .portletPageColumn:before, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
-.officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after {
+.officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after {
   content: " ";
   display: table; }
 .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
-.officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after {
+.officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after {
   clear: both; }
 
 .center-block {
@@ -6375,10 +6399,7 @@ input.inputLabelActive {
 
 .regular, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel, dl.rerPortletAdvancedStatic dt.portletHeader,
 div.rerPortletAdvancedStatic dt.portletHeader, dl.rerPortletAdvancedStatic dd.portletFooter a,
-div.rerPortletAdvancedStatic dd.portletFooter a, dl.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li,
-dl.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li,
-div.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li,
-div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li, dl.portletImg dt.portletHeader .tile,
+div.rerPortletAdvancedStatic dd.portletFooter a, dl.portletImg dt.portletHeader .tile,
 dl.portletImg dt.portletHeader a.tile, dl[class*='ortletNavigation'] dt.portletHeader .tile,
 dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #content blockquote.pullquote, #portal-footer-wrapper #portal-colophon a, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label {
   font-weight: 400; }
@@ -7046,7 +7067,16 @@ div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li {
   dl.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li a,
   div.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li a,
   div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li a {
-    border: 0; }
+    border: 0;
+    color: #313131; }
+    dl.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li a:focus, dl.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li a:hover,
+    dl.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li a:focus,
+    dl.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li a:hover,
+    div.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li a:focus,
+    div.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li a:hover,
+    div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li a:focus,
+    div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li a:hover {
+      color: #9c3524 !important; }
     dl.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li a:after,
     dl.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li a:after,
     div.rerPortletAdvancedStatic.lista-frecce dd.portletItem ul li a:after,
@@ -7057,6 +7087,24 @@ div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li {
       display: inline-block;
       color: #9c3524;
       margin-left: 8px; }
+dl.rerPortletAdvancedStatic[class*=' fa-'],
+div.rerPortletAdvancedStatic[class*=' fa-'] {
+  position: relative;
+  margin-bottom: 30px; }
+  dl.rerPortletAdvancedStatic[class*=' fa-']:before,
+  div.rerPortletAdvancedStatic[class*=' fa-']:before {
+    position: absolute;
+    font-family: FontAwesome;
+    top: 0;
+    line-height: 1em;
+    left: 0;
+    font-size: 26px; }
+  dl.rerPortletAdvancedStatic[class*=' fa-'] .portletItem,
+  div.rerPortletAdvancedStatic[class*=' fa-'] .portletItem {
+    padding: 0; }
+    dl.rerPortletAdvancedStatic[class*=' fa-'] .portletItem h3,
+    div.rerPortletAdvancedStatic[class*=' fa-'] .portletItem h3 {
+      margin: 0 0 20px 35px; }
 
 dl.portletBg,
 div.portletBg {
@@ -7070,55 +7118,44 @@ div.portletBg {
   div.portletBg dd.portletItem,
   div.portletBg div.portletItem {
     padding: 15px 10px; }
-    dl.portletBg dd.portletItem a,
-    dl.portletBg div.portletItem a,
-    div.portletBg dd.portletItem a,
-    div.portletBg div.portletItem a {
-      color: #313131; }
-      dl.portletBg dd.portletItem a:focus, dl.portletBg dd.portletItem a:hover,
-      dl.portletBg div.portletItem a:focus,
-      dl.portletBg div.portletItem a:hover,
-      div.portletBg dd.portletItem a:focus,
-      div.portletBg dd.portletItem a:hover,
-      div.portletBg div.portletItem a:focus,
-      div.portletBg div.portletItem a:hover {
-        color: #9c3524 !important; }
   dl.portletBg dd.portletFooter,
   div.portletBg dd.portletFooter {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px; }
 
-dl.portletImg {
+dl.portletImg dt.portletHeader {
+  padding: 0;
+  position: relative;
+  border: 0; }
+  dl.portletImg dt.portletHeader .portletTopLeft {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25); }
+  dl.portletImg dt.portletHeader .tile,
+  dl.portletImg dt.portletHeader a.tile {
+    color: #FFF !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 15px; }
+dl.portletImg dd.portletItem {
+  border: 0;
+  padding-left: 0;
+  padding-right: 0; }
+  dl.portletImg dd.portletItem hr {
+    border-top-color: #777;
+    margin-top: 20px;
+    margin-bottom: 16px; }
+dl.portletImg.portletBg {
   padding: 0; }
-  dl.portletImg dt.portletHeader {
-    padding: 0;
-    position: relative;
-    font-size: 1.2em;
-    border: 0; }
-    dl.portletImg dt.portletHeader .portletTopLeft {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.25); }
-    dl.portletImg dt.portletHeader .tile,
-    dl.portletImg dt.portletHeader a.tile {
-      color: #FFF !important;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 10px 15px; }
-  dl.portletImg dd.portletItem {
-    border: 0;
+  dl.portletImg.portletBg dd.portletItem {
     padding-left: 15px;
     padding-right: 15px; }
-    dl.portletImg dd.portletItem hr {
-      border-top-color: #777;
-      margin-top: 20px;
-      margin-bottom: 16px; }
 
 dl.lista-link dd.portletItem ul,
 div.lista-link div.portletItem ul {
@@ -7328,14 +7365,14 @@ dl[class*='ortletNavigation'] dd.portletItem {
 .boxScheda {
   border-left: 1px solid #A6A6A6;
   border-top: 1px solid #A6A6A6;
-  padding: 25px 0 20px 15px;
+  padding: 20px 0 20px 15px;
   font-size: 0.95em; }
   #portal-column-two > div:first-child .boxScheda {
     border-top: 0;
     padding-top: 0; }
   .boxScheda h4.boxHeader {
     font-size: 1em;
-    margin: 0 0 15px;
+    margin: 0 0 7px;
     position: relative;
     color: #000;
     text-transform: uppercase; }
@@ -7353,12 +7390,12 @@ dl[class*='ortletNavigation'] dd.portletItem {
     font-size: 0.9em;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 15px 0 5px; }
+    margin: 8px 0 0px; }
   .boxScheda p,
   .boxScheda ul {
     margin: 0; }
   .boxScheda ul.listLink li {
-    margin-top: 14px; }
+    margin-top: 8px; }
     .boxScheda ul.listLink li:first-child {
       margin-top: 0; }
     .boxScheda ul.listLink li a {
@@ -7416,7 +7453,7 @@ dl[class*='ortletNavigation'] dd.portletItem {
 
 .boxOffice h5.officeTitle {
   font-size: 1.1em;
-  margin: 0 0 10px;
+  margin: 0 0;
   line-height: 1.5em; }
   .boxOffice h5.officeTitle:after {
     font-family: Flaticon;
@@ -7721,12 +7758,18 @@ dl.portletCollection {
     top: 0.1em;
     color: #777; }
 
+.portaltype-portlet-page.template-portlets #viewlet-below-content-title .tileImage {
+  display: none; }
+
 .template-pp_homepage_view #portletPageColumns {
   clear: both;
   margin-top: 10px; }
+  .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
+  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper,
+  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow {
+    padding: 30px 0; }
   .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper {
-    background-color: #E0E0E0;
-    padding: 20px 0; }
+    background-color: #E0E0E0; }
     .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic,
     .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic {
       position: relative;

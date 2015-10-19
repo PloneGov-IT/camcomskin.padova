@@ -523,9 +523,12 @@ div.rerPortletAdvancedStatic        {
     div.portletItem                 {
       ul                            {
         li                          { padding-left: 0;
-                                      @extend .regular;
+                                      //@extend .regular;
           &:before                  { display: none; }
           a                         { border:0;
+                                      color: $text-color; 
+            &:focus,
+            &:hover                 { color: $link-color !important; }          
             &:after                 { @include make-flaticon('right161', 11px); 
                                       color: $link-color;
                                       margin-left: 8px;
@@ -533,6 +536,21 @@ div.rerPortletAdvancedStatic        {
           }
         }
       }
+    }
+  }
+
+  // quando ne faccio una con solo sottitolo + icona nel testo
+  &[class*=' fa-']                  { position: relative;
+                                      margin-bottom: 30px;
+    &:before                        { position: absolute; 
+                                      font-family: FontAwesome;
+                                      top: 0;
+                                      line-height: 1em;
+                                      left: 0;
+                                      font-size: 26px;
+    }
+    .portletItem                    { padding:0;
+      h3                            { margin:0 0 20px 35px; }
     }
   }
 }
@@ -543,20 +561,14 @@ div.portletBg                       { background-color: $gray-bg;
                                       padding: 5px 10px;
   dt.portletHeader                  { background-color: $tr; }
   dd.portletItem,
-  div.portletItem                   { padding: 15px 10px; 
-    a                               { color: $text-color; 
-      &:focus,
-      &:hover                       { color: $link-color !important; }
-    }
-  }
+  div.portletItem                   { padding: 15px 10px; }
   dd.portletFooter                  { padding: { left: 10px; right: 10px; bottom: 5px;} }
 }
 
 // con foto nel titolo
-dl.portletImg                       { padding:0;
+dl.portletImg                       { 
   dt.portletHeader                  { padding: 0; 
                                       position: relative;
-                                      font-size: 1.2em;
                                       border:0;
     .portletTopLeft                 { display: block;
                                       position: absolute;
@@ -576,10 +588,14 @@ dl.portletImg                       { padding:0;
     }
   }
   dd.portletItem                    { border:0; 
-                                      padding: {left: 15px; right: 15px;}
+                                      padding: {left: 0; right: 0;}
     hr                              { border-top-color: $gray-light; 
                                       margin-top: 20px;
                                       margin-bottom: 16px; 
+    }
+  }
+  &.portletBg                       { padding:0;
+    dd.portletItem                  { padding: {left: 15px; right: 15px;}
     }
   }
 }
@@ -786,14 +802,14 @@ dl[class*='ortletNavigation']       {
 // PORTLET PER SCHEDA ATTIVITA'
 .boxScheda                          { border-left: 1px solid #A6A6A6;
                                       border-top: 1px solid #A6A6A6;
-                                      padding: 25px 0 20px 15px;
+                                      padding: 20px 0 20px 15px;
                                       font-size: 0.95em;
   #portal-column-two > div:first-child & { border-top:0;
                                            padding-top: 0;
   }
   h4.boxHeader                      { font-size: 1em;
                                       @extend .semibold;
-                                      margin:0 0 15px;
+                                      margin:0 0 7px;
                                       position: relative;
                                       color: #000;
                                       text-transform: uppercase;
@@ -811,12 +827,12 @@ dl[class*='ortletNavigation']       {
   h6                                { font-size: 0.9em;
                                       text-transform: uppercase;
                                       font-weight: bold;
-                                      margin: 15px 0 5px;
+                                      margin: 8px 0 0px;
   }
   p,
   ul                                { margin:0; }
   ul.listLink                       {
-    li                              { margin-top: 14px;
+    li                              { margin-top: 8px;
       &:first-child                 { margin-top: 0; }
       a                             { display: block;
                                       position: relative;
@@ -874,7 +890,7 @@ dl[class*='ortletNavigation']       {
 // PORTLET UFFICIO
 .boxOffice                          { 
   h5.officeTitle                    { font-size: 1.1em;
-                                      margin: 0 0 10px;
+                                      margin: 0 0;
                                       line-height: 1.5em;                                      
     &:after                         { @include make-flaticon('right161', 11px); 
                                       color: $text-color;
@@ -1182,15 +1198,21 @@ dl.portletCollection                { margin-bottom: 20px;
 }
 
 // PAGINA INTRO SEZIONE (PORTLET PAGE)
+.portaltype-portlet-page.template-portlets #viewlet-below-content-title .tileImage { display:none; }
 .template-pp_homepage_view          {
   #viewlet-below-content-title      { @extend .pull-right; }
   #portletPageColumns               { clear: both; margin-top: 10px; 
     .portletPageColumn              { @extend .clearfix; }
 
+    #portletPageTopRow,
+    #portletPageMiddleRowWrapper,
+    #portletPageBottomRow           { @extend .container; 
+                                      padding: 30px 0; 
+    }
+
     // riga grigio (first)
-    #portletPageTopRowWrapper       { background-color: $gray-row;
-                                      padding: 20px 0;
-      #portletPageTopRow            { @extend .container; 
+    #portletPageTopRowWrapper       { background-color: $gray-row;                                      
+      #portletPageTopRow            { 
         dl.rerPortletAdvancedStatic,
         div.rerPortletAdvancedStatic { position: relative;
                                        margin-bottom: 0;
@@ -1222,6 +1244,7 @@ dl.portletCollection                { margin-bottom: 20px;
         }
       }
     }
+    #portletPageMiddleRowWrapper    { @extend .clearfix; }
   }
 }
 

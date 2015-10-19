@@ -12,6 +12,8 @@
             <element
                 value="portletBg portletImg|Sfondo grigio e foto dietro al titolo" />
             <element
+                value="portletImg|Foto dietro al titolo" />
+            <element
                 value="portletServiziOnline|Box Servizi Online" />
             <element
                 value="portletNav|Elenco in stile menu" />
