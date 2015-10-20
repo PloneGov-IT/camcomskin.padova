@@ -16,7 +16,7 @@
             <element
                 value="portletServiziOnline|Box Servizi Online" />
             <element
-                value="portletNav|Elenco in stile menu" />
+                value="portletNav lista-link|Elenco in stile menu" />
         </property>
     </object>
     <!-- object name="imaging_properties"

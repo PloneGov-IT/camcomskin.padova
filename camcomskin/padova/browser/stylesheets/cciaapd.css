@@ -5575,6 +5575,9 @@ select, input[type="file"] {
   height: auto;
   line-height: normal; }
 
+.actionButton inpput.context {
+  margin-right: 1em; }
+
 #content legend,
 div.overlay legend,
 .portlets-manager legend {
