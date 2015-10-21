@@ -190,6 +190,7 @@ strong { @extend .semibold; }
 .searchResults                    {
   cite                            { font-size: 0.9em; }
 }
+.template-search .documentByLine  { display: none; }
 
 // LOGO
 #portal-logo                { margin: 20px 0 0;
@@ -654,7 +655,8 @@ dl.portletServiziOnline             { border: 1px solid $link-color;
                                       color: $text-color;
                                       position: relative;
                                       border:0;
-                                      padding-left: 30px;
+          &.external-link,
+          &[class*='fa-']           { padding-left: 30px; }
           &:before                  { position: absolute; 
                                       left: 0;
                                       top: 2px;
@@ -800,12 +802,16 @@ dl[class*='ortletNavigation']       {
 }
 
 // PORTLET PER SCHEDA ATTIVITA'
-.boxScheda                          { border-left: 1px solid #A6A6A6;
+.boxScheda,
+.boxApprofondimenti                 { border-left: 1px solid #A6A6A6;
                                       border-top: 1px solid #A6A6A6;
                                       padding: 20px 0 20px 15px;
                                       font-size: 0.95em;
   #portal-column-two > div:first-child & { border-top:0;
                                            padding-top: 0;
+  }
+  #portal-column-two > div:first-child &.boxBandoDetail + .boxModuliBando { border-top: 1px solid #A6A6A6;
+                                                                            padding-top: 20px;
   }
   h4.boxHeader                      { font-size: 1em;
                                       @extend .semibold;
@@ -839,6 +845,9 @@ dl[class*='ortletNavigation']       {
                                       padding-left: 30px;
                                       color: $text-color;
                                       line-height: 1.4em;
+                                      width: 100%;
+                                      text-overflow: ellipsis;
+                                      overflow: hidden;
         &:before                    { @include make-fa('\f0f6', #FFF);
                                       background-color: $link-color;
                                       padding: 2px 5px 1px;
@@ -867,14 +876,16 @@ dl[class*='ortletNavigation']       {
   }
 }
 
+
 // PORTLET NORMATIVA                
-.boxNorme                           { 
+.boxNorme,
+.boxApprofondimenti                 { 
   ul.listLink li a,
   ul.listLink li.linkItem a         { padding-left: 24px;
     &:before                        { @include make-fa('\f138');
                                       background-color: $tr;
                                       color: $link-color;
-                                      top: 2px;
+                                      top: 1px;
                                       padding:0;
                                       font-size: 16px;
     }
@@ -1261,6 +1272,7 @@ dl.portletCollection                { margin-bottom: 20px;
   }
   #portal-footer-wrapper            { margin-top:0; }
 }
+.template-portlets.portaltype-portlet-page #portlets-below.contentwellportlets { display: none;}
 
 // PORTLET IN RIGA PER NOTIZIE
 // (la lascio fuori... può servire anche altrove)
@@ -1389,7 +1401,8 @@ dl.portletCollection                { margin-bottom: 20px;
 }
 
 // LISTING BAR (PAGINAZIONE)
-#viewlet-below-content .listingBar   { padding-top: 20px;
+#viewlet-below-content .listingBar,
+#search-results .listingBar          { padding-top: 20px;
   span                               { color: $gray-light; }
   a                                  { border: 1px solid lighten($blu, 40);
                                        border-radius: 3px;
@@ -1429,6 +1442,29 @@ dl.portletCollection                { margin-bottom: 20px;
                     }
                 }
             }
+}
+
+// BANDO
+.rifBando                           { position: relative;
+                                      padding-top: 20px;
+  &:before                          { display: block;
+                                      content: '';
+                                      background-color: lighten($blu, 20);
+                                      border-radius: 2px;
+                                      height: 2px;
+                                      width: 40px;
+                                      position: absolute;
+                                      left:0;
+                                      top:0;
+  }
+  h3 strong                         { @extend .regular; }
+  h3                                { margin: 0 0 10px;
+                                      font-size: 1.3em;
+    &:first-child                   { font-size: 1em; 
+                                      text-transform: uppercase;
+      strong                        { @extend .semibold; }
+    }
+  }
 }
 
 // FOOTER

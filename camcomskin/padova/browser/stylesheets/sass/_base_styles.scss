@@ -30,6 +30,40 @@ dl.portlet a,
     .fieldTextFormat { display: none; }
 }
 
+// pagina ricerca
+#search-results-bar dl.actionMenu { margin-left: 20px;
+                                    padding-left: 20px;
+                                    border-left: 1px solid $gray-lighter;
+  dt.actionMenuHeader             { position: relative;
+                                    padding-left: 25px;
+                                    margin-left: 0;
+    &:before                      { @include make-fa('\f0b0', $gray-lighter);
+                                    position: absolute;
+                                    left:0;
+                                    top: -4px;
+                                    font-size: 20px;
+    }
+    a                             { margin:0; }
+  }
+  dd.actionMenuContent            { margin-top: 10px; }
+}
+#search-filter                    { border: 1px solid #ccc;
+                                    background-color: $grayLighty;
+  legend                          { margin-bottom: 0; 
+    &,
+    #content &                     { @extend .regular; border-top: 1px solid #e5e5e5; }
+  }
+  fieldset:first-child legend     { border-top:0; }
+  .field                          { background-color: #fafafa; 
+    .optionsToggle                { border:0;
+                                    background-color: $tr;
+                                    padding:0;
+      label                       { @extend .bold; text-transform:uppercase; }
+    }
+  }
+}
+.userrole-anonymous #search-results dt img { display: none; }
+
 ////// Personal Bar
 #portal-personaltools-wrapper   { background-color: #660000;
                                   background: linear-gradient(to right,$red 0,$red 33%,#660000 66%,#000 100%);

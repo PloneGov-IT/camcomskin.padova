@@ -41,8 +41,7 @@
                 </div>
               </tal:text>
 
-                <hr />
-                <div tal:content="structure context/getRiferimenti_bando">
+                <div tal:content="structure context/getRiferimenti_bando"  class="rifBando">
                     Riferimenti bando
                 </div>
             </div>
