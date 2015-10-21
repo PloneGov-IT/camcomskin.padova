@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="rer.bandi">
+
+  <body>
+    <metal:fill fill-slot="main">
+      <metal:main_macro define-macro="main"
+            tal:define="portal_type python:here.getPortalTypeName().lower().replace(' ', '_');
+            view_template python:'%s_view' % portal_type;">
+
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
+        <h1 class="documentFirstHeading" tal:content="here/Title">
+                Title
+        </h1>
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+        <div class="contextualbody">
+            <div class="documentDescription rer-contextual-description" tal:condition="here/Description">
+                <metal:field use-macro="python:here.widget('description', mode='view')">
+                    Description
+                </metal:field>
+            </div>
+            <div class="rer-contextual-text">
+				      <tal:text define="bando_text here/getText">
+                <p tal:condition="not:bando_text"
+                    i18n:translate="no_body_text"
+                    i18n:domain="plone"
+                    class="discreet">
+                    This item does not have any body text, click the edit tab to change it.
+                </p>
+                <div tal:condition="bando_text"
+                     tal:replace="structure bando_text">
+                    Body text
+                </div>
+              </tal:text>
+                <hr />
+                <div tal:content="structure context/getRiferimenti_bando">
+                    Riferimenti bando
+                </div>
+            </div>
+        <div class="visualClear"></div>
+        <div tal:replace="structure provider:plone.belowcontentbody" />
+      </metal:main_macro>
+    </metal:fill>
+  </body>
+</html>
