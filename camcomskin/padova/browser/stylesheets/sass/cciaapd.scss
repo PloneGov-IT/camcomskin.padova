@@ -1331,14 +1331,31 @@ dl.portletCollection                { margin-bottom: 20px;
   }
 }
 
+// INDICE CONTENUTI (TOC)
+#document-toc                       { float: none;
+                                      border-top: 1px dashed $gray-lighter;
+                                      border-bottom: 1px dashed $gray-lighter;
+                                      padding: 10px 0;
+                                      width: auto;
+  dt.portletHeader                  { margin: 0;
+                                      background-color: $tr;
+                                      @extend .semibold;
+                                      color: $gray-light;
+    &:before                        { @include make-fa('\f0ca'); 
+                                      margin-right: 8px;
+    }
+  }
+  dd.portletItem                    { padding-top: 5px; padding-bottom:0; }
+}
+
 // FORMATTAZIONI
 #content                            { margin: 0 0;
-    h1.documentFirstHeading         { @extend .light;
-                                      font-size: 2.4em;
-                                      position: relative;
-                                      margin: 0 0 $grid-gutter-width;
-                                      padding-bottom: 10px;
-      .template-search &            { margin-bottom: 10px; }
+  h1.documentFirstHeading         { @extend .light;
+                                    font-size: 2.4em;
+                                    position: relative;
+                                    margin: 0 0 $grid-gutter-width;
+                                    padding-bottom: 10px;
+    .template-search &            { margin-bottom: 10px; }
       &:before                    { display: block;
                                     content: '';
                                     background-color: lighten($blu, 20);
@@ -1348,24 +1365,24 @@ dl.portletCollection                { margin-bottom: 20px;
                                     position: absolute;
                                     left:0;
                                     bottom:0;
-      }
     }
-    .documentDescription            { @extend .regular;
-                                      margin-bottom: 20px;
+  }
+  .documentDescription            { @extend .regular;
+                                    margin-bottom: 20px;
+  }
+  .portlet dt                     { @extend .regular; }
+  blockquote.pullquote            { @extend .regular; color: $text-color; }
+  pre                             { word-break: normal; 
+                                    white-space: normal;
+                                    background-color: transparentize($blu, .3);
+                                    font-family: $font-family-base;
+                                    font-size: 1.05em;
+                                    line-height: 1.5em;
+    a                             { color: #FFF !important; border-bottom: 1px dotted #FFF !important; 
+      &:focus,
+      &:hover                     { border-bottom: 1px solid #FFF !important; color: #FFF !important;}
     }
-    .portlet dt                     { @extend .regular; }
-    blockquote.pullquote            { @extend .regular; color: $text-color; }
-    pre                             { word-break: normal; 
-                                      white-space: normal;
-                                      background-color: transparentize($blu, .3);
-                                      font-family: $font-family-base;
-                                      font-size: 1.05em;
-                                      line-height: 1.5em;
-      a                             { color: #FFF !important; border-bottom: 1px dotted #FFF !important; 
-        &:focus,
-        &:hover                     { border-bottom: 1px solid #FFF !important; color: #FFF !important;}
-      }
-    }
+  }
 }
 #plone-document-byline              { text-align: right;
                                       font-size: 0.9em;
