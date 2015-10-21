@@ -121,7 +121,7 @@
                                      Page body text
                                  </metal:text>
                              </div>
-                             
+
                              <div id="viewlet-below-content-body" tal:content="structure provider:plone.belowcontentbody" tal:condition="not:ajax_load" />
 
                             </metal:bodytext>
@@ -134,8 +134,11 @@
                     </metal:sub>
                 </div>
             </metal:block>
-
-            <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" tal:condition="not:ajax_load" />
+            <!-- disegna questo manager solo se non si è in un determinato template -->
+            <tal:not_homepage define="template_id template/getId"
+                              condition="python:template_id != 'pp_homepage_view.pt'">
+              <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" tal:condition="not:ajax_load" />
+            </tal:not_homepage>
         </div>
 
 
