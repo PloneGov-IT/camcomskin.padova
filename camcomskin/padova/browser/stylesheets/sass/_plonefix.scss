@@ -34,6 +34,7 @@ input.standalone[name="form.button.cancel"] { @extend .btn, .btn-default;}
 input[type="submit"].discreet   { @extend .btn-xs; }
 input.standalone                { @extend .btn-info; }
 input.destructive               { @extend .btn-danger; }
+.actionButton inpput.context {margin-right: 1em;}
 #content,
 div.overlay,
 .portlets-manager             {

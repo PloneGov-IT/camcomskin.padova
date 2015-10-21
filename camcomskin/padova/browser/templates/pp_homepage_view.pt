@@ -27,7 +27,7 @@
           tal:content="structure provider:collective.portletpage.toprow"
           />
     </div>
-    
+
     <div id="portletPageMiddleRowWrapper" tal:condition="view/hasColumnFirst|view/hasColumnSecond" >
       <div id="portletPageFirstColumn" class="portletPageColumn portletPageLeftColumn"
           tal:condition="view/hasColumnFirst"
@@ -48,6 +48,8 @@
         />
 
   </div>
+  <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" tal:condition="not:ajax_load" />
+
 </metal:below-content>
 </body>
 </html>
