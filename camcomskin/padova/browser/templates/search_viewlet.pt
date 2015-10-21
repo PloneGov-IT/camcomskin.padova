@@ -25,6 +25,15 @@
              type="submit"
              value="Search"
              i18n:attributes="value label_search;" />
+
+        <input type="hidden" name="portal_type" value="Bando">
+        <input type="hidden" name="portal_type" value="Ufficio">
+        <input type="hidden" name="portal_type" value="Scheda">
+        <input type="hidden" name="portal_type" value="Document">
+        <input type="hidden" name="portal_type" value="News Item">
+        <input type="hidden" name="portal_type" value="Event">
+        <input type="hidden" name="portal_type" value="Portlet Page">
+        
         <a class="closeLink" href="#"><span>Close</span></a>
       </span>
   </form>
