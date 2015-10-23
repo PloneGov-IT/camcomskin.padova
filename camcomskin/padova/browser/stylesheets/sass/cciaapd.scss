@@ -1507,7 +1507,32 @@ dl.portletBandi                     {
   }
   dd.portletItem                    { padding: 15px 0; }
 }
-
+// collezione bandi
+.template-collection_bandi_tipologia_view,
+.template-collection_bandi_view           {
+  #content                                {
+    dl                                    { margin:0;
+                                            padding: 15px 0;
+                                            border-bottom: 1px dashed $gray-light;
+      dt.bandoTitle                         { margin-top: 0;
+                                              font-size: 1em;
+                                              @extend .semibold;
+                                              line-height: 1.5em;       
+        a                                   { border:0; }
+      }
+      .bandoType                            { font-size: 0.8em;
+                                              color: $gray;
+                                              padding: 0.5em 0;
+        span                                { text-transform: uppercase;
+                                              @extend .semibold;                                            
+        }
+      }
+      .bandoDates                           { font-size: 0.9em;
+        .labelTB                            { @extend .semibold; }
+      }
+    }
+  }
+}
 
 // FOOTER
 #portal-footer-wrapper              { background-color: $blu;
@@ -1741,7 +1766,9 @@ div.titolo-servizi-online           { background-color: $gray-bg;
   }
 }
 // BLOCCO DI NOTIZIE
-
+.boxNotizieHome                     {
+  .boxHeader                        { @extend .sr-only; }
+}
 
 // FIX VISTA MODULISTICA
 #content table.modulisticaListing   { @extend .table, .table-condensed;

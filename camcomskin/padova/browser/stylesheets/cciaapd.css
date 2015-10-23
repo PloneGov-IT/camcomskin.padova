@@ -333,7 +333,7 @@ hr {
   border: 0;
   border-top: 1px solid #CCC; }
 
-.sr-only, #topbar #top-link-group [class^='social'] span, #searchbox a.btnSearch span, #camcomskin-searchbox a.closeLink span, .boxOffice .officeTime h6 {
+.sr-only, #topbar #top-link-group [class^='social'] span, #searchbox a.btnSearch span, #camcomskin-searchbox a.closeLink span, .boxOffice .officeTime h6, .boxNotizieHome .boxHeader {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -2347,7 +2347,7 @@ select[multiple].input-lg,
 
 .has-feedback label ~ .form-control-feedback {
   top: 27px; }
-.has-feedback label.sr-only ~ .form-control-feedback {
+.has-feedback label.sr-only ~ .form-control-feedback, .has-feedback .boxNotizieHome label.boxHeader ~ .form-control-feedback, .boxNotizieHome .has-feedback label.boxHeader ~ .form-control-feedback {
   top: 0; }
 
 .help-block {
@@ -6476,7 +6476,10 @@ dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, 
 .boxApprofondimenti h4.boxHeader, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6, .boxCollezioneRigaNotizie .boxFooter a, #document-toc dt.portletHeader, .rifBando h3:first-child strong, dl.portletBandi h3.bandoTitle, dl.portletBandi p.bandoType, dl.portletBandi .bandoDates .labelTB, #portal-footer-wrapper #portlets-footer dt.portletHeader, table.listOffices thead th, table.listOffices tbody th {
+.officeContactsWrapper .officePec h6, .boxCollezioneRigaNotizie .boxFooter a, #document-toc dt.portletHeader, .rifBando h3:first-child strong, dl.portletBandi h3.bandoTitle, dl.portletBandi p.bandoType, dl.portletBandi .bandoDates .labelTB, .template-collection_bandi_tipologia_view #content dl dt.bandoTitle,
+.template-collection_bandi_view #content dl dt.bandoTitle, .template-collection_bandi_tipologia_view #content dl .bandoType span,
+.template-collection_bandi_view #content dl .bandoType span, .template-collection_bandi_tipologia_view #content dl .bandoDates .labelTB,
+.template-collection_bandi_view #content dl .bandoDates .labelTB, #portal-footer-wrapper #portlets-footer dt.portletHeader, table.listOffices thead th, table.listOffices tbody th {
   font-weight: 600; }
 
 .bold, #search-filter .field .optionsToggle label, #portal-personaltools-wrapper #user-name, .boxCollezioneBase .boxFooter, dl.portletCollection dd.portletFooter {
@@ -8220,6 +8223,31 @@ dl.portletBandi .bandoDates {
   font-size: 0.9em; }
 dl.portletBandi dd.portletItem {
   padding: 15px 0; }
+
+.template-collection_bandi_tipologia_view #content dl,
+.template-collection_bandi_view #content dl {
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: 1px dashed #777; }
+  .template-collection_bandi_tipologia_view #content dl dt.bandoTitle,
+  .template-collection_bandi_view #content dl dt.bandoTitle {
+    margin-top: 0;
+    font-size: 1em;
+    line-height: 1.5em; }
+    .template-collection_bandi_tipologia_view #content dl dt.bandoTitle a,
+    .template-collection_bandi_view #content dl dt.bandoTitle a {
+      border: 0; }
+  .template-collection_bandi_tipologia_view #content dl .bandoType,
+  .template-collection_bandi_view #content dl .bandoType {
+    font-size: 0.8em;
+    color: #555;
+    padding: 0.5em 0; }
+    .template-collection_bandi_tipologia_view #content dl .bandoType span,
+    .template-collection_bandi_view #content dl .bandoType span {
+      text-transform: uppercase; }
+  .template-collection_bandi_tipologia_view #content dl .bandoDates,
+  .template-collection_bandi_view #content dl .bandoDates {
+    font-size: 0.9em; }
 
 #portal-footer-wrapper {
   background-color: #283641;
