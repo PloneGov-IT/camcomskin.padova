@@ -8224,6 +8224,9 @@ dl.portletBandi .bandoDates {
 dl.portletBandi dd.portletItem {
   padding: 15px 0; }
 
+.template-collection_bandi_tipologia_view #plone-document-byline,
+.template-collection_bandi_view #plone-document-byline {
+  display: none; }
 .template-collection_bandi_tipologia_view #content dl,
 .template-collection_bandi_view #content dl {
   margin: 0;

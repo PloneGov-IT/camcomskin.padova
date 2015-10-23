@@ -1510,6 +1510,7 @@ dl.portletBandi                     {
 // collezione bandi
 .template-collection_bandi_tipologia_view,
 .template-collection_bandi_view           {
+  #plone-document-byline                  { display: none; }
   #content                                {
     dl                                    { margin:0;
                                             padding: 15px 0;
