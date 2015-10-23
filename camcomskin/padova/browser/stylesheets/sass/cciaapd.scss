@@ -1219,7 +1219,7 @@ dl.portletCollection                { margin-bottom: 20px;
     .portletPageColumn              { @extend .clearfix; }
 
     #portletPageTopRow,
-    #portletPageMiddleRowWrapper,
+    #portletPageMiddleRowContent,
     #portletPageBottomRow           { @extend .container; 
                                       padding: 30px 0; 
     }
@@ -1626,7 +1626,7 @@ dl.portletBandi                     {
 .section-homepage                   { 
   #viewlet-above-content-title,
   h1.documentFirstHeading           { display: none; }
-  #portal-top                       { background-color: $bgmenu; }
+  #portal-top                       { background-color: $bgmenu; margin-bottom:0; }
   #portal-header                    { background-color: #FFF; }
   #portlets-in-header               { display: table;
                                       position: relative;
@@ -1651,6 +1651,9 @@ dl.portletBandi                     {
       }
     }
     .InHeaderPortletManager3        { padding: 18px 0; }
+  }
+  #portletPageColumns               { margin-top: -1px; }
+  #portletPageMiddleRowWrapper      { background-color: $gray-bg;
   }
 }
 // riga superiore
@@ -1737,6 +1740,8 @@ div.titolo-servizi-online           { background-color: $gray-bg;
     }    
   }
 }
+// BLOCCO DI NOTIZIE
+
 
 // FIX VISTA MODULISTICA
 #content table.modulisticaListing   { @extend .table, .table-condensed;

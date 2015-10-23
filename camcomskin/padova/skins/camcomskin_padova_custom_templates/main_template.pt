@@ -134,7 +134,7 @@
                     </metal:sub>
                 </div>
             </metal:block>
-            <!-- disegna questo manager solo se non si è in un determinato template -->
+           
             <tal:not_homepage define="template_id template/getId"
                               condition="python:template_id != 'pp_homepage_view.pt'">
               <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" tal:condition="not:ajax_load" />

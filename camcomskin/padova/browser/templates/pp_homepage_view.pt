@@ -29,17 +29,19 @@
     </div>
 
     <div id="portletPageMiddleRowWrapper" tal:condition="view/hasColumnFirst|view/hasColumnSecond" >
-      <div id="portletPageFirstColumn" class="portletPageColumn portletPageLeftColumn"
-          tal:condition="view/hasColumnFirst"
-          tal:content="structure provider:collective.portletpage.firstcolumn"
-          tal:attributes="class python:bothColumns and 'portletPageColumn portletPageLeftColumn' or 'portletPageColumn'"
-          />
+      <div id="portletPageMiddleRowContent">
+        <div id="portletPageFirstColumn" class="portletPageColumn portletPageLeftColumn"
+            tal:condition="view/hasColumnFirst"
+            tal:content="structure provider:collective.portletpage.firstcolumn"
+            tal:attributes="class python:bothColumns and 'portletPageColumn portletPageLeftColumn' or 'portletPageColumn'"
+            />
 
-      <div id="portletPageSecondColumn" class="portletPageColumn portletPageRightColumn"
-          tal:condition="view/hasColumnSecond"
-          tal:content="structure provider:collective.portletpage.secondcolumn"
-          tal:attributes="class python:bothColumns and 'portletPageColumn portletPageRightColumn' or 'portletPageColumn'"
-          />
+        <div id="portletPageSecondColumn" class="portletPageColumn portletPageRightColumn"
+            tal:condition="view/hasColumnSecond"
+            tal:content="structure provider:collective.portletpage.secondcolumn"
+            tal:attributes="class python:bothColumns and 'portletPageColumn portletPageRightColumn' or 'portletPageColumn'"
+            />
+      </div>
     </div>
 
     <div id="portletPageBottomRow" class="portletPageColumn"

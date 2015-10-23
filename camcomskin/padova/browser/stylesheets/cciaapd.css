@@ -759,7 +759,7 @@ pre {
 #portal-globalnav,
 .colophonWrapper,
 #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
-.template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper,
+.template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent,
 .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent {
   margin-right: auto;
   margin-left: auto;
@@ -775,7 +775,7 @@ pre {
   #portal-globalnav:before,
   .colophonWrapper:before,
   #portlets-footer:before, .template-pp_homepage_view #portletPageColumns #portletPageTopRow:before,
-  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:before,
+  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent:before,
   .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:before, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:before, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:before, .container:after, .portalHeaderContent:after,
   #portlets-in-header:after,
   #portal-siteactions:after,
@@ -786,7 +786,7 @@ pre {
   #portal-globalnav:after,
   .colophonWrapper:after,
   #portlets-footer:after, .template-pp_homepage_view #portletPageColumns #portletPageTopRow:after,
-  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after,
+  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent:after,
   .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:after, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:after, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:after {
     content: " ";
     display: table; }
@@ -800,7 +800,7 @@ pre {
   #portal-globalnav:after,
   .colophonWrapper:after,
   #portlets-footer:after, .template-pp_homepage_view #portletPageColumns #portletPageTopRow:after,
-  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after,
+  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent:after,
   .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:after, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:after, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:after {
     clear: both; }
   @media (min-width: 769px) {
@@ -814,7 +814,7 @@ pre {
     #portal-globalnav,
     .colophonWrapper,
     #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
-    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper,
+    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent,
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent {
       width: auto; } }
   @media (min-width: 992px) {
@@ -828,7 +828,7 @@ pre {
     #portal-globalnav,
     .colophonWrapper,
     #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
-    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper,
+    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent,
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent {
       width: auto; } }
   @media (min-width: 1300px) {
@@ -842,7 +842,7 @@ pre {
     #portal-globalnav,
     .colophonWrapper,
     #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
-    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper,
+    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent,
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent {
       width: 1300px; } }
 
@@ -4139,7 +4139,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
 #portal-globalnav > .navbar-header,
 .colophonWrapper > .navbar-header,
 #portlets-footer > .navbar-header, .template-pp_homepage_view #portletPageColumns #portletPageTopRow > .navbar-header,
-.template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper > .navbar-header,
+.template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent > .navbar-header,
 .template-pp_homepage_view #portletPageColumns #portletPageBottomRow > .navbar-header, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline > .navbar-header, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent > .navbar-header,
 .container > .navbar-collapse,
 .portalHeaderContent > .navbar-collapse,
@@ -4153,7 +4153,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
 .colophonWrapper > .navbar-collapse,
 #portlets-footer > .navbar-collapse,
 .template-pp_homepage_view #portletPageColumns #portletPageTopRow > .navbar-collapse,
-.template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper > .navbar-collapse,
+.template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent > .navbar-collapse,
 .template-pp_homepage_view #portletPageColumns #portletPageBottomRow > .navbar-collapse,
 .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline > .navbar-collapse,
 .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent > .navbar-collapse,
@@ -4172,7 +4172,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     #portal-globalnav > .navbar-header,
     .colophonWrapper > .navbar-header,
     #portlets-footer > .navbar-header, .template-pp_homepage_view #portletPageColumns #portletPageTopRow > .navbar-header,
-    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper > .navbar-header,
+    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent > .navbar-header,
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow > .navbar-header, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline > .navbar-header, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent > .navbar-header,
     .container > .navbar-collapse,
     .portalHeaderContent > .navbar-collapse,
@@ -4186,7 +4186,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     .colophonWrapper > .navbar-collapse,
     #portlets-footer > .navbar-collapse,
     .template-pp_homepage_view #portletPageColumns #portletPageTopRow > .navbar-collapse,
-    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper > .navbar-collapse,
+    .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent > .navbar-collapse,
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow > .navbar-collapse,
     .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline > .navbar-collapse,
     .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent > .navbar-collapse,
@@ -4243,7 +4243,7 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     .navbar > #portal-globalnav .navbar-brand,
     .navbar > .colophonWrapper .navbar-brand,
     .navbar > #portlets-footer .navbar-brand, .template-pp_homepage_view #portletPageColumns .navbar > #portletPageTopRow .navbar-brand,
-    .template-pp_homepage_view #portletPageColumns .navbar > #portletPageMiddleRowWrapper .navbar-brand,
+    .template-pp_homepage_view #portletPageColumns .navbar > #portletPageMiddleRowContent .navbar-brand,
     .template-pp_homepage_view #portletPageColumns .navbar > #portletPageBottomRow .navbar-brand, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content .navbar > #plone-document-byline .navbar-brand, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .navbar > .boxCollezioneContent .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
@@ -7922,7 +7922,7 @@ dl.portletCollection {
   clear: both;
   margin-top: 10px; }
   .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
-  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper,
+  .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent,
   .template-pp_homepage_view #portletPageColumns #portletPageBottomRow {
     padding: 30px 0; }
   .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper {
@@ -8338,7 +8338,8 @@ dl.portletBandi dd.portletItem {
 .section-homepage h1.documentFirstHeading {
   display: none; }
 .section-homepage #portal-top {
-  background-color: #4f575e; }
+  background-color: #4f575e;
+  margin-bottom: 0; }
 .section-homepage #portal-header {
   background-color: #FFF; }
 .section-homepage #portlets-in-header {
@@ -8366,6 +8367,10 @@ dl.portletBandi dd.portletItem {
       width: 20%; }
   .section-homepage #portlets-in-header .InHeaderPortletManager3 {
     padding: 18px 0; }
+.section-homepage #portletPageColumns {
+  margin-top: -1px; }
+.section-homepage #portletPageMiddleRowWrapper {
+  background-color: #EEE; }
 
 #portlets-in-header {
   background-color: #FFF;
