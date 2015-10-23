@@ -318,21 +318,22 @@ strong { @extend .semibold; }
                               padding: 12px 7%;
                               position: relative;
                               background-color: transparentize($blu, .4); 
-                span:first-child { color: #FFF;
-                                   @extend .semibold;
-                }
-                &:focus,
-                &:hover        { background-color: transparentize($gray, .15); 
-                    span       { color: #FFF !important;}
-                }
-                &:after        { @include make-fa('\f107', #fff); 
-                                 opacity: .5;
-                                 position: absolute;
-                                 bottom: 10px;
-                                 right: 7%;
-                                 font-size: 18px;
-                                 line-height: 1em;
-                }
+              @media (max-width: 1170px) { min-height: 6.1em;}
+              span:first-child { color: #FFF;
+                                 @extend .semibold;
+              }
+              &:focus,
+              &:hover        { background-color: transparentize($gray, .15); 
+                  span       { color: #FFF !important;}
+              }
+              &:after        { @include make-fa('\f107', #fff); 
+                               opacity: .5;
+                               position: absolute;
+                               bottom: 10px;
+                               right: 7%;
+                               font-size: 18px;
+                               line-height: 1em;
+              }
             }
             &.selected a   { background-color: transparentize($gray, .15); }
             &.tabOpen a    { background-color: transparentize($gray, .15); 
@@ -1630,6 +1631,7 @@ dl.portletBandi                     {
   #portlets-in-header               { display: table;
                                       position: relative;
                                       table-layout: fixed;
+                                      margin-bottom: 0;
     .InHeaderPortletManager1,
     .InHeaderPortletManager2,
     .InHeaderPortletManager3        { padding: 0; 
@@ -1648,26 +1650,93 @@ dl.portletBandi                     {
                                       width: 20%;
       }
     }
+    .InHeaderPortletManager3        { padding: 18px 0; }
   }
 }
 // riga superiore
 #portlets-in-header                 { background-color: #FFF;
                                       padding:0;
   .portletHome                      { padding:0;
-    .portletItem                    { padding: 10px 15px;}
-    &.homeColonnaTop                { border: 8px solid $gray-light; 
-                                      border-width: 8px 0;                                            
-    }
-    ul li                           { padding-left:0;
-      &:before                      { display: none; }
-      a                             { color: $text-color; 
-        &:focus,
-        &:hover                     { color: $link-color; }
+    .portletItem                    { padding: 10px 15px; }
+    ul                              { margin:0; 
+      li                            { padding:0;           
+                                      margin:0;     
+                                      line-height: 1.35em;                  
+        &:before                    { display: none; }
+        a                           { color: $text-color; 
+                                      display: block;          
+        }
       }
     }
+    &.homeColonnaTop                { border: 8px solid $gray-light; 
+                                      border-width: 8px 0;
+                                      width: 100%;
+                                      margin: 0 0.3%;
+      strong                        { display: block; }        
+      .portletItem                  { padding: 10px 12px; 
+                                      border-left: 1px dashed $gray-lighter;
+      } 
+      ul li                         { border-top: 1px solid $gray-light;
+        &:first-child               { border-top: 0; }
+        a                           { padding: 8px 5px;
+                                      min-height: 4em;
+          &:focus,
+          &:hover                   { background-color: $grayVeryLighty; }
+        }
+      }
+    }
+    &.homeColonnaBottom             { padding: 0 0 0;
+                                      border-left: 1px dashed $gray-lighter;
+      .portletItem                  { padding: 0 15px; }
+      ul li                         { padding: 7px 0;
+        a                           { display: block;
+                                      color: $text-color;
+                                      position: relative;
+                                      border:0;
+          &.external-link,
+          &[class*='fa-']           { padding-left: 30px; }
+          &:before                  { position: absolute; 
+                                      left: 0;
+                                      top: 2px;
+                                      color: $link-color;
+                                      font-family: FontAwesome;
+                                      font-size: 18px;
+          }
+          &:focus,
+          &:hover                   { color: $link-color; 
+            &:before                { color: $text-color !important; }
+          }
+          &.external-link:before    { content: '\f08e'; }
+        }
+      }
+    }    
+  }
+  .InHeaderPortletManager1          {
+    > div:first-child .homeColonnaTop { margin-left:0;
+      .portletItem                    { border-left: 0; }
+    }
+    > div:last-child .homeColonnaTop { margin-right:0; }
+  }
+  .InHeaderPortletManager3               { 
+    > div:first-child .homeColonnaBottom { border-left: 0; }
   }
 }
-.titolo-servizi-online              { background-color: $gray-bg; }
+div.titolo-servizi-online           { background-color: $gray-bg; 
+  .portletItem                      { padding: 20px 25px 12px;
+    h3                              { margin: 0;
+                                      position: relative;
+                                      font-size: 1.45em;
+                                      @extend .light;
+                                      padding-left: 54px; 
+      &:before                      { @include make-flaticon('man379', 40px);
+                                      color: $link-color;
+                                      position: absolute;
+                                      left: 0;
+                                      bottom: -10px;
+      }
+    }    
+  }
+}
 
 // FIX VISTA MODULISTICA
 #content table.modulisticaListing   { @extend .table, .table-condensed;
@@ -1685,6 +1754,22 @@ dl.portletBandi                     {
     label                           { @extend .regular; }
   }
   > tbody:first-child > tr:first-child > td     { border-top-color: #999; }
+}
+
+// ELENCO UFFICI
+table.listOffices                   {
+  thead th                          { @extend .semibold;
+                                      text-transform: uppercase;
+                                      font-size: 1.1em;
+  }
+  tbody                             {
+    th                              { @extend .semibold;
+      a                             { 
+        &,
+        #content &                  { border:0; }
+      }
+    }
+  }
 }
 
 /// SITEMAP

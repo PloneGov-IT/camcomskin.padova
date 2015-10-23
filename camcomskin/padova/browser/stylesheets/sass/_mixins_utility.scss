@@ -100,7 +100,11 @@
       .submenuDynamicWrapper ul li:before { color: $color; }      
     }
     // in home
-    #portlets-in-header .portletHome.homeColonnaTop.#{$id-sezione} { border-color: $color; }
+    #portlets-in-header .portletHome.homeColonnaTop.#{$id-sezione} { 
+      &,
+      ul li                                                        { border-color: $color; }
+    }
+    #portlets-in-header .portletHome.homeColonnaBottom.#{$id-sezione} ul li a:before { color: $color; }
 
     .section-#{$id-sezione} {
       #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after,
