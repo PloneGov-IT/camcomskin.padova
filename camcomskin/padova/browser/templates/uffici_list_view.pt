@@ -10,11 +10,10 @@
   <body>
     <metal:fill fill-slot="main">
 
-<table class="table"
+<table class="table listOffices"
        tal:define="offices_list view/get_offices"
        tal:condition="offices_list"
        >
-      <caption></caption>
       <thead>
         <tr>
           <th>Ufficio</th>

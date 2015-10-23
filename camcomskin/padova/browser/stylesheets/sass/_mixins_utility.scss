@@ -99,6 +99,8 @@
       .staticItem:first-child h5,
       .submenuDynamicWrapper ul li:before { color: $color; }      
     }
+    // in home
+    #portlets-in-header .portletHome.homeColonnaTop.#{$id-sezione} { border-color: $color; }
 
     .section-#{$id-sezione} {
       #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after,

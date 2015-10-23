@@ -9,7 +9,8 @@ body { @extend .light; }
 strong { @extend .semibold; }
 
 /////// SIZES AND CONTAINERS
-#portal-header,
+.portalHeaderContent,
+#portlets-in-header,
 #portal-siteactions,
 .topbarContent,
 .breadcrumbsContent,
@@ -41,6 +42,7 @@ strong { @extend .semibold; }
 .colonna-1-di-2         { @extend .col-sm-6; }
 .colonna-1-di-3         { @extend .col-sm-4; }
 .colonna-1-di-4         { @extend .col-sm-3; } 
+.colonna-1-di-5         { width: 20%; float: left; } 
 
 
 // fix per responsive
@@ -60,7 +62,7 @@ strong { @extend .semibold; }
 
 // header
 #portal-top                 { margin-bottom: 40px; }
-#portal-header              { padding-right: 0; }
+.portalHeaderContent        { padding-right: 0; }
 #topbar                     { background-color: #EBEBEB; 
                               border-bottom: 1px solid #d3d3d3;
                               padding: 5px 0;
@@ -930,12 +932,12 @@ dl[class*='ortletNavigation']       {
   }
   .officeEmail,
   .officePec                        { 
-    a                               { color: $text-color;
-                                      border-bottom: 1px dotted $text-color;
+    a                               { width: 100%;
+                                      text-overflow: ellipsis;
+                                      overflow: hidden;
+                                      display: inline-block;
       &:focus,
-      &:hover                       { color: $link-color; 
-                                      border-bottom: 1px solid $link-color;
-      }
+      &:hover                       { color: $text-color; }
     }
   }
 }
@@ -1483,6 +1485,28 @@ dl.portletCollection                { margin-bottom: 20px;
     }
   }
 }
+// PORTLET BANDI
+dl.portletBandi                     { 
+  h3.bandoTitle                     { margin:0 0 5px 67px;
+                                      font-size: 1em;
+                                      @extend .semibold;
+                                      line-height: 1.5em;
+  }
+  p                                 {
+    &,
+    #content &                      { margin-bottom: 8px; }
+  }
+  p.bandoType                       { text-transform: uppercase;
+                                      @extend .semibold;
+                                      font-size: 0.8em;
+                                      color: $gray;
+  }
+  .bandoDates                       { font-size: 0.9em;
+    .labelTB                        { @extend .semibold; }
+  }
+  dd.portletItem                    { padding: 15px 0; }
+}
+
 
 // FOOTER
 #portal-footer-wrapper              { background-color: $blu;
@@ -1596,6 +1620,54 @@ dl.portletCollection                { margin-bottom: 20px;
         }
     }
 }
+
+// HOMEPAGE
+.section-homepage                   { 
+  #viewlet-above-content-title,
+  h1.documentFirstHeading           { display: none; }
+  #portal-top                       { background-color: $bgmenu; }
+  #portal-header                    { background-color: #FFF; }
+  #portlets-in-header               { display: table;
+                                      position: relative;
+                                      table-layout: fixed;
+    .InHeaderPortletManager1,
+    .InHeaderPortletManager2,
+    .InHeaderPortletManager3        { padding: 0; 
+                                      width: 100%;
+                                      float: none; 
+                                      clear: both;
+                                      @extend .clearfix;
+    }
+    .InHeaderPortletManager1,
+    .InHeaderPortletManager3        { display: -webkit-flex;
+                                      display: -ms-flexbox;
+                                      display: flex;
+      > div                         { display: -webkit-flex;
+                                      display: -ms-flexbox;
+                                      display: flex;
+                                      width: 20%;
+      }
+    }
+  }
+}
+// riga superiore
+#portlets-in-header                 { background-color: #FFF;
+                                      padding:0;
+  .portletHome                      { padding:0;
+    .portletItem                    { padding: 10px 15px;}
+    &.homeColonnaTop                { border: 8px solid $gray-light; 
+                                      border-width: 8px 0;                                            
+    }
+    ul li                           { padding-left:0;
+      &:before                      { display: none; }
+      a                             { color: $text-color; 
+        &:focus,
+        &:hover                     { color: $link-color; }
+      }
+    }
+  }
+}
+.titolo-servizi-online              { background-color: $gray-bg; }
 
 // FIX VISTA MODULISTICA
 #content table.modulisticaListing   { @extend .table, .table-condensed;

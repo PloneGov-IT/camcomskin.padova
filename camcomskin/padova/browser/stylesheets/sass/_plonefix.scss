@@ -390,14 +390,19 @@ div.width-2\3a 3 { @extend .col-sm-8; } /* .width-2:3 */
 
 
 /* Define classes for 1/5ths and 1/6ths widths and positions. */
-// div.position-1\3a 5 {margin-left:   0;} /* .position-1:5 */
-// div.position-2\3a 5 {margin-left:    0;} /* .position-2:5 */
-// div.position-3\3a 5 {margin-left:    0;} /* .position-3:5 */
-// div.position-4\3a 5 {margin-left:    0;} /* .position-4:5 */
-// div.width-1\3a 5 { @extend .col-sm-2; } /* .width-1:5 */
-// div.width-2\3a 5 { @extend .col-sm-5; } /* .width-2:5 */
-// div.width-3\3a 5 { @extend .col-sm-7; } /* .width-3:5 */
-// div.width-4\3a 5 { @extend .col-sm-10; } /* .width-4:5 */
+ div.position-1\3a 5,
+ div.position-2\3a 5,
+ div.position-3\3a 5,
+ div.position-4\3a 5,
+ div.position-1\3a 6,
+ div.position-2\3a 6,
+ div.position-3\3a 6,
+ div.position-4\3a 6,
+ div.position-5\3a 6 {margin-left: 0;} /* .position-x:5 e x:6 */
+ div.width-1\3a 5 { width: 20%; float: left; } /* .width-1:5 */
+ //div.width-2\3a 5 { @extend .col-sm-5; } /* .width-2:5 */
+ //div.width-3\3a 5 { @extend .col-sm-7; } /* .width-3:5 */
+ //div.width-4\3a 5 { @extend .col-sm-10; } /* .width-4:5 */
 
 // footer
 //#portlets-footer.row { margin-left:0; }

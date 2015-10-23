@@ -749,7 +749,8 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, #portal-header,
+.container, .portalHeaderContent,
+#portlets-in-header,
 #portal-siteactions,
 .topbarContent,
 .breadcrumbsContent,
@@ -764,7 +765,8 @@ pre {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, #portal-header:before,
+  .container:before, .portalHeaderContent:before,
+  #portlets-in-header:before,
   #portal-siteactions:before,
   .topbarContent:before,
   .breadcrumbsContent:before,
@@ -774,7 +776,8 @@ pre {
   .colophonWrapper:before,
   #portlets-footer:before, .template-pp_homepage_view #portletPageColumns #portletPageTopRow:before,
   .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:before,
-  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:before, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:before, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:before, .container:after, #portal-header:after,
+  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:before, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:before, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:before, .container:after, .portalHeaderContent:after,
+  #portlets-in-header:after,
   #portal-siteactions:after,
   .topbarContent:after,
   .breadcrumbsContent:after,
@@ -787,7 +790,8 @@ pre {
   .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:after, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:after, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:after {
     content: " ";
     display: table; }
-  .container:after, #portal-header:after,
+  .container:after, .portalHeaderContent:after,
+  #portlets-in-header:after,
   #portal-siteactions:after,
   .topbarContent:after,
   .breadcrumbsContent:after,
@@ -800,7 +804,8 @@ pre {
   .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:after, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:after, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:after {
     clear: both; }
   @media (min-width: 769px) {
-    .container, #portal-header,
+    .container, .portalHeaderContent,
+    #portlets-in-header,
     #portal-siteactions,
     .topbarContent,
     .breadcrumbsContent,
@@ -813,7 +818,8 @@ pre {
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent {
       width: auto; } }
   @media (min-width: 992px) {
-    .container, #portal-header,
+    .container, .portalHeaderContent,
+    #portlets-in-header,
     #portal-siteactions,
     .topbarContent,
     .breadcrumbsContent,
@@ -826,7 +832,8 @@ pre {
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent {
       width: auto; } }
   @media (min-width: 1300px) {
-    .container, #portal-header,
+    .container, .portalHeaderContent,
+    #portlets-in-header,
     #portal-siteactions,
     .topbarContent,
     .breadcrumbsContent,
@@ -4122,7 +4129,8 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header, #portal-header > .navbar-header,
+.container > .navbar-header, .portalHeaderContent > .navbar-header,
+#portlets-in-header > .navbar-header,
 #portal-siteactions > .navbar-header,
 .topbarContent > .navbar-header,
 .breadcrumbsContent > .navbar-header,
@@ -4134,7 +4142,8 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
 .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper > .navbar-header,
 .template-pp_homepage_view #portletPageColumns #portletPageBottomRow > .navbar-header, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline > .navbar-header, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent > .navbar-header,
 .container > .navbar-collapse,
-#portal-header > .navbar-collapse,
+.portalHeaderContent > .navbar-collapse,
+#portlets-in-header > .navbar-collapse,
 #portal-siteactions > .navbar-collapse,
 .topbarContent > .navbar-collapse,
 .breadcrumbsContent > .navbar-collapse,
@@ -4153,7 +4162,8 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 769px) {
-    .container > .navbar-header, #portal-header > .navbar-header,
+    .container > .navbar-header, .portalHeaderContent > .navbar-header,
+    #portlets-in-header > .navbar-header,
     #portal-siteactions > .navbar-header,
     .topbarContent > .navbar-header,
     .breadcrumbsContent > .navbar-header,
@@ -4165,7 +4175,8 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
     .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper > .navbar-header,
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow > .navbar-header, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline > .navbar-header, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent > .navbar-header,
     .container > .navbar-collapse,
-    #portal-header > .navbar-collapse,
+    .portalHeaderContent > .navbar-collapse,
+    #portlets-in-header > .navbar-collapse,
     #portal-siteactions > .navbar-collapse,
     .topbarContent > .navbar-collapse,
     .breadcrumbsContent > .navbar-collapse,
@@ -4222,7 +4233,8 @@ input.standalone .caret, #content-history input.standalone[type="submit"] .caret
   .navbar-brand > img {
     display: block; }
   @media (min-width: 769px) {
-    .navbar > .container .navbar-brand, .navbar > #portal-header .navbar-brand,
+    .navbar > .container .navbar-brand, .navbar > .portalHeaderContent .navbar-brand,
+    .navbar > #portlets-in-header .navbar-brand,
     .navbar > #portal-siteactions .navbar-brand,
     .navbar > .topbarContent .navbar-brand,
     .navbar > .breadcrumbsContent .navbar-brand,
@@ -5260,16 +5272,22 @@ button.list-group-item-danger {
 .clearfix:before, #visual-portal-wrapper:before, .ArchetypesQueryWidget .criteria:before, #edit-bar:before, #portletPageColumns:before, .secondaryMenu .submenuWrapper:before, .globalnavWrapper:before, .globalnavWrapper #portal-globalnav:before, #submenu-details .submenuDetailsContent:before, .officeContactsWrapper .officePhone:before,
 .officeContactsWrapper .officeFax:before,
 .officeContactsWrapper .officeEmail:before,
-.officeContactsWrapper .officePec:before, .template-pp_homepage_view #portletPageColumns .portletPageColumn:before, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
+.officeContactsWrapper .officePec:before, .template-pp_homepage_view #portletPageColumns .portletPageColumn:before, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:before, .section-homepage #portlets-in-header .InHeaderPortletManager1:before,
+.section-homepage #portlets-in-header .InHeaderPortletManager2:before,
+.section-homepage #portlets-in-header .InHeaderPortletManager3:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
-.officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after {
+.officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
+.section-homepage #portlets-in-header .InHeaderPortletManager2:after,
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after {
   content: " ";
   display: table; }
 .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
-.officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after {
+.officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
+.section-homepage #portlets-in-header .InHeaderPortletManager2:after,
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after {
   clear: both; }
 
 .center-block {
@@ -5986,6 +6004,23 @@ div.width-full {
   padding-right: 15px; }
 
 /* Define classes for 1/5ths and 1/6ths widths and positions. */
+div.position-1\3a 5,
+div.position-2\3a 5,
+div.position-3\3a 5,
+div.position-4\3a 5,
+div.position-1\3a 6,
+div.position-2\3a 6,
+div.position-3\3a 6,
+div.position-4\3a 6,
+div.position-5\3a 6 {
+  margin-left: 0; }
+
+/* .position-x:5 e x:6 */
+div.width-1\3a 5 {
+  width: 20%;
+  float: left; }
+
+/* .width-1:5 */
 .photoAlbumEntry {
   background-position: right top;
   width: 157px; }
@@ -6441,7 +6476,7 @@ dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, 
 .boxApprofondimenti h4.boxHeader, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6, .boxCollezioneRigaNotizie .boxFooter a, #document-toc dt.portletHeader, .rifBando h3:first-child strong, #portal-footer-wrapper #portlets-footer dt.portletHeader {
+.officeContactsWrapper .officePec h6, .boxCollezioneRigaNotizie .boxFooter a, #document-toc dt.portletHeader, .rifBando h3:first-child strong, dl.portletBandi h3.bandoTitle, dl.portletBandi p.bandoType, dl.portletBandi .bandoDates .labelTB, #portal-footer-wrapper #portlets-footer dt.portletHeader {
   font-weight: 600; }
 
 .bold, #search-filter .field .optionsToggle label, #portal-personaltools-wrapper #user-name, .boxCollezioneBase .boxFooter, dl.portletCollection dd.portletFooter {
@@ -6583,6 +6618,10 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
   #portal-column-two .managePortletsLink {
     margin-top: 20px; }
 
+.colonna-1-di-5 {
+  width: 20%;
+  float: left; }
+
 @media (max-width: 768px) {
   .row {
     margin-left: 0;
@@ -6601,7 +6640,7 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
 #portal-top {
   margin-bottom: 40px; }
 
-#portal-header {
+.portalHeaderContent {
   padding-right: 0; }
 
 #topbar {
@@ -7595,13 +7634,14 @@ dl[class*='ortletNavigation'] dd.portletItem {
   display: block; }
 .boxOffice .officeEmail a,
 .boxOffice .officePec a {
-  color: #313131;
-  border-bottom: 1px dotted #313131; }
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block; }
   .boxOffice .officeEmail a:focus, .boxOffice .officeEmail a:hover,
   .boxOffice .officePec a:focus,
   .boxOffice .officePec a:hover {
-    color: #9c3524;
-    border-bottom: 1px solid #9c3524; }
+    color: #313131; }
 
 .boxArchivio {
   padding-bottom: 0; }
@@ -8163,6 +8203,21 @@ dl.portletCollection {
       font-size: 1em;
       text-transform: uppercase; }
 
+dl.portletBandi h3.bandoTitle {
+  margin: 0 0 5px 67px;
+  font-size: 1em;
+  line-height: 1.5em; }
+dl.portletBandi p, #content dl.portletBandi p {
+  margin-bottom: 8px; }
+dl.portletBandi p.bandoType {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #555; }
+dl.portletBandi .bandoDates {
+  font-size: 0.9em; }
+dl.portletBandi dd.portletItem {
+  padding: 15px 0; }
+
 #portal-footer-wrapper {
   background-color: #283641;
   color: #EFEFEF;
@@ -8276,6 +8331,58 @@ dl.portletCollection {
             #portal-footer-wrapper #portlets-footer .lista-links ul li a:focus, #portal-footer-wrapper #portlets-footer .lista-links ul li a:hover {
               color: #FFF; }
 
+.section-homepage #viewlet-above-content-title,
+.section-homepage h1.documentFirstHeading {
+  display: none; }
+.section-homepage #portal-top {
+  background-color: #4f575e; }
+.section-homepage #portal-header {
+  background-color: #FFF; }
+.section-homepage #portlets-in-header {
+  display: table;
+  position: relative;
+  table-layout: fixed; }
+  .section-homepage #portlets-in-header .InHeaderPortletManager1,
+  .section-homepage #portlets-in-header .InHeaderPortletManager2,
+  .section-homepage #portlets-in-header .InHeaderPortletManager3 {
+    padding: 0;
+    width: 100%;
+    float: none;
+    clear: both; }
+  .section-homepage #portlets-in-header .InHeaderPortletManager1,
+  .section-homepage #portlets-in-header .InHeaderPortletManager3 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .section-homepage #portlets-in-header .InHeaderPortletManager1 > div,
+    .section-homepage #portlets-in-header .InHeaderPortletManager3 > div {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 20%; }
+
+#portlets-in-header {
+  background-color: #FFF;
+  padding: 0; }
+  #portlets-in-header .portletHome {
+    padding: 0; }
+    #portlets-in-header .portletHome .portletItem {
+      padding: 10px 15px; }
+    #portlets-in-header .portletHome.homeColonnaTop {
+      border: 8px solid #777;
+      border-width: 8px 0; }
+    #portlets-in-header .portletHome ul li {
+      padding-left: 0; }
+      #portlets-in-header .portletHome ul li:before {
+        display: none; }
+      #portlets-in-header .portletHome ul li a {
+        color: #313131; }
+        #portlets-in-header .portletHome ul li a:focus, #portlets-in-header .portletHome ul li a:hover {
+          color: #9c3524; }
+
+.titolo-servizi-online {
+  background-color: #EEE; }
+
 #content table.modulisticaListing tr.odd th.modulisticaDocument {
   border: 1px solid #999; }
 #content table.modulisticaListing th.modulisticaDocument {
@@ -8310,6 +8417,9 @@ dl.portletCollection {
   .globalnavWrapper #submenu-details.submenu-0 .staticItem:first-child h5,
   .globalnavWrapper #submenu-details.submenu-0 .submenuDynamicWrapper ul li:before {
     color: #45807A; }
+
+#portlets-in-header .portletHome.homeColonnaTop.avvia-attivita-impresa {
+  border-color: #45807A; }
 
 .section-avvia-attivita-impresa #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after a.navTreeItemInPath,
 .section-avvia-attivita-impresa #breadcrumbs .breadcrumbsContent .breadcrumbSeparator:before a.navTreeItemInPath,
@@ -8380,6 +8490,9 @@ dl.portletCollection {
   .globalnavWrapper #submenu-details.submenu-1 .submenuDynamicWrapper ul li:before {
     color: #bb7c35; }
 
+#portlets-in-header .portletHome.homeColonnaTop.conosci-gestisci-impresa {
+  border-color: #bb7c35; }
+
 .section-conosci-gestisci-impresa #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after a.navTreeItemInPath,
 .section-conosci-gestisci-impresa #breadcrumbs .breadcrumbsContent .breadcrumbSeparator:before a.navTreeItemInPath,
 .section-conosci-gestisci-impresa dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath {
@@ -8448,6 +8561,9 @@ dl.portletCollection {
   .globalnavWrapper #submenu-details.submenu-2 .staticItem:first-child h5,
   .globalnavWrapper #submenu-details.submenu-2 .submenuDynamicWrapper ul li:before {
     color: #5b859a; }
+
+#portlets-in-header .portletHome.homeColonnaTop.promuovi-in-italia-e-estero {
+  border-color: #5b859a; }
 
 .section-promuovi-in-italia-e-estero #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after a.navTreeItemInPath,
 .section-promuovi-in-italia-e-estero #breadcrumbs .breadcrumbsContent .breadcrumbSeparator:before a.navTreeItemInPath,
@@ -8518,6 +8634,9 @@ dl.portletCollection {
   .globalnavWrapper #submenu-details.submenu-3 .submenuDynamicWrapper ul li:before {
     color: #97a763; }
 
+#portlets-in-header .portletHome.homeColonnaTop.finanziamenti-innovazione {
+  border-color: #97a763; }
+
 .section-finanziamenti-innovazione #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after a.navTreeItemInPath,
 .section-finanziamenti-innovazione #breadcrumbs .breadcrumbsContent .breadcrumbSeparator:before a.navTreeItemInPath,
 .section-finanziamenti-innovazione dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath {
@@ -8586,6 +8705,9 @@ dl.portletCollection {
   .globalnavWrapper #submenu-details.submenu-4 .staticItem:first-child h5,
   .globalnavWrapper #submenu-details.submenu-4 .submenuDynamicWrapper ul li:before {
     color: #bf9b48; }
+
+#portlets-in-header .portletHome.homeColonnaTop.tutela-impresa-e-consumatore {
+  border-color: #bf9b48; }
 
 .section-tutela-impresa-e-consumatore #breadcrumbs .breadcrumbsContent .breadcrumbTop.withSeparator span:after a.navTreeItemInPath,
 .section-tutela-impresa-e-consumatore #breadcrumbs .breadcrumbsContent .breadcrumbSeparator:before a.navTreeItemInPath,
