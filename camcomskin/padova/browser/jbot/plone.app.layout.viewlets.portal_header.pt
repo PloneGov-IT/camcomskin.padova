@@ -10,5 +10,5 @@
     </div>
 </div>
 <header id="portal-header">    
-    <div tal:replace="structure provider:plone.portalheader" />
+    <div tal:content="structure provider:plone.portalheader" class="portalHeaderContent" />
 </header>
