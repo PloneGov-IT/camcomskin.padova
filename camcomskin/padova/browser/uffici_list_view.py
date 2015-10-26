@@ -1,19 +1,14 @@
 from Products.Five import BrowserView
 
+
 class UfficiListView(BrowserView):
 
     def __init__(self, context, request):
         self.context = context
         self.request = request
 
-    def get_offices(self):
-        item_list = self.context.queryCatalog()
-        check_list = [x.portal_type == 'Ufficio' for x in item_list]
-
-        if not all(check_list):
-            return []
-
-        return item_list
+    def filtered_offices_list(self, item_list):
+        return [x for x in item_list if x.portal_type == 'Ufficio']
 
     def get_phone(self,item):
          return item.getObject().phone

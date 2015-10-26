@@ -10,10 +10,11 @@
   <body>
     <metal:fill fill-slot="main">
 
-<table class="table"
-       tal:define="offices_list view/get_offices"
-       tal:condition="offices_list"
-       >
+    <metal:listingmacro define-macro="listing">
+    <tal:results define="b_start python:request.get('b_start', 0);
+                         batch python:context.results(b_start=b_start);
+                         offices_list python: view.filtered_offices_list(batch);">
+    <table class="table" tal:condition="offices_list">
       <caption></caption>
       <thead>
         <tr>
@@ -35,8 +36,11 @@
             <td tal:content="python: view.get_pec(office)"></td>
           </tr>
         </tal:loop>
+         <div metal:use-macro="context/batch_macros/macros/navigation" />
       </tbody>
     </table>
+    </tal:results>
+    </metal:listingmacro>
   </metal:fill>
   </body>
 </html>
