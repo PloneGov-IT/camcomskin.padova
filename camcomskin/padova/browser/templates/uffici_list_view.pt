@@ -36,9 +36,9 @@
             <td tal:content="python: view.get_pec(office)"></td>
           </tr>
         </tal:loop>
-         <div metal:use-macro="context/batch_macros/macros/navigation" />
       </tbody>
     </table>
+     <div metal:use-macro="context/batch_macros/macros/navigation" />
     </tal:results>
     </metal:listingmacro>
   </metal:fill>
