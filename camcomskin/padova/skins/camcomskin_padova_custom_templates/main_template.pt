@@ -134,7 +134,7 @@
                     </metal:sub>
                 </div>
             </metal:block>
-           
+
             <tal:not_homepage define="template_id template/getId"
                               condition="python:template_id != 'pp_homepage_view.pt'">
               <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" tal:condition="not:ajax_load" />
@@ -181,7 +181,9 @@
         </div>
     </div>
 
-
+    <a href="javascript:" id="return-to-top">
+      <span class="fa fa-chevron-up"></span>
+    </a>
 
 </div>
 </body>
