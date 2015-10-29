@@ -52,7 +52,7 @@ input[type="search"] {
 input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
-  margin-top: 1px \9; // IE8-9
+  //margin-top: 1px \9; // IE8-9
   line-height: normal;
 }
 
@@ -179,26 +179,26 @@ input[type="search"] {
 //
 // Note that as of 8.3, iOS doesn't support `datetime` or `week`.
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  input[type="date"],
-  input[type="time"],
-  input[type="datetime-local"],
-  input[type="month"] {
-    &.form-control {
-      line-height: $input-height-base;
-    }
-
-    &.input-sm,
-    .input-group-sm & {
-      line-height: $input-height-small;
-    }
-
-    &.input-lg,
-    .input-group-lg & {
-      line-height: $input-height-large;
-    }
-  }
-}
+//@media screen and (-webkit-min-device-pixel-ratio: 0) {
+//  input[type="date"],
+//  input[type="time"],
+//  input[type="datetime-local"],
+//  input[type="month"] {
+//    &.form-control {
+//      line-height: $input-height-base;
+//    }
+//
+//    &.input-sm,
+//    .input-group-sm & {
+//      line-height: $input-height-small;
+//    }
+//
+//    &.input-lg,
+//    .input-group-lg & {
+//      line-height: $input-height-large;
+//    }
+//  }
+//}
 
 
 // Form groups
@@ -236,7 +236,7 @@ input[type="search"] {
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
   margin-left: -20px;
-  margin-top: 4px \9;
+  //margin-top: 4px \9;
 }
 
 .radio + .radio,
@@ -399,7 +399,7 @@ input[type="checkbox"] {
   height: $input-height-base;
   line-height: $input-height-base;
   text-align: center;
-  pointer-events: none;
+  //pointer-events: none;
 }
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,

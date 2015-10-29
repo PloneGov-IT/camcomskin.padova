@@ -7,16 +7,16 @@
 // -------------------------
 
 // WebKit
-@-webkit-keyframes progress-bar-stripes {
-  from  { background-position: 40px 0; }
-  to    { background-position: 0 0; }
-}
+//@-webkit-keyframes progress-bar-stripes {
+//  from  { background-position: 40px 0; }
+//  to    { background-position: 0 0; }
+//}
 
 // Spec and IE10+
-@keyframes progress-bar-stripes {
-  from  { background-position: 40px 0; }
-  to    { background-position: 0 0; }
-}
+//@keyframes progress-bar-stripes {
+//  from  { background-position: 40px 0; }
+//  to    { background-position: 0 0; }
+//}
 
 
 // Bar itself
@@ -61,10 +61,10 @@
 //
 // `.progress.active .progress-bar` is deprecated as of v3.2.0 in favor of the
 // `.progress-bar.active` approach.
-.progress.active .progress-bar,
-.progress-bar.active {
-  @include animation(progress-bar-stripes 2s linear infinite);
-}
+//.progress.active .progress-bar,
+//.progress-bar.active {
+//  @include animation(progress-bar-stripes 2s linear infinite);
+//}
 
 
 // Variations
