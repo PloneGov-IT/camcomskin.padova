@@ -1358,6 +1358,7 @@ dl.portletCollection                { margin-bottom: 20px;
                                     position: relative;
                                     margin: 0 0 $grid-gutter-width;
                                     padding-bottom: 10px;
+                                    z-index: 0;
     .template-search &            { margin-bottom: 10px; }
       &:before                    { display: block;
                                     content: '';
@@ -1396,7 +1397,7 @@ dl.portletCollection                { margin-bottom: 20px;
 // DOCUMENT ACTIONS
 #content .documentActions           { @extend .pull-right; 
                                       position: relative;
-                                      z-index: 2;
+                                      z-index: 1;
   ul                                { display: inline-block;
     li                              { display: inline-block;
                                       list-style: none;
