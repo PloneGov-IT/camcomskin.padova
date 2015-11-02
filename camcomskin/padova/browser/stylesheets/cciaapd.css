@@ -8259,13 +8259,17 @@ dl.portletBandi dd.portletItem {
     clear: both; }
   .section-homepage #portlets-in-header .InHeaderPortletManager1,
   .section-homepage #portlets-in-header .InHeaderPortletManager3 {
-    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex; }
     .section-homepage #portlets-in-header .InHeaderPortletManager1 > div,
     .section-homepage #portlets-in-header .InHeaderPortletManager3 > div {
-      display: -webkit-flex;
+      display: -webkit-box;
+      display: -moz-box;
       display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       width: 20%; }
   .section-homepage #portlets-in-header .InHeaderPortletManager3 {

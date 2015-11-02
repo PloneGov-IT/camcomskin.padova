@@ -1684,12 +1684,8 @@ dl.portletBandi                     {
                                       @extend .clearfix;
     }
     .InHeaderPortletManager1,
-    .InHeaderPortletManager3        { display: -webkit-flex;
-                                      display: -ms-flexbox;
-                                      display: flex;
-      > div                         { display: -webkit-flex;
-                                      display: -ms-flexbox;
-                                      display: flex;
+    .InHeaderPortletManager3        { @include flexbox();
+      > div                         { @include flexbox();
                                       width: 20%;
       }
     }
