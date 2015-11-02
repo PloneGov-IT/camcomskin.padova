@@ -369,17 +369,76 @@ div.width-full   { @extend .col-sm-12; padding-left: 0; padding-right: 0;}
 div.width-1\3a 3 { @extend .col-sm-4; } /* .width-1:3 */
 div.width-2\3a 3 { @extend .col-sm-8; } /* .width-2:3 */
 
+@media (max-width: $screen-sm-max) {
+    #portal-columns {
+        @include flexbox();
+        @include justify-content(space-between);
+        @include flex-flow(row wrap);
+    }
+}
+@media (max-width: $screen-xs-max) {
+    #portal-columns {
+        @include flex-flow(column nowrap);
+        @include justify-content(flex-start);
+    }
+}
 // column-one + column-content
 #portal-column-one.width-1\3a 4.position-0 { width: 21%; right: 76%; } 
 #portal-column-content.width-3\3a 4.position-1\3a 4 { left: 23%; width: 76%; } 
+@media (max-width: $screen-sm-max) {
+    #portal-column-one.width-1\3a 4.position-0 {
+        display: inline-block; // this makes IE10 correctly wrap
+        right: initial;
+        @include flex(0 1 100%);
+        @include order(2);
+    }
+    #portal-column-content.width-3\3a 4.position-1\3a 4 {
+        display: inline-block;
+        left: initial;
+        @include flex(0 1 100%);
+        @include order(1);
+    }
+}
 
 // column-content + column-two
 #portal-column-content.width-3\3a 4.position-0 { width: 81%; }
+@media (max-width: $screen-sm-max) {
+    #portal-column-content.width-3\3a 4.position-0 {
+        display: inline-block;
+        @include flex(0 1 66%);
+        @include order(1);
+    }
+    #portal-column-two.width-1\3a 4.position-3\3a 4 {
+        display: inline-block;
+        @include flex(0 1 33%);
+        @include order(2);
+    }
+}
 
 // column-one + column-content + column-two
 #portal-column-content.width-1\3a 2.position-1\3a 4 + #portal-column-one.width-1\3a 4.position-0 { width: 21%; right: 60%; } 
 #portal-column-content.width-1\3a 2.position-1\3a 4 { width: 58%; margin-right: 2%;left: 23%; } 
 #portal-column-two { width: 19%; padding-right:0; }
+@media (max-width: $screen-sm-max) {
+    #portal-column-content.width-1\3a 2.position-1\3a 4 + #portal-column-one.width-1\3a 4.position-0 {
+        display: inline-block; // this makes IE10 correctly wrap
+        right: initial;
+        @include flex(0 1 100%);
+        @include order(3);
+    }
+    #portal-column-content.width-1\3a 2.position-1\3a 4 {
+        display: inline-block;
+        left: initial;
+        margin-right: 0;
+        @include flex(0 1 66%);
+        @include order(1);
+    }
+    #portal-column-two.width-1\3a 4.position-3\3a 4 {
+        display: inline-block;
+        @include flex(0 1 33%);
+        @include order(2);
+    }
+}
 
 // solo content
 #portal-column-content.width-full {padding-left: $grid-gutter-width/2; padding-right: $grid-gutter-width/2;}

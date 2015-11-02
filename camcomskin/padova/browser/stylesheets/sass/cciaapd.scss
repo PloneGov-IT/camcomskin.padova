@@ -728,6 +728,9 @@ dl[class*='ortletNavigation']       {
     }
     dd.portletItem                  { padding: 8px 0 0;
                                       border-bottom: 3px solid $blu;
+                                      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                                          @include content-columns(2);
+                                      }
       ul.navTreeLevel0              { margin-bottom: 6px;
         ul                          { margin: 6px 0 5px 15px; 
             &.navTreeLevel1 ul      { margin-left: -6px; }
