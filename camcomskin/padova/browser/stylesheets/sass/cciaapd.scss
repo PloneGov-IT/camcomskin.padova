@@ -39,9 +39,9 @@ strong { @extend .semibold; }
 }
 
 // PORTLETPAGE
-.colonna-1-di-2         { @extend .col-sm-6; }
+.colonna-1-di-2         { @extend .col-sm-12; @extend .col-md-6; }
 .colonna-1-di-3         { @extend .col-sm-4; }
-.colonna-1-di-4         { @extend .col-sm-3; } 
+.colonna-1-di-4         { @extend .col-sm-6; @extend .col-md-3; } 
 .colonna-1-di-5         { width: 20%; float: left; } 
 
 
@@ -197,22 +197,34 @@ strong { @extend .semibold; }
 // LOGO
 #portal-logo                { margin: 20px 0 0;
                               @extend .pull-left;
+                              @extend .col-sm-4;
+                              padding-left: 0;
     img                     { max-width: 250px;
                               height: auto; 
     }
 }
 
 // MENU SUPERIORE
-.secondaryMenu              { @extend .pull-right;
-                              top: 40px;
-                              position: relative;
-                              margin-right: 80px;
+.secondaryMenu              { @extend .col-sm-12;
+                              @extend .col-md-7;
                               display: block;
+                              margin-top: 20px;
+                              margin-bottom: 20px;
+                              text-align: center;
+                              @media (min-width: $screen-md-min) {
+                                  float: right;
+                                  text-align: right;
+                                  margin-top: 40px;
+                                  margin-bottom: 0;
+                              }
   > ul                      { white-space: nowrap;
                               margin-bottom: 0;
     > li.secondaryMenuItem  { margin-right: 5%;
                               display: inline-block;
       > a                   { font-size: 1.1em;
+                              @media (max-width: $screen-sm-max) {
+                                  font-size: 1em;
+                              }
                               text-transform: uppercase;
                               color: #4a4a4a;
                               display: block;
@@ -367,9 +379,11 @@ strong { @extend .semibold; }
         }
     }
     strong                  { @extend .semibold; }    
-    .submenuStaticWrapper   { @extend .col-sm-7; padding:0; }
-    .staticItem             { @extend .col-sm-6; 
-                               padding: 30px; 
+    .submenuStaticWrapper   { @extend .col-sm-12;
+                              @extend .col-md-7;
+                              padding:0; }
+    .staticItem             { @extend .col-sm-6;
+                               padding: 30px;
         &:first-child       { background-color: #FAFAFA; }
         ul                  {
             li              { margin-bottom: 0.5em;
@@ -394,10 +408,12 @@ strong { @extend .semibold; }
             }
         }
     }
-    .submenuDynamicWrapper  { @extend .col-sm-5;
+    .submenuDynamicWrapper  { @extend .col-sm-12;
+                              @extend .col-md-5;
                               padding: 30px $grid-gutter-width 30px 0;         
-        ul                  { @include content-columns(2); 
-                              //@media (max-width: 1035px) { @include content-columns(1); }
+        ul                  { @media (min-width: $screen-sm-min) {
+                                  @include content-columns(2);
+                              }
             li              { display: block; 
                               @include break-inside(avoid); 
                               margin-bottom: 0.35em;
@@ -1251,6 +1267,9 @@ dl.portletCollection                { margin-bottom: 20px;
           }          
         }
         dl.portletServiziOnline     { border:0;
+                                      @media (max-width: $screen-sm-max) {
+                                          margin-top: 1em;
+                                      }
           dt.portletHeader          { background-color: $link-color;
                                       z-index: 1;
                                       padding: 15px;
@@ -1259,6 +1278,15 @@ dl.portletCollection                { margin-bottom: 20px;
       }
     }
     #portletPageMiddleRowWrapper    { @extend .clearfix; }
+    #portletPageBottomRow           {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            .colonna-1-di-2,
+            .colonna-1-di-3,
+            .colonna-1-di-4,
+            .colonna-1-di-5,
+            .portletImg             { min-height: 350px; }
+        }
+    }
 
     // sotto alle portlet
     + #viewlet-below-content        { 
@@ -1646,6 +1674,20 @@ dl.portletBandi                     {
               }
             }
         }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            .no-flexbox &           {
+                [class*="FooterPortletManager"] {
+                                      min-height: 225px;
+                }
+            }
+            .flexbox &              { @include flexbox();
+                                      @include flex-flow(row wrap);
+                [class*="FooterPortletManager"] {
+                                      @include flex(0 1 50%);
+                                      display: inline-block; // this makes flex items wrap in IE10
+                }
+            }
+        }
     }
 }
 
@@ -1668,12 +1710,8 @@ dl.portletBandi                     {
                                       @extend .clearfix;
     }
     .InHeaderPortletManager1,
-    .InHeaderPortletManager3        { display: -webkit-flex;
-                                      display: -ms-flexbox;
-                                      display: flex;
-      > div                         { display: -webkit-flex;
-                                      display: -ms-flexbox;
-                                      display: flex;
+    .InHeaderPortletManager3        { @include flexbox();
+      > div                         { @include flexbox();
                                       width: 20%;
       }
     }
@@ -2002,34 +2040,37 @@ table.listOffices                   {
     @extend .hidden-sm;
     @extend .hidden-md;
     @extend .hidden-lg;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-    border-radius: 35px;
-    display: none;
-    @include transition(all 0.3s linear);
 
-    span {
-        color: #fff;
-        margin: 0;
-        position: relative;
-        left: 16px;
-        top: 13px;
-        font-size: 19px;
-        @include transition(all 0.3s ease);
-    }
-
-    &:active {
-        background: rgba(0, 0, 0, 0.9);
+    @media (max-width: $screen-xs-max) {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.7);
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+        border-radius: 35px;
+        display: none;
+        @include transition(all 0.3s linear);
 
         span {
             color: #fff;
-            top: 5px;
+            margin: 0;
+            position: relative;
+            left: 16px;
+            top: 13px;
+            font-size: 19px;
+            @include transition(all 0.3s ease);
+        }
+
+        &:active {
+            background: rgba(0, 0, 0, 0.9);
+
+            span {
+                color: #fff;
+                top: 5px;
+            }
         }
     }
 }
