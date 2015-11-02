@@ -56,5 +56,10 @@
         scrollTop : 0                       // Scroll to top of body
       }, 500);
     });
+
+    // hover on news home
+    $('.boxNotizieHome .boxNewsImg .linkItem a').hover( function() { 
+      $(this).parents('.boxNewsImg').toggleClass('imgHover'); 
+    });
   });
 })(jQuery);
