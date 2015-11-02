@@ -862,7 +862,7 @@ pre {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, #center-and-left-area #left-area, .boxCollezioneRigaNotizie .boxItem, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, #portal-logo, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .col-md-6, .colonna-1-di-2, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officePec h6, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, #center-and-left-area #left-area, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, #portal-logo, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .col-md-6, .colonna-1-di-2, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
 .officeContactsWrapper .officePec p, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .col-md-12, .col-lg-12 {
@@ -1040,7 +1040,7 @@ pre {
   margin-left: 100%; }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, #center-and-left-area #left-area, .boxCollezioneRigaNotizie .boxItem, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, #portal-logo, .col-sm-5, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .col-sm-7, .col-sm-8, div.width-2\3a 3, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .col-sm-11, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper {
+  .col-sm-1, .col-sm-2, .col-sm-3, #center-and-left-area #left-area, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, #portal-logo, .col-sm-5, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .col-sm-7, .col-sm-8, div.width-2\3a 3, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .col-sm-11, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper {
     float: left; }
 
   .col-sm-1 {
@@ -1049,7 +1049,7 @@ pre {
   .col-sm-2 {
     width: 16.6666666667%; }
 
-  .col-sm-3, #center-and-left-area #left-area, .boxCollezioneRigaNotizie .boxItem {
+  .col-sm-3, #center-and-left-area #left-area {
     width: 25%; }
 
   .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, #portal-logo {
@@ -1058,7 +1058,7 @@ pre {
   .col-sm-5 {
     width: 41.6666666667%; }
 
-  .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem {
+  .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem {
     width: 50%; }
 
   .col-sm-7 {
@@ -1196,7 +1196,7 @@ pre {
   .col-sm-offset-12 {
     margin-left: 100%; } }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, .col-md-4, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-md-6, .colonna-1-di-2, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem, .col-md-4, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-md-6, .colonna-1-di-2, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
   .col-md-1 {
@@ -1205,7 +1205,7 @@ pre {
   .col-md-2 {
     width: 16.6666666667%; }
 
-  .col-md-3, div.width-1\3a 4, .colonna-1-di-4 {
+  .col-md-3, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem {
     width: 25%; }
 
   .col-md-4 {
@@ -7877,6 +7877,12 @@ dl.portletCollection {
       margin-right: 5px; }
   .boxCollezioneRigaNotizie .boxItem {
     padding: 0 15px; }
+    @media (max-width: 991px) {
+      .boxCollezioneRigaNotizie .boxItem:nth-of-type(3), .boxCollezioneRigaNotizie .boxItem:nth-of-type(4) {
+        margin-top: 1em; } }
+    @media (max-width: 767px) {
+      .boxCollezioneRigaNotizie .boxItem:nth-of-type(2) {
+        margin-top: 1em; } }
     .boxCollezioneRigaNotizie .boxItem .boxItemContent {
       background-color: #FFF;
       padding: 10px;
@@ -8185,6 +8191,9 @@ dl.portletBandi dd.portletItem {
     #portal-footer-wrapper #portlets-footer h4 {
       font-size: 1.5em;
       margin: 0 0 15px; }
+      @media (max-width: 991px) {
+        #portal-footer-wrapper #portlets-footer h4 {
+          font-size: 1.4em; } }
     #portal-footer-wrapper #portlets-footer h5 {
       font-size: 1.2em;
       margin-top: 40px; }
@@ -8205,8 +8214,10 @@ dl.portletBandi dd.portletItem {
       #portal-footer-wrapper #portlets-footer a.btnSimple:focus, #portal-footer-wrapper #portlets-footer a.btnSimple:hover {
         border: 1px solid #FFF; }
     #portal-footer-wrapper #portlets-footer dl.portlet {
-      margin-bottom: 0;
-      padding: 0 20px; }
+      margin-bottom: 0; }
+      @media (min-width: 992px) {
+        #portal-footer-wrapper #portlets-footer dl.portlet {
+          padding: 0 20px; } }
     #portal-footer-wrapper #portlets-footer dt.portletHeader {
       background-color: transparent;
       color: #FFF;
@@ -8257,13 +8268,17 @@ dl.portletBandi dd.portletItem {
         display: flex;
         -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
-        flex-flow: row wrap; }
+        flex-flow: row wrap;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        justify-content: space-between; }
         .flexbox #portal-footer-wrapper #portlets-footer [class*="FooterPortletManager"] {
-          -webkit-box-flex: 0 1 50%;
-          -moz-box-flex: 0 1 50%;
-          -webkit-flex: 0 1 50%;
-          -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+          -webkit-box-flex: 0 1 49.5%;
+          -moz-box-flex: 0 1 49.5%;
+          -webkit-flex: 0 1 49.5%;
+          -ms-flex: 0 1 49.5%;
+          flex: 0 1 49.5%;
           display: inline-block; } }
 
 .section-homepage #viewlet-above-content-title,
