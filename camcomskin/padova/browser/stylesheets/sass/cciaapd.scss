@@ -1679,7 +1679,10 @@ dl.portletBandi                     {
     .InHeaderPortletManager3        { padding: 18px 0; }
   }
   #portletPageColumns               { margin-top: -1px; }
-  #portletPageMiddleRowWrapper      { background-color: $gray-bg;
+  #portletPageMiddleRowWrapper      { background-color: $gray-bg; 
+    #portletPageMiddleRowContent    { padding: 40px 0;}
+    #portletPageFirstColumn         { width: 75%; }
+    #portletPageSecondColumn        { width: 20.8%; }
   }
 }
 // riga superiore
@@ -1690,7 +1693,8 @@ dl.portletBandi                     {
     ul                              { margin:0; 
       li                            { padding:0;           
                                       margin:0;     
-                                      line-height: 1.35em;                  
+                                      line-height: 1.35em;       
+                                      color: $gray-light;           
         &:before                    { display: none; }
         a                           { color: $text-color; 
                                       display: block;          
@@ -1769,6 +1773,27 @@ div.titolo-servizi-online           { background-color: $gray-bg;
 // BLOCCO DI NOTIZIE
 .boxNotizieHome                     {
   .boxHeader                        { @extend .sr-only; }
+  // notizia grande
+  .boxNewsImgBig                    { position: relative;
+                                      @extend .col-sm-8;
+                                      height: 340px;
+                                      overflow: hidden;
+    img                             { position: absolute;
+                                      top: 0;
+                                      left:0;
+                                      display: block;
+                                      width: 100%;
+                                      height: auto;
+                                      z-index: 1;
+    }
+    .newsContent                    { position: absolute; 
+                                      bottom: 0;
+                                      width: 100%;
+                                      left:0;
+                                      z-index: 2;
+                                      color: #FFF;
+    }
+  }
 }
 
 // FIX VISTA MODULISTICA

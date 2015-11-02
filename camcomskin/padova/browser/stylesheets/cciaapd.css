@@ -869,7 +869,7 @@ pre {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, .colonna-1-di-2, #submenu-details .staticItem, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officePec h6, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, .colonna-1-di-2, #submenu-details .staticItem, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .boxNotizieHome .boxNewsImgBig, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
 .officeContactsWrapper .officePec p, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .col-md-12, .col-lg-12 {
@@ -1047,7 +1047,7 @@ pre {
   margin-left: 100%; }
 
 @media (min-width: 769px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-sm-6, div.width-1\3a 2, .colonna-1-di-2, #submenu-details .staticItem, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-sm-8, div.width-2\3a 3, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .col-sm-11, .col-sm-12, div.width-full {
+  .col-sm-1, .col-sm-2, .col-sm-3, #center-and-left-area #left-area, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-sm-5, #submenu-details .submenuDynamicWrapper, .col-sm-6, div.width-1\3a 2, .colonna-1-di-2, #submenu-details .staticItem, .col-sm-7, #submenu-details .submenuStaticWrapper, .col-sm-8, div.width-2\3a 3, .boxNotizieHome .boxNewsImgBig, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .col-sm-11, .col-sm-12, div.width-full {
     float: left; }
 
   .col-sm-1 {
@@ -1071,7 +1071,7 @@ pre {
   .col-sm-7, #submenu-details .submenuStaticWrapper {
     width: 58.3333333333%; }
 
-  .col-sm-8, div.width-2\3a 3 {
+  .col-sm-8, div.width-2\3a 3, .boxNotizieHome .boxNewsImgBig {
     width: 66.6666666667%; }
 
   .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4 {
@@ -8402,6 +8402,12 @@ dl.portletBandi dd.portletItem {
   margin-top: -1px; }
 .section-homepage #portletPageMiddleRowWrapper {
   background-color: #EEE; }
+  .section-homepage #portletPageMiddleRowWrapper #portletPageMiddleRowContent {
+    padding: 40px 0; }
+  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn {
+    width: 75%; }
+  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
+    width: 20.8%; }
 
 #portlets-in-header {
   background-color: #FFF;
@@ -8415,7 +8421,8 @@ dl.portletBandi dd.portletItem {
       #portlets-in-header .portletHome ul li {
         padding: 0;
         margin: 0;
-        line-height: 1.35em; }
+        line-height: 1.35em;
+        color: #777; }
         #portlets-in-header .portletHome ul li:before {
           display: none; }
         #portlets-in-header .portletHome ul li a {
@@ -8494,6 +8501,26 @@ div.titolo-servizi-online {
         position: absolute;
         left: 0;
         bottom: -10px; }
+
+.boxNotizieHome .boxNewsImgBig {
+  position: relative;
+  height: 340px;
+  overflow: hidden; }
+  .boxNotizieHome .boxNewsImgBig img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1; }
+  .boxNotizieHome .boxNewsImgBig .newsContent {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    color: #FFF; }
 
 #content table.modulisticaListing tr.odd th.modulisticaDocument {
   border: 1px solid #999; }
