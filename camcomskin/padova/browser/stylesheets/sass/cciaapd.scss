@@ -1662,6 +1662,11 @@ dl.portletBandi                     {
               }
             }
         }
+        .FooterPortletManager1,
+        .FooterPortletManager2       { @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                                           min-height: 225px;
+                                     }
+        }
     }
 }
 
