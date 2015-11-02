@@ -1736,7 +1736,10 @@ dl.portletBandi                     {
     .InHeaderPortletManager3        { padding: 18px 0; }
   }
   #portletPageColumns               { margin-top: -1px; }
-  #portletPageMiddleRowWrapper      { background-color: $gray-bg;
+  #portletPageMiddleRowWrapper      { background-color: $gray-bg; 
+    #portletPageMiddleRowContent    { padding: 40px 0;}
+    #portletPageFirstColumn         { width: 75%; }
+    #portletPageSecondColumn        { width: 20.8%; }
   }
 }
 // riga superiore
@@ -1747,7 +1750,8 @@ dl.portletBandi                     {
     ul                              { margin:0; 
       li                            { padding:0;           
                                       margin:0;     
-                                      line-height: 1.35em;                  
+                                      line-height: 1.35em;       
+                                      color: $gray-light;           
         &:before                    { display: none; }
         a                           { color: $text-color; 
                                       display: block;          
@@ -1825,7 +1829,184 @@ div.titolo-servizi-online           { background-color: $gray-bg;
 }
 // BLOCCO DI NOTIZIE
 .boxNotizieHome                     {
+  .boxNotizieContent                { margin-left: -20px;}
   .boxHeader                        { @extend .sr-only; }
+
+  // tutte le news                  
+  .boxItem                          { padding-left: 20px;
+                                      margin-bottom: 30px;
+    .tagItem                        { position: absolute;
+                                      bottom: 10px;
+                                      left: 15px;
+                                      z-index: 5;
+      a                             { background-color: $link-color;
+                                      color: #FFF;
+                                      margin-right: 6px;
+                                      text-transform: uppercase;
+                                      display: inline-block;
+                                      white-space: nowrap;
+                                      max-width: 250px;
+                                      overflow: hidden;
+                                      text-overflow: ellipsis;
+                                      @extend .semibold;
+                                      font-size: 0.85em;
+                                      padding: 0.4em 0.9em;
+                                      border-radius: 3px;
+        &:focus,
+        &:hover                     { background-color: $text-color; }
+        &:before                    { @include make-fa('\f02b'); 
+                                      margin-right: 8px;
+        }
+      }
+    }
+    .linkItem                       { width: 100%;
+                                      height: 100%;
+                                      position: absolute;
+                                      top:0;
+                                      left:0;
+                                      z-index: 4;
+      a                             { display: block;
+                                      width: 100%;
+                                      height: 100%;                                      
+      }
+    }
+  }
+
+  // news verticale con foto
+  .boxNewsImg                       { @extend .col-sm-4; 
+    .newsContent                    { background-color: #FFF; 
+                                      position: relative;
+    }
+    .newsText                       { height: 190px;
+                                      @include sfumagiu(25px); 
+                                      position: relative;
+                                      overflow: hidden;
+                                      padding: 12px;
+      .dataItem                     { font-size: 0.9em; 
+                                      margin-bottom: 7px;
+      }
+      h3.titleItem                  { font-size: 1.2em;
+                                      margin:0;
+      }
+      p.descItem                    { margin: 10px 0 0; }
+    }
+    .newsImg                        { height: 150px;
+                                      overflow: hidden;
+    }
+    &.imgHover                      { 
+      .newsText                     { 
+        h3.titleItem, 
+        p.descItem                  { color: $link-color; }
+      }
+    }    
+  }
+
+  // notizia grande
+  .boxNewsImg.boxNewsImgBig         { @extend .col-sm-8;
+                                      padding-left: 20px;
+    .boxNewsImgBigContent           { position: relative;
+                                      height: 340px;
+    } 
+    .tagItem                        { top: 10px;
+                                      right: 15px;
+                                      left: auto;
+                                      bottom: auto;
+      a                             { max-width: 280px; 
+                                      margin-right:0;
+                                      margin-left: 6px;
+      }
+    }
+    .newsContent                    { position: absolute; 
+                                      bottom: 0;
+                                      width: 100%;
+                                      left:0;
+                                      z-index: 3;
+                                      color: #FFF;
+                                      background-color: $tr;
+                                      padding: 20px;
+      p.dataItem                    { margin:0 0 10px;
+                                      font-size: 1.1em;
+                                      margin-bottom: 15px;
+      }
+      h3.titleItem                  { font-size: 1.6em; 
+                                      margin:0;
+                                      line-height: 1.4em;
+      }
+      p.descItem                    { margin: 16px 0 0;
+                                      font-size: 1.15em;
+                                      line-height: 1.4em;
+      }
+    }
+    .imgItem                        { width: 100%;
+                                      height: 100%;
+                                      z-index: 1;
+                                      position: absolute;
+                                      top: 0;
+                                      left: 0;
+                                      overflow: hidden;
+      img                           { position: absolute;
+                                      top: 0;
+                                      left:0;
+                                      display: block;
+                                      width: 100%;
+                                      height: auto;
+                                      z-index: 1;
+      }
+      &:after                       { display: block;
+                                      content: '';
+                                      width: 100%;
+                                      height: 100%;
+                                      position: absolute;
+                                      z-index: 2;
+                                      background-color: transparentize(#000, .7);
+                                      @include transition(all .3s ease-in);
+      }
+    }
+    &.imgHover .imgItem:after       { background-color: $tr; }
+  }
+
+  // le news piccole
+  .boxNews                          { @extend .col-sm-4;
+    .newsContent                    { background-color: #FFF; 
+                                      height: 155px;
+                                      padding: 12px;
+      .dataItem                     { font-size: 0.9em; 
+                                      margin-bottom: 7px;
+      }
+      h5.titleItem                  { font-size: 1.1em;
+                                      margin:0;
+                                      @include ellipsis(70px, 3);
+                                      position: relative;
+      }
+    }
+    .tagItem                       { left: 35px;
+      a                            { background-color: $tr;
+                                     color: $link-color;
+                                     padding:0;
+                                     border-radius: 0;
+        &:focus,
+        &:hover                    { color: $text-color;
+                                     background-color: $tr;
+        }
+      }
+    }
+  }
+
+  .boxFooter                        { text-align: right;
+                                      @extend .bold;
+                                      text-transform: uppercase;
+                                      clear: left;
+                                      padding: 0 $grid-gutter-width/2;
+    a                               { color: $text-color;
+                                      display: inline-block;
+      &:focus,
+      &:hover                       { color: $link-color; }
+      &:after                       { @include make-flaticon('right161', 15px); 
+                                      margin-left: 12px;
+                                      color: #aaa;
+      }
+    }
+  }
 }
 
 // FIX VISTA MODULISTICA

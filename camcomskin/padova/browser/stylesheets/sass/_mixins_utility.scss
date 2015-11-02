@@ -72,15 +72,15 @@
       text-overflow: ellipsis;
 }
 
-@mixin sfumagiu() {
+@mixin sfumagiu($height: 44px, $bg: #FFF) {
   &:after { content: "";
             pointer-events: none;
             position: absolute;
             width: 100%;
-            height: 44px;
+            height: $height;
             bottom: 0;
             left: 0;
-            @include gradient-vertical(rgba(255, 255, 255, 0.5), #FFF, 0, 70%);
+            @include gradient-vertical(transparentize($bg, .5), $bg, 0, 70%);
   }
 }
 
