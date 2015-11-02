@@ -8,6 +8,14 @@
     enabled="True"
     expression=""
     inline="False"/>
+  <javascript
+    id="++resource++camcomskin.padova.javascripts/rtfixes.js"
+    cacheable="True"
+    compression="safe"
+    cookable="True"
+    enabled="True"
+    expression=""
+    inline="False"/>
     <javascript
       id="++resource++camcomskin.padova.javascripts/camcomskin_padova.js"
       cacheable="True"

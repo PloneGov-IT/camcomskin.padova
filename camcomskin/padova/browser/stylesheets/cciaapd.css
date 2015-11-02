@@ -5455,13 +5455,13 @@ button.list-group-item-danger {
   .hidden-xs, #portal-footer-wrapper #portlets-footer .lista-links:before {
     display: none !important; } }
 @media (min-width: 769px) and (max-width: 991px) {
-  .hidden-sm {
+  .hidden-sm, #return-to-top {
     display: none !important; } }
 @media (min-width: 992px) and (max-width: 1299px) {
-  .hidden-md {
+  .hidden-md, #return-to-top {
     display: none !important; } }
 @media (min-width: 1300px) {
-  .hidden-lg {
+  .hidden-lg, #return-to-top {
     display: none !important; } }
 .visible-print {
   display: none !important; }
@@ -8069,7 +8069,8 @@ dl.portletCollection {
     font-size: 2.4em;
     position: relative;
     margin: 0 0 30px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    z-index: 0; }
     .template-search #content h1.documentFirstHeading {
       margin-bottom: 10px; }
     #content h1.documentFirstHeading:before {
@@ -8110,7 +8111,7 @@ dl.portletCollection {
 
 #content .documentActions {
   position: relative;
-  z-index: 2; }
+  z-index: 1; }
   #content .documentActions ul {
     display: inline-block; }
     #content .documentActions ul li {
@@ -8928,3 +8929,33 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
   color: #bf9b48; }
 .section-tutela-impresa-e-consumatore .boxCollezioneRigaNotizie .boxCollezioneContentWrapper {
   background-color: rgba(191, 155, 72, 0.7); }
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  #return-to-top span {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  #return-to-top:active {
+    background: rgba(0, 0, 0, 0.9); }
+    #return-to-top:active span {
+      color: #fff;
+      top: 5px; }
