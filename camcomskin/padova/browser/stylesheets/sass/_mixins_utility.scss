@@ -108,6 +108,12 @@
     order: $val;
 }
 
+@mixin flex-flow($values) {
+    -webkit-flex-flow: $values;
+    -ms-flex-flow: $values;
+    flex-flow: $values;
+}
+
 // GESTIONE COLORI AREE TEMATICHE
 
 @mixin define-area ($n_area, $color, $id-sezione) {

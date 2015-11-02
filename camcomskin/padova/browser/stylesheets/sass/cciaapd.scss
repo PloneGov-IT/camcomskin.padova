@@ -1674,10 +1674,19 @@ dl.portletBandi                     {
               }
             }
         }
-        .FooterPortletManager1,
-        .FooterPortletManager2       { @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-                                           min-height: 225px;
-                                     }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            .no-flexbox &           {
+                [class*="FooterPortletManager"] {
+                                      min-height: 225px;
+                }
+            }
+            .flexbox &              { @include flexbox();
+                                      @include flex-flow(row wrap);
+                [class*="FooterPortletManager"] {
+                                      @include flex(0 1 50%);
+                                      display: inline-block; // this makes flex items wrap in IE10
+                }
+            }
         }
     }
 }
