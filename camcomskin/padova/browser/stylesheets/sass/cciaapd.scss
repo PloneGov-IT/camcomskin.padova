@@ -77,6 +77,7 @@ strong { @extend .semibold; }
                               text-transform: uppercase;
                               font-size: 0.85em;
                               @extend .semibold;
+                              @extend .hidden-xs;
     }                          
     #top-link-group         { @extend .pull-right;  
                               margin:0;
@@ -156,6 +157,16 @@ strong { @extend .semibold; }
     }
     span                    { @extend .sr-only; }
   }
+  @media (max-width: $screen-xs-max) {
+                              padding: 10px 0;
+                              max-width: 60%;
+    input.searchField       { font-size: 1.1em; }
+    input.searchButton      { font-size: 0.9em;
+                              margin-top: -0.3em; }
+    .searchFieldWrapper     {
+        &:before            { font-size: 1.5em; }
+    }
+  }
 }
 // PAGINA RICERCA
 #search-field                     { position: relative;
@@ -189,6 +200,15 @@ strong { @extend .semibold; }
                                     padding: 0.7em 1em;
                                     font-size: 1.5em !important;
   }
+  @media (max-width: $screen-xs-max) {
+    &:before                      { left: 10px;
+                                    top: 10px;
+                                    font-size: 1.5em; }
+    input[name='SearchableText']  { font-size: 1.2em !important;
+                                    max-width: 77%; }
+    input.searchButton            { font-size: 0.9em !important;
+                                    margin-top: -0.3em; }
+  }
 }
 .searchResults                    {
   cite                            { font-size: 0.9em; }
@@ -208,6 +228,7 @@ strong { @extend .semibold; }
 // MENU SUPERIORE
 .secondaryMenu              { @extend .col-sm-12;
                               @extend .col-md-7;
+                              @extend .hidden-xs;
                               display: block;
                               margin-top: 20px;
                               margin-bottom: 20px;

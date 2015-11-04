@@ -5313,7 +5313,7 @@ button.list-group-item-danger {
     display: inline-block !important; } }
 
 @media (max-width: 767px) {
-  .hidden-xs, #portal-footer-wrapper #portlets-footer .lista-links:before {
+  .hidden-xs, #topbar .claim, .secondaryMenu, #portal-footer-wrapper #portlets-footer .lista-links:before {
     display: none !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm, #return-to-top {
@@ -6734,6 +6734,17 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
       color: #313131;
       font-size: 24px;
       margin-left: 10px; }
+  @media (max-width: 767px) {
+    #camcomskin-searchbox {
+      padding: 10px 0;
+      max-width: 60%; }
+      #camcomskin-searchbox input.searchField {
+        font-size: 1.1em; }
+      #camcomskin-searchbox input.searchButton {
+        font-size: 0.9em;
+        margin-top: -0.3em; }
+      #camcomskin-searchbox .searchFieldWrapper:before {
+        font-size: 1.5em; } }
 
 #search-field {
   position: relative;
@@ -6768,6 +6779,17 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
     margin: -0.65em 0 0 -4px;
     padding: 0.7em 1em;
     font-size: 1.5em !important; }
+  @media (max-width: 767px) {
+    #search-field:before {
+      left: 10px;
+      top: 10px;
+      font-size: 1.5em; }
+    #search-field input[name='SearchableText'] {
+      font-size: 1.2em !important;
+      max-width: 77%; }
+    #search-field input.searchButton {
+      font-size: 0.9em !important;
+      margin-top: -0.3em; } }
 
 .searchResults cite {
   font-size: 0.9em; }
