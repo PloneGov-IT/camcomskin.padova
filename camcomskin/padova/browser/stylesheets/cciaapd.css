@@ -6689,7 +6689,8 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
 
 #camcomskin-searchbox {
   text-align: center;
-  padding: 20px 0; }
+  padding: 20px 0;
+  max-width: 80%; }
   #camcomskin-searchbox .searchFieldWrapper {
     display: inline-block;
     position: relative;
@@ -7395,7 +7396,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
       column-count: 2;
       -webkit-column-gap: 30px;
       -moz-column-gap: 30px;
-      column-gap: 30px; } }
+      column-gap: 30px;
+      padding-bottom: 0.5em; } }
   dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 {
     margin-bottom: 6px; }
     dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 ul {
@@ -8395,11 +8397,7 @@ dl.portletBandi dd.portletItem {
         display: flex;
         -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-        -webkit-justify-content: space-between;
-        -moz-justify-content: space-between;
-        -ms-justify-content: space-between;
-        justify-content: space-between; }
+        flex-flow: row wrap; }
         .flexbox #portal-footer-wrapper #portlets-footer [class*="FooterPortletManager"] {
           -webkit-box-flex: 0 1 49.5%;
           -moz-box-flex: 0 1 49.5%;

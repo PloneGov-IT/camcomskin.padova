@@ -116,6 +116,7 @@ strong { @extend .semibold; }
 }
 #camcomskin-searchbox       { text-align: center;
                               padding: 20px 0;
+                              max-width: 80%;
   .searchFieldWrapper       { display: inline-block;
                               position: relative;
                               max-width: 600px; 
@@ -730,6 +731,7 @@ dl[class*='ortletNavigation']       {
                                       border-bottom: 3px solid $blu;
                                       @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
                                           @include content-columns(2);
+                                          padding-bottom: 0.5em;
                                       }
       ul.navTreeLevel0              { margin-bottom: 6px;
         ul                          { margin: 6px 0 5px 15px; 
@@ -1702,7 +1704,6 @@ dl.portletBandi                     {
             }
             .flexbox &              { @include flexbox();
                                       @include flex-flow(row wrap);
-                                      @include justify-content(space-between);
                 [class*="FooterPortletManager"] {
                                       @include flex(0 1 49.5%);
                                       display: inline-block; // this makes flex items wrap in IE10
