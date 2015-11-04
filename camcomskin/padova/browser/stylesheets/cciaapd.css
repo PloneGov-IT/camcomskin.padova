@@ -7395,10 +7395,7 @@ dl[class*='ortletNavigation'] dd.portletItem {
       column-count: 2;
       -webkit-column-gap: 30px;
       -moz-column-gap: 30px;
-      column-gap: 30px;
-      -webkit-column-break-inside: avoid;
-      page-break-inside: avoid;
-      break-inside: avoid; } }
+      column-gap: 30px; } }
   dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 {
     margin-bottom: 6px; }
     dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 ul {
