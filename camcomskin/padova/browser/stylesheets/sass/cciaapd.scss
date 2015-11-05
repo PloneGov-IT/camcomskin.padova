@@ -1662,6 +1662,13 @@ dl.portletBandi                     {
                                       padding: 0.05em 0.5em;
             }
         }
+        @media (max-width: $screen-xs-max) {
+            li                      { display: list-item;
+                                      border: none;
+                                      padding-left: 0;
+                &:before            { content: "\00bb"; }
+            }
+        }
     }
 
     #portlets-footer                { padding: {top:20px; bottom:40px};
@@ -1746,6 +1753,12 @@ dl.portletBandi                     {
                                       @include flex(0 1 49.5%);
                                       display: inline-block; // this makes flex items wrap in IE10
                 }
+            }
+        }
+        @media (max-width: $screen-xs-max) {
+            [class*="FooterPortletManager"] {
+                                      padding-left: 0;
+                                      padding-right: 0;
             }
         }
     }

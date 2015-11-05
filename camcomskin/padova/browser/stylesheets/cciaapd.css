@@ -8350,6 +8350,13 @@ dl.portletBandi dd.portletItem {
       #portal-footer-wrapper #portal-siteactions li a {
         display: inline-block;
         padding: 0.05em 0.5em; }
+    @media (max-width: 767px) {
+      #portal-footer-wrapper #portal-siteactions li {
+        display: list-item;
+        border: none;
+        padding-left: 0; }
+        #portal-footer-wrapper #portal-siteactions li:before {
+          content: "\00bb"; } }
   #portal-footer-wrapper #portlets-footer {
     padding-top: 20px;
     padding-bottom: 40px; }
@@ -8441,6 +8448,10 @@ dl.portletBandi dd.portletItem {
           -ms-flex: 0 1 49.5%;
           flex: 0 1 49.5%;
           display: inline-block; } }
+    @media (max-width: 767px) {
+      #portal-footer-wrapper #portlets-footer [class*="FooterPortletManager"] {
+        padding-left: 0;
+        padding-right: 0; } }
 
 .section-homepage #viewlet-above-content-title,
 .section-homepage h1.documentFirstHeading {
