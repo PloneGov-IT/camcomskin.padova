@@ -99,6 +99,9 @@ strong { @extend .semibold; }
                               padding-left: 20px;
         }
     }
+    @media (max-width: $screen-xs-max) {
+                              padding-right: 3em;
+    }
 }
 
 // SEARCH
@@ -113,6 +116,14 @@ strong { @extend .semibold; }
                               color: #FFF;
         }
         span                { @extend .sr-only; }
+    }
+    @media (max-width: $screen-xs-max) {
+                              position: absolute;
+                              top: -40px;
+                              right: 0;
+        a.btnSearch         { padding: 6px 10px;
+            &:before        { font-size: 19px; }
+        }
     }
 }
 #camcomskin-searchbox       { text-align: center;
@@ -239,6 +250,10 @@ strong { @extend .semibold; }
                               padding-left: 0;
     img                     { max-width: 250px;
                               height: auto; 
+    }
+    @media (max-width: $screen-xs-max) {
+                              margin: 10px 0;
+        img                 { max-width: 100%; }
     }
 }
 
@@ -1520,7 +1535,13 @@ dl.portletCollection                { margin-bottom: 20px;
       &:hover                     { border-bottom: 1px solid #FFF !important; color: #FFF !important;}
     }
   }
-  img                             { max-width: 100%; }
+  @media (max-width: $screen-xs-max) {
+    img                             { max-width: 100%;
+                                      height: auto;
+        &.tileImage                 { float: none;
+                                      margin: 0 0 0.5em; }
+    }
+  }
 }
 #plone-document-byline              { text-align: right;
                                       font-size: 0.9em;
