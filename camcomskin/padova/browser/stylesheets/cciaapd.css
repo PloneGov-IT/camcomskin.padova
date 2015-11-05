@@ -6957,10 +6957,11 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
             min-height: 6.1em; } }
         .globalnavWrapper #portal-globalnav li a span:first-child {
           color: #FFF; }
-        .globalnavWrapper #portal-globalnav li a:focus, .globalnavWrapper #portal-globalnav li a:hover {
-          background-color: rgba(85, 85, 85, 0.85); }
-          .globalnavWrapper #portal-globalnav li a:focus span, .globalnavWrapper #portal-globalnav li a:hover span {
-            color: #FFF !important; }
+        @media (min-width: 992px) {
+          .globalnavWrapper #portal-globalnav li a:focus, .globalnavWrapper #portal-globalnav li a:hover {
+            background-color: rgba(85, 85, 85, 0.85); } }
+        .globalnavWrapper #portal-globalnav li a:focus span, .globalnavWrapper #portal-globalnav li a:hover span {
+          color: #FFF !important; }
         .globalnavWrapper #portal-globalnav li a:after {
           display: inline-block;
           font-family: FontAwesome;
@@ -6983,6 +6984,62 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
           color: #fff; }
       .globalnavWrapper #portal-globalnav li:last-child a {
         border-right: 0; }
+    @media (max-width: 767px) {
+      .globalnavWrapper #portal-globalnav {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        background: none; }
+        .globalnavWrapper #portal-globalnav li {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-flow: column nowrap;
+          -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+          width: auto; }
+          .globalnavWrapper #portal-globalnav li:first-of-type {
+            background: transparent url("++resource++camcomskin.padova.images/bg_menu_1.jpg") no-repeat center center;
+            background-size: cover; }
+          .globalnavWrapper #portal-globalnav li:nth-of-type(2) {
+            background: transparent url("++resource++camcomskin.padova.images/bg_menu_2.jpg") no-repeat center center;
+            background-size: cover; }
+          .globalnavWrapper #portal-globalnav li:nth-of-type(3) {
+            background: transparent url("++resource++camcomskin.padova.images/bg_menu_3.jpg") no-repeat center center;
+            background-size: cover; }
+          .globalnavWrapper #portal-globalnav li:nth-of-type(4) {
+            background: transparent url("++resource++camcomskin.padova.images/bg_menu_4.jpg") no-repeat center center;
+            background-size: cover; }
+          .globalnavWrapper #portal-globalnav li:last-of-type {
+            background: transparent url("++resource++camcomskin.padova.images/bg_menu_5.jpg") no-repeat center center;
+            background-size: cover; }
+          .globalnavWrapper #portal-globalnav li a {
+            max-width: 100%;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 30px;
+            overflow: hidden;
+            display: inline-block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            border-right: 0;
+            border-bottom-style: solid;
+            border-bottom-width: 1px; }
+            .globalnavWrapper #portal-globalnav li a span {
+              display: inline; }
+              .globalnavWrapper #portal-globalnav li a span:after {
+                content: " "; }
+            .globalnavWrapper #portal-globalnav li a:after {
+              right: 15px; }
+          .globalnavWrapper #portal-globalnav li:last-child a {
+            border-bottom: 0; } }
 
 #submenu-details {
   background-color: #EEE;
@@ -8812,9 +8869,10 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
 #portal-sitemap > li {
   border: 0; }
 
-.globalnavWrapper #portal-globalnav li#portaltab-0 a:focus,
-.globalnavWrapper #portal-globalnav li#portaltab-0 a:hover {
-  background-color: rgba(69, 128, 122, 0.7); }
+@media (min-width: 992px) {
+  .globalnavWrapper #portal-globalnav li#portaltab-0 a:focus,
+  .globalnavWrapper #portal-globalnav li#portaltab-0 a:hover {
+    background-color: rgba(69, 128, 122, 0.7); } }
 .globalnavWrapper #portal-globalnav li#portaltab-0.selected a {
   background-color: rgba(69, 128, 122, 0.7); }
 .globalnavWrapper #portal-globalnav li#portaltab-0.tabOpen a {
@@ -8888,9 +8946,10 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
 .section-avvia-attivita-impresa .boxCollezioneRigaNotizie .boxCollezioneContentWrapper {
   background-color: rgba(69, 128, 122, 0.7); }
 
-.globalnavWrapper #portal-globalnav li#portaltab-1 a:focus,
-.globalnavWrapper #portal-globalnav li#portaltab-1 a:hover {
-  background-color: rgba(187, 124, 53, 0.7); }
+@media (min-width: 992px) {
+  .globalnavWrapper #portal-globalnav li#portaltab-1 a:focus,
+  .globalnavWrapper #portal-globalnav li#portaltab-1 a:hover {
+    background-color: rgba(187, 124, 53, 0.7); } }
 .globalnavWrapper #portal-globalnav li#portaltab-1.selected a {
   background-color: rgba(187, 124, 53, 0.7); }
 .globalnavWrapper #portal-globalnav li#portaltab-1.tabOpen a {
@@ -8964,9 +9023,10 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
 .section-conosci-gestisci-impresa .boxCollezioneRigaNotizie .boxCollezioneContentWrapper {
   background-color: rgba(187, 124, 53, 0.7); }
 
-.globalnavWrapper #portal-globalnav li#portaltab-2 a:focus,
-.globalnavWrapper #portal-globalnav li#portaltab-2 a:hover {
-  background-color: rgba(91, 133, 154, 0.7); }
+@media (min-width: 992px) {
+  .globalnavWrapper #portal-globalnav li#portaltab-2 a:focus,
+  .globalnavWrapper #portal-globalnav li#portaltab-2 a:hover {
+    background-color: rgba(91, 133, 154, 0.7); } }
 .globalnavWrapper #portal-globalnav li#portaltab-2.selected a {
   background-color: rgba(91, 133, 154, 0.7); }
 .globalnavWrapper #portal-globalnav li#portaltab-2.tabOpen a {
@@ -9040,9 +9100,10 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
 .section-promuovi-in-italia-e-estero .boxCollezioneRigaNotizie .boxCollezioneContentWrapper {
   background-color: rgba(91, 133, 154, 0.7); }
 
-.globalnavWrapper #portal-globalnav li#portaltab-3 a:focus,
-.globalnavWrapper #portal-globalnav li#portaltab-3 a:hover {
-  background-color: rgba(151, 167, 99, 0.7); }
+@media (min-width: 992px) {
+  .globalnavWrapper #portal-globalnav li#portaltab-3 a:focus,
+  .globalnavWrapper #portal-globalnav li#portaltab-3 a:hover {
+    background-color: rgba(151, 167, 99, 0.7); } }
 .globalnavWrapper #portal-globalnav li#portaltab-3.selected a {
   background-color: rgba(151, 167, 99, 0.7); }
 .globalnavWrapper #portal-globalnav li#portaltab-3.tabOpen a {
@@ -9116,9 +9177,10 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
 .section-finanziamenti-innovazione .boxCollezioneRigaNotizie .boxCollezioneContentWrapper {
   background-color: rgba(151, 167, 99, 0.7); }
 
-.globalnavWrapper #portal-globalnav li#portaltab-4 a:focus,
-.globalnavWrapper #portal-globalnav li#portaltab-4 a:hover {
-  background-color: rgba(191, 155, 72, 0.7); }
+@media (min-width: 992px) {
+  .globalnavWrapper #portal-globalnav li#portaltab-4 a:focus,
+  .globalnavWrapper #portal-globalnav li#portaltab-4 a:hover {
+    background-color: rgba(191, 155, 72, 0.7); } }
 .globalnavWrapper #portal-globalnav li#portaltab-4.selected a {
   background-color: rgba(191, 155, 72, 0.7); }
 .globalnavWrapper #portal-globalnav li#portaltab-4.tabOpen a {

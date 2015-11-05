@@ -358,7 +358,7 @@ strong { @extend .semibold; }
                               margin-bottom: 0;
                               font-size: 1.05em;
                               padding: 0;
-                              @extend .clearfix; 
+                              @extend .clearfix;
         li                  { width: 20%;
                               display: block;
                               float: left;
@@ -374,7 +374,9 @@ strong { @extend .semibold; }
                                  @extend .semibold;
               }
               &:focus,
-              &:hover        { background-color: transparentize($gray, .15); 
+              &:hover        { @media (min-width: $screen-md-min) {
+                                   background-color: transparentize($gray, .15); 
+                               }
                   span       { color: #FFF !important;}
               }
               &:after        { @include make-fa('\f107', #fff); 
@@ -391,6 +393,54 @@ strong { @extend .semibold; }
                 &:after    { @include make-fa('\f106', #fff); }
             }
             &:last-child a { border-right: 0;}
+        }
+        @media (max-width: $screen-xs-max) {
+                              @include flexbox();
+                              @include flex-flow(column nowrap);
+                              background: none;
+            li              { @include flexbox();
+                              @include flex-flow(column nowrap);
+                              width: auto;
+                &:first-of-type {
+                              background: $tr url($img-path + 'bg_menu_1.jpg') no-repeat center center;
+                              background-size: cover;
+                }
+                &:nth-of-type(2) {
+                              background: $tr url($img-path + 'bg_menu_2.jpg') no-repeat center center;
+                              background-size: cover;
+                }
+                &:nth-of-type(3) {
+                              background: $tr url($img-path + 'bg_menu_3.jpg') no-repeat center center;
+                              background-size: cover;
+                }
+                &:nth-of-type(4) {
+                              background: $tr url($img-path + 'bg_menu_4.jpg') no-repeat center center;
+                              background-size: cover;
+                }
+                &:last-of-type {
+                              background: $tr url($img-path + 'bg_menu_5.jpg') no-repeat center center;
+                              background-size: cover;
+                }
+                a           { max-width: 100%;
+                              min-height: 1px;
+                              padding-left: $grid-gutter-width / 2;
+                              padding-right: 30px;
+                              overflow: hidden;
+                              display: inline-block;
+                              white-space: nowrap;
+                              text-overflow: ellipsis;
+                              border-right: 0;
+                              border-bottom-style: solid;
+                              border-bottom-width: 1px;
+                    span    { display: inline;
+                        &:after { content: " "; }
+                    }
+                    &:after { right: $grid-gutter-width / 2; }
+                }
+                &:last-child {
+                    a       { border-bottom: 0; }
+                }
+            }
         }
     }
 }

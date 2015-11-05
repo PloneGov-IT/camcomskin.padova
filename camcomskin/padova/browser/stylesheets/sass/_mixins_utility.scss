@@ -141,8 +141,10 @@
 @mixin define-area ($n_area, $color, $id-sezione) {
     // per il menu
     .globalnavWrapper #portal-globalnav li#portaltab-#{$n_area} {
-      a:focus,
-      a:hover { background-color: transparentize($color, .3); }
+      @media (min-width: $screen-md-min) {
+          a:focus,
+          a:hover { background-color: transparentize($color, .3); }
+      }
       &.selected a { background-color: transparentize($color, .3); }
       &.tabOpen a { background-color: $color; }
     }
