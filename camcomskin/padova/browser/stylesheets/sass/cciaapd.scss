@@ -201,14 +201,31 @@ strong { @extend .semibold; }
                                     font-size: 1.5em !important;
   }
   @media (max-width: $screen-xs-max) {
-    &:before                      { left: 10px;
-                                    top: 10px;
+                                    margin-bottom: 1em;
+    &:before                      { left: 0.4em;
+                                    top: 0.4em;
                                     font-size: 1.5em; }
     input[name='SearchableText']  { font-size: 1.2em !important;
+                                    padding-left: 2.2em;
                                     max-width: 77%; }
     input.searchButton            { font-size: 0.9em !important;
                                     margin-top: -0.3em; }
   }
+}
+@media (max-width: $screen-xs-max) {
+    fieldset#search-field         { text-align: left; }
+}
+#search-results-bar               {
+    dl.actionMenu                 {
+        @media (max-width: $screen-xs-max) {
+            dd.actionMenuContent  { left: -150px;
+                                    max-width: 98vw;
+            }
+        }
+        @media (max-width: 510px) {
+            dd.actionMenuContent  { left: - (21px + ($grid-gutter-width / 2) - 1); }
+        }
+    }
 }
 .searchResults                    {
   cite                            { font-size: 0.9em; }

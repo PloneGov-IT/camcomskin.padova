@@ -6780,16 +6780,30 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
     padding: 0.7em 1em;
     font-size: 1.5em !important; }
   @media (max-width: 767px) {
-    #search-field:before {
-      left: 10px;
-      top: 10px;
-      font-size: 1.5em; }
-    #search-field input[name='SearchableText'] {
-      font-size: 1.2em !important;
-      max-width: 77%; }
-    #search-field input.searchButton {
-      font-size: 0.9em !important;
-      margin-top: -0.3em; } }
+    #search-field {
+      margin-bottom: 1em; }
+      #search-field:before {
+        left: 0.4em;
+        top: 0.4em;
+        font-size: 1.5em; }
+      #search-field input[name='SearchableText'] {
+        font-size: 1.2em !important;
+        padding-left: 2.2em;
+        max-width: 77%; }
+      #search-field input.searchButton {
+        font-size: 0.9em !important;
+        margin-top: -0.3em; } }
+
+@media (max-width: 767px) {
+  fieldset#search-field {
+    text-align: left; } }
+@media (max-width: 767px) {
+  #search-results-bar dl.actionMenu dd.actionMenuContent {
+    left: -150px;
+    max-width: 98vw; } }
+@media (max-width: 510px) {
+  #search-results-bar dl.actionMenu dd.actionMenuContent {
+    left: -35px; } }
 
 .searchResults cite {
   font-size: 0.9em; }
