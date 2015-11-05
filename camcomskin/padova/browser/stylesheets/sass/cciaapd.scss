@@ -1470,6 +1470,7 @@ dl.portletCollection                { margin-bottom: 20px;
       &:hover                     { border-bottom: 1px solid #FFF !important; color: #FFF !important;}
     }
   }
+  img                             { max-width: 100%; }
 }
 #plone-document-byline              { text-align: right;
                                       font-size: 0.9em;
@@ -1479,6 +1480,8 @@ dl.portletCollection                { margin-bottom: 20px;
 
 // DOCUMENT ACTIONS
 #content .documentActions           { @extend .pull-right; 
+                                      @extend .hidden-xs;
+                                      @extend .hidden-sm;
                                       position: relative;
                                       z-index: 1;
   ul                                { display: inline-block;

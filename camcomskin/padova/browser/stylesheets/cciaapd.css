@@ -5313,10 +5313,10 @@ button.list-group-item-danger {
     display: inline-block !important; } }
 
 @media (max-width: 767px) {
-  .hidden-xs, #topbar .claim, .secondaryMenu, #portal-footer-wrapper #portlets-footer .lista-links:before {
+  .hidden-xs, #topbar .claim, .secondaryMenu, #content .documentActions, #portal-footer-wrapper #portlets-footer .lista-links:before {
     display: none !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
-  .hidden-sm, #return-to-top {
+  .hidden-sm, #content .documentActions, #return-to-top {
     display: none !important; } }
 @media (min-width: 992px) and (max-width: 1299px) {
   .hidden-md, #return-to-top {
@@ -8152,6 +8152,8 @@ dl.portletCollection {
       #content pre a:focus, #content pre a:hover {
         border-bottom: 1px solid #FFF !important;
         color: #FFF !important; }
+  #content img {
+    max-width: 100%; }
 
 #plone-document-byline {
   text-align: right;
