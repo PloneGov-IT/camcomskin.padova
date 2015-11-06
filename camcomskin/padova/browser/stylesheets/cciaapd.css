@@ -7466,19 +7466,20 @@ dl.portletServiziOnline {
               color: #313131; }
           dl.portletServiziOnline dd.portletItem ul li a.external-link:before {
             content: '\f08e'; }
-  dl.portletServiziOnline.colonna-1-di-2 dd.portletItem ul {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px; }
-    dl.portletServiziOnline.colonna-1-di-2 dd.portletItem ul li {
-      -webkit-column-break-inside: avoid;
-      page-break-inside: avoid;
-      break-inside: avoid;
-      border-top: 0;
-      padding: 5px 0; }
+  @media (min-width: 768px) {
+    dl.portletServiziOnline.colonna-1-di-2 dd.portletItem ul {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px; } }
+  dl.portletServiziOnline.colonna-1-di-2 dd.portletItem ul li {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border-top: 0;
+    padding: 5px 0; }
   dl.portletServiziOnline.colonna-1-di-2 dt.portletHeader:after {
     font-size: 60px;
     bottom: -9px; }
@@ -8071,13 +8072,18 @@ dl.portletCollection {
         min-height: 260px; }
     .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.portletServiziOnline {
       border: 0; }
-      @media (max-width: 991px) {
+      @media (min-width: 768px) and (max-width: 991px) {
         .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.portletServiziOnline {
           margin-top: 1em; } }
       .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.portletServiziOnline dt.portletHeader {
         background-color: #9c3524;
         z-index: 1;
         padding: 15px; }
+    @media (max-width: 767px) {
+      .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow [id*="column-collective-portletpage-toprow-portlet"] .portlet {
+        margin-top: 1em; }
+      .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow [id*="column-collective-portletpage-toprow-portlet"]:first-of-type .portlet:first-of-type {
+        margin-top: 0; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow .colonna-1-di-2,
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow .colonna-1-di-3,
