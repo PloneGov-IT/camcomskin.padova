@@ -6621,6 +6621,9 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
 
 #portal-top {
   margin-bottom: 40px; }
+  @media (max-width: 767px) {
+    #portal-top {
+      margin-bottom: 20px; } }
 
 .portalHeaderContent {
   padding-right: 0; }
@@ -7040,8 +7043,7 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
           .globalnavWrapper #portal-globalnav li a {
             max-width: 100%;
             min-height: 1px;
-            padding-left: 15px;
-            padding-right: 30px;
+            padding: 8px 30px 8px 15px;
             overflow: hidden;
             display: inline-block;
             white-space: nowrap;

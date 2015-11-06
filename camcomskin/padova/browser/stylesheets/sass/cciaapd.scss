@@ -61,7 +61,11 @@ strong { @extend .semibold; }
 }
 
 // header
-#portal-top                 { margin-bottom: 40px; }
+#portal-top                 { margin-bottom: 40px;
+    @media (max-width: $screen-xs-max) {
+                              margin-bottom: 20px;
+    }
+}
 .portalHeaderContent        { padding-right: 0; }
 #topbar                     { background-color: #EBEBEB; 
                               border-bottom: 1px solid #d3d3d3;
@@ -438,8 +442,7 @@ strong { @extend .semibold; }
                 }
                 a           { max-width: 100%;
                               min-height: 1px;
-                              padding-left: $grid-gutter-width / 2;
-                              padding-right: 30px;
+                              padding: 8px 30px 8px $grid-gutter-width / 2;
                               overflow: hidden;
                               display: inline-block;
                               white-space: nowrap;
