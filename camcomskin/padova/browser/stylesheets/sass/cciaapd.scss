@@ -121,6 +121,11 @@ strong { @extend .semibold; }
         }
         span                { @extend .sr-only; }
     }
+    @media (max-width: $screen-sm-max) {
+        a.btnSearch         {
+            &:before        { font-size: 33px; }
+        }
+    }
     @media (max-width: $screen-xs-max) {
                               position: absolute;
                               top: -40px;
@@ -258,7 +263,8 @@ strong { @extend .semibold; }
 // LOGO
 #portal-logo                { margin: 20px 0 0;
                               @extend .pull-left;
-                              @extend .col-sm-4;
+                              @extend .col-sm-5;
+                              @extend .col-md-4;
                               padding-left: 0;
     img                     { max-width: 250px;
                               height: auto; 
@@ -267,6 +273,9 @@ strong { @extend .semibold; }
                               margin: 10px 0;
                               display: block;
                               float: none !important;
+    }
+    @media (max-width: $screen-sm-max) {
+                              margin-top: 10px;
         img                 { max-width: 100%;
                               display: block;
                               margin-left: auto;
@@ -283,6 +292,10 @@ strong { @extend .semibold; }
                               margin-top: 20px;
                               margin-bottom: 20px;
                               text-align: center;
+                              @media (max-width: $screen-sm-max) {
+                                  margin-top: 10px;
+                                  margin-bottom: 10px;
+                              }
                               @media (min-width: $screen-md-min) {
                                   float: right;
                                   text-align: right;
