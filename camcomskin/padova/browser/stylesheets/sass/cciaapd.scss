@@ -1955,7 +1955,9 @@ dl.portletBandi                     {
       }
       #portletPageMiddleRowWrapper  {
           #portletPageFirstColumn   { width: auto; }
-          #portletPageSecondColumn  { width: auto; }
+          #portletPageSecondColumn  { width: auto;
+            .portletCalendar        { margin-right: 0; }
+          }
       }
   }
 }

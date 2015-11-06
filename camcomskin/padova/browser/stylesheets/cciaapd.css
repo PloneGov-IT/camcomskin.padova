@@ -8697,7 +8697,9 @@ dl.portletBandi dd.portletItem {
   .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn {
     width: auto; }
   .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
-    width: auto; } }
+    width: auto; }
+    .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn .portletCalendar {
+      margin-right: 0; } }
 
 #portlets-in-header {
   background-color: #FFF;
