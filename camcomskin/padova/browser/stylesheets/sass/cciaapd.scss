@@ -1917,6 +1917,7 @@ dl.portletBandi                     {
     .InHeaderPortletManager3        { @include flexbox();
       > div                         { @include flexbox();
                                       width: 20%;
+                                      @include flex(0 1 20%);
       }
     }
     .InHeaderPortletManager3        { padding: 18px 0; }
@@ -2012,6 +2013,19 @@ dl.portletBandi                     {
   }
   .InHeaderPortletManager3               { 
     > div:first-child .homeColonnaBottom { border-left: 0; }
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .portletHome                    {
+        &.homeColonnaBottom         {
+            ul li                   {
+                a                   {
+                    &.external-link,
+                    &[class*='fa-'] { padding-left: $grid-gutter-width / 2; }
+                    &:before        { left: -7px; }
+                }
+            }
+        }
+    }
   }
 }
 div.titolo-servizi-online           { background-color: $gray-bg; 
