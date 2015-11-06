@@ -8669,6 +8669,13 @@ dl.portletBandi dd.portletItem {
     width: 75%; }
   .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
     width: 20.8%; }
+@media (max-width: 767px) {
+  .section-homepage #portlets-in-header [class*="InHeaderPortletManager"] {
+    display: none; }
+  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn {
+    width: auto; }
+  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
+    width: auto; } }
 
 #portlets-in-header {
   background-color: #FFF;
@@ -8951,6 +8958,21 @@ div.titolo-servizi-online {
       display: inline-block;
       margin-left: 12px;
       color: #aaa; }
+@media (max-width: 767px) {
+  .boxNotizieHome {
+    margin-bottom: 20px; }
+    .boxNotizieHome .boxNewsImg,
+    .boxNotizieHome .boxNewsImg.boxNewsImgBig,
+    .boxNotizieHome .boxNews {
+      padding-right: 0; }
+    .boxNotizieHome .boxNewsImg .newsImg img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    .boxNotizieHome .boxNewsImg .newsText {
+      padding: 10px; }
+    .boxNotizieHome .boxNewsImg.boxNewsImgBig .newsContent {
+      padding: 10px; } }
 
 #content table.modulisticaListing tr.odd th.modulisticaDocument {
   border: 1px solid #999; }

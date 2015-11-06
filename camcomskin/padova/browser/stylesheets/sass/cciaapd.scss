@@ -1927,6 +1927,15 @@ dl.portletBandi                     {
     #portletPageFirstColumn         { width: 75%; }
     #portletPageSecondColumn        { width: 20.8%; }
   }
+  @media (max-width: $screen-xs-max) {
+      #portlets-in-header           {
+          [class*="InHeaderPortletManager"]{ display: none; }
+      }
+      #portletPageMiddleRowWrapper  {
+          #portletPageFirstColumn   { width: auto; }
+          #portletPageSecondColumn  { width: auto; }
+      }
+  }
 }
 // riga superiore
 #portlets-in-header                 { background-color: #FFF;
@@ -2191,6 +2200,24 @@ div.titolo-servizi-online           { background-color: $gray-bg;
                                       margin-left: 12px;
                                       color: #aaa;
       }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+                                      margin-bottom: 40px;
+    .boxNewsImg,
+    .boxNewsImg.boxNewsImgBig,
+    .boxNews                        { padding-right: 0; }
+    .boxNewsImg                     {
+        .newsImg                    {
+            img                      { display: block;
+                                      margin-left: auto;
+                                      margin-right: auto;
+            }
+        }
+        .newsText                   { padding: 10px; }
+        &.boxNewsImgBig             {
+            .newsContent            { padding: 10px; }
+        }
     }
   }
 }
