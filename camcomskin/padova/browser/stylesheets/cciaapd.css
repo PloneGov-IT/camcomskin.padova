@@ -5331,7 +5331,7 @@ button.list-group-item-danger {
     display: inline-block !important; } }
 
 @media (max-width: 767px) {
-  .hidden-xs, #topbar .claim, .secondaryMenu, #content .documentActions, #portal-footer-wrapper #portlets-footer .lista-links:before {
+  .hidden-xs, #topbar .claim, #content .documentActions, #portal-footer-wrapper #portlets-footer .lista-links:before {
     display: none !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm, #content .documentActions, #return-to-top {
@@ -6923,6 +6923,10 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
     .secondaryMenu > ul > li.secondaryMenuItem {
       margin-right: 5%;
       display: inline-block; }
+      #portal-footer-wrapper .secondaryMenu > ul > li.secondaryMenuItem {
+        display: list-item;
+        margin-left: 15px;
+        margin-right: 15px; }
       .secondaryMenu > ul > li.secondaryMenuItem > a {
         font-size: 1.1em;
         text-transform: uppercase;
@@ -6934,6 +6938,10 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
         @media (max-width: 991px) {
           .secondaryMenu > ul > li.secondaryMenuItem > a {
             font-size: 1em; } }
+        #portal-footer-wrapper .secondaryMenu > ul > li.secondaryMenuItem > a {
+          border: 1px solid #1e282f;
+          border-radius: 10px;
+          background-color: #222d35; }
         .secondaryMenu > ul > li.secondaryMenuItem > a:focus, .secondaryMenu > ul > li.secondaryMenuItem > a:hover {
           color: #9c3524; }
         .secondaryMenu > ul > li.secondaryMenuItem > a:after {
@@ -6945,6 +6953,8 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
           margin-left: 12px;
           position: relative;
           top: 0.1em; }
+          #portal-footer-wrapper .secondaryMenu > ul > li.secondaryMenuItem > a:after {
+            color: white; }
       .secondaryMenu > ul > li.secondaryMenuItem.secondaryTabOpen > a {
         color: #9c3524; }
         .secondaryMenu > ul > li.secondaryMenuItem.secondaryTabOpen > a:after {
@@ -6952,12 +6962,16 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
           font-family: FontAwesome;
           content: "";
           color: #283641; }
+          #portal-footer-wrapper .secondaryMenu > ul > li.secondaryMenuItem.secondaryTabOpen > a:after {
+            color: white; }
   .secondaryMenu .popover {
     max-width: none; }
     .secondaryMenu .popover .popover-content {
       padding: 10px 15px; }
   .secondaryMenu .submenuWrapper {
     width: 660px; }
+    #portal-footer-wrapper .secondaryMenu .submenuWrapper {
+      width: auto; }
   .secondaryMenu .submenuItem {
     float: left;
     width: 230px;
@@ -6969,17 +6983,30 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
     .secondaryMenu .submenuItem:first-child {
       padding-left: 0;
       width: 200px; }
+    #portal-footer-wrapper .secondaryMenu .submenuItem {
+      width: auto; }
+      #portal-footer-wrapper .secondaryMenu .submenuItem:first-child {
+        width: auto; }
+      #portal-footer-wrapper .secondaryMenu .submenuItem:not(.servizi-online) {
+        padding-left: 0; }
+    #portal-footer-wrapper .secondaryMenu .submenuItem a,
     .secondaryMenu .submenuItem a {
       color: #313131; }
-      .secondaryMenu .submenuItem a:focus, .secondaryMenu .submenuItem a:hover {
+      #portal-footer-wrapper .secondaryMenu .submenuItem a:focus, #portal-footer-wrapper .secondaryMenu .submenuItem a:hover,
+      .secondaryMenu .submenuItem a:focus,
+      .secondaryMenu .submenuItem a:hover {
         color: #9c3524; }
     .secondaryMenu .submenuItem h4 {
       margin-top: 15px;
       font-size: 1.1em; }
+      #portal-footer-wrapper .secondaryMenu .submenuItem h4 {
+        color: #313131; }
     .secondaryMenu .submenuItem h5 {
       text-transform: uppercase;
       margin: 1em 0;
       font-size: 1.05em; }
+      #portal-footer-wrapper .secondaryMenu .submenuItem h5 {
+        color: #313131; }
     .secondaryMenu .submenuItem ul {
       display: block; }
       .secondaryMenu .submenuItem ul li {
@@ -7019,6 +7046,10 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
     border-left: 1px dashed #CCC;
     margin-left: 20px;
     width: 210px; }
+    #portal-footer-wrapper .secondaryMenu #secondarymenu-2 .submenuItem:nth-child(2) {
+      border: 0;
+      margin-left: 0;
+      width: auto; }
 
 .globalnavWrapper {
   background-color: #4f575e; }

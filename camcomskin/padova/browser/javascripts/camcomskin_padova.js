@@ -62,8 +62,20 @@
     });
 
     // hover on news home
-    $('.boxNotizieHome .boxNewsImg .linkItem a').hover( function() { 
-      $(this).parents('.boxNewsImg').toggleClass('imgHover'); 
+    $('.boxNotizieHome .boxNewsImg .linkItem a').hover( function() {
+      $(this).parents('.boxNewsImg').toggleClass('imgHover');
     });
+
+    // move the secondary manu in the footer when using a xs device
+    var moveSecondaryMenu = function(event) {
+      if( $(window).width() < 768) {
+        $('.secondaryMenu').prependTo('#portal-footer-wrapper > div');
+      }
+      else {
+        $('.secondaryMenu').appendTo('.portalHeaderContent');
+      }
+    };
+    moveSecondaryMenu(null);
+    $(window).on('resize orientationChange', moveSecondaryMenu);
   });
 })(jQuery);

@@ -287,7 +287,6 @@ strong { @extend .semibold; }
 // MENU SUPERIORE
 .secondaryMenu              { @extend .col-sm-12;
                               @extend .col-md-7;
-                              @extend .hidden-xs;
                               display: block;
                               margin-top: 20px;
                               margin-bottom: 20px;
@@ -306,6 +305,11 @@ strong { @extend .semibold; }
                               margin-bottom: 0;
     > li.secondaryMenuItem  { margin-right: 5%;
                               display: inline-block;
+      #portal-footer-wrapper & {
+                              display: list-item;
+                              margin-left: $grid-gutter-width / 2;
+                              margin-right: $grid-gutter-width / 2;
+      }
       > a                   { font-size: 1.1em;
                               @media (max-width: $screen-sm-max) {
                                   font-size: 1em;
@@ -314,6 +318,11 @@ strong { @extend .semibold; }
                               color: #4a4a4a;
                               display: block;
                               @include transition(all .1s ease-in);
+        #portal-footer-wrapper & {
+                              border: 1px solid $bludark;
+                              border-radius: 10px;
+                              background-color: lighten($bludark, 2%);
+        }
         &:focus,
         &:hover             { color: $link-color;}
         &:after             { @include make-fa('\f107', $link-color); 
@@ -321,10 +330,17 @@ strong { @extend .semibold; }
                                margin-left: 12px;
                                position: relative;
                                top: 0.1em;
+            #portal-footer-wrapper & {
+                              color: white;
+            }
         }
       }
       &.secondaryTabOpen > a  { color: $link-color;
-        &:after             { @include make-fa('\f106', $blu); }
+        &:after             { @include make-fa('\f106', $blu);
+            #portal-footer-wrapper & {
+                                color: white;
+            }
+        }
       }
     }
   }
@@ -333,6 +349,7 @@ strong { @extend .semibold; }
   }
   .submenuWrapper           { @extend .clearfix; 
                               width: 660px;
+    #portal-footer-wrapper &{ width: auto; }
   }
   .submenuItem              { float: left;
                               width: 230px;
@@ -343,17 +360,30 @@ strong { @extend .semibold; }
                               color: $gray-light;
     }                              
     &:first-child           { padding-left: 0; width: 200px; }
+    #portal-footer-wrapper &{ width: auto;
+        &:first-child       { width: auto; }
+        &:not(.servizi-online) {
+                              padding-left: 0;
+        }
+    }
+    #portal-footer-wrapper & a,
     a                       { color: $text-color;
         &:focus,
         &:hover             { color: $link-color; }
     }
     h4                      { margin-top: 15px;
                               font-size: 1.1em;
+        #portal-footer-wrapper & {
+                              color: $gray-dark;
+        }
     }
     h5                      { text-transform: uppercase;
                               @extend .semibold;
                               margin: 1em 0;
                               font-size: 1.05em;
+        #portal-footer-wrapper & {
+                              color: $gray-dark;
+        }
     }
     ul                      { @extend .list-unstyled;
                               display: block;
@@ -392,6 +422,11 @@ strong { @extend .semibold; }
     .submenuItem:nth-child(2) { border-left: 1px dashed $gray-lighter; 
                                 margin-left: 20px;
                                 width: 210px;
+        #portal-footer-wrapper & {
+                                 border: 0;
+                                margin-left: 0;
+                                width: auto;
+        }
     }
   }
 }
