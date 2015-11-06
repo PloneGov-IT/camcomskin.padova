@@ -6800,7 +6800,8 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
       padding: 10px 0;
       max-width: 60%; }
       #camcomskin-searchbox input.searchField {
-        font-size: 1.1em; }
+        font-size: 1.1em;
+        padding-left: 40px; }
       #camcomskin-searchbox input.searchButton {
         font-size: 0.9em;
         margin-top: -0.3em; }
@@ -6866,6 +6867,12 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
   #search-results-bar dl.actionMenu dd.actionMenuContent {
     left: -35px; } }
 
+@media (max-width: 767px) {
+  #search-results {
+    padding-left: 0; }
+    #search-results dd {
+      margin-left: 1em; } }
+
 .searchResults cite {
   font-size: 0.9em; }
 
@@ -6880,9 +6887,14 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
     height: auto; }
   @media (max-width: 767px) {
     #portal-logo {
-      margin: 10px 0; }
+      margin: 10px 0;
+      display: block;
+      float: none !important; }
       #portal-logo img {
-        max-width: 100%; } }
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; } }
 
 .secondaryMenu {
   display: block;
@@ -7222,6 +7234,11 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
         font-style: normal;
         display: inline-block;
         margin-right: 5px; }
+  @media (max-width: 767px) {
+    #submenu-details .submenuDynamicWrapper {
+      padding-right: 0; }
+    #submenu-details .staticItem {
+      padding: 15px; } }
 
 #breadcrumbs {
   background-color: #e6e9eb; }

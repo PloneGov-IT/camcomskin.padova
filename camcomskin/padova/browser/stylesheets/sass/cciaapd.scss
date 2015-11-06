@@ -175,7 +175,9 @@ strong { @extend .semibold; }
   @media (max-width: $screen-xs-max) {
                               padding: 10px 0;
                               max-width: 60%;
-    input.searchField       { font-size: 1.1em; }
+    input.searchField       { font-size: 1.1em;
+                              padding-left: 40px;
+    }
     input.searchButton      { font-size: 0.9em;
                               margin-top: -0.3em; }
     .searchFieldWrapper     {
@@ -242,6 +244,12 @@ strong { @extend .semibold; }
         }
     }
 }
+#search-results                   {
+    @media (max-width: $screen-xs-max) {
+                                    padding-left: 0;
+        dd                        { margin-left: 1em; }
+    }
+}
 .searchResults                    {
   cite                            { font-size: 0.9em; }
 }
@@ -257,7 +265,13 @@ strong { @extend .semibold; }
     }
     @media (max-width: $screen-xs-max) {
                               margin: 10px 0;
-        img                 { max-width: 100%; }
+                              display: block;
+                              float: none !important;
+        img                 { max-width: 100%;
+                              display: block;
+                              margin-left: auto;
+                              margin-right: auto;
+        }
     }
 }
 
@@ -567,6 +581,10 @@ strong { @extend .semibold; }
                               margin-right: 5px; 
             }
         }
+    }
+    @media (max-width: $screen-xs-max) {
+        .submenuDynamicWrapper      { padding-right: 0; }
+        .staticItem                 { padding: $grid-gutter-width / 2; }
     }
 }
 
