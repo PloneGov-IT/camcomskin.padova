@@ -1223,11 +1223,13 @@ dl.portletCollection                { margin-bottom: 20px;
 .officeContactsWrapper              { background-color: $gray-bg;
                                       padding: 10px 30px 20px;
                                       margin: 40px 0;                                      
-  .officeContactsContent            { display: table;
+  @media (min-width: $screen-sm-min) {
+      .officeContactsContent        { display: table;
                                       position: relative;
                                       table-layout: fixed;
                                       width: 100%;
-  }  
+      }
+  }
   h4                                { text-transform: uppercase;
                                       color: $gray-light;
                                       font-size: 1.2em;
@@ -1235,22 +1237,25 @@ dl.portletCollection                { margin-bottom: 20px;
   h5                                { font-size: 1.05em; 
                                       margin-bottom: 0.5em;
   }
-  .officeLocation,
-  .officeContacts,
-  .officeExecutive                  { display: table-cell;
+  @media (min-width: $screen-sm-min) {
+      .officeLocation,
+      .officeContacts,
+      .officeExecutive              { display: table-cell;
                                       vertical-align: top;
-  }
-  .officeLocation                   { width: 38%;
+      }
+      .officeLocation               { width: 38%;
                                       padding-right: 2%;
-  }
-  .officeContacts                   { border-left: 1px dashed $gray-light;
+      }
+      .officeContacts               { border-left: 1px dashed $gray-light;
                                       width: 48%;
                                       padding: 0 2%;
-  }
-  .officeExecutive                  { border-left: 1px dashed $gray-light;
+      }
+      .officeExecutive              { border-left: 1px dashed $gray-light;
                                       padding-left: 2%;
                                       vertical-align: middle;
-                                      text-align: center;                                                                            
+      }
+  }
+  .officeExecutive                  { text-align: center;
     &:before                        { @include make-flaticon('businessman137', 78px); 
                                       color: $link-color;
                                       display: block;
@@ -1274,7 +1279,8 @@ dl.portletCollection                { margin-bottom: 20px;
   .officeEmail,
   .officePec                        { @extend .clearfix;
                                       padding-bottom: 3px;
-    h6                              { @extend .col-xs-2;
+    h6                              { @extend .col-xs-3;
+                                      @extend .col-sm-2;
                                       text-align: right;
                                       margin:0.3em 0 0;
                                       padding-right: 0;
@@ -1283,7 +1289,8 @@ dl.portletCollection                { margin-bottom: 20px;
                                       @extend .semibold; 
                                       white-space: nowrap;
     }
-    p                               { @extend .col-xs-10; 
+    p                               { @extend .col-xs-9;
+                                      @extend .col-sm-10;
                                       margin-bottom: 0 !important;
                                       padding-right:0;
     }
@@ -1297,6 +1304,13 @@ dl.portletCollection                { margin-bottom: 20px;
                                       width: 100%;
                                       text-overflow: ellipsis;
                                       overflow: hidden;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+                                      padding-left: $grid-gutter-width / 2;
+                                      padding-right: $grid-gutter-width / 2;
+    .officeExecutive                {
+        &:before                    { padding-top: 30px; }
     }
   }
 }
