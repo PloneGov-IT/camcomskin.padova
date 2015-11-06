@@ -7740,6 +7740,10 @@ dl[class*='ortletNavigation'] dd.portletItem {
     .boxApprofondimenti ul.listLink li.linkItem a:focus:before,
     .boxApprofondimenti ul.listLink li.linkItem a:hover:before {
       color: #313131; }
+  @media (max-width: 767px) {
+    #content .boxScheda ul.listLink, #content
+    .boxApprofondimenti ul.listLink {
+      margin-left: 0; } }
 
 .boxNorme ul.listLink li a,
 .boxNorme ul.listLink li.linkItem a,
@@ -8158,6 +8162,10 @@ dl.portletCollection {
 .template-portlets.portaltype-portlet-page #portlets-below.contentwellportlets {
   display: none; }
 
+@media (max-width: 767px) {
+  .portaltype-portlet-page #portletPageColumns .portletPageColumn {
+    width: auto;
+    float: none; } }
 .boxCollezioneRigaNotizie {
   background: transparent url("++resource++camcomskin.padova.images/bg-notizie.jpg") no-repeat center center;
   background-size: cover; }

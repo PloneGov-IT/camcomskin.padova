@@ -1006,6 +1006,9 @@ dl[class*='ortletNavigation']       {
       }
     }    
   }
+  @media (max-width: $screen-xs-max) {
+    #content & ul.listLink          { margin-left: 0; }
+  }
 }
 
 
@@ -1439,6 +1442,15 @@ dl.portletCollection                { margin-bottom: 20px;
   #portal-footer-wrapper            { margin-top:0; }
 }
 .template-portlets.portaltype-portlet-page #portlets-below.contentwellportlets { display: none;}
+@media (max-width: $screen-xs-max)  {
+    .portaltype-portlet-page        {
+        #portletPageColumns         {
+            .portletPageColumn      { width: auto;
+                                      float: none;
+            }
+        }
+    }
+}
 
 // PORTLET IN RIGA PER NOTIZIE
 // (la lascio fuori... può servire anche altrove)
