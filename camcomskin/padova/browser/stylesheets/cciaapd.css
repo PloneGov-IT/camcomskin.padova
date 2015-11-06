@@ -865,13 +865,13 @@ pre {
 .officeContactsWrapper .officePec h6, .col-md-2, .col-lg-2, .col-xs-3, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, #portal-logo, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .col-md-6, .colonna-1-di-2, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-md-8, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, #portal-logo, .col-md-4, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-md-6, .colonna-1-di-2, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
 .officeContactsWrapper .officePec p, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
-.officeContactsWrapper .officePec p, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .col-md-12, .col-lg-12 {
+.officeContactsWrapper .officePec p, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1049,10 +1049,10 @@ pre {
   .col-sm-1, .col-sm-2, .officeContactsWrapper .officePhone h6,
   .officeContactsWrapper .officeFax h6,
   .officeContactsWrapper .officeEmail h6,
-  .officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, #portal-logo, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-sm-5, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .col-sm-7, .col-sm-8, div.width-2\3a 3, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .officeContactsWrapper .officePhone p,
+  .officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, #portal-logo, .col-sm-5, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-sm-7, .col-sm-8, div.width-2\3a 3, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .officeContactsWrapper .officePhone p,
   .officeContactsWrapper .officeFax p,
   .officeContactsWrapper .officeEmail p,
-  .officeContactsWrapper .officePec p, .col-sm-11, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper {
+  .officeContactsWrapper .officePec p, .col-sm-11, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .boxNotizieHome .boxNewsImg.boxNewsImgBig {
     float: left; }
 
   .col-sm-1 {
@@ -1067,19 +1067,19 @@ pre {
   .col-sm-3, #center-and-left-area #left-area {
     width: 25%; }
 
-  .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, #portal-logo, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews {
+  .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, #portal-logo {
     width: 33.3333333333%; }
 
   .col-sm-5 {
     width: 41.6666666667%; }
 
-  .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem {
+  .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews {
     width: 50%; }
 
   .col-sm-7 {
     width: 58.3333333333%; }
 
-  .col-sm-8, div.width-2\3a 3, .boxNotizieHome .boxNewsImg.boxNewsImgBig {
+  .col-sm-8, div.width-2\3a 3 {
     width: 66.6666666667%; }
 
   .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4 {
@@ -1094,7 +1094,7 @@ pre {
   .col-sm-11 {
     width: 91.6666666667%; }
 
-  .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper {
+  .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .boxNotizieHome .boxNewsImg.boxNewsImgBig {
     width: 100%; }
 
   .col-sm-pull-0 {
@@ -1214,7 +1214,7 @@ pre {
   .col-sm-offset-12 {
     margin-left: 100%; } }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem, .col-md-4, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-md-6, .colonna-1-di-2, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem, .col-md-4, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-md-6, .colonna-1-di-2, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-md-8, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
   .col-md-1 {
@@ -1226,7 +1226,7 @@ pre {
   .col-md-3, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem {
     width: 25%; }
 
-  .col-md-4 {
+  .col-md-4, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews {
     width: 33.3333333333%; }
 
   .col-md-5, #submenu-details .submenuDynamicWrapper {
@@ -1238,7 +1238,7 @@ pre {
   .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper {
     width: 58.3333333333%; }
 
-  .col-md-8 {
+  .col-md-8, .boxNotizieHome .boxNewsImg.boxNewsImgBig {
     width: 66.6666666667%; }
 
   .col-md-9 {
@@ -6655,7 +6655,7 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
     margin-left: 0;
     margin-right: 0; }
 
-  .col-xs-12, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .col-md-12, .col-lg-12 {
+  .col-xs-12, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-md-12, .col-lg-12 {
     padding-left: 0;
     padding-right: 0; } }
 #portal-personaltools-wrapper {
@@ -8669,6 +8669,13 @@ dl.portletBandi dd.portletItem {
     width: 75%; }
   .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
     width: 20.8%; }
+    .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn .portletCalendar {
+      margin-right: 15px; }
+@media (max-width: 991px) {
+  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn {
+    width: 66%; }
+  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
+    width: 33%; } }
 @media (max-width: 767px) {
   .section-homepage #portlets-in-header [class*="InHeaderPortletManager"] {
     display: none; }
@@ -8960,7 +8967,7 @@ div.titolo-servizi-online {
       color: #aaa; }
 @media (max-width: 767px) {
   .boxNotizieHome {
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
     .boxNotizieHome .boxNewsImg,
     .boxNotizieHome .boxNewsImg.boxNewsImgBig,
     .boxNotizieHome .boxNews {
