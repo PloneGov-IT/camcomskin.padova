@@ -1991,6 +1991,16 @@ div.titolo-servizi-online           { background-color: $gray-bg;
   }
 }
 
+// AVVISI E COMUNICAZIONI
+.boxAvvisi                          { 
+  .boxHeader                        { }
+  .boxItem                          { background-color: $blu;
+                                      color: #FFF;
+                                      padding: 0 15px;
+    .titleItem                      {}
+  }
+}
+
 // FIX VISTA MODULISTICA
 #content table.modulisticaListing   { @extend .table, .table-condensed;
   tr.odd th.modulisticaDocument     { border: 1px solid #999; }
