@@ -61,7 +61,11 @@ strong { @extend .semibold; }
 }
 
 // header
-#portal-top                 { margin-bottom: 40px; }
+#portal-top                 { margin-bottom: 40px;
+    @media (max-width: $screen-xs-max) {
+                              margin-bottom: 20px;
+    }
+}
 .portalHeaderContent        { padding-right: 0; }
 #topbar                     { background-color: #EBEBEB; 
                               border-bottom: 1px solid #d3d3d3;
@@ -77,6 +81,7 @@ strong { @extend .semibold; }
                               text-transform: uppercase;
                               font-size: 0.85em;
                               @extend .semibold;
+                              @extend .hidden-xs;
     }                          
     #top-link-group         { @extend .pull-right;  
                               margin:0;
@@ -98,6 +103,9 @@ strong { @extend .semibold; }
                               padding-left: 20px;
         }
     }
+    @media (max-width: $screen-xs-max) {
+                              padding-right: 3em;
+    }
 }
 
 // SEARCH
@@ -113,9 +121,23 @@ strong { @extend .semibold; }
         }
         span                { @extend .sr-only; }
     }
+    @media (max-width: $screen-sm-max) {
+        a.btnSearch         {
+            &:before        { font-size: 33px; }
+        }
+    }
+    @media (max-width: $screen-xs-max) {
+                              position: absolute;
+                              top: -40px;
+                              right: 0;
+        a.btnSearch         { padding: 6px 10px;
+            &:before        { font-size: 19px; }
+        }
+    }
 }
 #camcomskin-searchbox       { text-align: center;
                               padding: 20px 0;
+                              max-width: 80%;
   .searchFieldWrapper       { display: inline-block;
                               position: relative;
                               max-width: 600px; 
@@ -155,6 +177,18 @@ strong { @extend .semibold; }
     }
     span                    { @extend .sr-only; }
   }
+  @media (max-width: $screen-xs-max) {
+                              padding: 10px 0;
+                              max-width: 60%;
+    input.searchField       { font-size: 1.1em;
+                              padding-left: 40px;
+    }
+    input.searchButton      { font-size: 0.9em;
+                              margin-top: -0.3em; }
+    .searchFieldWrapper     {
+        &:before            { font-size: 1.5em; }
+    }
+  }
 }
 // PAGINA RICERCA
 #search-field                     { position: relative;
@@ -188,6 +222,38 @@ strong { @extend .semibold; }
                                     padding: 0.7em 1em;
                                     font-size: 1.5em !important;
   }
+  @media (max-width: $screen-xs-max) {
+                                    margin-bottom: 1em;
+    &:before                      { left: 0.4em;
+                                    top: 0.4em;
+                                    font-size: 1.5em; }
+    input[name='SearchableText']  { font-size: 1.2em !important;
+                                    padding-left: 2.2em;
+                                    max-width: 77%; }
+    input.searchButton            { font-size: 0.9em !important;
+                                    margin-top: -0.3em; }
+  }
+}
+@media (max-width: $screen-xs-max) {
+    fieldset#search-field         { text-align: left; }
+}
+#search-results-bar               {
+    dl.actionMenu                 {
+        @media (max-width: $screen-xs-max) {
+            dd.actionMenuContent  { left: -150px;
+                                    max-width: 98vw;
+            }
+        }
+        @media (max-width: 510px) {
+            dd.actionMenuContent  { left: - (21px + ($grid-gutter-width / 2) - 1); }
+        }
+    }
+}
+#search-results                   {
+    @media (max-width: $screen-xs-max) {
+                                    padding-left: 0;
+        dd                        { margin-left: 1em; }
+    }
 }
 .searchResults                    {
   cite                            { font-size: 0.9em; }
@@ -197,10 +263,24 @@ strong { @extend .semibold; }
 // LOGO
 #portal-logo                { margin: 20px 0 0;
                               @extend .pull-left;
-                              @extend .col-sm-4;
+                              @extend .col-sm-5;
+                              @extend .col-md-4;
                               padding-left: 0;
     img                     { max-width: 250px;
                               height: auto; 
+    }
+    @media (max-width: $screen-xs-max) {
+                              margin: 10px 0;
+                              display: block;
+                              float: none !important;
+    }
+    @media (max-width: $screen-sm-max) {
+                              margin-top: 10px;
+        img                 { max-width: 100%;
+                              display: block;
+                              margin-left: auto;
+                              margin-right: auto;
+        }
     }
 }
 
@@ -211,6 +291,10 @@ strong { @extend .semibold; }
                               margin-top: 20px;
                               margin-bottom: 20px;
                               text-align: center;
+                              @media (max-width: $screen-sm-max) {
+                                  margin-top: 10px;
+                                  margin-bottom: 10px;
+                              }
                               @media (min-width: $screen-md-min) {
                                   float: right;
                                   text-align: right;
@@ -221,6 +305,11 @@ strong { @extend .semibold; }
                               margin-bottom: 0;
     > li.secondaryMenuItem  { margin-right: 5%;
                               display: inline-block;
+      #portal-footer-wrapper & {
+                              display: list-item;
+                              margin-left: $grid-gutter-width / 2;
+                              margin-right: $grid-gutter-width / 2;
+      }
       > a                   { font-size: 1.1em;
                               @media (max-width: $screen-sm-max) {
                                   font-size: 1em;
@@ -229,6 +318,11 @@ strong { @extend .semibold; }
                               color: #4a4a4a;
                               display: block;
                               @include transition(all .1s ease-in);
+        #portal-footer-wrapper & {
+                              border: 1px solid $bludark;
+                              border-radius: 10px;
+                              background-color: lighten($bludark, 2%);
+        }
         &:focus,
         &:hover             { color: $link-color;}
         &:after             { @include make-fa('\f107', $link-color); 
@@ -236,10 +330,17 @@ strong { @extend .semibold; }
                                margin-left: 12px;
                                position: relative;
                                top: 0.1em;
+            #portal-footer-wrapper & {
+                              color: white;
+            }
         }
       }
       &.secondaryTabOpen > a  { color: $link-color;
-        &:after             { @include make-fa('\f106', $blu); }
+        &:after             { @include make-fa('\f106', $blu);
+            #portal-footer-wrapper & {
+                                color: white;
+            }
+        }
       }
     }
   }
@@ -248,6 +349,7 @@ strong { @extend .semibold; }
   }
   .submenuWrapper           { @extend .clearfix; 
                               width: 660px;
+    #portal-footer-wrapper &{ width: auto; }
   }
   .submenuItem              { float: left;
                               width: 230px;
@@ -258,17 +360,30 @@ strong { @extend .semibold; }
                               color: $gray-light;
     }                              
     &:first-child           { padding-left: 0; width: 200px; }
+    #portal-footer-wrapper &{ width: auto;
+        &:first-child       { width: auto; }
+        &:not(.servizi-online) {
+                              padding-left: 0;
+        }
+    }
+    #portal-footer-wrapper & a,
     a                       { color: $text-color;
         &:focus,
         &:hover             { color: $link-color; }
     }
     h4                      { margin-top: 15px;
                               font-size: 1.1em;
+        #portal-footer-wrapper & {
+                              color: $gray-dark;
+        }
     }
     h5                      { text-transform: uppercase;
                               @extend .semibold;
                               margin: 1em 0;
                               font-size: 1.05em;
+        #portal-footer-wrapper & {
+                              color: $gray-dark;
+        }
     }
     ul                      { @extend .list-unstyled;
                               display: block;
@@ -307,6 +422,11 @@ strong { @extend .semibold; }
     .submenuItem:nth-child(2) { border-left: 1px dashed $gray-lighter; 
                                 margin-left: 20px;
                                 width: 210px;
+        #portal-footer-wrapper & {
+                                 border: 0;
+                                margin-left: 0;
+                                width: auto;
+        }
     }
   }
 }
@@ -319,7 +439,7 @@ strong { @extend .semibold; }
                               margin-bottom: 0;
                               font-size: 1.05em;
                               padding: 0;
-                              @extend .clearfix; 
+                              @extend .clearfix;
         li                  { width: 20%;
                               display: block;
                               float: left;
@@ -335,7 +455,9 @@ strong { @extend .semibold; }
                                  @extend .semibold;
               }
               &:focus,
-              &:hover        { background-color: transparentize($gray, .15); 
+              &:hover        { @media (min-width: $screen-md-min) {
+                                   background-color: transparentize($gray, .15); 
+                               }
                   span       { color: #FFF !important;}
               }
               &:after        { @include make-fa('\f107', #fff); 
@@ -352,6 +474,53 @@ strong { @extend .semibold; }
                 &:after    { @include make-fa('\f106', #fff); }
             }
             &:last-child a { border-right: 0;}
+        }
+        @media (max-width: $screen-xs-max) {
+                              @include flexbox();
+                              @include flex-flow(column nowrap);
+                              background: none;
+            li              { @include flexbox();
+                              @include flex-flow(column nowrap);
+                              width: auto;
+                &:first-of-type {
+                              background: $tr url($img-path + 'bg_menu_1.jpg') no-repeat center center;
+                              background-size: cover;
+                }
+                &:nth-of-type(2) {
+                              background: $tr url($img-path + 'bg_menu_2.jpg') no-repeat center center;
+                              background-size: cover;
+                }
+                &:nth-of-type(3) {
+                              background: $tr url($img-path + 'bg_menu_3.jpg') no-repeat center center;
+                              background-size: cover;
+                }
+                &:nth-of-type(4) {
+                              background: $tr url($img-path + 'bg_menu_4.jpg') no-repeat center center;
+                              background-size: cover;
+                }
+                &:last-of-type {
+                              background: $tr url($img-path + 'bg_menu_5.jpg') no-repeat center center;
+                              background-size: cover;
+                }
+                a           { max-width: 100%;
+                              min-height: 1px;
+                              padding: 8px 30px 8px $grid-gutter-width / 2;
+                              overflow: hidden;
+                              display: inline-block;
+                              white-space: nowrap;
+                              text-overflow: ellipsis;
+                              border-right: 0;
+                              border-bottom-style: solid;
+                              border-bottom-width: 1px;
+                    span    { display: inline;
+                        &:after { content: " "; }
+                    }
+                    &:after { right: $grid-gutter-width / 2; }
+                }
+                &:last-child {
+                    a       { border-bottom: 0; }
+                }
+            }
         }
     }
 }
@@ -460,6 +629,10 @@ strong { @extend .semibold; }
                               margin-right: 5px; 
             }
         }
+    }
+    @media (max-width: $screen-xs-max) {
+        .submenuDynamicWrapper      { padding-right: 0; }
+        .staticItem                 { padding: $grid-gutter-width / 2; }
     }
 }
 
@@ -694,7 +867,9 @@ dl.portletServiziOnline             { border: 1px solid $link-color;
   }
   &.colonna-1-di-2                  { // metto le voci su due colonne
     dd.portletItem                  {
-      ul                            { @include content-columns(2); 
+      ul                            { @media (min-width: $screen-sm-min) {
+                                          @include content-columns(2);
+                                      }
         li                          { @include break-inside(avoid); 
                                       border-top:0;
                                       padding: 5px 0;
@@ -728,6 +903,10 @@ dl[class*='ortletNavigation']       {
     }
     dd.portletItem                  { padding: 8px 0 0;
                                       border-bottom: 3px solid $blu;
+                                      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                                          @include content-columns(2);
+                                          padding-bottom: 0.5em;
+                                      }
       ul.navTreeLevel0              { margin-bottom: 6px;
         ul                          { margin: 6px 0 5px 15px; 
             &.navTreeLevel1 ul      { margin-left: -6px; }
@@ -892,6 +1071,9 @@ dl[class*='ortletNavigation']       {
         }          
       }
     }    
+  }
+  @media (max-width: $screen-xs-max) {
+    #content & ul.listLink          { margin-left: 0; }
   }
 }
 
@@ -1110,11 +1292,13 @@ dl.portletCollection                { margin-bottom: 20px;
 .officeContactsWrapper              { background-color: $gray-bg;
                                       padding: 10px 30px 20px;
                                       margin: 40px 0;                                      
-  .officeContactsContent            { display: table;
+  @media (min-width: $screen-sm-min) {
+      .officeContactsContent        { display: table;
                                       position: relative;
                                       table-layout: fixed;
                                       width: 100%;
-  }  
+      }
+  }
   h4                                { text-transform: uppercase;
                                       color: $gray-light;
                                       font-size: 1.2em;
@@ -1122,22 +1306,25 @@ dl.portletCollection                { margin-bottom: 20px;
   h5                                { font-size: 1.05em; 
                                       margin-bottom: 0.5em;
   }
-  .officeLocation,
-  .officeContacts,
-  .officeExecutive                  { display: table-cell;
+  @media (min-width: $screen-sm-min) {
+      .officeLocation,
+      .officeContacts,
+      .officeExecutive              { display: table-cell;
                                       vertical-align: top;
-  }
-  .officeLocation                   { width: 38%;
+      }
+      .officeLocation               { width: 38%;
                                       padding-right: 2%;
-  }
-  .officeContacts                   { border-left: 1px dashed $gray-light;
+      }
+      .officeContacts               { border-left: 1px dashed $gray-light;
                                       width: 48%;
                                       padding: 0 2%;
-  }
-  .officeExecutive                  { border-left: 1px dashed $gray-light;
+      }
+      .officeExecutive              { border-left: 1px dashed $gray-light;
                                       padding-left: 2%;
                                       vertical-align: middle;
-                                      text-align: center;                                                                            
+      }
+  }
+  .officeExecutive                  { text-align: center;
     &:before                        { @include make-flaticon('businessman137', 78px); 
                                       color: $link-color;
                                       display: block;
@@ -1161,7 +1348,8 @@ dl.portletCollection                { margin-bottom: 20px;
   .officeEmail,
   .officePec                        { @extend .clearfix;
                                       padding-bottom: 3px;
-    h6                              { @extend .col-xs-2;
+    h6                              { @extend .col-xs-3;
+                                      @extend .col-sm-2;
                                       text-align: right;
                                       margin:0.3em 0 0;
                                       padding-right: 0;
@@ -1170,7 +1358,8 @@ dl.portletCollection                { margin-bottom: 20px;
                                       @extend .semibold; 
                                       white-space: nowrap;
     }
-    p                               { @extend .col-xs-10; 
+    p                               { @extend .col-xs-9;
+                                      @extend .col-sm-10;
                                       margin-bottom: 0 !important;
                                       padding-right:0;
     }
@@ -1184,6 +1373,13 @@ dl.portletCollection                { margin-bottom: 20px;
                                       width: 100%;
                                       text-overflow: ellipsis;
                                       overflow: hidden;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+                                      padding-left: $grid-gutter-width / 2;
+                                      padding-right: $grid-gutter-width / 2;
+    .officeExecutive                {
+        &:before                    { padding-top: 30px; }
     }
   }
 }
@@ -1267,13 +1463,21 @@ dl.portletCollection                { margin-bottom: 20px;
           }          
         }
         dl.portletServiziOnline     { border:0;
-                                      @media (max-width: $screen-sm-max) {
+                                      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
                                           margin-top: 1em;
                                       }
           dt.portletHeader          { background-color: $link-color;
                                       z-index: 1;
                                       padding: 15px;
           }
+        }
+        @media (max-width: $screen-xs-max) {
+            [id*="column-collective-portletpage-toprow-portlet"] {
+                .portlet                { margin-top: 1em; }
+            }
+            [id*="column-collective-portletpage-toprow-portlet"]:first-of-type {
+                .portlet:first-of-type  { margin-top: 0; }
+            }
         }
       }
     }
@@ -1304,6 +1508,15 @@ dl.portletCollection                { margin-bottom: 20px;
   #portal-footer-wrapper            { margin-top:0; }
 }
 .template-portlets.portaltype-portlet-page #portlets-below.contentwellportlets { display: none;}
+@media (max-width: $screen-xs-max)  {
+    .portaltype-portlet-page        {
+        #portletPageColumns         {
+            .portletPageColumn      { width: auto;
+                                      float: none;
+            }
+        }
+    }
+}
 
 // PORTLET IN RIGA PER NOTIZIE
 // (la lascio fuori... può servire anche altrove)
@@ -1320,8 +1533,20 @@ dl.portletCollection                { margin-bottom: 20px;
                                     margin-right: 5px;
     }
   }
-  .boxItem                        { @extend .col-sm-3;     
-                                    padding: 0 $grid-gutter-width/2;                               
+  .boxItem                        { @extend .col-sm-6;
+                                    @extend .col-md-3;
+                                    padding: 0 $grid-gutter-width/2;
+                                    @media (max-width: $screen-sm-max) {
+                                        &:nth-of-type(3),
+                                        &:nth-of-type(4) {
+                                            margin-top: 1em;
+                                        }
+                                    }
+                                    @media (max-width: $screen-xs-max) {
+                                        &:nth-of-type(2) {
+                                            margin-top: 1em;
+                                        }
+                                    }
     .boxItemContent               { background-color: #FFF;
                                     padding: 10px;
                                     height: 200px;
@@ -1415,6 +1640,13 @@ dl.portletCollection                { margin-bottom: 20px;
       &:hover                     { border-bottom: 1px solid #FFF !important; color: #FFF !important;}
     }
   }
+  @media (max-width: $screen-xs-max) {
+    img                             { max-width: 100%;
+                                      height: auto;
+        &.tileImage                 { float: none;
+                                      margin: 0 0 0.5em; }
+    }
+  }
 }
 #plone-document-byline              { text-align: right;
                                       font-size: 0.9em;
@@ -1424,6 +1656,8 @@ dl.portletCollection                { margin-bottom: 20px;
 
 // DOCUMENT ACTIONS
 #content .documentActions           { @extend .pull-right; 
+                                      @extend .hidden-xs;
+                                      @extend .hidden-sm;
                                       position: relative;
                                       z-index: 1;
   ul                                { display: inline-block;
@@ -1607,12 +1841,22 @@ dl.portletBandi                     {
                                       padding: 0.05em 0.5em;
             }
         }
+        @media (max-width: $screen-xs-max) {
+            li                      { display: list-item;
+                                      border: none;
+                                      padding-left: 0;
+                &:before            { content: "\00bb"; }
+            }
+        }
     }
 
     #portlets-footer                { padding: {top:20px; bottom:40px};
         h4                          { @extend .light;
                                       font-size: 1.5em;
                                       margin: 0 0 15px;
+                                      @media (max-width: $screen-sm-max) {
+                                          font-size: 1.4em;
+                                      }
         }
         h5                          { font-size: 1.2em;
                                       @extend .light;
@@ -1635,8 +1879,10 @@ dl.portletBandi                     {
           &:focus,
           &:hover                   { border: 1px solid #FFF; }
         }
-        dl.portlet                  { margin-bottom: 0; 
-                                      padding: 0 20px;
+        dl.portlet                  { margin-bottom: 0;
+                                      @media (min-width: $screen-md-min) { 
+                                          padding: 0 20px;
+                                      }
         }
         dt.portletHeader            { background-color: $tr;
                                       color: #FFF;
@@ -1683,9 +1929,15 @@ dl.portletBandi                     {
             .flexbox &              { @include flexbox();
                                       @include flex-flow(row wrap);
                 [class*="FooterPortletManager"] {
-                                      @include flex(0 1 50%);
+                                      @include flex(0 1 49.5%);
                                       display: inline-block; // this makes flex items wrap in IE10
                 }
+            }
+        }
+        @media (max-width: $screen-xs-max) {
+            [class*="FooterPortletManager"] {
+                                      padding-left: 0;
+                                      padding-right: 0;
             }
         }
     }
@@ -1713,6 +1965,7 @@ dl.portletBandi                     {
     .InHeaderPortletManager3        { @include flexbox();
       > div                         { @include flexbox();
                                       width: 20%;
+                                      @include flex(0 1 20%);
       }
     }
     .InHeaderPortletManager3        { padding: 18px 0; }
@@ -1721,7 +1974,26 @@ dl.portletBandi                     {
   #portletPageMiddleRowWrapper      { background-color: $gray-bg; 
     #portletPageMiddleRowContent    { padding: 40px 0;}
     #portletPageFirstColumn         { width: 75%; }
-    #portletPageSecondColumn        { width: 20.8%; }
+    #portletPageSecondColumn        { width: 20.8%;
+        .portletCalendar            { margin-right: $grid-gutter-width / 2; }
+    }
+  }
+  @media (max-width: $screen-sm-max) {
+      #portletPageMiddleRowWrapper  {
+          #portletPageFirstColumn   { width: 66%; }
+          #portletPageSecondColumn  { width: 33%; }
+      }
+  }
+  @media (max-width: $screen-xs-max) {
+      #portlets-in-header           {
+          [class*="InHeaderPortletManager"]{ display: none; }
+      }
+      #portletPageMiddleRowWrapper  {
+          #portletPageFirstColumn   { width: auto; }
+          #portletPageSecondColumn  { width: auto;
+            .portletCalendar        { margin-right: 0; }
+          }
+      }
   }
 }
 // riga superiore
@@ -1792,6 +2064,19 @@ dl.portletBandi                     {
   .InHeaderPortletManager3               { 
     > div:first-child .homeColonnaBottom { border-left: 0; }
   }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .portletHome                    {
+        &.homeColonnaBottom         {
+            ul li                   {
+                a                   {
+                    &.external-link,
+                    &[class*='fa-'] { padding-left: $grid-gutter-width / 2; }
+                    &:before        { left: -7px; }
+                }
+            }
+        }
+    }
+  }
 }
 div.titolo-servizi-online           { background-color: $gray-bg; 
   .portletItem                      { padding: 20px 25px 12px;
@@ -1855,7 +2140,8 @@ div.titolo-servizi-online           { background-color: $gray-bg;
   }
 
   // news verticale con foto
-  .boxNewsImg                       { @extend .col-sm-4; 
+  .boxNewsImg                       { @extend .col-sm-6;
+                                      @extend .col-md-4; 
     .newsContent                    { background-color: #FFF; 
                                       position: relative;
     }
@@ -1884,7 +2170,8 @@ div.titolo-servizi-online           { background-color: $gray-bg;
   }
 
   // notizia grande
-  .boxNewsImg.boxNewsImgBig         { @extend .col-sm-8;
+  .boxNewsImg.boxNewsImgBig         { @extend .col-sm-12;
+                                      @extend .col-md-8;
                                       padding-left: 20px;
     .boxNewsImgBigContent           { position: relative;
                                       height: 340px;
@@ -1948,7 +2235,8 @@ div.titolo-servizi-online           { background-color: $gray-bg;
   }
 
   // le news piccole
-  .boxNews                          { @extend .col-sm-4;
+  .boxNews                          { @extend .col-sm-6;
+                                      @extend .col-md-4;
     .newsContent                    { background-color: #FFF; 
                                       height: 155px;
                                       padding: 12px;
@@ -1987,6 +2275,24 @@ div.titolo-servizi-online           { background-color: $gray-bg;
                                       margin-left: 12px;
                                       color: #aaa;
       }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+                                      margin-bottom: 40px;
+    .boxNewsImg,
+    .boxNewsImg.boxNewsImgBig,
+    .boxNews                        { padding-right: 0; }
+    .boxNewsImg                     {
+        .newsImg                    {
+            img                      { display: block;
+                                      margin-left: auto;
+                                      margin-right: auto;
+            }
+        }
+        .newsText                   { padding: 10px; }
+        &.boxNewsImgBig             {
+            .newsContent            { padding: 10px; }
+        }
     }
   }
 }
