@@ -1,5 +1,5 @@
 @import "cciaapd_variables";
-@import "import_bootstrap";
+@import "import_bootstrap_min";
 @import "mixins_utility";
 @import "plonefix";
 @import "sunburst_public";
@@ -1953,6 +1953,7 @@ dl.portletBandi                     {
                                       position: relative;
                                       table-layout: fixed;
                                       margin-bottom: 0;
+                                      width: 100%;
     .InHeaderPortletManager1,
     .InHeaderPortletManager2,
     .InHeaderPortletManager3        { padding: 0; 
@@ -1965,6 +1966,7 @@ dl.portletBandi                     {
     .InHeaderPortletManager3        { @include flexbox();
       > div                         { @include flexbox();
                                       width: 20%;
+                                      float: left;
                                       @include flex(0 1 20%);
       }
     }
@@ -2031,6 +2033,7 @@ dl.portletBandi                     {
     }
     &.homeColonnaBottom             { padding: 0 0 0;
                                       border-left: 1px dashed $gray-lighter;
+                                      max-width: 100%;
       .portletItem                  { padding: 0 15px; }
       ul li                         { padding: 7px 0;
         a                           { display: block;
