@@ -74,7 +74,7 @@
 
 @mixin sfumagiu($height: 44px, $bg: #FFF) {
   &:after { content: "";
-            pointer-events: none;
+            //pointer-events: none;
             position: absolute;
             width: 100%;
             height: $height;

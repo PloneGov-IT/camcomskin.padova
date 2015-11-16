@@ -5781,7 +5781,6 @@ dl.portletCollection {
       position: relative; }
       .boxCollezioneRigaNotizie .boxItem .boxItemContent:after {
         content: "";
-        pointer-events: none;
         position: absolute;
         width: 100%;
         height: 44px;
@@ -6407,7 +6406,6 @@ div.titolo-servizi-online {
   padding: 12px; }
   .boxNotizieHome .boxNewsImg .newsText:after {
     content: "";
-    pointer-events: none;
     position: absolute;
     width: 100%;
     height: 25px;
