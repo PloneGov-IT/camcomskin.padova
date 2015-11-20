@@ -6493,7 +6493,7 @@ input.inputLabelActive {
 div.rerPortletAdvancedStatic dt.portletHeader, dl.rerPortletAdvancedStatic dd.portletFooter a,
 div.rerPortletAdvancedStatic dd.portletFooter a, dl.portletImg dt.portletHeader .tile,
 dl.portletImg dt.portletHeader a.tile, dl[class*='ortletNavigation'] dt.portletHeader .tile,
-dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #content blockquote.pullquote, .rifBando h3 strong, #portal-footer-wrapper #portal-colophon a, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label {
+dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #content blockquote.pullquote, .rifBando h3 strong, #portal-footer-wrapper #portal-colophon a, .boxAvvisi .boxItem .titleItem a, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label {
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
@@ -8525,9 +8525,7 @@ dl.portletBandi dd.portletItem {
     -o-transition: all 0.1s ease-in;
     transition: all 0.1s ease-in; }
     #portal-footer-wrapper a:focus, #portal-footer-wrapper a:hover {
-      color: #F2F2F2 !important;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 2px; }
+      color: #ead313 !important; }
   #portal-footer-wrapper .manageFooterPortletsLink a {
     color: #F2F2F2 !important;
     background-color: rgba(255, 255, 255, 0.1);
@@ -8638,7 +8636,7 @@ dl.portletBandi dd.portletItem {
             border: 0;
             color: #FFF; }
             #portal-footer-wrapper #portlets-footer .lista-links ul li a:focus, #portal-footer-wrapper #portlets-footer .lista-links ul li a:hover {
-              color: #FFF; }
+              color: #ead313; }
     @media (min-width: 768px) and (max-width: 991px) {
       .no-flexbox #portal-footer-wrapper #portlets-footer [class*="FooterPortletManager"] {
         min-height: 225px; }
@@ -9034,10 +9032,83 @@ div.titolo-servizi-online {
     .boxNotizieHome .boxNewsImg.boxNewsImgBig .newsContent {
       padding: 10px; } }
 
-.boxAvvisi {
+.boxAvvisi h4.boxHeader {
+  margin: 0;
+  background-color: #EEE;
+  color: #283641; }
+  .boxAvvisi h4.boxHeader:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "";
+    color: inherit;
+    font-size: 1.4em;
+    margin-right: 5px; }
+.boxAvvisi .boxItem {
   background-color: #283641;
   color: #FFF;
+  border: 0;
   padding: 0 15px; }
+  .boxAvvisi .boxItem.firstItem {
+    padding-top: 0; }
+  .boxAvvisi .boxItem .titleItem {
+    border-bottom: 1px solid #CCC;
+    padding: 15px 0; }
+    .boxAvvisi .boxItem .titleItem a,
+    .boxAvvisi .boxItem .titleItem .dataItem {
+      color: #FFF; }
+    .boxAvvisi .boxItem .titleItem a:focus,
+    .boxAvvisi .boxItem .titleItem a:hover {
+      color: #ead313; }
+    .boxAvvisi .boxItem .titleItem .dataItem {
+      padding-bottom: 6px; }
+.boxAvvisi .boxFooter {
+  padding: 15px;
+  background-color: #283641; }
+  .boxAvvisi .boxFooter a {
+    color: #FFF; }
+    .boxAvvisi .boxFooter a:focus, .boxAvvisi .boxFooter a:hover {
+      color: #ead313; }
+    .boxAvvisi .boxFooter a:after {
+      color: #CCC; }
+
+.boxEventi h4.boxHeader {
+  margin: 0;
+  background-color: #EEE;
+  color: #283641; }
+  .boxEventi h4.boxHeader:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "";
+    color: inherit;
+    font-size: 1.4em;
+    margin-right: 5px; }
+.boxEventi .boxItem {
+  background-color: #fff;
+  color: #FFF;
+  border: 0;
+  padding: 0 15px; }
+  .boxEventi .boxItem.firstItem {
+    padding-top: 0; }
+  .boxEventi .boxItem:nth-child(2n) {
+    background-color: #EEE; }
+  .boxEventi .boxItem .dataItem {
+    color: #313131; }
+  .boxEventi .boxItem .titleItem {
+    padding: 15px 0; }
+    .boxEventi .boxItem .titleItem a {
+      color: #313131; }
+    .boxEventi .boxItem .titleItem a:focus,
+    .boxEventi .boxItem .titleItem a:hover {
+      color: #9c3524; }
+.boxEventi .boxFooter {
+  padding: 15px;
+  background-color: #283641; }
+  .boxEventi .boxFooter a {
+    color: #FFF; }
+    .boxEventi .boxFooter a:focus, .boxEventi .boxFooter a:hover {
+      color: #ead313; }
+    .boxEventi .boxFooter a:after {
+      color: #CCC; }
 
 #content table.modulisticaListing tr.odd th.modulisticaDocument {
   border: 1px solid #999; }

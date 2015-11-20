@@ -1805,9 +1805,9 @@ dl.portletBandi                     {
     a                               { color: #FFF;
                                       @include transition(all .1s ease-in);
         &:focus,
-        &:hover                     { color: $grayVeryLighty !important;
-                                      background-color: transparentize(#FFF, .9);
-                                      border-radius: 2px;
+        &:hover                     { color: $yellow !important;
+                                      //background-color: transparentize(#FFF, .9);
+                                      //border-radius: 2px;
         }
     }
     .manageFooterPortletsLink a     { color: $grayVeryLighty !important;
@@ -1915,7 +1915,7 @@ dl.portletBandi                     {
                 a                   { border:0; 
                                       color: #FFF;
                   &:focus,
-                  &:hover           { color: #FFF; }
+                  &:hover           { color: $yellow; }
                 }
               }
             }
@@ -2299,12 +2299,71 @@ div.titolo-servizi-online           { background-color: $gray-bg;
 
 // AVVISI E COMUNICAZIONI
 .boxAvvisi                          { 
-  .boxHeader                        { }
+  h4.boxHeader                      { margin: 0;
+                                      background-color: $gray-bg;
+                                      color: $blu;
+    &:before                        { @include make-fa('\f0eb'); 
+                                      font-size: 1.4em;
+                                      margin-right: 5px;
+    }
+  }
   .boxItem                          { background-color: $blu;
                                       color: #FFF;
+                                      border: 0;
                                       padding: 0 15px;
-    .titleItem                      {}
+    &.firstItem                     { padding-top: 0; }
+    .titleItem                      { border-bottom: 1px solid $gray-lighter;
+                                      padding: 15px 0;
+      a,
+      .dataItem                     { color: #FFF;}
+      a:focus,
+      a:hover                       { color: $yellow; }
+      a                             { @extend .regular; }
+      .dataItem                     { padding-bottom: 6px; }
+    }
   }
+  .boxFooter                        { padding: 15px;
+                                      background-color: $blu;
+    a                               { color: #FFF; 
+      &:focus,
+      &:hover                       { color: $yellow; }
+      &:after                       { color: $gray-lighter; }
+    }
+  }
+}
+
+// APPUNTAMENTI/EVENTI
+.boxEventi                          {
+  h4.boxHeader                      { margin: 0;
+                                      background-color: $gray-bg;
+                                      color: $blu;
+    &:before                        { @include make-fa('\f133'); 
+                                      font-size: 1.4em;
+                                      margin-right: 5px;
+    }
+  }
+  .boxItem                          { background-color: #fff;
+                                      color: #FFF;
+                                      border: 0;
+                                      padding: 0 15px;
+    &.firstItem                     { padding-top: 0; }    
+    &:nth-child(2n)                 { background-color: $gray-bg; }
+    .dataItem                       { color: $text-color;
+    }
+    .titleItem                      { padding: 15px 0;
+      a                             { color: $text-color;}
+      a:focus,
+      a:hover                       { color: $link-color; }
+    }
+  }
+  .boxFooter                        { padding: 15px;
+                                      background-color: $blu;
+    a                               { color: #FFF; 
+      &:focus,
+      &:hover                       { color: $yellow; }
+      &:after                       { color: $gray-lighter; }
+    }
+  }                     
 }
 
 // FIX VISTA MODULISTICA
