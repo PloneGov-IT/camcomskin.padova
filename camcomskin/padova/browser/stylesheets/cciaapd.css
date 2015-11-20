@@ -809,7 +809,7 @@ address {
   .row:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .officeContactsWrapper .officePhone h6,
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .boxEventi .boxItem p.dataItem, .col-sm-2, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
 .officeContactsWrapper .officePec h6, .col-md-2, .col-lg-2, .col-xs-3, .officeContactsWrapper .officePhone h6,
@@ -818,7 +818,7 @@ address {
 .officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, .boxCollezioneRigaNotizie .boxItem, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-md-4, #portal-logo, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-lg-4, .col-xs-5, .col-sm-5, #portal-logo, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-md-6, .colonna-1-di-2, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
-.officeContactsWrapper .officePec p, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officePec p, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .boxEventi .boxItem .titleItem, .col-sm-10, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
 .officeContactsWrapper .officePec p, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-md-12, .col-lg-12 {
@@ -827,19 +827,19 @@ address {
   padding-left: 15px;
   padding-right: 15px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .officeContactsWrapper .officePhone h6,
+.col-xs-1, .col-xs-2, .boxEventi .boxItem p.dataItem, .col-xs-3, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
 .officeContactsWrapper .officePec h6, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
-.officeContactsWrapper .officePec p, .col-xs-10, .col-xs-11, .col-xs-12 {
+.officeContactsWrapper .officePec p, .col-xs-10, .boxEventi .boxItem .titleItem, .col-xs-11, .col-xs-12 {
   float: left; }
 
 .col-xs-1 {
   width: 8.3333333333%; }
 
-.col-xs-2 {
+.col-xs-2, .boxEventi .boxItem p.dataItem {
   width: 16.6666666667%; }
 
 .col-xs-3, .officeContactsWrapper .officePhone h6,
@@ -869,7 +869,7 @@ address {
 .officeContactsWrapper .officePec p {
   width: 75%; }
 
-.col-xs-10 {
+.col-xs-10, .boxEventi .boxItem .titleItem {
   width: 83.3333333333%; }
 
 .col-xs-11 {
@@ -2676,12 +2676,12 @@ input[type="button"].btn-block {
 .officeContactsWrapper .officeEmail:before,
 .officeContactsWrapper .officePec:before, .template-pp_homepage_view #portletPageColumns .portletPageColumn:before, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:before, .section-homepage #portlets-in-header .InHeaderPortletManager1:before,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:before,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
+.section-homepage #portlets-in-header .InHeaderPortletManager3:before, .boxEventi .boxItem:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
 .officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:after,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:after {
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .boxEventi .boxItem:after {
   content: " ";
   display: table; }
 .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
@@ -2689,7 +2689,7 @@ input[type="button"].btn-block {
 .officeContactsWrapper .officeEmail:after,
 .officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:after,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:after {
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .boxEventi .boxItem:after {
   clear: both; }
 
 .center-block {
@@ -4015,7 +4015,7 @@ input.inputLabelActive {
 div.rerPortletAdvancedStatic dt.portletHeader, dl.rerPortletAdvancedStatic dd.portletFooter a,
 div.rerPortletAdvancedStatic dd.portletFooter a, dl.portletImg dt.portletHeader .tile,
 dl.portletImg dt.portletHeader a.tile, dl[class*='ortletNavigation'] dt.portletHeader .tile,
-dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #content blockquote.pullquote, .rifBando h3 strong, #portal-footer-wrapper #portal-colophon a, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label {
+dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #content blockquote.pullquote, .rifBando h3 strong, #portal-footer-wrapper #portal-colophon a, .boxAvvisi .boxItem .titleItem a, .boxEventi .boxItem p.dataItem .dataDay, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label {
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
@@ -5112,6 +5112,54 @@ dl.portletServiziOnline {
     font-size: 60px;
     bottom: -9px; }
 
+dl.portletFocus {
+  margin-bottom: 0;
+  min-height: 13em;
+  position: relative;
+  background-color: #1e2932;
+  margin-right: 3.5%;
+  padding: 15px 20px; }
+  dl.portletFocus.colonna-1-di-2 {
+    width: 48.25%; }
+  dl.portletFocus.colonna-1-di-3 {
+    width: 31%; }
+  dl.portletFocus.colonna-1-di-4 {
+    width: 22.375%; }
+  #portletPageFirstColumn > div:last-child dl.portletFocus {
+    margin-right: 0; }
+  dl.portletFocus dt, dl.portletFocus dd {
+    color: #FFF; }
+  dl.portletFocus dt.portletHeader {
+    font-size: 1.2em;
+    border: 0;
+    padding: 0; }
+    dl.portletFocus dt.portletHeader a.tile {
+      color: #FFF; }
+  dl.portletFocus dd.portletItem {
+    padding-top: 10px; }
+  dl.portletFocus dd.portletFooter {
+    padding: 0;
+    margin-left: -20px !important;
+    border: 0;
+    font-style: normal;
+    text-align: left;
+    width: 86%;
+    font-size: 1em;
+    padding-top: 10px; }
+    dl.portletFocus dd.portletFooter a {
+      color: #FFF;
+      display: block;
+      padding: 4px 20px;
+      background-color: #9c3524; }
+      dl.portletFocus dd.portletFooter a:focus, dl.portletFocus dd.portletFooter a:hover {
+        background-color: #73271a;
+        color: #FFF !important; }
+      dl.portletFocus dd.portletFooter a:after {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: "";
+        color: inherit; }
+
 dl[class*='ortletNavigation'] dt.portletHeader {
   padding: 0;
   background-color: transparent; }
@@ -6046,9 +6094,7 @@ dl.portletBandi dd.portletItem {
     -o-transition: all 0.1s ease-in;
     transition: all 0.1s ease-in; }
     #portal-footer-wrapper a:focus, #portal-footer-wrapper a:hover {
-      color: #F2F2F2 !important;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 2px; }
+      color: #ead313 !important; }
   #portal-footer-wrapper .manageFooterPortletsLink a {
     color: #F2F2F2 !important;
     background-color: rgba(255, 255, 255, 0.1);
@@ -6159,7 +6205,7 @@ dl.portletBandi dd.portletItem {
             border: 0;
             color: #FFF; }
             #portal-footer-wrapper #portlets-footer .lista-links ul li a:focus, #portal-footer-wrapper #portlets-footer .lista-links ul li a:hover {
-              color: #FFF; }
+              color: #ead313; }
     @media (min-width: 768px) and (max-width: 991px) {
       .no-flexbox #portal-footer-wrapper #portlets-footer [class*="FooterPortletManager"] {
         min-height: 225px; }
@@ -6184,6 +6230,9 @@ dl.portletBandi dd.portletItem {
         padding-left: 0;
         padding-right: 0; } }
 
+@media (min-width: 768px) {
+  .section-homepage #portal-top {
+    padding-bottom: 20px; } }
 .section-homepage #viewlet-above-content-title,
 .section-homepage h1.documentFirstHeading {
   display: none; }
@@ -6196,8 +6245,7 @@ dl.portletBandi dd.portletItem {
   display: table;
   position: relative;
   table-layout: fixed;
-  margin-bottom: 0;
-  width: 100%; }
+  margin-bottom: 0; }
   .section-homepage #portlets-in-header .InHeaderPortletManager1,
   .section-homepage #portlets-in-header .InHeaderPortletManager2,
   .section-homepage #portlets-in-header .InHeaderPortletManager3 {
@@ -6254,6 +6302,12 @@ dl.portletBandi dd.portletItem {
     width: auto; }
     .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn .portletCalendar {
       margin-right: 0; } }
+.section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic div.portletItem h3 {
+  color: #283641; }
+.section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic {
+  margin-top: 10px; }
+  .section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic:before {
+    color: #283641; }
 
 #portlets-in-header {
   background-color: #FFF;
@@ -6556,6 +6610,96 @@ div.titolo-servizi-online {
       padding: 10px; }
     .boxNotizieHome .boxNewsImg.boxNewsImgBig .newsContent {
       padding: 10px; } }
+
+.boxAvvisi h4.boxHeader {
+  margin: 0;
+  background-color: #EEE;
+  color: #283641;
+  padding-bottom: 10px; }
+  .boxAvvisi h4.boxHeader:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "";
+    color: inherit;
+    font-size: 1.4em;
+    margin-right: 5px; }
+.boxAvvisi .boxItem {
+  background-color: #283641;
+  color: #FFF;
+  border: 0;
+  padding: 0 15px; }
+  .boxAvvisi .boxItem.firstItem {
+    padding-top: 0; }
+  .boxAvvisi .boxItem .titleItem {
+    border-bottom: 1px solid #CCC;
+    padding: 15px 0; }
+    .boxAvvisi .boxItem .titleItem a,
+    .boxAvvisi .boxItem .titleItem .dataItem {
+      color: #FFF; }
+    .boxAvvisi .boxItem .titleItem a:focus,
+    .boxAvvisi .boxItem .titleItem a:hover {
+      color: #ead313; }
+    .boxAvvisi .boxItem .titleItem .dataItem {
+      padding-bottom: 6px; }
+.boxAvvisi .boxFooter {
+  padding: 15px;
+  background-color: #283641; }
+  .boxAvvisi .boxFooter a {
+    color: #FFF; }
+    .boxAvvisi .boxFooter a:focus, .boxAvvisi .boxFooter a:hover {
+      color: #ead313; }
+    .boxAvvisi .boxFooter a:after {
+      color: #CCC; }
+
+.boxEventi {
+  background-color: #FFF; }
+  .boxEventi h4.boxHeader {
+    margin: 0;
+    background-color: #EEE;
+    color: #283641;
+    padding-bottom: 10px; }
+    .boxEventi h4.boxHeader:before {
+      display: inline-block;
+      font-family: FontAwesome;
+      content: "";
+      color: inherit;
+      font-size: 1.4em;
+      margin-right: 5px; }
+  .boxEventi .boxItem {
+    background-color: #fff;
+    color: #FFF;
+    border: 0;
+    padding: 10px 10px;
+    margin: 0 10px; }
+    .boxEventi .boxItem:nth-child(2n+1) {
+      background-color: #EEE; }
+    .boxEventi .boxItem:nth-child(2n) {
+      padding: 20px 10px; }
+    .boxEventi .boxItem p.dataItem {
+      color: #313131;
+      margin-bottom: 0;
+      padding: 0 8px 0 0;
+      text-align: center; }
+      .boxEventi .boxItem p.dataItem .dataDay {
+        display: block;
+        font-size: 1.6em;
+        line-height: 1em; }
+      .boxEventi .boxItem p.dataItem .dataMonth {
+        text-transform: uppercase; }
+    .boxEventi .boxItem .titleItem {
+      padding: 0 0 0 12px;
+      margin: 0;
+      min-height: 5em;
+      border-left: 1px solid #313131; }
+      .boxEventi .boxItem .titleItem a {
+        color: #313131; }
+      .boxEventi .boxItem .titleItem a:focus,
+      .boxEventi .boxItem .titleItem a:hover {
+        color: #9c3524; }
+  .boxEventi .boxFooter {
+    padding: 15px; }
+    .boxEventi .boxFooter a:after {
+      color: #CCC; }
 
 #content table.modulisticaListing tr.odd th.modulisticaDocument {
   border: 1px solid #999; }

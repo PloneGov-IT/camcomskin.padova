@@ -882,6 +882,50 @@ dl.portletServiziOnline             { border: 1px solid $link-color;
   }
 }
 
+// FOCUS ON
+dl.portletFocus                     { margin-bottom:0;
+                                      min-height: 13em;
+                                      position: relative;
+                                      background-color: #1e2932;
+                                      margin-right: 3.5%;
+                                      padding: 15px 20px;
+  &.colonna-1-di-2                  { width: 48.25%; }
+  &.colonna-1-di-3                  { width: 31%; }
+  &.colonna-1-di-4                  { width: 22.375%; }
+  #portletPageFirstColumn > div:last-child & { margin-right: 0; }
+  dt, dd                            { 
+                                      color: #FFF;
+  }
+  dt.portletHeader                  { font-size: 1.2em;
+                                      border:0;
+                                      padding: 0;
+    a.tile                          { color: #FFF; 
+    }
+  }
+  dd.portletItem                    { padding-top: 10px;
+
+  }
+  dd.portletFooter                  { padding:0;
+                                      margin-left: -20px !important;
+                                      border: 0;
+                                      font-style: normal;
+                                      text-align: left;
+                                      width:86%;
+                                      font-size: 1em;
+                                      padding-top: 10px;
+    a                               { color: #FFF;
+                                      display: block;                                      
+                                      padding: 4px 20px; 
+                                      background-color: $brand-primary;
+      &:focus,
+      &:hover                       { background-color: darken($brand-primary, 10%);
+                                      color: #FFF !important;
+      }
+      &:after                       { @include make-fa('\f105'); }
+    }
+  }
+}
+
 // PORTLET NAVIGAZIONE
 dl[class*='ortletNavigation']       {
     dt.portletHeader                { padding:0;
@@ -1805,9 +1849,9 @@ dl.portletBandi                     {
     a                               { color: #FFF;
                                       @include transition(all .1s ease-in);
         &:focus,
-        &:hover                     { color: $grayVeryLighty !important;
-                                      background-color: transparentize(#FFF, .9);
-                                      border-radius: 2px;
+        &:hover                     { color: $yellow !important;
+                                      //background-color: transparentize(#FFF, .9);
+                                      //border-radius: 2px;
         }
     }
     .manageFooterPortletsLink a     { color: $grayVeryLighty !important;
@@ -1915,7 +1959,7 @@ dl.portletBandi                     {
                 a                   { border:0; 
                                       color: #FFF;
                   &:focus,
-                  &:hover           { color: #FFF; }
+                  &:hover           { color: $yellow; }
                 }
               }
             }
@@ -1945,6 +1989,9 @@ dl.portletBandi                     {
 
 // HOMEPAGE
 .section-homepage                   { 
+  #portal-top                       { 
+    @media (min-width: $screen-sm)  { padding-bottom: 20px; }
+  }
   #viewlet-above-content-title,
   h1.documentFirstHeading           { display: none; }
   #portal-top                       { background-color: $bgmenu; margin-bottom:0; }
@@ -1953,7 +2000,7 @@ dl.portletBandi                     {
                                       position: relative;
                                       table-layout: fixed;
                                       margin-bottom: 0;
-                                      width: 100%;
+                                      // width: 100%;
     .InHeaderPortletManager1,
     .InHeaderPortletManager2,
     .InHeaderPortletManager3        { padding: 0; 
@@ -1996,6 +2043,12 @@ dl.portletBandi                     {
             .portletCalendar        { margin-right: 0; }
           }
       }
+  }
+  #portletPageFirstColumn           {
+    div.rerPortletAdvancedStatic div.portletItem h3 { color: $blu; } // stile titolo focus on
+    div.rerPortletAdvancedStatic    { margin-top: 10px;
+      &:before { color: $blu; }
+    }
   }
 }
 // riga superiore
@@ -2299,6 +2352,94 @@ div.titolo-servizi-online           { background-color: $gray-bg;
     }
   }
 }
+
+// AVVISI E COMUNICAZIONI
+.boxAvvisi                          { 
+  h4.boxHeader                      { margin: 0;
+                                      background-color: $gray-bg;
+                                      color: $blu;
+                                      padding-bottom: 10px;
+    &:before                        { @include make-fa('\f0eb'); 
+                                      font-size: 1.4em;
+                                      margin-right: 5px;
+    }
+  }
+  .boxItem                          { background-color: $blu;
+                                      color: #FFF;
+                                      border: 0;
+                                      padding: 0 15px;
+    &.firstItem                     { padding-top: 0; }
+    .titleItem                      { border-bottom: 1px solid $gray-lighter;
+                                      padding: 15px 0;
+      a,
+      .dataItem                     { color: #FFF;}
+      a:focus,
+      a:hover                       { color: $yellow; }
+      a                             { @extend .regular; }
+      .dataItem                     { padding-bottom: 6px; }
+    }
+  }
+  .boxFooter                        { padding: 15px;
+                                      background-color: $blu;
+    a                               { color: #FFF; 
+      &:focus,
+      &:hover                       { color: $yellow; }
+      &:after                       { color: $gray-lighter; }
+    }
+  }
+}
+
+// APPUNTAMENTI/EVENTI
+.boxEventi                          { background-color: #FFF;
+  h4.boxHeader                      { margin: 0;
+                                      background-color: $gray-bg;
+                                      color: $blu;
+                                      padding-bottom: 10px;
+    &:before                        { @include make-fa('\f133'); 
+                                      font-size: 1.4em;
+                                      margin-right: 5px;
+    }
+  }
+  .boxItem                          { background-color: #fff;
+                                      color: #FFF;
+                                      border: 0;
+                                      padding: 10px 10px;
+                                      margin: 0 10px;
+                                      @extend .clearfix;
+    &:nth-child(2n+1)               { background-color: $gray-bg; }
+    &:nth-child(2n)                 { padding: 20px 10px;}
+    p.dataItem                      { color: $text-color;
+                                      margin-bottom: 0;
+                                      @extend .col-xs-2;
+                                      padding:0 8px 0 0;
+                                      text-align: center;
+      .dataDay                      { display: block; 
+                                      font-size: 1.6em; 
+                                      @extend .regular;
+                                      line-height: 1em;
+      }
+      .dataMonth                    { text-transform: uppercase;
+      }
+    }
+    .titleItem                      { @extend .col-xs-10;
+                                      padding: 0 0 0 12px;
+                                      margin:0;
+                                      min-height: 5em;
+                                      border-left: 1px solid $text-color;
+      a                             { color: $text-color;}
+      a:focus,
+      a:hover                       { color: $link-color; }
+    }
+  }
+  .boxFooter                        { padding: 15px;
+    a                               {  
+      &:focus,
+      &:hover                       {  }
+      &:after                       { color: $gray-lighter; }
+    }
+  }                     
+}
+
 
 // FIX VISTA MODULISTICA
 #content table.modulisticaListing   { @extend .table, .table-condensed;
