@@ -362,8 +362,10 @@ body#content.mceContentBody {font-family: $font-family-sans-serif; font-size: 14
 }
 
 div.width-1\3a 2 { @extend .col-sm-6; } /* .width-1:2 */
-div.width-1\3a 4 { @extend .col-sm-6;
-                   @extend .col-md-3; } /* .width-1:4 */
+div.width-1\3a 4 { @extend .col-sm-6;   /* .width-1:4 */
+                   @extend .col-md-3;
+    #plonebrowser & { @extend .col-sm-3; } // fix for tiny browsers
+}
 div.width-3\3a 4 { @extend .col-sm-9; } /* .width-3:4 */
 div.width-full   { @extend .col-sm-12; padding-left: 0; padding-right: 0;}
 div.width-1\3a 3 { @extend .col-sm-4; } /* .width-1:3 */
