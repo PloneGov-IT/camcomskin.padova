@@ -23,6 +23,8 @@
                 value="portletHome homeColonnaBottom|Colonna di link inferiori in home" />
             <element
                 value="portletFocus|Box Focus on" />
+            <element
+                value="portletBannerTxt|Banner con testo home" />
         </property>
     </object>
     <!-- object name="imaging_properties"
