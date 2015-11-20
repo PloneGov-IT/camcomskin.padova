@@ -1,3 +1,10 @@
 #camcomskin-searchbox {
   display: none;
 }
+
+#content .archivioItem {
+    font-size: 1.15em;
+    padding-left: 30px;
+    margin-top: 10px;
+    position: relative;
+}
