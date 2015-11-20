@@ -21,6 +21,8 @@
                 value="portletHome homeColonnaTop|Colonna di link superiori in home" />
             <element
                 value="portletHome homeColonnaBottom|Colonna di link inferiori in home" />
+            <element
+                value="portletFocus|Box Focus on" />
         </property>
     </object>
     <!-- object name="imaging_properties"

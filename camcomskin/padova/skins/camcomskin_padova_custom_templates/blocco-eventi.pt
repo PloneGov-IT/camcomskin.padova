@@ -37,11 +37,11 @@
             tal:attributes="class python:firstItem and 'boxItem firstItem' or 'boxItem'">
           
           <p class="dataItem" tal:condition="view/data/show_dates">
-            <span class="dataDay" tal:content="python:obj.start.strftime('%d')"/>
-            <span class="dataeMonth"
+            <span class="dataMonth"
                  tal:define="months python:('Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic');
                              month  python: int(obj.start.strftime('%m'))-1"
                  tal:content="python: months[month]" />
+            <span class="dataDay" tal:content="python:obj.start.strftime('%d')"/>            
           </p>
             <h5 class="titleItem">              
                 <a href="#"
