@@ -53,6 +53,12 @@ strong { @extend .semibold; }
     .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding-left:0; padding-right: 0;}
 }
 
+// fix in edit portlet
+body[class*='subsection-++contextportlets++'] {
+  #portlets-below,
+  #portlets-in-header                     { display: none; }
+}
+
 #portal-personaltools-wrapper         { border-bottom: 0;
     .userrole-anonymous &             { display: none; }
     #user-name                        { @extend .bold;
@@ -1921,7 +1927,7 @@ dl.portletBandi                     {
                                       margin-top: 0.8em;
                                       border-radius: 2px;
           &:focus,
-          &:hover                   { border: 1px solid #FFF; }
+          &:hover                   { border: 1px solid $yellow; }
         }
         dl.portlet                  { margin-bottom: 0;
                                       @media (min-width: $screen-md-min) { 
@@ -2048,6 +2054,29 @@ dl.portletBandi                     {
     div.rerPortletAdvancedStatic div.portletItem h3 { color: $blu; } // stile titolo focus on
     div.rerPortletAdvancedStatic    { margin-top: 10px;
       &:before { color: $blu; }
+    }
+  }
+
+  // manager per portlet banner
+  #portlets-below                   { @extend .container; 
+                                      margin: 0 auto;
+                                      padding: 30px 0;
+                                      @extend .clearfix;
+                                      position: relative;
+    .BelowPortletManager1           { width: 75%; padding: 0; }
+    .BelowPortletManager2           { width: 20.8%;
+                                      float: right;
+                                      padding: 0;
+                                      position: relative;
+      &:before                      { @extend .hidden-xs;
+                                      content: '';
+                                      height: 100%;
+                                      width: 1px;
+                                      background-color: $gray-lighter;
+                                      position: absolute;;
+                                      left: -10%;
+                                      top: 0;
+      }                                                                  
     }
   }
 }
@@ -2440,6 +2469,94 @@ div.titolo-servizi-online           { background-color: $gray-bg;
   }                     
 }
 
+// BANNER CON LOGO E TESTO
+div.portletBannerTxt                {
+  p > a                             { display: inline-block; 
+    img                             { display: inline-block;
+                                      max-width: 100%;
+                                      height: auto;
+    }
+  }
+  p:first-child a                   { min-height: 80px; }
+  h5                                { margin-top: 20px; }
+}
+
+// BANNERS solo logo
+div.banners                         { clear: left;
+                                      padding-top: 30px;
+  div.portletItem                   { border-top: 1px solid $gray-lighter; 
+                                      padding-top: 30px;
+    a                               { display: block;
+                                      float: left;
+                                      width: 30%;
+                                      border: 1px solid $gray-lighter; 
+                                      margin: 0 1.45% 20px;
+                                      padding: 10px;
+                                      text-align: center;
+      &:focus,
+      &:hover                       { border-color: $brand-primary;}
+    }
+  }
+}
+
+// BOX LANCIO COLORATI
+div.logo-cciaa                      { // solo titolo
+                                      position: relative;
+                                      margin-bottom: 20px;
+                                      margin-top: 15px;
+  &:before                          { position: absolute; 
+                                      top: -8px;
+                                      left: 0;
+                                      width: 40px;
+                                      height: 36px;
+                                      background: $tr url($img-path+'logo_mini.png') no-repeat center center;
+                                      background-size: contain;
+                                      content: '';
+  }
+  .portletItem                      { padding:0;
+    h3                              { margin:0 0 0 48px; }
+  }
+}
+div.portletBoxColorato              { background-color: #912716; 
+                                      color: #FFF;
+                                      font-size: 1.1em;
+                                      margin-bottom: 20px;
+  .portletItem                      { padding:0;
+    a                               { display: block;
+                                      color: #FFF;
+                                      padding: 10px 20px 12px;
+                                      min-height: 6em;
+      &:focus,
+      &:hover                       { background-color: $gray; }
+    }
+  }
+  &[class*="icona-"] .portletItem a { padding-left: 90px; 
+                                      position: relative;
+                                      overflow: hidden;
+    &:before                        { color: #FFF;
+                                      opacity: .6;
+                                      position: absolute;
+                                      line-height: 1em;
+    }
+  }
+  &.portletBoxBlu                   { background-color: $blu; }
+  &.icona-calendario .portletItem a:before {  @include make-flaticon('calendar133', 88px); 
+                                              top: 4px;
+                                              left: -13px;
+  }
+  &.icona-cronometro .portletItem a:before {  @include make-flaticon('time74', 88px); 
+                                              top: 4px;
+                                              left: -13px;
+  }
+  &.icona-compila .portletItem a:before    {  @include make-flaticon('file242', 88px); 
+                                              bottom: -7px;
+                                              left: -10px;
+  }
+  &.icona-sportello .portletItem a:before  {  @include make-flaticon('checkin', 88px); 
+                                              bottom: -2px;
+                                              left: -13px;
+  }
+}
 
 // FIX VISTA MODULISTICA
 #content table.modulisticaListing   { @extend .table, .table-condensed;

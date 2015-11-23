@@ -25,6 +25,10 @@
                 value="portletFocus|Box Focus on" />
             <element
                 value="portletBannerTxt|Banner con testo home" />
+            <element
+                value="portletBoxColorato portletBoxBlu|Box lancio sfondo blu" />
+            <element
+                value="portletBoxColorato portletBoxRosso|Box lancio sfondo rosso" />
         </property>
     </object>
     <!-- object name="imaging_properties"

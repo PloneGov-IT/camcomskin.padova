@@ -703,7 +703,7 @@ address {
 .colophonWrapper,
 #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
 .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent,
-.template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent {
+.template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent, .section-homepage #portlets-below {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -719,7 +719,7 @@ address {
   .colophonWrapper:before,
   #portlets-footer:before, .template-pp_homepage_view #portletPageColumns #portletPageTopRow:before,
   .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent:before,
-  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:before, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:before, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:before, .container:after, .portalHeaderContent:after,
+  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:before, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:before, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:before, .section-homepage #portlets-below:before, .container:after, .portalHeaderContent:after,
   #portlets-in-header:after,
   #portal-siteactions:after,
   .topbarContent:after,
@@ -730,7 +730,7 @@ address {
   .colophonWrapper:after,
   #portlets-footer:after, .template-pp_homepage_view #portletPageColumns #portletPageTopRow:after,
   .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent:after,
-  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:after, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:after, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:after {
+  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:after, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:after, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:after, .section-homepage #portlets-below:after {
     content: " ";
     display: table; }
   .container:after, .portalHeaderContent:after,
@@ -744,7 +744,7 @@ address {
   .colophonWrapper:after,
   #portlets-footer:after, .template-pp_homepage_view #portletPageColumns #portletPageTopRow:after,
   .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent:after,
-  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:after, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:after, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:after {
+  .template-pp_homepage_view #portletPageColumns #portletPageBottomRow:after, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline:after, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent:after, .section-homepage #portlets-below:after {
     clear: both; }
   @media (min-width: 768px) {
     .container, .portalHeaderContent,
@@ -758,7 +758,7 @@ address {
     .colophonWrapper,
     #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
     .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent,
-    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent {
+    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent, .section-homepage #portlets-below {
       width: auto; } }
   @media (min-width: 992px) {
     .container, .portalHeaderContent,
@@ -772,7 +772,7 @@ address {
     .colophonWrapper,
     #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
     .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent,
-    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent {
+    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent, .section-homepage #portlets-below {
       width: auto; } }
   @media (min-width: 1300px) {
     .container, .portalHeaderContent,
@@ -786,7 +786,7 @@ address {
     .colophonWrapper,
     #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
     .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent,
-    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent {
+    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent, .section-homepage #portlets-below {
       width: 1300px; } }
 
 .container-fluid {
@@ -2676,12 +2676,12 @@ input[type="button"].btn-block {
 .officeContactsWrapper .officeEmail:before,
 .officeContactsWrapper .officePec:before, .template-pp_homepage_view #portletPageColumns .portletPageColumn:before, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:before, .section-homepage #portlets-in-header .InHeaderPortletManager1:before,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:before,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:before, .boxEventi .boxItem:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
+.section-homepage #portlets-in-header .InHeaderPortletManager3:before, .section-homepage #portlets-below:before, .boxEventi .boxItem:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
 .officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:after,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .boxEventi .boxItem:after {
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after {
   content: " ";
   display: table; }
 .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
@@ -2689,7 +2689,7 @@ input[type="button"].btn-block {
 .officeContactsWrapper .officeEmail:after,
 .officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:after,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .boxEventi .boxItem:after {
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after {
   clear: both; }
 
 .center-block {
@@ -2853,7 +2853,7 @@ input[type="button"].btn-block {
     display: inline-block !important; } }
 
 @media (max-width: 767px) {
-  .hidden-xs, #topbar .claim, #content .documentActions, #portal-footer-wrapper #portlets-footer .lista-links:before {
+  .hidden-xs, #topbar .claim, #content .documentActions, #portal-footer-wrapper #portlets-footer .lista-links:before, .section-homepage #portlets-below .BelowPortletManager2:before {
     display: none !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm, #content .documentActions, #return-to-top {
@@ -2904,13 +2904,13 @@ input[type="button"].btn-block {
 .flaticon-businessman137, .officeContactsWrapper .officeExecutive:before {
   content: "\e000"; }
 
-.flaticon-calendar133 {
+.flaticon-calendar133, div.portletBoxColorato.icona-calendario .portletItem a:before {
   content: "\e001"; }
 
 .flaticon-calendar66 {
   content: "\e002"; }
 
-.flaticon-checkin {
+.flaticon-checkin, div.portletBoxColorato.icona-sportello .portletItem a:before {
   content: "\e003"; }
 
 .flaticon-close42, #submenu-details .closeSubmenu a:before {
@@ -2926,7 +2926,7 @@ input[type="button"].btn-block {
 div.lista-link div.portletItem ul li:before, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 li:before, #portletPageColumns dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem:before, #content .proceedingsList dl dt:before {
   content: "\e007"; }
 
-.flaticon-file242 {
+.flaticon-file242, div.portletBoxColorato.icona-compila .portletItem a:before {
   content: "\e008"; }
 
 .flaticon-magnifier13, #searchbox a.btnSearch:before, #camcomskin-searchbox .searchFieldWrapper:before, #search-field:before {
@@ -2955,7 +2955,7 @@ div.rerPortletAdvancedStatic.lista-frecce div.portletItem ul li a:after, .boxSch
 .flaticon-textfile5 {
   content: "\e00f"; }
 
-.flaticon-time74 {
+.flaticon-time74, div.portletBoxColorato.icona-cronometro .portletItem a:before {
   content: "\e010"; }
 
 .flaticon-youtube17 {
@@ -4182,6 +4182,10 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
   .col-xs-12, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-md-12, .col-lg-12 {
     padding-left: 0;
     padding-right: 0; } }
+body[class*='subsection-++contextportlets++'] #portlets-below,
+body[class*='subsection-++contextportlets++'] #portlets-in-header {
+  display: none; }
+
 #portal-personaltools-wrapper {
   border-bottom: 0; }
   .userrole-anonymous #portal-personaltools-wrapper {
@@ -6163,7 +6167,7 @@ dl.portletBandi dd.portletItem {
       margin-top: 0.8em;
       border-radius: 2px; }
       #portal-footer-wrapper #portlets-footer a.btnSimple:focus, #portal-footer-wrapper #portlets-footer a.btnSimple:hover {
-        border: 1px solid #FFF; }
+        border: 1px solid #ead313; }
     #portal-footer-wrapper #portlets-footer dl.portlet {
       margin-bottom: 0; }
       @media (min-width: 992px) {
@@ -6310,6 +6314,26 @@ dl.portletBandi dd.portletItem {
   margin-top: 10px; }
   .section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic:before {
     color: #283641; }
+.section-homepage #portlets-below {
+  margin: 0 auto;
+  padding: 30px 0;
+  position: relative; }
+  .section-homepage #portlets-below .BelowPortletManager1 {
+    width: 75%;
+    padding: 0; }
+  .section-homepage #portlets-below .BelowPortletManager2 {
+    width: 20.8%;
+    float: right;
+    padding: 0;
+    position: relative; }
+    .section-homepage #portlets-below .BelowPortletManager2:before {
+      content: '';
+      height: 100%;
+      width: 1px;
+      background-color: #CCC;
+      position: absolute;
+      left: -10%;
+      top: 0; }
 
 #portlets-in-header {
   background-color: #FFF;
@@ -6702,6 +6726,106 @@ div.titolo-servizi-online {
     padding: 15px; }
     .boxEventi .boxFooter a:after {
       color: #CCC; }
+
+div.portletBannerTxt p > a {
+  display: inline-block; }
+  div.portletBannerTxt p > a img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto; }
+div.portletBannerTxt p:first-child a {
+  min-height: 80px; }
+div.portletBannerTxt h5 {
+  margin-top: 20px; }
+
+div.banners {
+  clear: left;
+  padding-top: 30px; }
+  div.banners div.portletItem {
+    border-top: 1px solid #CCC;
+    padding-top: 30px; }
+    div.banners div.portletItem a {
+      display: block;
+      float: left;
+      width: 30%;
+      border: 1px solid #CCC;
+      margin: 0 1.45% 20px;
+      padding: 10px;
+      text-align: center; }
+      div.banners div.portletItem a:focus, div.banners div.portletItem a:hover {
+        border-color: #9c3524; }
+
+div.logo-cciaa {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 15px; }
+  div.logo-cciaa:before {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 40px;
+    height: 36px;
+    background: transparent url("++resource++camcomskin.padova.images/logo_mini.png") no-repeat center center;
+    background-size: contain;
+    content: ''; }
+  div.logo-cciaa .portletItem {
+    padding: 0; }
+    div.logo-cciaa .portletItem h3 {
+      margin: 0 0 0 48px; }
+
+div.portletBoxColorato {
+  background-color: #912716;
+  color: #FFF;
+  font-size: 1.1em;
+  margin-bottom: 20px; }
+  div.portletBoxColorato .portletItem {
+    padding: 0; }
+    div.portletBoxColorato .portletItem a {
+      display: block;
+      color: #FFF;
+      padding: 10px 20px 12px;
+      min-height: 6em; }
+      div.portletBoxColorato .portletItem a:focus, div.portletBoxColorato .portletItem a:hover {
+        background-color: #555; }
+  div.portletBoxColorato[class*="icona-"] .portletItem a {
+    padding-left: 90px;
+    position: relative;
+    overflow: hidden; }
+    div.portletBoxColorato[class*="icona-"] .portletItem a:before {
+      color: #FFF;
+      opacity: .6;
+      position: absolute;
+      line-height: 1em; }
+  div.portletBoxColorato.portletBoxBlu {
+    background-color: #283641; }
+  div.portletBoxColorato.icona-calendario .portletItem a:before {
+    font-family: Flaticon;
+    font-size: 88px;
+    font-style: normal;
+    display: inline-block;
+    top: 4px;
+    left: -13px; }
+  div.portletBoxColorato.icona-cronometro .portletItem a:before {
+    font-family: Flaticon;
+    font-size: 88px;
+    font-style: normal;
+    display: inline-block;
+    top: 4px;
+    left: -13px; }
+  div.portletBoxColorato.icona-compila .portletItem a:before {
+    font-family: Flaticon;
+    font-size: 88px;
+    font-style: normal;
+    display: inline-block;
+    bottom: -7px;
+    left: -10px; }
+  div.portletBoxColorato.icona-sportello .portletItem a:before {
+    font-family: Flaticon;
+    font-size: 88px;
+    font-style: normal;
+    display: inline-block;
+    bottom: -2px;
+    left: -13px; }
 
 #content table.modulisticaListing tr.odd th.modulisticaDocument {
   border: 1px solid #999; }
