@@ -5381,6 +5381,9 @@ dl[class*='ortletNavigation'] dd.portletItem {
     .boxApprofondimenti ul.listLink {
       margin-left: 0; } }
 
+.boxScheda ul.listLink li.linkFilePdf a {
+  min-height: 1.6em; }
+
 .boxNorme ul.listLink li a,
 .boxNorme ul.listLink li.linkItem a,
 .boxApprofondimenti ul.listLink li a,
@@ -5412,7 +5415,14 @@ dl[class*='ortletNavigation'] dd.portletItem {
 .boxOffice h5.officeTitle {
   font-size: 1.1em;
   margin: 0 0;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  border-top: 1px dotted #A6A6A6;
+  padding-top: 10px;
+  margin-top: 6px; }
+  .boxOffice h5.officeTitle:first-child {
+    padding-top: 0;
+    border-top: 0;
+    margin-top: 0; }
   .boxOffice h5.officeTitle:after {
     font-family: Flaticon;
     font-size: 11px;
@@ -6720,6 +6730,7 @@ div.titolo-servizi-online {
       color: #313131;
       margin-bottom: 0;
       padding: 0 8px 0 0;
+      max-width: 5em;
       text-align: center; }
       .boxEventi .boxItem p.dataItem .dataDay {
         display: block;
@@ -6741,6 +6752,28 @@ div.titolo-servizi-online {
     padding: 15px; }
     .boxEventi .boxFooter a:after {
       color: #CCC; }
+
+#portal-columns div.boxCollezioneBase.boxEventi h4.boxHeader {
+  background-color: transparent; }
+  #portal-columns div.boxCollezioneBase.boxEventi h4.boxHeader:before {
+    font-size: 1.4em;
+    display: inline-block;
+    position: static;
+    font-family: FontAwesome;
+    content: "\f133";
+    width: auto;
+    height: auto;
+    background-color: transparent; }
+#portal-columns div.boxCollezioneBase.boxEventi .boxItem {
+  margin: 0; }
+  #portal-columns div.boxCollezioneBase.boxEventi .boxItem .titleItem {
+    min-height: 4em; }
+  #portal-columns div.boxCollezioneBase.boxEventi .boxItem:nth-child(2n+1) {
+    background-color: transparent;
+    padding: 20px 10px; }
+  #portal-columns div.boxCollezioneBase.boxEventi .boxItem:nth-child(2n) {
+    background-color: #EEE;
+    padding: 10px; }
 
 div.portletBannerTxt p > a {
   display: inline-block; }
