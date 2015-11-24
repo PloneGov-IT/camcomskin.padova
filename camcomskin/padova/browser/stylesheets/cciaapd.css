@@ -787,7 +787,7 @@ address {
     #portlets-footer, .template-pp_homepage_view #portletPageColumns #portletPageTopRow,
     .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent,
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow, .template-pp_homepage_view #portletPageColumns + #viewlet-below-content #plone-document-byline, .template-pp_homepage_view #below-content .boxCollezioneRigaNotizie .boxCollezioneContent, .section-homepage #portlets-below {
-      width: 1300px; } }
+      width: 1270px; } }
 
 .container-fluid {
   margin-right: auto;
@@ -6260,10 +6260,10 @@ dl.portletBandi dd.portletItem {
 .section-homepage #portal-header {
   background-color: #FFF; }
 .section-homepage #portlets-in-header {
-  display: table;
+  /*display: table;
   position: relative;
   table-layout: fixed;
-  margin-bottom: 0; }
+  margin-bottom: 0;*/ }
   .section-homepage #portlets-in-header .InHeaderPortletManager1,
   .section-homepage #portlets-in-header .InHeaderPortletManager2,
   .section-homepage #portlets-in-header .InHeaderPortletManager3 {
@@ -6306,26 +6306,6 @@ dl.portletBandi dd.portletItem {
     width: 20.8%; }
     .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn .portletCalendar {
       margin-right: 15px; }
-@media (max-width: 991px) {
-  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn {
-    width: 66%; }
-  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
-    width: 33%; } }
-@media (max-width: 767px) {
-  .section-homepage #portlets-in-header [class*="InHeaderPortletManager"] {
-    display: none; }
-  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn {
-    width: auto; }
-  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
-    width: auto; }
-    .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn .portletCalendar {
-      margin-right: 0; } }
-.section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic div.portletItem h3 {
-  color: #283641; }
-.section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic {
-  margin-top: 10px; }
-  .section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic:before {
-    color: #283641; }
 .section-homepage #portlets-below {
   margin: 0 auto;
   padding: 30px 0;
@@ -6346,6 +6326,33 @@ dl.portletBandi dd.portletItem {
       position: absolute;
       left: -10%;
       top: 0; }
+@media (min-width: 992px) and (max-width: 1299px) {
+  .section-homepage #portletPageMiddleRowWrapper #portletPageMiddleRowContent,
+  .section-homepage #portlets-below {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
+    width: 23%; } }
+@media (max-width: 991px) {
+  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn {
+    width: 66%; }
+  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
+    width: 33%; } }
+@media (max-width: 767px) {
+  .section-homepage #portlets-in-header [class*="InHeaderPortletManager"] {
+    display: none; }
+  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn {
+    width: auto; }
+  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
+    width: auto; }
+    .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn .portletCalendar {
+      margin-right: 0; } }
+.section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic div.portletItem h3 {
+  color: #283641; }
+.section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic {
+  margin-top: 10px; }
+  .section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic:before {
+    color: #283641; }
 
 #portlets-in-header {
   background-color: #FFF;
@@ -6802,6 +6809,12 @@ div.banners {
       text-align: center; }
       div.banners div.portletItem a:focus, div.banners div.portletItem a:hover {
         border-color: #9c3524; }
+      div.banners div.portletItem a img {
+        max-width: 100%;
+        height: auto; }
+      @media (max-width: 991px) {
+        div.banners div.portletItem a {
+          box-sizing: content-box; } }
 
 div.logo-cciaa {
   position: relative;
@@ -6874,6 +6887,12 @@ div.portletBoxColorato {
     display: inline-block;
     bottom: -2px;
     left: -13px; }
+  @media (min-width: 992px) and (max-width: 1250px) {
+    div.portletBoxColorato[class*="icona-"] .portletItem a {
+      padding-left: 60px; }
+      div.portletBoxColorato[class*="icona-"] .portletItem a:before {
+        font-size: 60px;
+        top: 20px; } }
 
 #content table.modulisticaListing tr.odd th.modulisticaDocument {
   border: 1px solid #999; }

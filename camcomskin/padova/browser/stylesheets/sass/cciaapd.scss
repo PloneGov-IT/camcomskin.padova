@@ -2012,10 +2012,10 @@ dl.portletBandi                     {
   h1.documentFirstHeading           { display: none; }
   #portal-top                       { background-color: $bgmenu; margin-bottom:0; }
   #portal-header                    { background-color: #FFF; }
-  #portlets-in-header               { display: table;
+  #portlets-in-header               { /*display: table;
                                       position: relative;
                                       table-layout: fixed;
-                                      margin-bottom: 0;
+                                      margin-bottom: 0;*/
                                       // width: 100%;
     .InHeaderPortletManager1,
     .InHeaderPortletManager2,
@@ -2043,29 +2043,6 @@ dl.portletBandi                     {
         .portletCalendar            { margin-right: $grid-gutter-width / 2; }
     }
   }
-  @media (max-width: $screen-sm-max) {
-      #portletPageMiddleRowWrapper  {
-          #portletPageFirstColumn   { width: 66%; }
-          #portletPageSecondColumn  { width: 33%; }
-      }
-  }
-  @media (max-width: $screen-xs-max) {
-      #portlets-in-header           {
-          [class*="InHeaderPortletManager"]{ display: none; }
-      }
-      #portletPageMiddleRowWrapper  {
-          #portletPageFirstColumn   { width: auto; }
-          #portletPageSecondColumn  { width: auto;
-            .portletCalendar        { margin-right: 0; }
-          }
-      }
-  }
-  #portletPageFirstColumn           {
-    div.rerPortletAdvancedStatic div.portletItem h3 { color: $blu; } // stile titolo focus on
-    div.rerPortletAdvancedStatic    { margin-top: 10px;
-      &:before { color: $blu; }
-    }
-  }
 
   // manager per portlet banner
   #portlets-below                   { @extend .container; 
@@ -2087,6 +2064,38 @@ dl.portletBandi                     {
                                       left: -10%;
                                       top: 0;
       }                                                                  
+    }
+  }
+
+  // RESPONSIVE
+  @media (min-width: $screen-md) and (max-width: $screen-md-max) {
+    #portletPageMiddleRowWrapper  #portletPageMiddleRowContent,
+    #portlets-below                 { padding-left: 20px; padding-right: 20px; }
+    #portletPageMiddleRowWrapper #portletPageSecondColumn { width: 23%; }
+  }
+  @media (min-width: $screen-md) and (max-width: 1250) {
+  }
+  @media (max-width: $screen-sm-max) {
+      #portletPageMiddleRowWrapper  {        
+          #portletPageFirstColumn   { width: 66%; }
+          #portletPageSecondColumn  { width: 33%; }
+      }
+  }
+  @media (max-width: $screen-xs-max) {
+      #portlets-in-header           {
+          [class*="InHeaderPortletManager"]{ display: none; }
+      }
+      #portletPageMiddleRowWrapper  {
+          #portletPageFirstColumn   { width: auto; }
+          #portletPageSecondColumn  { width: auto;
+            .portletCalendar        { margin-right: 0; }
+          }
+      }
+  }
+  #portletPageFirstColumn           {
+    div.rerPortletAdvancedStatic div.portletItem h3 { color: $blu; } // stile titolo focus on
+    div.rerPortletAdvancedStatic    { margin-top: 10px;
+      &:before { color: $blu; }
     }
   }
 }
@@ -2530,6 +2539,8 @@ div.banners                         { clear: left;
                                       text-align: center;
       &:focus,
       &:hover                       { border-color: $brand-primary;}
+      img                           { max-width: 100%; height: auto; }
+      @media (max-width: $screen-sm-max ) { box-sizing: content-box; }
     }
   }
 }
@@ -2590,6 +2601,11 @@ div.portletBoxColorato              { background-color: #912716;
   &.icona-sportello .portletItem a:before  {  @include make-flaticon('checkin', 88px); 
                                               bottom: -2px;
                                               left: -13px;
+  }
+  @media (min-width: $screen-md) and (max-width: 1250px) {
+    &[class*="icona-"] .portletItem a { padding-left: 60px;
+      &:before                        { font-size: 60px; top: 20px; }
+    }
   }
 }
 
