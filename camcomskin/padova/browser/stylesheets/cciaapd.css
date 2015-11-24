@@ -4354,7 +4354,7 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
     position: absolute;
     left: 14px;
     top: 22px;
-    z-index: 100; }
+    z-index: 1; }
   #search-field input[name='SearchableText'] {
     box-shadow: none;
     border-radius: 0;
@@ -5381,7 +5381,7 @@ dl[class*='ortletNavigation'] dd.portletItem {
     .boxApprofondimenti ul.listLink {
       margin-left: 0; } }
 
-.boxScheda ul.listLink li.linkFilePdf a {
+.boxScheda ul.listLink li[class^='linkFile'] a {
   min-height: 1.6em; }
 
 .boxNorme ul.listLink li a,
