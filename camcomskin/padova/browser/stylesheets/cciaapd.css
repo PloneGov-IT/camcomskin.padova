@@ -5815,7 +5815,6 @@ dl.portletCollection {
       .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow [id*="column-collective-portletpage-toprow-portlet"]:first-of-type .portlet:first-of-type {
         margin-top: 0; } }
   .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper #portletPageMiddleRowContent {
-    border-bottom: 1px solid #ccc;
     padding-bottom: 0; }
   @media (min-width: 768px) and (max-width: 991px) {
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow .colonna-1-di-2,

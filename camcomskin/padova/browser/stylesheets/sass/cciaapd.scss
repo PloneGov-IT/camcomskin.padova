@@ -1563,9 +1563,7 @@ dl.portletCollection                { margin-bottom: 20px;
       }
     }
     #portletPageMiddleRowWrapper    { @extend .clearfix; 
-      #portletPageMiddleRowContent  { border-bottom: 1px solid #ccc;
-                                      padding-bottom:0;
-      }
+      #portletPageMiddleRowContent  { padding-bottom:0; }
     }
     #portletPageBottomRow           {
         @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
