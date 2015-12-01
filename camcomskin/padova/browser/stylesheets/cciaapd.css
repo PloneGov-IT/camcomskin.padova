@@ -5750,22 +5750,22 @@ dl.portletCollection {
   .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowContent,
   .template-pp_homepage_view #portletPageColumns #portletPageBottomRow {
     padding: 30px 0; }
-  .template-pp_homepage_view #portletPageColumns #portletPageFirstColumn {
+  .template-pp_homepage_view #portletPageColumns #portletPageFirstColumn.portletPageLeftColumn {
     width: 75%; }
-  .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn {
+  .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn.portletPageRightColumn {
     width: 20.8%; }
   @media (max-width: 991px) {
-    .template-pp_homepage_view #portletPageColumns #portletPageFirstColumn {
+    .template-pp_homepage_view #portletPageColumns #portletPageFirstColumn.portletPageLeftColumn {
       width: 49%;
       float: left;
       padding: 0 20px; }
-    .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn {
+    .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn.portletPageRightColumn {
       width: 49%;
       float: right;
       padding: 0 20px; } }
   @media (max-width: 767px) {
-    .template-pp_homepage_view #portletPageColumns #portletPageFirstColumn,
-    .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn {
+    .template-pp_homepage_view #portletPageColumns #portletPageFirstColumn.portletPageLeftColumn,
+    .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn.portletPageRightColumn {
       width: auto;
       float: none;
       margin: 20px; } }
@@ -6326,15 +6326,15 @@ dl.portletBandi dd.portletItem {
     .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageMiddleRowContent {
       padding: 40px 0;
       border-bottom: 0; }
-    .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageFirstColumn {
+    .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageFirstColumn.portletPageLeftColumn {
       width: 75%; }
-    .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn {
+    .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn {
       width: 20.8%; }
-      .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn .portletCalendar {
+      .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn .portletCalendar {
         margin-right: 15px; }
-      .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn .boxEventi {
+      .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn .boxEventi {
         background-color: #FFF; }
-        .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn .boxEventi h4.boxHeader {
+        .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn .boxEventi h4.boxHeader {
           padding: 0 0 10px; }
 .section-homepage #portlets-below {
   margin: 0 auto;
@@ -6364,18 +6364,18 @@ dl.portletBandi dd.portletItem {
   .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
     width: 23%; } }
 @media (max-width: 991px) {
-  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn {
+  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn.portletPageLeftColumn {
     width: 66%; }
-  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
+  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn {
     width: 33%; } }
 @media (max-width: 767px) {
   .section-homepage #portlets-in-header [class*="InHeaderPortletManager"] {
     display: none; }
-  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn {
+  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn.portletPageLeftColumn {
     width: auto; }
-  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
+  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn {
     width: auto; }
-    .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn .portletCalendar {
+    .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn .portletCalendar {
       margin-right: 0; } }
 .section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic div.portletItem h3 {
   color: #283641; }

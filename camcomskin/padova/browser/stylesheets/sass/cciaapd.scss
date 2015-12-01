@@ -1503,15 +1503,15 @@ dl.portletCollection                { margin-bottom: 20px;
     }
 
     // colonne centrali in proporzione diversa come in home
-    #portletPageFirstColumn         { width: 75%; }
-    #portletPageSecondColumn        { width: 20.8%; }
+    #portletPageFirstColumn.portletPageLeftColumn { width: 75%; }
+    #portletPageSecondColumn.portletPageRightColumn { width: 20.8%; }
     @media (max-width: $screen-sm-max) {
-      #portletPageFirstColumn         { width: 49%;  float: left;  padding: 0 20px; }
-      #portletPageSecondColumn        { width: 49%;  float: right; padding: 0 20px; }
+      #portletPageFirstColumn.portletPageLeftColumn { width: 49%;  float: left;  padding: 0 20px; }
+      #portletPageSecondColumn.portletPageRightColumn{ width: 49%;  float: right; padding: 0 20px; }
     }
     @media (max-width: $screen-xs-max) {
-      #portletPageFirstColumn,
-      #portletPageSecondColumn        { width: auto; 
+      #portletPageFirstColumn.portletPageLeftColumn,
+      #portletPageSecondColumn.portletPageRightColumn { width: auto; 
                                         float: none;
                                         margin: 20px;
       }
@@ -2063,8 +2063,8 @@ dl.portletBandi                     {
       #portletPageMiddleRowContent    { padding: 40px 0;
                                         border-bottom: 0;
       }
-      #portletPageFirstColumn         { width: 75%; }
-      #portletPageSecondColumn        { width: 20.8%;
+      #portletPageFirstColumn.portletPageLeftColumn { width: 75%; }
+      #portletPageSecondColumn.portletPageRightColumn        { width: 20.8%;
           .portletCalendar            { margin-right: $grid-gutter-width / 2; }
           .boxEventi                  { background-color: #FFF; 
             h4.boxHeader              { padding: 0 0 10px; }
@@ -2105,8 +2105,8 @@ dl.portletBandi                     {
   }
   @media (max-width: $screen-sm-max) {
       #portletPageMiddleRowWrapper  {        
-          #portletPageFirstColumn   { width: 66%; }
-          #portletPageSecondColumn  { width: 33%; }
+          #portletPageFirstColumn.portletPageLeftColumn   { width: 66%; }
+          #portletPageSecondColumn.portletPageRightColumn  { width: 33%; }
       }
   }
   @media (max-width: $screen-xs-max) {
@@ -2114,8 +2114,8 @@ dl.portletBandi                     {
           [class*="InHeaderPortletManager"]{ display: none; }
       }
       #portletPageMiddleRowWrapper  {
-          #portletPageFirstColumn   { width: auto; }
-          #portletPageSecondColumn  { width: auto;
+          #portletPageFirstColumn.portletPageLeftColumn   { width: auto; }
+          #portletPageSecondColumn.portletPageRightColumn  { width: auto;
             .portletCalendar        { margin-right: 0; }
           }
       }
