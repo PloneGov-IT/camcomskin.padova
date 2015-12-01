@@ -194,7 +194,7 @@ pre, blockquote, #content .callout {
   height: auto; }
 
 .boxNotizieHome .boxFooter,
-.boxNotizieHome .boxNews .tagItem {
+.boxNotizieHome .boxItem .tagItem {
   display: none; }
 
 .boxNotizieHome .boxNews .newsContent,

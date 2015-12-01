@@ -895,9 +895,6 @@ dl.portletFocus                     { margin-bottom:0;
                                       background-color: #1e2932;
                                       margin-right: 3.5%;
                                       padding: 15px 20px;
-  &.colonna-1-di-2                  { width: 48.25%; }
-  &.colonna-1-di-3                  { width: 31%; }
-  &.colonna-1-di-4                  { width: 22.375%; }
   #portletPageFirstColumn > div:last-child & { margin-right: 0; }
   dt, dd                            { 
                                       color: #FFF;
@@ -905,7 +902,7 @@ dl.portletFocus                     { margin-bottom:0;
   dt.portletHeader                  { font-size: 1.2em;
                                       border:0;
                                       padding: 0;
-    a.tile                          { color: #FFF; 
+    a.tile                          { color: #FFF !important; 
       &:focus,
       &:hover                       { color: $yellow !important; }
     }
@@ -931,6 +928,13 @@ dl.portletFocus                     { margin-bottom:0;
       }
       &:after                       { @include make-fa('\f105'); }
     }
+  }
+  &.colonna-1-di-2                  { width: 48.25%; }
+  &.colonna-1-di-3                  { width: 31%; }
+  &.colonna-1-di-4                  { width: 22.375%; 
+                                      min-height: 18em;
+    @media (max-width: $screen-sm-max) { width: 100%; margin: 0 0 20px; min-height: 1em;}
+    dd.portletFooter                { width: auto; }
   }
 }
 
@@ -1486,7 +1490,9 @@ dl.portletCollection                { margin-bottom: 20px;
 // PAGINA INTRO SEZIONE (PORTLET PAGE)
 .portaltype-portlet-page.template-portlets #viewlet-below-content-title .tileImage { display:none; }
 .template-pp_homepage_view          {
-  #viewlet-below-content-title      { @extend .pull-right; }
+  #viewlet-below-content-title      { 
+    @media (min-width: $screen-sm-min) { float: right;  }
+  }
   #portletPageColumns               { clear: both; margin-top: 10px; 
     .portletPageColumn              { @extend .clearfix; }
 
@@ -1494,6 +1500,21 @@ dl.portletCollection                { margin-bottom: 20px;
     #portletPageMiddleRowContent,
     #portletPageBottomRow           { @extend .container; 
                                       padding: 30px 0; 
+    }
+
+    // colonne centrali in proporzione diversa come in home
+    #portletPageFirstColumn         { width: 75%; }
+    #portletPageSecondColumn        { width: 20.8%; }
+    @media (max-width: $screen-sm-max) {
+      #portletPageFirstColumn         { width: 49%;  float: left;  padding: 0 20px; }
+      #portletPageSecondColumn        { width: 49%;  float: right; padding: 0 20px; }
+    }
+    @media (max-width: $screen-xs-max) {
+      #portletPageFirstColumn,
+      #portletPageSecondColumn        { width: auto; 
+                                        float: none;
+                                        margin: 20px;
+      }
     }
 
     // riga grigio (first)
@@ -1541,7 +1562,11 @@ dl.portletCollection                { margin-bottom: 20px;
         }
       }
     }
-    #portletPageMiddleRowWrapper    { @extend .clearfix; }
+    #portletPageMiddleRowWrapper    { @extend .clearfix; 
+      #portletPageMiddleRowContent  { border-bottom: 1px solid #ccc;
+                                      padding-bottom:0;
+      }
+    }
     #portletPageBottomRow           {
         @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
             .colonna-1-di-2,
@@ -2035,15 +2060,20 @@ dl.portletBandi                     {
     }
     .InHeaderPortletManager3        { padding: 18px 0; }
   }
-  #portletPageColumns               { margin-top: -1px; }
-  #portletPageMiddleRowWrapper      { background-color: $gray-bg; 
-    #portletPageMiddleRowContent    { padding: 40px 0;}
-    #portletPageFirstColumn         { width: 75%; }
-    #portletPageSecondColumn        { width: 20.8%;
-        .portletCalendar            { margin-right: $grid-gutter-width / 2; }
+  #portletPageColumns               { margin-top: -1px; 
+    #portletPageMiddleRowWrapper      { background-color: $gray-bg; 
+      #portletPageMiddleRowContent    { padding: 40px 0;
+                                        border-bottom: 0;
+      }
+      #portletPageFirstColumn         { width: 75%; }
+      #portletPageSecondColumn        { width: 20.8%;
+          .portletCalendar            { margin-right: $grid-gutter-width / 2; }
+          .boxEventi                  { background-color: #FFF; 
+            h4.boxHeader              { padding: 0 0 10px; }
+          }
+      }
     }
   }
-
   // manager per portlet banner
   #portlets-below                   { @extend .container; 
                                       margin: 0 auto;
@@ -2443,11 +2473,11 @@ div.titolo-servizi-online           { background-color: $gray-bg;
 }
 
 // APPUNTAMENTI/EVENTI
-.boxEventi                          { background-color: #FFF;
+.boxEventi                          { background-color: #EEE;
   h4.boxHeader                      { margin: 0;
                                       background-color: $gray-bg;
                                       color: $blu;
-                                      padding-bottom: 10px;
+                                      padding: 10px;
     &:before                        { @include make-fa('\f133'); 
                                       font-size: 1.4em;
                                       margin-right: 5px;
@@ -2494,8 +2524,9 @@ div.titolo-servizi-online           { background-color: $gray-bg;
   }                     
 }
 // eventi non in home
-#portal-columns div.boxCollezioneBase.boxEventi {
-  h4.boxHeader                      { background-color: $tr;
+#portal-columns div.boxCollezioneBase.boxEventi { background-color: #FFF;
+  h4.boxHeader                      { background-color: $tr; 
+                                      padding: 0 0 10px;
     &:before                        { font-size: 1.4em;
                                       display: inline-block;
                                       position: static;
