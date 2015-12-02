@@ -4174,7 +4174,12 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
 
   .col-xs-12, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .col-md-12, .col-lg-12 {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  #portal-column-one,
+  #portal-column-two {
+    border-top: 16px solid #CCC;
+    padding-top: 20px; } }
 body[class*='subsection-++contextportlets++'] #portlets-below,
 body[class*='subsection-++contextportlets++'] #portlets-in-header {
   display: none; }
@@ -4998,7 +5003,7 @@ dl.portletImg dt.portletHeader {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.25); }
+    background-color: rgba(0, 0, 0, 0.4); }
   dl.portletImg dt.portletHeader .tile,
   dl.portletImg dt.portletHeader a.tile {
     color: #FFF !important;
@@ -5174,8 +5179,12 @@ dl.portletFocus {
     min-height: 18em; }
     dl.portletFocus.colonna-1-di-4 dd.portletFooter, #portletPageTopRowWrapper dl.portletFocus.boxRss dd.portletFooter {
       width: auto; }
+  @media (max-width: 991px) {
+    #portletPageFirstColumn dl.portletFocus.colonna-1-di-3, #portletPageFirstColumn dl.portletFocus.colonna-1-di-4, #portletPageFirstColumn #portletPageTopRowWrapper dl.portletFocus.boxRss, #portletPageTopRowWrapper #portletPageFirstColumn dl.portletFocus.boxRss {
+      width: 46%;
+      margin-bottom: 20px; } }
   @media (max-width: 767px) {
-    dl.portletFocus.colonna-1-di-3, dl.portletFocus.colonna-1-di-4, #portletPageTopRowWrapper dl.portletFocus.boxRss {
+    dl.portletFocus.colonna-1-di-3, #portletPageFirstColumn dl.portletFocus.colonna-1-di-3, dl.portletFocus.colonna-1-di-4, #portletPageTopRowWrapper dl.portletFocus.boxRss, #portletPageFirstColumn dl.portletFocus.colonna-1-di-4, #portletPageFirstColumn #portletPageTopRowWrapper dl.portletFocus.boxRss, #portletPageTopRowWrapper #portletPageFirstColumn dl.portletFocus.boxRss {
       width: 100%;
       margin: 0 0 20px;
       min-height: 1em; } }
@@ -5190,23 +5199,27 @@ dl[class*='ortletNavigation'] dt.portletHeader {
     color: #fff;
     font-size: 1.05em;
     padding: 0.4em 1em; }
+    @media (max-width: 991px) {
+      dl[class*='ortletNavigation'] dt.portletHeader .tile,
+      dl[class*='ortletNavigation'] dt.portletHeader a.tile {
+        display: block; } }
   dl[class*='ortletNavigation'] dt.portletHeader a:focus, dl[class*='ortletNavigation'] dt.portletHeader a:hover {
     background-color: #555;
     color: #fff !important; }
 dl[class*='ortletNavigation'] dd.portletItem {
   padding: 8px 0 0;
   border-bottom: 3px solid #283641; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    dl[class*='ortletNavigation'] dd.portletItem {
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
-      -webkit-column-gap: 30px;
-      -moz-column-gap: 30px;
-      column-gap: 30px;
-      padding-bottom: 0.5em; } }
   dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 {
     margin-bottom: 6px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 30px;
+        -moz-column-gap: 30px;
+        column-gap: 30px;
+        padding-bottom: 0.5em; } }
     dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 ul {
       margin: 6px 0 5px 15px; }
       dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 ul.navTreeLevel1 ul {
@@ -5704,12 +5717,26 @@ dl.portletCollection {
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden; }
+  @media (min-width: 460px) and (max-width: 767px) {
+    .officeContactsWrapper .officeLocation {
+      width: 48%;
+      padding-right: 2%;
+      display: table-cell;
+      vertical-align: top; }
+    .officeContactsWrapper .officeContacts {
+      border-left: 1px dashed #777;
+      width: 48%;
+      padding: 0 2%;
+      display: table-cell;
+      vertical-align: top; } }
   @media (max-width: 767px) {
     .officeContactsWrapper {
       padding-left: 15px;
       padding-right: 15px; }
-      .officeContactsWrapper .officeExecutive:before {
-        padding-top: 30px; } }
+      .officeContactsWrapper .officeExecutive {
+        padding-top: 20px; }
+        .officeContactsWrapper .officeExecutive:before {
+          padding-top: 30px; } }
 
 .officeDuties h4 {
   font-size: 1.4em; }
@@ -5766,6 +5793,8 @@ dl.portletCollection {
   .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn.portletPageRightColumn {
     width: 20.8%; }
   @media (max-width: 1299px) {
+    .template-pp_homepage_view #portletPageColumns #portletPageFirstColumn.portletPageLeftColumn {
+      width: 72%; }
     .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn.portletPageRightColumn {
       width: 25%;
       padding-left: 0; } }
@@ -5773,11 +5802,11 @@ dl.portletCollection {
     .template-pp_homepage_view #portletPageColumns #portletPageFirstColumn.portletPageLeftColumn {
       width: 49%;
       float: left;
-      padding: 0 20px; }
+      padding: 0 0 0 20px; }
     .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn.portletPageRightColumn {
       width: 49%;
       float: right;
-      padding: 0 20px; } }
+      padding: 0 20px 0 0; } }
   @media (max-width: 767px) {
     .template-pp_homepage_view #portletPageColumns #portletPageFirstColumn.portletPageLeftColumn,
     .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn.portletPageRightColumn {
@@ -5815,20 +5844,34 @@ dl.portletCollection {
         padding: 15px;
         background-color: #fff;
         min-height: 260px; }
+        @media (max-width: 767px) {
+          .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic dd.portletItem,
+          .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.rerPortletAdvancedStatic div.portletItem,
+          .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic dd.portletItem,
+          .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow div.rerPortletAdvancedStatic div.portletItem {
+            min-height: 1px; } }
     .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.portletServiziOnline {
       border: 0; }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.portletServiziOnline {
-          margin-top: 1em; } }
       .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow dl.portletServiziOnline dt.portletHeader {
         background-color: #9c3524;
         z-index: 1;
         padding: 15px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow {
+        padding-top: 10px; }
+        .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow .colonna-1-di-2,
+        .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow .colonna-1-di-3,
+        .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow .colonna-1-di-4,
+        .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow .boxRss {
+          margin-top: 20px; } }
     @media (max-width: 767px) {
-      .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow [id*="column-collective-portletpage-toprow-portlet"] .portlet {
+      .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow [id*="column-collective-portletpage-toprow-portlet"] .portlet, .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow [id*="column-collective-portletpage-toprow-portlet"] .box {
         margin-top: 1em; }
       .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow [id*="column-collective-portletpage-toprow-portlet"]:first-of-type .portlet:first-of-type {
-        margin-top: 0; } }
+        margin-top: 0; }
+      .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow .colonna-1-di-2 {
+        padding-left: 15px;
+        padding-right: 15px; } }
   .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper #portletPageMiddleRowContent {
     padding-bottom: 0; }
   @media (min-width: 768px) and (max-width: 991px) {
@@ -5899,6 +5942,11 @@ dl.portletCollection {
         background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0, #FFF 70%);
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, #FFF 70%);
         background-repeat: repeat-x; }
+      @media (max-width: 767px) {
+        .boxCollezioneRigaNotizie .boxItem .boxItemContent {
+          height: auto; }
+          .boxCollezioneRigaNotizie .boxItem .boxItemContent:after {
+            display: none; } }
       .boxCollezioneRigaNotizie .boxItem .boxItemContent p.dataItem {
         margin-bottom: 10px;
         font-size: 0.95em;
@@ -7110,6 +7158,8 @@ div.portletBoxColorato {
     color: #000; }
   #content table.modulisticaListing th.modulisticaDocument p {
     margin-bottom: 0.5em; }
+#content table.modulisticaListing td {
+  min-width: 30px; }
 #content table.modulisticaListing > tbody:first-child > tr:first-child > td {
   border-top-color: #999; }
 

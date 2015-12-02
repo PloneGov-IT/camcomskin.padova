@@ -51,6 +51,11 @@ strong { @extend .semibold; }
                                      margin-right: 0;
     }
     .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding-left:0; padding-right: 0;}
+
+    #portal-column-one,
+    #portal-column-two             { border-top: 16px solid $gray-lighter; 
+                                     padding-top: 20px; 
+    }
 }
 
 // fix in edit portlet
@@ -691,6 +696,7 @@ div.rerPortletAdvancedStatic        {
                                       border-bottom: 2px solid $blu;
                                       color: $blu;
                                       background-color: $tr;
+    // .headerImg                      { background-repeat: no-repeat; }
     a.tile                          { color: $blu; 
       &:focus,
       &:hover                       { color: $link-color;}
@@ -786,7 +792,7 @@ dl.portletImg                       {
                                       left: 0;
                                       height: 100%;
                                       width: 100%;
-                                      background-color: rgba(0,0,0,.25);
+                                      background-color: rgba(0,0,0,.4);
     }
     .tile,
     a.tile                          { color: #FFF !important;
@@ -946,11 +952,20 @@ dl.portletFocus                     { margin-bottom:0;
                                       min-height: 18em;    
     dd.portletFooter                { width: auto; }
   }
+  @media (max-width: $screen-sm-max) { 
+    &.colonna-1-di-3,
+    &.colonna-1-di-4                 {
+      #portletPageFirstColumn &      { width: 46%; margin-bottom: 20px; }
+    }
+  }
   @media (max-width: $screen-xs-max) { 
     &.colonna-1-di-3,
-    &.colonna-1-di-4                 { width: 100%; 
+    &.colonna-1-di-4                 { 
+      &,
+      #portletPageFirstColumn &      { width: 100%; 
                                        margin: 0 0 20px;
                                        min-height: 1em;
+      }
     }
   }
 }
@@ -966,6 +981,7 @@ dl[class*='ortletNavigation']       {
                                       @extend .regular;
                                       font-size: 1.05em;
                                       padding: 0.4em 1em;
+          @media (max-width: $screen-sm-max) { display: block; }
         }
         a                           {
             &:focus,
@@ -976,11 +992,12 @@ dl[class*='ortletNavigation']       {
     }
     dd.portletItem                  { padding: 8px 0 0;
                                       border-bottom: 3px solid $blu;
-                                      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                                      
+      ul.navTreeLevel0              { margin-bottom: 6px;
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
                                           @include content-columns(2);
                                           padding-bottom: 0.5em;
                                       }
-      ul.navTreeLevel0              { margin-bottom: 6px;
         ul                          { margin: 6px 0 5px 15px; 
             &.navTreeLevel1 ul      { margin-left: -6px; }
         }
@@ -1456,13 +1473,25 @@ dl.portletCollection                { margin-bottom: 20px;
                                       overflow: hidden;
     }
   }
+  @media (min-width: 460px) and (max-width: $screen-xs-max) {
+    .officeLocation               { width: 48%;
+                                    padding-right: 2%;
+                                    display: table-cell; vertical-align: top;
+    }
+    .officeContacts               { border-left: 1px dashed $gray-light;
+                                    width: 48%;
+                                    padding: 0 2%;
+                                    display: table-cell; vertical-align: top;
+    }
+  }
   @media (max-width: $screen-xs-max) {
                                       padding-left: $grid-gutter-width / 2;
                                       padding-right: $grid-gutter-width / 2;
-    .officeExecutive                {
+    .officeExecutive                { padding-top: 20px;
         &:before                    { padding-top: 30px; }
     }
   }
+
 }
 .officeDuties                       {
   h4                                { font-size: 1.4em; }
@@ -1523,11 +1552,12 @@ dl.portletCollection                { margin-bottom: 20px;
     #portletPageFirstColumn.portletPageLeftColumn { width: 75%; }
     #portletPageSecondColumn.portletPageRightColumn { width: 20.8%; }
     @media (max-width: $screen-md-max) {
+      #portletPageFirstColumn.portletPageLeftColumn { width: 72%; }
       #portletPageSecondColumn.portletPageRightColumn { width: 25%; padding-left: 0; }
     }
     @media (max-width: $screen-sm-max) {
-      #portletPageFirstColumn.portletPageLeftColumn { width: 49%;  float: left;  padding: 0 20px; }
-      #portletPageSecondColumn.portletPageRightColumn{ width: 49%;  float: right; padding: 0 20px; }
+      #portletPageFirstColumn.portletPageLeftColumn { width: 49%;  float: left;  padding: 0 0 0 20px; }
+      #portletPageSecondColumn.portletPageRightColumn{ width: 49%;  float: right; padding: 0 20px 0 0 ; }
     }
     @media (max-width: $screen-xs-max) {
       #portletPageFirstColumn.portletPageLeftColumn,
@@ -1561,24 +1591,28 @@ dl.portletCollection                { margin-bottom: 20px;
           div.portletItem           { padding: 15px; 
                                       background-color: #fff;
                                       min-height: 260px;
+            @media (max-width: $screen-xs-max) { min-height: 1px; }
           }          
         }
-        dl.portletServiziOnline     { border:0;
-                                      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-                                          margin-top: 1em;
-                                      }
+        dl.portletServiziOnline     { border:0;                                      
           dt.portletHeader          { background-color: $link-color;
                                       z-index: 1;
                                       padding: 15px;
           }
         }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { padding-top: 10px;
+          .colonna-1-di-2,
+          .colonna-1-di-3,
+          .colonna-1-di-4 { margin-top: 20px; }
+        }
         @media (max-width: $screen-xs-max) {
             [id*="column-collective-portletpage-toprow-portlet"] {
-                .portlet                { margin-top: 1em; }
+                .portlet, .box                { margin-top: 1em; }
             }
             [id*="column-collective-portletpage-toprow-portlet"]:first-of-type {
                 .portlet:first-of-type  { margin-top: 0; }
             }
+            .colonna-1-di-2 { padding-left: 15px; padding-right: 15px;}
         }
       }
     }
@@ -1656,6 +1690,9 @@ dl.portletCollection                { margin-bottom: 20px;
                                     overflow: hidden;
                                     position: relative;
                                     @include sfumagiu;
+      @media (max-width: $screen-xs-max) { height: auto; 
+        &:after                          { display: none; }
+      }
       p.dataItem                  { margin-bottom: 10px;
                                     font-size: 0.95em;
                                     color: $gray-light;
@@ -2792,7 +2829,7 @@ div.portletBoxColorato              { background-color: #912716;
     }
     p                               { margin-bottom: 0.5em; }
   }
-  td                                {
+  td                                { min-width: 30px;
     label                           { @extend .regular; }
   }
   > tbody:first-child > tr:first-child > td     { border-top-color: #999; }
