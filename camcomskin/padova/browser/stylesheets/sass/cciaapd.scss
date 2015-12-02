@@ -1768,6 +1768,7 @@ dl.portletCollection                { margin-bottom: 20px;
 
 // LISTING BAR (PAGINAZIONE)
 #viewlet-below-content .listingBar,
+#content-core .cciaa_topic_view .listingBar,
 #search-results .listingBar          { padding-top: 20px;
   span                               { color: $gray-light; }
   a                                  { border: 1px solid lighten($blu, 40);
@@ -1779,7 +1780,6 @@ dl.portletCollection                { margin-bottom: 20px;
                                        color: #FFF !important;
     }
   }
-  a.previous                         { }
 }
 
 // CORRELATI
@@ -2720,6 +2720,25 @@ table.listOffices                   {
             }
         }
     }
+}
+
+// CCIAA TOPIC VIEW
+.cciaa_topic_view                 {
+  .cciaaTopicItem                 { position: relative;
+                                    padding: 6px 0 6px 40px;
+                                    border-bottom: 1px dashed #999;
+      h4                          { margin:0; }
+      p                           { margin: 0 !important; }
+      &:before                    { @include make-fa('\f016');
+                                    display: block;
+                                    position: absolute;
+                                    top: 1.2em;
+                                    left:0;
+                                    font-size: 24px;
+      }
+      &.topic-news-item:before   { @include make-fa('\f1ea'); }
+      &.topic-event:before  { @include make-fa('\f073'); }
+  }
 }
 
 //// PER LA STAMPA

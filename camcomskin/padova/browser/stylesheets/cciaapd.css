@@ -6018,18 +6018,23 @@ dl.portletCollection {
         display: inline-block; }
 
 #viewlet-below-content .listingBar,
+#content-core .cciaa_topic_view .listingBar,
 #search-results .listingBar {
   padding-top: 20px; }
   #viewlet-below-content .listingBar span,
+  #content-core .cciaa_topic_view .listingBar span,
   #search-results .listingBar span {
     color: #777; }
   #viewlet-below-content .listingBar a,
+  #content-core .cciaa_topic_view .listingBar a,
   #search-results .listingBar a {
     border: 1px solid #839db2;
     border-radius: 3px;
     color: #283641;
     margin: 0 2px; }
     #viewlet-below-content .listingBar a:focus, #viewlet-below-content .listingBar a:hover,
+    #content-core .cciaa_topic_view .listingBar a:focus,
+    #content-core .cciaa_topic_view .listingBar a:hover,
     #search-results .listingBar a:focus,
     #search-results .listingBar a:hover {
       background-color: #839db2;
@@ -7369,3 +7374,32 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
       #return-to-top:active span {
         color: #fff;
         top: 5px; } }
+
+.cciaa_topic_view .cciaaTopicItem {
+  position: relative;
+  padding: 6px 0 6px 40px;
+  border-bottom: 1px dashed #999; }
+  .cciaa_topic_view .cciaaTopicItem h4 {
+    margin: 0; }
+  .cciaa_topic_view .cciaaTopicItem p {
+    margin: 0 !important; }
+  .cciaa_topic_view .cciaaTopicItem:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "";
+    color: inherit;
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    left: 0;
+    font-size: 24px; }
+  .cciaa_topic_view .cciaaTopicItem.topic-news-item:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "";
+    color: inherit; }
+  .cciaa_topic_view .cciaaTopicItem.topic-event:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "";
+    color: inherit; }
