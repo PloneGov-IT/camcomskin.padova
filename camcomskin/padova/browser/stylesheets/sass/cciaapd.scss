@@ -554,8 +554,7 @@ body[class*='subsection-++contextportlets++'] {
         }
     }
     strong                  { @extend .semibold; }    
-    .submenuStaticWrapper   { @extend .col-sm-12;
-                              @extend .col-md-7;
+    .submenuStaticWrapper   { @extend .col-sm-12, .col-md-7, .hidden-xs;
                               padding:0; }
     .staticItem             { @extend .col-sm-6;
                                padding: 30px;
@@ -1505,6 +1504,9 @@ dl.portletCollection                { margin-bottom: 20px;
     // colonne centrali in proporzione diversa come in home
     #portletPageFirstColumn.portletPageLeftColumn { width: 75%; }
     #portletPageSecondColumn.portletPageRightColumn { width: 20.8%; }
+    @media (max-width: $screen-md-max) {
+      #portletPageSecondColumn.portletPageRightColumn { width: 25%; padding-left: 0; }
+    }
     @media (max-width: $screen-sm-max) {
       #portletPageFirstColumn.portletPageLeftColumn { width: 49%;  float: left;  padding: 0 20px; }
       #portletPageSecondColumn.portletPageRightColumn{ width: 49%;  float: right; padding: 0 20px; }
@@ -2097,23 +2099,23 @@ dl.portletBandi                     {
 
   // RESPONSIVE
   @media (min-width: $screen-md) and (max-width: $screen-md-max) {
-    #portletPageMiddleRowWrapper  #portletPageMiddleRowContent,
+    #portletPageColumns #portletPageMiddleRowWrapper  #portletPageMiddleRowContent,
     #portlets-below                 { padding-left: 20px; padding-right: 20px; }
-    #portletPageMiddleRowWrapper #portletPageSecondColumn { width: 23%; }
+    #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn { width: 23%; }
   }
   @media (min-width: $screen-md) and (max-width: 1250) {
   }
   @media (max-width: $screen-sm-max) {
-      #portletPageMiddleRowWrapper  {        
+      #portletPageColumns #portletPageMiddleRowWrapper  {        
           #portletPageFirstColumn.portletPageLeftColumn   { width: 66%; }
-          #portletPageSecondColumn.portletPageRightColumn  { width: 33%; }
+          #portletPageSecondColumn.portletPageRightColumn  { width: 33%; padding-left: 0; }
       }
   }
   @media (max-width: $screen-xs-max) {
       #portlets-in-header           {
           [class*="InHeaderPortletManager"]{ display: none; }
       }
-      #portletPageMiddleRowWrapper  {
+      #portletPageColumns #portletPageMiddleRowWrapper  {
           #portletPageFirstColumn.portletPageLeftColumn   { width: auto; }
           #portletPageSecondColumn.portletPageRightColumn  { width: auto;
             .portletCalendar        { margin-right: 0; }
@@ -2274,8 +2276,8 @@ div.titolo-servizi-online           { background-color: $gray-bg;
   }
 
   // news verticale con foto
-  .boxNewsImg                       { @extend .col-sm-6;
-                                      @extend .col-md-4; 
+  .boxNewsImg                       { @extend .col-xs-6;
+                                      @extend .col-md-4;     
     .newsContent                    { background-color: #FFF; 
                                       position: relative;
     }
@@ -2301,10 +2303,21 @@ div.titolo-servizi-online           { background-color: $gray-bg;
         p.descItem                  { color: $link-color; }
       }
     }    
+    @media (max-width: 600px)       { width: auto; float: none; 
+      .newsImg                      { height: auto;
+        img                         { width: 100%;
+                                      height: auto; 
+        }
+      }
+      .newsText                   { height: auto; 
+                                    padding-bottom: 20px !important;
+        &:after                   { display: none;}
+      }      
+    }
   }
 
   // notizia grande
-  .boxNewsImg.boxNewsImgBig         { @extend .col-sm-12;
+  .boxNewsImg.boxNewsImgBig         { @extend .col-xs-12;
                                       @extend .col-md-8;
                                       padding-left: 20px;
     .boxNewsImgBigContent           { position: relative;
@@ -2366,10 +2379,11 @@ div.titolo-servizi-online           { background-color: $gray-bg;
       }
     }
     &.imgHover .imgItem:after       { background-color: transparentize(#000, .8); }
+    @media (max-width: 600px)       { width: auto; float: none; }
   }
 
   // le news piccole
-  .boxNews                          { @extend .col-sm-6;
+  .boxNews                          { @extend .col-xs-6;
                                       @extend .col-md-4;
     .newsContent                    { background-color: #FFF; 
                                       height: 155px;
@@ -2396,6 +2410,12 @@ div.titolo-servizi-online           { background-color: $gray-bg;
                                      background-color: $tr;
         }
       }
+    }
+    @media (max-width: 600px)       { width: auto; float: none; 
+      .newsContent                  { height: auto; 
+                                      padding-bottom: 20px !important;
+        &:after                     { display: none;}
+      } 
     }
   }
 
@@ -2509,7 +2529,7 @@ div.titolo-servizi-online           { background-color: $gray-bg;
                                       padding: 5px 15px;
       a                             { color: #FFF; 
         &:focus,
-        &:hover                     { color: $yellow;}
+        &:hover                     { color: $yellow; }
       }
     }
   }
@@ -2564,7 +2584,20 @@ div.titolo-servizi-online           { background-color: $gray-bg;
       &:hover                       {  }
       &:after                       { color: $gray-lighter; }
     }
-  }                     
+  }       
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .boxItem                        {
+      p.dataItem,
+      .titleItem                    { float: none;
+                                      text-align: left;
+                                      width: auto;
+      }
+      .titleItem                    { border-left:0;
+                                      padding: 6px 0 0;
+      }      
+    }
+  }
 }
 // eventi non in home
 #portal-columns div.boxCollezioneBase.boxEventi { background-color: #FFF;

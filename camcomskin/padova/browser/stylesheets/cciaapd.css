@@ -808,13 +808,13 @@ address {
 .officeContactsWrapper .officePec h6, .col-md-2, .col-lg-2, .col-xs-3, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, #plonebrowser div.width-1\3a 4, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, .boxCollezioneRigaNotizie .boxItem, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-md-4, #portal-logo, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-lg-4, .col-xs-5, .col-sm-5, #portal-logo, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-lg-5, .col-xs-6, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-md-6, .colonna-1-di-2, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, #plonebrowser div.width-1\3a 4, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, .boxCollezioneRigaNotizie .boxItem, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-md-4, #portal-logo, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-lg-4, .col-xs-5, .col-sm-5, #portal-logo, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-lg-5, .col-xs-6, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .col-md-6, .colonna-1-di-2, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
 .officeContactsWrapper .officePec p, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .boxEventi .boxItem .titleItem, .col-sm-10, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
-.officeContactsWrapper .officePec p, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-md-12, .col-lg-12 {
+.officeContactsWrapper .officePec p, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -823,10 +823,10 @@ address {
 .col-xs-1, .col-xs-2, .boxEventi .boxItem p.dataItem, .col-xs-3, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officePec h6, .col-xs-4, .col-xs-5, .col-xs-6, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-xs-7, .col-xs-8, .col-xs-9, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
-.officeContactsWrapper .officePec p, .col-xs-10, .boxEventi .boxItem .titleItem, .col-xs-11, .col-xs-12 {
+.officeContactsWrapper .officePec p, .col-xs-10, .boxEventi .boxItem .titleItem, .col-xs-11, .col-xs-12, .boxNotizieHome .boxNewsImg.boxNewsImgBig {
   float: left; }
 
 .col-xs-1 {
@@ -847,7 +847,7 @@ address {
 .col-xs-5 {
   width: 41.6666666667%; }
 
-.col-xs-6 {
+.col-xs-6, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews {
   width: 50%; }
 
 .col-xs-7 {
@@ -868,7 +868,7 @@ address {
 .col-xs-11 {
   width: 91.6666666667%; }
 
-.col-xs-12 {
+.col-xs-12, .boxNotizieHome .boxNewsImg.boxNewsImgBig {
   width: 100%; }
 
 .col-xs-pull-0 {
@@ -992,10 +992,10 @@ address {
   .col-sm-1, .col-sm-2, .officeContactsWrapper .officePhone h6,
   .officeContactsWrapper .officeFax h6,
   .officeContactsWrapper .officeEmail h6,
-  .officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, #plonebrowser div.width-1\3a 4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-sm-5, #portal-logo, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-sm-7, .col-sm-8, div.width-2\3a 3, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .officeContactsWrapper .officePhone p,
+  .officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, #plonebrowser div.width-1\3a 4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-sm-5, #portal-logo, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .col-sm-7, .col-sm-8, div.width-2\3a 3, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .officeContactsWrapper .officePhone p,
   .officeContactsWrapper .officeFax p,
   .officeContactsWrapper .officeEmail p,
-  .officeContactsWrapper .officePec p, .col-sm-11, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .boxNotizieHome .boxNewsImg.boxNewsImgBig {
+  .officeContactsWrapper .officePec p, .col-sm-11, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper {
     float: left; }
 
   .col-sm-1 {
@@ -1016,7 +1016,7 @@ address {
   .col-sm-5, #portal-logo {
     width: 41.6666666667%; }
 
-  .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews {
+  .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem {
     width: 50%; }
 
   .col-sm-7 {
@@ -1037,7 +1037,7 @@ address {
   .col-sm-11 {
     width: 91.6666666667%; }
 
-  .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .boxNotizieHome .boxNewsImg.boxNewsImgBig {
+  .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper {
     width: 100%; }
 
   .col-sm-pull-0 {
@@ -2846,7 +2846,7 @@ input[type="button"].btn-block {
     display: inline-block !important; } }
 
 @media (max-width: 767px) {
-  .hidden-xs, #topbar .claim, #content .documentActions, #portal-footer-wrapper #portlets-footer .lista-links:before, .section-homepage #portlets-below .BelowPortletManager2:before {
+  .hidden-xs, #topbar .claim, #submenu-details .submenuStaticWrapper, #content .documentActions, #portal-footer-wrapper #portlets-footer .lista-links:before, .section-homepage #portlets-below .BelowPortletManager2:before {
     display: none !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm, #content .documentActions, #return-to-top {
@@ -4172,7 +4172,7 @@ dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.
     margin-left: 0;
     margin-right: 0; }
 
-  .col-xs-12, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-md-12, .col-lg-12 {
+  .col-xs-12, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper, .col-md-12, .col-lg-12 {
     padding-left: 0;
     padding-right: 0; } }
 body[class*='subsection-++contextportlets++'] #portlets-below,
@@ -5754,6 +5754,10 @@ dl.portletCollection {
     width: 75%; }
   .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn.portletPageRightColumn {
     width: 20.8%; }
+  @media (max-width: 1299px) {
+    .template-pp_homepage_view #portletPageColumns #portletPageSecondColumn.portletPageRightColumn {
+      width: 25%;
+      padding-left: 0; } }
   @media (max-width: 991px) {
     .template-pp_homepage_view #portletPageColumns #portletPageFirstColumn.portletPageLeftColumn {
       width: 49%;
@@ -6364,25 +6368,26 @@ dl.portletBandi dd.portletItem {
       left: -10%;
       top: 0; }
 @media (min-width: 992px) and (max-width: 1299px) {
-  .section-homepage #portletPageMiddleRowWrapper #portletPageMiddleRowContent,
+  .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageMiddleRowContent,
   .section-homepage #portlets-below {
     padding-left: 20px;
     padding-right: 20px; }
-  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn {
+  .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn {
     width: 23%; } }
 @media (max-width: 991px) {
-  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn.portletPageLeftColumn {
+  .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageFirstColumn.portletPageLeftColumn {
     width: 66%; }
-  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn {
-    width: 33%; } }
+  .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn {
+    width: 33%;
+    padding-left: 0; } }
 @media (max-width: 767px) {
   .section-homepage #portlets-in-header [class*="InHeaderPortletManager"] {
     display: none; }
-  .section-homepage #portletPageMiddleRowWrapper #portletPageFirstColumn.portletPageLeftColumn {
+  .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageFirstColumn.portletPageLeftColumn {
     width: auto; }
-  .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn {
+  .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn {
     width: auto; }
-    .section-homepage #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn .portletCalendar {
+    .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn .portletCalendar {
       margin-right: 0; } }
 .section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic div.portletItem h3 {
   color: #283641; }
@@ -6568,6 +6573,20 @@ div.titolo-servizi-online {
 .boxNotizieHome .boxNewsImg.imgHover .newsText h3.titleItem,
 .boxNotizieHome .boxNewsImg.imgHover .newsText p.descItem {
   color: #9c3524; }
+@media (max-width: 600px) {
+  .boxNotizieHome .boxNewsImg {
+    width: auto;
+    float: none; }
+    .boxNotizieHome .boxNewsImg .newsImg {
+      height: auto; }
+      .boxNotizieHome .boxNewsImg .newsImg img {
+        width: 100%;
+        height: auto; }
+    .boxNotizieHome .boxNewsImg .newsText {
+      height: auto;
+      padding-bottom: 20px !important; }
+      .boxNotizieHome .boxNewsImg .newsText:after {
+        display: none; } }
 .boxNotizieHome .boxNewsImg.boxNewsImgBig {
   padding-left: 20px; }
   .boxNotizieHome .boxNewsImg.boxNewsImgBig .boxNewsImgBigContent {
@@ -6632,6 +6651,10 @@ div.titolo-servizi-online {
       transition: all 0.3s ease-in; }
   .boxNotizieHome .boxNewsImg.boxNewsImgBig.imgHover .imgItem:after {
     background-color: rgba(0, 0, 0, 0.2); }
+  @media (max-width: 600px) {
+    .boxNotizieHome .boxNewsImg.boxNewsImgBig {
+      width: auto;
+      float: none; } }
 .boxNotizieHome .boxNews .newsContent {
   background-color: #FFF;
   height: 155px;
@@ -6673,6 +6696,15 @@ div.titolo-servizi-online {
     .boxNotizieHome .boxNews .tagItem a:focus, .boxNotizieHome .boxNews .tagItem a:hover {
       color: #313131;
       background-color: transparent; }
+@media (max-width: 600px) {
+  .boxNotizieHome .boxNews {
+    width: auto;
+    float: none; }
+    .boxNotizieHome .boxNews .newsContent {
+      height: auto;
+      padding-bottom: 20px !important; }
+      .boxNotizieHome .boxNews .newsContent:after {
+        display: none; } }
 .boxNotizieHome .boxFooter {
   text-align: right;
   text-transform: uppercase;
@@ -6844,6 +6876,15 @@ div.titolo-servizi-online {
     padding: 15px; }
     .boxEventi .boxFooter a:after {
       color: #CCC; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .boxEventi .boxItem p.dataItem,
+    .boxEventi .boxItem .titleItem {
+      float: none;
+      text-align: left;
+      width: auto; }
+    .boxEventi .boxItem .titleItem {
+      border-left: 0;
+      padding: 6px 0 0; } }
 
 #portal-columns div.boxCollezioneBase.boxEventi {
   background-color: #FFF; }
