@@ -2669,12 +2669,12 @@ input[type="button"].btn-block {
 .officeContactsWrapper .officeEmail:before,
 .officeContactsWrapper .officePec:before, .template-pp_homepage_view #portletPageColumns .portletPageColumn:before, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:before, .section-homepage #portlets-in-header .InHeaderPortletManager1:before,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:before,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:before, .section-homepage #portlets-below:before, .boxEventi .boxItem:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
+.section-homepage #portlets-in-header .InHeaderPortletManager3:before, .section-homepage #portlets-below:before, .boxEventi .boxItem:before, div.banners:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
 .officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:after,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after {
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after, div.banners:after {
   content: " ";
   display: table; }
 .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
@@ -2682,7 +2682,7 @@ input[type="button"].btn-block {
 .officeContactsWrapper .officeEmail:after,
 .officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:after,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after {
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after, div.banners:after {
   clear: both; }
 
 .center-block {
@@ -2846,10 +2846,10 @@ input[type="button"].btn-block {
     display: inline-block !important; } }
 
 @media (max-width: 767px) {
-  .hidden-xs, #topbar .claim, #submenu-details .submenuStaticWrapper, #content .documentActions, #portal-footer-wrapper #portlets-footer .lista-links:before, .section-homepage #portlets-below .BelowPortletManager2:before {
+  .hidden-xs, #topbar .claim, #submenu-details .submenuStaticWrapper, #content .documentActions, #portal-footer-wrapper #portlets-footer .lista-links:before, .section-homepage #portlets-below .BelowPortletManager2:before, div.banners {
     display: none !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
-  .hidden-sm, #content .documentActions, #return-to-top {
+  .hidden-sm, #content .documentActions, #portal-footer-wrapper #portlets-footer .lista-links:before, div.banners, #return-to-top {
     display: none !important; } }
 @media (min-width: 992px) and (max-width: 1299px) {
   .hidden-md, #return-to-top {
@@ -4438,6 +4438,8 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
       text-align: right;
       margin-top: 40px;
       margin-bottom: 0; } }
+  #portal-footer-wrapper .secondaryMenu {
+    margin-top: 0; }
   .secondaryMenu > ul {
     white-space: nowrap;
     margin-bottom: 0; }
@@ -4445,9 +4447,9 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
       margin-right: 5%;
       display: inline-block; }
       #portal-footer-wrapper .secondaryMenu > ul > li.secondaryMenuItem {
-        display: list-item;
-        margin-left: 15px;
-        margin-right: 15px; }
+        display: block;
+        margin: 0;
+        border-bottom: 1px solid #708798; }
       .secondaryMenu > ul > li.secondaryMenuItem > a {
         font-size: 1.1em;
         text-transform: uppercase;
@@ -4460,9 +4462,8 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
           .secondaryMenu > ul > li.secondaryMenuItem > a {
             font-size: 1em; } }
         #portal-footer-wrapper .secondaryMenu > ul > li.secondaryMenuItem > a {
-          border: 1px solid #1e282f;
-          border-radius: 10px;
-          background-color: #222d35; }
+          padding: 10px;
+          background-color: #1e282f; }
         .secondaryMenu > ul > li.secondaryMenuItem > a:focus, .secondaryMenu > ul > li.secondaryMenuItem > a:hover {
           color: #9c3524; }
         .secondaryMenu > ul > li.secondaryMenuItem > a:after {
@@ -4487,6 +4488,9 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
             color: white; }
   .secondaryMenu .popover {
     max-width: none; }
+    #portal-footer-wrapper .secondaryMenu .popover {
+      width: 80%;
+      left: 10%; }
     .secondaryMenu .popover .popover-content {
       padding: 10px 15px; }
   .secondaryMenu .submenuWrapper {
@@ -4500,23 +4504,29 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
     font-size: 1.05em; }
     .secondaryMenu .submenuItem p {
       font-size: 0.9em;
-      color: #777; }
+      color: #313131; }
     .secondaryMenu .submenuItem:first-child {
       padding-left: 0;
       width: 200px; }
     #portal-footer-wrapper .secondaryMenu .submenuItem {
-      width: auto; }
+      width: auto;
+      float: none;
+      display: block;
+      border-top: 1px solid #ccc;
+      text-align: center;
+      padding: 0;
+      /*&:not(.servizi-online) {
+                            padding-left: 0;
+      }*/ }
       #portal-footer-wrapper .secondaryMenu .submenuItem:first-child {
-        width: auto; }
-      #portal-footer-wrapper .secondaryMenu .submenuItem:not(.servizi-online) {
-        padding-left: 0; }
+        border: 0; }
     #portal-footer-wrapper .secondaryMenu .submenuItem a,
     .secondaryMenu .submenuItem a {
-      color: #313131; }
+      color: #9c3524; }
       #portal-footer-wrapper .secondaryMenu .submenuItem a:focus, #portal-footer-wrapper .secondaryMenu .submenuItem a:hover,
       .secondaryMenu .submenuItem a:focus,
       .secondaryMenu .submenuItem a:hover {
-        color: #9c3524; }
+        color: #313131 !important; }
     .secondaryMenu .submenuItem h4 {
       margin-top: 15px;
       font-size: 1.1em; }
@@ -4527,42 +4537,41 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
       margin: 1em 0;
       font-size: 1.05em; }
       #portal-footer-wrapper .secondaryMenu .submenuItem h5 {
-        color: #313131; }
+        color: #313131;
+        margin: 0.5em 0; }
     .secondaryMenu .submenuItem ul {
       display: block; }
       .secondaryMenu .submenuItem ul li {
         display: block;
         margin-bottom: 0.65em;
         position: relative;
-        color: #777;
+        color: #313131;
         line-height: 1.3em; }
         .secondaryMenu .submenuItem ul li a {
           display: inline-block; }
-          .secondaryMenu .submenuItem ul li a.external-link {
-            padding-right: 20px; }
-            .secondaryMenu .submenuItem ul li a.external-link:after {
-              position: absolute;
-              display: inline-block;
-              font-family: FontAwesome;
-              content: "";
-              color: #CCC;
-              right: 0;
-              top: 0; }
-    .secondaryMenu .submenuItem.servizi-online {
-      background-color: #F2F2F2;
-      padding-bottom: 10px; }
-      .secondaryMenu .submenuItem.servizi-online h5 {
-        color: #9c3524; }
-      .secondaryMenu .submenuItem.servizi-online ul li {
-        padding-left: 13px; }
-        .secondaryMenu .submenuItem.servizi-online ul li:before {
-          display: inline-block;
-          font-family: FontAwesome;
-          content: "";
-          color: #9c3524;
-          top: 0em;
-          left: 0;
-          position: absolute; }
+          .secondaryMenu .submenuItem ul li a.external-link:after {
+            display: inline-block;
+            font-family: FontAwesome;
+            content: "";
+            color: #777;
+            margin-left: 0.6em;
+            font-size: 0.8em; }
+    @media (min-width: 768px) {
+      .secondaryMenu .submenuItem.servizi-online {
+        background-color: #F2F2F2;
+        padding-bottom: 10px; }
+        .secondaryMenu .submenuItem.servizi-online h5 {
+          color: #9c3524; }
+        .secondaryMenu .submenuItem.servizi-online ul li {
+          padding-left: 13px; }
+          .secondaryMenu .submenuItem.servizi-online ul li:before {
+            display: inline-block;
+            font-family: FontAwesome;
+            content: "";
+            color: #9c3524;
+            top: 0em;
+            left: 0;
+            position: absolute; } }
   .secondaryMenu #secondarymenu-2 .submenuItem:nth-child(2) {
     border-left: 1px dashed #CCC;
     margin-left: 20px;
@@ -4782,7 +4791,7 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
   #submenu-details .closeSubmenu {
     position: absolute;
     bottom: 10px;
-    right: 0; }
+    right: 20px; }
     #submenu-details .closeSubmenu a {
       color: #777;
       font-size: 0.9em;
@@ -4800,7 +4809,9 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
     #submenu-details .submenuDynamicWrapper {
       padding-right: 0; }
     #submenu-details .staticItem {
-      padding: 15px; } }
+      padding: 15px; }
+    #submenu-details .submenuDetailsContent {
+      padding-bottom: 20px; } }
 
 #breadcrumbs {
   background-color: #e6e9eb; }
@@ -5161,13 +5172,13 @@ dl.portletFocus {
   dl.portletFocus.colonna-1-di-4, #portletPageTopRowWrapper dl.portletFocus.boxRss {
     width: 22.375%;
     min-height: 18em; }
-    @media (max-width: 991px) {
-      dl.portletFocus.colonna-1-di-4, #portletPageTopRowWrapper dl.portletFocus.boxRss {
-        width: 100%;
-        margin: 0 0 20px;
-        min-height: 1em; } }
     dl.portletFocus.colonna-1-di-4 dd.portletFooter, #portletPageTopRowWrapper dl.portletFocus.boxRss dd.portletFooter {
       width: auto; }
+  @media (max-width: 767px) {
+    dl.portletFocus.colonna-1-di-3, dl.portletFocus.colonna-1-di-4, #portletPageTopRowWrapper dl.portletFocus.boxRss {
+      width: 100%;
+      margin: 0 0 20px;
+      min-height: 1em; } }
 
 dl[class*='ortletNavigation'] dt.portletHeader {
   padding: 0;
@@ -6200,6 +6211,9 @@ dl.portletBandi dd.portletItem {
     #portal-footer-wrapper #portlets-footer h5 {
       font-size: 1.2em;
       margin-top: 40px; }
+      @media (max-width: 767px) {
+        #portal-footer-wrapper #portlets-footer h5 {
+          margin-top: 0; } }
     #portal-footer-wrapper #portlets-footer p strong {
       font-size: 0.9em; }
     #portal-footer-wrapper #portlets-footer p a {
@@ -6232,6 +6246,9 @@ dl.portletBandi dd.portletItem {
       @media (min-width: 768px) {
         #portal-footer-wrapper #portlets-footer .lista-links {
           min-height: 225px; } }
+      @media (max-width: 991px) {
+        #portal-footer-wrapper #portlets-footer .lista-links {
+          margin-top: 30px; } }
       #portal-footer-wrapper #portlets-footer .lista-links:before {
         display: block;
         position: absolute;
@@ -6367,19 +6384,27 @@ dl.portletBandi dd.portletItem {
       position: absolute;
       left: -10%;
       top: 0; }
-@media (min-width: 992px) and (max-width: 1299px) {
-  .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageMiddleRowContent,
+@media (max-width: 1299px) {
   .section-homepage #portlets-below {
+    padding-left: 20px;
+    padding-right: 20px; } }
+@media (min-width: 992px) and (max-width: 1299px) {
+  .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageMiddleRowContent {
     padding-left: 20px;
     padding-right: 20px; }
   .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn {
     width: 23%; } }
+@media (max-width: 890px) {
+  .section-homepage #portlets-below .BelowPortletManager1 {
+    width: 50%; }
+  .section-homepage #portlets-below .BelowPortletManager2 {
+    width: 43%; } }
 @media (max-width: 991px) {
   .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageFirstColumn.portletPageLeftColumn {
     width: 66%; }
   .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn {
     width: 33%;
-    padding-left: 0; } }
+    padding: 0; } }
 @media (max-width: 767px) {
   .section-homepage #portlets-in-header [class*="InHeaderPortletManager"] {
     display: none; }
@@ -6388,7 +6413,16 @@ dl.portletBandi dd.portletItem {
   .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn {
     width: auto; }
     .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageSecondColumn.portletPageRightColumn .portletCalendar {
-      margin-right: 0; } }
+      margin-right: 0; }
+  .section-homepage #portletPageColumns #portletPageMiddleRowWrapper #portletPageMiddleRowContent {
+    padding-bottom: 0; }
+  .section-homepage #portlets-below .BelowPortletManager1,
+  .section-homepage #portlets-below .BelowPortletManager2 {
+    width: auto;
+    float: none;
+    clear: both; }
+  .section-homepage #portlets-below .BelowPortletManager2 {
+    padding-top: 20px; } }
 .section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic div.portletItem h3 {
   color: #283641; }
 .section-homepage #portletPageFirstColumn div.rerPortletAdvancedStatic {
@@ -6704,7 +6738,10 @@ div.titolo-servizi-online {
       height: auto;
       padding-bottom: 20px !important; }
       .boxNotizieHome .boxNews .newsContent:after {
-        display: none; } }
+        display: none; }
+      .boxNotizieHome .boxNews .newsContent h5.titleItem {
+        height: auto;
+        padding-bottom: 1.4em; } }
 .boxNotizieHome .boxFooter {
   text-align: right;
   text-transform: uppercase;
@@ -6921,6 +6958,10 @@ div.portletBannerTxt p:first-child a {
   min-height: 80px; }
 div.portletBannerTxt h5 {
   margin-top: 20px; }
+@media (min-width: 450px) and (max-width: 767px) {
+  div.portletBannerTxt.colonna-1-di-4, #portletPageTopRowWrapper div.portletBannerTxt.boxRss {
+    width: 50%;
+    float: left; } }
 
 div.banners {
   clear: left;
@@ -6948,7 +6989,8 @@ div.banners {
 div.logo-cciaa {
   position: relative;
   margin-bottom: 20px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  clear: left; }
   div.logo-cciaa:before {
     position: absolute;
     top: -8px;
@@ -7016,12 +7058,24 @@ div.portletBoxColorato {
     display: inline-block;
     bottom: -2px;
     left: -13px; }
-  @media (min-width: 992px) and (max-width: 1250px) {
+  @media (min-width: 1061px) and (max-width: 1250px) {
     div.portletBoxColorato[class*="icona-"] .portletItem a {
       padding-left: 60px; }
       div.portletBoxColorato[class*="icona-"] .portletItem a:before {
         font-size: 60px;
         top: 20px; } }
+  @media (min-width: 768px) and (max-width: 1060px) {
+    div.portletBoxColorato[class*="icona-"] .portletItem a {
+      padding-left: 40px; }
+      div.portletBoxColorato[class*="icona-"] .portletItem a:before {
+        font-size: 40px;
+        bottom: auto;
+        top: 20%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    div.portletBoxColorato[class*="icona-"] .portletItem a {
+      padding-left: 20px; }
+      div.portletBoxColorato[class*="icona-"] .portletItem a:before {
+        display: none; } }
 
 #content table.modulisticaListing tr.odd th.modulisticaDocument {
   border: 1px solid #999; }
