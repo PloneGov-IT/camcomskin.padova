@@ -2470,6 +2470,51 @@ div.titolo-servizi-online           { background-color: $gray-bg;
   }
 }
 
+.boxRss                             { 
+  h4.boxHeader                      { margin: 0;
+                                      background-color: $gray-bg;
+                                      color: $blu;
+                                      padding-bottom: 10px;
+    &:before                        { @include make-fa('\f09e'); 
+                                      font-size: 1.4em;
+                                      margin-right: 5px;
+    }
+    a                               { color: $blu;
+      &:focus,
+      &:hover                       { color: $link-color;}
+    }
+  }
+  .boxItem                          { background-color: #FFF;
+                                      color: $text-color;
+                                      border: 0;
+                                      padding: 0 15px;
+    &.firstItem                     { padding-top: 0; }
+    .titleItem                      { border-bottom: 1px dashed $gray-light;
+                                      padding: 15px 0;
+      a,
+      .dataItem                     { color: $text-color;}
+      a:focus,
+      a:hover                       { color: $link-color; }
+      a                             { @extend .regular; }
+      .dataItem                     { padding-bottom: 6px; }
+    }
+  }
+  .boxFooter                        { padding: 15px;
+                                      background-color: #FFF;
+  }
+  #portletPageTopRowWrapper &       { @extend .colonna-1-di-4; 
+                                      min-height: 320px;
+    h4.boxHeader                    { background-color: $blu;
+                                      color: #FFF;
+                                      padding: 5px 15px;
+      a                             { color: #FFF; 
+        &:focus,
+        &:hover                     { color: $yellow;}
+      }
+    }
+  }
+}
+
 // APPUNTAMENTI/EVENTI
 .boxEventi                          { background-color: #EEE;
   h4.boxHeader                      { margin: 0;
