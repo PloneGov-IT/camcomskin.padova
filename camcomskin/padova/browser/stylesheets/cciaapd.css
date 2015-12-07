@@ -2669,12 +2669,12 @@ input[type="button"].btn-block {
 .officeContactsWrapper .officeEmail:before,
 .officeContactsWrapper .officePec:before, .template-pp_homepage_view #portletPageColumns .portletPageColumn:before, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:before, .section-homepage #portlets-in-header .InHeaderPortletManager1:before,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:before,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:before, .section-homepage #portlets-below:before, .boxEventi .boxItem:before, div.banners:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
+.section-homepage #portlets-in-header .InHeaderPortletManager3:before, .section-homepage #portlets-below:before, .boxEventi .boxItem:before, div.banners:before, #week-table-wrapper table#week .gates:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
 .officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:after,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after, div.banners:after {
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after, div.banners:after, #week-table-wrapper table#week .gates:after {
   content: " ";
   display: table; }
 .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
@@ -2682,7 +2682,7 @@ input[type="button"].btn-block {
 .officeContactsWrapper .officeEmail:after,
 .officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:after,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after, div.banners:after {
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after, div.banners:after, #week-table-wrapper table#week .gates:after {
   clear: both; }
 
 .center-block {
@@ -4003,14 +4003,14 @@ input.inputLabelActive {
 .template-folder_contents .newsImageContainer {
   display: none; }
 
-.light, body, #camcomskin-searchbox input.searchButton, #search-field input.searchButton, .secondaryMenu .submenuItem, .boxCollezioneBase .boxItem h5.titleItem, #content .proceedingsList h2, #content h1.documentFirstHeading, #portal-footer-wrapper #portlets-footer h4, #portal-footer-wrapper #portlets-footer h5, div.titolo-servizi-online .portletItem h3 {
+.light, body, #camcomskin-searchbox input.searchButton, #search-field input.searchButton, .secondaryMenu .submenuItem, .boxCollezioneBase .boxItem h5.titleItem, #content .proceedingsList h2, #content h1.documentFirstHeading, #portal-footer-wrapper #portlets-footer h4, #portal-footer-wrapper #portlets-footer h5, div.titolo-servizi-online .portletItem h3, #week-table-wrapper table#week caption strong {
   font-weight: 300; }
 
 .regular, #search-filter legend, #content #search-filter legend, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel, dl.rerPortletAdvancedStatic dt.portletHeader,
 div.rerPortletAdvancedStatic dt.portletHeader, dl.rerPortletAdvancedStatic dd.portletFooter a,
 div.rerPortletAdvancedStatic dd.portletFooter a, dl.portletImg dt.portletHeader .tile,
 dl.portletImg dt.portletHeader a.tile, dl[class*='ortletNavigation'] dt.portletHeader .tile,
-dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #content blockquote.pullquote, .rifBando h3 strong, #portal-footer-wrapper #portal-colophon a, .boxAvvisi .boxItem .titleItem a, .boxRss .boxItem .titleItem a, .boxEventi .boxItem p.dataItem .dataDay, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label {
+dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #content blockquote.pullquote, .rifBando h3 strong, #portal-footer-wrapper #portal-colophon a, .boxAvvisi .boxItem .titleItem a, .boxRss .boxItem .titleItem a, .boxEventi .boxItem p.dataItem .dataDay, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label, #week-table-wrapper table#week .fromto {
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
@@ -4021,7 +4021,7 @@ dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, 
 .officeContactsWrapper .officePec h6, .boxCollezioneRigaNotizie .boxFooter a, #document-toc dt.portletHeader, .rifBando h3:first-child strong, dl.portletBandi h3.bandoTitle, dl.portletBandi p.bandoType, dl.portletBandi .bandoDates .labelTB, .template-collection_bandi_tipologia_view #content dl dt.bandoTitle,
 .template-collection_bandi_view #content dl dt.bandoTitle, .template-collection_bandi_tipologia_view #content dl .bandoType span,
 .template-collection_bandi_view #content dl .bandoType span, .template-collection_bandi_tipologia_view #content dl .bandoDates .labelTB,
-.template-collection_bandi_view #content dl .bandoDates .labelTB, #portal-footer-wrapper #portlets-footer dt.portletHeader, .boxNotizieHome .boxItem .tagItem a, table.listOffices thead th, table.listOffices tbody th {
+.template-collection_bandi_view #content dl .bandoDates .labelTB, #portal-footer-wrapper #portlets-footer dt.portletHeader, .boxNotizieHome .boxItem .tagItem a, table.listOffices thead th, table.listOffices tbody th, #week-table-wrapper table#week caption a.floatleft, #week-table-wrapper table#week caption a.floatright, #week-table-wrapper table#week caption a:not([class]), #week-table-wrapper table#week thead th {
   font-weight: 600; }
 
 .bold, #search-filter .field .optionsToggle label, #portal-personaltools-wrapper #user-name, .boxCollezioneBase .boxFooter, dl.portletCollection dd.portletFooter, .boxNotizieHome .boxFooter {
@@ -7619,3 +7619,86 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
     font-family: FontAwesome;
     content: "";
     color: inherit; }
+
+#week-table-wrapper table#week a {
+  border: 0; }
+#week-table-wrapper table#week caption {
+  background-color: #283641;
+  border: 0;
+  text-align: center;
+  color: #CCC;
+  padding-top: 0.5em; }
+  #week-table-wrapper table#week caption a {
+    color: #FFF;
+    border: 0; }
+    #week-table-wrapper table#week caption a:focus, #week-table-wrapper table#week caption a:hover {
+      color: #ead313 !important; }
+    #week-table-wrapper table#week caption a.floatleft, #week-table-wrapper table#week caption a.floatright {
+      text-transform: uppercase;
+      font-size: 0.8em; }
+    #week-table-wrapper table#week caption a.floatright:after {
+      display: inline-block;
+      font-family: FontAwesome;
+      content: "";
+      color: inherit;
+      margin-left: 5px; }
+    #week-table-wrapper table#week caption a.floatleft:before {
+      display: inline-block;
+      font-family: FontAwesome;
+      content: "";
+      color: inherit;
+      margin-right: 5px; }
+  #week-table-wrapper table#week caption strong {
+    text-transform: uppercase;
+    font-size: 1.5em; }
+  #week-table-wrapper table#week caption a:not([class]) {
+    margin-left: 1em;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    padding: 0.2em 0.8em;
+    background-color: #CCC;
+    border-radius: 4px;
+    vertical-align: text-bottom;
+    color: #313131; }
+    #week-table-wrapper table#week caption a:not([class]):focus, #week-table-wrapper table#week caption a:not([class]):hover {
+      background-color: #9c3524;
+      color: #FFF !important; }
+#week-table-wrapper table#week thead th {
+  padding: 0 0.5em 0.5em;
+  border: 0; }
+#week-table-wrapper table#week .gates .gate a {
+  height: auto !important;
+  overflow: visible !important;
+  text-align: center;
+  color: #326309; }
+  #week-table-wrapper table#week .gates .gate a:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "";
+    color: inherit;
+    font-size: 20px; }
+  #week-table-wrapper table#week .gates .gate a:focus, #week-table-wrapper table#week .gates .gate a:hover {
+    color: #283641; }
+#week-table-wrapper table#week .gatesheader .gate a {
+  color: #777; }
+#week-table-wrapper table#week .fromto {
+  background-color: #EEE;
+  padding: 0.3em;
+  border-bottom: 1px solid #ddd; }
+#week-table-wrapper table#week .slot .links a {
+  background-color: #FFF3D8;
+  line-height: 1em; }
+  #week-table-wrapper table#week .slot .links a:focus, #week-table-wrapper table#week .slot .links a:hover {
+    background-color: #326309;
+    color: #FFF !important; }
+  #week-table-wrapper table#week .slot .links a:before {
+    font-size: 14px; }
+
+.template-summary_view .tileItem {
+  border-bottom: 1px dashed #999;
+  padding: 10px 0; }
+.template-summary_view h2.tileHeadline {
+  font-size: 1.15em;
+  margin: 0; }
+.template-summary_view #content p.tileFooter {
+  margin: 0; }
