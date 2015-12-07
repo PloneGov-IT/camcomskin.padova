@@ -1,6 +1,6 @@
 <tal:sections tal:define="menu_tabs view/menu_tabs"
      tal:condition="menu_tabs"
-     i18n:domain="plone">     
+     i18n:domain="plone">
   <div class="secondaryMenu">
     <ul>
       <tal:tabs tal:repeat="tab menu_tabs">
@@ -21,5 +21,8 @@
         </li>
       </tal:tabs>
     </ul>
+    <p class="hiddenStructure">
+      <a accesskey="9" href="/contact-info">Contatti</a>
+    </p>
   </div>
 </tal:sections>

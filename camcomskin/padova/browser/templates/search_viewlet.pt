@@ -14,7 +14,6 @@
              value=""
              title="Search Site"
              placeholder="Search Site"
-             accesskey="4"
              i18n:attributes="title title_search_site;
                               placeholder title_search_site"
              tal:attributes="value request/form/SearchableText|nothing;"
@@ -24,6 +23,7 @@
         <input class="searchButton"
              type="submit"
              value="Search"
+             accesskey="5"
              i18n:attributes="value label_search;" />
 
         <input type="hidden" name="portal_type" value="Bando">
@@ -33,7 +33,7 @@
         <input type="hidden" name="portal_type" value="News Item">
         <input type="hidden" name="portal_type" value="Event">
         <input type="hidden" name="portal_type" value="Portlet Page">
-        
+
         <a class="closeLink" href="#"><span>Close</span></a>
       </span>
   </form>
