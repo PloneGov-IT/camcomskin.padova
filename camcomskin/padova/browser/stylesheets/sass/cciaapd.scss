@@ -2920,5 +2920,94 @@ table.listOffices                   {
   }
 }
 
-//// PER LA STAMPA
-//@media print {@include make-grid(md);}
+// PRENOTAZIONI
+#week-table-wrapper               {
+  table#week                      {
+    a                             { border:0; }
+    caption                       { background-color: $blu; 
+                                    border: 0;
+                                    text-align: center;
+                                    color: $gray-lighter;
+                                    padding-top: 0.5em;
+      a                           { color: #FFF; 
+                                    border:0;
+        &:focus,
+        &:hover                   { color: $yellow !important; }
+        &.floatleft,
+        &.floatright              { text-transform: uppercase;
+                                    @extend .semibold;
+                                    font-size: 0.8em;
+        }
+        &.floatright:after       { @include make-fa('\f054'); margin-left: 5px; }
+        &.floatleft:before       { @include make-fa('\f053'); margin-right: 5px; }
+      }
+      strong                     { text-transform: uppercase;
+                                   @extend .light;
+                                   font-size: 1.5em;
+      }
+      a:not([class])             { margin-left: 1em;
+                                   font-size: 0.75em;
+                                   text-transform: uppercase;
+                                   padding: 0.2em 0.8em;
+                                   background-color: $gray-lighter;
+                                   border-radius: 4px;
+                                   vertical-align: text-bottom;
+                                   color: $text-color;
+                                   @extend .semibold;
+        &:focus,
+        &:hover                  { background-color: $brand-primary; color: #FFF !important; }
+      }
+    }
+    thead                          {
+      th                           { @extend .semibold; 
+                                     padding: 0 0.5em 0.5em;
+                                     border: 0;
+      }
+    }
+    .gates                        { @extend .clearfix;
+      .gate                       {
+        a                         { height: auto !important;
+                                    overflow: visible !important;
+                                    text-align: center;                                  
+                                    color: #326309;
+          &:before                { @include make-fa('\f055'); 
+                                    font-size: 20px;
+          }
+          &:focus,
+          &:hover                 { color: $blu; }
+        }
+      }    
+    }
+    .gatesheader .gate a          { color: $gray-light; }
+    .fromto                       { background-color: #EEE;
+                                    @extend .regular;
+                                    padding: 0.3em;
+                                    border-bottom: 1px solid #ddd;
+    }
+    .slot                         {
+      .links                      {
+        a                         { background-color: #FFF3D8; 
+                                    line-height: 1em; 
+          &:focus,
+          &:hover                 { background-color: #326309; color: #FFF !important;}
+          &:before                { font-size: 14px; }
+        }
+      }
+    }  
+  }
+}
+
+// VISTA RIASSUNTIVA
+.template-summary_view,
+.template-folder_summary_view            {
+  .tileItem                       { border-bottom: 1px dashed #999;
+                                    padding: 10px 0;
+  }
+  h2.tileHeadline                 { font-size: 1.15em; 
+                                    margin: 0;
+  }
+  #content p.tileFooter,
+  #content p.tileBody             { margin:0;  }
+  #viewlet-below-content          { margin-top: 20px; }
+}
+
