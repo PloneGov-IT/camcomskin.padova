@@ -2922,7 +2922,7 @@ table.listOffices                   {
 
 // PRENOTAZIONI
 #week-table-wrapper               {
-  table#week                      {
+  table#week                      { width: 99.9%;
     a                             { border:0; }
     caption                       { background-color: $blu; 
                                     border: 0;
@@ -2966,19 +2966,22 @@ table.listOffices                   {
     }
     .gates                        { @extend .clearfix;
       .gate                       {
-        a                         { height: auto !important;
-                                    overflow: visible !important;
-                                    text-align: center;                                  
-                                    color: #326309;
-          &:before                { @include make-fa('\f055'); 
-                                    font-size: 20px;
+        a                         { 
+                                    
+                                    
+                                    
+          &:before                { 
           }
           &:focus,
-          &:hover                 { color: $blu; }
+          &:hover                 {  }
         }
       }    
     }
-    .gatesheader .gate a          { color: $gray-light; }
+    .gatesheader .gate a          { color: $gray-light; height: auto !important; 
+      &:before                    { @include make-fa('\f0ca'); 
+                                    font-size: 16px; 
+      } 
+    }
     .fromto                       { background-color: #EEE;
                                     @extend .regular;
                                     padding: 0.3em;
@@ -2986,11 +2989,11 @@ table.listOffices                   {
     }
     .slot                         {
       .links                      {
-        a                         { background-color: #FFF3D8; 
-                                    line-height: 1em; 
+        a                         { background-color: #FFF3D8;
+                                    border: 1px solid #E4D7B9;
+                                    border-width: 0 0 1px 1px;
           &:focus,
-          &:hover                 { background-color: #326309; color: #FFF !important;}
-          &:before                { font-size: 14px; }
+          &:hover                 { background-color: #326309; }
         }
       }
     }  

@@ -7877,79 +7877,73 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
     content: "";
     color: inherit; }
 
-#week-table-wrapper table#week a {
-  border: 0; }
-#week-table-wrapper table#week caption {
-  background-color: #283641;
-  border: 0;
-  text-align: center;
-  color: #CCC;
-  padding-top: 0.5em; }
-  #week-table-wrapper table#week caption a {
-    color: #FFF;
+#week-table-wrapper table#week {
+  width: 99.9%; }
+  #week-table-wrapper table#week a {
     border: 0; }
-    #week-table-wrapper table#week caption a:focus, #week-table-wrapper table#week caption a:hover {
-      color: #ead313 !important; }
-    #week-table-wrapper table#week caption a.floatleft, #week-table-wrapper table#week caption a.floatright {
+  #week-table-wrapper table#week caption {
+    background-color: #283641;
+    border: 0;
+    text-align: center;
+    color: #CCC;
+    padding-top: 0.5em; }
+    #week-table-wrapper table#week caption a {
+      color: #FFF;
+      border: 0; }
+      #week-table-wrapper table#week caption a:focus, #week-table-wrapper table#week caption a:hover {
+        color: #ead313 !important; }
+      #week-table-wrapper table#week caption a.floatleft, #week-table-wrapper table#week caption a.floatright {
+        text-transform: uppercase;
+        font-size: 0.8em; }
+      #week-table-wrapper table#week caption a.floatright:after {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: "";
+        color: inherit;
+        margin-left: 5px; }
+      #week-table-wrapper table#week caption a.floatleft:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: "";
+        color: inherit;
+        margin-right: 5px; }
+    #week-table-wrapper table#week caption strong {
       text-transform: uppercase;
-      font-size: 0.8em; }
-    #week-table-wrapper table#week caption a.floatright:after {
+      font-size: 1.5em; }
+    #week-table-wrapper table#week caption a:not([class]) {
+      margin-left: 1em;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      padding: 0.2em 0.8em;
+      background-color: #CCC;
+      border-radius: 4px;
+      vertical-align: text-bottom;
+      color: #313131; }
+      #week-table-wrapper table#week caption a:not([class]):focus, #week-table-wrapper table#week caption a:not([class]):hover {
+        background-color: #9c3524;
+        color: #FFF !important; }
+  #week-table-wrapper table#week thead th {
+    padding: 0 0.5em 0.5em;
+    border: 0; }
+  #week-table-wrapper table#week .gatesheader .gate a {
+    color: #777;
+    height: auto !important; }
+    #week-table-wrapper table#week .gatesheader .gate a:before {
       display: inline-block;
       font-family: FontAwesome;
-      content: "";
+      content: "";
       color: inherit;
-      margin-left: 5px; }
-    #week-table-wrapper table#week caption a.floatleft:before {
-      display: inline-block;
-      font-family: FontAwesome;
-      content: "";
-      color: inherit;
-      margin-right: 5px; }
-  #week-table-wrapper table#week caption strong {
-    text-transform: uppercase;
-    font-size: 1.5em; }
-  #week-table-wrapper table#week caption a:not([class]) {
-    margin-left: 1em;
-    font-size: 0.75em;
-    text-transform: uppercase;
-    padding: 0.2em 0.8em;
-    background-color: #CCC;
-    border-radius: 4px;
-    vertical-align: text-bottom;
-    color: #313131; }
-    #week-table-wrapper table#week caption a:not([class]):focus, #week-table-wrapper table#week caption a:not([class]):hover {
-      background-color: #9c3524;
-      color: #FFF !important; }
-#week-table-wrapper table#week thead th {
-  padding: 0 0.5em 0.5em;
-  border: 0; }
-#week-table-wrapper table#week .gates .gate a {
-  height: auto !important;
-  overflow: visible !important;
-  text-align: center;
-  color: #326309; }
-  #week-table-wrapper table#week .gates .gate a:before {
-    display: inline-block;
-    font-family: FontAwesome;
-    content: "";
-    color: inherit;
-    font-size: 20px; }
-  #week-table-wrapper table#week .gates .gate a:focus, #week-table-wrapper table#week .gates .gate a:hover {
-    color: #283641; }
-#week-table-wrapper table#week .gatesheader .gate a {
-  color: #777; }
-#week-table-wrapper table#week .fromto {
-  background-color: #EEE;
-  padding: 0.3em;
-  border-bottom: 1px solid #ddd; }
-#week-table-wrapper table#week .slot .links a {
-  background-color: #FFF3D8;
-  line-height: 1em; }
-  #week-table-wrapper table#week .slot .links a:focus, #week-table-wrapper table#week .slot .links a:hover {
-    background-color: #326309;
-    color: #FFF !important; }
-  #week-table-wrapper table#week .slot .links a:before {
-    font-size: 14px; }
+      font-size: 16px; }
+  #week-table-wrapper table#week .fromto {
+    background-color: #EEE;
+    padding: 0.3em;
+    border-bottom: 1px solid #ddd; }
+  #week-table-wrapper table#week .slot .links a {
+    background-color: #FFF3D8;
+    border: 1px solid #E4D7B9;
+    border-width: 0 0 1px 1px; }
+    #week-table-wrapper table#week .slot .links a:focus, #week-table-wrapper table#week .slot .links a:hover {
+      background-color: #326309; }
 
 .template-summary_view .tileItem,
 .template-folder_summary_view .tileItem {
