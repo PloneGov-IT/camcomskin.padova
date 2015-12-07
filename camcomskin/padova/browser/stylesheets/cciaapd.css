@@ -3429,7 +3429,7 @@ div.width-full {
     -ms-flex-order: 1;
     -webkit-order: 1;
     order: 1; } }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   #portal-column-one.width-1\3a 4.position-0,
   #portal-column-content.width-3\3a 4.position-1\3a 4 {
     width: auto;
