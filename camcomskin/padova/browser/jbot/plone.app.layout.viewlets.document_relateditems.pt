@@ -11,9 +11,14 @@
                           getInfoFor python:wf_tool.getInfoFor;
                           site_properties context/portal_properties/site_properties;
                           use_view_action site_properties/typesUseViewActionInListings|python:();">
-        <h4><span i18n:translate="label_related_items">Related content</span></h4>
-          <ul>
-        <tal:related repeat="item related">
+        <h4>
+          <span tal:condition="python:context.portal_type != 'Bando'"
+                i18n:translate="label_related_items">Related content</span>
+          <span tal:condition="python:context.portal_type == 'Bando'"
+                >Moduli rendicontazione</span>
+        </h4>
+        <ul>
+          <tal:related repeat="item related">
             <li tal:define="
                     desc                item/Description;
                     item_icon           python:ploneview.getIcon(item);
