@@ -7951,11 +7951,19 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
   #week-table-wrapper table#week .slot .links a:before {
     font-size: 14px; }
 
-.template-summary_view .tileItem {
+.template-summary_view .tileItem,
+.template-folder-summary_view .tileItem {
   border-bottom: 1px dashed #999;
   padding: 10px 0; }
-.template-summary_view h2.tileHeadline {
+.template-summary_view h2.tileHeadline,
+.template-folder-summary_view h2.tileHeadline {
   font-size: 1.15em;
   margin: 0; }
-.template-summary_view #content p.tileFooter {
+.template-summary_view #content p.tileFooter,
+.template-summary_view #content p.tileBody,
+.template-folder-summary_view #content p.tileFooter,
+.template-folder-summary_view #content p.tileBody {
   margin: 0; }
+.template-summary_view #viewlet-below-content,
+.template-folder-summary_view #viewlet-below-content {
+  margin-top: 20px; }

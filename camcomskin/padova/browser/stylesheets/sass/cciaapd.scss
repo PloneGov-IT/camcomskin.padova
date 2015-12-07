@@ -2998,13 +2998,16 @@ table.listOffices                   {
 }
 
 // VISTA RIASSUNTIVA
-.template-summary_view            {
+.template-summary_view,
+.template-folder-summary_view            {
   .tileItem                       { border-bottom: 1px dashed #999;
                                     padding: 10px 0;
   }
   h2.tileHeadline                 { font-size: 1.15em; 
                                     margin: 0;
   }
-  #content p.tileFooter                    { margin:0;  }
+  #content p.tileFooter,
+  #content p.tileBody             { margin:0;  }
+  #viewlet-below-content          { margin-top: 20px; }
 }
 
