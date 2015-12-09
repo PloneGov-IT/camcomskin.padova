@@ -181,7 +181,7 @@
         </div>
     </div>
 
-    <a href="javascript:" id="return-to-top">
+    <a href="javascript:" id="return-to-top" title="Ritorna in cima">
       <span class="fa fa-chevron-up"></span>
     </a>
 
