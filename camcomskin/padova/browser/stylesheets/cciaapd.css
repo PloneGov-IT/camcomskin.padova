@@ -4287,17 +4287,14 @@ dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, 
 a {
   text-decoration: none !important; }
 
-#portal-columns a,
 dl.portlet a:not(.btn),
 #content a:not(.btn) {
   border-bottom: 1px dotted #777;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in; }
-  #portal-columns a:focus, #portal-columns a:hover,
   dl.portlet a:not(.btn):focus,
-  #content a:not(.btn):focus,
-  dl.portlet a:not(.btn):hover,
+  #content a:not(.btn):focus, dl.portlet a:not(.btn):hover,
   #content a:not(.btn):hover {
     background-color: #F2F2F2;
     border-radius: 3px;
@@ -5361,7 +5358,9 @@ dl.portletServiziOnline {
             font-family: FontAwesome;
             font-size: 18px; }
           dl.portletServiziOnline dd.portletItem ul li a:focus, dl.portletServiziOnline dd.portletItem ul li a:hover {
-            color: #9c3524 !important; }
+            color: #9c3524 !important;
+            border: 0;
+            background-color: transparent; }
             dl.portletServiziOnline dd.portletItem ul li a:focus:before, dl.portletServiziOnline dd.portletItem ul li a:hover:before {
               color: #313131; }
           dl.portletServiziOnline dd.portletItem ul li a.external-link:before {
@@ -5501,7 +5500,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
         transition: all 0.1s ease-in; }
         dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a:focus, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a:hover {
           color: #9c3524 !important;
-          background-color: #F2F2F2; }
+          background-color: #F2F2F2;
+          border: 0; }
         dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath {
           color: #283641 !important; }
       dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 > li {
@@ -6325,7 +6325,9 @@ dl.portletCollection {
           vertical-align: middle;
           margin-right: 8px; }
         #content .documentActions ul li a:focus, #content .documentActions ul li a:hover {
-          color: #9c3524 !important; }
+          color: #9c3524 !important;
+          border: 0;
+          background-color: transparent; }
           #content .documentActions ul li a:focus:before, #content .documentActions ul li a:hover:before {
             color: #313131 !important; }
       #content .documentActions ul li#document-action-print a:before {
@@ -6431,7 +6433,7 @@ dl.portletBandi dd.portletItem {
   display: none; }
 .template-collection_bandi_tipologia_view #content dl,
 .template-collection_bandi_view #content dl {
-  margin: 0;
+  margin: 0 0 20px;
   padding: 15px 0;
   border-bottom: 1px dashed #777; }
   .template-collection_bandi_tipologia_view #content dl dt.bandoTitle,

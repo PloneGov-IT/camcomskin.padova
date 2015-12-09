@@ -881,6 +881,8 @@ dl.portletServiziOnline             { border: 1px solid $link-color;
           }
           &:focus,
           &:hover                   { color: $link-color !important; 
+                                      border:0;
+                                      background-color: $tr;
             &:before                { color: $text-color; }
           }
           &.external-link:before    { content: '\f08e'; }
@@ -1017,6 +1019,7 @@ dl[class*='ortletNavigation']       {
             &:focus,
             &:hover                 { color: $link-color !important;
                                       background-color: $grayVeryLighty;
+                                      border:0;
             }
             &.navTreeItemInPath     { @extend .semibold;
                                       color: $blu !important;
@@ -1814,6 +1817,8 @@ dl.portletCollection                { margin-bottom: 20px;
         }
         &:focus,
         &:hover                     { color: $link-color !important;
+                                      border: 0;
+                                      background-color: $tr;
           &:before                  { color: $text-color !important; }
         }
       }
@@ -1915,7 +1920,7 @@ dl.portletBandi                     {
 .template-collection_bandi_view           {
   #plone-document-byline                  { display: none; }
   #content                                {
-    dl                                    { margin:0;
+    dl                                    { margin:0 0 20px;
                                             padding: 15px 0;
                                             border-bottom: 1px dashed $gray-light;
       dt.bandoTitle                         { margin-top: 0;
