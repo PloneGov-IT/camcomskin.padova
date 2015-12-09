@@ -7289,7 +7289,7 @@ div.portletBannerTxt p > a {
     max-width: 100%;
     height: auto; }
 div.portletBannerTxt p:first-child a {
-  min-height: 80px; }
+  min-height: 60px; }
 div.portletBannerTxt h5 {
   margin-top: 20px; }
 @media (min-width: 450px) and (max-width: 767px) {

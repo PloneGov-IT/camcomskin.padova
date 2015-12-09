@@ -2719,7 +2719,7 @@ div.portletBannerTxt                {
                                       height: auto;
     }
   }
-  p:first-child a                   { min-height: 80px; }
+  p:first-child a                   { min-height: 60px; }
   h5                                { margin-top: 20px; }
   &.colonna-1-di-4                  { 
     @media (min-width: 450px) and (max-width: $screen-xs-max) { width: 50%; float:left; }
