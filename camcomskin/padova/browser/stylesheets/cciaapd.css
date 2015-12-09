@@ -4575,6 +4575,8 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
     border: 0;
     margin: -0.5em 0 0 -4px;
     padding: 0.5em 1em; }
+    #camcomskin-searchbox input.searchButton:hover {
+      color: #ead313; }
   #camcomskin-searchbox a.closeLink {
     display: inline-block; }
     #camcomskin-searchbox a.closeLink:before {
@@ -4630,6 +4632,8 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
     margin: -0.65em 0 0 -4px;
     padding: 0.7em 1em;
     font-size: 1.5em !important; }
+    #search-field input.searchButton:hover {
+      color: #ead313; }
   @media (max-width: 767px) {
     #search-field {
       margin-bottom: 1em; }
