@@ -5,7 +5,7 @@
 .bold       { font-weight: 700; }
 
 a {text-decoration: none !important;}
-#portal-columns a,
+/*#portal-columns a,
 a%a-style:not(.btn)   { border-bottom: $borderLinkWidth $borderLinkStyle $borderLinkColor;
               @include transition(all .2s ease-in);
   &:focus,
@@ -24,6 +24,7 @@ a%basic:not(.btn) { color: $link-color;
 dl.portlet a,
 #content a,  
 #content p a { @extend %a-style; }
+*/
 #portletPageColumns {@extend .clearfix;}
 
 .richTextWidget      { padding-top: 10px;

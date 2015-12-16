@@ -23,14 +23,14 @@ label, input, button, select, textarea,
 select, input[type="file"]      { height: auto; line-height: normal;}
 input[type="submit"],
 input.context[name="form.button.save"],
-input.context[name="form.actions.save"] { @extend .btn, .btn-success; }
-input[type="button"]            { @extend .btn, .btn-primary; }
+input.context[name="form.actions.save"] { @include make-btn(); @extend .btn-success; }
+input[type="button"]            { @include make-btn(); @extend .btn-primary; }
 .context,
 input.context,
 input.destructive,
 input.standalone,
 input[type="submit"].discreet,
-input.standalone[name="form.button.cancel"] { @extend .btn, .btn-default;}
+input.standalone[name="form.button.cancel"] { @include make-btn(); @extend .btn-default;}
 input[type="submit"].discreet   { @extend .btn-xs; }
 input.standalone                { @extend .btn-info; }
 input.destructive               { @extend .btn-danger; }
@@ -167,12 +167,12 @@ input.label:empty               { display: inline-block; }
 }
 
 #content-history                {
-    input.standalone[type="submit"] { @extend .btn, .btn-xs; }
+    input.standalone[type="submit"] { @include make-btn(); @extend .btn-xs; }
 }
 
 a.managePortletsFallback        { margin-bottom:0; }
 #content                        {
-    a.link-parent               { @extend .btn, .btn-info, .btn-xs;
+    a.link-parent               { @include make-btn(); @extend .btn-info, .btn-xs;
                                   margin-bottom: 10px;
                                   font-size: 1em;
                                   border:0;
@@ -279,7 +279,7 @@ table.sequencewidget td {padding-top: 0.3em; padding-bottom: 0.3em;}
     }
     #internalpath                   { margin-left: 0; }
     form                            { margin:0;}
-    .mceActionPanel input[type="submit"] { @extend .btn, .btn-success;}
+    .mceActionPanel input[type="submit"] { @include make-btn(); @extend .btn-success;}
 }
 
 // NEW TINY
@@ -401,7 +401,7 @@ div.width-2\3a 3 { @extend .col-sm-8; } /* .width-2:3 */
         @include order(1);
     }
 }
-@media (max-width: $screen-sm-max) {
+@media (max-width: $screen-xs-max) {
     #portal-column-one.width-1\3a 4.position-0,
     #portal-column-content.width-3\3a 4.position-1\3a 4 {
         width: auto;

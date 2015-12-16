@@ -41,6 +41,7 @@
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
         <meta name="generator" content="Plone - http://plone.org" />
     </tal:notajax>
@@ -180,7 +181,7 @@
         </div>
     </div>
 
-    <a href="javascript:" id="return-to-top">
+    <a href="javascript:" id="return-to-top" title="Ritorna in cima">
       <span class="fa fa-chevron-up"></span>
     </a>
 

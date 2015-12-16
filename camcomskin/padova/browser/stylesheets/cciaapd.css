@@ -229,18 +229,8 @@ th {
   .navbar {
     display: none; }
 
-  .btn > .caret, input[type="submit"] > .caret, input[type="button"] > .caret, .context > .caret,
-  input.destructive > .caret,
-  input.standalone > .caret, #content-history input.standalone[type="submit"] > .caret, #content a.link-parent > .caret, #content.dialog-wrapper .mceActionPanel input[type="submit"] > .caret,
-  .dropup > .btn > .caret,
-  .dropup > input[type="submit"] > .caret,
-  .dropup > input[type="button"] > .caret,
-  .dropup > .context > .caret,
-  .dropup > input.destructive > .caret,
-  .dropup > input.standalone > .caret,
-  #content-history .dropup > input.standalone[type="submit"] > .caret,
-  #content .dropup > a.link-parent > .caret,
-  #content.dialog-wrapper .mceActionPanel .dropup > input[type="submit"] > .caret {
+  .btn > .caret,
+  .dropup > .btn > .caret {
     border-top-color: #000 !important; }
 
   .label {
@@ -2180,14 +2170,7 @@ select[multiple].input-lg {
     padding-top: 6px;
     font-size: 13px; } }
 
-.btn, input[type="submit"],
-input.context[name="form.button.save"],
-input.context[name="form.actions.save"], input[type="button"], .context,
-input.context,
-input.destructive,
-input.standalone,
-input[type="submit"].discreet,
-input.standalone[name="form.button.cancel"], #content-history input.standalone[type="submit"], #content a.link-parent, #content.dialog-wrapper .mceActionPanel input[type="submit"] {
+.btn {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -2204,47 +2187,19 @@ input.standalone[name="form.button.cancel"], #content-history input.standalone[t
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none; }
-  .btn:focus, input[type="submit"]:focus, input[type="button"]:focus, .context:focus,
-  input.destructive:focus,
-  input.standalone:focus, #content-history input.standalone[type="submit"]:focus, #content a.link-parent:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:focus, .btn.focus, input.focus[type="submit"], input.focus[type="button"], .focus.context,
-  input.focus.destructive,
-  input.focus.standalone, #content-history input.focus.standalone[type="submit"], #content a.focus.link-parent, #content.dialog-wrapper .mceActionPanel input.focus[type="submit"], .btn:active:focus, input[type="submit"]:active:focus, input[type="button"]:active:focus, .context:active:focus,
-  input.destructive:active:focus,
-  input.standalone:active:focus, #content-history input.standalone[type="submit"]:active:focus, #content a.link-parent:active:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:active:focus, .btn:active.focus, input[type="submit"]:active.focus, input[type="button"]:active.focus, .context:active.focus,
-  input.destructive:active.focus,
-  input.standalone:active.focus, #content-history input.standalone[type="submit"]:active.focus, #content a.link-parent:active.focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:active.focus, .btn.active:focus, input.active[type="submit"]:focus, input.active[type="button"]:focus, .active.context:focus,
-  input.active.destructive:focus,
-  input.active.standalone:focus, #content-history input.active.standalone[type="submit"]:focus, #content a.active.link-parent:focus, #content.dialog-wrapper .mceActionPanel input.active[type="submit"]:focus, .btn.active.focus, input.active.focus[type="submit"], input.active.focus[type="button"], .active.focus.context,
-  input.active.focus.destructive,
-  input.active.focus.standalone, #content-history input.active.focus.standalone[type="submit"], #content a.active.focus.link-parent, #content.dialog-wrapper .mceActionPanel input.active.focus[type="submit"] {
+  .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
-  .btn:hover, input[type="submit"]:hover, input[type="button"]:hover, .context:hover,
-  input.destructive:hover,
-  input.standalone:hover, #content-history input.standalone[type="submit"]:hover, #content a.link-parent:hover, #content.dialog-wrapper .mceActionPanel input[type="submit"]:hover, .btn:focus, input[type="submit"]:focus, input[type="button"]:focus, .context:focus,
-  input.destructive:focus,
-  input.standalone:focus, #content-history input.standalone[type="submit"]:focus, #content a.link-parent:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:focus, .btn.focus, input.focus[type="submit"], input.focus[type="button"], .focus.context,
-  input.focus.destructive,
-  input.focus.standalone, #content-history input.focus.standalone[type="submit"], #content a.focus.link-parent, #content.dialog-wrapper .mceActionPanel input.focus[type="submit"] {
+  .btn:hover, .btn:focus, .btn.focus {
     color: #333;
     text-decoration: none; }
-  .btn:active, input[type="submit"]:active, input[type="button"]:active, .context:active,
-  input.destructive:active,
-  input.standalone:active, #content-history input.standalone[type="submit"]:active, #content a.link-parent:active, #content.dialog-wrapper .mceActionPanel input[type="submit"]:active, .btn.active, input.active[type="submit"], input.active[type="button"], .active.context,
-  input.active.destructive,
-  input.active.standalone, #content-history input.active.standalone[type="submit"], #content a.active.link-parent, #content.dialog-wrapper .mceActionPanel input.active[type="submit"] {
+  .btn:active, .btn.active {
     outline: 0;
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
-  .btn.disabled, input.disabled[type="submit"], input.disabled[type="button"], .disabled.context,
-  input.disabled.destructive,
-  input.disabled.standalone, #content-history input.disabled.standalone[type="submit"], #content a.disabled.link-parent, #content.dialog-wrapper .mceActionPanel input.disabled[type="submit"], .btn[disabled], input[disabled][type="submit"], input[disabled][type="button"], [disabled].context,
-  input[disabled].destructive,
-  input[disabled].standalone, #content-history input[disabled].standalone[type="submit"], #content a[disabled].link-parent, #content.dialog-wrapper .mceActionPanel input[disabled][type="submit"], fieldset[disabled] .btn, fieldset[disabled] input[type="submit"], fieldset[disabled] input[type="button"], fieldset[disabled] .context,
-  fieldset[disabled] input.destructive,
-  fieldset[disabled] input.standalone, fieldset[disabled] #content-history input.standalone[type="submit"], #content-history fieldset[disabled] input.standalone[type="submit"], fieldset[disabled] #content a.link-parent, #content fieldset[disabled] a.link-parent, fieldset[disabled] #content.dialog-wrapper .mceActionPanel input[type="submit"], #content.dialog-wrapper .mceActionPanel fieldset[disabled] input[type="submit"] {
+  .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
     cursor: not-allowed;
     opacity: 0.65;
     -webkit-box-shadow: none;
@@ -2669,12 +2624,12 @@ input[type="button"].btn-block {
 .officeContactsWrapper .officeEmail:before,
 .officeContactsWrapper .officePec:before, .template-pp_homepage_view #portletPageColumns .portletPageColumn:before, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:before, .section-homepage #portlets-in-header .InHeaderPortletManager1:before,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:before,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:before, .section-homepage #portlets-below:before, .boxEventi .boxItem:before, div.banners:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
+.section-homepage #portlets-in-header .InHeaderPortletManager3:before, .section-homepage #portlets-below:before, .boxEventi .boxItem:before, div.banners:before, #week-table-wrapper table#week .gates:before, .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
 .officeContactsWrapper .officeFax:after,
 .officeContactsWrapper .officeEmail:after,
 .officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:after,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after, div.banners:after {
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after, div.banners:after, #week-table-wrapper table#week .gates:after {
   content: " ";
   display: table; }
 .clearfix:after, #visual-portal-wrapper:after, .ArchetypesQueryWidget .criteria:after, #edit-bar:after, #portletPageColumns:after, .secondaryMenu .submenuWrapper:after, .globalnavWrapper:after, .globalnavWrapper #portal-globalnav:after, #submenu-details .submenuDetailsContent:after, .officeContactsWrapper .officePhone:after,
@@ -2682,7 +2637,7 @@ input[type="button"].btn-block {
 .officeContactsWrapper .officeEmail:after,
 .officeContactsWrapper .officePec:after, .template-pp_homepage_view #portletPageColumns .portletPageColumn:after, .template-pp_homepage_view #portletPageColumns #portletPageMiddleRowWrapper:after, .section-homepage #portlets-in-header .InHeaderPortletManager1:after,
 .section-homepage #portlets-in-header .InHeaderPortletManager2:after,
-.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after, div.banners:after {
+.section-homepage #portlets-in-header .InHeaderPortletManager3:after, .section-homepage #portlets-below:after, .boxEventi .boxItem:after, div.banners:after, #week-table-wrapper table#week .gates:after {
   clear: both; }
 
 .center-block {
@@ -2988,6 +2943,216 @@ select, input[type="file"] {
   height: auto;
   line-height: normal; }
 
+input[type="submit"],
+input.context[name="form.button.save"],
+input.context[name="form.actions.save"] {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  input[type="submit"]:focus, input[type="submit"].focus, input[type="submit"]:active:focus, input[type="submit"]:active.focus, input[type="submit"].active:focus, input[type="submit"].active.focus,
+  input.context[name="form.button.save"]:focus,
+  input.context[name="form.button.save"].focus,
+  input.context[name="form.button.save"]:active:focus,
+  input.context[name="form.button.save"]:active.focus,
+  input.context[name="form.button.save"].active:focus,
+  input.context[name="form.button.save"].active.focus,
+  input.context[name="form.actions.save"]:focus,
+  input.context[name="form.actions.save"].focus,
+  input.context[name="form.actions.save"]:active:focus,
+  input.context[name="form.actions.save"]:active.focus,
+  input.context[name="form.actions.save"].active:focus,
+  input.context[name="form.actions.save"].active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"].focus,
+  input.context[name="form.button.save"]:hover,
+  input.context[name="form.button.save"]:focus,
+  input.context[name="form.button.save"].focus,
+  input.context[name="form.actions.save"]:hover,
+  input.context[name="form.actions.save"]:focus,
+  input.context[name="form.actions.save"].focus {
+    color: #333;
+    text-decoration: none; }
+  input[type="submit"]:active, input[type="submit"].active,
+  input.context[name="form.button.save"]:active,
+  input.context[name="form.button.save"].active,
+  input.context[name="form.actions.save"]:active,
+  input.context[name="form.actions.save"].active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  input[type="submit"].disabled, input[type="submit"][disabled], fieldset[disabled] input[type="submit"],
+  input.context[name="form.button.save"].disabled,
+  input.context[name="form.button.save"][disabled], fieldset[disabled]
+  input.context[name="form.button.save"],
+  input.context[name="form.actions.save"].disabled,
+  input.context[name="form.actions.save"][disabled], fieldset[disabled]
+  input.context[name="form.actions.save"] {
+    cursor: not-allowed;
+    opacity: 0.65;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+input[type="button"] {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  input[type="button"]:focus, input[type="button"].focus, input[type="button"]:active:focus, input[type="button"]:active.focus, input[type="button"].active:focus, input[type="button"].active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  input[type="button"]:hover, input[type="button"]:focus, input[type="button"].focus {
+    color: #333;
+    text-decoration: none; }
+  input[type="button"]:active, input[type="button"].active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  input[type="button"].disabled, input[type="button"][disabled], fieldset[disabled] input[type="button"] {
+    cursor: not-allowed;
+    opacity: 0.65;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.context,
+input.context,
+input.destructive,
+input.standalone,
+input[type="submit"].discreet,
+input.standalone[name="form.button.cancel"] {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  .context:focus, .context.focus, .context:active:focus, .context:active.focus, .context.active:focus, .context.active.focus,
+  input.context:focus,
+  input.context.focus,
+  input.context:active:focus,
+  input.context:active.focus,
+  input.context.active:focus,
+  input.context.active.focus,
+  input.destructive:focus,
+  input.destructive.focus,
+  input.destructive:active:focus,
+  input.destructive:active.focus,
+  input.destructive.active:focus,
+  input.destructive.active.focus,
+  input.standalone:focus,
+  input.standalone.focus,
+  input.standalone:active:focus,
+  input.standalone:active.focus,
+  input.standalone.active:focus,
+  input.standalone.active.focus,
+  input[type="submit"].discreet:focus,
+  input[type="submit"].discreet.focus,
+  input[type="submit"].discreet:active:focus,
+  input[type="submit"].discreet:active.focus,
+  input[type="submit"].discreet.active:focus,
+  input[type="submit"].discreet.active.focus,
+  input.standalone[name="form.button.cancel"]:focus,
+  input.standalone[name="form.button.cancel"].focus,
+  input.standalone[name="form.button.cancel"]:active:focus,
+  input.standalone[name="form.button.cancel"]:active.focus,
+  input.standalone[name="form.button.cancel"].active:focus,
+  input.standalone[name="form.button.cancel"].active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  .context:hover, .context:focus, .context.focus,
+  input.context:hover,
+  input.context:focus,
+  input.context.focus,
+  input.destructive:hover,
+  input.destructive:focus,
+  input.destructive.focus,
+  input.standalone:hover,
+  input.standalone:focus,
+  input.standalone.focus,
+  input[type="submit"].discreet:hover,
+  input[type="submit"].discreet:focus,
+  input[type="submit"].discreet.focus,
+  input.standalone[name="form.button.cancel"]:hover,
+  input.standalone[name="form.button.cancel"]:focus,
+  input.standalone[name="form.button.cancel"].focus {
+    color: #333;
+    text-decoration: none; }
+  .context:active, .context.active,
+  input.context:active,
+  input.context.active,
+  input.destructive:active,
+  input.destructive.active,
+  input.standalone:active,
+  input.standalone.active,
+  input[type="submit"].discreet:active,
+  input[type="submit"].discreet.active,
+  input.standalone[name="form.button.cancel"]:active,
+  input.standalone[name="form.button.cancel"].active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  .context.disabled, .context[disabled], fieldset[disabled] .context,
+  input.context.disabled,
+  input.context[disabled], fieldset[disabled]
+  input.context,
+  input.destructive.disabled,
+  input.destructive[disabled], fieldset[disabled]
+  input.destructive,
+  input.standalone.disabled,
+  input.standalone[disabled], fieldset[disabled]
+  input.standalone,
+  input[type="submit"].discreet.disabled,
+  input[type="submit"].discreet[disabled], fieldset[disabled]
+  input[type="submit"].discreet,
+  input.standalone[name="form.button.cancel"].disabled,
+  input.standalone[name="form.button.cancel"][disabled], fieldset[disabled]
+  input.standalone[name="form.button.cancel"] {
+    cursor: not-allowed;
+    opacity: 0.65;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
 .actionButton inpput.context {
   margin-right: 1em; }
 
@@ -3097,19 +3262,9 @@ input.label:empty {
     font-size: 1em;
     padding: 0.2em; }
 
-#content .fc .btn-group > input.btn, #content .fc .btn-group > input[type="submit"], #content .fc .btn-group > input[type="button"], #content .fc .btn-group > input.context,
-#content .fc .btn-group > input.destructive,
-#content .fc .btn-group > input.standalone, #content .fc #content-history .btn-group > input.standalone[type="submit"], #content.dialog-wrapper .fc .mceActionPanel .btn-group > input[type="submit"] {
+#content .fc .btn-group > input.btn {
   font-size: 14px; }
-  #content .fc .btn-group > input.btn.context:focus, #content .fc .btn-group > input.context[type="submit"]:focus,
-  #content .fc .btn-group > input.context[name="form.button.save"]:focus,
-  #content .fc .btn-group > input.context[name="form.actions.save"]:focus, #content .fc .btn-group > input.context[type="button"]:focus, #content .fc .btn-group > input.context:focus,
-  #content .fc .btn-group > input.context.destructive:focus,
-  #content .fc .btn-group > input.context.standalone:focus, #content .fc #content-history .btn-group > input.context.standalone[type="submit"]:focus, #content.dialog-wrapper .fc .mceActionPanel .btn-group > input.context[type="submit"]:focus, #content .fc .btn-group > input.btn.context:hover, #content .fc .btn-group > input.context[type="submit"]:hover,
-  #content .fc .btn-group > input.context[name="form.button.save"]:hover,
-  #content .fc .btn-group > input.context[name="form.actions.save"]:hover, #content .fc .btn-group > input.context[type="button"]:hover, #content .fc .btn-group > input.context:hover,
-  #content .fc .btn-group > input.context.destructive:hover,
-  #content .fc .btn-group > input.context.standalone:hover, #content .fc #content-history .btn-group > input.context.standalone[type="submit"]:hover, #content.dialog-wrapper .fc .mceActionPanel .btn-group > input.context[type="submit"]:hover {
+  #content .fc .btn-group > input.btn.context:focus, #content .fc .btn-group > input.btn.context:hover {
     color: #313131 !important; }
 
 #fileupload .span7 {
@@ -3152,14 +3307,82 @@ input.label:empty {
     background-color: rgba(255, 255, 255, 0.3) !important;
     color: #FFF !important; }
 
+#content-history input.standalone[type="submit"] {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  #content-history input.standalone[type="submit"]:focus, #content-history input.standalone[type="submit"].focus, #content-history input.standalone[type="submit"]:active:focus, #content-history input.standalone[type="submit"]:active.focus, #content-history input.standalone[type="submit"].active:focus, #content-history input.standalone[type="submit"].active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  #content-history input.standalone[type="submit"]:hover, #content-history input.standalone[type="submit"]:focus, #content-history input.standalone[type="submit"].focus {
+    color: #333;
+    text-decoration: none; }
+  #content-history input.standalone[type="submit"]:active, #content-history input.standalone[type="submit"].active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  #content-history input.standalone[type="submit"].disabled, #content-history input.standalone[type="submit"][disabled], fieldset[disabled] #content-history input.standalone[type="submit"] {
+    cursor: not-allowed;
+    opacity: 0.65;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
 a.managePortletsFallback {
   margin-bottom: 0; }
 
 #content a.link-parent {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   margin-bottom: 10px;
   font-size: 1em;
   border: 0;
   color: #FFF !important; }
+  #content a.link-parent:focus, #content a.link-parent.focus, #content a.link-parent:active:focus, #content a.link-parent:active.focus, #content a.link-parent.active:focus, #content a.link-parent.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  #content a.link-parent:hover, #content a.link-parent:focus, #content a.link-parent.focus {
+    color: #333;
+    text-decoration: none; }
+  #content a.link-parent:active, #content a.link-parent.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  #content a.link-parent.disabled, #content a.link-parent[disabled], fieldset[disabled] #content a.link-parent {
+    cursor: not-allowed;
+    opacity: 0.65;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
 #content #uponelevel.link-parent {
   display: inline-block; }
 
@@ -3257,6 +3480,40 @@ table.sequencewidget td {
     margin-left: 0; }
   #content.dialog-wrapper form {
     margin: 0; }
+  #content.dialog-wrapper .mceActionPanel input[type="submit"] {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; }
+    #content.dialog-wrapper .mceActionPanel input[type="submit"]:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"].focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:active:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:active.focus, #content.dialog-wrapper .mceActionPanel input[type="submit"].active:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"].active.focus {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+    #content.dialog-wrapper .mceActionPanel input[type="submit"]:hover, #content.dialog-wrapper .mceActionPanel input[type="submit"]:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"].focus {
+      color: #333;
+      text-decoration: none; }
+    #content.dialog-wrapper .mceActionPanel input[type="submit"]:active, #content.dialog-wrapper .mceActionPanel input[type="submit"].active {
+      outline: 0;
+      background-image: none;
+      -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+    #content.dialog-wrapper .mceActionPanel input[type="submit"].disabled, #content.dialog-wrapper .mceActionPanel input[type="submit"][disabled], fieldset[disabled] #content.dialog-wrapper .mceActionPanel input[type="submit"] {
+      cursor: not-allowed;
+      opacity: 0.65;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
 
 #plonebrowser .widget.radioscrolllist input[type='radio'] {
   -webkit-appearance: none;
@@ -3429,7 +3686,7 @@ div.width-full {
     -ms-flex-order: 1;
     -webkit-order: 1;
     order: 1; } }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   #portal-column-one.width-1\3a 4.position-0,
   #portal-column-content.width-3\3a 4.position-1\3a 4 {
     width: auto;
@@ -4003,14 +4260,14 @@ input.inputLabelActive {
 .template-folder_contents .newsImageContainer {
   display: none; }
 
-.light, body, #camcomskin-searchbox input.searchButton, #search-field input.searchButton, .secondaryMenu .submenuItem, .boxCollezioneBase .boxItem h5.titleItem, #content .proceedingsList h2, #content h1.documentFirstHeading, #portal-footer-wrapper #portlets-footer h4, #portal-footer-wrapper #portlets-footer h5, div.titolo-servizi-online .portletItem h3 {
+.light, body, #camcomskin-searchbox input.searchButton, #search-field input.searchButton, .secondaryMenu .submenuItem, .boxCollezioneBase .boxItem h5.titleItem, #content .proceedingsList h2, #content h1.documentFirstHeading, #portal-footer-wrapper #portlets-footer h4, #portal-footer-wrapper #portlets-footer h5, div.titolo-servizi-online .portletItem h3, #week-table-wrapper table#week caption strong {
   font-weight: 300; }
 
 .regular, #search-filter legend, #content #search-filter legend, #submenu-details .submenuDynamicWrapper a.dynamicSectionExploreLabel, dl.rerPortletAdvancedStatic dt.portletHeader,
 div.rerPortletAdvancedStatic dt.portletHeader, dl.rerPortletAdvancedStatic dd.portletFooter a,
 div.rerPortletAdvancedStatic dd.portletFooter a, dl.portletImg dt.portletHeader .tile,
 dl.portletImg dt.portletHeader a.tile, dl[class*='ortletNavigation'] dt.portletHeader .tile,
-dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #content blockquote.pullquote, .rifBando h3 strong, #portal-footer-wrapper #portal-colophon a, .boxAvvisi .boxItem .titleItem a, .boxRss .boxItem .titleItem a, .boxEventi .boxItem p.dataItem .dataDay, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label {
+dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, .officeTag, #content .proceedingsList dl dt, #content .documentDescription, #content .portlet dt, #content blockquote.pullquote, .rifBando h3 strong, #portal-footer-wrapper #portal-colophon a, .boxAvvisi .boxItem .titleItem a, .boxRss .boxItem .titleItem a, .boxEventi .boxItem p.dataItem .dataDay, #content table.modulisticaListing th.modulisticaDocument h3, #content table.modulisticaListing td label, #week-table-wrapper table#week .fromto {
   font-weight: 400; }
 
 .semibold, #content .documentDescription,
@@ -4021,7 +4278,7 @@ dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, 
 .officeContactsWrapper .officePec h6, .boxCollezioneRigaNotizie .boxFooter a, #document-toc dt.portletHeader, .rifBando h3:first-child strong, dl.portletBandi h3.bandoTitle, dl.portletBandi p.bandoType, dl.portletBandi .bandoDates .labelTB, .template-collection_bandi_tipologia_view #content dl dt.bandoTitle,
 .template-collection_bandi_view #content dl dt.bandoTitle, .template-collection_bandi_tipologia_view #content dl .bandoType span,
 .template-collection_bandi_view #content dl .bandoType span, .template-collection_bandi_tipologia_view #content dl .bandoDates .labelTB,
-.template-collection_bandi_view #content dl .bandoDates .labelTB, #portal-footer-wrapper #portlets-footer dt.portletHeader, .boxNotizieHome .boxItem .tagItem a, table.listOffices thead th, table.listOffices tbody th {
+.template-collection_bandi_view #content dl .bandoDates .labelTB, #portal-footer-wrapper #portlets-footer dt.portletHeader, .boxNotizieHome .boxItem .tagItem a, table.listOffices thead th, table.listOffices tbody th, #week-table-wrapper table#week caption a.floatleft, #week-table-wrapper table#week caption a.floatright, #week-table-wrapper table#week caption a:not([class]), #week-table-wrapper table#week thead th {
   font-weight: 600; }
 
 .bold, #search-filter .field .optionsToggle label, #portal-personaltools-wrapper #user-name, .boxCollezioneBase .boxFooter, dl.portletCollection dd.portletFooter, .boxNotizieHome .boxFooter {
@@ -4030,23 +4287,26 @@ dl[class*='ortletNavigation'] dt.portletHeader a.tile, .boxOffice .officePhone, 
 a {
   text-decoration: none !important; }
 
-#portal-columns a,
-dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.context),
-#content a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.context) {
-  border-bottom: 1px dotted #777;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in; }
-  #portal-columns a:focus, #portal-columns a:hover,
-  dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.context):focus,
-  #content a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.context):focus,
-  dl.portlet a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.context):hover,
-  #content a:not(.btn):not(input[type="submit"]):not(input[type="button"]):not(.context):hover {
-    background-color: #F2F2F2;
-    border-radius: 3px;
-    text-decoration: none;
-    border-bottom: 1px solid #777; }
-
+/*#portal-columns a,
+a%a-style:not(.btn)   { border-bottom: $borderLinkWidth $borderLinkStyle $borderLinkColor;
+              @include transition(all .2s ease-in);
+  &:focus,
+  &:hover   { background-color: $grayVeryLighty; 
+              border-radius: 3px;
+              text-decoration: none; 
+              border-bottom: $borderLinkHoverWidth $borderLinkHoverStyle $borderLinkHoverColor;
+  }
+}
+a%basic:not(.btn) { color: $link-color;
+		  border-bottom: 1px solid $link-color;
+		  background-color: $tr;
+	&:focus,
+  	&:hover { color: $link-hover-color; }
+}
+dl.portlet a,
+#content a,  
+#content p a { @extend %a-style; }
+*/
 .richTextWidget {
   padding-top: 10px; }
   .richTextWidget .fieldTextFormat {
@@ -4315,6 +4575,8 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
     border: 0;
     margin: -0.5em 0 0 -4px;
     padding: 0.5em 1em; }
+    #camcomskin-searchbox input.searchButton:hover {
+      color: #ead313; }
   #camcomskin-searchbox a.closeLink {
     display: inline-block; }
     #camcomskin-searchbox a.closeLink:before {
@@ -4370,6 +4632,8 @@ body[class*='subsection-++contextportlets++'] #portlets-in-header {
     margin: -0.65em 0 0 -4px;
     padding: 0.7em 1em;
     font-size: 1.5em !important; }
+    #search-field input.searchButton:hover {
+      color: #ead313; }
   @media (max-width: 767px) {
     #search-field {
       margin-bottom: 1em; }
@@ -5104,7 +5368,9 @@ dl.portletServiziOnline {
             font-family: FontAwesome;
             font-size: 18px; }
           dl.portletServiziOnline dd.portletItem ul li a:focus, dl.portletServiziOnline dd.portletItem ul li a:hover {
-            color: #9c3524 !important; }
+            color: #9c3524 !important;
+            border: 0;
+            background-color: transparent; }
             dl.portletServiziOnline dd.portletItem ul li a:focus:before, dl.portletServiziOnline dd.portletItem ul li a:hover:before {
               color: #313131; }
           dl.portletServiziOnline dd.portletItem ul li a.external-link:before {
@@ -5244,7 +5510,8 @@ dl[class*='ortletNavigation'] dd.portletItem {
         transition: all 0.1s ease-in; }
         dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a:focus, dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a:hover {
           color: #9c3524 !important;
-          background-color: #F2F2F2; }
+          background-color: #F2F2F2;
+          border: 0; }
         dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem a.navTreeItemInPath {
           color: #283641 !important; }
       dl[class*='ortletNavigation'] dd.portletItem ul.navTreeLevel0 > li.navTreeItem .navTreeLevel1 > li {
@@ -5483,23 +5750,18 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .boxOffice .officePec a:hover {
     color: #313131; }
 
-.boxArchivio {
-  padding-bottom: 0; }
-  .boxArchivio h4.boxHeader {
-    margin-bottom: 0;
+.boxArchivio h4.boxHeader {
+  top: 3px; }
+  .boxArchivio h4.boxHeader:before {
     top: 3px; }
-    .boxArchivio h4.boxHeader:before {
-      top: 3px; }
-    .boxArchivio h4.boxHeader a {
-      display: inline-block; }
-      .boxArchivio h4.boxHeader a:after {
-        display: inline-block;
-        font-family: FontAwesome;
-        content: "";
-        color: #313131;
-        margin-left: 10px; }
-      .boxArchivio h4.boxHeader a:focus:after, .boxArchivio h4.boxHeader a:hover:after {
-        color: #9c3524; }
+.boxArchivio ul.listLink li.linkItem a {
+  padding-left: 25px; }
+  .boxArchivio ul.listLink li.linkItem a:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "";
+    color: #313131;
+    font-size: 13px; }
 
 .boxCollezioneBase {
   margin-bottom: 20px; }
@@ -6068,7 +6330,9 @@ dl.portletCollection {
           vertical-align: middle;
           margin-right: 8px; }
         #content .documentActions ul li a:focus, #content .documentActions ul li a:hover {
-          color: #9c3524 !important; }
+          color: #9c3524 !important;
+          border: 0;
+          background-color: transparent; }
           #content .documentActions ul li a:focus:before, #content .documentActions ul li a:hover:before {
             color: #313131 !important; }
       #content .documentActions ul li#document-action-print a:before {
@@ -6174,7 +6438,7 @@ dl.portletBandi dd.portletItem {
   display: none; }
 .template-collection_bandi_tipologia_view #content dl,
 .template-collection_bandi_view #content dl {
-  margin: 0;
+  margin: 0 0 20px;
   padding: 15px 0;
   border-bottom: 1px dashed #777; }
   .template-collection_bandi_tipologia_view #content dl dt.bandoTitle,
@@ -7024,7 +7288,7 @@ div.portletBannerTxt p > a {
     max-width: 100%;
     height: auto; }
 div.portletBannerTxt p:first-child a {
-  min-height: 80px; }
+  min-height: 60px; }
 div.portletBannerTxt h5 {
   margin-top: 20px; }
 @media (min-width: 450px) and (max-width: 767px) {
@@ -7619,3 +7883,88 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
     font-family: FontAwesome;
     content: "";
     color: inherit; }
+
+#week-table-wrapper table#week {
+  width: 99.9%; }
+  #week-table-wrapper table#week a {
+    border: 0; }
+  #week-table-wrapper table#week caption {
+    background-color: #283641;
+    border: 0;
+    text-align: center;
+    color: #CCC;
+    padding-top: 0.5em; }
+    #week-table-wrapper table#week caption a {
+      color: #FFF;
+      border: 0; }
+      #week-table-wrapper table#week caption a:focus, #week-table-wrapper table#week caption a:hover {
+        color: #ead313 !important; }
+      #week-table-wrapper table#week caption a.floatleft, #week-table-wrapper table#week caption a.floatright {
+        text-transform: uppercase;
+        font-size: 0.8em; }
+      #week-table-wrapper table#week caption a.floatright:after {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: "";
+        color: inherit;
+        margin-left: 5px; }
+      #week-table-wrapper table#week caption a.floatleft:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: "";
+        color: inherit;
+        margin-right: 5px; }
+    #week-table-wrapper table#week caption strong {
+      text-transform: uppercase;
+      font-size: 1.5em; }
+    #week-table-wrapper table#week caption a:not([class]) {
+      margin-left: 1em;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      padding: 0.2em 0.8em;
+      background-color: #CCC;
+      border-radius: 4px;
+      vertical-align: text-bottom;
+      color: #313131; }
+      #week-table-wrapper table#week caption a:not([class]):focus, #week-table-wrapper table#week caption a:not([class]):hover {
+        background-color: #9c3524;
+        color: #FFF !important; }
+  #week-table-wrapper table#week thead th {
+    padding: 0 0.5em 0.5em;
+    border: 0; }
+  #week-table-wrapper table#week .gatesheader .gate a {
+    color: #777;
+    height: auto !important; }
+    #week-table-wrapper table#week .gatesheader .gate a:before {
+      display: inline-block;
+      font-family: FontAwesome;
+      content: "";
+      color: inherit;
+      font-size: 16px; }
+  #week-table-wrapper table#week .fromto {
+    background-color: #EEE;
+    padding: 0.3em;
+    border-bottom: 1px solid #ddd; }
+  #week-table-wrapper table#week .slot .links a {
+    background-color: #FFF3D8;
+    border: 1px solid #E4D7B9;
+    border-width: 0 0 1px 1px; }
+    #week-table-wrapper table#week .slot .links a:focus, #week-table-wrapper table#week .slot .links a:hover {
+      background-color: #326309; }
+
+.template-summary_view .tileItem,
+.template-folder_summary_view .tileItem {
+  border-bottom: 1px dashed #999;
+  padding: 10px 0; }
+.template-summary_view h2.tileHeadline,
+.template-folder_summary_view h2.tileHeadline {
+  font-size: 1.15em;
+  margin: 0; }
+.template-summary_view #content p.tileFooter,
+.template-summary_view #content p.tileBody,
+.template-folder_summary_view #content p.tileFooter,
+.template-folder_summary_view #content p.tileBody {
+  margin: 0; }
+.template-summary_view #viewlet-below-content,
+.template-folder_summary_view #viewlet-below-content {
+  margin-top: 20px; }
