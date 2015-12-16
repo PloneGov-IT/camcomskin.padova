@@ -5750,23 +5750,18 @@ dl[class*='ortletNavigation'] dd.portletItem {
   .boxOffice .officePec a:hover {
     color: #313131; }
 
-.boxArchivio {
-  padding-bottom: 0; }
-  .boxArchivio h4.boxHeader {
-    margin-bottom: 0;
+.boxArchivio h4.boxHeader {
+  top: 3px; }
+  .boxArchivio h4.boxHeader:before {
     top: 3px; }
-    .boxArchivio h4.boxHeader:before {
-      top: 3px; }
-    .boxArchivio h4.boxHeader a {
-      display: inline-block; }
-      .boxArchivio h4.boxHeader a:after {
-        display: inline-block;
-        font-family: FontAwesome;
-        content: "";
-        color: #313131;
-        margin-left: 10px; }
-      .boxArchivio h4.boxHeader a:focus:after, .boxArchivio h4.boxHeader a:hover:after {
-        color: #9c3524; }
+.boxArchivio ul.listLink li.linkItem a {
+  padding-left: 25px; }
+  .boxArchivio ul.listLink li.linkItem a:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "";
+    color: #313131;
+    font-size: 13px; }
 
 .boxCollezioneBase {
   margin-bottom: 20px; }

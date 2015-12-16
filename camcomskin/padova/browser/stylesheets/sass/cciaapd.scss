@@ -1245,19 +1245,12 @@ dl[class*='ortletNavigation']       {
 }
 
 // PORTLET ARCHIVIO
-.boxArchivio                        { padding-bottom: 0;
-  h4.boxHeader                      { margin-bottom: 0; 
-                                      top: 3px;
-    &:before                        { top: 3px; }
-    a                               { display: inline-block;
-      &:after                       { @include make-fa('\f115', $text-color); 
-                                      margin-left: 10px;
-      }
-      &:focus,
-      &:hover                       {
-        &:after                     { color: $link-color; }
-      }
-    }
+.boxArchivio                        { 
+  h4.boxHeader                      { top: 3px;
+    &:before                        { top: 3px; }    
+  }
+  ul.listLink li.linkItem a         { padding-left: 25px;
+    &:before { @include make-fa('\f115', $text-color); font-size: 13px; }
   }
 }
 
