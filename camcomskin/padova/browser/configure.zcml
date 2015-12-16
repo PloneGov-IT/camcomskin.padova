@@ -101,7 +101,18 @@
        permission="zope2.View"
        layer=".interfaces.IThemeSpecific"
    />
-
+   <!-- Contentleadimage thumbnail -->
+   <configure package="collective.contentleadimage">
+      <browser:viewlet
+          name="collective.contentleadimage.thumbnail"
+          for="collective.contentleadimage.interfaces.ILeadImageable"
+          class="camcomskin.padova.browser.viewlets.LeadImageViewlet"
+          manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+          template="browser/leadimage.pt"
+          layer="camcomskin.padova.browser.interfaces.IThemeSpecific"
+          permission="zope2.View"
+      />
+    </configure>
   <!-- VIEWS -->
   <!-- Secondary editable menu settings -->
   <browser:page
