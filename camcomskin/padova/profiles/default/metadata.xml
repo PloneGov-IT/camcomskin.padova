@@ -10,5 +10,6 @@
     <dependency>profile-collective.portletpage:default</dependency>
     <dependency>profile-redturtle.portlet.collection:default</dependency>
     <dependency>profile-collective.portletpage:default</dependency>
+    <dependency>profile-collective.contentleadimage:default</dependency>
   </dependencies>
 </metadata>
