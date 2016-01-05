@@ -22,3 +22,4 @@ output.xml
 .sass-cache/
 .eggs/
 *.codekit
+.DS_Store
