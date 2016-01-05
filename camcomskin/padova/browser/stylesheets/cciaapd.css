@@ -7968,3 +7968,29 @@ table.listOffices tbody th a, #content table.listOffices tbody th a {
 .template-summary_view #viewlet-below-content,
 .template-folder_summary_view #viewlet-below-content {
   margin-top: 20px; }
+
+body.subsection-services-for-users-lists-of-corporations-and-limited-liability-companies-with-balance-sheet-indexes #viewlet-below-content,
+body.subsection-services-for-users-lists-of-italian-companies #viewlet-below-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column; }
+  body.subsection-services-for-users-lists-of-corporations-and-limited-liability-companies-with-balance-sheet-indexes #viewlet-below-content .contentwellportlets,
+  body.subsection-services-for-users-lists-of-italian-companies #viewlet-below-content .contentwellportlets {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    margin: 20px 0; }
+  body.subsection-services-for-users-lists-of-corporations-and-limited-liability-companies-with-balance-sheet-indexes #viewlet-below-content .documentByLine,
+  body.subsection-services-for-users-lists-of-italian-companies #viewlet-below-content .documentByLine {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2; }

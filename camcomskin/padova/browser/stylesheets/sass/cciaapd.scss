@@ -3014,3 +3014,14 @@ table.listOffices                   {
   #viewlet-below-content          { margin-top: 20px; }
 }
 
+// PULSANTE PAYPAL #90
+body.subsection-services-for-users-lists-of-corporations-and-limited-liability-companies-with-balance-sheet-indexes,
+body.subsection-services-for-users-lists-of-italian-companies {
+  #viewlet-below-content          { @include flexbox();
+                                    @include flex-flow(column);
+    .contentwellportlets          { @include order(1); 
+                                    margin: 20px 0;
+    }
+    .documentByLine               { @include order(2); }
+  }
+}
