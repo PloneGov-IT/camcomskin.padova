@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 from collective.editablemenu import _
 from collective.editablemenu import logger
-from collective.editablemenu.browser.interfaces import IControlpanelSchema
-from collective.editablemenu.browser.interfaces import MenuEntrySubitem
+from camcomskin.padova.interfaces import IEditableSecondaryMenuSettings
 from plone import api
 from plone.formwidget.contenttree import ContentTreeFieldWidget
 from plone.formwidget.contenttree import MultiContentTreeFieldWidget
@@ -18,27 +17,17 @@ from plone.app.textfield.value import RichTextValue
 from zope import schema
 import z3c.form.field
 from z3c.form.interfaces import HIDDEN_MODE
-from collective.editablemenu.browser.controlpanel import EditableMenuEditForm
-from collective.editablemenu.browser.menu_support_view import SubMenuDetailView
-from camcomskin.padova.interfaces import ISecondaryMenuControlpanelSchema
+from plone.app.registry.browser import controlpanel
 
-
-class EditableSecondaryMenuEditForm(EditableMenuEditForm):
-
-    fields = field.Fields(ISecondaryMenuControlpanelSchema)
-    fields['navigation_folder'].widgetFactory = ContentTreeFieldWidget
-    fields['additional_columns'].widgetFactory = MultiContentTreeFieldWidget
-    menu_tabs = "camcomskin.padova.interfaces.IEditableSecondaryMenuSettings.menu_tabs"
-    ignoreContext = True
-    control_panel_view = "@@editable-secondarymenu-settings"
-
-
-EditableSecondaryMenuSettingsView = wrap_form(
-    EditableSecondaryMenuEditForm,
-    index=ViewPageTemplateFile('templates/menu_controlpanel.pt'))
-
-
-class SecondaryMenuSupportView(SubMenuDetailView):
+class EditableSecondaryMenuSettingsEditForm(controlpanel.RegistryEditForm):
+    """Media settings form.
     """
+    schema = IEditableSecondaryMenuSettings
+    id = "EditableSecondaryMenuSettingsForm"
+    label = _(u"Editable Menu Settings")
+
+
+class EditableSecondaryMenuSettingsView(controlpanel.ControlPanelFormWrapper):
+    """Sitesearch settings control panel.
     """
-    registry = "camcomskin.padova.interfaces.IEditableSecondaryMenuSettings.menu_tabs"
+    form = EditableSecondaryMenuSettingsEditForm

@@ -123,14 +123,6 @@
       permission="collective.editablemenu.permissions.ManageSettings"
       layer=".interfaces.IThemeSpecific"
       />
-  <!-- Secondary editable menu settings -->
-  <browser:page
-      name="secondary_menu_support_view"
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      class=".menu_controlpanel.SecondaryMenuSupportView"
-      permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
-      />
   <!-- Tabular view for offices -->
   <browser:page
       name="uffici_list_view"

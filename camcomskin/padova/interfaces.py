@@ -1,4 +1,4 @@
-from collective.editablemenu.browser.interfaces import IControlpanelSchema
+from collective.editablemenu.browser.interfaces import IEditableMenuSettings
 from collective.editablemenu.browser.interfaces import IEditableMenuSettings
 
 
@@ -8,7 +8,7 @@ class IEditableSecondaryMenuSettings(IEditableMenuSettings):
     """
 
 
-class ISecondaryMenuControlpanelSchema(IControlpanelSchema):
+class ISecondaryMenuControlpanelSchema(IEditableMenuSettings):
     """
     Controlpanel for secondary menu
     """

@@ -18,5 +18,4 @@
       handler="camcomskin.padova.setuphandlers.setupVarious">
     <depends name="skins"/>
   </genericsetup:importStep>
-
 </configure>

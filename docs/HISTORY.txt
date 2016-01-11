@@ -1,10 +1,10 @@
 Changelog
 =========
 
-0.1.2 (unreleased)
+0.2.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix problems with editable menu [cekk]
 
 
 0.1.1 (2016-01-08)
