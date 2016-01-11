@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 from Acquisition import aq_inner
-from plone.app.layout.viewlets.common import ViewletBase
-from plone import api
 from collective.contentleadimage.browser.viewlets import LeadImageViewlet as BaseLeadImageViewlet
 from collective.contentleadimage.config import IMAGE_FIELD_NAME
+from plone import api
+from plone.app.layout.viewlets. content import DocumentBylineViewlet as BaseDocumentBylineViewlet
+from plone.app.layout.viewlets.common import ViewletBase
+from Products.CMFCore.utils import getToolByName
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 
 class SecondaryMenuViewlet(ViewletBase):
@@ -46,3 +49,11 @@ class LeadImageViewlet(BaseLeadImageViewlet):
                 title="immagine",
                 alt="immagine")
         return ''
+
+
+class DocumentBylineViewlet(BaseDocumentBylineViewlet):
+
+    index = ViewPageTemplateFile("templates/document_byline.pt")
+
+    def show(self):
+        return True

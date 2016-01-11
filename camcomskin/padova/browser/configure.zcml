@@ -94,10 +94,11 @@
         permission="zope2.View"
         layer=".interfaces.IThemeSpecific"
         />
+    <!-- Render the document byline -->
     <browser:viewlet
        name="plone.belowcontenttitle.documentbyline"
        manager="plone.app.layout.viewlets.interfaces.IBelowContent"
-       class="plone.app.layout.viewlets.content.DocumentBylineViewlet"
+       class=".viewlets.DocumentBylineViewlet"
        permission="zope2.View"
        layer=".interfaces.IThemeSpecific"
    />

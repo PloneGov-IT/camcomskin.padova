@@ -1,10 +1,17 @@
 Changelog
 =========
 
-0.1.1 (unreleased)
+0.1.2 (unreleased)
 ------------------
 
 - Sistemati stili generici per contenuti [Neko]
+
+
+0.1.1 (2016-01-08)
+------------------
+
+- fix document_byline viewlet for anonymous (#80)
+  [cekk]
 
 
 0.1.0 (2016-01-05)
