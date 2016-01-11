@@ -4,6 +4,7 @@ Changelog
 0.2.0 (unreleased)
 ------------------
 
+- Sistemati stili generici per contenuti [Neko]
 - Fix problems with editable menu [cekk]
 
 

@@ -929,6 +929,10 @@ dl.portletFocus                     { margin-bottom:0;
     }
   }
   dd.portletItem                    { padding-top: 10px;
+    a                               { color: #FFF;
+      &:focus,
+      &:hover                       { color: $yellow !important;}
+    }
 
   }
   dd.portletFooter                  { padding:0;
@@ -2573,6 +2577,10 @@ div.titolo-servizi-online           { background-color: $gray-bg;
       &:hover                       { color: $yellow; }
       &:after                       { color: $gray-lighter; }
     }
+  }
+  #portal-column-two &              { 
+    h4.boxHeader                    { background-color: $tr; }
+    .boxFooter                      { border-top:0; margin-top:0;}
   }
 }
 

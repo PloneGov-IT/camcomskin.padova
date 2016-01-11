@@ -5414,6 +5414,10 @@ dl.portletFocus {
         color: #ead313 !important; }
   dl.portletFocus dd.portletItem {
     padding-top: 10px; }
+    dl.portletFocus dd.portletItem a {
+      color: #FFF; }
+      dl.portletFocus dd.portletItem a:focus, dl.portletFocus dd.portletItem a:hover {
+        color: #ead313 !important; }
   dl.portletFocus dd.portletFooter {
     padding: 0;
     margin-left: -20px !important;
@@ -7147,6 +7151,11 @@ div.titolo-servizi-online {
       color: #ead313; }
     .boxAvvisi .boxFooter a:after {
       color: #CCC; }
+#portal-column-two .boxAvvisi h4.boxHeader {
+  background-color: transparent; }
+#portal-column-two .boxAvvisi .boxFooter {
+  border-top: 0;
+  margin-top: 0; }
 
 .boxRss h4.boxHeader {
   margin: 0;
