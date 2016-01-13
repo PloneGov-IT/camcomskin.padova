@@ -26,6 +26,8 @@ def generate_new_settings():
         return
     new_settings = []
     for setting in old_settings:
+        if not setting.navigation_folder:
+            continue
         new_entry = MenuEntrySubitem()
         new_entry.tab_title = setting.tab_title
         new_entry.additional_columns = u""
