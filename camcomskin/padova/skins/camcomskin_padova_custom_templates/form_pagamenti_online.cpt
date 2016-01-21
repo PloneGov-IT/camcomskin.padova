@@ -43,10 +43,10 @@
     <div metal:fill-slot="main"
          tal:define="template_id template/getId;">
 
-      <h1 tal:content="template/title_or_id">titolo template</h1>
+      <h1 class="documentFirstHeading">Pagamento online con Carta di Credito</h1>
 
       <p>
-          Il pagamento &egrave; effettuabile direttamente tramite la vostra Carta di Credito (Visa, MasterCard, Diners o American Express).
+          Il pagamento &egrave; effettuabile direttamente tramite la vostra Carta di Credito (Visa o MasterCard).
           Si consiglia di attivare questa procedura solamente dopo aver preso contatto con l'Ufficio che provveder&agrave; a fornire il
           servizio, al fine di concordare preventivamente e nella maniera corretta l'importo da versare.
       </p>

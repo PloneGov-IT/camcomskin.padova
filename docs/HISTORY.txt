@@ -4,7 +4,7 @@ Changelog
 0.2.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- 0.2.2 was a fake release too..fixed templates [cekk]
 
 
 0.2.2 (2016-01-21)
