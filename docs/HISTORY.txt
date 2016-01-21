@@ -4,7 +4,7 @@ Changelog
 0.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix form_pagamenti_online labels [cekk]
 
 
 0.2.0 (2016-01-11)
