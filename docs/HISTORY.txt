@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2.4 (unreleased)
+0.2.4 (2016-01-25)
 ------------------
 
 - Fix for pd.prenotazioni (#121) [cekk]
