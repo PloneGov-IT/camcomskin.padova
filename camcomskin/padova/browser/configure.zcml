@@ -164,4 +164,24 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <!-- prenotazioni -->
+  <configure package="rg.prenotazioni">
+    <browser:page
+      for="rg.prenotazioni.interfaces.IPrenotazioniFolder"
+      name="prenotazione_print"
+      class="camcomskin.padova.browser.prenotazioni_view.CCPDPrenotazionePrint"
+      template="browser/prenotazione_print.pt"
+      layer="camcomskin.padova.browser.interfaces.IThemeSpecific"
+      permission="zope2.View"
+    />
+  </configure>
+  <browser:rml2pdf
+    for="rg.prenotazioni.interfaces.IPrenotazioniFolder"
+    name="prenotazione_print_pdf"
+    template="templates/prenotazione_print_pdf.pt"
+    layer=".interfaces.IThemeSpecific"
+    class=".prenotazioni_view.CCPDPrenotazionePrintPDF"
+    encoding="utf-8"
+    permission="zope2.View"
+  />
 </configure>
