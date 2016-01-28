@@ -4,7 +4,7 @@ Changelog
 0.2.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix dependencies [cekk]
 
 
 0.2.4 (2016-01-25)

@@ -29,7 +29,6 @@ setup(name='camcomskin.padova',
           'collective.contentleadimage',
           'collective.editablemenu',
           'collective.portletpage',
-          'pd.prenotazioni',
           'Products.ContentWellPortlets == 4.3.0',
           'redturtle.portlet.collection',
           'redturtle.smartlink',
@@ -37,6 +36,10 @@ setup(name='camcomskin.padova',
           'rer.portlet.er_navigation',
           'sc.social.like',
           'z3c.jbot',
+          # Non metto come dipendenza direttamente pd.prenotazioni, perché
+          # sennò non funziona l'override delle traduzioni, e z3c.pdftemplate
+          # serve per l'override di una vista "prenotazione_print_pdf"
+          'z3c.pdftemplate'
       ],
       entry_points="""
       # -*- Entry points: -*-
