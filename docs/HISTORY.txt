@@ -4,7 +4,7 @@ Changelog
 0.2.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix zcml registration in browser for promex (that doesn't have rg.prenotazioni) [cekk]
 
 
 0.2.5 (2016-01-28)
