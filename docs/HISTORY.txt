@@ -1,11 +1,17 @@
 Changelog
 =========
 
-0.2.6 (unreleased)
+0.2.7 (unreleased)
 ------------------
 
 - Update translation for rg.prenotazioni (#135)
   [cekk]
+
+
+0.2.6 (2016-01-28)
+------------------
+
+- Fix zcml registration in browser for promex (that doesn't have rg.prenotazioni) [cekk]
 
 
 0.2.5 (2016-01-28)

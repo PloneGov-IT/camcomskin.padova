@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="camcomskin.padova">
 
   <interface
@@ -165,7 +166,7 @@
       />
 
   <!-- prenotazioni -->
-  <configure package="rg.prenotazioni">
+  <configure zcml:condition="installed rg.prenotazioni" package="rg.prenotazioni">
     <browser:page
       for="rg.prenotazioni.interfaces.IPrenotazioniFolder"
       name="prenotazione_print"
@@ -175,13 +176,15 @@
       permission="zope2.View"
     />
   </configure>
-  <browser:rml2pdf
-    for="rg.prenotazioni.interfaces.IPrenotazioniFolder"
-    name="prenotazione_print_pdf"
-    template="templates/prenotazione_print_pdf.pt"
-    layer=".interfaces.IThemeSpecific"
-    class=".prenotazioni_view.CCPDPrenotazionePrintPDF"
-    encoding="utf-8"
-    permission="zope2.View"
-  />
+  <configure zcml:condition="installed rg.prenotazioni">
+    <browser:rml2pdf
+      for="rg.prenotazioni.interfaces.IPrenotazioniFolder"
+      name="prenotazione_print_pdf"
+      template="templates/prenotazione_print_pdf.pt"
+      layer=".interfaces.IThemeSpecific"
+      class=".prenotazioni_view.CCPDPrenotazionePrintPDF"
+      encoding="utf-8"
+      permission="zope2.View"
+    />
+  </configure>
 </configure>
