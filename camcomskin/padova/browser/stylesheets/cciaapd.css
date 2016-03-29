@@ -6155,6 +6155,80 @@ dl.portletCollection {
   display: none; }
 .template-pp_homepage_view #portal-footer-wrapper {
   margin-top: 0; }
+.template-pp_homepage_view[class*='subsection-'] #portal-columns {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative; }
+  .template-pp_homepage_view[class*='subsection-'] #portal-columns #portal-column-content {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    position: static;
+    margin: 0;
+    -webkit-flex-grow: 2;
+    -moz-flex-grow: 2;
+    flex-grow: 2;
+    -webkit-flex-basis: 60%;
+    -moz-flex-basis: 60%;
+    flex-basis: 60%; }
+  .template-pp_homepage_view[class*='subsection-'] #portal-columns #portal-column-one {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+    position: static;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 0;
+    -webkit-flex-basis: 20%;
+    -moz-flex-basis: 20%;
+    flex-basis: 20%; }
+    @media (max-width: 991px) {
+      .template-pp_homepage_view[class*='subsection-'] #portal-columns #portal-column-one {
+        padding-left: 15px;
+        padding-top: 20px;
+        -webkit-box-flex: 0 1 100%;
+        -moz-box-flex: 0 1 100%;
+        -webkit-flex: 0 1 100%;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%; } }
+  .template-pp_homepage_view[class*='subsection-'] #portal-columns #portal-column-two {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+    position: static;
+    margin: 0;
+    -webkit-flex-basis: 20%;
+    -moz-flex-basis: 20%;
+    flex-basis: 20%; }
+    @media (max-width: 991px) {
+      .template-pp_homepage_view[class*='subsection-'] #portal-columns #portal-column-two {
+        padding-top: 20px;
+        padding-right: 15px;
+        -webkit-box-flex: 0 1 100%;
+        -moz-box-flex: 0 1 100%;
+        -webkit-flex: 0 1 100%;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%; } }
+  .template-pp_homepage_view[class*='subsection-'] #portal-columns .documentActions {
+    position: absolute;
+    right: 0; }
+  .template-pp_homepage_view[class*='subsection-'] #portal-columns .documentEditable .documentActions {
+    top: -30px; }
+.template-pp_homepage_view.flexbox #portal-column-content {
+  width: auto; }
+.template-pp_homepage_view.flexbox #portal-column-one {
+  width: auto; }
+.template-pp_homepage_view.flexbox #portal-column-two {
+  width: auto; }
 
 .template-portlets.portaltype-portlet-page #portlets-below.contentwellportlets {
   display: none; }

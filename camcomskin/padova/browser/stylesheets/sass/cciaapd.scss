@@ -1645,6 +1645,50 @@ dl.portletCollection                { margin-bottom: 20px;
     #plone-document-byline          { display: none;}
   }
   #portal-footer-wrapper            { margin-top:0; }
+
+  // MODIFICA PER INTRODURRE COLONNA 1
+  &[class*='subsection-']           {
+    #portal-columns                 { @include flexbox(); 
+                                      position: relative;
+      #portal-column-content        { @include order(1); 
+                                      position: static; 
+                                      margin:0; 
+                                      @include flex-grow(2);
+                                      @include flex-basis(60%);        
+      }
+      #portal-column-one            { @include order(2); 
+                                      position: static;
+                                      margin:0;
+                                      padding-top:50px;
+                                      padding-left: 0;
+                                      @include flex-basis(20%);
+        @media (max-width: $screen-sm-max) {
+                                      padding-left: 15px;
+                                      padding-top: 20px;
+                                      @include flex(0 1 100%);
+        }
+      }
+      #portal-column-two            { @include order(3); 
+                                      position: static;
+                                      margin:0;
+                                      @include flex-basis(20%);
+        @media (max-width: $screen-sm-max) {
+                                      padding-top: 20px;
+                                      padding-right: 15px;
+                                      @include flex(0 1 100%);
+        }
+      }
+      .documentActions              { position: absolute; 
+                                      right: 0;
+      }
+      .documentEditable .documentActions { top: -30px; }
+    }
+  }
+  &.flexbox                         { 
+    #portal-column-content          { width: auto; }
+    #portal-column-one              { width: auto; }
+    #portal-column-two              { width: auto; }
+  }
 }
 .template-portlets.portaltype-portlet-page #portlets-below.contentwellportlets { display: none;}
 @media (max-width: $screen-xs-max)  {

@@ -182,6 +182,16 @@
     -ms-align-content: $val;
     align-content: $val;
 }
+@mixin flex-grow($val) {
+    -webkit-flex-grow: $val;
+    -moz-flex-grow: $val;
+    flex-grow: $val;
+}
+@mixin flex-basis($val) {
+    -webkit-flex-basis: $val;
+    -moz-flex-basis: $val;
+    flex-basis: $val;
+}
 
 // GESTIONE COLORI AREE TEMATICHE
 
