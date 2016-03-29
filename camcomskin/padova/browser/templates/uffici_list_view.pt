@@ -8,7 +8,7 @@
       i18n:domain="camcomskin.padova">
 
   <body>
-    <metal:fill fill-slot="main">
+    <metal:fill fill-slot="content-core">
 
     <metal:listingmacro define-macro="listing">
     <tal:results define="b_start python:request.get('b_start', 0);
