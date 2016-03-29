@@ -4402,6 +4402,15 @@ dl.portlet a,
 .template-folder_listing #content-core > dl dt {
   margin-top: 0.5em; }
 
+.eventDetails table a[href*='mailto:'] {
+  display: inline-block; }
+  .eventDetails table a[href*='mailto:']:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "";
+    color: inherit;
+    margin-right: 5px; }
+
 #portal-top,
 #portal-footer-wrapper,
 #viewlet-below-content .row {

@@ -122,3 +122,10 @@ dl.portlet a,
     > dl dt                   { margin-top: 0.5em; }
   }
 }
+
+/// dettaglio evento
+.eventDetails table           {
+  a[href*='mailto:']          { display: inline-block;
+    &:before                  { @include make-fa('\f003'); margin-right: 5px; }
+  }
+}
