@@ -4,7 +4,10 @@ Changelog
 0.2.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Aggiunti stili per terza colonna in home sezione (#140)
+    [neko]
+- Aggiunti link stampa e invia su vista elenco uffici (#141)
+    [neko]
 
 
 0.2.7 (2016-02-29)
