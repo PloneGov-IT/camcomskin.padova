@@ -3081,7 +3081,12 @@ body.subsection-services-for-users-lists-of-italian-companies {
 // RSS IN HOME #144
 .template-pp_homepage_view #portletPageFirstColumn .boxRss { @extend .colonna-1-di-3;  padding: {left:0; right:30px;};}
 
-// NUOVA RIGA IN BELOWCONTENT DELLA HOME #144
-.section-homepage                 {
-
+// FIX AL VOLO PER CAMBIO PORTLET IN HOME #144
+.boxEventi.boxNewsFlash          {
+  .boxItem { padding: 20px 10px; }
+  h4.boxHeader:before {content: '\f1ea'; vertical-align: middle;}
+  .boxItem .titleItem { border-left: 0; width: auto; padding: 0; min-height: 1em; }
 }
+.section-homepage #portletPageFirstColumn .boxEventi .boxItem {margin:0;}
+.section-homepage #portletPageSecondColumn .portletEmbed dd.portletItem { padding:0;}
+.section-homepage .boxNotizieHome {margin-bottom: 20px;}

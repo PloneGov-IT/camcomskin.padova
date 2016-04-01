@@ -8096,3 +8096,23 @@ body.subsection-services-for-users-lists-of-italian-companies #viewlet-below-con
 .template-pp_homepage_view #portletPageFirstColumn .boxRss {
   padding-left: 0;
   padding-right: 30px; }
+
+.boxEventi.boxNewsFlash .boxItem {
+  padding: 20px 10px; }
+.boxEventi.boxNewsFlash h4.boxHeader:before {
+  content: '\f1ea';
+  vertical-align: middle; }
+.boxEventi.boxNewsFlash .boxItem .titleItem {
+  border-left: 0;
+  width: auto;
+  padding: 0;
+  min-height: 1em; }
+
+.section-homepage #portletPageFirstColumn .boxEventi .boxItem {
+  margin: 0; }
+
+.section-homepage #portletPageSecondColumn .portletEmbed dd.portletItem {
+  padding: 0; }
+
+.section-homepage .boxNotizieHome {
+  margin-bottom: 20px; }
