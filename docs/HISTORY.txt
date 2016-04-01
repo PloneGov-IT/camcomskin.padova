@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2.8 (unreleased)
+0.2.8 (2016-04-01)
 ------------------
 
 - Aggiunti stili per terza colonna in home sezione (#140)
