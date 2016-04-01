@@ -10,6 +10,8 @@ Changelog
     [neko]
 - Aggiunta icona mail su eventi (#129)
     [neko]
+- Fix stile orari
+- RSS in home
 
 0.2.7 (2016-02-29)
 ------------------

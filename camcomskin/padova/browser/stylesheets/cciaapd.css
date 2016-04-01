@@ -554,7 +554,7 @@ ol {
   ol ol {
     margin-bottom: 0; }
 
-.list-unstyled, .secondaryMenu .submenuItem ul, #submenu-details ul, .officeContactsWrapper .officeTime ul, #content .officeContactsWrapper .officeTime ul, #relatedItemBox ul {
+.list-unstyled, .secondaryMenu .submenuItem ul, #submenu-details ul, #relatedItemBox ul {
   padding-left: 0;
   list-style: none; }
 
@@ -798,7 +798,7 @@ address {
 .officeContactsWrapper .officePec h6, .col-md-2, .col-lg-2, .col-xs-3, .officeContactsWrapper .officePhone h6,
 .officeContactsWrapper .officeFax h6,
 .officeContactsWrapper .officeEmail h6,
-.officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, #plonebrowser div.width-1\3a 4, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, .boxCollezioneRigaNotizie .boxItem, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-md-4, #portal-logo, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-lg-4, .col-xs-5, .col-sm-5, #portal-logo, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-lg-5, .col-xs-6, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .col-md-6, .colonna-1-di-2, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p,
+.officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, #plonebrowser div.width-1\3a 4, .col-md-3, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, .boxCollezioneRigaNotizie .boxItem, .col-lg-3, .col-xs-4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .template-pp_homepage_view #portletPageFirstColumn .boxRss, .col-md-4, #portal-logo, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-lg-4, .col-xs-5, .col-sm-5, #portal-logo, .col-md-5, #submenu-details .submenuDynamicWrapper, .col-lg-5, .col-xs-6, .boxNotizieHome .boxNewsImg, .boxNotizieHome .boxNews, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .col-md-6, .colonna-1-di-2, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .secondaryMenu, #submenu-details .submenuStaticWrapper, .col-lg-7, .col-xs-8, .col-sm-8, div.width-2\3a 3, .col-md-8, .boxNotizieHome .boxNewsImg.boxNewsImgBig, .col-lg-8, .col-xs-9, .officeContactsWrapper .officePhone p,
 .officeContactsWrapper .officeFax p,
 .officeContactsWrapper .officeEmail p,
 .officeContactsWrapper .officePec p, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-md-9, .col-lg-9, .col-xs-10, .boxEventi .boxItem .titleItem, .col-sm-10, .officeContactsWrapper .officePhone p,
@@ -982,7 +982,7 @@ address {
   .col-sm-1, .col-sm-2, .officeContactsWrapper .officePhone h6,
   .officeContactsWrapper .officeFax h6,
   .officeContactsWrapper .officeEmail h6,
-  .officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, #plonebrowser div.width-1\3a 4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .col-sm-5, #portal-logo, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .col-sm-7, .col-sm-8, div.width-2\3a 3, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .officeContactsWrapper .officePhone p,
+  .officeContactsWrapper .officePec h6, .col-sm-3, #center-and-left-area #left-area, #plonebrowser div.width-1\3a 4, .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .template-pp_homepage_view #portletPageFirstColumn .boxRss, .col-sm-5, #portal-logo, .col-sm-6, div.width-1\3a 2, div.width-1\3a 4, .colonna-1-di-4, #portletPageTopRowWrapper .boxRss, #submenu-details .staticItem, .boxCollezioneRigaNotizie .boxItem, .col-sm-7, .col-sm-8, div.width-2\3a 3, .col-sm-9, #center-and-left-area #center-area, div.width-3\3a 4, .col-sm-10, .officeContactsWrapper .officePhone p,
   .officeContactsWrapper .officeFax p,
   .officeContactsWrapper .officeEmail p,
   .officeContactsWrapper .officePec p, .col-sm-11, .col-sm-12, div.width-full, .colonna-1-di-2, .secondaryMenu, #submenu-details .submenuStaticWrapper, #submenu-details .submenuDynamicWrapper {
@@ -1000,7 +1000,7 @@ address {
   .col-sm-3, #center-and-left-area #left-area, #plonebrowser div.width-1\3a 4 {
     width: 25%; }
 
-  .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3 {
+  .col-sm-4, #content.dialog-wrapper fieldset.columnlibraries, div.width-1\3a 3, .colonna-1-di-3, .template-pp_homepage_view #portletPageFirstColumn .boxRss {
     width: 33.3333333333%; }
 
   .col-sm-5, #portal-logo {
@@ -5451,7 +5451,7 @@ dl.portletFocus {
         color: inherit; }
   dl.portletFocus.colonna-1-di-2 {
     width: 48.25%; }
-  dl.portletFocus.colonna-1-di-3 {
+  dl.portletFocus.colonna-1-di-3, .template-pp_homepage_view #portletPageFirstColumn dl.portletFocus.boxRss {
     width: 31%; }
   dl.portletFocus.colonna-1-di-4, #portletPageTopRowWrapper dl.portletFocus.boxRss {
     width: 22.375%;
@@ -5459,11 +5459,11 @@ dl.portletFocus {
     dl.portletFocus.colonna-1-di-4 dd.portletFooter, #portletPageTopRowWrapper dl.portletFocus.boxRss dd.portletFooter {
       width: auto; }
   @media (max-width: 991px) {
-    #portletPageFirstColumn dl.portletFocus.colonna-1-di-3, #portletPageFirstColumn dl.portletFocus.colonna-1-di-4, #portletPageFirstColumn #portletPageTopRowWrapper dl.portletFocus.boxRss, #portletPageTopRowWrapper #portletPageFirstColumn dl.portletFocus.boxRss {
+    #portletPageFirstColumn dl.portletFocus.colonna-1-di-3, .template-pp_homepage_view #portletPageFirstColumn dl.portletFocus.boxRss, #portletPageFirstColumn dl.portletFocus.colonna-1-di-4, #portletPageFirstColumn #portletPageTopRowWrapper dl.portletFocus.boxRss, #portletPageTopRowWrapper #portletPageFirstColumn dl.portletFocus.boxRss {
       width: 46%;
       margin-bottom: 20px; } }
   @media (max-width: 767px) {
-    dl.portletFocus.colonna-1-di-3, #portletPageFirstColumn dl.portletFocus.colonna-1-di-3, dl.portletFocus.colonna-1-di-4, #portletPageTopRowWrapper dl.portletFocus.boxRss, #portletPageFirstColumn dl.portletFocus.colonna-1-di-4, #portletPageFirstColumn #portletPageTopRowWrapper dl.portletFocus.boxRss, #portletPageTopRowWrapper #portletPageFirstColumn dl.portletFocus.boxRss {
+    dl.portletFocus.colonna-1-di-3, .template-pp_homepage_view #portletPageFirstColumn dl.portletFocus.boxRss, #portletPageFirstColumn dl.portletFocus.colonna-1-di-3, .template-pp_homepage_view #portletPageFirstColumn dl.portletFocus.boxRss, dl.portletFocus.colonna-1-di-4, #portletPageTopRowWrapper dl.portletFocus.boxRss, #portletPageFirstColumn dl.portletFocus.colonna-1-di-4, #portletPageFirstColumn #portletPageTopRowWrapper dl.portletFocus.boxRss, #portletPageTopRowWrapper #portletPageFirstColumn dl.portletFocus.boxRss {
       width: 100%;
       margin: 0 0 20px;
       min-height: 1em; } }
@@ -5737,11 +5737,11 @@ dl[class*='ortletNavigation'] dd.portletItem {
     margin-left: 4px; }
   .boxOffice h5.officeTitle:focus:after, .boxOffice h5.officeTitle:hover:after {
     color: red; }
-.boxOffice .officeTime ul {
+.boxOffice .officeTime div {
   position: relative;
   padding-left: 20px;
   margin-top: 10px; }
-  .boxOffice .officeTime ul:before {
+  .boxOffice .officeTime div:before {
     display: inline-block;
     font-family: FontAwesome;
     content: "";
@@ -5955,8 +5955,10 @@ dl.portletCollection {
     margin-left: 20px; }
   .officeContactsWrapper .officeTime {
     padding-top: 5px; }
-    .officeContactsWrapper .officeTime ul, #content .officeContactsWrapper .officeTime ul {
+    .officeContactsWrapper .officeTime div {
       margin-left: 20px; }
+      .officeContactsWrapper .officeTime div p, #content .officeContactsWrapper .officeTime div p {
+        margin-bottom: 0; }
   .officeContactsWrapper .officePhone,
   .officeContactsWrapper .officeFax,
   .officeContactsWrapper .officeEmail,
@@ -6136,6 +6138,8 @@ dl.portletCollection {
         padding-top: 10px; }
         .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow .colonna-1-di-2,
         .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow .colonna-1-di-3,
+        .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow #portletPageFirstColumn .boxRss,
+        .template-pp_homepage_view #portletPageFirstColumn #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow .boxRss,
         .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow .colonna-1-di-4,
         .template-pp_homepage_view #portletPageColumns #portletPageTopRowWrapper #portletPageTopRow .boxRss {
           margin-top: 20px; } }
@@ -6152,6 +6156,8 @@ dl.portletCollection {
   @media (min-width: 768px) and (max-width: 991px) {
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow .colonna-1-di-2,
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow .colonna-1-di-3,
+    .template-pp_homepage_view #portletPageColumns #portletPageBottomRow #portletPageFirstColumn .boxRss,
+    .template-pp_homepage_view #portletPageFirstColumn #portletPageColumns #portletPageBottomRow .boxRss,
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow .colonna-1-di-4,
     .template-pp_homepage_view #portletPageColumns #portletPageBottomRow #portletPageTopRowWrapper .boxRss,
     #portletPageTopRowWrapper .template-pp_homepage_view #portletPageColumns #portletPageBottomRow .boxRss,
@@ -8086,3 +8092,7 @@ body.subsection-services-for-users-lists-of-italian-companies #viewlet-below-con
     -ms-flex-order: 2;
     -webkit-order: 2;
     order: 2; }
+
+.template-pp_homepage_view #portletPageFirstColumn .boxRss {
+  padding-left: 0;
+  padding-right: 30px; }

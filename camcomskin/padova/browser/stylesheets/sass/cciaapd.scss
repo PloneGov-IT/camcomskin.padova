@@ -1222,7 +1222,7 @@ dl[class*='ortletNavigation']       {
   }
   .officeTime                       {
     h6                              { @extend .sr-only; }
-    ul                              { position: relative;
+    div                             { position: relative;
                                       padding-left: 20px;
                                       margin-top: 10px;
       &:before                      { @include make-fa('\f017', #777);
@@ -1436,10 +1436,10 @@ dl.portletCollection                { margin-bottom: 20px;
     p                               { margin-left: 20px; }
   }
   .officeTime                       { padding-top: 5px;
-    ul                              { 
-      &,
-      #content &                    { @extend .list-unstyled; 
-                                      margin-left: 20px;
+    div                             { margin-left: 20px;
+      p                             {
+        &,
+        #content &                  { margin-bottom: 0; }
       }
     }
   }
@@ -3076,4 +3076,12 @@ body.subsection-services-for-users-lists-of-italian-companies {
     }
     .documentByLine               { @include order(2); }
   }
+}
+
+// RSS IN HOME #144
+.template-pp_homepage_view #portletPageFirstColumn .boxRss { @extend .colonna-1-di-3;  padding: {left:0; right:30px;};}
+
+// NUOVA RIGA IN BELOWCONTENT DELLA HOME #144
+.section-homepage                 {
+
 }
