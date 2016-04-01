@@ -13,6 +13,9 @@ Changelog
 - Fix stile orari
 - RSS in home
 - fix nuove portlet in home (#144)
+- Fix labels per vista di ricerca (#145)
+  [cekk]
+
 
 0.2.7 (2016-02-29)
 ------------------

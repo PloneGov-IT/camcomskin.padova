@@ -52,6 +52,7 @@
                    type="submit"
                    value="Search"
                    i18n:attributes="value label_search;"/>
+            <p class="discreet">Puoi cercare più parole contemporaneamente combinandole con gli operatori <em>AND</em> e <em>OR</em></p>
         </fieldset>
 
         <div class="row">
@@ -70,7 +71,6 @@
                         Search Term
                     </strong>
                 </h1>
-
                 <p id="rss-subscription" i18n:domain="plone"
                    tal:define="syndication context/@@tools/syndication|nothing"
                    tal:condition="syndication/isSiteSyndicationAllowed|nothing">

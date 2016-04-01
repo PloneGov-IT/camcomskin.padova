@@ -1,6 +1,6 @@
 # Translation of plone.pot to Italian
 # Giancarlo & Lele Gaifas, 2002-2009
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
@@ -24,3 +24,8 @@ msgstr ""
 #: CMFPlone/skins/plone_deprecated/search.pt:184
 msgid "box_last_modified"
 msgstr "contenuto aggiornato il"
+
+#. Default: "Filter the results."
+#: plone.app.search/plone/app/search/search.pt:108
+msgid "narrow_search_options"
+msgstr "Allarga la ricerca."
