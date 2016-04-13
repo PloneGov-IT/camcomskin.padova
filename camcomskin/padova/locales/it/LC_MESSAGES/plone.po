@@ -28,4 +28,4 @@ msgstr "contenuto aggiornato il"
 #. Default: "Filter the results."
 #: plone.app.search/plone/app/search/search.pt:108
 msgid "narrow_search_options"
-msgstr "Allarga la ricerca."
+msgstr "Ricerca avanzata."
