@@ -4,7 +4,9 @@ Changelog
 1.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Remove default "Altro..." value in the form. If needed, specify it in the
+  tool configuration
+  [cekk]
 
 
 1.0.0 (2016-04-13)

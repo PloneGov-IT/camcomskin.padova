@@ -247,10 +247,9 @@
                       i18n:translate="label_required">(Required)</span>
 
                 <div class="formHelp">
-                   Selezionare un servizio o scegliere &quot;Altro...&quot; seguito dalla descrizione dettagliata della causale di pagamento nel successivo
+                   Selezionare un servizio seguito dalla descrizione dettagliata della causale di pagamento nel successivo
                    campo &quot;Descrizione&quot;
                 </div>
-
                 <select name="servizio"
                         id="servizio"
                         tal:define="opts python:camcom_pagamentionline_tool.getPayTypes()"
@@ -260,8 +259,7 @@
                                                                    selected python:test(request.get('servizio',None)==opt['value'],True,False);">
                          <span tal:replace="opt/title"/>
                      </option>
-                     <option value="Altro..."
-					         tal:attributes="selected python:test(request.get('servizio')=='Altro...',True,False);">Altro...</option>
+
                 </select>
 
             </div>
