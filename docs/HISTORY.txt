@@ -4,7 +4,7 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Aggiunto link newsletter in testata e modificato stile menu secondario per aggiunta nuova voce prenotazioni [neko]
 
 
 1.0.2 (2016-05-16)

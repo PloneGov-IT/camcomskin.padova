@@ -2,6 +2,7 @@
     <div class="topbarContent">
         <p class="claim">Opportunit&agrave; di sviluppo</p>
         <ul id="top-link-group">
+            <li class="newsletter"><a href="http://e6x2d.s83.it/frontend/forms/Subscription.aspx?idList=1&idForm=66&guid=be6451ab-b033-4753-adec-76ffd67315ca" target="_blank"><span>Iscriviti alla Newsletter</span></a></li>
             <li class="socialFb"><a href="https://www.facebook.com/pdcamcom" target="_blank"><span>Facebook</span></a></li>
             <li class="socialTw"><a href="https://twitter.com/pdcamcom" target="_blank"><span>Twitter</span></a></li>
             <li class="socialGp"><a href="https://plus.google.com/+pdcamcom/posts" target="_blank"><span>Google Plus</span></a></li>

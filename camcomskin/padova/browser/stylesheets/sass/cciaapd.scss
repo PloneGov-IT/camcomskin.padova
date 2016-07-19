@@ -98,6 +98,7 @@ body[class*='subsection-++contextportlets++'] {
                               margin:0;
                               font-size: 0.9em;
                               white-space: nowrap;
+                              position: relative;
         li                  { margin: 0 8px;
                               white-space: nowrap;
         }
@@ -112,6 +113,29 @@ body[class*='subsection-++contextportlets++'] {
         }
         .linkEng            { border-left: 1px solid #bbb;
                               padding-left: 20px;
+        }
+        .newsletter         { 
+          a                 { text-transform: uppercase; 
+                              @extend .regular;
+                              background-color: #717171;
+                              position: absolute;
+                              left: -17em;
+                              color: #fff;
+                              padding: 5px 1em 7px;
+                              top: -5px;
+            &:focus,
+            &:hover         { background-color: $brand-primary; }
+
+            @media(max-width: 510px) { left: -3em;
+              span {display: none; } 
+              &:before { margin-right: 0 !important; }
+            }
+          }
+          a:before          {  @include make-fa('\f003'); 
+                               font-size: 18px;
+                               margin-right: 8px;
+                               vertical-align: middle;
+          }
         }
     }
     @media (max-width: $screen-xs-max) {
@@ -276,8 +300,9 @@ body[class*='subsection-++contextportlets++'] {
 // LOGO
 #portal-logo                { margin: 20px 0 0;
                               @extend .pull-left;
-                              @extend .col-sm-5;
-                              @extend .col-md-4;
+                              //@extend .col-sm-5;
+                              //@extend .col-md-4;
+                              width: auto;
                               padding-left: 0;
     img                     { max-width: 250px;
                               height: auto; 
@@ -298,33 +323,39 @@ body[class*='subsection-++contextportlets++'] {
 }
 
 // MENU SUPERIORE
-.secondaryMenu              { @extend .col-sm-12;
-                              @extend .col-md-7;
+.secondaryMenu              { //@extend .col-sm-12;
+                              //@extend .col-md-7;
                               display: block;
                               margin-top: 20px;
                               margin-bottom: 20px;
                               text-align: center;
+                              @media (max-width: 1120px) {
+                                float: none !important;
+                                margin-top: 30px !important;
+                                text-align: right;
+                                > ul { white-space: normal !important; }
+                              }
                               @media (max-width: $screen-sm-max) {
                                   margin-top: 10px;
                                   margin-bottom: 10px;
                               }
                               @media (min-width: $screen-md-min) {
-                                  float: right;
-                                  text-align: right;
-                                  margin-top: 40px;
-                                  margin-bottom: 0;
+                                 float: right;
+                                 text-align: right;
+                                 margin-top: 40px;
+                                 margin-bottom: 0; 
                               }
   #portal-footer-wrapper &  { margin-top:0;}
   > ul                      { white-space: nowrap;
                               margin-bottom: 0;
-    > li.secondaryMenuItem  { margin-right: 5%;
+    > li.secondaryMenuItem  { margin-right: 1.2em;
                               display: inline-block;
       #portal-footer-wrapper & {
                               display: block;
                               margin: 0;
                               border-bottom: 1px solid #708798;
       }
-      > a                   { font-size: 1.1em;
+      > a                   { font-size: 0.98em;
                               @media (max-width: $screen-sm-max) {
                                   font-size: 1em;
                               }
@@ -340,7 +371,7 @@ body[class*='subsection-++contextportlets++'] {
         &:hover             { color: $link-color;}
         &:after             { @include make-fa('\f107', $link-color); 
                                font-size: 18px;
-                               margin-left: 12px;
+                               margin-left: 9px;
                                position: relative;
                                top: 0.1em;
             #portal-footer-wrapper & {
@@ -2275,7 +2306,7 @@ dl.portletBandi                     {
       ul li                         { border-top: 1px solid $gray-light;
         &:first-child               { border-top: 0; }
         a                           { padding: 8px 5px;
-                                      min-height: 4em;
+                                      // min-height: 4em;
           &:focus,
           &:hover                   { background-color: $grayVeryLighty; }
         }
