@@ -4,7 +4,11 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- Aggiunto link newsletter in testata e modificato stile menu secondario per aggiunta nuova voce prenotazioni [neko]
+- Aggiunto link newsletter in testata e modificato stile menu secondario per
+  aggiunta nuova voce prenotazioni
+  [neko]
+- Add hover (mouseenter) event to open secondary menu (#166)
+  [cekk]
 
 
 1.0.2 (2016-05-16)

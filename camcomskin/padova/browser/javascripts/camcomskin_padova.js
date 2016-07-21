@@ -13,7 +13,11 @@
     });
 
     //secondary menu
-    $(".secondaryMenu [data-toggle=popover]").popover({html:true});
+    $(".secondaryMenu [data-toggle=popover]").popover(
+      {
+        html:true
+      }
+    );
     $("li.secondaryMenuItem a.popovers").click(function(e) {
       e.preventDefault();
       //remove all class for open tab
@@ -30,6 +34,15 @@
       }
     });
 
+    $("li.secondaryMenuItem").on('mouseenter', 'a.popovers', function(e) {
+      e.preventDefault();
+      //remove all class for open tab
+      $(".secondaryMenu li.secondaryTabOpen").removeClass("secondaryTabOpen");
+      $(".secondaryMenu [data-toggle=popover]").popover('hide');
+      $(this).popover('show');
+      $(this).parent().addClass("secondaryTabOpen");
+    });
+    
     //handle general clicks, to close open menus or search box
     $(document).click(function(event) {
       if(!$(event.target).closest('.secondaryMenuItem').length) {
