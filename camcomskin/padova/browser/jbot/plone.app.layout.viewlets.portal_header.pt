@@ -6,7 +6,10 @@
             <li class="socialFb"><a href="https://www.facebook.com/pdcamcom" target="_blank"><span>Facebook</span></a></li>
             <li class="socialTw"><a href="https://twitter.com/pdcamcom" target="_blank"><span>Twitter</span></a></li>
             <li class="socialGp"><a href="https://plus.google.com/+pdcamcom/posts" target="_blank"><span>Google Plus</span></a></li>
-            <li class="linkEng"><a href="/english">English info</a></li>
+            <li class="socialTg"><a href="https://telegram.me/cameracommerciopadova/" target="_blank"><span>Telegram</span></a></li>
+            <li class="linkEng"><a title="English" href="/english"><span>English info</span></a></li>
+            <li class="linkEs"><a title="Español" href="/informacion-espanol/"><span>Español</span></a></li>
+            <li class="linkFr"><a title="Français" href="/francais-information"><span>Français</span></a></li>
         </ul>
     </div>
 </div>

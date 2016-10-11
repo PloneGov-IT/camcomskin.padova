@@ -4,7 +4,7 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Aggiunti in testata telegra + flags [neko]
 
 
 1.0.3 (2016-07-29)
