@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.4 (unreleased)
+1.0.4 (2016-10-12)
 ------------------
 
 - Aggiunti in testata telegra + flags [neko]
