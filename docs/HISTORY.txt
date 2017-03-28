@@ -4,7 +4,8 @@ Changelog
 1.0.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix related items viewlet per non rompersi quando un correlato non esiste più
+  [cekk]
 
 
 1.0.4 (2016-10-12)
