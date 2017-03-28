@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.5 (unreleased)
+1.0.5 (2017-03-28)
 ------------------
 
 - Fix related items viewlet per non rompersi quando un correlato non esiste più
