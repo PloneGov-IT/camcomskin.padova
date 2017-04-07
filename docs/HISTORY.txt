@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.6 (unreleased)
+1.0.6 (2017-04-07)
 ------------------
 
 - Customized bandi collection view for #185
