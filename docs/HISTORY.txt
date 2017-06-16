@@ -6,7 +6,8 @@ Changelog
 
 - Fix typo
   [cekk]
-
+- Customize cciaa_modulistica_view to add effective date (#182)
+  [cekk]
 
 1.0.6 (2017-04-07)
 ------------------
