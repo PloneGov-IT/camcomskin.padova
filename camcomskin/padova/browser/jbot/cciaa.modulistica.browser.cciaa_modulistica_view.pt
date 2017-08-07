@@ -76,8 +76,9 @@
                         <td class="col2">
                             <label class="formNameFile" tal:content="item_title_or_id">Moduloprincipale.pdf</label>
                             <div class="discreet effective-date"
-                                 tal:condition="python:item_published != 'None'"
-                                 tal:content="python:toLocalizedTime(item_published)" />
+                                 tal:condition="python:item_published != 'None'">
+                                pubblicato il <tal:date content="python:toLocalizedTime(item_published)" />
+                            </div>
                             <div class="discreet" tal:content="python: item_description">
                                 Description
                             </div>

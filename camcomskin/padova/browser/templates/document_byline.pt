@@ -23,7 +23,6 @@
          tal:omit-tag="python:view.author() is None"
          i18n:name="author">Roland Barthes</a>
       </tal:i18n>
-         —
     </span>
   </tal:name>
   </tal:creator>
@@ -32,6 +31,7 @@
                      modified context/ModificationDate">
   <span class="documentPublished"
         tal:condition="published">
+    —
     <span i18n:translate="box_published">
       published
     </span>
@@ -41,7 +41,9 @@
   </span>
 
   <span class="documentModified"
-        tal:condition="modified">
+        tal:define="not_date_items python:['Folder','Topic','Portlet Page']"
+        tal:condition="python:modified and context.portal_type not in not_date_items">
+    —
     <span i18n:translate="box_last_modified">
       last modified
     </span>
