@@ -1,9 +1,34 @@
-<div id="searchbox"
-     i18n:domain="plone">
+<div id="portal-searchbox"
+     i18n:domain="plone"
+     tal:define="navigation_root_url view/navigation_root_url;">
 
-  <a tal:attributes="href string:${context/portal_url}/@@search"
-     accesskey="4"
-     class="btnSearch">
-     <span>Cerca nel sito</span>
-  </a>
+    <form id="searchGadget_form"
+          action="@@search"
+          role="search"
+          tal:attributes="action string:${navigation_root_url}/@@search;">
+
+        <div class="LSBox">
+        <label class="hiddenStructure"
+               for="searchGadget"
+               i18n:translate="text_search">Search Site</label>
+
+        <input name="SearchableText"
+               type="text"
+               size="18"
+               value=""
+               id="searchGadget"
+               title="Search Site"
+               placeholder="Search Site"
+               i18n:attributes="title title_search_site;
+                                placeholder title_search_site"
+               tal:attributes="value request/form/SearchableText|nothing;"
+               class="searchField" />
+
+        <button class="search-button" type="submit"
+                i18n:attributes="title label_search;
+                                 aria-label label_search"></button>
+
+        </div>
+    </form>
+
 </div>

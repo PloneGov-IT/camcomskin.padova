@@ -1,16 +1,17 @@
 (function($) {
   $(document).ready(function() {
     //expand/collapse search form
-    var search_button = $("#searchbox .btnSearch");
-    search_button.click(function(e) {
-      e.preventDefault();
-      $('#camcomskin-searchbox').slideToggle();
-      $('#camcomskin-searchbox input#SearchableText').focus();
-    });
-    $('#camcomskin-searchbox a.closeLink').click(function(e) {
-      e.preventDefault();
-      $('#camcomskin-searchbox').slideUp();
-    });
+
+    // var search_button = $("#searchbox .btnSearch");
+    // search_button.click(function(e) {
+    //   e.preventDefault();
+    //   $('#camcomskin-searchbox').slideToggle();
+    //   $('#camcomskin-searchbox input#SearchableText').focus();
+    // });
+    // $('#camcomskin-searchbox a.closeLink').click(function(e) {
+    //   e.preventDefault();
+    //   $('#camcomskin-searchbox').slideUp();
+    // });
 
     //secondary menu
     $(".secondaryMenu [data-toggle=popover]").popover(
@@ -42,7 +43,7 @@
       $(this).popover('show');
       $(this).parent().addClass("secondaryTabOpen");
     });
-    
+
     //handle general clicks, to close open menus or search box
     $(document).click(function(event) {
       if(!$(event.target).closest('.secondaryMenuItem').length) {

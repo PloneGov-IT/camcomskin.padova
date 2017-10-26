@@ -1,0 +1,30 @@
+.documentByLine {
+    font-size: 0.9em;
+    display: inline;
+
+    abbr {
+        margin: 5px 0;
+        display: inline-block;
+        border: 0;
+        text-decoration: none;
+        cursor: inherit;
+    }
+}
+
+#plone-document-byline {
+    display: block;
+    margin-bottom: 0.7rem;
+
+    &:before {
+        @include make-fa('\f073');
+        color: $gray-documentByLine;
+        padding-right: 0.5rem;
+    }
+
+    a {
+        &:focus,
+        &:hover {
+            border-bottom: 1px solid $link-hover-color;
+        }
+    }
+}

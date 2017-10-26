@@ -9,6 +9,7 @@
         view nocall:view | nocall: plone_view;
         dummy python: plone_view.mark_view(view);
         portal_url portal_state/portal_url;
+        theme_base_view context/@@themebaseview;
         checkPermission nocall: context/portal_membership/checkPermission;
         site_properties nocall:context/portal_properties/site_properties;
         ajax_load request/ajax_load | nothing;
@@ -39,7 +40,9 @@
         <metal:styleslot define-slot="style_slot" />
         <metal:javascriptslot define-slot="javascript_head_slot" />
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+        <script src="https://use.fontawesome.com/22e75ec526.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet"/>
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
@@ -51,23 +54,22 @@
                   sl python:plone_view.have_portlets('plone.leftcolumn', view);
                   sr python:plone_view.have_portlets('plone.rightcolumn', view);
                   body_class python:plone_view.bodyClass(template, view);
-                  classes python:context.restrictedTraverse('@@sunburstview').getColumnsClasses(view)"
+                  classes python:theme_base_view.getColumnsClasses(view)"
     tal:attributes="class body_class;
                     dir python:isRTL and 'rtl' or 'ltr'">
 
 <div id="visual-portal-wrapper">
 
         <div id="portal-top"
-            class="row"
             i18n:domain="plone"
             tal:condition="not:ajax_load">
-<div class="cell width-full position-0">
+<div>
             <div tal:replace="structure provider:plone.portaltop" />
 </div>
         </div>
-    <div id="portal-columns" class="row">
+    <div id="portal-columns" tal:attributes="class classes/content">
 
-        <div id="portal-column-content" class="cell" tal:attributes="class classes/content">
+        <div id="portal-column-content" >
 
             <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" tal:condition="not:ajax_load" />
 
@@ -173,10 +175,9 @@
     </div>
 
     <div id="portal-footer-wrapper"
-        class="row"
         i18n:domain="plone"
         tal:condition="not:ajax_load">
-        <div class="cell width-full position-0">
+        <div>
             <div tal:replace="structure provider:plone.portalfooter" />
         </div>
     </div>

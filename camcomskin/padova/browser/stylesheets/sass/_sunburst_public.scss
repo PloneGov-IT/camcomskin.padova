@@ -5,7 +5,7 @@ body    { font-size: $font-size-base;
           background: $body-bg;
           color: $text-color;
 }
-h1, h2, h3, h4, h5, h6 {   font-family: $headings-font-family; 
+h1, h2, h3, h4, h5, h6 {   font-family: $headings-font-family;
                             color: $headings-color;
                             letter-spacing:normal;
     a                  { color: $link-color; }
@@ -16,7 +16,7 @@ a               {
     &:link      { color: $link-color; }
     &:visited   { color: $link-color; }
     &:hover     { color: $link-hover-color; }
-    &:active    { color: $linkColorActive; };
+    &:active    { color: $link-color; };
 }
 input           { font-family:  $font-family-base;
                   font-size:$font-size-base;
@@ -28,7 +28,7 @@ input           { font-family:  $font-family-base;
 dl.portlet,
 div.managePortletsLink, a.managePortletsFallback,
 #edit-bar,
-#portal-breadcrumbs, 
+#portal-breadcrumbs,
 #portal-personaltools,
 #portal-languageselector,
 #portal-siteactions,
@@ -51,7 +51,7 @@ body.smallText {
     font-size: $font-size-small;
 }
 #portal-globalnav   { background: $globalBackgroundColor;
-    li a            { background: $globalBackgroundColor; }    
+    li a            { background: $globalBackgroundColor; }
     .selected a,
     a:focus,
     a:hover         { background: $globalFontColor;
@@ -107,7 +107,7 @@ div.managePortletsLink {
     background: $globalBackgroundColor;
 }
 #content a,
-dl.portlet a            { 
+dl.portlet a            {
   &:link,
   &:visited             { color: $link-color;
                           border-color: $borderLinkColor;
@@ -115,17 +115,17 @@ dl.portlet a            {
                           border-bottom-style: $borderLinkStyle;
   }
   &:focus,
-  &:hover               { color: $link-hover-color !important; 
+  &:hover               { color: $link-hover-color !important;
                           border-color: $borderLinkHoverColor;
                           border-bottom-width: $borderLinkHoverWidth;
                           border-bottom-style: $borderLinkHoverStyle;
   }
 }
-dl dt span.summary a { border-bottom-width: $borderLinkWidth !important; 
+dl dt span.summary a { border-bottom-width: $borderLinkWidth !important;
                        border-bottom-style: $borderLinkStyle !important;
                        border-color: $borderLinkColor !important;
   &:focus,
-  &:hover           { color: $link-hover-color !important; 
+  &:hover           { color: $link-hover-color !important;
                       border-color: $borderLinkHoverColor !important;
                       border-bottom-width: $borderLinkHoverWidth !important;
                       border-bottom-style: $borderLinkHoverStyle !important;
@@ -137,8 +137,8 @@ div.portlet li {
   display: list-item;
 }
 
-#category               { color: $gray; 
-    a.link-category     { background: $globalBackgroundColor; 
+#category               { color: $gray;
+    a.link-category     { background: $globalBackgroundColor;
         &:hover         { background: $gray-dark;
                           color: $gray-lighter;
                           border-color: $gray-dark;
@@ -152,7 +152,7 @@ div.portlet li {
                           font-size: 1.1em;
     }
     .visualHighlight    { background-color: $state-info-bg; }
-    blockquote.pullquote          { color: #575757; 
+    blockquote.pullquote          { color: #575757;
                           font-size: 1.1em;
                           line-height: 1.5em;
                           font-weight: 600;
@@ -191,11 +191,11 @@ table                   {
         }
         tr.odd th       { border-color: #fff; }
         tbody tr        {
-            &.odd       { background: $oddRowBackgroundColor; 
+            &.odd       { background: $oddRowBackgroundColor;
                 td      { background: $oddRowBackgroundColor; }
                 &.selected td { background-color: #ffa; }
             }
-            &.even      { background: $evenRowBackgroundColor; 
+            &.even      { background: $evenRowBackgroundColor;
                 td      { background: $evenRowBackgroundColor; }
             }
             .selected   { background-color: #ffa; }
@@ -210,7 +210,7 @@ div.listingBar a        { border-color: $globalBorderColor;
     &:focus,
     &:hover             { color: #FFF;
                           background-color: #329fd7;
-                          border-color: #329fd7;} 
+                          border-color: #329fd7;}
 }
 
 
@@ -219,26 +219,26 @@ dl.portalMessage        { border-color: #996;
     a                   { color: black;
                           border-bottom-color: black;
     }
-    dt                  { background-color: $state-warning-bg; 
+    dt                  { background-color: $state-warning-bg;
                           color: $state-warning-text;
     }
 }
 
 dl.warning              { border-color: $state-warning-border;
                           color: $state-warning-text;
-    dt, dd              { background-color: $state-warning-bg; 
+    dt, dd              { background-color: $state-warning-bg;
                           color: $state-warning-text;
     }
 }
 dl.error                { border-color: $state-danger-border;
                           color: $state-danger-text;
-    dt, dd              { background-color: $state-danger-bg; 
+    dt, dd              { background-color: $state-danger-bg;
                           color: $state-danger-text;
     }
 }
 dl.info                { border-color: $state-info-border;
                           color: $state-info-text;
-    dt, dd              { background-color: $state-info-bg; 
+    dt, dd              { background-color: $state-info-bg;
                           color: $state-info-text;
     }
 }
@@ -246,9 +246,9 @@ dl.info                { border-color: $state-info-border;
 #edit-bar               { background-color: $contentViewBackgroundColor;
                           border-color: $contentViewBackgroundColor;
 }
-#content-views          { background-color: $contentViewBackgroundColor; 
-    li.selected a, 
-    li a:focus, 
+#content-views          { background-color: $contentViewBackgroundColor;
+    li.selected a,
+    li a:focus,
     li a:hover          { background-color: $contentViewHoverBackgroundColor;
                           color: #000;
     }
@@ -261,7 +261,7 @@ dl.info                { border-color: $state-info-border;
             a.selected,
             a:focus,
             a:hover     { background-color: $globalHoverBackgroundColor;
-                          color: #000;        
+                          color: #000;
             }
             a.selected  { background-color: #FFF; }
             a.notify    { background-color: $red;
@@ -273,13 +273,13 @@ dl.info                { border-color: $state-info-border;
 #portal-personaltools           {
     dt.actionMenuHeader a:focus,
     dt.actionMenuHeader a:hover { color: $text-color; }
-    dd                          { background: $gray-lighter; 
+    dd                          { background: $gray-lighter;
         a:focus,
         a:hover                 { background: #FFF;
                                   color: #000 !important;
         }
 
-    }   
+    }
 }
 #contentActionMenus                         { background: $contentViewBackgroundColor;
     dl.actionMenu       {
@@ -301,10 +301,10 @@ dl.info                { border-color: $state-info-border;
             }
         }
         &.deactivated dt                    { margin:0 0; }
-        &.activated dd                      { border-bottom: $contentViewBorderColor; 
+        &.activated dd                      { border-bottom: $contentViewBorderColor;
             a:focus,
             a:hover,
-            .actionMenuSelected             { 
+            .actionMenuSelected             {
                                               color: $gray;
             }
             ul                              { padding-bottom: 0.4em; }
@@ -338,7 +338,7 @@ dl.collapsible { border-color: #8cacbb; }
 .optionsToggle  { border-color: #8cacbb;
                   color: #000;
                   background-color: #dee7ec;
-} 
+}
 
 .highlightedSearchTerm  { background-color: #ffa; }
 .noInheritedRoles       { color: $gray-light; }
@@ -356,7 +356,7 @@ dd.image-caption        { color: $gray-light;}
                                                          color: #000;
 }
 #content .field input[type="text"][name$=".title"] { font-size: 1em; }
-#content #archetypes-fieldname-title input       { font-family: $font-family-sans-serif; 
+#content #archetypes-fieldname-title input       { font-family: $font-family-sans-serif;
                                           color: #000;
                                           font-size: 1.2em;
 }
@@ -391,9 +391,9 @@ input.inputLabelActive  { color: #76797c; }
     &:hover             { color: $link-hover-color; }
 }
 
-#portal-sitemap > li    { border-bottom-color: $gray-lighter; 
+#portal-sitemap > li    { border-bottom-color: $gray-lighter;
                           font-weight: normal;
-  .navTreeLevel2, 
+  .navTreeLevel2,
   .navTreeLevel2 ul     { font-size: 0.95em; }
   a                     { display: inline-block;}
 }

@@ -9,9 +9,9 @@ a {text-decoration: none !important;}
 a%a-style:not(.btn)   { border-bottom: $borderLinkWidth $borderLinkStyle $borderLinkColor;
               @include transition(all .2s ease-in);
   &:focus,
-  &:hover   { background-color: $grayVeryLighty; 
+  &:hover   { background-color: $grayVeryLighty;
               border-radius: 3px;
-              text-decoration: none; 
+              text-decoration: none;
               border-bottom: $borderLinkHoverWidth $borderLinkHoverStyle $borderLinkHoverColor;
   }
 }
@@ -22,7 +22,7 @@ a%basic:not(.btn) { color: $link-color;
   	&:hover { color: $link-hover-color; }
 }
 dl.portlet a,
-#content a,  
+#content a,
 #content p a { @extend %a-style; }
 */
 #portletPageColumns {@extend .clearfix;}
@@ -49,13 +49,13 @@ dl.portlet a,
   dd.actionMenuContent            { margin-top: 10px; }
 }
 #search-filter                    { border: 1px solid #ccc;
-                                    background-color: $grayLighty;
-  legend                          { margin-bottom: 0; 
+                                    background-color: $gray-bg;
+  legend                          { margin-bottom: 0;
     &,
     #content &                     { @extend .regular; border-top: 1px solid #e5e5e5; }
   }
   fieldset:first-child legend     { border-top:0; }
-  .field                          { background-color: #fafafa; 
+  .field                          { background-color: #fafafa;
     .optionsToggle                { border:0;
                                     background-color: $tr;
                                     padding:0;
@@ -67,7 +67,7 @@ dl.portlet a,
 
 ////// Personal Bar
 #portal-personaltools-wrapper   { background-color: #660000;
-                                  background: linear-gradient(to right,$red 0,$red 33%,#660000 66%,#000 100%);
+                                  background: linear-gradient(to right, #960E0E 0,#960E0E 33%,#660000 66%,#000 100%);
                                   padding: 3px $grid-gutter-width/2;
                                   margin: 0 0;
                                   font-size: 1em;
@@ -107,10 +107,10 @@ dl.portlet a,
   	#archetypes-fieldname-description textarea#description {
                               font-weight: normal;
   	}
-  	.pullquote                { font-size: 1.3em; 
+  	.pullquote                { font-size: 1.3em;
                               letter-spacing: normal !important;
                               font-family: $headings-font-family;
-  	}  
+  	}
 	.callout            	  { background: transparentize($brand-primary, .9);
                       		    border: 1px dotted $brand-primary;
 	}

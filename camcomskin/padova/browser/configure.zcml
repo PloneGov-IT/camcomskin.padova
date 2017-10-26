@@ -17,6 +17,14 @@
         directory="jbot"
         layer=".interfaces.IThemeSpecific" />
 
+  <browser:page
+    name="themebaseview"
+    for="*"
+    class=".themebaseview.ThemeBaseView"
+    permission="zope.Public"
+    allowed_interface=".interfaces.IThemeBaseView"
+    />
+
   <!-- RESOURCE DIRECTORIES -->
   <!-- Resource directory for images -->
   <browser:resourceDirectory
@@ -68,23 +76,24 @@
         />
 
   <!-- The search box -->
-  <browser:viewlet
+  <!-- browser:viewlet
       name="camomskin.searchbox"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       template="templates/search_viewlet.pt"
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
-      />
+      / -->
 
   <!-- secondary menu -->
-  <browser:viewlet
+  <!-- browser:viewlet
       name="camcomskin.secondarymenu"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.SecondaryMenuViewlet"
       template="templates/secondary_menu_viewlet.pt"
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
-    />
+    / -->
+
   <!-- Editable menu viewlet -->
   <configure package="collective.editablemenu">
     <browser:viewlet
@@ -127,13 +136,13 @@
     </configure>
   <!-- VIEWS -->
   <!-- Secondary editable menu settings -->
-  <browser:page
+  <!-- browser:page
       name="editable-secondarymenu-settings"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       class=".menu_controlpanel.EditableSecondaryMenuSettingsView"
       permission="collective.editablemenu.permissions.ManageSettings"
       layer=".interfaces.IThemeSpecific"
-      />
+      / -->
   <browser:page
       name="secondary_menu_support_view"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"

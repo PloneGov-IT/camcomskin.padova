@@ -1,0 +1,18 @@
+.section-homepage {
+
+    #portal-top {
+        background: #fff;
+    }
+
+    #viewlet-below-content,
+    #portal-column-two,
+    #content header {
+        display: none;
+    }
+
+    #portal-column-content,
+    #portal-columns {
+        padding: 0;
+        width: 100%;
+    }
+}
