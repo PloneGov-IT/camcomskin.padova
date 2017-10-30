@@ -4,12 +4,14 @@
     p {
         display: inline-block;
         margin:0;
+        vertical-align: bottom;
     }
 
     ul {
         @extend .list-inline;
         display: inline-block;
         padding-left: 1rem;
+        margin:0;
 
         li {
             padding-right: 0;
@@ -20,8 +22,8 @@
                 &:before {
                     display: inline-block;
                     border-radius: 100%;
-                    background-color: $brand-primary;
-                    color: #FFF;
+                    background-color: #fff;
+                    color: $brand-primary;
                     width: 3rem;
                     height: 3rem;
                     text-align: center;
@@ -30,29 +32,36 @@
                     vertical-align: middle;
                 }
                 &.sc-facebook:before {
-                    @include make-fa('\f09a', #FFF);
+                    @include make-fa('\f09a', $brand-primary);
                 }
                 &.sc-twitter:before {
-                    @include make-fa('\f099', #FFF);
+                    @include make-fa('\f099', $brand-primary);
                 }
                 &.sc-youtube:before {
-                    @include make-fa('\f167', #FFF);
+                    @include make-fa('\f167', $brand-primary);
+                }
+                &.sc-google:before {
+                    @include make-fa('\f0d5', $brand-primary);
                 }
                 &.sc-instagram:before {
-                    @include make-fa('\f16d', #FFF);
+                    @include make-fa('\f16d', $brand-primary);
                 }
-                &.sc-medium:before {
-                    background-image: url($img-path + 'mediumHover.svg'); // *Hover perchè deve essere bianco -> vedi footer
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    background-size: 75%;
-                    content:'';
+                &.sc-telegram:before {
+                    @include make-fa('\f2c6', $brand-primary);
                 }
+                // &.sc-medium:before {
+                //     background-image: url($img-path + 'mediumHover.svg'); // *Hover perchè deve essere bianco -> vedi footer
+                //     background-repeat: no-repeat;
+                //     background-position: center center;
+                //     background-size: 75%;
+                //     content:'';
+                // }
 
                 &:focus,
                 &:hover {
                     &:before {
-                        background-color: $gray;
+                        background-color: transparentize(#fff, .8);
+                        color:#FFF;
                     }
                 }
 

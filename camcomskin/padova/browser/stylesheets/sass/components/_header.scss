@@ -1,6 +1,5 @@
 #header-banner,
 #portal-header {
-    z-index: 300;
     position: relative;
 }
 
@@ -8,7 +7,7 @@
     background-color: $gray-agid;
     color: #FFF;
     font-weight: $regular;
-    padding: 1rem 0;
+    padding: 0.8rem 0;
 
     .header-banner-inner {
         @include make-container;
@@ -36,46 +35,61 @@
     @media (max-width: 600px) {
         font-size: 0.7em;
     }
+
+    // LINGUE
+    .dropdown-languages {
+      font-size: 0.9em;
+      float: right;
+      position: relative;
+
+      button {
+        background: transparent;
+        color: #FFF;
+        padding: 0 0.5rem;
+        border-radius: 0;
+        box-shadow: none;
+        border: 0;
+
+        &:after {
+          @include make-fa('\f107', #fff);
+          margin-left: 0.3rem;
+        }
+
+        &:focus,
+        &:hover {
+          background-color: transparentize(#FFF, .6);
+        }
+      }
+
+      ul {
+        font-size: 1em;
+      }
+    }
+}
+
+#portal-header-wrapper {
+  background-color: $brand-primary;
 }
 
 #portal-header {
-    padding: 1.8rem 0;
+    padding: 1.2rem 0 1.8rem;
     @include make-container;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    color: #FFF;
 
-    h1 {
-        flex: 1 0 0;
-        margin:0;
+    &:before,
+    &:after {
+      display: none;
+    }
 
-        img {
-            margin-right: 2rem;
-        }
+    #portal-logo {
+      margin:0;
 
-        a {
-            color: $text-color;
-            display: inline-flex;
-            flex-flow: row nowrap;
-
-            span {
-                border-bottom: 3px solid $tr;
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-
-                @media (max-width: $screen-sm-max) {
-                    border-width: 1px;
-                }
-            }
-
-            &:focus {
-                border:0;
-
-                span {
-                    border-bottom-color: $text-color;
-                }
-            }
-        }
+      &:focus {
+        background-color: transparentize(#fff, 0.9);
+      }
     }
 
     button#search-toggle,
@@ -162,7 +176,7 @@
     }
 
     @media (max-width: 600px) {
-        h1#portal-logo {
+        #portal-logo {
             img {
                 $logo-width: 13vw;
                 width: $logo-width;

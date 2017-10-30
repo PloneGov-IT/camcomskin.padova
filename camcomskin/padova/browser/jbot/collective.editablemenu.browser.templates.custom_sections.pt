@@ -1,6 +1,8 @@
 <tal:sections tal:define="menu_tabs view/menu_tabs"
      tal:condition="menu_tabs"
      i18n:domain="plone">
+
+<div id="portal-mainnavigation">
   <p class="hiddenStructure" i18n:translate="heading_sections">Navigation</p>
   <div class="globalnavWrapper">
       <div class="globalnavClose">
@@ -33,4 +35,5 @@
       </tal:tabs>
     </ul>
   </div>
+</div>
 </tal:sections>

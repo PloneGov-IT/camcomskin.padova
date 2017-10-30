@@ -5,4 +5,4 @@
                    title view/navigation_root_title"
    i18n:domain="plone"
    i18n:attributes="title">
-    <img tal:attributes="src string:${view/navigation_root_url}/logo_cciaa_padova.png" alt="Logo Camera di Commercio di Padova" title="Logo Camera di Commercio di Padova" /></a>
+    <img tal:attributes="src string:${view/navigation_root_url}/logo_cciaa_padova_white.png" alt="Logo Camera di Commercio di Padova" /></a>

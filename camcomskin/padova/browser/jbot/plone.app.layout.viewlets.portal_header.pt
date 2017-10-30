@@ -2,11 +2,22 @@
 <div id="header-banner">
     <div class="header-banner-inner">
         <div class="header-banner-owner">
-            <a href="http://www.regione.veneto.it" target="_blank">Regione Veneto</a>
+        </div>
+        <div class="dropdown-languages">
+          <button class="dropdown-toggle" type="button" id="dropdown-lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Seleziona la lingua">
+            <span class="sr-only">lingua attiva:</span> <span>ITA</span>
+          </button>
+          <ul class="languages dropdown-menu" aria-labelledby="dropdown-lang">
+            <li><a href="/english" title="English"><span>ENG</span></a></li>
+            <li><a href="/informacion-espanol" title="Español"><span>ESP</span></a></li>
+            <li><a href="/francais-information" title="Français"><span>FRA</span></a></li>
+          </ul>
         </div>
     </div>
 </div>
 
-<div id="portal-header">
-    <div tal:replace="structure provider:plone.portalheader" />
+<div id="portal-header-wrapper">
+  <div id="portal-header">
+      <div tal:replace="structure provider:plone.portalheader" />
+  </div>
 </div>
