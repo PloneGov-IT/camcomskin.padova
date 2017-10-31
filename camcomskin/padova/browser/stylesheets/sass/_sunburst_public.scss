@@ -50,17 +50,23 @@ div.overlay    { font-size: 0.95em;
 body.smallText {
     font-size: $font-size-small;
 }
-#portal-globalnav   { background: $globalBackgroundColor;
-    li a            { background: $globalBackgroundColor; }
+#portal-globalnav   { background-color: transparent;
+    li a            {
+      background: transparent; 
+      background: transparent;
+      min-width: 1px;
+      padding: inherit;
+
+    }
     .selected a,
     a:focus,
-    a:hover         { background: $globalFontColor;
-                      color: #FFF;
+    a:hover         { background: transparent;
+                      color: inherit;
     }
     .selected a     {
         &:focus,
-        &:hover     { background: $globalBackgroundColor;
-                      color: $globalFontColor;
+        &:hover     { background: transparent;
+                      color: inherit;
         }
     }
 }

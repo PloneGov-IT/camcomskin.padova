@@ -2,15 +2,17 @@
 
 #portal-searchbox {
     text-align: right;
+    margin: 1rem 0;
 
     #searchGadget {
-        border: 1px solid $brand-primary;
-        padding: 1.1rem 1.4rem;
+        border: 0;
+        padding: 0.8rem 1.4rem;
         width: 25rem;
         border-radius: 0;
         box-shadow: none;
         float: left;
-        height: 50px;
+        height: auto;
+        color: $gray-dark;
 
         &:focus {
             border-color: $gray;
@@ -18,22 +20,23 @@
     }
 
     button.search-button {
-        color: #FFF;
-        background-color: $brand-primary;
+        color: $text-color;
+        background-color: $gray-bg;
         text-align: center;
-        width: 5rem;
-        padding: 0.8rem 0 1.5rem;
-        line-height: 1;
+        width: 4.4rem;
+        padding: 0.9rem 0 1.5rem 0;
+        line-height: 0.68;
         border: 0;
         margin-left: -0.5rem;
         border-radius: 0;
         font-weight: $regular;
         vertical-align: baseline;
-        height: 50px;
+        height: auto;
+        text-shadow: none;
 
         &:before {
             @include make-fa('\f002');
-            font-size: 2.6rem;
+            font-size: 2.4rem;
         }
 
         &:focus,

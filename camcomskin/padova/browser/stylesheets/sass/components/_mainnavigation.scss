@@ -30,7 +30,6 @@
     color: #FFF;
 
     .globalnavWrapper {
-        @include make-container;
     }
 
     ul#portal-globalnav {
@@ -38,6 +37,7 @@
         margin:0;
         display: flex;
         padding: 1.2rem 0;
+        @include make-container;
 
         li {
             margin: 0 2%;
@@ -52,13 +52,11 @@
 
             a {
                 color: #FFF;
-                font-size: 1.95rem;
-                font-weight: $semibold;
+                font-weight: $bold;
                 display: block;
-                border-bottom: 1px solid transparent;
 
                 &:hover {
-                    border-color: #FFF;
+
                 }
             }
 
