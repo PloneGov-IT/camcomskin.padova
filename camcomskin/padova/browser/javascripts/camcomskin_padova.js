@@ -51,10 +51,10 @@
         $(".secondaryMenu [data-toggle=popover]").popover('hide');
         $(".secondaryMenu li").removeClass("secondaryTabOpen");
       }
-      if(!$(event.target).closest('#camcomskin-searchbox').length && search_button[0] !== event.target) {
-        //close the search box
-        $('#camcomskin-searchbox').slideUp();
-      }
+      // if(!$(event.target).closest('#camcomskin-searchbox').length && search_button[0] !== event.target) {
+      //   //close the search box
+      //   $('#camcomskin-searchbox').slideUp();
+      // }
     });
 
     // return-to-top arrow

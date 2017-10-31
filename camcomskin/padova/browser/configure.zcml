@@ -206,4 +206,147 @@
       permission="zope2.View"
     />
   </configure>
+
+
+  <!-- tiles management -->
+  <!-- Customized add view and form - invoked from the @@add-tile traversal view -->
+  <adapter
+      for="Products.ATContentTypes.interfaces.document.IATDocument
+           zope.publisher.interfaces.browser.IDefaultBrowserLayer
+           plone.tiles.interfaces.ITileType"
+      provides="plone.app.tiles.interfaces.ITileAddView"
+      factory="redturtle.tiles.management.browser.tiles_forms.TilesAddView"
+      />
+  <adapter
+      for="Products.ATContentTypes.interfaces.document.IATDocument
+           zope.publisher.interfaces.browser.IDefaultBrowserLayer
+           plone.tiles.interfaces.ITileType"
+      provides="plone.app.tiles.interfaces.ITileEditView"
+      factory="redturtle.tiles.management.browser.tiles_forms.TilesEditView"
+      />
+  <adapter
+      for="Products.ATContentTypes.interfaces.document.IATDocument
+           zope.publisher.interfaces.browser.IDefaultBrowserLayer
+           plone.tiles.interfaces.ITileType"
+      provides="plone.app.tiles.interfaces.ITileDeleteView"
+      factory="redturtle.tiles.management.browser.tiles_forms.TilesDeleteView"
+      />
+  <!-- Vista con le tile per le Pagine -->
+  <browser:page
+      name="document_tiles_view"
+      class=".tiles_manager_view.CCPDTilesView"
+      permission="zope2.View"
+      for="Products.ATContentTypes.interfaces.document.IATDocument"
+      template="templates/tile_view.pt"
+      layer=".interfaces.IThemeSpecific"
+  />
+
+  <!-- custom tile collection renderers -->
+  <browser:page
+      name="news_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.NewsView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/news_renderer.pt"
+      />
+
+  <browser:page
+      name="video_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.VideoView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/video_renderer.pt"
+      />
+
+  <browser:page
+      name="photogallery_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.GalleryView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/photogallery_renderer.pt"
+      />
+
+  <browser:page
+      name="aree_tematiche_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.AreeTematicheView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/aree_tematiche.pt"
+      />
+
+  <browser:page
+      name="landing_aree_tematiche_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.LandingAreeTematicheView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/landing_aree_tematiche.pt"
+      />
+
+  <browser:page
+      name="online_services_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.OnlineServicesView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/online_services.pt"
+      />
+
+  <browser:page
+      name="collection_tile_helpers"
+      class=".tile_collection_renderers.HelpersView"
+      permission="zope2.View"
+      for="*"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:page
+      name="sights_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.SightsView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/sights_renderer.pt"
+      />
+
+  <browser:page
+      name="news_highlight_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.NewsHighlightView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/news_highlight_renderer.pt"
+      />
+
+  <browser:page
+      name="news_big_photo_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.NewsBigPhotoView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/news_big_photo_renderer.pt"
+      />
+
+  <browser:page
+      name="news_area_tematica_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.NewsAreaTematicaView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/news_area_tematica.pt"
+      />
+
+  <browser:page
+      name="servizi_area_tematica_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.ServiziAreaTematicaView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/servizi_area_tematica.pt"
+      />
+  <!-- end of custom tile collection renderers -->
 </configure>

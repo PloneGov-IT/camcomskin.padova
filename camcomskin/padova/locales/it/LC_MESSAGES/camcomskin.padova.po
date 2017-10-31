@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../browser/tile_collection_renderers.py:118
 msgid "Gallery layout"
-msgstr ""
+msgstr "Layout gallery"
 
 #: ../browser/tile_collection_renderers.py:130
 msgid "Landing page aree tematiche"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../browser/tile_collection_renderers.py:73
 msgid "News highlight"
-msgstr ""
+msgstr "News in evidenza"
 
 #: ../browser/tile_collection_renderers.py:91
 msgid "News in area tematica"
@@ -47,11 +47,11 @@ msgstr ""
 
 #: ../browser/tile_collection_renderers.py:106
 msgid "News layout with image"
-msgstr ""
+msgstr "Layout news con immagine"
 
 #: ../browser/tile_collection_renderers.py:82
 msgid "News with big photo"
-msgstr ""
+msgstr "News in primo piano con foto grande"
 
 #: ../browser/tile_collection_renderers.py:100
 msgid "Servizi in area tematica"
@@ -59,9 +59,8 @@ msgstr ""
 
 #: ../browser/tile_collection_renderers.py:64
 msgid "Sights layout"
-msgstr ""
+msgstr "Layout siti d'interesse"
 
 #: ../browser/tile_collection_renderers.py:112
 msgid "Video layout"
-msgstr ""
-
+msgstr "Layout video con modale"
