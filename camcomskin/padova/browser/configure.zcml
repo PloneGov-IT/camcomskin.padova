@@ -242,15 +242,6 @@
   />
 
   <browser:page
-      name="homepage_view"
-      class=".tiles_manager_view.CCPDTilesView"
-      permission="zope2.View"
-      for="Products.ATContentTypes.interfaces.document.IATDocument"
-      template="templates/homepage_view.pt"
-      layer=".interfaces.IThemeSpecific"
-  />
-
-  <browser:page
       name="tiles_fullscreen_view"
       class=".tiles_manager_view.CCPDTilesView"
       permission="zope2.View"
@@ -258,6 +249,15 @@
       template="templates/tiles_fullscreen_view.pt"
       layer=".interfaces.IThemeSpecific"
   />
+
+  <browser:page
+    name="homepage_view"
+    class=".tiles_manager_view.CCPDTilesView"
+    permission="zope2.View"
+    for="Products.ATContentTypes.interfaces.document.IATDocument"
+    template="templates/homepage_view.pt"
+    layer=".interfaces.IThemeSpecific"
+    />
   <browser:menuItems
     for="Products.ATContentTypes.interfaces.document.IATDocument"
     menu="plone_displayviews">
@@ -266,13 +266,13 @@
       action="document_tiles_view"
     />
     <browser:menuItem
-      title="Vista homepage"
-      action="homepage_view"
-    />
-    <browser:menuItem
       title="Vista tiles espansa"
       action="tiles_fullscreen_view"
     />
+    <browser:menuItem
+      title="Vista homepage"
+      action="homepage_view"
+      />
   </browser:menuItems>
 
   <!-- custom tile collection renderers -->
