@@ -7,13 +7,13 @@
     i18n:domain="plone">
 
     <metal:styleslot fill-slot="style_slot">
-      <link rel="stylesheet" tal:attributes="href string:${portal_url}/++resource++redturtle.tiles.management/mockup.min.css">
+      <link rel="stylesheet" tal:attributes="href string:${portal_url}/++resource++redturtle.tiles.management/mockup.min.css?v=${view/pkg_version}">
     </metal:styleslot>
     <metal:javascriptslot fill-slot="javascript_head_slot">
       <script type="text/javascript"
-              tal:attributes="src string:${portal_url}/++resource++redturtle.tiles.management/mockup.min.js"></script>
+              tal:attributes="src string:${portal_url}/++resource++redturtle.tiles.management/mockup.min.js?v=${view/pkg_version}"></script>
       <script type="text/javascript"
-              tal:attributes="src string:${portal_url}/++resource++redturtle.tiles.management/integration.js"></script>
+              tal:attributes="src string:${portal_url}/++resource++redturtle.tiles.management/integration.js?v=${view/pkg_version}"></script>
 
     </metal:javascriptslot>
 
@@ -22,15 +22,12 @@
             <metal:block define-macro="content-core"
                          tal:define="templateId template/getId;">
 
-                <div class="gz-page-text" tal:define="testo context/getText"
+                <div class="content-text" tal:define="testo context/getText"
                                           tal:condition="testo"
                                           tal:content="structure context/getText">
                     Il testo della Pagina
                 </div>
-
                 <div metal:use-macro="context/tiles_view/macros/tiles-macro" />
-
-
             </metal:block>
         </metal:content-core>
     </body>
