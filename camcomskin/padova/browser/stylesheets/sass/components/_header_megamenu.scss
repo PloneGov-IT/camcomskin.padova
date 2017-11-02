@@ -132,10 +132,13 @@
 
 #portal-mainnavigation {
     position: relative;
+    border-top: 1px solid #FFF;
+    background-color: $brand-primary-dark;
 
     ul#portal-globalnav {
         display: flex;
         padding: 0;
+        justify-content: space-between;
 
         .closeSubmenu {
             a.closeSubmenuLink {
@@ -148,34 +151,37 @@
             }
         }
 
-        li {
-            width: 100%;
-            padding: 1.2rem 2%;
+      >  li {
+            padding: 0;
             margin: 0;
 
             a.menuTabLink {
-                display: block;
+                display: inline-block;
                 position: relative;
-                padding-right: 20px;
-                // height: 100%;
+                padding:0.7em 2.5em 0.7em 1.2em;
                 border: 0;
+                font-size: 0.95em;
 
                 &:not(.clickandgo) {
-                    &:after {
-                        @include make-fa('\f107');
+                    span+span:after {
+                        @include make-fa('\f078');
                         position: absolute;
-                        right: 0;
-                        top: 0;
+                        right: -1.8em;
+                        bottom: 0.1rem;
+                        font-size: 0.8em;
                     }
                 }
 
                 span+span {
-                    font-weight: $regular;
+                    font-weight: $light;
+                    position: relative;
+                    display: inline-block;
                 }
 
                 &:focus,
                 &:hover {
                     border: 0;
+                    background-color: transparentize(#FFF, .75);
 
                     span {
 
@@ -187,9 +193,11 @@
                 background: $megamenu-tab-open;
 
                 a.menuTabLink {
-                    &:after {
-                        @include make-fa('\f106');
-                    }
+                  color: darken($brand-primary, 10%);
+
+                  span+span:after {
+                      @include make-fa('\f077');
+                  }
                 }
             }
 
@@ -200,11 +208,21 @@
 
         #submenu-details {
             position: absolute;
-            background: $megamenu-bg;
+            background-color: $megamenu-bg;
+            border-bottom: 5px solid $brand-primary;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.6);
             width: 100%;
             left: 0;
             top: 100%;
             z-index: 10;
+
+            li {
+              display: block;
+
+              a {
+                border:0;
+              }
+            }
         }
 
         .submenuDetailsContent {
@@ -212,9 +230,58 @@
             padding: 20px 15px;
             margin: auto;
             color: #000;
+            display: flex;
+        }
+
+        .submenuDynamicWrapper {
+          flex: 2 0 0;
+
+          .dynamicSectionLabel {
+            text-transform: uppercase;
+            margin-bottom: 2.5rem;
+          }
+
+          ul {
+            columns: 2;
+
+            li {
+              padding-bottom: 0.5em;
+
+              a {
+                color: $text-color;
+
+                &:focus,
+                &:hover {
+                  text-decoration: underline !important;
+                }
+              }
+            }
+          }
+
+          a.dynamicSectionExploreLabel {
+            border: 1px solid $link-color;
+            border-radius: 3px;
+            padding: 0.2em 1em;
+            display: inline-block;
+            margin-top: 1em;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            font-weight: $semibold;
+
+            &:after {
+              content: ' ›';
+            }
+
+            &:focus,
+            &:hover {
+              background-color: $link-color;
+              color: #FFF;
+            }
+          }
         }
 
         .submenuStaticWrapper {
+            flex: 1 0 25%;
             display: flex;
             flex-flow: row wrap;
 

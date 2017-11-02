@@ -37,7 +37,7 @@ $footer-hr:             #979797;
 $tile-fascia-scura:     #333333;
 $social-icon-bg:        #CB1D15;
 
-$megamenu-bg:           #FAFAFA;
+$megamenu-bg:           #F3F3F3;
 $megamenu-tab-open:     #DECDBB;
 
 // sunburst
@@ -100,7 +100,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          17px;
+$font-size-base:          18px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
@@ -133,7 +133,7 @@ $screen-sm:              768px;
 $screen-md:             992px;
 
 // Large screen / wide desktop
-$screen-lg:          1300px;
+$screen-lg:          1360px;
 
 // NAV COLLAPSE
 //$screen-nav-collapse: 1045px;
@@ -155,7 +155,7 @@ $container-desktop:            (auto);
 $container-md:                 $container-desktop;
 
 // Large screen / wide desktop
-$container-large-desktop:      (1270px + $grid-gutter-width);
+$container-large-desktop:      (1330px + $grid-gutter-width);
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop - $grid-gutter-width;
 
