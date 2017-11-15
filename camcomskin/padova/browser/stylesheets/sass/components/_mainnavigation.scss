@@ -14,13 +14,11 @@
         }
 
         &:before {
-            background: url("++theme++redturtle.agid.theme/images/menu.png");
-            height: 1.2em;
-            width: 1.2em;
-            display: block;
-            content:'';
-            background-size: cover;
-            background-repeat: no-repeat;
+            background: none;
+            height: auto;
+            width: auto;
+            @include make-fa('\f0c9', rgba(255, 255, 255, 0.87));
+            vertical-align: middle;
         }
     }
 }
@@ -28,9 +26,6 @@
 #portal-mainnavigation {
     background-color: $brand-primary;
     color: #FFF;
-
-    .globalnavWrapper {
-    }
 
     ul#portal-globalnav {
         @extend .list-inline;

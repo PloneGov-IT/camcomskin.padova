@@ -1,21 +1,25 @@
 /* Viewlet ricerca in testata */
-
 #portal-searchbox {
     text-align: right;
     margin: 1em 0 0;
 
+    .LSBox {
+        background: #FFF;
+    }
+
     #searchGadget {
-        border: 0;
+        border: 1px solid $brand-primary;
         padding: 0.8rem 1.4rem;
         width: 25rem;
         border-radius: 0;
         box-shadow: none;
         float: left;
-        height: auto;
+        height: 50px;
         color: $gray-dark;
 
         &:focus {
             border-color: $gray;
+            background: none;
         }
     }
 
@@ -23,15 +27,14 @@
         color: $text-color;
         background-color: $gray-bg;
         text-align: center;
-        width: 4.4rem;
-        padding: 1.1rem 0 1.5rem 0;
-        line-height: 0.68;
-        border: 0;
-        margin-left: -0.5rem;
+        width: 5rem;
+        padding: 1.1rem 0 1.5rem;
+        line-height: 1;
+        border: 1px solid $brand-primary;
         border-radius: 0;
         font-weight: $regular;
         vertical-align: baseline;
-        height: auto;
+        height: 50px;
         text-shadow: none;
 
         &:before {
