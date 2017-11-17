@@ -194,9 +194,7 @@ body.userrole-anonymous {
     @media (max-width: 600px) {
         #portal-logo {
             img {
-                $logo-width: 13vw;
-                width: $logo-width;
-                height: $logo-width;
+                height: 10vw;
                 margin-right: 1.5rem;
             }
 
