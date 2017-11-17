@@ -1,7 +1,7 @@
 #portal-footer-wrapper {
     background-color: $footer-bg;
     // overflow: auto;
-    padding: 50px 0px;
+    padding: 0 0 50px;
     color: #fff;
 
     .portal-footer {
@@ -12,7 +12,6 @@
 
     a {
         color: $footer-link;
-        text-decoration: underline;
 
         &:hover {
             color: $footer-link-hover;
@@ -26,11 +25,14 @@
 
         li {
             padding-bottom: 5px;
+            display: table;
 
             &:before {
                 padding-right: 15px;
                 @include make-ita("\23f5", #fff);
                 font-size: 0.4em;
+                display: table-cell;
+                text-align: right;
             }
         }
     }
@@ -43,10 +45,51 @@
     }
 
     .footer-logo {
-        padding-left: 15px;
+        @include make-container;
+        padding: 50px 15px 15px;
+        margin-left: auto;
+        margin-right: auto;
+
+        > * {
+            padding: 0;
+        }
+
+        .portletHeader {
+            float: left;
+            margin-top: 25px;
+        }
+
+        .portletItem {
+            float: right;
+        }
 
         img {
             max-width: 80vw;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 0;
+            padding: 30px 15px 0;
+
+            .portletHeader {
+                padding-bottom: 30px;
+            }
+
+            .portletHeader,
+            .portletItem {
+                float: none;
+                margin: 0;
+            }
+        }
+    }
+
+    #portlets-footer {
+        @include make-container;
+        padding-left: 0;
+        padding-bottom: 0;
+
+        a {
+            text-decoration: underline !important;
         }
     }
 
@@ -169,7 +212,17 @@
         &:before {
             @include make-ita("\1f4e7", #EEE);
             display: block;
-            font-size: 1.5em;
+            font-size: 2em;
+        }
+
+        .newsletter-link {
+            font-size: 1.1em;
+        }
+
+        .newsletter-text {
+            font-size: 0.9em;
+            font-weight: 100;
+            padding-top: 10px;
         }
     }
 
@@ -181,6 +234,61 @@
     }
 
     .portletHeader {
+        background: transparent;
+        border: 0;
+        font-size: 1.5em;
+    }
+
+    .portletItem {
+        h2,
+        h4 {
+            font-size: 1.2em;
+            margin-top: 12px;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+        }
+    }
+
+    .contentwellportlets {
+        margin-left: 0;
+        margin-right: 0;
+
+        > div {
+            width: 22%;
+            padding: 20px;
+
+            &:first-of-type {
+                width: 34%;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            display: flex;
+            flex-flow: row wrap;
+
+            > div {
+                &,
+                &:first-of-type {
+                    width: 50%;
+                }
+            }
+        }
+
+        @media (max-width: $screen-xs-max) {
+            > div {
+                &,
+                &:first-of-type {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    ul#portal-siteactions {
+        display: none;
+    }
+
+    #portal-colophon {
         display: none;
     }
 }

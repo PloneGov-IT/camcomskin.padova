@@ -147,6 +147,8 @@
       }
     });
 
+    $('#portal-footer-wrapper').prepend($('.portlet.footer-logo'));
+    $('#portal-footer-wrapper').prepend($('.portlet.valuta-sito'));
 
   });
 })(jQuery);
