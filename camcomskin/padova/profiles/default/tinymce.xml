@@ -9,7 +9,7 @@
    <element value="Testo grigio|span|text-muted"/>
    <element value="Titolo 4|h4|"/>
    <element value="Titolo 5|h5|"/>
-   <!-- element value="Link con stile bottone verde|a|btn-primary"/ -->
+   <element value="Link con stile bottone rosso|span|buttonService"/>
   </styles>
   <tablestyles purge="True">
    <element value="Bordi invisibili|table-noborder"/>

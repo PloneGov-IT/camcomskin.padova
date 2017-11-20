@@ -1,73 +1,31 @@
-.section-homepage,
-.template-search {
-    #portal-breadcrumbs {
+#breadcrumbs {
+  background: $gray-bg;
+  padding: 0.6em 0;
+
+  #portal-breadcrumbs {
+      margin:0;
+      @include make-container;
+
+      #breadcrumbs-you-are-here {
         display: none;
-    }
-}
+      }
 
-.template-newsitem_view {
-    #viewlet-above-content {
-        #portal-breadcrumbs {
-            li {
-                &:last-of-type {
-                    display: none;
-                }
-            }
-        }
-    }
-}
+      a {
+        font-size: 0.95em;
+        font-weight: $semibold;
+      }
 
-#viewlet-above-content {
-    #portal-breadcrumbs {
-        background: $gray-bg;
-        padding: 0;
+      span#breadcrumbs-current {
+        font-size: 0.9em;
+      }
 
-        ol {
-            @extend .list-unstyled, .list-inline;
-            font-size: 0.95em;
-            font-weight: $light;
-            padding: 10px 0px;
-            margin: 0;
-
-            li {
-                padding:0;
-
-                &:before {
-                    content: '/';
-                    padding: 0 0.4em;
-                }
-
-                &:nth-child(-n+2) {
-                    padding: 0 0.4em;
-                    &:before { display: none; }
-                }
-
-                a {
-                    color: $brand-primary;
-
-                    &:focus,
-                    &:hover { color: #000; }
-                }
-            }
-
-            li#breadcrumbs-home {
-                width: 30px;
-                padding-left: 30px;
-                padding-right: 0;
-                position: relative;
-                text-indent: -9999px;
-
-                a {
-                    display: inline-block;
-
-                    &:before {
-                        @include make-fa('\f015', $brand-primary);
-                        position: absolute;
-                        left: 5px;
-                        text-indent: 0;
-                    }
-                }
-            }
-        }
-    }
+      span.breadcrumbSeparator {
+        background: transparent url($img-path + 'arrow_right.svg') no-repeat center center;
+        background-size: contain;
+        width: 1em;
+        height: 0.6em;
+        display: inline-block;
+        margin: 0 0.3em;
+      }
+  }
 }

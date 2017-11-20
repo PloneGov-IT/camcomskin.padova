@@ -26,6 +26,23 @@
 		"oAP": "\/css\/bootstrap.css.map",
 		"oF": 0
 		},
+	"\/css\/bootstrap.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/bootstrap.min.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/bootstrap.min.css.map",
+		"oF": 0
+		},
 	"\/css\/cciaa.css": {
 		"aP": 1,
 		"bl": 0,
@@ -299,7 +316,7 @@
 		"oA": 0,
 		"oAP": "\/css\/bootstrap.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 0,
 		"uL": 1
 		},
 	"\/sass\/bootstrap\/_alerts.scss": {
@@ -1780,19 +1797,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/sass\/components\/css\/_tinymce.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/components\/plone\/_toolbar.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/sass\/components\/css\/_toolbar.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
