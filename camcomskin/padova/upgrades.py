@@ -22,12 +22,14 @@ def generate_new_settings():
             continue
         new_entry = MenuEntrySubitem()
         new_entry.tab_title = setting.tab_title
-        new_entry.additional_columns = u""
-        new_entry.navigation_folder = u""
+        new_entry.additional_columns = u''
+        new_entry.navigation_folder = u''
         navigation_folder = api.content.get(UID=setting.navigation_folder)
         if navigation_folder:
-            new_entry.navigation_folder = "/".join(navigation_folder.getPhysicalPath()).decode('utf-8')
-        # we don't migrate additional columns because we can't know what's the common folder.
+            new_entry.navigation_folder = '/'.join(
+                navigation_folder.getPhysicalPath()).decode('utf-8')
+        # we don't migrate additional columns because we can't know what's
+        # the common folder.
         new_settings.append(new_entry)
     return tuple(new_settings)
 
@@ -47,4 +49,6 @@ def to_2000(context):
     new agid theme
     """
     setup_tool = getToolByName(context, 'portal_setup')
-    setup_tool.runAllImportStepFromProfile(agid_profile)
+    setup_tool.runImportStepFromProfile(default_profile, 'cssregistry')
+    setup_tool.runImportStepFromProfile(default_profile, 'jsregistry')
+    setup_tool.runAllImportStepsFromProfile(agid_profile)

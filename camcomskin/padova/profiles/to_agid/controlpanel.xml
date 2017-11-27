@@ -4,6 +4,7 @@
         i18n:domain="collective.editablemenu">
 
     <configlet
+        title="Configurazione menu secondario"
         action_id="editable-secondarymenu-settings"
         appId="camcomskin.plonetheme"
         remove="True">

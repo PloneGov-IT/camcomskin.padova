@@ -11,5 +11,8 @@
     <dependency>profile-redturtle.portlet.collection:default</dependency>
     <dependency>profile-collective.portletpage:default</dependency>
     <dependency>profile-collective.contentleadimage:default</dependency>
+    <dependency>profile-redturtle.tiles.management:plone4</dependency>
+    <dependency>profile-collective.tiles.advancedstatic:default</dependency>
+    <dependency>profile-collective.tiles.collection:default</dependency>
   </dependencies>
 </metadata>

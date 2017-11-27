@@ -1,5 +1,35 @@
 (function($) {
   $(document).ready(function() {
+    //expand/collapse tile
+    $('div.tile-advanced-static.collapsible').each(function() {
+      var $tile = $(this);
+      var $header = $($tile.find('h3'));
+      var $body = $($tile.find('.tileBody'));
+      $header.prepend(
+        '<i class="expand-icon fa fa-chevron-down" aria-hidden="true"></i>'
+      );
+      if ($tile.hasClass('collapsed')) {
+        $body.slideUp();
+      }
+      $header.click(function(e) {
+        e.preventDefault();
+        $tile.toggleClass('collapsed');
+        if (!$tile.hasClass('collapsed')) {
+          $body.slideDown();
+          $header
+            .find('i.expand-icon')
+            .removeClass('fa-chevron-down')
+            .addClass('fa-chevron-up');
+        } else {
+          $body.slideUp();
+          $header
+            .find('i.expand-icon')
+            .removeClass('fa-chevron-up')
+            .addClass('fa-chevron-down');
+        }
+      });
+    });
+
     // return-to-top arrow
     $(window).scroll(function() {
       if ($(window).width() < 768) {
