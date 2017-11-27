@@ -11,6 +11,13 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="to_agid"
+      title="CCIAPD: Plone Theme"
+      directory="profiles/to_agid"
+      description='Extension profile for the CCIAPD Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
   <genericsetup:importStep
       name="camcomskin.padova.various"
       title="CCIAPD: Plone Theme miscellaneous import steps"

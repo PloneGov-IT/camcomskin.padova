@@ -1,38 +1,11 @@
 # -*- coding: utf-8 -*-
 from Acquisition import aq_inner
-from collective.contentleadimage.browser.viewlets import LeadImageViewlet as BaseLeadImageViewlet
+from collective.contentleadimage.browser.viewlets import LeadImageViewlet as BaseLeadImageViewlet  # noqa
 from collective.contentleadimage.config import IMAGE_FIELD_NAME
-from plone import api
-from plone.app.layout.viewlets. content import DocumentBylineViewlet as BaseDocumentBylineViewlet
-from plone.app.layout.viewlets. content import ContentRelatedItems as BaseContentRelatedItems
-from plone.app.layout.viewlets.common import ViewletBase
+from plone.app.layout.viewlets. content import ContentRelatedItems as BaseContentRelatedItems  # noqa
+from plone.app.layout.viewlets. content import DocumentBylineViewlet as BaseDocumentBylineViewlet  # noqa
 from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-
-
-class SecondaryMenuViewlet(ViewletBase):
-    """
-    """
-
-    @property
-    def menu_tabs(self):
-        support_view = api.portal.get().restrictedTraverse(
-            "@@secondary_menu_support_view",
-            None)
-        if not support_view:
-            return []
-        tabs = support_view.get_menu_tabs()
-        for tab in tabs:
-            tab_details = support_view.get_menu_subitems(
-                tab_id=tab.get('index'))
-            static_items = tab_details.get('static_items')
-            if not static_items:
-                continue
-            menu_structure = '<div class="submenuWrapper">'
-            for submenu in static_items:
-                menu_structure += '<div class="submenuItem %s"> %s </div>' % (submenu.get('id'), submenu.get('text'))
-            tab['menu_structure'] = menu_structure
-        return tabs
 
 
 class LeadImageViewlet(BaseLeadImageViewlet):

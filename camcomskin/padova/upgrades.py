@@ -5,6 +5,8 @@ from collective.editablemenu.browser.interfaces import MenuEntrySubitem
 
 
 default_profile = 'profile-camcomskin.padova:default'
+agid_profile = 'profile-camcomskin.padova:to_agid'
+
 REGISTRY_NAME = "camcomskin.padova.interfaces.IEditableSecondaryMenuSettings.menu_tabs"
 
 
@@ -45,4 +47,4 @@ def to_2000(context):
     new agid theme
     """
     setup_tool = getToolByName(context, 'portal_setup')
-    setup_tool.runImportStepFromProfile(default_profile, 'typeinfo', run_dependencies=True)
+    setup_tool.runAllImportStepFromProfile(agid_profile)

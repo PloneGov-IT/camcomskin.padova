@@ -84,15 +84,6 @@
       layer=".interfaces.IThemeSpecific"
       / -->
 
-  <!-- secondary menu -->
-  <!-- browser:viewlet
-      name="camcomskin.secondarymenu"
-      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      class=".viewlets.SecondaryMenuViewlet"
-      template="templates/secondary_menu_viewlet.pt"
-      permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
-    / -->
 
   <!-- Editable menu viewlet -->
   <configure package="collective.editablemenu">
@@ -135,21 +126,7 @@
       />
     </configure>
   <!-- VIEWS -->
-  <!-- Secondary editable menu settings -->
-  <!-- browser:page
-      name="editable-secondarymenu-settings"
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      class=".menu_controlpanel.EditableSecondaryMenuSettingsView"
-      permission="collective.editablemenu.permissions.ManageSettings"
-      layer=".interfaces.IThemeSpecific"
-      / -->
-  <browser:page
-      name="secondary_menu_support_view"
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      class=".menu_controlpanel.SecondaryMenuSupportView"
-      permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
-      />
+
   <!-- Tabular view for offices -->
   <browser:page
       name="uffici_list_view"
