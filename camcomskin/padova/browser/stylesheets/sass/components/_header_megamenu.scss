@@ -26,6 +26,7 @@
                 width: 100%;
                 top: 100%;
                 z-index: 1000;
+                margin-top: 0;
 
                 #searchGadget_form {
                     width: 100%;
@@ -46,7 +47,7 @@
             display: inline-block;
             border: 0;
             background: transparent;
-            color: #000;
+            color: #FFF;
             padding: 5px 20px;
             text-align: left;
             font-size: 1.5em;
@@ -65,7 +66,7 @@
         button#search-toggle {
             .icon {
                 &:before {
-                    @include make-fa('\f002');
+                    @include make-fa('\f002', rgba(255, 255, 255, 0.87));
                     vertical-align: middle;
                 }
             }
@@ -73,21 +74,10 @@
             &.open {
                 .icon {
                     &:before {
-                        @include make-ita('\1f5f5');
+                        @include make-ita('\1f5f5', rgba(255, 255, 255, 0.87));
                         font-size: 0.9em;
                     }
                 }
-            }
-        }
-    }
-
-    @media (max-width: 600px) {
-        #portal-logo {
-            img {
-                $logo-width: 13vw;
-                width: $logo-width;
-                height: $logo-width;
-                margin-right: 1.5rem;
             }
         }
     }
@@ -101,41 +91,57 @@
     }
 }
 
-.searchOpened,
-.menuOpened {
-    position: relative;
+@media (max-width: $mobile-menu-width) {
+    .searchOpened,
+    .menuOpened {
+        position: relative;
 
-    &:after {
-        content: "";
-        display: block;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(255, 255, 255, 0.8);
-        z-index: 500;
-        position: fixed;
-        top: 0;
-        left: 0;
+        &:after {
+            content: "";
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 500;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
     }
-}
 
-.searchOpened {
-    &:after {
-        z-index: 200;
+    .searchOpened {
+        &:after {
+            z-index: 200;
+        }
+
+        #portal-personaltools-wrapper,
+        #header-banner,
+        #portal-header-wrapper {
+            z-index: 300;
+            position: relative;
+        }
     }
-}
 
-.menuOpened {
-    &:after {
-        z-index: 200;
+    .menuOpened {
+        &:after {
+            z-index: 200;
+        }
     }
 }
 
 #portal-mainnavigation {
     position: relative;
+    border-top: 1px solid #FFF;
+    background-color: $brand-primary-dark;
+
+    &.open {
+        border-top: 0;
+    }
 
     ul#portal-globalnav {
         display: flex;
         padding: 0;
+        justify-content: space-between;
 
         .closeSubmenu {
             a.closeSubmenuLink {
@@ -148,34 +154,37 @@
             }
         }
 
-        li {
-            width: 100%;
-            padding: 1.2rem 2%;
+        >  li {
+            padding: 0;
             margin: 0;
 
             a.menuTabLink {
-                display: block;
+                display: inline-block;
                 position: relative;
-                padding-right: 20px;
-                // height: 100%;
+                padding:0.7em 2.5em 0.7em 1.2em;
                 border: 0;
+                font-size: 0.95em;
 
                 &:not(.clickandgo) {
-                    &:after {
-                        @include make-fa('\f107');
+                    span+span:after {
+                        @include make-fa('\f078');
                         position: absolute;
-                        right: 0;
-                        top: 0;
+                        right: -1.8em;
+                        bottom: 0.1rem;
+                        font-size: 0.8em;
                     }
                 }
 
                 span+span {
-                    font-weight: $regular;
+                    font-weight: $light;
+                    position: relative;
+                    display: inline-block;
                 }
 
                 &:focus,
                 &:hover {
                     border: 0;
+                    background-color: transparentize(#FFF, .75);
 
                     span {
 
@@ -187,8 +196,10 @@
                 background: $megamenu-tab-open;
 
                 a.menuTabLink {
-                    &:after {
-                        @include make-fa('\f106');
+                    color: darken($brand-primary, 10%);
+
+                    span+span:after {
+                        @include make-fa('\f077');
                     }
                 }
             }
@@ -200,11 +211,21 @@
 
         #submenu-details {
             position: absolute;
-            background: $megamenu-bg;
+            background-color: $megamenu-bg;
+            border-bottom: 5px solid $brand-primary;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.6);
             width: 100%;
             left: 0;
             top: 100%;
             z-index: 10;
+
+            li {
+                display: block;
+
+                a {
+                    border:0;
+                }
+            }
         }
 
         .submenuDetailsContent {
@@ -212,9 +233,62 @@
             padding: 20px 15px;
             margin: auto;
             color: #000;
+            display: flex;
+        }
+
+        .submenuDynamicWrapper {
+            flex: 2 0 0;
+
+            .dynamicSectionLabel {
+                text-transform: uppercase;
+                margin-bottom: 2.5rem;
+            }
+
+            ul {
+                columns: 2;
+
+                li {
+                    padding-bottom: 0.5em;
+
+                    a {
+                        color: $text-color;
+
+                        &:focus,
+                        &:hover {
+                            text-decoration: underline !important;
+                        }
+                    }
+                }
+
+                @media (max-width: 500px) {
+                    columns: 1;
+                }
+            }
+
+            a.dynamicSectionExploreLabel {
+                border: 1px solid $link-color;
+                border-radius: 3px;
+                padding: 0.2em 1em;
+                display: inline-block;
+                margin-top: 1em;
+                font-size: 0.8em;
+                text-transform: uppercase;
+                font-weight: $semibold;
+
+                &:after {
+                    content: ' ›';
+                }
+
+                &:focus,
+                &:hover {
+                    background-color: $link-color;
+                    color: #FFF;
+                }
+            }
         }
 
         .submenuStaticWrapper {
+            flex: 1 0 25%;
             display: flex;
             flex-flow: row wrap;
 
@@ -334,6 +408,7 @@
 
                 > a.menuTabLink {
                     color: #000;
+                    width: 100%;
 
                     span {
                         display: inline-block;
@@ -342,7 +417,16 @@
                     }
 
                     &:not(.clickandgo) {
+                        span + span {
+                            &:after {
+                                display: none;
+                            }
+                        }
+
                         &:after {
+                            @include make-fa('\f078');
+                            position: absolute;
+                            font-size: 0.8em;
                             right: 15px;
                             top: 25%;
                         }
@@ -352,6 +436,12 @@
                 &.tabOpen {
                     .menuTabLink {
                         color: darken($brand-primary, 10%);
+
+                        &:not(.clickandgo) {
+                            &:after {
+                                @include make-fa('\f078');
+                            }
+                        }
 
                         &:hover,
                         &:focus{
@@ -388,6 +478,10 @@
 
             .submenuDetailsContent {
                 padding: 0;
+
+                @media (max-width: $screen-sm-max) {
+                    display: block;
+                }
             }
 
             .submenuStaticWrapper {
@@ -400,6 +494,10 @@
                     h4 {
                         margin: 0;
                     }
+                }
+
+                @media (max-width: $screen-sm-max) {
+                    padding-bottom: 15px;
                 }
             }
         }

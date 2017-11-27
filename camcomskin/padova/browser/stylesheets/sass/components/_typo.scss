@@ -5,6 +5,12 @@
 h1.documentFirstHeading {
     margin-top:0;
     font-weight: $bold;
+    margin-bottom: 0.4em;
+
+    .template-edit & {
+      font-size: 1.9em;
+      font-weight: $semibold;
+    }
 }
 
 #content-core {
@@ -34,4 +40,9 @@ blockquote {
     img {
         max-width: 100%;
     }
+}
+
+b, strong {
+  font-size: 1.05em;
+  font-weight: $semibold;
 }

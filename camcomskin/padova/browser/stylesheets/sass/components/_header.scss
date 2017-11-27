@@ -3,11 +3,20 @@
     position: relative;
 }
 
+body.userrole-anonymous {
+    #portal-personaltools-wrapper {
+        display: none;
+    }
+}
+
+#portal-personaltools-wrapper {
+    border-bottom: 0;
+}
+
 #header-banner {
     background-color: $gray-agid;
     color: #FFF;
     font-weight: $regular;
-    padding: 0.8rem 0;
 
     .header-banner-inner {
         @include make-container;
@@ -38,37 +47,44 @@
 
     // LINGUE
     .dropdown-languages {
-      font-size: 0.9em;
-      float: right;
-      position: relative;
+        font-size: 0.9em;
+        float: right;
+        position: relative;
 
-      button {
-        background: transparent;
-        color: #FFF;
-        padding: 0 0.5rem;
-        border-radius: 0;
-        box-shadow: none;
-        border: 0;
+        button {
+            background: transparent;
+            color: #FFF;
+            padding: .8rem .5rem;
+            border-radius: 0;
+            box-shadow: none;
+            border: 0;
 
-        &:after {
-          @include make-fa('\f107', #fff);
-          margin-left: 0.3rem;
+            &:after {
+                @include make-fa('\f107', #fff);
+                margin-left: 0.3rem;
+            }
+
+            &:focus,
+            &:hover {
+                background-color: transparentize(#FFF, .6);
+            }
         }
 
-        &:focus,
-        &:hover {
-          background-color: transparentize(#FFF, .6);
-        }
-      }
+        ul.languages {
+            font-size: 1em;
+            right: 0;
+            left: auto;
+            min-width: 0;
 
-      ul {
-        font-size: 1em;
-      }
+            &.open {
+                display: block;
+            }
+        }
     }
 }
 
 #portal-header-wrapper {
-  background-color: $brand-primary;
+    background-color: $brand-primary;
 }
 
 #portal-header {
@@ -81,15 +97,15 @@
 
     &:before,
     &:after {
-      display: none;
+        display: none;
     }
 
     #portal-logo {
-      margin:0;
+        margin:0;
 
-      &:focus {
-        background-color: transparentize(#fff, 0.9);
-      }
+        &:focus {
+            background-color: transparentize(#fff, 0.9);
+        }
     }
 
     button#search-toggle,
@@ -178,9 +194,7 @@
     @media (max-width: 600px) {
         #portal-logo {
             img {
-                $logo-width: 13vw;
-                width: $logo-width;
-                height: $logo-width;
+                height: 10vw;
                 margin-right: 1.5rem;
             }
 
@@ -202,31 +216,6 @@
         button#search-toggle {
             padding: 5px 15px 5px 10px;
             font-size: 1.35em;
-        }
-    }
-}
-
-@media (max-width: $mobile-menu-width) {
-    .searchOpened,
-    .menuOpened {
-        position: relative;
-
-        &:after {
-            content: "";
-            display: block;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(255, 255, 255, 0.8);
-            z-index: 500;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-    }
-
-    .searchOpened {
-        &:after {
-            z-index: 200;
         }
     }
 }

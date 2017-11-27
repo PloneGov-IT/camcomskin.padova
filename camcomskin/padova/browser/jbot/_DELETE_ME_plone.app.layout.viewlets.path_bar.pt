@@ -1,0 +1,27 @@
+<div id="breadcrumbs"
+     i18n:domain="plone"
+     tal:define="breadcrumbs view/breadcrumbs;
+                 breadcrumbs python:breadcrumbs[:-1];
+                 is_rtl view/is_rtl"
+     tal:condition="python:len(breadcrumbs)">
+
+  <div class="breadcrumbsContent">
+    <tal:breadcrumbs>
+      <div class="breadcrumbTopWrapper">
+        <a tal:attributes="href python:breadcrumbs[0].get('absolute_url');
+                           class python:len(breadcrumbs) > 1 and 'breadcrumbTop withSeparator' or 'breadcrumbTop'">
+          <span tal:content="python:breadcrumbs[0].get('Title')" />
+        </a>
+      </div>
+      <tal:other_breadcrumbs repeat="crumb python:breadcrumbs[1:]">
+        <a class="breadcrumbOther"
+           tal:attributes="href crumb/absolute_url"
+           tal:content="crumb/Title">
+           Voce di terzo livello
+        </a>
+        <span tal:condition="not:repeat/crumb/end"
+              class="breadcrumbSeparator"></span>
+      </tal:other_breadcrumbs>
+    </tal:breadcrumbs>
+  </div>
+</div>

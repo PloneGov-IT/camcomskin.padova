@@ -1,27 +1,34 @@
-<div id="breadcrumbs"
-     i18n:domain="plone"
-     tal:define="breadcrumbs view/breadcrumbs;
-                 breadcrumbs python:breadcrumbs[:-1];
-                 is_rtl view/is_rtl"
-     tal:condition="python:len(breadcrumbs)">
+<div id="breadcrumbs">
+  <div id="portal-breadcrumbs"
+       i18n:domain="plone"
+       tal:define="breadcrumbs view/breadcrumbs;
+                   is_rtl view/is_rtl">
 
-  <div class="breadcrumbsContent">
-    <tal:breadcrumbs>
-      <div class="breadcrumbTopWrapper">
-        <a tal:attributes="href python:breadcrumbs[0].get('absolute_url');
-                           class python:len(breadcrumbs) > 1 and 'breadcrumbTop withSeparator' or 'breadcrumbTop'">
-          <span tal:content="python:breadcrumbs[0].get('Title')" />
-        </a>
-      </div>
-      <tal:other_breadcrumbs repeat="crumb python:breadcrumbs[1:]">
-        <a class="breadcrumbOther"
-           tal:attributes="href crumb/absolute_url"
-           tal:content="crumb/Title">
-           Voce di terzo livello
-        </a>
-        <span tal:condition="not:repeat/crumb/end"
-              class="breadcrumbSeparator"></span>
-      </tal:other_breadcrumbs>
-    </tal:breadcrumbs>
+    <span id="breadcrumbs-you-are-here" i18n:translate="you_are_here">You
+are here:</span>
+    <span id="breadcrumbs-home">
+        <a i18n:translate="tabs_home"
+           tal:attributes="href view/navigation_root_url">Home</a>
+        <span tal:condition="breadcrumbs" class="breadcrumbSeparator"></span>
+    </span>
+    <span tal:repeat="crumb breadcrumbs"
+          tal:attributes="dir python:is_rtl and 'rtl' or 'ltr';
+                          id string:breadcrumbs-${repeat/crumb/number}">
+        <tal:item tal:define="is_last repeat/crumb/end;
+                              url crumb/absolute_url;
+                              title crumb/Title">
+            <a href="#"
+               tal:omit-tag="not: url"
+               tal:condition="python:not is_last"
+               tal:attributes="href url"
+               tal:content="title">
+                crumb
+            </a>
+            <span class="breadcrumbSeparator" tal:condition="not: is_last"></span>
+            <span id="breadcrumbs-current"
+                  tal:condition="is_last"
+                  tal:content="title">crumb</span>
+         </tal:item>
+    </span>
   </div>
 </div>

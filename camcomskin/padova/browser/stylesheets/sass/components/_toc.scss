@@ -1,41 +1,38 @@
-// TOC
-#parent-fieldname-text.pat-autotoc .autotoc-nav {
+// TABLE OF CONTENTS
+#content dl.portlet.toc {
     float: none;
-    border: 0;
-    padding: 0.8em 0;
+    width: auto;
+    border-top: 1px dashed #bbb;
+    border-bottom: 1px dashed #bbb;
+    padding-top: 1.3em;
+    padding-bottom: 1em;
+    margin-bottom: 2.3em;
 
-    a {
-        padding-left: 1.4em;
+    dt {
+        border: 0;
+        padding-left: 2em;
+        padding-top: 0;
+        padding-bottom: 0;
         position: relative;
-        margin-bottom: 0.2em !important;
+        font-size: 0.95em;
+        font-weight: $semibold;
+        background-color: transparent;
 
         &:before {
-            @include make-fa('\f01a');
+            @include make-fa('\f0ca');
             position: absolute;
-            top:0.05em;
             left: 0;
-            color: $text-color;
+            top: 1px;
+            font-size: 1.2em;
+            font-weight: $regular;
         }
     }
 
-    .autotoc-level-1 {
-        margin: 0;
-        padding-left: 0;
-        &:before {
-            display: none;
-        }
-    }
-    .autotoc-level-2 {
-        margin: 0;
-    }
-    .autotoc-level-3,
-    .autotoc-level-4,
-    .autotoc-level-5,
-    .autotoc-level-6 {
-        padding-left: 1em;
+    dd.portletItem {
+      padding-bottom: 0;
 
-        &:before {
-            content: '\f105';
+        > ol {
+            margin-left: 3em;
         }
     }
 }

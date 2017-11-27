@@ -63,6 +63,7 @@
           @extend .btn-info;
           text-transform: uppercase;
           font-weight: $semibold;
+          color: #FFF;
         }
 
         .available-tiles {
@@ -96,3 +97,18 @@
 .tileTitle {
     font-size: 1.6em;
 }
+
+.tileWrapper {
+    position: relative;
+
+    .tileEditButtons {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    &.editableTile {
+        background: rgba(245, 239, 186, 0.7);
+    }
+}
+

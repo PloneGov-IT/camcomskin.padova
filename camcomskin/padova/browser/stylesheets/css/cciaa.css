@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.5;
   color: #1C2024;
   background-color: #fff; }
@@ -36,7 +36,7 @@ a {
   color: #AC1B01;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #791301;
+    color: #1C2024;
     text-decoration: none; }
   a:focus {
     outline: thin dotted;
@@ -73,8 +73,8 @@ img {
   border-radius: 50%; }
 
 hr {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 27px;
+  margin-bottom: 27px;
   border: 0;
   border-top: 1px solid #CCC; }
 
@@ -126,8 +126,8 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 25px;
-  margin-bottom: 12.5px; }
+  margin-top: 27px;
+  margin-bottom: 13.5px; }
   h1 small,
   h1 .small, .h1 small,
   .h1 .small,
@@ -142,8 +142,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 12.5px;
-  margin-bottom: 12.5px; }
+  margin-top: 13.5px;
+  margin-bottom: 13.5px; }
   h4 small,
   h4 .small, .h4 small,
   .h4 .small,
@@ -156,34 +156,34 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 34px; }
+  font-size: 40px; }
 
 h2, .h2 {
-  font-size: 27px; }
+  font-size: 32px; }
 
 h3, .h3 {
-  font-size: 23px; }
+  font-size: 26px; }
 
 h4, .h4 {
-  font-size: 19px; }
+  font-size: 20px; }
 
 h5, .h5 {
-  font-size: 17px; }
+  font-size: 18px; }
 
 h6, .h6 {
-  font-size: 17px; }
+  font-size: 18px; }
 
 p {
-  margin: 0 0 12.5px; }
+  margin: 0 0 13.5px; }
 
 .lead {
-  margin-bottom: 25px;
-  font-size: 19px;
+  margin-bottom: 27px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.4; }
   @media (min-width: 768px) {
     .lead {
-      font-size: 25.5px; } }
+      font-size: 27px; } }
 
 small,
 .small {
@@ -295,36 +295,36 @@ a.bg-danger:focus {
   background-color: #e4b9b9; }
 
 .page-header {
-  padding-bottom: 11.5px;
-  margin: 50px 0 25px;
+  padding-bottom: 12.5px;
+  margin: 54px 0 27px;
   border-bottom: 1px solid #CCC; }
 
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 12.5px; }
+  margin-bottom: 13.5px; }
   ul ul,
   ul ol,
   ol ul,
   ol ol {
     margin-bottom: 0; }
 
-.list-unstyled, .template-search #searchform .search-result-content .rubricaSearchResults ul, #viewlet-above-content #portal-breadcrumbs ol, nav.pagination ul {
+.list-unstyled, .template-search #searchform .search-result-content .rubricaSearchResults ul, nav.pagination ul {
   padding-left: 0;
   list-style: none; }
 
-.list-inline, #header-social ul, #portal-mainnavigation ul#portal-globalnav, #viewlet-above-content #portal-breadcrumbs ol, #portal-footer-wrapper ul.footer-social, .aree-tematiche ul, nav.pagination ul {
+.list-inline, #header-social ul, #portal-mainnavigation ul#portal-globalnav, #portal-footer-wrapper ul.footer-social, .aree-tematiche ul, nav.pagination ul {
   padding-left: 0;
   list-style: none;
   margin-left: -5px; }
-  .list-inline > li, #header-social ul > li, #portal-mainnavigation ul#portal-globalnav > li, #viewlet-above-content #portal-breadcrumbs ol > li, #portal-footer-wrapper ul.footer-social > li, .aree-tematiche ul > li, nav.pagination ul > li {
+  .list-inline > li, #header-social ul > li, #portal-mainnavigation ul#portal-globalnav > li, #portal-footer-wrapper ul.footer-social > li, .aree-tematiche ul > li, nav.pagination ul > li {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px; }
 
 dl {
   margin-top: 0;
-  margin-bottom: 25px; }
+  margin-bottom: 27px; }
 
 dt,
 dd {
@@ -364,9 +364,9 @@ abbr[data-original-title] {
   font-size: 90%; }
 
 blockquote {
-  padding: 12.5px 25px;
-  margin: 0 0 25px;
-  font-size: 21.25px;
+  padding: 13.5px 27px;
+  margin: 0 0 27px;
+  font-size: 22.5px;
   border-left: 5px solid #CCC; }
   blockquote p:last-child,
   blockquote ul:last-child,
@@ -407,7 +407,7 @@ blockquote.pull-right {
     content: '\00A0 \2014'; }
 
 address {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-style: normal;
   line-height: 1.5; }
 
@@ -427,9 +427,9 @@ address {
   @media (min-width: 992px) {
     .container, .template-contact-info #content {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     .container, .template-contact-info #content {
-      width: 1270px; } }
+      width: 1330px; } }
 
 .container-fluid {
   margin-right: auto;
@@ -825,7 +825,7 @@ address {
   .col-md-offset-12 {
     margin-left: 100%; } }
 
-@media (min-width: 1300px) {
+@media (min-width: 1360px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left; }
   .col-lg-1 {
@@ -946,7 +946,7 @@ th {
 .table, .template-tabular_view table.listing, #history-list, table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 25px; }
+  margin-bottom: 27px; }
   .table > thead > tr > th, .template-tabular_view table.listing > thead > tr > th, #history-list > thead > tr > th, table > thead > tr > th,
   .table > thead > tr > td, .template-tabular_view table.listing > thead > tr > td, #history-list > thead > tr > td, table > thead > tr > td,
   .table > tbody > tr > th, .template-tabular_view table.listing > tbody > tr > th, #history-list > tbody > tr > th, table > tbody > tr > th,
@@ -1121,7 +1121,7 @@ table th[class*="col-"] {
   @media screen and (max-width: 767px) {
     .table-responsive {
       width: 100%;
-      margin-bottom: 18.75px;
+      margin-bottom: 20.25px;
       overflow-y: hidden;
       -ms-overflow-style: -ms-autohiding-scrollbar;
       border: 1px solid #ddd; }
@@ -1194,8 +1194,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 25px;
-  font-size: 25.5px;
+  margin-bottom: 27px;
+  font-size: 27px;
   line-height: inherit;
   color: #313131;
   border: 0;
@@ -1237,7 +1237,7 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.5;
   color: #515151; }
 
@@ -1245,9 +1245,9 @@ output {
 input[type="password"] {
   display: block;
   width: 100%;
-  height: 39px;
+  height: 41px;
   padding: 6px 12px;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.5;
   color: #515151;
   background-color: #fff;
@@ -1313,7 +1313,7 @@ input[type="search"] {
   margin-bottom: 10px; }
   .radio label,
   .checkbox label {
-    min-height: 25px;
+    min-height: 27px;
     padding-left: 20px;
     margin-bottom: 0;
     font-weight: normal;
@@ -1371,21 +1371,21 @@ fieldset[disabled]
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
-  min-height: 42px; }
+  min-height: 45px; }
   .form-control-static.input-lg, .form-control-static.input-sm {
     padding-left: 0;
     padding-right: 0; }
 
 .input-sm {
-  height: 34px;
+  height: 36px;
   padding: 5px 10px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 3px; }
 
 select.input-sm {
-  height: 34px;
-  line-height: 34px; }
+  height: 36px;
+  line-height: 36px; }
 
 textarea.input-sm,
 select[multiple].input-sm {
@@ -1393,15 +1393,15 @@ select[multiple].input-sm {
 
 .form-group-sm .form-control, .form-group-sm select, .form-group-sm input[type="text"], .form-group-sm
 input[type="password"] {
-  height: 34px;
+  height: 36px;
   padding: 5px 10px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 3px; }
 
 .form-group-sm select.form-control, .form-group-sm select {
-  height: 34px;
-  line-height: 34px; }
+  height: 36px;
+  line-height: 36px; }
 
 .form-group-sm textarea.form-control,
 .form-group-sm select[multiple].form-control,
@@ -1409,22 +1409,22 @@ input[type="password"] {
   height: auto; }
 
 .form-group-sm .form-control-static {
-  height: 34px;
-  min-height: 40px;
+  height: 36px;
+  min-height: 43px;
   padding: 6px 10px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5; }
 
 .input-lg {
-  height: 52px;
+  height: 53px;
   padding: 10px 16px;
-  font-size: 22px;
+  font-size: 23px;
   line-height: 1.3333333;
   border-radius: 6px; }
 
 select.input-lg {
-  height: 52px;
-  line-height: 52px; }
+  height: 53px;
+  line-height: 53px; }
 
 textarea.input-lg,
 select[multiple].input-lg {
@@ -1432,15 +1432,15 @@ select[multiple].input-lg {
 
 .form-group-lg .form-control, .form-group-lg select, .form-group-lg input[type="text"], .form-group-lg
 input[type="password"] {
-  height: 52px;
+  height: 53px;
   padding: 10px 16px;
-  font-size: 22px;
+  font-size: 23px;
   line-height: 1.3333333;
   border-radius: 6px; }
 
 .form-group-lg select.form-control, .form-group-lg select {
-  height: 52px;
-  line-height: 52px; }
+  height: 53px;
+  line-height: 53px; }
 
 .form-group-lg textarea.form-control,
 .form-group-lg select[multiple].form-control,
@@ -1448,17 +1448,17 @@ input[type="password"] {
   height: auto; }
 
 .form-group-lg .form-control-static {
-  height: 52px;
-  min-height: 47px;
+  height: 53px;
+  min-height: 50px;
   padding: 11px 16px;
-  font-size: 22px;
+  font-size: 23px;
   line-height: 1.3333333; }
 
 .has-feedback {
   position: relative; }
   .has-feedback .form-control, .has-feedback select, .has-feedback input[type="text"], .has-feedback
   input[type="password"] {
-    padding-right: 48.75px; }
+    padding-right: 51.25px; }
 
 .form-control-feedback {
   position: absolute;
@@ -1466,9 +1466,9 @@ input[type="password"] {
   right: 0;
   z-index: 2;
   display: block;
-  width: 39px;
-  height: 39px;
-  line-height: 39px;
+  width: 41px;
+  height: 41px;
+  line-height: 41px;
   text-align: center; }
 
 .input-lg + .form-control-feedback,
@@ -1478,9 +1478,9 @@ input[type="password"] {
 .form-group-lg input[type="text"] + .form-control-feedback,
 .form-group-lg
 input[type="password"] + .form-control-feedback {
-  width: 52px;
-  height: 52px;
-  line-height: 52px; }
+  width: 53px;
+  height: 53px;
+  line-height: 53px; }
 
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
@@ -1489,9 +1489,9 @@ input[type="password"] + .form-control-feedback {
 .form-group-sm input[type="text"] + .form-control-feedback,
 .form-group-sm
 input[type="password"] + .form-control-feedback {
-  width: 34px;
-  height: 34px;
-  line-height: 34px; }
+  width: 36px;
+  height: 36px;
+  line-height: 36px; }
 
 .has-success .help-block,
 .has-success .control-label,
@@ -1593,7 +1593,7 @@ input[type="password"] {
   color: #a94442; }
 
 .has-feedback label ~ .form-control-feedback {
-  top: 30px; }
+  top: 32px; }
 
 .has-feedback label.sr-only ~ .form-control-feedback, .has-feedback label.hiddenStructure ~ .form-control-feedback {
   top: 0; }
@@ -1659,7 +1659,7 @@ input[type="password"] {
 
 .form-horizontal .radio, [class*='template-mail_password_form'] #mail_password .radio,
 .form-horizontal .checkbox, [class*='template-mail_password_form'] #mail_password .checkbox {
-  min-height: 32px; }
+  min-height: 34px; }
 
 .form-horizontal .form-group, [class*='template-mail_password_form'] #mail_password .form-group, [class*='template-mail_password_form'] #mail_password .field, .form-horizontal .template-contact-info #content form .field, .template-contact-info #content form .form-horizontal .field, [class*='template-mail_password_form'] #mail_password .template-contact-info #content form .field, .template-contact-info #content form [class*='template-mail_password_form'] #mail_password .field {
   margin-left: -15px;
@@ -1682,12 +1682,12 @@ input[type="password"] {
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label, [class*='template-mail_password_form'] #mail_password .form-group-lg .control-label, .form-horizontal .form-group-lg .template-contact-info #content form .field label, .template-contact-info #content form .field .form-horizontal .form-group-lg label, [class*='template-mail_password_form'] #mail_password .form-group-lg .template-contact-info #content form .field label, .template-contact-info #content form .field [class*='template-mail_password_form'] #mail_password .form-group-lg label {
     padding-top: 14.333333px;
-    font-size: 22px; } }
+    font-size: 23px; } }
 
 @media (min-width: 768px) {
   .form-horizontal .form-group-sm .control-label, [class*='template-mail_password_form'] #mail_password .form-group-sm .control-label, .form-horizontal .form-group-sm .template-contact-info #content form .field label, .template-contact-info #content form .field .form-horizontal .form-group-sm label, [class*='template-mail_password_form'] #mail_password .form-group-sm .template-contact-info #content form .field label, .template-contact-info #content form .field [class*='template-mail_password_form'] #mail_password .form-group-sm label {
     padding-top: 6px;
-    font-size: 15px; } }
+    font-size: 16px; } }
 
 .btn, input[type="submit"],
 input.context[name="form.button.save"],
@@ -1696,7 +1696,7 @@ input.context,
 input.destructive,
 input.standalone,
 input[type="submit"].discreet,
-input.standalone[name="form.button.cancel"], #content-history input.standalone[type="submit"], #content a.link-parent, #content.dialog-wrapper .mceActionPanel input[type="submit"], .portalMessage.info span a, input[type="text"].text-widget.textline-field + input.searchButton {
+input.standalone[name="form.button.cancel"], #content-history input.standalone[type="submit"], #content a.link-parent, .portalMessage.info span a, input[type="text"].text-widget.textline-field + input.searchButton, #content.dialog-wrapper .mceActionPanel input[type="submit"] {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -1707,7 +1707,7 @@ input.standalone[name="form.button.cancel"], #content-history input.standalone[t
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.5;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -1715,43 +1715,43 @@ input.standalone[name="form.button.cancel"], #content-history input.standalone[t
   -ms-user-select: none; }
   .btn:focus, input[type="submit"]:focus, input[type="button"]:focus, .context:focus,
   input.destructive:focus,
-  input.standalone:focus, #content-history input.standalone[type="submit"]:focus, #content a.link-parent:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:focus, .portalMessage.info span a:focus, input[type="text"].text-widget.textline-field + input.searchButton:focus, .btn.focus, input.focus[type="submit"], input.focus[type="button"], .focus.context,
+  input.standalone:focus, #content-history input.standalone[type="submit"]:focus, #content a.link-parent:focus, .portalMessage.info span a:focus, input[type="text"].text-widget.textline-field + input.searchButton:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:focus, .btn.focus, input.focus[type="submit"], input.focus[type="button"], .focus.context,
   input.focus.destructive,
-  input.focus.standalone, #content-history input.focus.standalone[type="submit"], #content a.focus.link-parent, #content.dialog-wrapper .mceActionPanel input.focus[type="submit"], .portalMessage.info span a.focus, input[type="text"].text-widget.textline-field + input.focus.searchButton, .btn:active:focus, input[type="submit"]:active:focus, input[type="button"]:active:focus, .context:active:focus,
+  input.focus.standalone, #content-history input.focus.standalone[type="submit"], #content a.focus.link-parent, .portalMessage.info span a.focus, input[type="text"].text-widget.textline-field + input.focus.searchButton, #content.dialog-wrapper .mceActionPanel input.focus[type="submit"], .btn:active:focus, input[type="submit"]:active:focus, input[type="button"]:active:focus, .context:active:focus,
   input.destructive:active:focus,
-  input.standalone:active:focus, #content-history input.standalone[type="submit"]:active:focus, #content a.link-parent:active:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:active:focus, .portalMessage.info span a:active:focus, input[type="text"].text-widget.textline-field + input.searchButton:active:focus, .btn:active.focus, input[type="submit"]:active.focus, input[type="button"]:active.focus, .context:active.focus,
+  input.standalone:active:focus, #content-history input.standalone[type="submit"]:active:focus, #content a.link-parent:active:focus, .portalMessage.info span a:active:focus, input[type="text"].text-widget.textline-field + input.searchButton:active:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:active:focus, .btn:active.focus, input[type="submit"]:active.focus, input[type="button"]:active.focus, .context:active.focus,
   input.destructive:active.focus,
-  input.standalone:active.focus, #content-history input.standalone[type="submit"]:active.focus, #content a.link-parent:active.focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:active.focus, .portalMessage.info span a:active.focus, input[type="text"].text-widget.textline-field + input.searchButton:active.focus, .btn.active:focus, input.active[type="submit"]:focus, input.active[type="button"]:focus, .active.context:focus,
+  input.standalone:active.focus, #content-history input.standalone[type="submit"]:active.focus, #content a.link-parent:active.focus, .portalMessage.info span a:active.focus, input[type="text"].text-widget.textline-field + input.searchButton:active.focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:active.focus, .btn.active:focus, input.active[type="submit"]:focus, input.active[type="button"]:focus, .active.context:focus,
   input.active.destructive:focus,
-  input.active.standalone:focus, #content-history input.active.standalone[type="submit"]:focus, #content a.active.link-parent:focus, #content.dialog-wrapper .mceActionPanel input.active[type="submit"]:focus, .portalMessage.info span a.active:focus, input[type="text"].text-widget.textline-field + input.active.searchButton:focus, .btn.active.focus, input.active.focus[type="submit"], input.active.focus[type="button"], .active.focus.context,
+  input.active.standalone:focus, #content-history input.active.standalone[type="submit"]:focus, #content a.active.link-parent:focus, .portalMessage.info span a.active:focus, input[type="text"].text-widget.textline-field + input.active.searchButton:focus, #content.dialog-wrapper .mceActionPanel input.active[type="submit"]:focus, .btn.active.focus, input.active.focus[type="submit"], input.active.focus[type="button"], .active.focus.context,
   input.active.focus.destructive,
-  input.active.focus.standalone, #content-history input.active.focus.standalone[type="submit"], #content a.active.focus.link-parent, #content.dialog-wrapper .mceActionPanel input.active.focus[type="submit"], .portalMessage.info span a.active.focus, input[type="text"].text-widget.textline-field + input.active.focus.searchButton {
+  input.active.focus.standalone, #content-history input.active.focus.standalone[type="submit"], #content a.active.focus.link-parent, .portalMessage.info span a.active.focus, input[type="text"].text-widget.textline-field + input.active.focus.searchButton, #content.dialog-wrapper .mceActionPanel input.active.focus[type="submit"] {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
   .btn:hover, input[type="submit"]:hover, input[type="button"]:hover, .context:hover,
   input.destructive:hover,
-  input.standalone:hover, #content-history input.standalone[type="submit"]:hover, #content a.link-parent:hover, #content.dialog-wrapper .mceActionPanel input[type="submit"]:hover, .portalMessage.info span a:hover, input[type="text"].text-widget.textline-field + input.searchButton:hover, .btn:focus, input[type="submit"]:focus, input[type="button"]:focus, .context:focus,
+  input.standalone:hover, #content-history input.standalone[type="submit"]:hover, #content a.link-parent:hover, .portalMessage.info span a:hover, input[type="text"].text-widget.textline-field + input.searchButton:hover, #content.dialog-wrapper .mceActionPanel input[type="submit"]:hover, .btn:focus, input[type="submit"]:focus, input[type="button"]:focus, .context:focus,
   input.destructive:focus,
-  input.standalone:focus, #content-history input.standalone[type="submit"]:focus, #content a.link-parent:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:focus, .portalMessage.info span a:focus, input[type="text"].text-widget.textline-field + input.searchButton:focus, .btn.focus, input.focus[type="submit"], input.focus[type="button"], .focus.context,
+  input.standalone:focus, #content-history input.standalone[type="submit"]:focus, #content a.link-parent:focus, .portalMessage.info span a:focus, input[type="text"].text-widget.textline-field + input.searchButton:focus, #content.dialog-wrapper .mceActionPanel input[type="submit"]:focus, .btn.focus, input.focus[type="submit"], input.focus[type="button"], .focus.context,
   input.focus.destructive,
-  input.focus.standalone, #content-history input.focus.standalone[type="submit"], #content a.focus.link-parent, #content.dialog-wrapper .mceActionPanel input.focus[type="submit"], .portalMessage.info span a.focus, input[type="text"].text-widget.textline-field + input.focus.searchButton {
+  input.focus.standalone, #content-history input.focus.standalone[type="submit"], #content a.focus.link-parent, .portalMessage.info span a.focus, input[type="text"].text-widget.textline-field + input.focus.searchButton, #content.dialog-wrapper .mceActionPanel input.focus[type="submit"] {
     color: #333;
     text-decoration: none; }
   .btn:active, input[type="submit"]:active, input[type="button"]:active, .context:active,
   input.destructive:active,
-  input.standalone:active, #content-history input.standalone[type="submit"]:active, #content a.link-parent:active, #content.dialog-wrapper .mceActionPanel input[type="submit"]:active, .portalMessage.info span a:active, input[type="text"].text-widget.textline-field + input.searchButton:active, .btn.active, input.active[type="submit"], input.active[type="button"], .active.context,
+  input.standalone:active, #content-history input.standalone[type="submit"]:active, #content a.link-parent:active, .portalMessage.info span a:active, input[type="text"].text-widget.textline-field + input.searchButton:active, #content.dialog-wrapper .mceActionPanel input[type="submit"]:active, .btn.active, input.active[type="submit"], input.active[type="button"], .active.context,
   input.active.destructive,
-  input.active.standalone, #content-history input.active.standalone[type="submit"], #content a.active.link-parent, #content.dialog-wrapper .mceActionPanel input.active[type="submit"], .portalMessage.info span a.active, input[type="text"].text-widget.textline-field + input.active.searchButton {
+  input.active.standalone, #content-history input.active.standalone[type="submit"], #content a.active.link-parent, .portalMessage.info span a.active, input[type="text"].text-widget.textline-field + input.active.searchButton, #content.dialog-wrapper .mceActionPanel input.active[type="submit"] {
     outline: 0;
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
   .btn.disabled, input.disabled[type="submit"], input.disabled[type="button"], .disabled.context,
   input.disabled.destructive,
-  input.disabled.standalone, #content-history input.disabled.standalone[type="submit"], #content a.disabled.link-parent, #content.dialog-wrapper .mceActionPanel input.disabled[type="submit"], .portalMessage.info span a.disabled, input[type="text"].text-widget.textline-field + input.disabled.searchButton, .btn[disabled], input[disabled][type="submit"], input[disabled][type="button"], [disabled].context,
+  input.disabled.standalone, #content-history input.disabled.standalone[type="submit"], #content a.disabled.link-parent, .portalMessage.info span a.disabled, input[type="text"].text-widget.textline-field + input.disabled.searchButton, #content.dialog-wrapper .mceActionPanel input.disabled[type="submit"], .btn[disabled], input[disabled][type="submit"], input[disabled][type="button"], [disabled].context,
   input[disabled].destructive,
-  input[disabled].standalone, #content-history input[disabled].standalone[type="submit"], #content a[disabled].link-parent, #content.dialog-wrapper .mceActionPanel input[disabled][type="submit"], .portalMessage.info span a[disabled], input[type="text"].text-widget.textline-field + input[disabled].searchButton,
+  input[disabled].standalone, #content-history input[disabled].standalone[type="submit"], #content a[disabled].link-parent, .portalMessage.info span a[disabled], input[type="text"].text-widget.textline-field + input[disabled].searchButton, #content.dialog-wrapper .mceActionPanel input[disabled][type="submit"],
   fieldset[disabled] .btn,
   fieldset[disabled] input[type="submit"],
   fieldset[disabled] input[type="button"],
@@ -1764,11 +1764,11 @@ input.standalone[name="form.button.cancel"], #content-history input.standalone[t
   fieldset[disabled] input.standalone[type="submit"],
   fieldset[disabled] #content a.link-parent, #content
   fieldset[disabled] a.link-parent,
-  fieldset[disabled] #content.dialog-wrapper .mceActionPanel input[type="submit"], #content.dialog-wrapper .mceActionPanel
-  fieldset[disabled] input[type="submit"],
   fieldset[disabled] .portalMessage.info span a, .portalMessage.info span
   fieldset[disabled] a,
-  fieldset[disabled] input[type="text"].text-widget.textline-field + input.searchButton {
+  fieldset[disabled] input[type="text"].text-widget.textline-field + input.searchButton,
+  fieldset[disabled] #content.dialog-wrapper .mceActionPanel input[type="submit"], #content.dialog-wrapper .mceActionPanel
+  fieldset[disabled] input[type="submit"] {
     cursor: not-allowed;
     opacity: 0.65;
     -webkit-box-shadow: none;
@@ -2513,7 +2513,7 @@ input.destructive {
   .btn-link, #content #uponelevel.link-parent, .btn-link:hover, #content #uponelevel.link-parent:hover, .btn-link:focus, #content #uponelevel.link-parent:focus, .btn-link:active, #content #uponelevel.link-parent:active {
     border-color: transparent; }
   .btn-link:hover, #content #uponelevel.link-parent:hover, .btn-link:focus, #content #uponelevel.link-parent:focus {
-    color: #791301;
+    color: #1C2024;
     text-decoration: none;
     background-color: transparent; }
   .btn-link[disabled]:hover, #content [disabled]#uponelevel.link-parent:hover, .btn-link[disabled]:focus, #content [disabled]#uponelevel.link-parent:focus,
@@ -2528,20 +2528,20 @@ input.destructive {
 
 .btn-lg {
   padding: 10px 16px;
-  font-size: 22px;
+  font-size: 23px;
   line-height: 1.3333333;
   border-radius: 6px; }
 
 .btn-sm, input[type="text"].text-widget.textline-field + input.searchButton {
   padding: 5px 10px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 3px; }
 
 .btn-xs,
 input[type="submit"].discreet, .widget fieldset input.context, #content-history input.standalone[type="submit"], #content a.link-parent, .portalMessage.info span a {
   padding: 1px 5px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 3px; }
 
@@ -2559,7 +2559,7 @@ input[type="button"].btn-block {
 
 .alert, .portalMessage {
   padding: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   border: 1px solid transparent;
   border-radius: 4px; }
   .alert h4, .portalMessage h4 {
@@ -2619,11 +2619,11 @@ input[type="button"].btn-block {
   .alert-danger .alert-link, .portalMessage.error .alert-link {
     color: #843534; }
 
-.clearfix:before, #portletPageColumns:before, .template-summary_view .tileItem:before, #popover-rename.active div.item:before, #parent-fieldname-text:before, .clearfix:after, #portletPageColumns:after, .template-summary_view .tileItem:after, #popover-rename.active div.item:after, #parent-fieldname-text:after {
+.clearfix:before, #portletPageColumns:before, .template-summary_view .tileItem:before, #parent-fieldname-text:before, .clearfix:after, #portletPageColumns:after, .template-summary_view .tileItem:after, #parent-fieldname-text:after {
   content: " ";
   display: table; }
 
-.clearfix:after, #portletPageColumns:after, .template-summary_view .tileItem:after, #popover-rename.active div.item:after, #parent-fieldname-text:after {
+.clearfix:after, #portletPageColumns:after, .template-summary_view .tileItem:after, #parent-fieldname-text:after {
   clear: both; }
 
 .center-block {
@@ -2732,7 +2732,7 @@ input[type="button"].btn-block {
   .visible-sm-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 992px) and (max-width: 1299px) {
+@media (min-width: 992px) and (max-width: 1359px) {
   .visible-md {
     display: block !important; }
   table.visible-md {
@@ -2743,19 +2743,19 @@ input[type="button"].btn-block {
   td.visible-md {
     display: table-cell !important; } }
 
-@media (min-width: 992px) and (max-width: 1299px) {
+@media (min-width: 992px) and (max-width: 1359px) {
   .visible-md-block {
     display: block !important; } }
 
-@media (min-width: 992px) and (max-width: 1299px) {
+@media (min-width: 992px) and (max-width: 1359px) {
   .visible-md-inline {
     display: inline !important; } }
 
-@media (min-width: 992px) and (max-width: 1299px) {
+@media (min-width: 992px) and (max-width: 1359px) {
   .visible-md-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 1300px) {
+@media (min-width: 1360px) {
   .visible-lg {
     display: block !important; }
   table.visible-lg {
@@ -2766,15 +2766,15 @@ input[type="button"].btn-block {
   td.visible-lg {
     display: table-cell !important; } }
 
-@media (min-width: 1300px) {
+@media (min-width: 1360px) {
   .visible-lg-block {
     display: block !important; } }
 
-@media (min-width: 1300px) {
+@media (min-width: 1360px) {
   .visible-lg-inline {
     display: inline !important; } }
 
-@media (min-width: 1300px) {
+@media (min-width: 1360px) {
   .visible-lg-inline-block {
     display: inline-block !important; } }
 
@@ -2786,11 +2786,11 @@ input[type="button"].btn-block {
   .hidden-sm {
     display: none !important; } }
 
-@media (min-width: 992px) and (max-width: 1299px) {
+@media (min-width: 992px) and (max-width: 1359px) {
   .hidden-md {
     display: none !important; } }
 
-@media (min-width: 1300px) {
+@media (min-width: 1360px) {
   .hidden-lg {
     display: none !important; } }
 
@@ -3206,19 +3206,19 @@ input.label:empty {
 #content .fc .btn-group > input.btn, #content .fc .btn-group > input[type="submit"], #content .fc .btn-group > input[type="button"], #content .fc .btn-group >
 input.context, #content .fc .btn-group >
 input.destructive, #content .fc .btn-group >
-input.standalone, #content .fc #content-history .btn-group > input.standalone[type="submit"], #content.dialog-wrapper .fc .mceActionPanel .btn-group > input[type="submit"], #content .fc .btn-group > input[type="text"].text-widget.textline-field + input.searchButton {
+input.standalone, #content .fc #content-history .btn-group > input.standalone[type="submit"], #content .fc .btn-group > input[type="text"].text-widget.textline-field + input.searchButton, #content.dialog-wrapper .fc .mceActionPanel .btn-group > input[type="submit"] {
   font-size: 14px; }
   #content .fc .btn-group > input.btn.context:focus, #content .fc .btn-group > input.context[type="submit"]:focus, #content .fc .btn-group >
   input.context[name="form.button.save"]:focus, #content .fc .btn-group >
   input.context[name="form.actions.save"]:focus, #content .fc .btn-group > input.context[type="button"]:focus, #content .fc .btn-group >
   input.context:focus, #content .fc .btn-group >
   input.context.destructive:focus, #content .fc .btn-group >
-  input.context.standalone:focus, #content .fc #content-history .btn-group > input.context.standalone[type="submit"]:focus, #content.dialog-wrapper .fc .mceActionPanel .btn-group > input.context[type="submit"]:focus, #content .fc .btn-group > input[type="text"].text-widget.textline-field + input.context.searchButton:focus, #content .fc .btn-group > input.btn.context:hover, #content .fc .btn-group > input.context[type="submit"]:hover, #content .fc .btn-group >
+  input.context.standalone:focus, #content .fc #content-history .btn-group > input.context.standalone[type="submit"]:focus, #content .fc .btn-group > input[type="text"].text-widget.textline-field + input.context.searchButton:focus, #content.dialog-wrapper .fc .mceActionPanel .btn-group > input.context[type="submit"]:focus, #content .fc .btn-group > input.btn.context:hover, #content .fc .btn-group > input.context[type="submit"]:hover, #content .fc .btn-group >
   input.context[name="form.button.save"]:hover, #content .fc .btn-group >
   input.context[name="form.actions.save"]:hover, #content .fc .btn-group > input.context[type="button"]:hover, #content .fc .btn-group >
   input.context:hover, #content .fc .btn-group >
   input.context.destructive:hover, #content .fc .btn-group >
-  input.context.standalone:hover, #content .fc #content-history .btn-group > input.context.standalone[type="submit"]:hover, #content.dialog-wrapper .fc .mceActionPanel .btn-group > input.context[type="submit"]:hover, #content .fc .btn-group > input[type="text"].text-widget.textline-field + input.context.searchButton:hover {
+  input.context.standalone:hover, #content .fc #content-history .btn-group > input.context.standalone[type="submit"]:hover, #content .fc .btn-group > input[type="text"].text-widget.textline-field + input.context.searchButton:hover, #content.dialog-wrapper .fc .mceActionPanel .btn-group > input.context[type="submit"]:hover {
     color: #1C2024 !important; }
 
 #fileupload .span7 {
@@ -3313,143 +3313,8 @@ table.sequencewidget td {
 #login_form input[type="password"] {
   min-width: 20%; }
 
-.plonepopup .mceFocus .mceTop span {
-  background-color: #CCC;
-  text-transform: uppercase;
-  font-size: 0.8em; }
-
-#content.dialog-wrapper {
-  padding-left: 0;
-  padding-right: 0; }
-  #content.dialog-wrapper fieldset legend {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin: 0.5em 0; }
-  #content.dialog-wrapper fieldset.columnlibraries {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 27% !important; }
-    @media (min-width: 768px) {
-      #content.dialog-wrapper fieldset.columnlibraries {
-        float: left;
-        width: 33.3333333333%; } }
-  #content.dialog-wrapper fieldset.subPanel .widget input[type="text"],
-  #content.dialog-wrapper fieldset.subPanel .widget select {
-    max-width: 80%;
-    width: auto; }
-  #content.dialog-wrapper fieldset.subPanel .widget input#description {
-    margin: 0; }
-  #content.dialog-wrapper fieldset .field {
-    margin: 0.5em 0; }
-  #content.dialog-wrapper #internalpath {
-    margin-left: 0; }
-  #content.dialog-wrapper form {
-    margin: 0; }
-
-#plonebrowser .widget.radioscrolllist input[type='radio'] {
-  -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
-  border: 1px solid darkgray;
-  border-radius: 50%;
-  outline: none;
-  -webkit-box-shadow: 0 0 5px 0px gray inset;
-          box-shadow: 0 0 5px 0px gray inset;
-  position: relative;
-  top: 0.1em; }
-
-#plonebrowser .widget.radioscrolllist input[type='radio']:hover {
-  -webkit-box-shadow: 0 0 5px 0px orange inset;
-          box-shadow: 0 0 5px 0px orange inset; }
-
-#plonebrowser .widget.radioscrolllist input[type='radio']:before {
-  content: '';
-  display: block;
-  width: 60%;
-  height: 60%;
-  margin: 20% auto;
-  border-radius: 50%; }
-
-#plonebrowser .widget.radioscrolllist .current input[checked='checked']:before {
-  background: #555; }
-
-#plonebrowser .widget #searchtext {
-  height: 30px;
-  padding: 2px 10px; }
-
-#plonebrowser div#content.dialog-wrapper {
-  font-size: 0.95em !important; }
-  #plonebrowser div#content.dialog-wrapper .formHelp {
-    margin-bottom: 1em; }
-
-#plonebrowser div.row {
-  margin: 0; }
-
-#plonebrowser div.cell {
-  float: left;
-  min-height: 1em; }
-
-#plonebrowser .thumbnail:hover {
-  width: auto;
-  position: static; }
-
-#plonebrowser #footer {
-  padding: 1em 0;
-  border-top: 1px dashed #CCC;
-  margin-top: 2em;
-  position: static; }
-
-#plonebrowser #internallinkcontainer {
-  height: auto; }
-
-#plonebrowser #general_panel.width-3\3a 4 {
-  width: 72%;
-  margin-right: 2%; }
-
-#plonebrowser #details_panel #description {
-  width: 90%;
-  margin: 0; }
-
-#plonebrowser #details_panel div.radioscrolllist {
-  height: auto; }
-
-#plonebrowser #details_panel div.radioscrolllist #title,
-#plonebrowser #details_panel div.radioscrolllist #cssstyle,
-#plonebrowser #details_panel div.radioscrolllist #title {
-  width: auto !important;
-  max-width: 90%; }
-
-#plonebrowser #details_panel .field {
-  line-height: normal; }
-
-#plonebrowser.image-browser #common-link-fields {
-  display: none; }
-
-textarea#htmlSource {
-  max-height: 300px; }
-
-div.panel_wrapper div.current {
-  height: 180px; }
-
 .template-portlets.portaltype-portlet-page #portletPageColumns hr {
   clear: both; }
-
-/*** Tiny ***/
-body#content.mceContentBody {
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 140%; }
-
-.ploneSkin table.mceLayout td.mceToolbar {
-  background-color: #FAFAFA !important; }
-
-.ploneSkin .mceText,
-.ploneSkin .mceOpen {
-  border-bottom-width: 1px !important; }
-
-.plonepopup .mceAlert .mceOk {
-  height: auto; }
 
 .cell {
   position: relative;
@@ -3567,10 +3432,10 @@ div.width-2\3a 3 {
     #portal-columns,
     .portal-footer-content {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     #portal-columns,
     .portal-footer-content {
-      width: 1270px; } }
+      width: 1330px; } }
 
 .portal-columns-row {
   margin-left: -15px;
@@ -3580,189 +3445,6 @@ div.width-2\3a 3 {
     display: table; }
   .portal-columns-row:after {
     clear: both; }
-
-#portal-column-one.column-one.ltr {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 992px) {
-    #portal-column-one.column-one.ltr {
-      float: left;
-      width: 25%; } }
-  @media (min-width: 992px) {
-    #portal-column-one.column-one.ltr {
-      right: 75%; } }
-
-#portal-column-content.column-one.ltr {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 992px) {
-    #portal-column-content.column-one.ltr {
-      float: left;
-      width: 75%; } }
-  @media (min-width: 992px) {
-    #portal-column-content.column-one.ltr {
-      left: 25%; } }
-
-#portal-column-one.column-one.rtl {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 992px) {
-    #portal-column-one.column-one.rtl {
-      float: left;
-      width: 25%; } }
-
-#portal-column-content.column-one.rtl {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 992px) {
-    #portal-column-content.column-one.rtl {
-      float: left;
-      width: 75%; } }
-
-#portal-column-content.column-two.ltr {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    #portal-column-content.column-two.ltr {
-      float: left;
-      width: 66.6666666667%; } }
-  @media (min-width: 992px) {
-    #portal-column-content.column-two.ltr {
-      float: left;
-      width: 75%; } }
-
-#portal-column-two.column-two.ltr {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    #portal-column-two.column-two.ltr {
-      float: left;
-      width: 33.3333333333%; } }
-  @media (min-width: 992px) {
-    #portal-column-two.column-two.ltr {
-      float: left;
-      width: 25%; } }
-
-#portal-column-content.column-two.rtl {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    #portal-column-content.column-two.rtl {
-      float: left;
-      width: 66.6666666667%; } }
-  @media (min-width: 992px) {
-    #portal-column-content.column-two.rtl {
-      float: left;
-      width: 75%; } }
-  @media (min-width: 768px) {
-    #portal-column-content.column-two.rtl {
-      left: 33.3333333333%; } }
-  @media (min-width: 992px) {
-    #portal-column-content.column-two.rtl {
-      left: 25%; } }
-
-#portal-column-two.column-two.rtl {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    #portal-column-two.column-two.rtl {
-      float: left;
-      width: 33.3333333333%; } }
-  @media (min-width: 992px) {
-    #portal-column-two.column-two.rtl {
-      float: left;
-      width: 25%; } }
-  @media (min-width: 768px) {
-    #portal-column-two.column-two.rtl {
-      right: 66.6666666667%; } }
-  @media (min-width: 992px) {
-    #portal-column-two.column-two.rtl {
-      right: 75%; } }
-
-#portal-column-one.two-columns {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    #portal-column-one.two-columns {
-      float: left;
-      width: 100%; } }
-  @media (min-width: 992px) {
-    #portal-column-one.two-columns {
-      float: left;
-      width: 25%; } }
-  @media (min-width: 992px) {
-    #portal-column-one.two-columns {
-      right: 75%; } }
-
-#portal-column-content.two-columns {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    #portal-column-content.two-columns {
-      float: left;
-      width: 66.6666666667%; } }
-  @media (min-width: 992px) {
-    #portal-column-content.two-columns {
-      left: 25%; } }
-  @media (min-width: 992px) {
-    #portal-column-content.two-columns {
-      width: 54%; } }
-
-#portal-column-two.two-columns {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    #portal-column-two.two-columns {
-      float: left;
-      width: 33.3333333333%; } }
-  @media (min-width: 992px) {
-    #portal-column-two.two-columns {
-      left: 25%; } }
-  @media (min-width: 992px) {
-    #portal-column-two.two-columns {
-      width: 21%; } }
 
 #portal-column-content.no-columns {
   position: relative;
@@ -3796,7 +3478,7 @@ div.width-1\3a 5 {
 
 /* Questo css svrascrive le classi che in Sunburst non usano le base_properties  */
 body {
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #fff;
   color: #1C2024; }
@@ -3818,14 +3500,14 @@ a:visited {
   color: #AC1B01; }
 
 a:hover {
-  color: #791301; }
+  color: #1C2024; }
 
 a:active {
   color: #AC1B01; }
 
 input {
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 17px; }
+  font-size: 18px; }
 
 #content,
 #content .documentDescription, #content #description,
@@ -3855,7 +3537,7 @@ div.overlay {
     font-size: 1em; }
 
 body.smallText {
-  font-size: 15px; }
+  font-size: 16px; }
 
 #portal-globalnav {
   background-color: transparent; }
@@ -3874,12 +3556,12 @@ body.smallText {
     color: inherit; }
 
 #portal-personaltools {
-  background: #ECF0F0; }
+  background: #F0F0F0; }
   #portal-personaltools a {
     color: #AC1B01; }
 
 #portal-languageselector {
-  background: #ECF0F0; }
+  background: #F0F0F0; }
 
 #portal-breadcrumbs {
   margin-bottom: 1em; }
@@ -3890,50 +3572,50 @@ body.smallText {
 
 #portal-siteactions li a:focus,
 #portal-siteactions li a:hover {
-  color: #791301; }
+  color: #1C2024; }
 
 /*div.portletAssignments div.portletHeader {
     background: $globalBackgroundColor;
 }*/
 dl.portlet dt {
-  background: #ECF0F0; }
+  background: #F0F0F0; }
   dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:focus, dl.portlet dt a:hover {
     color: #AC1B01; }
 
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
-  border-color: #ECF0F0;
+  border-color: #F0F0F0;
   border-width: 0; }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
-  background-color: #ECF0F0;
-  border-left: 1em solid #ECF0F0; }
+  background-color: #F0F0F0;
+  border-left: 1em solid #F0F0F0; }
 
 div.managePortletsLink {
-  background: #ECF0F0; }
+  background: #F0F0F0; }
 
 #content a:link, #content a:visited,
 dl.portlet a:link,
 dl.portlet a:visited {
   color: #AC1B01;
-  border-color: #777;
+  border-color: #AC1B01;
   border-bottom-width: 1px;
-  border-bottom-style: dotted; }
+  border-bottom-style: solid; }
 
 #content a:focus, #content a:hover,
 dl.portlet a:focus,
 dl.portlet a:hover {
-  color: #791301 !important;
-  border-color: #777;
+  color: #1C2024 !important;
+  border-color: #1C2024;
   border-bottom-width: 1px;
   border-bottom-style: solid; }
 
 dl dt span.summary a {
   border-bottom-width: 1px !important;
-  border-bottom-style: dotted !important;
-  border-color: #777 !important; }
+  border-bottom-style: solid !important;
+  border-color: #AC1B01 !important; }
   dl dt span.summary a:focus, dl dt span.summary a:hover {
-    color: #791301 !important;
-    border-color: #777 !important;
+    color: #1C2024 !important;
+    border-color: #1C2024 !important;
     border-bottom-width: 1px !important;
     border-bottom-style: solid !important; }
 
@@ -3945,7 +3627,7 @@ div.portlet li {
 #category {
   color: #515151; }
   #category a.link-category {
-    background: #ECF0F0; }
+    background: #F0F0F0; }
     #category a.link-category:hover {
       background: #313131;
       color: #CCC;
@@ -4019,7 +3701,7 @@ table .listing tbody tr .selected {
   background-color: #ffa; }
 
 table .listing td.draggable {
-  background: #ECF0F0 !important;
+  background: #F0F0F0 !important;
   border-bottom-color: #FFF; }
 
 div.listingBar a {
@@ -4075,8 +3757,8 @@ dl.info {
     background-color: #FFF; }
 
 #content ul.formTabs {
-  background-color: #ECF0F0;
-  border-color: #ECF0F0; }
+  background-color: #F0F0F0;
+  border-color: #F0F0F0; }
   #content ul.formTabs li.formTab a.selected,
   #content ul.formTabs li.formTab a:focus,
   #content ul.formTabs li.formTab a:hover {
@@ -4242,7 +3924,7 @@ input.inputLabelActive {
 #portal-colophon a {
   color: #AC1B01; }
   #portal-colophon a:hover {
-    color: #791301; }
+    color: #1C2024; }
 
 #portal-sitemap > li {
   border-bottom-color: #CCC;
@@ -4264,8 +3946,7 @@ input.inputLabelActive {
 #content #search-filter legend {
   font-weight: 400; }
 
-.semibold, #content .documentDescription,
-#content #description {
+.semibold {
   font-weight: 600; }
 
 .bold, #search-filter .field .optionsToggle label {
@@ -4347,8 +4028,8 @@ dl.portlet a,
 
 #portal-personaltools-wrapper {
   background-color: #660000;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #960E0E), color-stop(33%, #960E0E), color-stop(66%, #660000), to(#000));
-  background: linear-gradient(to right, #960E0E 0, #960E0E 33%, #660000 66%, #000 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #1AB7B1), color-stop(33%, #0E7996), color-stop(66%, #036b87), to(#0e8480));
+  background: linear-gradient(to right, #1AB7B1 0, #0E7996 33%, #036b87 66%, #0e8480 100%);
   padding: 3px 15px;
   margin: 0 0;
   font-size: 1em;
@@ -4376,23 +4057,6 @@ dl.portlet a,
   #portal-personaltools-wrapper #user-name img {
     display: none; }
 
-#content .documentDescription,
-#content #description {
-  font-size: 1.1em;
-  line-height: 1.5em; }
-
-#content #archetypes-fieldname-description textarea#description {
-  font-weight: normal; }
-
-#content .pullquote {
-  font-size: 1.3em;
-  letter-spacing: normal !important;
-  font-family: inherit; }
-
-#content .callout {
-  background: rgba(172, 27, 1, 0.1);
-  border: 1px dotted #AC1B01; }
-
 .template-folder_listing #content-core > dl dt {
   margin-top: 0.5em; }
 
@@ -4407,7 +4071,10 @@ dl.portlet a,
     -moz-osx-font-smoothing: grayscale;
     margin-right: 5px; }
 
-[class*='template-mail_password_form'] #mail_password .formControls input.context, .template-contact-info #content form .formControls input[type='submit'] {
+a.buttonService,
+#content a.buttonService,
+#content a .buttonService,
+#content .buttonService a, [class*='template-mail_password_form'] #mail_password .formControls input.context, .template-contact-info #content form .formControls input[type='submit'] {
   display: inline-block;
   border: 1px solid #1C2024;
   display: inline-block;
@@ -4415,790 +4082,72 @@ dl.portlet a,
   padding: 1em 4em;
   font-weight: bold;
   color: #1C2024; }
-  [class*='template-mail_password_form'] #mail_password .formControls input.context:focus, .template-contact-info #content form .formControls input[type='submit']:focus, [class*='template-mail_password_form'] #mail_password .formControls input.context:hover, .template-contact-info #content form .formControls input[type='submit']:hover {
+  a.buttonService:focus,
+  #content a.buttonService:focus,
+  #content a .buttonService:focus,
+  #content .buttonService a:focus, [class*='template-mail_password_form'] #mail_password .formControls input.context:focus, .template-contact-info #content form .formControls input[type='submit']:focus, a.buttonService:hover,
+  #content a.buttonService:hover,
+  #content a .buttonService:hover,
+  #content .buttonService a:hover, [class*='template-mail_password_form'] #mail_password .formControls input.context:hover, .template-contact-info #content form .formControls input[type='submit']:hover {
     color: #AC1B01;
     border-color: #AC1B01; }
   @media (max-width: 767px) {
-    [class*='template-mail_password_form'] #mail_password .formControls input.context, .template-contact-info #content form .formControls input[type='submit'] {
+    a.buttonService,
+    #content a.buttonService,
+    #content a .buttonService,
+    #content .buttonService a, [class*='template-mail_password_form'] #mail_password .formControls input.context, .template-contact-info #content form .formControls input[type='submit'] {
       padding: 1em; } }
 
-[class*='template-mail_password_form'] #mail_password .formControls input.context, .template-contact-info #content form .formControls input[type='submit'] {
+a.buttonService,
+#content a.buttonService,
+#content a .buttonService,
+#content .buttonService a, [class*='template-mail_password_form'] #mail_password .formControls input.context, .template-contact-info #content form .formControls input[type='submit'] {
   background-color: #AC1B01;
   border-color: #AC1B01;
   color: #FFF; }
-  [class*='template-mail_password_form'] #mail_password .formControls input.context:focus, .template-contact-info #content form .formControls input[type='submit']:focus, [class*='template-mail_password_form'] #mail_password .formControls input.context:hover, .template-contact-info #content form .formControls input[type='submit']:hover {
+  a.buttonService:focus,
+  #content a.buttonService:focus,
+  #content a .buttonService:focus,
+  #content .buttonService a:focus, [class*='template-mail_password_form'] #mail_password .formControls input.context:focus, .template-contact-info #content form .formControls input[type='submit']:focus, a.buttonService:hover,
+  #content a.buttonService:hover,
+  #content a .buttonService:hover,
+  #content .buttonService a:hover, [class*='template-mail_password_form'] #mail_password .formControls input.context:hover, .template-contact-info #content form .formControls input[type='submit']:hover {
     background-color: #1C2024;
     border-color: #1C2024;
     color: #FFF; }
 
-/** BARCELONETA */
-.standalone, .context, .destructive, [type="submit"], button {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 700;
-  text-align: center;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.25);
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: inherit;
-  line-height: inherit;
-  border-radius: 2px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
-  .standalone:focus, .standalone:active:focus, .standalone.active:focus, .context:focus, .context:active:focus, .context.active:focus, .destructive:focus, .destructive:active:focus, .destructive.active:focus, [type="submit"]:focus, [type="submit"]:active:focus, [type="submit"].active:focus, button:focus, button:active:focus, button.active:focus {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px; }
-  .standalone:hover, .standalone:focus, .context:hover, .context:focus, .destructive:hover, .destructive:focus, [type="submit"]:hover, [type="submit"]:focus, button:hover, button:focus {
-    color: #4d4d4d;
-    text-decoration: none;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
-  .standalone:active, .standalone.active, .context:active, .context.active, .destructive:active, .destructive.active, [type="submit"]:active, [type="submit"].active, button:active, button.active {
-    outline: 0;
-    background-image: none;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-            box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
-  .standalone.disabled, .standalone[disabled],
-  fieldset[disabled] .standalone, .context.disabled, .context[disabled],
-  fieldset[disabled] .context, .destructive.disabled, .destructive[disabled],
-  fieldset[disabled] .destructive, [type="submit"].disabled, [type="submit"][disabled],
-  fieldset[disabled] [type="submit"], button.disabled, button[disabled],
-  fieldset[disabled] button {
-    cursor: not-allowed;
-    pointer-events: none;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+#content a.link-parent {
+  border: 0; }
+  #content a.link-parent:focus, #content a.link-parent:hover {
+    color: #FFF !important; }
 
-.standalone,
-[type="submit"],
-button {
-  color: #4d4d4d;
-  background-color: #e5e5e5;
-  border-color: #b2b2b2; }
+a.buttonService,
+#content a.buttonService,
+#content a .buttonService,
+#content .buttonService a {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.4em 2.3em;
+  color: #FFF !important; }
+  a.buttonService:focus, a.buttonService:hover,
+  #content a.buttonService:focus,
+  #content a.buttonService:hover,
+  #content a .buttonService:focus,
+  #content a .buttonService:hover,
+  #content .buttonService a:focus,
+  #content .buttonService a:hover {
+    color: #FFF !important; }
 
-.standalone:hover,
-[type="submit"]:hover,
-button:hover,
-.standalone:focus,
-[type="submit"]:focus,
-button:focus,
-.standalone:active,
-[type="submit"]:active,
-button:active,
-.standalone.active,
-[type="submit"].active,
-button.active,
-.open > .dropdown-toggle.standalone,
-.open > .dropdown-toggle[type="submit"],
-.open > .dropdown-togglebutton {
-  color: #4d4d4d;
-  background-color: #cccccc;
-  border-color: #939393; }
-
-.standalone:active,
-[type="submit"]:active,
-button:active,
-.standalone.active,
-[type="submit"].active,
-button.active,
-.open > .dropdown-toggle.standalone,
-.open > .dropdown-toggle[type="submit"],
-.open > .dropdown-togglebutton {
-  background-image: none; }
-
-.standalone.disabled,
-[type="submit"].disabled,
-button.disabled,
-.standalone[disabled],
-[type="submit"][disabled],
-button[disabled],
-fieldset[disabled] .standalone,
-fieldset[disabled] [type="submit"],
-fieldset[disabled] button,
-.standalone.disabled:hover,
-[type="submit"].disabled:hover,
-button.disabled:hover,
-.standalone[disabled]:hover,
-[type="submit"][disabled]:hover,
-button[disabled]:hover,
-fieldset[disabled] .standalone:hover,
-fieldset[disabled] [type="submit"]:hover,
-fieldset[disabled] button:hover,
-.standalone.disabled:focus,
-[type="submit"].disabled:focus,
-button.disabled:focus,
-.standalone[disabled]:focus,
-[type="submit"][disabled]:focus,
-button[disabled]:focus,
-fieldset[disabled] .standalone:focus,
-fieldset[disabled] [type="submit"]:focus,
-fieldset[disabled] button:focus,
-.standalone.disabled:active,
-[type="submit"].disabled:active,
-button.disabled:active,
-.standalone[disabled]:active,
-[type="submit"][disabled]:active,
-button[disabled]:active,
-fieldset[disabled] .standalone:active,
-fieldset[disabled] [type="submit"]:active,
-fieldset[disabled] button:active,
-.standalone.disabled.active,
-[type="submit"].disabled.active,
-button.disabled.active,
-.standalone[disabled].active,
-[type="submit"][disabled].active,
-button[disabled].active,
-fieldset[disabled] .standalone.active,
-fieldset[disabled] [type="submit"].active,
-fieldset[disabled] button.active {
-  background-color: #e5e5e5;
-  border-color: #b2b2b2; }
-
-.standalone .badge,
-[type="submit"] .badge,
-button .badge {
-  color: #e5e5e5;
-  background-color: #4d4d4d; }
-
-.context {
-  color: #ffffff;
-  background-color: #007bb1;
-  border-color: #00587e; }
-
-.context:hover,
-.context:focus,
-.context:active,
-.context.active,
-.open > .dropdown-toggle.context {
-  color: #ffffff;
-  background-color: #00587e;
-  border-color: #002d41; }
-
-.context:active,
-.context.active,
-.open > .dropdown-toggle.context {
-  background-image: none; }
-
-.context.disabled,
-.context[disabled],
-fieldset[disabled] .context,
-.context.disabled:hover,
-.context[disabled]:hover,
-fieldset[disabled] .context:hover,
-.context.disabled:focus,
-.context[disabled]:focus,
-fieldset[disabled] .context:focus,
-.context.disabled:active,
-.context[disabled]:active,
-fieldset[disabled] .context:active,
-.context.disabled.active,
-.context[disabled].active,
-fieldset[disabled] .context.active {
-  background-color: #007bb1;
-  border-color: #00587e; }
-
-.context .badge {
-  color: #007bb1;
-  background-color: #ffffff; }
-
-.destructive {
-  color: #ffffff;
-  background-color: #bb4f45;
-  border-color: #963f37; }
-
-.destructive:hover,
-.destructive:focus,
-.destructive:active,
-.destructive.active,
-.open > .dropdown-toggle.destructive {
-  color: #ffffff;
-  background-color: #963f37;
-  border-color: #692c26; }
-
-.destructive:active,
-.destructive.active,
-.open > .dropdown-toggle.destructive {
-  background-image: none; }
-
-.destructive.disabled,
-.destructive[disabled],
-fieldset[disabled] .destructive,
-.destructive.disabled:hover,
-.destructive[disabled]:hover,
-fieldset[disabled] .destructive:hover,
-.destructive.disabled:focus,
-.destructive[disabled]:focus,
-fieldset[disabled] .destructive:focus,
-.destructive.disabled:active,
-.destructive[disabled]:active,
-fieldset[disabled] .destructive:active,
-.destructive.disabled.active,
-.destructive[disabled].active,
-fieldset[disabled] .destructive.active {
-  background-color: #bb4f45;
-  border-color: #963f37; }
-
-.destructive .badge {
-  color: #bb4f45;
-  background-color: #ffffff; }
-
-.link-parent {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 700;
-  text-align: center;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.25);
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: inherit;
-  line-height: inherit;
-  border-radius: 2px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  color: #4d4d4d;
-  background-color: #e5e5e5;
-  border-color: #b2b2b2;
-  margin-bottom: 12px; }
-
-.link-parent:focus,
-.link-parent:active:focus,
-.link-parent.active:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px; }
-
-.link-parent:hover,
-.link-parent:focus {
-  color: #4d4d4d;
-  text-decoration: none;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
-
-.link-parent:active,
-.link-parent.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
-
-.link-parent.disabled,
-.link-parent[disabled],
-fieldset[disabled] .link-parent {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  -webkit-box-shadow: none;
-          box-shadow: none; }
-
-.link-parent:hover,
-.link-parent:focus,
-.link-parent:active,
-.link-parent.active,
-.open > .dropdown-toggle.link-parent {
-  color: #4d4d4d;
-  background-color: #cccccc;
-  border-color: #939393; }
-
-.link-parent:active,
-.link-parent.active,
-.open > .dropdown-toggle.link-parent {
-  background-image: none; }
-
-.link-parent.disabled,
-.link-parent[disabled],
-fieldset[disabled] .link-parent,
-.link-parent.disabled:hover,
-.link-parent[disabled]:hover,
-fieldset[disabled] .link-parent:hover,
-.link-parent.disabled:focus,
-.link-parent[disabled]:focus,
-fieldset[disabled] .link-parent:focus,
-.link-parent.disabled:active,
-.link-parent[disabled]:active,
-fieldset[disabled] .link-parent:active,
-.link-parent.disabled.active,
-.link-parent[disabled].active,
-fieldset[disabled] .link-parent.active {
-  background-color: #e5e5e5;
-  border-color: #b2b2b2; }
-
-.link-parent .badge {
-  color: #e5e5e5;
-  background-color: #4d4d4d; }
-
-.link-parent:before {
-  content: "↩ ";
-  top: 3px;
-  position: relative; }
-
-.input-group {
-  position: relative;
-  display: table;
-  border-collapse: separate; }
-  .input-group[class*="col-"] {
-    float: none;
-    padding-left: 0;
-    padding-right: 0; }
-  .input-group .form-control, .input-group select, .input-group input[type="text"], .input-group
-  input[type="password"] {
-    position: relative;
-    z-index: 2;
-    float: left;
-    width: 100%;
-    margin-bottom: 0; }
-
-.input-group-addon,
-.input-group-btn, .input-group .form-control, .input-group select, .input-group input[type="text"], .input-group
-input[type="password"] {
-  display: table-cell; }
-  .input-group-addon:not(:first-child):not(:last-child),
-  .input-group-btn:not(:first-child):not(:last-child),
-  .input-group .form-control:not(:first-child):not(:last-child),
-  .input-group select:not(:first-child):not(:last-child),
-  .input-group input[type="text"]:not(:first-child):not(:last-child),
-  .input-group
-  input[type="password"]:not(:first-child):not(:last-child) {
-    border-radius: 0; }
-
-.input-group-addon,
-.input-group-btn {
-  width: 1%;
-  white-space: nowrap;
-  vertical-align: middle; }
-
-.input-group .form-control:first-child, .input-group select:first-child, .input-group input[type="text"]:first-child, .input-group
-input[type="password"]:first-child,
-.input-group-addon:first-child,
-.input-group-btn:first-child > .btn,
-.input-group-btn:first-child > input[type="submit"],
-.input-group-btn:first-child > input[type="button"],
-.input-group-btn:first-child > .context,
-.input-group-btn:first-child >
-input.destructive,
-.input-group-btn:first-child >
-input.standalone, #content-history
-.input-group-btn:first-child > input.standalone[type="submit"], #content
-.input-group-btn:first-child > a.link-parent, #content.dialog-wrapper .mceActionPanel
-.input-group-btn:first-child > input[type="submit"], .portalMessage.info span
-.input-group-btn:first-child > a,
-.input-group-btn:first-child > input[type="text"].text-widget.textline-field + input.searchButton,
-.input-group-btn:first-child > .btn-group > .btn,
-.input-group-btn:first-child > .btn-group > input[type="submit"],
-.input-group-btn:first-child > .btn-group > input[type="button"],
-.input-group-btn:first-child > .btn-group > .context,
-.input-group-btn:first-child > .btn-group >
-input.destructive,
-.input-group-btn:first-child > .btn-group >
-input.standalone, #content-history
-.input-group-btn:first-child > .btn-group > input.standalone[type="submit"], #content
-.input-group-btn:first-child > .btn-group > a.link-parent, #content.dialog-wrapper .mceActionPanel
-.input-group-btn:first-child > .btn-group > input[type="submit"], .portalMessage.info span
-.input-group-btn:first-child > .btn-group > a,
-.input-group-btn:first-child > .btn-group > input[type="text"].text-widget.textline-field + input.searchButton,
-.input-group-btn:first-child > .dropdown-toggle,
-.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > input[type="submit"]:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > input[type="button"]:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .context:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child >
-input.destructive:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child >
-input.standalone:not(:last-child):not(.dropdown-toggle), #content-history
-.input-group-btn:last-child > input.standalone[type="submit"]:not(:last-child):not(.dropdown-toggle), #content
-.input-group-btn:last-child > a.link-parent:not(:last-child):not(.dropdown-toggle), #content.dialog-wrapper .mceActionPanel
-.input-group-btn:last-child > input[type="submit"]:not(:last-child):not(.dropdown-toggle), .portalMessage.info span
-.input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > input[type="text"].text-widget.textline-field + input.searchButton:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
-.input-group-btn:last-child > .btn-group:not(:last-child) > input[type="submit"],
-.input-group-btn:last-child > .btn-group:not(:last-child) > input[type="button"],
-.input-group-btn:last-child > .btn-group:not(:last-child) > .context,
-.input-group-btn:last-child > .btn-group:not(:last-child) >
-input.destructive,
-.input-group-btn:last-child > .btn-group:not(:last-child) >
-input.standalone, #content-history
-.input-group-btn:last-child > .btn-group:not(:last-child) > input.standalone[type="submit"], #content
-.input-group-btn:last-child > .btn-group:not(:last-child) > a.link-parent, #content.dialog-wrapper .mceActionPanel
-.input-group-btn:last-child > .btn-group:not(:last-child) > input[type="submit"], .portalMessage.info span
-.input-group-btn:last-child > .btn-group:not(:last-child) > a,
-.input-group-btn:last-child > .btn-group:not(:last-child) > input[type="text"].text-widget.textline-field + input.searchButton {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0; }
-
-.input-group-addon:first-child {
-  border-right: 0; }
-
-.input-group .form-control:last-child, .input-group select:last-child, .input-group input[type="text"]:last-child, .input-group
-input[type="password"]:last-child,
-.input-group-addon:last-child,
-.input-group-btn:last-child > .btn,
-.input-group-btn:last-child > input[type="submit"],
-.input-group-btn:last-child > input[type="button"],
-.input-group-btn:last-child > .context,
-.input-group-btn:last-child >
-input.destructive,
-.input-group-btn:last-child >
-input.standalone, #content-history
-.input-group-btn:last-child > input.standalone[type="submit"], #content
-.input-group-btn:last-child > a.link-parent, #content.dialog-wrapper .mceActionPanel
-.input-group-btn:last-child > input[type="submit"], .portalMessage.info span
-.input-group-btn:last-child > a,
-.input-group-btn:last-child > input[type="text"].text-widget.textline-field + input.searchButton,
-.input-group-btn:last-child > .btn-group > .btn,
-.input-group-btn:last-child > .btn-group > input[type="submit"],
-.input-group-btn:last-child > .btn-group > input[type="button"],
-.input-group-btn:last-child > .btn-group > .context,
-.input-group-btn:last-child > .btn-group >
-input.destructive,
-.input-group-btn:last-child > .btn-group >
-input.standalone, #content-history
-.input-group-btn:last-child > .btn-group > input.standalone[type="submit"], #content
-.input-group-btn:last-child > .btn-group > a.link-parent, #content.dialog-wrapper .mceActionPanel
-.input-group-btn:last-child > .btn-group > input[type="submit"], .portalMessage.info span
-.input-group-btn:last-child > .btn-group > a,
-.input-group-btn:last-child > .btn-group > input[type="text"].text-widget.textline-field + input.searchButton,
-.input-group-btn:last-child > .dropdown-toggle,
-.input-group-btn:first-child > .btn:not(:first-child),
-.input-group-btn:first-child > input[type="submit"]:not(:first-child),
-.input-group-btn:first-child > input[type="button"]:not(:first-child),
-.input-group-btn:first-child > .context:not(:first-child),
-.input-group-btn:first-child >
-input.destructive:not(:first-child),
-.input-group-btn:first-child >
-input.standalone:not(:first-child), #content-history
-.input-group-btn:first-child > input.standalone[type="submit"]:not(:first-child), #content
-.input-group-btn:first-child > a.link-parent:not(:first-child), #content.dialog-wrapper .mceActionPanel
-.input-group-btn:first-child > input[type="submit"]:not(:first-child), .portalMessage.info span
-.input-group-btn:first-child > a:not(:first-child),
-.input-group-btn:first-child > input[type="text"].text-widget.textline-field + input.searchButton:not(:first-child),
-.input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
-.input-group-btn:first-child > .btn-group:not(:first-child) > input[type="submit"],
-.input-group-btn:first-child > .btn-group:not(:first-child) > input[type="button"],
-.input-group-btn:first-child > .btn-group:not(:first-child) > .context,
-.input-group-btn:first-child > .btn-group:not(:first-child) >
-input.destructive,
-.input-group-btn:first-child > .btn-group:not(:first-child) >
-input.standalone, #content-history
-.input-group-btn:first-child > .btn-group:not(:first-child) > input.standalone[type="submit"], #content
-.input-group-btn:first-child > .btn-group:not(:first-child) > a.link-parent, #content.dialog-wrapper .mceActionPanel
-.input-group-btn:first-child > .btn-group:not(:first-child) > input[type="submit"], .portalMessage.info span
-.input-group-btn:first-child > .btn-group:not(:first-child) > a,
-.input-group-btn:first-child > .btn-group:not(:first-child) > input[type="text"].text-widget.textline-field + input.searchButton {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0; }
-
-.input-group-addon:last-child {
-  border-left: 0; }
-
-.input-group-btn {
-  position: relative;
-  font-size: 0;
-  white-space: nowrap; }
-  .input-group-btn > .btn, .input-group-btn > input[type="submit"], .input-group-btn > input[type="button"], .input-group-btn > .context, .input-group-btn >
-  input.destructive, .input-group-btn >
-  input.standalone, #content-history .input-group-btn > input.standalone[type="submit"], #content .input-group-btn > a.link-parent, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"], .portalMessage.info span .input-group-btn > a, .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton {
-    position: relative; }
-    .input-group-btn > .btn + .btn, .input-group-btn > input[type="submit"] + .btn, .input-group-btn >
-    input.context[name="form.button.save"] + .btn, .input-group-btn >
-    input.context[name="form.actions.save"] + .btn, .input-group-btn > input[type="button"] + .btn, .input-group-btn > .context + .btn, .input-group-btn >
-    input.context + .btn, .input-group-btn >
-    input.destructive + .btn, .input-group-btn >
-    input.standalone + .btn, .input-group-btn >
-    input[type="submit"].discreet + .btn, .input-group-btn >
-    input.standalone[name="form.button.cancel"] + .btn, #content-history .input-group-btn > input.standalone[type="submit"] + .btn, #content .input-group-btn > a.link-parent + .btn, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] + .btn, .portalMessage.info span .input-group-btn > a + .btn, .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton + .btn, .input-group-btn > .btn + input[type="submit"], .input-group-btn > input[type="submit"] + input[type="submit"], .input-group-btn >
-    input.context[name="form.button.save"] + input[type="submit"], .input-group-btn >
-    input.context[name="form.actions.save"] + input[type="submit"], .input-group-btn > input[type="button"] + input[type="submit"], .input-group-btn > .context + input[type="submit"], .input-group-btn >
-    input.context + input[type="submit"], .input-group-btn >
-    input.destructive + input[type="submit"], .input-group-btn >
-    input.standalone + input[type="submit"], .input-group-btn >
-    input[type="submit"].discreet + input[type="submit"], .input-group-btn >
-    input.standalone[name="form.button.cancel"] + input[type="submit"], #content-history .input-group-btn > input.standalone[type="submit"] + input[type="submit"], #content .input-group-btn > a.link-parent + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] + input[type="submit"], .portalMessage.info span .input-group-btn > a + input[type="submit"], .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton + input[type="submit"], .input-group-btn > .btn +
-    input.context[name="form.button.save"], .input-group-btn > input[type="submit"] +
-    input.context[name="form.button.save"], .input-group-btn >
-    input.context[name="form.button.save"] +
-    input.context[name="form.button.save"], .input-group-btn >
-    input.context[name="form.actions.save"] +
-    input.context[name="form.button.save"], .input-group-btn > input[type="button"] +
-    input.context[name="form.button.save"], .input-group-btn > .context +
-    input.context[name="form.button.save"], .input-group-btn >
-    input.context +
-    input.context[name="form.button.save"], .input-group-btn >
-    input.destructive +
-    input.context[name="form.button.save"], .input-group-btn >
-    input.standalone +
-    input.context[name="form.button.save"], .input-group-btn >
-    input[type="submit"].discreet +
-    input.context[name="form.button.save"], .input-group-btn >
-    input.standalone[name="form.button.cancel"] +
-    input.context[name="form.button.save"], #content-history .input-group-btn > input.standalone[type="submit"] +
-    input.context[name="form.button.save"], #content .input-group-btn > a.link-parent +
-    input.context[name="form.button.save"], #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] +
-    input.context[name="form.button.save"], .portalMessage.info span .input-group-btn > a +
-    input.context[name="form.button.save"], .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton +
-    input.context[name="form.button.save"], .input-group-btn > .btn +
-    input.context[name="form.actions.save"], .input-group-btn > input[type="submit"] +
-    input.context[name="form.actions.save"], .input-group-btn >
-    input.context[name="form.button.save"] +
-    input.context[name="form.actions.save"], .input-group-btn >
-    input.context[name="form.actions.save"] +
-    input.context[name="form.actions.save"], .input-group-btn > input[type="button"] +
-    input.context[name="form.actions.save"], .input-group-btn > .context +
-    input.context[name="form.actions.save"], .input-group-btn >
-    input.context +
-    input.context[name="form.actions.save"], .input-group-btn >
-    input.destructive +
-    input.context[name="form.actions.save"], .input-group-btn >
-    input.standalone +
-    input.context[name="form.actions.save"], .input-group-btn >
-    input[type="submit"].discreet +
-    input.context[name="form.actions.save"], .input-group-btn >
-    input.standalone[name="form.button.cancel"] +
-    input.context[name="form.actions.save"], #content-history .input-group-btn > input.standalone[type="submit"] +
-    input.context[name="form.actions.save"], #content .input-group-btn > a.link-parent +
-    input.context[name="form.actions.save"], #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] +
-    input.context[name="form.actions.save"], .portalMessage.info span .input-group-btn > a +
-    input.context[name="form.actions.save"], .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton +
-    input.context[name="form.actions.save"], .input-group-btn > .btn + input[type="button"], .input-group-btn > input[type="submit"] + input[type="button"], .input-group-btn >
-    input.context[name="form.button.save"] + input[type="button"], .input-group-btn >
-    input.context[name="form.actions.save"] + input[type="button"], .input-group-btn > input[type="button"] + input[type="button"], .input-group-btn > .context + input[type="button"], .input-group-btn >
-    input.context + input[type="button"], .input-group-btn >
-    input.destructive + input[type="button"], .input-group-btn >
-    input.standalone + input[type="button"], .input-group-btn >
-    input[type="submit"].discreet + input[type="button"], .input-group-btn >
-    input.standalone[name="form.button.cancel"] + input[type="button"], #content-history .input-group-btn > input.standalone[type="submit"] + input[type="button"], #content .input-group-btn > a.link-parent + input[type="button"], #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] + input[type="button"], .portalMessage.info span .input-group-btn > a + input[type="button"], .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton + input[type="button"], .input-group-btn > .btn + .context, .input-group-btn > input[type="submit"] + .context, .input-group-btn >
-    input.context[name="form.button.save"] + .context, .input-group-btn >
-    input.context[name="form.actions.save"] + .context, .input-group-btn > input[type="button"] + .context, .input-group-btn > .context + .context, .input-group-btn >
-    input.context + .context, .input-group-btn >
-    input.destructive + .context, .input-group-btn >
-    input.standalone + .context, .input-group-btn >
-    input[type="submit"].discreet + .context, .input-group-btn >
-    input.standalone[name="form.button.cancel"] + .context, #content-history .input-group-btn > input.standalone[type="submit"] + .context, #content .input-group-btn > a.link-parent + .context, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] + .context, .portalMessage.info span .input-group-btn > a + .context, .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton + .context, .input-group-btn > .btn +
-    input.context, .input-group-btn > input[type="submit"] +
-    input.context, .input-group-btn >
-    input.context[name="form.button.save"] +
-    input.context, .input-group-btn >
-    input.context[name="form.actions.save"] +
-    input.context, .input-group-btn > input[type="button"] +
-    input.context, .input-group-btn > .context +
-    input.context, .input-group-btn >
-    input.context +
-    input.context, .input-group-btn >
-    input.destructive +
-    input.context, .input-group-btn >
-    input.standalone +
-    input.context, .input-group-btn >
-    input[type="submit"].discreet +
-    input.context, .input-group-btn >
-    input.standalone[name="form.button.cancel"] +
-    input.context, #content-history .input-group-btn > input.standalone[type="submit"] +
-    input.context, #content .input-group-btn > a.link-parent +
-    input.context, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] +
-    input.context, .portalMessage.info span .input-group-btn > a +
-    input.context, .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton +
-    input.context, .input-group-btn > .btn +
-    input.destructive, .input-group-btn > input[type="submit"] +
-    input.destructive, .input-group-btn >
-    input.context[name="form.button.save"] +
-    input.destructive, .input-group-btn >
-    input.context[name="form.actions.save"] +
-    input.destructive, .input-group-btn > input[type="button"] +
-    input.destructive, .input-group-btn > .context +
-    input.destructive, .input-group-btn >
-    input.context +
-    input.destructive, .input-group-btn >
-    input.destructive +
-    input.destructive, .input-group-btn >
-    input.standalone +
-    input.destructive, .input-group-btn >
-    input[type="submit"].discreet +
-    input.destructive, .input-group-btn >
-    input.standalone[name="form.button.cancel"] +
-    input.destructive, #content-history .input-group-btn > input.standalone[type="submit"] +
-    input.destructive, #content .input-group-btn > a.link-parent +
-    input.destructive, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] +
-    input.destructive, .portalMessage.info span .input-group-btn > a +
-    input.destructive, .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton +
-    input.destructive, .input-group-btn > .btn +
-    input.standalone, .input-group-btn > input[type="submit"] +
-    input.standalone, .input-group-btn >
-    input.context[name="form.button.save"] +
-    input.standalone, .input-group-btn >
-    input.context[name="form.actions.save"] +
-    input.standalone, .input-group-btn > input[type="button"] +
-    input.standalone, .input-group-btn > .context +
-    input.standalone, .input-group-btn >
-    input.context +
-    input.standalone, .input-group-btn >
-    input.destructive +
-    input.standalone, .input-group-btn >
-    input.standalone +
-    input.standalone, .input-group-btn >
-    input[type="submit"].discreet +
-    input.standalone, .input-group-btn >
-    input.standalone[name="form.button.cancel"] +
-    input.standalone, #content-history .input-group-btn > input.standalone[type="submit"] +
-    input.standalone, #content .input-group-btn > a.link-parent +
-    input.standalone, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] +
-    input.standalone, .portalMessage.info span .input-group-btn > a +
-    input.standalone, .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton +
-    input.standalone, .input-group-btn > .btn +
-    input[type="submit"].discreet, .input-group-btn > input[type="submit"] +
-    input[type="submit"].discreet, .input-group-btn >
-    input.context[name="form.button.save"] +
-    input[type="submit"].discreet, .input-group-btn >
-    input.context[name="form.actions.save"] +
-    input[type="submit"].discreet, .input-group-btn > input[type="button"] +
-    input[type="submit"].discreet, .input-group-btn > .context +
-    input[type="submit"].discreet, .input-group-btn >
-    input.context +
-    input[type="submit"].discreet, .input-group-btn >
-    input.destructive +
-    input[type="submit"].discreet, .input-group-btn >
-    input.standalone +
-    input[type="submit"].discreet, .input-group-btn >
-    input[type="submit"].discreet +
-    input[type="submit"].discreet, .input-group-btn >
-    input.standalone[name="form.button.cancel"] +
-    input[type="submit"].discreet, #content-history .input-group-btn > input.standalone[type="submit"] +
-    input[type="submit"].discreet, #content .input-group-btn > a.link-parent +
-    input[type="submit"].discreet, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] +
-    input[type="submit"].discreet, .portalMessage.info span .input-group-btn > a +
-    input[type="submit"].discreet, .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton +
-    input[type="submit"].discreet, .input-group-btn > .btn +
-    input.standalone[name="form.button.cancel"], .input-group-btn > input[type="submit"] +
-    input.standalone[name="form.button.cancel"], .input-group-btn >
-    input.context[name="form.button.save"] +
-    input.standalone[name="form.button.cancel"], .input-group-btn >
-    input.context[name="form.actions.save"] +
-    input.standalone[name="form.button.cancel"], .input-group-btn > input[type="button"] +
-    input.standalone[name="form.button.cancel"], .input-group-btn > .context +
-    input.standalone[name="form.button.cancel"], .input-group-btn >
-    input.context +
-    input.standalone[name="form.button.cancel"], .input-group-btn >
-    input.destructive +
-    input.standalone[name="form.button.cancel"], .input-group-btn >
-    input.standalone +
-    input.standalone[name="form.button.cancel"], .input-group-btn >
-    input[type="submit"].discreet +
-    input.standalone[name="form.button.cancel"], .input-group-btn >
-    input.standalone[name="form.button.cancel"] +
-    input.standalone[name="form.button.cancel"], #content-history .input-group-btn > input.standalone[type="submit"] +
-    input.standalone[name="form.button.cancel"], #content .input-group-btn > a.link-parent +
-    input.standalone[name="form.button.cancel"], #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] +
-    input.standalone[name="form.button.cancel"], .portalMessage.info span .input-group-btn > a +
-    input.standalone[name="form.button.cancel"], .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton +
-    input.standalone[name="form.button.cancel"], #content-history .input-group-btn > .btn + input.standalone[type="submit"], #content-history .input-group-btn > input[type="submit"] + input.standalone[type="submit"], #content-history .input-group-btn >
-    input.context[name="form.button.save"] + input.standalone[type="submit"], #content-history .input-group-btn >
-    input.context[name="form.actions.save"] + input.standalone[type="submit"], #content-history .input-group-btn > input[type="button"] + input.standalone[type="submit"], #content-history .input-group-btn > .context + input.standalone[type="submit"], #content-history .input-group-btn >
-    input.context + input.standalone[type="submit"], #content-history .input-group-btn >
-    input.destructive + input.standalone[type="submit"], #content-history .input-group-btn >
-    input.standalone + input.standalone[type="submit"], #content-history .input-group-btn >
-    input[type="submit"].discreet + input.standalone[type="submit"], #content-history .input-group-btn >
-    input.standalone[name="form.button.cancel"] + input.standalone[type="submit"], #content-history .input-group-btn > input.standalone[type="submit"] + input.standalone[type="submit"], #content #content-history .input-group-btn > a.link-parent + input.standalone[type="submit"], #content-history #content .input-group-btn > a.link-parent + input.standalone[type="submit"], #content.dialog-wrapper .mceActionPanel #content-history .input-group-btn > input[type="submit"] + input.standalone[type="submit"], #content-history #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] + input.standalone[type="submit"], .portalMessage.info span #content-history .input-group-btn > a + input.standalone[type="submit"], #content-history .portalMessage.info span .input-group-btn > a + input.standalone[type="submit"], #content-history .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton + input.standalone[type="submit"], #content .input-group-btn > .btn + a.link-parent, #content .input-group-btn > input[type="submit"] + a.link-parent, #content .input-group-btn >
-    input.context[name="form.button.save"] + a.link-parent, #content .input-group-btn >
-    input.context[name="form.actions.save"] + a.link-parent, #content .input-group-btn > input[type="button"] + a.link-parent, #content .input-group-btn > .context + a.link-parent, #content .input-group-btn >
-    input.context + a.link-parent, #content .input-group-btn >
-    input.destructive + a.link-parent, #content .input-group-btn >
-    input.standalone + a.link-parent, #content .input-group-btn >
-    input[type="submit"].discreet + a.link-parent, #content .input-group-btn >
-    input.standalone[name="form.button.cancel"] + a.link-parent, #content-history #content .input-group-btn > input.standalone[type="submit"] + a.link-parent, #content #content-history .input-group-btn > input.standalone[type="submit"] + a.link-parent, #content .input-group-btn > a.link-parent + a.link-parent, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] + a.link-parent, .portalMessage.info span #content .input-group-btn > a + a.link-parent, #content .portalMessage.info span .input-group-btn > a + a.link-parent, #content .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton + a.link-parent, #content.dialog-wrapper .mceActionPanel .input-group-btn > .btn + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn >
-    input.context[name="form.button.save"] + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn >
-    input.context[name="form.actions.save"] + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="button"] + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn > .context + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn >
-    input.context + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn >
-    input.destructive + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn >
-    input.standalone + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn >
-    input[type="submit"].discreet + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn >
-    input.standalone[name="form.button.cancel"] + input[type="submit"], #content-history #content.dialog-wrapper .mceActionPanel .input-group-btn > input.standalone[type="submit"] + input[type="submit"], #content.dialog-wrapper .mceActionPanel #content-history .input-group-btn > input.standalone[type="submit"] + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn > a.link-parent + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] + input[type="submit"], .portalMessage.info span #content.dialog-wrapper .mceActionPanel .input-group-btn > a + input[type="submit"], #content.dialog-wrapper .mceActionPanel .portalMessage.info span .input-group-btn > a + input[type="submit"], #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton + input[type="submit"], .portalMessage.info span .input-group-btn > .btn + a, .portalMessage.info span .input-group-btn > input[type="submit"] + a, .portalMessage.info span .input-group-btn >
-    input.context[name="form.button.save"] + a, .portalMessage.info span .input-group-btn >
-    input.context[name="form.actions.save"] + a, .portalMessage.info span .input-group-btn > input[type="button"] + a, .portalMessage.info span .input-group-btn > .context + a, .portalMessage.info span .input-group-btn >
-    input.context + a, .portalMessage.info span .input-group-btn >
-    input.destructive + a, .portalMessage.info span .input-group-btn >
-    input.standalone + a, .portalMessage.info span .input-group-btn >
-    input[type="submit"].discreet + a, .portalMessage.info span .input-group-btn >
-    input.standalone[name="form.button.cancel"] + a, #content-history .portalMessage.info span .input-group-btn > input.standalone[type="submit"] + a, .portalMessage.info span #content-history .input-group-btn > input.standalone[type="submit"] + a, #content .portalMessage.info span .input-group-btn > a.link-parent + a, .portalMessage.info span #content .input-group-btn > a.link-parent + a, #content.dialog-wrapper .mceActionPanel .portalMessage.info span .input-group-btn > input[type="submit"] + a, .portalMessage.info span #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"] + a, .portalMessage.info span .input-group-btn > a + a, .portalMessage.info span .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton + a, .input-group-btn > input[type="text"].text-widget.textline-field.btn + input.searchButton, .input-group-btn > input[type="text"].text-widget.textline-field[type="submit"] + input.searchButton, .input-group-btn >
-    input[type="text"].text-widget.textline-field.context[name="form.button.save"] + input.searchButton, .input-group-btn >
-    input[type="text"].text-widget.textline-field.context[name="form.actions.save"] + input.searchButton, .input-group-btn > input[type="text"].text-widget.textline-field[type="button"] + input.searchButton, .input-group-btn > input[type="text"].text-widget.textline-field.context + input.searchButton, .input-group-btn >
-    input[type="text"].text-widget.textline-field.context + input.searchButton, .input-group-btn >
-    input[type="text"].text-widget.textline-field.destructive + input.searchButton, .input-group-btn >
-    input[type="text"].text-widget.textline-field.standalone + input.searchButton, .input-group-btn >
-    input[type="text"].text-widget.textline-field[type="submit"].discreet + input.searchButton, .input-group-btn >
-    input[type="text"].text-widget.textline-field.standalone[name="form.button.cancel"] + input.searchButton, #content-history .input-group-btn > input[type="text"].text-widget.textline-field.standalone[type="submit"] + input.searchButton, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="text"].text-widget.textline-field[type="submit"] + input.searchButton, .input-group-btn > input[type="text"].text-widget.textline-field + input[type="text"].text-widget.textline-field.searchButton + input.searchButton {
-      margin-left: -1px; }
-    .input-group-btn > .btn:hover, .input-group-btn > input[type="submit"]:hover, .input-group-btn > input[type="button"]:hover, .input-group-btn > .context:hover, .input-group-btn >
-    input.destructive:hover, .input-group-btn >
-    input.standalone:hover, #content-history .input-group-btn > input.standalone[type="submit"]:hover, #content .input-group-btn > a.link-parent:hover, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"]:hover, .portalMessage.info span .input-group-btn > a:hover, .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton:hover, .input-group-btn > .btn:focus, .input-group-btn > input[type="submit"]:focus, .input-group-btn > input[type="button"]:focus, .input-group-btn > .context:focus, .input-group-btn >
-    input.destructive:focus, .input-group-btn >
-    input.standalone:focus, #content-history .input-group-btn > input.standalone[type="submit"]:focus, #content .input-group-btn > a.link-parent:focus, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"]:focus, .portalMessage.info span .input-group-btn > a:focus, .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton:focus, .input-group-btn > .btn:active, .input-group-btn > input[type="submit"]:active, .input-group-btn > input[type="button"]:active, .input-group-btn > .context:active, .input-group-btn >
-    input.destructive:active, .input-group-btn >
-    input.standalone:active, #content-history .input-group-btn > input.standalone[type="submit"]:active, #content .input-group-btn > a.link-parent:active, #content.dialog-wrapper .mceActionPanel .input-group-btn > input[type="submit"]:active, .portalMessage.info span .input-group-btn > a:active, .input-group-btn > input[type="text"].text-widget.textline-field + input.searchButton:active {
-      z-index: 2; }
-  
-  .input-group-btn:first-child > .btn,
-  .input-group-btn:first-child > input[type="submit"],
-  .input-group-btn:first-child > input[type="button"],
-  .input-group-btn:first-child > .context,
-  .input-group-btn:first-child >
-  input.destructive,
-  .input-group-btn:first-child >
-  input.standalone, #content-history
-  .input-group-btn:first-child > input.standalone[type="submit"], #content
-  .input-group-btn:first-child > a.link-parent, #content.dialog-wrapper .mceActionPanel
-  .input-group-btn:first-child > input[type="submit"], .portalMessage.info span
-  .input-group-btn:first-child > a,
-  .input-group-btn:first-child > input[type="text"].text-widget.textline-field + input.searchButton,
-  .input-group-btn:first-child > .btn-group {
-    margin-right: -1px; }
-  
-  .input-group-btn:last-child > .btn,
-  .input-group-btn:last-child > input[type="submit"],
-  .input-group-btn:last-child > input[type="button"],
-  .input-group-btn:last-child > .context,
-  .input-group-btn:last-child >
-  input.destructive,
-  .input-group-btn:last-child >
-  input.standalone, #content-history
-  .input-group-btn:last-child > input.standalone[type="submit"], #content
-  .input-group-btn:last-child > a.link-parent, #content.dialog-wrapper .mceActionPanel
-  .input-group-btn:last-child > input[type="submit"], .portalMessage.info span
-  .input-group-btn:last-child > a,
-  .input-group-btn:last-child > input[type="text"].text-widget.textline-field + input.searchButton,
-  .input-group-btn:last-child > .btn-group {
-    margin-left: -1px; }
-
-.caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-top: 4px dashed;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent; }
-
-.btn .caret, input[type="submit"] .caret, input[type="button"] .caret, .context .caret,
-input.destructive .caret,
-input.standalone .caret, #content-history input.standalone[type="submit"] .caret, #content a.link-parent .caret, #content.dialog-wrapper .mceActionPanel input[type="submit"] .caret, .portalMessage.info span a .caret, input[type="text"].text-widget.textline-field + input.searchButton .caret {
-  margin-left: 0; }
-
-.btn-lg .caret {
-  border-width: 5px 5px 0;
-  border-bottom-width: 0; }
+html body#content.mceContentBody a.buttonService,
+html body#content.mceContentBody a .buttonService,
+html body#content.mceContentBody .buttonService a {
+  color: #FFF !important; }
+  html body#content.mceContentBody a.buttonService:focus, html body#content.mceContentBody a.buttonService:hover,
+  html body#content.mceContentBody a .buttonService:focus,
+  html body#content.mceContentBody a .buttonService:hover,
+  html body#content.mceContentBody .buttonService a:focus,
+  html body#content.mceContentBody .buttonService a:hover {
+    color: #FFF !important; }
 
 .portalMessage {
   margin: 30px; }
@@ -5228,11 +4177,6 @@ select[size] {
 .pat-textareamimetypeselector {
   display: none; }
 
-input[type="text"][name*='.css_class'],
-input[type="text"][name*='.button_text'],
-input[type="text"].text-widget.textline-field {
-  max-width: 300px; }
-
 input[type="text"].text-widget.textline-field {
   display: inline-block; }
   input[type="text"].text-widget.textline-field + input.searchButton {
@@ -5242,321 +4186,17 @@ input[type="text"].text-widget.textline-field {
   display: block;
   font-size: 15px; }
 
-/** BARCELONETA */
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  min-width: 0; }
-
-legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: inherit;
-  color: #4d4d4d;
-  border: 0;
-  border-bottom: 1px solid #e5e5e5;
-  font-weight: 400; }
-
-input[type="search"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
-  line-height: normal; }
-
-input[type="file"] {
-  display: block; }
-
-input[type="range"] {
-  display: block;
-  width: 100%; }
-
-select[multiple],
-select[size] {
-  height: auto;
-  min-width: 10em; }
-
-/* select[size="1"] {
-  height: 34px;
-} */
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px; }
-
-output {
-  display: block;
-  padding-top: 7px;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #696969; }
-
-/*.form-control,*/
-input[type="text"], input[type="number"], input[type="email"], input[type="password"], textarea, select {
-  display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: inherit;
+#content .field input[type="text"][name$=".title"],
+#archetypes-fieldname-title input {
+  font-family: inherit;
   line-height: inherit;
   color: inherit;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; }
+  letter-spacing: normal;
+  font-weight: 600;
+  height: auto; }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-  border-color: #64bee8;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 190, 232, 0.6);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 190, 232, 0.6); }
-
-input[type="text"]::-moz-placeholder,
-input[type="email"]::-moz-placeholder,
-input[type="password"]::-moz-placeholder,
-textarea::-moz-placeholder,
-select::-moz-placeholder {
-  color: #777777;
-  opacity: 1; }
-
-input[type="text"]:-ms-input-placeholder,
-input[type="email"]:-ms-input-placeholder,
-input[type="password"]:-ms-input-placeholder,
-textarea:-ms-input-placeholder,
-select:-ms-input-placeholder {
-  color: #777777; }
-
-input[type="text"]::-webkit-input-placeholder,
-input[type="email"]::-webkit-input-placeholder,
-input[type="password"]::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder,
-select::-webkit-input-placeholder {
-  color: #777777; }
-
-input[type="text"][disabled],
-input[type="email"][disabled],
-input[type="password"][disabled],
-textarea[disabled],
-select[disabled],
-input[type="text"][readonly],
-input[type="email"][readonly],
-input[type="password"][readonly],
-textarea[readonly],
-select[readonly],
-fieldset[disabled] input[type="text"],
-fieldset[disabled] input[type="email"],
-fieldset[disabled] input[type="password"],
-fieldset[disabled] textarea,
-fieldset[disabled] select {
-  cursor: not-allowed;
-  background-color: #e5e5e5;
-  opacity: 1; }
-
-textarea {
-  min-height: 9em;
-  min-width: 10em;
-  resize: vertical; }
-  textarea[name='form.widgets.IRichText.text'] {
-    min-height: 12em;
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
-
-textarea {
-  min-height: 9em;
-  min-width: 10em;
-  resize: vertical; }
-  textarea[name='form.widgets.IRichText.text'] {
-    min-height: 12em;
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
-
-select {
-  width: unset;
-  display: inline-block; }
-
-input[type="search"] {
-  -webkit-appearance: none; }
-
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
-  line-height: 34px;
-  line-height: 1.428571429 \0; }
-
-input[type="radio"][disabled],
-fieldset[disabled] input[type="radio"],
-input[type="checkbox"][disabled],
-fieldset[disabled]
-input[type="checkbox"] {
-  cursor: not-allowed; }
-
-.field {
-  margin-bottom: 15px; }
-  .field span.option {
-    display: block; }
-
-.field.error {
-  background: #fbe8e4;
-  -webkit-box-shadow: 0 0 0 5px #fbe8e4;
-          box-shadow: 0 0 0 5px #fbe8e4; }
-
-.field.error .help-block,
-.field.error .control-label, .template-contact-info #content form .field.error label,
-.field.error .radio,
-.field.error .checkbox,
-.field.error .radio-inline,
-.field.error .checkbox-inline {
-  color: rgba(0, 0, 0, 0.5); }
-
-.field.error .form-control, .field.error select, .field.error input[type="text"], .field.error
-input[type="password"] {
-  border-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-
-.field.error .form-control:focus, .field.error select:focus, .field.error input[type="text"]:focus, .field.error
-input[type="password"]:focus {
-  border-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px rgba(51, 51, 51, 0.5);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px rgba(51, 51, 51, 0.5); }
-
-.field.error .input-group-addon {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.5);
-  background-color: #ec9c8d; }
-
-.field.error .form-control-feedback {
-  color: rgba(0, 0, 0, 0.5); }
-
-.field.error > label,
-.field.error div.error {
-  color: #ff0000; }
-
-.field.error div.error {
-  padding-left: 30px;
-  font-weight: 400; }
-
-.field.error div.error:before {
-  background-color: #ac493f;
-  content: "×";
-  font-size: 14px;
-  font-weight: 400;
-  margin-left: -30px;
-  margin-right: 5px;
-  display: inline-block;
-  border-radius: 20px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.9);
-  width: 16px;
-  height: 16px;
-  line-height: 16px;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
-  top: -1px;
-  position: relative; }
-
-.field.error input,
-.field.error textarea,
-.field.error select {
-  border-color: #ff0000; }
-
-.field.error input:focus,
-.field.error textarea:focus,
-.field.error select:focus {
-  -webkit-box-shadow: 0 0 8px #ffcccc;
-          box-shadow: 0 0 8px #ffcccc; }
-
-.formHelp {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #666666;
-  font-weight: 400;
-  font-style: italic; }
-
-.formControls {
-  border-top: 1px solid #cccccc;
-  background: #fcfcfd;
-  padding: 12px;
-  -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05); }
-
-.plone-modal-body .formControls {
-  border: none;
-  background: transparent;
-  padding: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
-
-label .required:after {
-  color: #ff0000;
-  content: "•";
-  font-size: 200%;
-  line-height: 0;
-  position: relative;
-  top: 7px;
-  margin-left: -4px; }
-
-.searchField.portlet-search-gadget,
-#sharing-user-group-search,
-#select-rules {
-  width: 100%;
-  display: inline-block; }
-
-.searchField.portlet-search-gadget + .searchButton,
-#sharing-user-group-search + #sharing-search-button,
-#select-rules + input {
-  position: relative;
-  float: right;
-  margin-top: -34px; }
-
-#search-results li {
-  margin: 12px 0; }
-  #search-results li .croppedDescription {
-    margin-bottom: 0; }
-
-.highlightedSearchTerm {
-  background: #fea;
-  -webkit-box-shadow: 0 0 1px 1px #fea;
-          box-shadow: 0 0 1px 1px #fea; }
-
-.search-date-options > div, .search-type-options > div {
-  display: inline-block;
-  margin-right: 12px; }
-
-.optionsToggle label {
-  font-weight: 300;
-  color: #696969; }
-
-.ordered-selection-field td {
-  vertical-align: middle;
-  text-align: center; }
-
-.ordered-selection-field td button {
-  display: block;
-  margin: auto; }
-
-.folder-factories {
-  list-style: none; }
-
-.widget input + label {
-  display: inline; }
+#content .field input[type="text"][name$=".title"] {
+  font-size: 1.1em; }
 
 .template-standard_view .entry .summary {
   font-weight: bold;
@@ -5648,13 +4288,162 @@ label .required:after {
   padding-bottom: 40px; }
 
 div.mce-edit-area,
-body#tinymce {
-  padding: 14px; }
+body#content.mceContentBody {
+  padding: 1px; }
   div.mce-edit-area table td, div.mce-edit-area table th,
-  body#tinymce table td,
-  body#tinymce table th {
+  body#content.mceContentBody table td,
+  body#content.mceContentBody table th {
     font-size: inherit;
     font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#content .richTextWidget .mceFirst table {
+  margin-bottom: 0; }
+
+.plonepopup .mceFocus .mceTop span {
+  background-color: #CCC;
+  text-transform: uppercase;
+  font-size: 0.8em; }
+
+#content.dialog-wrapper {
+  padding-left: 0;
+  padding-right: 0; }
+  #content.dialog-wrapper fieldset legend {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0.5em 0; }
+  #content.dialog-wrapper fieldset.columnlibraries {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 27% !important; }
+    @media (min-width: 768px) {
+      #content.dialog-wrapper fieldset.columnlibraries {
+        float: left;
+        width: 33.3333333333%; } }
+  #content.dialog-wrapper fieldset.subPanel .widget input[type="text"],
+  #content.dialog-wrapper fieldset.subPanel .widget select {
+    max-width: 80%;
+    width: auto; }
+  #content.dialog-wrapper fieldset.subPanel .widget input#description {
+    margin: 0; }
+  #content.dialog-wrapper fieldset .field {
+    margin: 0.5em 0; }
+  #content.dialog-wrapper #internalpath {
+    margin-left: 0; }
+  #content.dialog-wrapper form {
+    margin: 0; }
+
+#plonebrowser .widget.radioscrolllist input[type='radio'] {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid darkgray;
+  border-radius: 50%;
+  outline: none;
+  -webkit-box-shadow: 0 0 5px 0px gray inset;
+          box-shadow: 0 0 5px 0px gray inset;
+  position: relative;
+  top: 0.1em; }
+
+#plonebrowser .widget.radioscrolllist input[type='radio']:hover {
+  -webkit-box-shadow: 0 0 5px 0px orange inset;
+          box-shadow: 0 0 5px 0px orange inset; }
+
+#plonebrowser .widget.radioscrolllist input[type='radio']:before {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: 20% auto;
+  border-radius: 50%; }
+
+#plonebrowser .widget.radioscrolllist .current input[checked='checked']:before {
+  background: #555; }
+
+#plonebrowser .widget #searchtext {
+  height: 30px;
+  padding: 2px 10px; }
+
+#plonebrowser div#content.dialog-wrapper {
+  font-size: 0.95em !important; }
+  #plonebrowser div#content.dialog-wrapper .formHelp {
+    margin-bottom: 1em; }
+
+#plonebrowser div.row {
+  margin: 0; }
+
+#plonebrowser div.cell {
+  float: left;
+  min-height: 1em; }
+
+#plonebrowser .thumbnail:hover {
+  width: auto;
+  position: static; }
+
+#plonebrowser #footer {
+  padding: 1em 0;
+  border-top: 1px dashed #CCC;
+  margin-top: 2em;
+  position: static; }
+
+#plonebrowser #internallinkcontainer {
+  height: auto; }
+
+#plonebrowser #general_panel.width-3\3a 4 {
+  width: 72%;
+  margin-right: 2%; }
+
+#plonebrowser #details_panel #description {
+  width: 90%;
+  margin: 0; }
+
+#plonebrowser #details_panel div.radioscrolllist {
+  height: auto; }
+
+#plonebrowser #details_panel div.radioscrolllist #title,
+#plonebrowser #details_panel div.radioscrolllist #cssstyle,
+#plonebrowser #details_panel div.radioscrolllist #title {
+  width: auto !important;
+  max-width: 90%; }
+
+#plonebrowser #details_panel .field {
+  line-height: normal; }
+
+#plonebrowser.image-browser #common-link-fields {
+  display: none; }
+
+textarea#htmlSource {
+  max-height: 300px; }
+
+div.panel_wrapper div.current {
+  height: 180px; }
+
+body#content.mceContentBody {
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 180%; }
+
+body#content.mceContentBody a:link, body#content.mceContentBody a:visited {
+  color: #AC1B01 !important;
+  border-color: #AC1B01 !important;
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid !important; }
+
+body#content.mceContentBody a:focus, body#content.mceContentBody a:hover {
+  color: #1C2024 !important;
+  border-color: #1C2024 !important;
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid !important; }
+
+.ploneSkin table.mceLayout td.mceToolbar {
+  background-color: #FAFAFA !important; }
+
+.ploneSkin .mceText,
+.ploneSkin .mceOpen {
+  border-bottom-width: 1px !important; }
+
+.plonepopup .mceAlert .mceOk {
+  height: auto; }
 
 .pattern-relateditems-container ul.select2-choices {
   padding: 10px; }
@@ -5769,21 +4558,27 @@ body#tinymce {
 
 .portletAssignments {
   padding: 2rem 0 0; }
+  .portletAssignments .portletHeader {
+    font-size: 1em; }
   .portletAssignments h4 {
     text-transform: uppercase; }
   .portletAssignments .managedPortlet.portlet .portletHeader > a {
-    color: #AC1B01; }
+    color: #AC1B01;
+    display: block; }
   .portletAssignments .managedPortlet.portlet .portletHeader {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.3em; }
+    .portletAssignments .managedPortlet.portlet .portletHeader .managedPortletActions {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .portletAssignments .managedPortlet.portlet .portletHeader .managedPortletActions button {
+        padding: 0.3em; }
   .portletAssignments .managedPortlet.inheritedPortlet {
     margin: 1rem; }
     .portletAssignments .managedPortlet.inheritedPortlet .portletHeader {
@@ -5793,12 +4588,17 @@ body#tinymce {
         color: #AC1B01; }
   .portletAssignments .portlet-group {
     padding: 0 0 2rem; }
-  .portletAssignments .managedPortletActions {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
   .portletAssignments .blockedPortlet .managedPortletActions {
     opacity: .5; }
+  .portletAssignments select {
+    display: block; }
+  .portletAssignments .formControls {
+    background: transparent;
+    padding: 1em 0;
+    margin: 1em 0; }
+
+#portal-footer-wrapper div.managePortletsLink, #portal-footer-wrapper a.managePortletsFallback {
+  background-color: rgba(221, 221, 221, 0.2); }
 
 .plone-modal-wrapper .plone-modal .plone-modal-dialog {
   width: 100%;
@@ -5830,9 +4630,9 @@ body#tinymce {
   @media (min-width: 992px) {
     .plone-modal-wrapper .plone-modal .plone-modal-content {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     .plone-modal-wrapper .plone-modal .plone-modal-content {
-      width: 1270px; } }
+      width: 1330px; } }
 
 .plone-modal-wrapper .plone-modal.fade {
   opacity: 0;
@@ -5899,121 +4699,6 @@ body.plone-toolbar-left-expanded .plone-modal-wrapper .plone-modal .plone-modal-
   .plone-modal-content .wcvideo-container > div {
     margin: auto; }
 
-#plone-contentmenu-portletmanager .plone-toolbar-submenu-header,
-#plone-contentmenu-factories .plone-toolbar-submenu-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
-  padding: 10px 15px; }
-  #plone-contentmenu-portletmanager .plone-toolbar-submenu-header span,
-  #plone-contentmenu-factories .plone-toolbar-submenu-header span {
-    opacity: 0.7;
-    font-size: 1.1em; }
-
-#plone-contentmenu-portletmanager .plonetoolbar-contenttype a:focus, #plone-contentmenu-portletmanager .plonetoolbar-contenttype a:active,
-#plone-contentmenu-factories .plonetoolbar-contenttype a:focus,
-#plone-contentmenu-factories .plonetoolbar-contenttype a:active {
-  background: rgba(255, 255, 255, 0.1); }
-
-#plone-contentmenu-display .plonetoolbar-display-view {
-  padding-left: 10px; }
-  #plone-contentmenu-display .plonetoolbar-display-view.actionSeparator {
-    padding-left: 0; }
-    #plone-contentmenu-display .plonetoolbar-display-view.actionSeparator span {
-      opacity: 0.7;
-      font-size: 1.1em; }
-  #plone-contentmenu-display .plonetoolbar-display-view .actionMenuSelected {
-    background: rgba(255, 255, 255, 0.1); }
-
-body#visual-portal-wrapper.pat-plone .outer-wrapper [class*="contenttype-"]:before {
-  font-family: "Fontello";
-  font-size: 100%;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  left: inherit;
-  display: inline-block;
-  color: inherit;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  margin-right: 6px; }
-
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-folder:before {
-  content: '\e801'; }
-
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-document:before {
-  content: '\e80e'; }
-
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-file:before {
-  content: '\e811'; }
-
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-link:before {
-  content: '\e806'; }
-
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-image:before {
-  content: '\e810'; }
-
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-collection:before {
-  content: '\e808'; }
-
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-event:before {
-  content: '\e809'; }
-
-body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-news-item:before {
-  content: '\e80f'; }
-
-body#visual-portal-wrapper.pat-plone #edit-zone {
-  z-index: 5000; }
-  body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"] {
-    padding: 5px 15px 5px 40px; }
-  body#visual-portal-wrapper.pat-plone #edit-zone a {
-    color: #FFF; }
-  body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"]:after {
-    font-family: "Fontello";
-    font-size: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    left: 15px;
-    display: inline-block;
-    color: inherit;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    margin-right: 6px;
-    position: absolute;
-    content: '\e834'; }
-  body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-folder:after {
-    content: '\e801'; }
-  body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-document:after {
-    content: '\e80e'; }
-  body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-file:after {
-    content: '\e811'; }
-  body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-link:after {
-    content: '\e806'; }
-  body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-image:after {
-    content: '\e810'; }
-  body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-collection:after {
-    content: '\e808'; }
-  body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-event:after {
-    content: '\e809'; }
-  body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
-    content: '\e80f'; }
-
-#popover-rename.active {
-  min-width: 400px; }
-  #popover-rename.active .popover-content {
-    padding-top: 0; }
-  #popover-rename.active div.item {
-    display: block; }
-    #popover-rename.active div.item div.form-group, #popover-rename.active div.item [class*='template-mail_password_form'] #mail_password div.field, [class*='template-mail_password_form'] #mail_password #popover-rename.active div.item div.field, #popover-rename.active div.item .template-contact-info #content form div.field, .template-contact-info #content form #popover-rename.active div.item div.field {
-      float: none;
-      margin-bottom: 0; }
-      #popover-rename.active div.item div.form-group label, #popover-rename.active div.item [class*='template-mail_password_form'] #mail_password div.field label, [class*='template-mail_password_form'] #mail_password #popover-rename.active div.item div.field label, #popover-rename.active div.item .template-contact-info #content form div.field label, .template-contact-info #content form #popover-rename.active div.item div.field label {
-        margin-top: 1rem; }
-      #popover-rename.active div.item div.form-group input, #popover-rename.active div.item [class*='template-mail_password_form'] #mail_password div.field input, [class*='template-mail_password_form'] #mail_password #popover-rename.active div.item div.field input, #popover-rename.active div.item .template-contact-info #content form div.field input, .template-contact-info #content form #popover-rename.active div.item div.field input {
-        height: auto;
-        line-height: inherit; }
-
 .image-icon,
 .image-tile {
   float: right; }
@@ -6035,9 +4720,9 @@ body#visual-portal-wrapper.pat-plone #edit-zone {
   @media (min-width: 992px) {
     #portal-columns {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     #portal-columns {
-      width: 1270px; } }
+      width: 1330px; } }
 
 #portal-column-one,
 #portal-column-two {
@@ -6127,7 +4812,11 @@ body#visual-portal-wrapper.pat-plone #edit-zone {
 
 h1.documentFirstHeading {
   margin-top: 0;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-bottom: 0.4em; }
+  .template-edit h1.documentFirstHeading {
+    font-size: 1.9em;
+    font-weight: 600; }
 
 #content-core ul li,
 #content-core ol li {
@@ -6144,15 +4833,24 @@ blockquote {
 #portal-columns img {
   max-width: 100%; }
 
+b, strong {
+  font-size: 1.05em;
+  font-weight: 600; }
+
 #header-banner,
 #portal-header {
   position: relative; }
 
+body.userrole-anonymous #portal-personaltools-wrapper {
+  display: none; }
+
+#portal-personaltools-wrapper {
+  border-bottom: 0; }
+
 #header-banner {
   background-color: #303030;
   color: #FFF;
-  font-weight: 400;
-  padding: 0.8rem 0; }
+  font-weight: 400; }
   #header-banner .header-banner-inner {
     margin-right: auto;
     margin-left: auto;
@@ -6169,9 +4867,9 @@ blockquote {
     @media (min-width: 992px) {
       #header-banner .header-banner-inner {
         width: auto; } }
-    @media (min-width: 1300px) {
+    @media (min-width: 1360px) {
       #header-banner .header-banner-inner {
-        width: 1270px; } }
+        width: 1330px; } }
   #header-banner .header-banner-owner,
   #header-banner .header-banner-second-link {
     width: 50%;
@@ -6195,7 +4893,7 @@ blockquote {
     #header-banner .dropdown-languages button {
       background: transparent;
       color: #FFF;
-      padding: 0 0.5rem;
+      padding: .8rem .5rem;
       border-radius: 0;
       -webkit-box-shadow: none;
               box-shadow: none;
@@ -6210,8 +4908,13 @@ blockquote {
         margin-left: 0.3rem; }
       #header-banner .dropdown-languages button:focus, #header-banner .dropdown-languages button:hover {
         background-color: rgba(255, 255, 255, 0.4); }
-    #header-banner .dropdown-languages ul {
-      font-size: 1em; }
+    #header-banner .dropdown-languages ul.languages {
+      font-size: 1em;
+      right: 0;
+      left: auto;
+      min-width: 0; }
+      #header-banner .dropdown-languages ul.languages.open {
+        display: block; }
 
 #portal-header-wrapper {
   background-color: #AC1B01; }
@@ -6243,9 +4946,9 @@ blockquote {
   @media (min-width: 992px) {
     #portal-header {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     #portal-header {
-      width: 1270px; } }
+      width: 1330px; } }
   #portal-header:before, #portal-header:after {
     display: none; }
   #portal-header #portal-logo {
@@ -6335,8 +5038,7 @@ blockquote {
     #portal-header #portal-logo {
       padding: 0; }
       #portal-header #portal-logo img {
-        width: 13vw;
-        height: 13vw;
+        height: 10vw;
         margin-right: 1.5rem; }
       #portal-header #portal-logo span {
         font-size: 4vw;
@@ -6349,53 +5051,42 @@ blockquote {
       padding: 5px 15px 5px 10px;
       font-size: 1.35em; } }
 
-@media (max-width: 991px) {
-  .searchOpened,
-  .menuOpened {
-    position: relative; }
-    .searchOpened:after,
-    .menuOpened:after {
-      content: "";
-      display: block;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(255, 255, 255, 0.8);
-      z-index: 500;
-      position: fixed;
-      top: 0;
-      left: 0; }
-  .searchOpened:after {
-    z-index: 200; } }
-
 /* Viewlet ricerca in testata */
 #portal-searchbox {
   text-align: right;
-  margin: 1rem 0; }
+  margin: 1em 0 0; }
+  #portal-searchbox .LSBox {
+    background: #FFF; }
   #portal-searchbox #searchGadget {
-    border: 0;
     padding: 0.8rem 1.4rem;
+    border: 1px solid #AC1B01;
+    border-right: 0;
     width: 25rem;
     border-radius: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
     float: left;
-    height: auto;
+    height: 50px;
     color: #313131; }
     #portal-searchbox #searchGadget:focus {
-      border-color: #515151; }
+      border-color: #515151;
+      background: none; }
+    @media (max-width: 991px) {
+      #portal-searchbox #searchGadget {
+        border-right: 1px solid #AC1B01; } }
   #portal-searchbox button.search-button {
     color: #1C2024;
     background-color: #EEE;
     text-align: center;
-    width: 4.4rem;
-    padding: 0.9rem 0 1.5rem 0;
-    line-height: 0.68;
-    border: 0;
-    margin-left: -0.5rem;
+    width: 5rem;
+    padding: 1.1rem 0 1.5rem;
+    line-height: 1;
+    border: 1px solid #AC1B01;
+    border-left: 0;
     border-radius: 0;
     font-weight: 400;
     vertical-align: baseline;
-    height: auto;
+    height: 50px;
     text-shadow: none; }
     #portal-searchbox button.search-button:before {
       display: inline-block;
@@ -6406,7 +5097,8 @@ blockquote {
       -moz-osx-font-smoothing: grayscale;
       font-size: 2.4rem; }
     #portal-searchbox button.search-button:focus, #portal-searchbox button.search-button:hover {
-      background-color: #515151; }
+      background-color: #515151;
+      color: #FFF; }
 
 .livesearch-results li.search-result {
   text-align: left; }
@@ -6677,7 +5369,8 @@ blockquote {
   #header-social p {
     display: inline-block;
     margin: 0;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    font-size: 0.9em; }
   #header-social ul {
     display: inline-block;
     padding-left: 1rem;
@@ -6755,13 +5448,16 @@ blockquote {
       -webkit-box-shadow: none;
               box-shadow: none; }
     .plone-navbar-header .plone-navbar-toggle:before {
-      background: url("++theme++redturtle.agid.theme/images/menu.png");
-      height: 1.2em;
-      width: 1.2em;
-      display: block;
-      content: '';
-      background-size: cover;
-      background-repeat: no-repeat; }
+      background: none;
+      height: auto;
+      width: auto;
+      display: inline-block;
+      font-family: FontAwesome;
+      content: "";
+      color: rgba(255, 255, 255, 0.87);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      vertical-align: middle; }
 
 #portal-mainnavigation {
   background-color: #AC1B01;
@@ -6787,20 +5483,20 @@ blockquote {
     @media (min-width: 992px) {
       #portal-mainnavigation ul#portal-globalnav {
         width: auto; } }
-    @media (min-width: 1300px) {
+    @media (min-width: 1360px) {
       #portal-mainnavigation ul#portal-globalnav {
-        width: 1270px; } }
-    #portal-mainnavigation ul#portal-globalnav li {
+        width: 1330px; } }
+    #portal-mainnavigation ul#portal-globalnav > li {
       margin: 0 2%; }
-      #portal-mainnavigation ul#portal-globalnav li:first-child {
+      #portal-mainnavigation ul#portal-globalnav > li:first-child {
         margin-left: 0; }
-      #portal-mainnavigation ul#portal-globalnav li:first-child {
+      #portal-mainnavigation ul#portal-globalnav > li:first-child {
         margin-left: 0; }
-      #portal-mainnavigation ul#portal-globalnav li a {
+      #portal-mainnavigation ul#portal-globalnav > li > a {
         color: #FFF;
         font-weight: 700;
         display: block; }
-      #portal-mainnavigation ul#portal-globalnav li a.closeMenuLink {
+      #portal-mainnavigation ul#portal-globalnav > li a.closeMenuLink {
         display: inline-block; }
   #portal-mainnavigation button#globalnav-close {
     display: none; }
@@ -6838,11 +5534,11 @@ blockquote {
       max-height: 1000px; }
   #portal-mainnavigation ul#portal-globalnav {
     display: block; }
-    #portal-mainnavigation ul#portal-globalnav li {
+    #portal-mainnavigation ul#portal-globalnav > li {
       display: block;
       margin: 0 0 2%;
       padding: 0; }
-      #portal-mainnavigation ul#portal-globalnav li a {
+      #portal-mainnavigation ul#portal-globalnav > li > a {
         display: inline-block; } }
 
 #portal-header ul#portal-globalnav {
@@ -6870,7 +5566,8 @@ blockquote {
         left: 0;
         width: 100%;
         top: 100%;
-        z-index: 1000; }
+        z-index: 1000;
+        margin-top: 0; }
         #portal-header #portal-searchbox.open #searchGadget_form {
           width: 100%; }
         #portal-header #portal-searchbox.open #searchGadget {
@@ -6882,7 +5579,7 @@ blockquote {
       display: inline-block;
       border: 0;
       background: transparent;
-      color: #000;
+      color: #FFF;
       padding: 5px 20px;
       text-align: left;
       font-size: 1.5em;
@@ -6900,7 +5597,7 @@ blockquote {
       display: inline-block;
       font-family: FontAwesome;
       content: "";
-      color: inherit;
+      color: rgba(255, 255, 255, 0.87);
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       vertical-align: middle; }
@@ -6908,16 +5605,10 @@ blockquote {
       display: inline-block;
       font-family: ita;
       content: "🗵";
-      color: inherit;
+      color: rgba(255, 255, 255, 0.87);
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       font-size: 0.9em; } }
-
-@media (max-width: 600px) {
-  #portal-header #portal-logo img {
-    width: 13vw;
-    height: 13vw;
-    margin-right: 1.5rem; } }
 
 @media (max-width: 767px) {
   #portal-header button#globalnav-toggle,
@@ -6925,34 +5616,45 @@ blockquote {
     padding: 5px 15px 5px 10px;
     font-size: 1.35em; } }
 
-.searchOpened,
-.menuOpened {
-  position: relative; }
-  .searchOpened:after,
+@media (max-width: 991px) {
+  .searchOpened,
+  .menuOpened {
+    position: relative; }
+    .searchOpened:after,
+    .menuOpened:after {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(255, 255, 255, 0.8);
+      z-index: 500;
+      position: fixed;
+      top: 0;
+      left: 0; }
+  .searchOpened:after {
+    z-index: 200; }
+  .searchOpened #portal-personaltools-wrapper,
+  .searchOpened #header-banner,
+  .searchOpened #portal-header-wrapper {
+    z-index: 300;
+    position: relative; }
   .menuOpened:after {
-    content: "";
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.8);
-    z-index: 500;
-    position: fixed;
-    top: 0;
-    left: 0; }
-
-.searchOpened:after {
-  z-index: 200; }
-
-.menuOpened:after {
-  z-index: 200; }
+    z-index: 200; } }
 
 #portal-mainnavigation {
-  position: relative; }
+  position: relative;
+  border-top: 1px solid #FFF;
+  background-color: #8A1702; }
+  #portal-mainnavigation.open {
+    border-top: 0; }
   #portal-mainnavigation ul#portal-globalnav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0; }
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     #portal-mainnavigation ul#portal-globalnav .closeSubmenu a.closeSubmenuLink {
       color: #333;
       display: inline-block; }
@@ -6965,47 +5667,60 @@ blockquote {
         overflow: hidden;
         clip: rect(0, 0, 0, 0);
         border: 0; }
-    #portal-mainnavigation ul#portal-globalnav li {
-      width: 100%;
-      padding: 1.2rem 2%;
+    #portal-mainnavigation ul#portal-globalnav > li {
+      padding: 0;
       margin: 0; }
-      #portal-mainnavigation ul#portal-globalnav li a.menuTabLink {
-        display: block;
+      #portal-mainnavigation ul#portal-globalnav > li a.menuTabLink {
+        display: inline-block;
         position: relative;
-        padding-right: 20px;
-        border: 0; }
-        #portal-mainnavigation ul#portal-globalnav li a.menuTabLink:not(.clickandgo):after {
+        padding: 0.7em 2.5em 0.7em 1.2em;
+        border: 0;
+        font-size: 0.95em; }
+        #portal-mainnavigation ul#portal-globalnav > li a.menuTabLink:not(.clickandgo) span + span:after {
           display: inline-block;
           font-family: FontAwesome;
-          content: "";
+          content: "";
           color: inherit;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           position: absolute;
-          right: 0;
-          top: 0; }
-        #portal-mainnavigation ul#portal-globalnav li a.menuTabLink span + span {
-          font-weight: 400; }
-        #portal-mainnavigation ul#portal-globalnav li a.menuTabLink:focus, #portal-mainnavigation ul#portal-globalnav li a.menuTabLink:hover {
-          border: 0; }
-      #portal-mainnavigation ul#portal-globalnav li.tabOpen {
+          right: -1.8em;
+          bottom: 0.1rem;
+          font-size: 0.8em; }
+        #portal-mainnavigation ul#portal-globalnav > li a.menuTabLink span + span {
+          font-weight: 300;
+          position: relative;
+          display: inline-block; }
+        #portal-mainnavigation ul#portal-globalnav > li a.menuTabLink:focus, #portal-mainnavigation ul#portal-globalnav > li a.menuTabLink:hover {
+          border: 0;
+          background-color: rgba(255, 255, 255, 0.25); }
+      #portal-mainnavigation ul#portal-globalnav > li.tabOpen {
         background: #DECDBB; }
-        #portal-mainnavigation ul#portal-globalnav li.tabOpen a.menuTabLink:after {
-          display: inline-block;
-          font-family: FontAwesome;
-          content: "";
-          color: inherit;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale; }
-      #portal-mainnavigation ul#portal-globalnav li span {
+        #portal-mainnavigation ul#portal-globalnav > li.tabOpen a.menuTabLink {
+          color: #791301; }
+          #portal-mainnavigation ul#portal-globalnav > li.tabOpen a.menuTabLink span + span:after {
+            display: inline-block;
+            font-family: FontAwesome;
+            content: "";
+            color: inherit;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale; }
+      #portal-mainnavigation ul#portal-globalnav > li span {
         display: block; }
     #portal-mainnavigation ul#portal-globalnav #submenu-details {
       position: absolute;
-      background: #FAFAFA;
+      background-color: #F3F3F3;
+      border-bottom: 5px solid #AC1B01;
+      -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+              box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
       width: 100%;
       left: 0;
       top: 100%;
       z-index: 10; }
+      #portal-mainnavigation ul#portal-globalnav #submenu-details li {
+        display: block; }
+        #portal-mainnavigation ul#portal-globalnav #submenu-details li a {
+          border: 0; }
     #portal-mainnavigation ul#portal-globalnav .submenuDetailsContent {
       margin-right: auto;
       margin-left: auto;
@@ -7013,7 +5728,10 @@ blockquote {
       padding-right: 15px;
       padding: 20px 15px;
       margin: auto;
-      color: #000; }
+      color: #000;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
       #portal-mainnavigation ul#portal-globalnav .submenuDetailsContent:before, #portal-mainnavigation ul#portal-globalnav .submenuDetailsContent:after {
         content: " ";
         display: table; }
@@ -7025,10 +5743,47 @@ blockquote {
       @media (min-width: 992px) {
         #portal-mainnavigation ul#portal-globalnav .submenuDetailsContent {
           width: auto; } }
-      @media (min-width: 1300px) {
+      @media (min-width: 1360px) {
         #portal-mainnavigation ul#portal-globalnav .submenuDetailsContent {
-          width: 1270px; } }
+          width: 1330px; } }
+    #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper {
+      -webkit-box-flex: 2;
+          -ms-flex: 2 0 0px;
+              flex: 2 0 0; }
+      #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper .dynamicSectionLabel {
+        text-transform: uppercase;
+        margin-bottom: 2.5rem; }
+      #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper ul {
+        -webkit-columns: 2;
+                columns: 2; }
+        #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper ul li {
+          padding-bottom: 0.5em; }
+          #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper ul li a {
+            color: #1C2024; }
+            #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper ul li a:focus, #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper ul li a:hover {
+              text-decoration: underline !important; }
+        @media (max-width: 500px) {
+          #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper ul {
+            -webkit-columns: 1;
+                    columns: 1; } }
+      #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper a.dynamicSectionExploreLabel {
+        border: 1px solid #AC1B01;
+        border-radius: 3px;
+        padding: 0.2em 1em;
+        display: inline-block;
+        margin-top: 1em;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        font-weight: 600; }
+        #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper a.dynamicSectionExploreLabel:after {
+          content: ' ›'; }
+        #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper a.dynamicSectionExploreLabel:focus, #portal-mainnavigation ul#portal-globalnav .submenuDynamicWrapper a.dynamicSectionExploreLabel:hover {
+          background-color: #AC1B01;
+          color: #FFF; }
     #portal-mainnavigation ul#portal-globalnav .submenuStaticWrapper {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 25%;
+              flex: 1 0 25%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -7130,16 +5885,34 @@ blockquote {
           #portal-mainnavigation ul#portal-globalnav > li > * {
             padding: 10px 15px; }
           #portal-mainnavigation ul#portal-globalnav > li > a.menuTabLink {
-            color: #000; }
+            color: #000;
+            width: 100%; }
             #portal-mainnavigation ul#portal-globalnav > li > a.menuTabLink span {
               display: inline-block;
               padding-right: 5px;
               font-size: 0.8em; }
+            #portal-mainnavigation ul#portal-globalnav > li > a.menuTabLink:not(.clickandgo) span + span:after {
+              display: none; }
             #portal-mainnavigation ul#portal-globalnav > li > a.menuTabLink:not(.clickandgo):after {
+              display: inline-block;
+              font-family: FontAwesome;
+              content: "";
+              color: inherit;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              position: absolute;
+              font-size: 0.8em;
               right: 15px;
               top: 25%; }
           #portal-mainnavigation ul#portal-globalnav > li.tabOpen .menuTabLink {
             color: #791301; }
+            #portal-mainnavigation ul#portal-globalnav > li.tabOpen .menuTabLink:not(.clickandgo):after {
+              display: inline-block;
+              font-family: FontAwesome;
+              content: "";
+              color: inherit;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale; }
             #portal-mainnavigation ul#portal-globalnav > li.tabOpen .menuTabLink:hover span, #portal-mainnavigation ul#portal-globalnav > li.tabOpen .menuTabLink:focus span {
               border: 0; }
           #portal-mainnavigation ul#portal-globalnav > li.tabOpen #submenu-details {
@@ -7154,7 +5927,11 @@ blockquote {
           position: static;
           background: inherit; }
         #portal-mainnavigation ul#portal-globalnav .submenuDetailsContent {
-          padding: 0; }
+          padding: 0; } }
+      @media (max-width: 991px) and (max-width: 991px) {
+        #portal-mainnavigation ul#portal-globalnav .submenuDetailsContent {
+          display: block; } }
+  @media (max-width: 991px) {
         #portal-mainnavigation ul#portal-globalnav .submenuStaticWrapper {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
@@ -7165,6 +5942,9 @@ blockquote {
             padding: 0 10px 10px; }
             #portal-mainnavigation ul#portal-globalnav .submenuStaticWrapper .staticItem h4 {
               margin: 0; } }
+      @media (max-width: 991px) and (max-width: 991px) {
+        #portal-mainnavigation ul#portal-globalnav .submenuStaticWrapper {
+          padding-bottom: 15px; } }
   @media (max-width: 767px) {
     #portal-mainnavigation .globalnavClose {
       height: 50px; }
@@ -7262,7 +6042,7 @@ blockquote {
   .sfondo-chiaro a {
     border-color: #AC1B01; }
     .sfondo-chiaro a:focus, .sfondo-chiaro a:hover {
-      border-color: #791301; }
+      border-color: #1C2024; }
   .sfondo-chiaro .news-collection .newsWrapper {
     background-color: #FFF; }
 
@@ -7290,7 +6070,8 @@ blockquote {
     text-align: center; }
     .pat-tiles-management .actionsTiles a.plone-btn {
       text-transform: uppercase;
-      font-weight: 600; }
+      font-weight: 600;
+      color: #FFF; }
     .pat-tiles-management .actionsTiles .available-tiles .list-group {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -7306,52 +6087,52 @@ blockquote {
 .tileTitle {
   font-size: 1.6em; }
 
-.section-homepage #portal-breadcrumbs,
-.template-search #portal-breadcrumbs {
-  display: none; }
+.tileWrapper {
+  position: relative; }
+  .tileWrapper .tileEditButtons {
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+  .tileWrapper.editableTile {
+    background: rgba(245, 239, 186, 0.7); }
 
-.template-newsitem_view #viewlet-above-content #portal-breadcrumbs li:last-of-type {
-  display: none; }
-
-#viewlet-above-content #portal-breadcrumbs {
+#breadcrumbs {
   background: #EEE;
-  padding: 0; }
-  #viewlet-above-content #portal-breadcrumbs ol {
-    font-size: 0.95em;
-    font-weight: 300;
-    padding: 10px 0px;
-    margin: 0; }
-    #viewlet-above-content #portal-breadcrumbs ol li {
-      padding: 0; }
-      #viewlet-above-content #portal-breadcrumbs ol li:before {
-        content: '/';
-        padding: 0 0.4em; }
-      #viewlet-above-content #portal-breadcrumbs ol li:nth-child(-n+2) {
-        padding: 0 0.4em; }
-        #viewlet-above-content #portal-breadcrumbs ol li:nth-child(-n+2):before {
-          display: none; }
-      #viewlet-above-content #portal-breadcrumbs ol li a {
-        color: #AC1B01; }
-        #viewlet-above-content #portal-breadcrumbs ol li a:focus, #viewlet-above-content #portal-breadcrumbs ol li a:hover {
-          color: #000; }
-    #viewlet-above-content #portal-breadcrumbs ol li#breadcrumbs-home {
-      width: 30px;
-      padding-left: 30px;
-      padding-right: 0;
-      position: relative;
-      text-indent: -9999px; }
-      #viewlet-above-content #portal-breadcrumbs ol li#breadcrumbs-home a {
-        display: inline-block; }
-        #viewlet-above-content #portal-breadcrumbs ol li#breadcrumbs-home a:before {
-          display: inline-block;
-          font-family: FontAwesome;
-          content: "";
-          color: #AC1B01;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          position: absolute;
-          left: 5px;
-          text-indent: 0; }
+  padding: 0.6em 0; }
+  #breadcrumbs #portal-breadcrumbs {
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+    #breadcrumbs #portal-breadcrumbs:before, #breadcrumbs #portal-breadcrumbs:after {
+      content: " ";
+      display: table; }
+    #breadcrumbs #portal-breadcrumbs:after {
+      clear: both; }
+    @media (min-width: 768px) {
+      #breadcrumbs #portal-breadcrumbs {
+        width: auto; } }
+    @media (min-width: 992px) {
+      #breadcrumbs #portal-breadcrumbs {
+        width: auto; } }
+    @media (min-width: 1360px) {
+      #breadcrumbs #portal-breadcrumbs {
+        width: 1330px; } }
+    #breadcrumbs #portal-breadcrumbs #breadcrumbs-you-are-here {
+      display: none; }
+    #breadcrumbs #portal-breadcrumbs a {
+      font-size: 0.95em;
+      font-weight: 600; }
+    #breadcrumbs #portal-breadcrumbs span#breadcrumbs-current {
+      font-size: 0.9em; }
+    #breadcrumbs #portal-breadcrumbs span.breadcrumbSeparator {
+      background: transparent url("++resource++camcomskin.padova.images/arrow_right.svg") no-repeat center center;
+      background-size: contain;
+      width: 1em;
+      height: 0.6em;
+      display: inline-block;
+      margin: 0 0.3em; }
 
 .newsImageContainer {
   float: right;
@@ -7377,7 +6158,7 @@ blockquote {
     margin: 0;
     position: relative;
     left: 16px;
-    top: 13px;
+    top: 10px;
     font-size: 19px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
@@ -7389,7 +6170,7 @@ blockquote {
 
 #portal-footer-wrapper {
   background-color: #30373D;
-  padding: 50px 0px;
+  padding: 0 0 50px;
   color: #fff; }
   #portal-footer-wrapper .portal-footer {
     margin-right: auto;
@@ -7409,12 +6190,11 @@ blockquote {
     @media (min-width: 992px) {
       #portal-footer-wrapper .portal-footer {
         width: auto; } }
-    @media (min-width: 1300px) {
+    @media (min-width: 1360px) {
       #portal-footer-wrapper .portal-footer {
-        width: 1270px; } }
+        width: 1330px; } }
   #portal-footer-wrapper a {
-    color: #65DDE0;
-    text-decoration: underline; }
+    color: #65DDE0; }
     #portal-footer-wrapper a:hover {
       color: #21a1a4;
       border: 0; }
@@ -7422,7 +6202,8 @@ blockquote {
     list-style: none;
     padding-left: 0; }
     #portal-footer-wrapper ul li {
-      padding-bottom: 5px; }
+      padding-bottom: 5px;
+      display: table; }
       #portal-footer-wrapper ul li:before {
         padding-right: 15px;
         display: inline-block;
@@ -7431,16 +6212,78 @@ blockquote {
         color: #fff;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        font-size: 0.4em; }
+        font-size: 0.4em;
+        display: table-cell;
+        text-align: right; }
   #portal-footer-wrapper .footer-logo,
   #portal-footer-wrapper .footer-actions {
     display: block;
     width: 100%;
     clear: both; }
   #portal-footer-wrapper .footer-logo {
-    padding-left: 15px; }
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 50px 15px 15px;
+    margin-left: auto;
+    margin-right: auto; }
+    #portal-footer-wrapper .footer-logo:before, #portal-footer-wrapper .footer-logo:after {
+      content: " ";
+      display: table; }
+    #portal-footer-wrapper .footer-logo:after {
+      clear: both; }
+    @media (min-width: 768px) {
+      #portal-footer-wrapper .footer-logo {
+        width: auto; } }
+    @media (min-width: 992px) {
+      #portal-footer-wrapper .footer-logo {
+        width: auto; } }
+    @media (min-width: 1360px) {
+      #portal-footer-wrapper .footer-logo {
+        width: 1330px; } }
+    #portal-footer-wrapper .footer-logo > * {
+      padding: 0; }
+    #portal-footer-wrapper .footer-logo .portletHeader {
+      float: left;
+      margin-top: 25px; }
+    #portal-footer-wrapper .footer-logo .portletItem {
+      float: right; }
     #portal-footer-wrapper .footer-logo img {
       max-width: 80vw; }
+    @media (max-width: 767px) {
+      #portal-footer-wrapper .footer-logo {
+        margin-bottom: 0;
+        padding: 30px 15px 0; }
+        #portal-footer-wrapper .footer-logo .portletHeader {
+          padding-bottom: 30px; }
+        #portal-footer-wrapper .footer-logo .portletHeader,
+        #portal-footer-wrapper .footer-logo .portletItem {
+          float: none;
+          margin: 0; } }
+  #portal-footer-wrapper #portlets-footer {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 0;
+    padding-bottom: 0; }
+    #portal-footer-wrapper #portlets-footer:before, #portal-footer-wrapper #portlets-footer:after {
+      content: " ";
+      display: table; }
+    #portal-footer-wrapper #portlets-footer:after {
+      clear: both; }
+    @media (min-width: 768px) {
+      #portal-footer-wrapper #portlets-footer {
+        width: auto; } }
+    @media (min-width: 992px) {
+      #portal-footer-wrapper #portlets-footer {
+        width: auto; } }
+    @media (min-width: 1360px) {
+      #portal-footer-wrapper #portlets-footer {
+        width: 1330px; } }
+    #portal-footer-wrapper #portlets-footer a {
+      text-decoration: underline !important; }
   #portal-footer-wrapper .footer-actions {
     padding: 5px 15px 0; }
     #portal-footer-wrapper .footer-actions ul {
@@ -7549,24 +6392,79 @@ blockquote {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: block;
-    font-size: 1.5em; }
+    font-size: 2em; }
+  #portal-footer-wrapper .newsletter .newsletter-link {
+    font-size: 1.1em; }
+  #portal-footer-wrapper .newsletter .newsletter-text {
+    font-size: 0.9em;
+    font-weight: 100;
+    padding-top: 10px; }
   #portal-footer-wrapper hr {
     border-color: #979797;
     margin-left: 0;
     width: 100%;
     max-width: 300px; }
   #portal-footer-wrapper .portletHeader {
+    background: transparent;
+    border: 0;
+    font-size: 1.5em; }
+  #portal-footer-wrapper .portletItem h2,
+  #portal-footer-wrapper .portletItem h4 {
+    font-size: 1.2em;
+    margin-top: 12px;
+    margin-bottom: 14px;
+    text-transform: uppercase; }
+  #portal-footer-wrapper .contentwellportlets {
+    margin-left: 0;
+    margin-right: 0; }
+    #portal-footer-wrapper .contentwellportlets > div {
+      width: 22%;
+      padding: 20px; }
+      #portal-footer-wrapper .contentwellportlets > div:first-of-type {
+        width: 34%; }
+    @media (max-width: 1024px) {
+      #portal-footer-wrapper .contentwellportlets {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap; }
+        #portal-footer-wrapper .contentwellportlets > div, #portal-footer-wrapper .contentwellportlets > div:first-of-type {
+          width: 50%; } }
+    @media (max-width: 767px) {
+      #portal-footer-wrapper .contentwellportlets > div, #portal-footer-wrapper .contentwellportlets > div:first-of-type {
+        width: 100%; } }
+  #portal-footer-wrapper ul#portal-siteactions {
     display: none; }
-
-.documentDescription {
-  padding-left: 20px;
-  margin: 30px 0 40px;
-  border-left: 9px solid #c1c1c1; }
+  #portal-footer-wrapper #portal-colophon {
+    display: none; }
 
 #parent-fieldname-text a {
   border-bottom: 1px solid #AC1B01; }
   #parent-fieldname-text a:hover, #parent-fieldname-text a:focus {
-    border-bottom: 1px solid #791301; }
+    border-bottom: 1px solid #1C2024; }
+
+#content .documentDescription,
+#content #description {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-bottom: 1.6em; }
+
+#content #archetypes-fieldname-description textarea#description {
+  font-weight: 400; }
+
+#content .pullquote {
+  font-size: 1.3em;
+  letter-spacing: normal !important;
+  font-family: inherit; }
+
+#content .callout {
+  background: #F0F0F0;
+  border: 0;
+  border-top: 3px solid #AC1B01; }
 
 .section-homepage #portal-top {
   background: #fff; }
@@ -7658,7 +6556,8 @@ blockquote {
   padding: 20px 0px; }
 
 .tile-collection ul.tileContent {
-  list-style: none;
+  list-style: none !important;
+  margin-left: 0 !important;
   padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7711,11 +6610,16 @@ blockquote {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    height: 100%; }
-    .tile-collection .collectionItemWrapper a:hover .newsTitle span,
-    .tile-collection .collectionItemWrapper a:hover .videoTitle span, .tile-collection .collectionItemWrapper a:focus .newsTitle span,
-    .tile-collection .collectionItemWrapper a:focus .videoTitle span {
-      border-bottom: 1px solid #000; }
+    height: 100%;
+    border-bottom: 0 !important;
+    padding-left: 0 !important;
+    background: none; }
+    .tile-collection .collectionItemWrapper a:hover, .tile-collection .collectionItemWrapper a:focus {
+      border-bottom: 0 !important; }
+      .tile-collection .collectionItemWrapper a:hover .newsTitle span,
+      .tile-collection .collectionItemWrapper a:hover .videoTitle span, .tile-collection .collectionItemWrapper a:focus .newsTitle span,
+      .tile-collection .collectionItemWrapper a:focus .videoTitle span {
+        border-bottom: 1px solid #000; }
   .tile-collection .collectionItemWrapper .collectionItemImage img {
     width: 100%;
     height: auto; }
@@ -7891,9 +6795,9 @@ blockquote {
     @media (min-width: 992px) {
       .news-highlight .tileBody {
         width: auto; } }
-    @media (min-width: 1300px) {
+    @media (min-width: 1360px) {
       .news-highlight .tileBody {
-        width: 1270px; } }
+        width: 1330px; } }
   .news-highlight .tile-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7925,7 +6829,7 @@ blockquote {
       font-weight: 700;
       line-height: 1.2em; }
       .news-highlight .tile-content .news-infos .news-title a:focus, .news-highlight .tile-content .news-infos .news-title a:hover {
-        border-bottom: 1px solid #791301; }
+        border-bottom: 1px solid #1C2024; }
     .news-highlight .tile-content .news-infos .news-description {
       font-size: 2.8rem; }
     .news-highlight .tile-content .item-image img {
@@ -7983,9 +6887,9 @@ blockquote {
   @media (min-width: 992px) {
     .online-services {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     .online-services {
-      width: 1270px; } }
+      width: 1330px; } }
   .online-services ul.tileContent {
     list-style: none;
     padding-left: 0;
@@ -8091,9 +6995,9 @@ blockquote {
     @media (min-width: 992px) {
       .news-big-photo .tileBody {
         width: auto; } }
-    @media (min-width: 1300px) {
+    @media (min-width: 1360px) {
       .news-big-photo .tileBody {
-        width: 1270px; } }
+        width: 1330px; } }
     .news-big-photo .tileBody .tile-content {
       max-width: 600px;
       margin: 3% auto 3% 5%;
@@ -8121,7 +7025,7 @@ blockquote {
           font-weight: 600;
           border-bottom: 1px solid #AC1B01; }
           .news-big-photo .tileBody .tile-content .news-date-more .show-more a:focus, .news-big-photo .tileBody .tile-content .news-date-more .show-more a:hover {
-            border-color: #791301; }
+            border-color: #1C2024; }
         .news-big-photo .tileBody .tile-content .news-date-more .news-date {
           font-size: 0.9em;
           color: #515151; }
@@ -8154,7 +7058,7 @@ h3.tileTitle,
     color: #666;
     padding-right: 0.5rem; }
   #plone-document-byline a:focus, #plone-document-byline a:hover {
-    border-bottom: 1px solid #791301; }
+    border-bottom: 1px solid #1C2024; }
 
 table {
   width: auto; }
@@ -8175,42 +7079,39 @@ table {
 .invisible {
   visibility: inherit; }
 
-#parent-fieldname-text.pat-autotoc .autotoc-nav {
+#content dl.portlet.toc {
   float: none;
-  border: 0;
-  padding: 0.8em 0; }
-  #parent-fieldname-text.pat-autotoc .autotoc-nav a {
-    padding-left: 1.4em;
+  width: auto;
+  border-top: 1px dashed #bbb;
+  border-bottom: 1px dashed #bbb;
+  padding-top: 1.3em;
+  padding-bottom: 1em;
+  margin-bottom: 2.3em; }
+  #content dl.portlet.toc dt {
+    border: 0;
+    padding-left: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
     position: relative;
-    margin-bottom: 0.2em !important; }
-    #parent-fieldname-text.pat-autotoc .autotoc-nav a:before {
+    font-size: 0.95em;
+    font-weight: 600;
+    background-color: transparent; }
+    #content dl.portlet.toc dt:before {
       display: inline-block;
       font-family: FontAwesome;
-      content: "";
+      content: "";
       color: inherit;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       position: absolute;
-      top: 0.05em;
       left: 0;
-      color: #1C2024; }
-  #parent-fieldname-text.pat-autotoc .autotoc-nav .autotoc-level-1 {
-    margin: 0;
-    padding-left: 0; }
-    #parent-fieldname-text.pat-autotoc .autotoc-nav .autotoc-level-1:before {
-      display: none; }
-  #parent-fieldname-text.pat-autotoc .autotoc-nav .autotoc-level-2 {
-    margin: 0; }
-  #parent-fieldname-text.pat-autotoc .autotoc-nav .autotoc-level-3,
-  #parent-fieldname-text.pat-autotoc .autotoc-nav .autotoc-level-4,
-  #parent-fieldname-text.pat-autotoc .autotoc-nav .autotoc-level-5,
-  #parent-fieldname-text.pat-autotoc .autotoc-nav .autotoc-level-6 {
-    padding-left: 1em; }
-    #parent-fieldname-text.pat-autotoc .autotoc-nav .autotoc-level-3:before,
-    #parent-fieldname-text.pat-autotoc .autotoc-nav .autotoc-level-4:before,
-    #parent-fieldname-text.pat-autotoc .autotoc-nav .autotoc-level-5:before,
-    #parent-fieldname-text.pat-autotoc .autotoc-nav .autotoc-level-6:before {
-      content: '\f105'; }
+      top: 1px;
+      font-size: 1.2em;
+      font-weight: 400; }
+  #content dl.portlet.toc dd.portletItem {
+    padding-bottom: 0; }
+    #content dl.portlet.toc dd.portletItem > ol {
+      margin-left: 3em; }
 
 .portlet {
   margin-bottom: 1.5rem; }
@@ -8227,7 +7128,7 @@ table {
 .portletContent a {
   border-bottom: 1px solid transparent; }
   .portletContent a:hover, .portletContent a:focus {
-    border-bottom-color: #791301; }
+    border-bottom-color: #1C2024; }
 
 .portletNavigationTree nav.portletContent ul.navTree {
   margin: 0;
@@ -8353,7 +7254,7 @@ table {
       #category ul li a {
         border-bottom: 1px solid #AC1B01; }
         #category ul li a:hover, #category ul li a:focus {
-          border-color: #791301; }
+          border-color: #1C2024; }
 
 .documentActions {
   float: right; }
@@ -8395,7 +7296,7 @@ table {
       margin-bottom: 1.5rem;
       position: relative; }
       .relatedItems #relatedItemBox ul li a:focus, .relatedItems #relatedItemBox ul li a:hover {
-        border-bottom: 1px solid #791301; }
+        border-bottom: 1px solid #1C2024; }
       .relatedItems #relatedItemBox ul li a img.image-icon {
         display: none; }
       .relatedItems #relatedItemBox ul li:before {
@@ -8437,10 +7338,10 @@ table {
     .ThreeColumnsPage,
     .template-tiles_page_view .ThreeColumnsPage {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     .ThreeColumnsPage,
     .template-tiles_page_view .ThreeColumnsPage {
-      width: 1270px; } }
+      width: 1330px; } }
   .ThreeColumnsPage .tile-advanced-static .tile-container,
   .ThreeColumnsPage .tile-container,
   .template-tiles_page_view .ThreeColumnsPage .tile-advanced-static .tile-container,
@@ -8509,7 +7410,7 @@ table {
     .PagesTileStatic a:focus, .PagesTileStatic a:hover,
     .tile-advanced-static.PagesTileStatic a:focus,
     .tile-advanced-static.PagesTileStatic a:hover {
-      border-bottom: 1px solid #791301; }
+      border-bottom: 1px solid #1C2024; }
   .PagesTileStatic h3.tileTitle,
   .tile-advanced-static.PagesTileStatic h3.tileTitle {
     font-size: 2.5rem;
@@ -8523,8 +7424,8 @@ table {
       .PagesTileStatic h3.tileTitle a:focus, .PagesTileStatic h3.tileTitle a:hover,
       .tile-advanced-static.PagesTileStatic h3.tileTitle a:focus,
       .tile-advanced-static.PagesTileStatic h3.tileTitle a:hover {
-        color: #791301;
-        border-bottom: 1px solid #791301; }
+        color: #1C2024;
+        border-bottom: 1px solid #1C2024; }
   .PagesTileStatic .tile-text ul,
   .tile-advanced-static.PagesTileStatic .tile-text ul {
     margin: 1.5rem 0;
@@ -8540,7 +7441,7 @@ table {
         .PagesTileStatic .tile-text ul li a:focus, .PagesTileStatic .tile-text ul li a:hover,
         .tile-advanced-static.PagesTileStatic .tile-text ul li a:focus,
         .tile-advanced-static.PagesTileStatic .tile-text ul li a:hover {
-          border-bottom: 1px solid #791301; }
+          border-bottom: 1px solid #1C2024; }
 
 .PagesTileCollection .tileContent {
   display: -webkit-box;
@@ -8570,7 +7471,7 @@ table {
   .PagesTileCollection .TextWrapper a {
     border-bottom: 1px solid #AC1B01; }
     .PagesTileCollection .TextWrapper a:focus, .PagesTileCollection .TextWrapper a:hover {
-      border-bottom: 1px solid #791301; }
+      border-bottom: 1px solid #1C2024; }
   .PagesTileCollection .TextWrapper h1, .PagesTileCollection .TextWrapper h2, .PagesTileCollection .TextWrapper h3, .PagesTileCollection .TextWrapper h4 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -8579,8 +7480,8 @@ table {
       color: #000;
       border-bottom: 0 none; }
       .PagesTileCollection .TextWrapper h1 a:focus, .PagesTileCollection .TextWrapper h1 a:hover, .PagesTileCollection .TextWrapper h2 a:focus, .PagesTileCollection .TextWrapper h2 a:hover, .PagesTileCollection .TextWrapper h3 a:focus, .PagesTileCollection .TextWrapper h3 a:hover, .PagesTileCollection .TextWrapper h4 a:focus, .PagesTileCollection .TextWrapper h4 a:hover {
-        color: #791301;
-        border-bottom: 1px solid #791301; }
+        color: #1C2024;
+        border-bottom: 1px solid #1C2024; }
   .PagesTileCollection .TextWrapper ul {
     margin: 1.5rem 0;
     padding: 0;
@@ -8591,7 +7492,7 @@ table {
       .PagesTileCollection .TextWrapper ul li a {
         border-bottom: 0 none; }
         .PagesTileCollection .TextWrapper ul li a:focus, .PagesTileCollection .TextWrapper ul li a:hover {
-          border-bottom: 1px solid #791301; }
+          border-bottom: 1px solid #1C2024; }
 
 .section-homepage .share,
 .template-edit .share {
@@ -8929,7 +7830,7 @@ body.portaltype-event #parent-fieldname-text {
         font-weight: 700;
         font-size: 2rem; }
         .news-area-tematica ul.tileContent li.collectionItem .newsText .newsTitle a:focus, .news-area-tematica ul.tileContent li.collectionItem .newsText .newsTitle a:hover {
-          border-bottom: 1px solid #791301; }
+          border-bottom: 1px solid #1C2024; }
         .news-area-tematica ul.tileContent li.collectionItem .newsText .newsTitle h3 {
           margin: 0;
           font-size: inherit; }
@@ -8964,8 +7865,8 @@ body.portaltype-event #parent-fieldname-text {
         line-height: 1em;
         color: #1C2024; }
         .servizi-area-tematica ul.tileContent li a:focus, .servizi-area-tematica ul.tileContent li a:hover {
-          color: #791301;
-          border-bottom: 1px solid #791301; }
+          color: #1C2024;
+          border-bottom: 1px solid #1C2024; }
       .servizi-area-tematica ul.tileContent li:before {
         display: inline-block;
         font-family: FontAwesome;
@@ -9112,10 +8013,10 @@ nav.pagination {
     .section-homepage .tiles-slot .tilesList,
     .template-tiles_page_view .tiles-slot .tilesList {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     .section-homepage .tiles-slot .tilesList,
     .template-tiles_page_view .tiles-slot .tilesList {
-      width: 1270px; } }
+      width: 1330px; } }
 
 .section-homepage .tiles-slot #viewlet-below-content,
 .template-tiles_page_view .tiles-slot #viewlet-below-content {
@@ -9140,10 +8041,10 @@ nav.pagination {
     .section-homepage .tiles-slot #viewlet-below-content,
     .template-tiles_page_view .tiles-slot #viewlet-below-content {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     .section-homepage .tiles-slot #viewlet-below-content,
     .template-tiles_page_view .tiles-slot #viewlet-below-content {
-      width: 1270px; } }
+      width: 1330px; } }
 
 .section-homepage .tile-advanced-static .tile-container,
 .template-tiles_page_view .tile-advanced-static .tile-container {
@@ -9167,10 +8068,10 @@ nav.pagination {
     .section-homepage .tile-advanced-static .tile-container,
     .template-tiles_page_view .tile-advanced-static .tile-container {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     .section-homepage .tile-advanced-static .tile-container,
     .template-tiles_page_view .tile-advanced-static .tile-container {
-      width: 1270px; } }
+      width: 1330px; } }
 
 .section-homepage .existing-content-tile,
 .template-tiles_page_view .existing-content-tile {
@@ -9194,10 +8095,10 @@ nav.pagination {
     .section-homepage .existing-content-tile,
     .template-tiles_page_view .existing-content-tile {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     .section-homepage .existing-content-tile,
     .template-tiles_page_view .existing-content-tile {
-      width: 1270px; } }
+      width: 1330px; } }
 
 .section-homepage .aree-tematiche,
 .section-homepage [class*='collection-container'],
@@ -9245,12 +8146,12 @@ nav.pagination {
     .template-tiles_page_view [class*='collection-container'],
     .template-tiles_page_view .PagesTileCollection .tileContent {
       width: auto; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1360px) {
     .section-homepage .aree-tematiche,
     .section-homepage [class*='collection-container'],
     .section-homepage .PagesTileCollection .tileContent,
     .template-tiles_page_view .aree-tematiche,
     .template-tiles_page_view [class*='collection-container'],
     .template-tiles_page_view .PagesTileCollection .tileContent {
-      width: 1270px; } }
+      width: 1330px; } }
 /*# sourceMappingURL=cciaa.css.map */

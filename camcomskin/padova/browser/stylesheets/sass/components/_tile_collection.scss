@@ -107,7 +107,8 @@
     }
 
     ul.tileContent {
-        list-style: none;
+        list-style: none !important;
+        margin-left: 0 !important;
         padding-left: 0;
         display: flex;
         flex-flow: row wrap;
@@ -164,9 +165,14 @@
             display: flex;
             flex-flow: column nowrap;
             height: 100%;
+            border-bottom: 0 !important;
+            padding-left: 0 !important;
+            background: none;
 
             &:hover,
             &:focus {
+                border-bottom: 0 !important;
+
                 .newsTitle,
                 .videoTitle {
                     span {

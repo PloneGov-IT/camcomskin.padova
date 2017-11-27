@@ -10,6 +10,7 @@
       name="camcomskin_padova"
       />
 
+  <!-- include package="five.pt" / -->
   <include package="z3c.jbot" file="meta.zcml" />
   <include package="collective.editablemenu" />
 
@@ -59,7 +60,7 @@
   <!-- Document actions -->
      <browser:viewlet
         name="plone.abovecontenttitle.documentactions"
-        manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContent"
         class="plone.app.layout.viewlets.content.DocumentActionsViewlet"
         permission="zope2.View"
         layer=".interfaces.IThemeSpecific"

@@ -1,6 +1,10 @@
 .portletAssignments {
   padding: 2rem 0 0;
 
+  .portletHeader {
+    font-size: 1em;
+  }
+
   h4 {
     text-transform: uppercase;
   }
@@ -8,13 +12,23 @@
   .managedPortlet.portlet {
     .portletHeader > a {
       color: $link-color;
+      display: block;
     }
 
     .portletHeader {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
       padding-bottom: 20px;
+      font-size: 1em;
+      line-height: 1.3em;
+
+      .managedPortletActions {
+        float: none;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+          padding: 0.3em;
+        }
+      }
     }
   }
 
@@ -35,11 +49,23 @@
     padding: 0 0 2rem;
   }
 
-  .managedPortletActions {
-    display: flex;
-  }
-
   .blockedPortlet .managedPortletActions {
     opacity: .5;
+  }
+
+  select {
+    display: block;
+  }
+
+  .formControls {
+    background: transparent;
+    padding: 1em 0;
+    margin: 1em 0;
+  }
+}
+
+#portal-footer-wrapper {
+  div.managePortletsLink, a.managePortletsFallback {
+      background-color: transparentize(#ddd, 0.8);
   }
 }

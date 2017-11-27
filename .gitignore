@@ -24,3 +24,4 @@ output.xml
 .eggs/
 config.codekit
 .DS_Store
+node_modules/

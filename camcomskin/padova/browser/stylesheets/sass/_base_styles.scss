@@ -67,7 +67,7 @@ dl.portlet a,
 
 ////// Personal Bar
 #portal-personaltools-wrapper   { background-color: #660000;
-                                  background: linear-gradient(to right, #960E0E 0,#960E0E 33%,#660000 66%,#000 100%);
+                                  background: linear-gradient(to right, #1AB7B1 0, #0E7996 33%, #036b87 66%, #0e8480 100%);
                                   padding: 3px $grid-gutter-width/2;
                                   margin: 0 0;
                                   font-size: 1em;
@@ -97,24 +97,6 @@ dl.portlet a,
     #user-name img          {display: none;}
 }
 
-// CONTENT
-#content 					{
-	.documentDescription,
-  	#description              { @extend .semibold;
-                              font-size: 1.1em;
-                              line-height: 1.5em;
-  	}
-  	#archetypes-fieldname-description textarea#description {
-                              font-weight: normal;
-  	}
-  	.pullquote                { font-size: 1.3em;
-                              letter-spacing: normal !important;
-                              font-family: $headings-font-family;
-  	}
-	.callout            	  { background: transparentize($brand-primary, .9);
-                      		    border: 1px dotted $brand-primary;
-	}
-}
 
 //// FOLDER LISTING
 .template-folder_listing      {
