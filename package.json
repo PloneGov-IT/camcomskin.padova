@@ -1,31 +1,41 @@
 {
-  "//": "Put here only devDependencies, theme dependencies should stay inside of the theme folder.",
+  "//":
+    "Put here only devDependencies, theme dependencies should stay inside of the theme folder.",
   "name": "camcomskin.padova",
   "version": "0.1.0",
-  "keywords": [
-    "agid",
-    "redturtle",
-    "theme"
-  ],
+  "keywords": ["agid", "redturtle", "theme"],
   "author": "RedTurtle Technology",
   "license": "GPL-2.0",
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
-    "cssnano": "^3.7.7",
-    "grunt": "~1.0.1",
-    "grunt-contrib-uglify": "^3.0.1",
-    "grunt-contrib-watch": "latest",
-    "grunt-postcss": "^0.8.0",
-    "grunt-sass": "^1.2.1",
+    "@redturtle/eslint-config": "^1.2.0",
+    "autoprefixer": "^8.0.0",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.18.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "grunt": "^1.0.2",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^2.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
     "load-grunt-tasks": "^3.5.2",
-    "pixrem": "^3.0.2",
-    "prettier": "^1.5.3",
-    "stylelint": "^8.0.0",
-    "stylelint-config-recommended": "^1.0.0"
+    "pixrem": "^4.0.1",
+    "postcss-flexbugs-fixes": "^3.3.0",
+    "prettier": "^1.11.0",
+    "stylelint": "^9.1.1",
+    "stylelint-config-recommended": "^2.1.0"
   },
   "scripts": {
-    "prettier:scss": "prettier --single-quote --tab-width 4 --list-different camcomskin/padova/browser/stylesheets/sass/**/*.scss",
-    "prettier:scss:fix": "prettier --single-quote --tab-width 4 --write camcomskin/padova/browser/stylesheets/sass/**/*.scss"
+    "prettier-all":
+      "prettier --write 'camcomskin/padova/browser/stylesheets/sass/**/*.scss'",
+    "precommit": "lint-staged",
+    "prestart": "grunt compile",
+    "start": "grunt",
+    "build": "grunt compile"
   },
   "stylelint": {
     "extends": "stylelint-config-recommended",
@@ -33,13 +43,12 @@
       "at-rule-no-unknown": [
         true,
         {
-          "ignoreAtRules": [
-            "extends",
-            "include",
-            "mixin"
-          ]
+          "ignoreAtRules": ["extends", "include", "mixin"]
         }
       ]
     }
+  },
+  "lint-staged": {
+    "*.{js,json,css}": ["prettier --write", "git add"]
   }
 }
