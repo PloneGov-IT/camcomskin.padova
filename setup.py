@@ -43,7 +43,8 @@ setup(name='camcomskin.padova',
           # Non metto come dipendenza direttamente pd.prenotazioni, perché
           # sennò non funziona l'override delle traduzioni, e z3c.pdftemplate
           # serve per l'override di una vista "prenotazione_print_pdf"
-          'z3c.pdftemplate'
+          'z3c.pdftemplate',
+          'redturtle.video'
       ],
       entry_points="""
       # -*- Entry points: -*-

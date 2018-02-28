@@ -23,7 +23,7 @@
 
                 &:after {
                     // @include make-fa('\f01d', rgba(255, 255, 255, 0.6));
-                    content: "";
+                    content: '';
                     display: inline-block;
                     width: 100%;
                     height: 100%;
@@ -64,14 +64,14 @@
             }
 
             .collectionItemDates {
-                color: #FFF;
+                color: #fff;
                 font-weight: 100;
                 padding-top: 0;
             }
 
             .collectionItemTitle {
                 font-size: 1.2em;
-                color: #FFF;
+                color: #fff;
                 display: flex;
                 flex-flow: row nowrap;
 
@@ -86,13 +86,13 @@
 
                     &.photo {
                         &:before {
-                            @include make-ita('\1f4f7', #FFF);
+                            @include make-ita('\1f4f7', #fff);
                         }
                     }
 
                     &.video {
                         &:before {
-                            @include make-ita('\1f3a5', #FFF);
+                            @include make-ita('\1f3a5', #fff);
                         }
                     }
                 }
@@ -156,7 +156,7 @@
     }
 
     .collectionItemWrapper {
-        background: #EEE;
+        background: #eee;
         height: 100%;
         position: relative;
 
@@ -215,6 +215,7 @@
 
         .collectionItemDescription {
             font-size: 1.7rem;
+            line-height: 1.75em;
         }
     }
 
@@ -263,10 +264,10 @@
         &.sfondo-scuro {
             .tile-collection {
                 .tile-collapse-button {
-                    color: #FFF;
+                    color: #fff;
 
                     .title-content {
-                        border-bottom-color: #FFF;
+                        border-bottom-color: #fff;
                     }
 
                     .title-icon {
@@ -425,7 +426,7 @@
                 }
             }
             .news-description {
-              font-size: 2.8rem;
+                font-size: 2.8rem;
             }
         }
 
@@ -490,7 +491,7 @@
 
         .tile-content .news-infos .news-title a:focus,
         .tile-content .news-infos .news-title a:hover {
-            border-color: #DDD;
+            border-color: #ddd;
         }
     }
 }
@@ -499,7 +500,6 @@
         background: $gray-bg;
     }
 }
-
 
 .online-services {
     @include make-container;
@@ -582,7 +582,7 @@
         }
 
         .serviceDescription:before {
-            content: "";
+            content: '';
             float: left;
             width: 5px;
             height: 6em;
@@ -595,7 +595,7 @@
         }
 
         .serviceDescription:after {
-            content: "\02026";
+            content: '\02026';
             box-sizing: content-box;
             float: right;
             position: relative;
@@ -611,12 +611,12 @@
 .sfondo-scuro {
     .online-services {
         .serviceWrapper a {
-            color: #FFF;
+            color: #fff;
 
             &:focus,
             &:hover {
-                color: #DDD;
-                border-color: #DDD;
+                color: #ddd;
+                border-color: #ddd;
             }
         }
     }
@@ -687,3 +687,5 @@ h3.tileTitle,
 .tileTitle h3 {
     margin: 0;
 }
+
+

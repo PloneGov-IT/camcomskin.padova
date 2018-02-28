@@ -27,6 +27,7 @@ class HelpersView(BrowserView):
 
     def get_bg_url(self, item, scale='thumb'):
         try:
+            import pdb; pdb.set_trace()
             scale_view = api.content.get_view(
                 name='images',
                 context=item,
