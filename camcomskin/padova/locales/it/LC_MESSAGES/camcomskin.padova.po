@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-10-31 16:30+0000\n"
+"POT-Creation-Date: 2018-03-01 13:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,39 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: camcomskin.padova\n"
 
-#: ../browser/menu_controlpanel.py:13
-msgid "Editable Menu Settings"
+#: ../browser/configure.zcml:163
+msgid "A view for the homepage"
+msgstr ""
+
+#: ../profiles.zcml:12
+msgid "CCIAPD: Plone Theme"
+msgstr ""
+
+#: ../browser/configure.zcml:145
+msgid "Elenco Uffici"
 msgstr ""
 
 #: ../browser/tile_collection_renderers.py:118
-msgid "Gallery layout"
-msgstr "Layout gallery"
+msgid "Events layout"
+msgstr "Layout eventi"
 
-#: ../browser/tile_collection_renderers.py:130
-msgid "Landing page aree tematiche"
-msgstr ""
-
-#: ../browser/tile_collection_renderers.py:136
-msgid "Layout servizi online"
+#: ../profiles.zcml:12
+msgid "Extension profile for the CCIAPD Plone theme."
 msgstr ""
 
 #: ../browser/tile_collection_renderers.py:124
+msgid "Gallery layout"
+msgstr "Layout gallery"
+
+#: ../browser/tile_collection_renderers.py:136
+msgid "Landing page aree tematiche"
+msgstr ""
+
+#: ../browser/tile_collection_renderers.py:142
+msgid "Layout servizi online"
+msgstr ""
+
+#: ../browser/tile_collection_renderers.py:130
 msgid "Link aree tematiche"
 msgstr ""
 
@@ -64,3 +80,19 @@ msgstr "Layout siti d'interesse"
 #: ../browser/tile_collection_renderers.py:112
 msgid "Video layout"
 msgstr "Layout video con modale"
+
+#: ../browser/configure.zcml:163
+msgid "Vista Homepage"
+msgstr ""
+
+#: ../browser/configure.zcml:253
+msgid "Vista homepage"
+msgstr ""
+
+#: ../browser/configure.zcml:245
+msgid "Vista tiles"
+msgstr ""
+
+#: ../browser/configure.zcml:249
+msgid "Vista tiles espansa"
+msgstr ""

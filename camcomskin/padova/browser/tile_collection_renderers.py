@@ -27,7 +27,6 @@ class HelpersView(BrowserView):
 
     def get_bg_url(self, item, scale='thumb'):
         try:
-            import pdb; pdb.set_trace()
             scale_view = api.content.get_view(
                 name='images',
                 context=item,
@@ -54,6 +53,49 @@ class HelpersView(BrowserView):
             'day': effective.day(),
             'year': effective.year()
         }
+
+    def get_event_dates(self, event):
+        """
+        returns a string with date info (range, hours,...)
+        """
+
+        months = {
+            '1': 'Gennaio',
+            '2': 'Febbraio',
+            '3': 'Marzo',
+            '4': 'Aprile',
+            '5': 'Maggio',
+            '6': 'Giugno',
+            '7': 'Luglio',
+            '8': 'Agosto',
+            '9': 'Settembre',
+            '10': 'Ottobre',
+            '11': 'Novembre',
+            '12': 'Dicembre'
+        }
+
+        date_string = ""
+        start_date_parts = [
+            months[str(event.startDate.month())],
+            event.startDate.year()
+        ]
+        startDate = ' '.join([str(x) for x in start_date_parts])
+
+        if event.startDate.Date() == event.endDate.Date():
+            date_string = startDate + ", ore " +\
+                event.startDate.TimeMinutes() + " - " +\
+                event.endDate.TimeMinutes()
+
+        else:
+            end_date_parts = [
+                event.startDate.day(),
+                months[event.startDate.month()],
+                event.startDate.year()
+            ]
+            endDate = ' '.join([x for x in end_date_parts])
+            date_string = "dal " + startDate + " al " + endDate
+
+        return date_string
 
 
 class SightsView(BrowserView):
@@ -111,6 +153,12 @@ class VideoView(BrowserView):
     implements(ICollectionTileRenderer)
 
     display_name = _("Video layout")
+
+
+class EventsView(BrowserView):
+    implements(ICollectionTileRenderer)
+
+    display_name = _("Events layout")
 
 
 class GalleryView(BrowserView):

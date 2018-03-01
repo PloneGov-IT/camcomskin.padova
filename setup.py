@@ -44,7 +44,8 @@ setup(name='camcomskin.padova',
           # sennò non funziona l'override delle traduzioni, e z3c.pdftemplate
           # serve per l'override di una vista "prenotazione_print_pdf"
           'z3c.pdftemplate',
-          'redturtle.video'
+          'redturtle.video',
+          'plone.app.imaging'
       ],
       entry_points="""
       # -*- Entry points: -*-

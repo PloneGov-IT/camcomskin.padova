@@ -273,6 +273,15 @@
       />
 
   <browser:page
+      name="events_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.EventsView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/events_renderer.pt"
+      />
+
+  <browser:page
       name="photogallery_renderer"
       permission="zope2.View"
       for="*"
