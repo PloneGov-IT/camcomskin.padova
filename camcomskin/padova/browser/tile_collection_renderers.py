@@ -76,6 +76,7 @@ class HelpersView(BrowserView):
 
         date_string = ""
         start_date_parts = [
+            event.startDate.day(),
             months[str(event.startDate.month())],
             event.startDate.year()
         ]
@@ -88,11 +89,11 @@ class HelpersView(BrowserView):
 
         else:
             end_date_parts = [
-                event.startDate.day(),
-                months[event.startDate.month()],
-                event.startDate.year()
+                event.endDate.day(),
+                months[str(event.endDate.month())],
+                event.endDate.year()
             ]
-            endDate = ' '.join([x for x in end_date_parts])
+            endDate = ' '.join([str(x) for x in end_date_parts])
             date_string = "dal " + startDate + " al " + endDate
 
         return date_string
