@@ -18,7 +18,13 @@
     }
 
     .news-collection .newsWrapper {
-      background-color: #FFF;
+        background-color: #FFF;
+    }
+
+    .tile-collection {
+        .tileContent {
+            background-color: #FFF;
+        }
     }
 }
 
@@ -47,6 +53,12 @@
 
     .news-collection .newsWrapper {
       background-color: #FFF;
+    }
+
+    .tile-collection {
+        .tileContent {
+            background-color: #FFF;
+        }
     }
 }
 

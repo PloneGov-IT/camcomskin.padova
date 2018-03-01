@@ -35,6 +35,8 @@
             meta_type="Plone Property Sheet">
         <property name="allowed_sizes" type="lines" purge="False">
             <element value="newshome 450:300"/>
+            <element value="newshighlight 540:360"/>
+            <element value="newsbig 1800:600"/>
             <!-- <element value="news 300:300"/> -->
             <!-- <element value="hpslider 1260:270"/> -->
         </property>

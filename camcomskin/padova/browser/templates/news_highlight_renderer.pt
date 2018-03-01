@@ -17,19 +17,21 @@
         <div class="news-infos">
           <div class="news-detail">
             <div tal:define="title view/data/title|nothing;"
-                class="tileTitle"
-                tal:condition="title">
-                <h3>${title}</h3>
+                 class="tileTitle"
+                 tal:condition="title">
+                <h3 tal:content="title">title</h3>
             </div>
             <div class="news-date"
                  tal:define="date python:helper_view.get_formatted_date(news)"
                  tal:condition="python: view.data.get('show_dates', False) and date"
                  i18n:domain="plonelocales">
-              ${date/day} <tal:month i18n:translate="">${date/month}</tal:month> ${date/year}
+                 <span tal:content="date/day">day</span>
+                 <span tal:content="date/month" i18n:translate="">month</span>
+                 <span tal:content="date/year">year</span>
             </div>
           </div>
-          <div class="news-title"><a href="${news/getURL}" title="${title}">${title}</a></div>
-          <div class="news-description" tal:condition="description"><span>${description}</span></div>
+          <div class="news-title"><a tal:attributes="href news/getURL; title title" href="#" tal:content="title"></a></div>
+          <div class="news-description" tal:condition="description"><span tal:content="description"></span></div>
         </div>
         <figure class="item-image" tal:condition="image_tag" tal:content="structure image_tag" />
       </div>
