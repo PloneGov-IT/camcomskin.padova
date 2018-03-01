@@ -143,17 +143,6 @@
         padding: 0;
         justify-content: space-between;
 
-        .closeSubmenu {
-            a.closeSubmenuLink {
-                color: #333;
-                display: inline-block;
-
-                &:not(:focus) {
-                    @include sr-only;
-                }
-            }
-        }
-
         > li {
             padding: 0;
             margin: 0;
@@ -207,139 +196,150 @@
                 display: block;
             }
         }
+    }
 
-        #submenu-details {
-            position: absolute;
-            background-color: $megamenu-bg;
-            border-bottom: 5px solid $brand-primary;
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
-            width: 100%;
-            left: 0;
-            top: 100%;
-            z-index: 10;
+    #submenu-details {
+        position: absolute;
+        background-color: $megamenu-bg;
+        border-bottom: 5px solid $brand-primary;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+        width: 100%;
+        left: 0;
+        top: 100%;
+        z-index: 10;
 
-            li {
-                display: block;
+        li {
+            display: block;
 
-                a {
-                    padding: 0;
-                    border: 0;
-                    border-bottom: 1px solid transparent;
-                    display: inline;
+            a {
+                padding: 0;
+                border: 0;
+                border-bottom: 1px solid transparent;
+                display: inline;
 
-                    &:hover,
-                    &:focus {
-                        border-bottom: 1px solid #333;
-                    }
+                &:hover,
+                &:focus {
+                    border-bottom: 1px solid #333;
                 }
             }
         }
+    }
 
-        .submenuDetailsContent {
-            @include make-container;
-            padding: 20px 15px;
-            margin: auto;
-            color: #000;
-            display: flex;
+    .closeSubmenu {
+        a.closeSubmenuLink {
+            color: #333;
+            display: inline-block;
+
+            &:not(:focus) {
+                @include sr-only;
+            }
+        }
+    }
+
+    .submenuDetailsContent {
+        @include make-container;
+        padding: 20px 15px;
+        margin: auto;
+        color: #000;
+        display: flex;
+    }
+
+    .submenuDynamicWrapper {
+        flex: 2 0 0;
+
+        .dynamicSectionLabel {
+            text-transform: uppercase;
+            margin-bottom: 2.5rem;
         }
 
-        .submenuDynamicWrapper {
-            flex: 2 0 0;
+        ul {
+            columns: 2;
 
-            .dynamicSectionLabel {
+            li {
+                padding-bottom: 0.5em;
+
+                a {
+                    color: $text-color;
+
+                    &:focus,
+                    &:hover {
+                        // text-decoration: underline !important;
+                    }
+                }
+            }
+
+            @media (max-width: 500px) {
+                columns: 1;
+            }
+        }
+
+        a.dynamicSectionExploreLabel {
+            border: 1px solid $link-color;
+            border-radius: 3px;
+            padding: 0.2em 1em;
+            display: inline-block;
+            margin-top: 1em;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            font-weight: $semibold;
+
+            &:after {
+                content: ' ›';
+            }
+
+            &:focus,
+            &:hover {
+                background-color: $link-color;
+                color: #fff;
+            }
+        }
+    }
+
+    .submenuStaticWrapper {
+        flex: 1 0 25%;
+        display: flex;
+        flex-flow: row wrap;
+
+        .staticItem {
+            float: left;
+            width: 50%;
+            padding: 0 15px 25px;
+            color: #333;
+
+            h5 {
                 text-transform: uppercase;
-                margin-bottom: 2.5rem;
+                font-weight: 700;
+            }
+
+            h3,
+            h4 {
+                padding: 0 0 10px;
+                color: #000;
+                font-size: 1.3em;
             }
 
             ul {
-                columns: 2;
+                list-style: none;
+                padding: 0 0 0 15px;
+                border-left: 6px solid #333;
 
                 li {
-                    padding-bottom: 0.5em;
-
-                    a {
-                        color: $text-color;
-
-                        &:focus,
-                        &:hover {
-                            // text-decoration: underline !important;
-                        }
-                    }
-                }
-
-                @media (max-width: 500px) {
-                    columns: 1;
-                }
-            }
-
-            a.dynamicSectionExploreLabel {
-                border: 1px solid $link-color;
-                border-radius: 3px;
-                padding: 0.2em 1em;
-                display: inline-block;
-                margin-top: 1em;
-                font-size: 0.8em;
-                text-transform: uppercase;
-                font-weight: $semibold;
-
-                &:after {
-                    content: ' ›';
-                }
-
-                &:focus,
-                &:hover {
-                    background-color: $link-color;
-                    color: #fff;
-                }
-            }
-        }
-
-        .submenuStaticWrapper {
-            flex: 1 0 25%;
-            display: flex;
-            flex-flow: row wrap;
-
-            .staticItem {
-                float: left;
-                width: 50%;
-                padding: 0 15px 25px;
-                color: #333;
-
-                h5 {
-                    text-transform: uppercase;
-                    font-weight: 700;
-                }
-
-                h3,
-                h4 {
                     padding: 0 0 10px;
-                    color: #000;
-                    font-size: 1.3em;
+                }
+            }
+
+            a {
+                display: inline;
+                font-weight: normal;
+                color: #333;
+                font-size: 1em;
+
+                &:hover {
+                    border-bottom: 1px solid #333;
                 }
 
-                ul {
-                    list-style: none;
-                    padding: 0 0 0 15px;
-                    border-left: 6px solid #333;
-
-                    li {
-                        padding: 0 0 10px;
-                    }
-                }
-
-                a {
-                    display: inline;
-                    font-weight: normal;
-                    color: #333;
-                    font-size: 1em;
-
-                    &:hover {
-                        border-bottom: 1px solid #333;
-                    }
-
-                    &:focus {
-                        border: 0;
-                    }
+                &:focus {
+                    border: 0;
                 }
             }
         }
