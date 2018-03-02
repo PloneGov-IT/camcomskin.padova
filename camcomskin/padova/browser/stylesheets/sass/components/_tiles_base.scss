@@ -5,59 +5,81 @@
 .colonna-1-di-5         { width: 20%; float: left; }
 .colonna-1-di-6         { width: 100%; @include make-md-column(2); @include make-sm-column(4); }
 
-.sfondo-chiaro {
-    background: $gray-bg;
+#content {
+    .sfondo-chiaro {
+        background: $gray-bg;
 
-    a {
-        border-color: $link-color;
+        a {
+            border-color: $link-color;
 
-        &:focus,
-        &:hover {
-            border-color: $link-hover-color;
+            &:focus,
+            &:hover {
+                border-color: $link-hover-color;
+            }
         }
-    }
 
-    .news-collection .newsWrapper {
-        background-color: #FFF;
-    }
-
-    .tile-collection {
-        .collectionItemWrapper {
+        .news-collection .newsWrapper {
             background-color: #FFF;
         }
+
+        .tile-collection {
+            .collectionItemWrapper {
+                background-color: #FFF;
+            }
+        }
     }
-}
 
-.sfondo-scuro {
-    background: $tile-fascia-scura;
-    color: #fff;
-
-    a {
+    .sfondo-scuro {
+        background: $tile-fascia-scura;
         color: #fff;
-        border-color: #fff;
-        border-bottom: 1px solid;
 
-        &:focus,
-        &:hover {
-            color: #DDD;
-            border-color: #DDD;
+        a {
+            color: #fff;
+            border-color: #fff;
+            border-bottom: 1px solid;
+
+            &:focus,
+            &:hover {
+                color: #DDD;
+                border-color: #DDD;
+            }
         }
-    }
 
-    .tileTitle {
-        &,
-        .title-content {
-            color: #FFF;
+        .tileTitle {
+            &,
+            .title-content {
+                color: #FFF;
+            }
         }
-    }
 
-    .news-collection .newsWrapper {
-      background-color: #FFF;
-    }
+        .news-collection .newsWrapper {
+          background-color: #FFF;
+        }
 
-    .tile-collection {
-        .collectionItemWrapper {
-            background-color: #FFF;
+        .tile-collection {
+            .collectionItemWrapper {
+                background-color: #FFF;
+                color: #333;
+            }
+
+            .showMore {
+                a {
+                    color: #FFF;
+
+                    span {
+                        border-bottom: 1px solid #FFF;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: #DDD !important;
+
+                        span {
+                            border-bottom-color: #DDD;
+                        }
+                    }
+                }
+            }
         }
     }
 }
