@@ -10,13 +10,15 @@
     tal:define="disable_column_one python:request.set('disable_plone.leftcolumn',1);"/>
   <metal:styleslot fill-slot="style_slot">
     <link rel="stylesheet" tal:attributes="href string:${portal_url}/++resource++redturtle.tiles.management/mockup.min.css?v=${view/pkg_version}">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
   </metal:styleslot>
   <metal:javascriptslot fill-slot="javascript_head_slot">
     <script type="text/javascript"
             tal:attributes="src string:${portal_url}/++resource++redturtle.tiles.management/mockup.min.js?v=${view/pkg_version}"></script>
     <script type="text/javascript"
             tal:attributes="src string:${portal_url}/++resource++redturtle.tiles.management/integration.js?v=${view/pkg_version}"></script>
-
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   </metal:javascriptslot>
   <body>
     <metal:content-core fill-slot="content-core">
