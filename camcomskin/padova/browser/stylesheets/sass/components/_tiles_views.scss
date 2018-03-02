@@ -5,6 +5,14 @@
         display: none;
     }
 
+    .actionsTiles {
+        @include make-container;
+    }
+
+    .portalMessage {
+        @include make-container;
+    }
+
     .tiles-slot {
         .tilesList {
             @include make-container;

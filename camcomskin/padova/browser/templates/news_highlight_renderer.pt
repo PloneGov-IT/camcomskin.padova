@@ -32,6 +32,9 @@
           </div>
           <div class="news-title"><a tal:attributes="href news/getURL; title title" href="#" tal:content="title"></a></div>
           <div class="news-description" tal:condition="description"><span tal:content="description"></span></div>
+          <div class="news-cta">
+            <a href="#" tal:attributes="href news/getURL" title="Vai alla notizia" class="news-cta-btn"><span>Continua a leggere</span></a>
+          </div>
         </div>
         <figure class="item-image" tal:condition="image_tag" tal:content="structure image_tag" />
       </div>
