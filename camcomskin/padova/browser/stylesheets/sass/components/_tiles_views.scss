@@ -5,10 +5,8 @@
         display: none;
     }
 
-    .actionsTiles {
-        @include make-container;
-    }
-
+    .actionsTiles,
+    .edit-bar,
     .portalMessage {
         @include make-container;
     }

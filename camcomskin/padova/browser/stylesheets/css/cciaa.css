@@ -6768,35 +6768,6 @@ body.plone-toolbar-left-expanded
 .image-tile {
   float: right;
 }
-#edit-bar {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-#edit-bar:before,
-#edit-bar:after {
-  content: ' ';
-  display: table;
-}
-#edit-bar:after {
-  clear: both;
-}
-@media (min-width: 768px) {
-  #edit-bar {
-    width: auto;
-  }
-}
-@media (min-width: 992px) {
-  #edit-bar {
-    width: auto;
-  }
-}
-@media (min-width: 1360px) {
-  #edit-bar {
-    width: 1330px;
-  }
-}
 #portal-columns {
   margin-right: auto;
   margin-left: auto;
@@ -11408,8 +11379,14 @@ nav.pagination ul li.next span {
   display: none;
 }
 .section-homepage .actionsTiles,
+.section-homepage .edit-bar,
+.section-homepage .portalMessage,
 .template-homepage_view .actionsTiles,
-.template-tiles_page_view .actionsTiles {
+.template-homepage_view .edit-bar,
+.template-homepage_view .portalMessage,
+.template-tiles_page_view .actionsTiles,
+.template-tiles_page_view .edit-bar,
+.template-tiles_page_view .portalMessage {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -11417,78 +11394,71 @@ nav.pagination ul li.next span {
 }
 .section-homepage .actionsTiles:before,
 .section-homepage .actionsTiles:after,
-.template-homepage_view .actionsTiles:before,
-.template-homepage_view .actionsTiles:after,
-.template-tiles_page_view .actionsTiles:before,
-.template-tiles_page_view .actionsTiles:after {
-  content: ' ';
-  display: table;
-}
-.section-homepage .actionsTiles:after,
-.template-homepage_view .actionsTiles:after,
-.template-tiles_page_view .actionsTiles:after {
-  clear: both;
-}
-@media (min-width: 768px) {
-  .section-homepage .actionsTiles,
-  .template-homepage_view .actionsTiles,
-  .template-tiles_page_view .actionsTiles {
-    width: auto;
-  }
-}
-@media (min-width: 992px) {
-  .section-homepage .actionsTiles,
-  .template-homepage_view .actionsTiles,
-  .template-tiles_page_view .actionsTiles {
-    width: auto;
-  }
-}
-@media (min-width: 1360px) {
-  .section-homepage .actionsTiles,
-  .template-homepage_view .actionsTiles,
-  .template-tiles_page_view .actionsTiles {
-    width: 1330px;
-  }
-}
-.section-homepage .portalMessage,
-.template-homepage_view .portalMessage,
-.template-tiles_page_view .portalMessage {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+.section-homepage .edit-bar:before,
+.section-homepage .edit-bar:after,
 .section-homepage .portalMessage:before,
 .section-homepage .portalMessage:after,
+.template-homepage_view .actionsTiles:before,
+.template-homepage_view .actionsTiles:after,
+.template-homepage_view .edit-bar:before,
+.template-homepage_view .edit-bar:after,
 .template-homepage_view .portalMessage:before,
 .template-homepage_view .portalMessage:after,
+.template-tiles_page_view .actionsTiles:before,
+.template-tiles_page_view .actionsTiles:after,
+.template-tiles_page_view .edit-bar:before,
+.template-tiles_page_view .edit-bar:after,
 .template-tiles_page_view .portalMessage:before,
 .template-tiles_page_view .portalMessage:after {
   content: ' ';
   display: table;
 }
+.section-homepage .actionsTiles:after,
+.section-homepage .edit-bar:after,
 .section-homepage .portalMessage:after,
+.template-homepage_view .actionsTiles:after,
+.template-homepage_view .edit-bar:after,
 .template-homepage_view .portalMessage:after,
+.template-tiles_page_view .actionsTiles:after,
+.template-tiles_page_view .edit-bar:after,
 .template-tiles_page_view .portalMessage:after {
   clear: both;
 }
 @media (min-width: 768px) {
+  .section-homepage .actionsTiles,
+  .section-homepage .edit-bar,
   .section-homepage .portalMessage,
+  .template-homepage_view .actionsTiles,
+  .template-homepage_view .edit-bar,
   .template-homepage_view .portalMessage,
+  .template-tiles_page_view .actionsTiles,
+  .template-tiles_page_view .edit-bar,
   .template-tiles_page_view .portalMessage {
     width: auto;
   }
 }
 @media (min-width: 992px) {
+  .section-homepage .actionsTiles,
+  .section-homepage .edit-bar,
   .section-homepage .portalMessage,
+  .template-homepage_view .actionsTiles,
+  .template-homepage_view .edit-bar,
   .template-homepage_view .portalMessage,
+  .template-tiles_page_view .actionsTiles,
+  .template-tiles_page_view .edit-bar,
   .template-tiles_page_view .portalMessage {
     width: auto;
   }
 }
 @media (min-width: 1360px) {
+  .section-homepage .actionsTiles,
+  .section-homepage .edit-bar,
   .section-homepage .portalMessage,
+  .template-homepage_view .actionsTiles,
+  .template-homepage_view .edit-bar,
   .template-homepage_view .portalMessage,
+  .template-tiles_page_view .actionsTiles,
+  .template-tiles_page_view .edit-bar,
   .template-tiles_page_view .portalMessage {
     width: 1330px;
   }
