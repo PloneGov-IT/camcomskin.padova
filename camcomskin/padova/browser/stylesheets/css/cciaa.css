@@ -2729,11 +2729,7 @@ input.standalone,
 input[type='submit'].discreet,
 input.standalone[name='form.button.cancel'],
 input[type='text'].text-widget.textline-field + input.searchButton,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .list-group-item {
+.actionsTiles .available-tiles .list-group .list-group-item {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
@@ -2744,22 +2740,14 @@ input.destructive:focus,
 input.standalone:focus,
 input[type='submit'].discreet:focus,
 input[type='text'].text-widget.textline-field + input.searchButton:focus,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .list-group-item:focus,
+.actionsTiles .available-tiles .list-group .list-group-item:focus,
 .btn-default.focus,
 .focus.context,
 input.focus.destructive,
 input.focus.standalone,
 input.focus[type='submit'].discreet,
 input[type='text'].text-widget.textline-field + input.focus.searchButton,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .focus.list-group-item {
+.actionsTiles .available-tiles .list-group .focus.list-group-item {
   color: #333;
   background-color: #e6e5e5;
   border-color: #8c8c8c;
@@ -2770,11 +2758,7 @@ input.destructive:hover,
 input.standalone:hover,
 input[type='submit'].discreet:hover,
 input[type='text'].text-widget.textline-field + input.searchButton:hover,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .list-group-item:hover {
+.actionsTiles .available-tiles .list-group .list-group-item:hover {
   color: #333;
   background-color: #e6e5e5;
   border-color: #adadad;
@@ -2785,22 +2769,14 @@ input.destructive:active,
 input.standalone:active,
 input[type='submit'].discreet:active,
 input[type='text'].text-widget.textline-field + input.searchButton:active,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .list-group-item:active,
+.actionsTiles .available-tiles .list-group .list-group-item:active,
 .btn-default.active,
 .active.context,
 input.active.destructive,
 input.active.standalone,
 input.active[type='submit'].discreet,
 input[type='text'].text-widget.textline-field + input.active.searchButton,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .active.list-group-item,
+.actionsTiles .available-tiles .list-group .active.list-group-item,
 .open > .btn-default.dropdown-toggle,
 .open > .dropdown-toggle.context,
 .open > input.dropdown-toggle.destructive,
@@ -2809,8 +2785,7 @@ input[type='text'].text-widget.textline-field + input.active.searchButton,
 .open
   > input[type='text'].text-widget.textline-field
   + input.dropdown-toggle.searchButton,
-.pat-tiles-management
-  .actionsTiles
+.actionsTiles
   .available-tiles
   .list-group
   .open
@@ -2825,66 +2800,42 @@ input.destructive:active:hover,
 input.standalone:active:hover,
 input[type='submit'].discreet:active:hover,
 input[type='text'].text-widget.textline-field + input.searchButton:active:hover,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .list-group-item:active:hover,
+.actionsTiles .available-tiles .list-group .list-group-item:active:hover,
 .btn-default:active:focus,
 .context:active:focus,
 input.destructive:active:focus,
 input.standalone:active:focus,
 input[type='submit'].discreet:active:focus,
 input[type='text'].text-widget.textline-field + input.searchButton:active:focus,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .list-group-item:active:focus,
+.actionsTiles .available-tiles .list-group .list-group-item:active:focus,
 .btn-default:active.focus,
 .context:active.focus,
 input.destructive:active.focus,
 input.standalone:active.focus,
 input[type='submit'].discreet:active.focus,
 input[type='text'].text-widget.textline-field + input.searchButton:active.focus,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .list-group-item:active.focus,
+.actionsTiles .available-tiles .list-group .list-group-item:active.focus,
 .btn-default.active:hover,
 .active.context:hover,
 input.active.destructive:hover,
 input.active.standalone:hover,
 input.active[type='submit'].discreet:hover,
 input[type='text'].text-widget.textline-field + input.active.searchButton:hover,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .active.list-group-item:hover,
+.actionsTiles .available-tiles .list-group .active.list-group-item:hover,
 .btn-default.active:focus,
 .active.context:focus,
 input.active.destructive:focus,
 input.active.standalone:focus,
 input.active[type='submit'].discreet:focus,
 input[type='text'].text-widget.textline-field + input.active.searchButton:focus,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .active.list-group-item:focus,
+.actionsTiles .available-tiles .list-group .active.list-group-item:focus,
 .btn-default.active.focus,
 .active.focus.context,
 input.active.focus.destructive,
 input.active.focus.standalone,
 input.active.focus[type='submit'].discreet,
 input[type='text'].text-widget.textline-field + input.active.focus.searchButton,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .active.focus.list-group-item,
+.actionsTiles .available-tiles .list-group .active.focus.list-group-item,
 .open > .btn-default.dropdown-toggle:hover,
 .open > .dropdown-toggle.context:hover,
 .open > input.dropdown-toggle.destructive:hover,
@@ -2893,8 +2844,7 @@ input[type='text'].text-widget.textline-field + input.active.focus.searchButton,
 .open
   > input[type='text'].text-widget.textline-field
   + input.dropdown-toggle.searchButton:hover,
-.pat-tiles-management
-  .actionsTiles
+.actionsTiles
   .available-tiles
   .list-group
   .open
@@ -2907,8 +2857,7 @@ input[type='text'].text-widget.textline-field + input.active.focus.searchButton,
 .open
   > input[type='text'].text-widget.textline-field
   + input.dropdown-toggle.searchButton:focus,
-.pat-tiles-management
-  .actionsTiles
+.actionsTiles
   .available-tiles
   .list-group
   .open
@@ -2921,8 +2870,7 @@ input[type='text'].text-widget.textline-field + input.active.focus.searchButton,
 .open
   > input[type='text'].text-widget.textline-field
   + input.dropdown-toggle.focus.searchButton,
-.pat-tiles-management
-  .actionsTiles
+.actionsTiles
   .available-tiles
   .list-group
   .open
@@ -2937,22 +2885,14 @@ input.destructive:active,
 input.standalone:active,
 input[type='submit'].discreet:active,
 input[type='text'].text-widget.textline-field + input.searchButton:active,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .list-group-item:active,
+.actionsTiles .available-tiles .list-group .list-group-item:active,
 .btn-default.active,
 .active.context,
 input.active.destructive,
 input.active.standalone,
 input.active[type='submit'].discreet,
 input[type='text'].text-widget.textline-field + input.active.searchButton,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .active.list-group-item,
+.actionsTiles .available-tiles .list-group .active.list-group-item,
 .open > .btn-default.dropdown-toggle,
 .open > .dropdown-toggle.context,
 .open > input.dropdown-toggle.destructive,
@@ -2961,8 +2901,7 @@ input[type='text'].text-widget.textline-field + input.active.searchButton,
 .open
   > input[type='text'].text-widget.textline-field
   + input.dropdown-toggle.searchButton,
-.pat-tiles-management
-  .actionsTiles
+.actionsTiles
   .available-tiles
   .list-group
   .open
@@ -2975,11 +2914,7 @@ input.disabled.destructive,
 input.disabled.standalone,
 input.disabled[type='submit'].discreet,
 input[type='text'].text-widget.textline-field + input.disabled.searchButton,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .disabled.list-group-item,
+.actionsTiles .available-tiles .list-group .disabled.list-group-item,
 .btn-default.disabled:hover,
 .disabled.context:hover,
 input.disabled.destructive:hover,
@@ -2987,11 +2922,7 @@ input.disabled.standalone:hover,
 input.disabled[type='submit'].discreet:hover,
 input[type='text'].text-widget.textline-field
   + input.disabled.searchButton:hover,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .disabled.list-group-item:hover,
+.actionsTiles .available-tiles .list-group .disabled.list-group-item:hover,
 .btn-default.disabled:focus,
 .disabled.context:focus,
 input.disabled.destructive:focus,
@@ -2999,11 +2930,7 @@ input.disabled.standalone:focus,
 input.disabled[type='submit'].discreet:focus,
 input[type='text'].text-widget.textline-field
   + input.disabled.searchButton:focus,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .disabled.list-group-item:focus,
+.actionsTiles .available-tiles .list-group .disabled.list-group-item:focus,
 .btn-default.disabled.focus,
 .disabled.focus.context,
 input.disabled.focus.destructive,
@@ -3011,11 +2938,7 @@ input.disabled.focus.standalone,
 input.disabled.focus[type='submit'].discreet,
 input[type='text'].text-widget.textline-field
   + input.disabled.focus.searchButton,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .disabled.focus.list-group-item,
+.actionsTiles .available-tiles .list-group .disabled.focus.list-group-item,
 .btn-default.disabled:active,
 .disabled.context:active,
 input.disabled.destructive:active,
@@ -3023,11 +2946,7 @@ input.disabled.standalone:active,
 input.disabled[type='submit'].discreet:active,
 input[type='text'].text-widget.textline-field
   + input.disabled.searchButton:active,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .disabled.list-group-item:active,
+.actionsTiles .available-tiles .list-group .disabled.list-group-item:active,
 .btn-default.disabled.active,
 .disabled.active.context,
 input.disabled.active.destructive,
@@ -3035,22 +2954,14 @@ input.disabled.active.standalone,
 input.disabled.active[type='submit'].discreet,
 input[type='text'].text-widget.textline-field
   + input.disabled.active.searchButton,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .disabled.active.list-group-item,
+.actionsTiles .available-tiles .list-group .disabled.active.list-group-item,
 .btn-default[disabled],
 [disabled].context,
 input[disabled].destructive,
 input[disabled].standalone,
 input[disabled][type='submit'].discreet,
 input[type='text'].text-widget.textline-field + input[disabled].searchButton,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  [disabled].list-group-item,
+.actionsTiles .available-tiles .list-group [disabled].list-group-item,
 .btn-default[disabled]:hover,
 [disabled].context:hover,
 input[disabled].destructive:hover,
@@ -3058,11 +2969,7 @@ input[disabled].standalone:hover,
 input[disabled][type='submit'].discreet:hover,
 input[type='text'].text-widget.textline-field
   + input[disabled].searchButton:hover,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  [disabled].list-group-item:hover,
+.actionsTiles .available-tiles .list-group [disabled].list-group-item:hover,
 .btn-default[disabled]:focus,
 [disabled].context:focus,
 input[disabled].destructive:focus,
@@ -3070,11 +2977,7 @@ input[disabled].standalone:focus,
 input[disabled][type='submit'].discreet:focus,
 input[type='text'].text-widget.textline-field
   + input[disabled].searchButton:focus,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  [disabled].list-group-item:focus,
+.actionsTiles .available-tiles .list-group [disabled].list-group-item:focus,
 .btn-default[disabled].focus,
 [disabled].focus.context,
 input[disabled].focus.destructive,
@@ -3082,11 +2985,7 @@ input[disabled].focus.standalone,
 input[disabled].focus[type='submit'].discreet,
 input[type='text'].text-widget.textline-field
   + input[disabled].focus.searchButton,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  [disabled].focus.list-group-item,
+.actionsTiles .available-tiles .list-group [disabled].focus.list-group-item,
 .btn-default[disabled]:active,
 [disabled].context:active,
 input[disabled].destructive:active,
@@ -3094,11 +2993,7 @@ input[disabled].standalone:active,
 input[disabled][type='submit'].discreet:active,
 input[type='text'].text-widget.textline-field
   + input[disabled].searchButton:active,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  [disabled].list-group-item:active,
+.actionsTiles .available-tiles .list-group [disabled].list-group-item:active,
 .btn-default[disabled].active,
 [disabled].active.context,
 input[disabled].active.destructive,
@@ -3106,11 +3001,7 @@ input[disabled].active.standalone,
 input[disabled].active[type='submit'].discreet,
 input[type='text'].text-widget.textline-field
   + input[disabled].active.searchButton,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  [disabled].active.list-group-item,
+.actionsTiles .available-tiles .list-group [disabled].active.list-group-item,
 fieldset[disabled] .btn-default,
 fieldset[disabled] .context,
 fieldset[disabled] input.destructive,
@@ -3119,18 +3010,8 @@ fieldset[disabled] input[type='submit'].discreet,
 fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.searchButton,
-fieldset[disabled]
-  .pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .list-group-item,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  fieldset[disabled]
-  .list-group-item,
+fieldset[disabled] .actionsTiles .available-tiles .list-group .list-group-item,
+.actionsTiles .available-tiles .list-group fieldset[disabled] .list-group-item,
 fieldset[disabled] .btn-default:hover,
 fieldset[disabled] .context:hover,
 fieldset[disabled] input.destructive:hover,
@@ -3140,13 +3021,11 @@ fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.searchButton:hover,
 fieldset[disabled]
-  .pat-tiles-management
   .actionsTiles
   .available-tiles
   .list-group
   .list-group-item:hover,
-.pat-tiles-management
-  .actionsTiles
+.actionsTiles
   .available-tiles
   .list-group
   fieldset[disabled]
@@ -3160,13 +3039,11 @@ fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.searchButton:focus,
 fieldset[disabled]
-  .pat-tiles-management
   .actionsTiles
   .available-tiles
   .list-group
   .list-group-item:focus,
-.pat-tiles-management
-  .actionsTiles
+.actionsTiles
   .available-tiles
   .list-group
   fieldset[disabled]
@@ -3180,13 +3057,11 @@ fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.focus.searchButton,
 fieldset[disabled]
-  .pat-tiles-management
   .actionsTiles
   .available-tiles
   .list-group
   .focus.list-group-item,
-.pat-tiles-management
-  .actionsTiles
+.actionsTiles
   .available-tiles
   .list-group
   fieldset[disabled]
@@ -3200,13 +3075,11 @@ fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.searchButton:active,
 fieldset[disabled]
-  .pat-tiles-management
   .actionsTiles
   .available-tiles
   .list-group
   .list-group-item:active,
-.pat-tiles-management
-  .actionsTiles
+.actionsTiles
   .available-tiles
   .list-group
   fieldset[disabled]
@@ -3220,13 +3093,11 @@ fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.active.searchButton,
 fieldset[disabled]
-  .pat-tiles-management
   .actionsTiles
   .available-tiles
   .list-group
   .active.list-group-item,
-.pat-tiles-management
-  .actionsTiles
+.actionsTiles
   .available-tiles
   .list-group
   fieldset[disabled]
@@ -3240,12 +3111,7 @@ input.destructive .badge,
 input.standalone .badge,
 input[type='submit'].discreet .badge,
 input[type='text'].text-widget.textline-field + input.searchButton .badge,
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .list-group-item
-  .badge {
+.actionsTiles .available-tiles .list-group .list-group-item .badge {
   color: #fff;
   background-color: #333;
 }
@@ -3664,7 +3530,7 @@ input.context[name='form.actions.save'] .badge,
 input.standalone,
 #content a.link-parent,
 .portalMessage.info span a,
-.pat-tiles-management .actionsTiles a.plone-btn {
+.actionsTiles a.plone-btn {
   color: #fff;
   background-color: #5bc0de;
   border-color: #46b8da;
@@ -3673,12 +3539,12 @@ input.standalone,
 input.standalone:focus,
 #content a.link-parent:focus,
 .portalMessage.info span a:focus,
-.pat-tiles-management .actionsTiles a.plone-btn:focus,
+.actionsTiles a.plone-btn:focus,
 .btn-info.focus,
 input.focus.standalone,
 #content a.focus.link-parent,
 .portalMessage.info span a.focus,
-.pat-tiles-management .actionsTiles a.focus.plone-btn {
+.actionsTiles a.focus.plone-btn {
   color: #fff;
   background-color: #31b0d5;
   border-color: #1b6d85;
@@ -3687,7 +3553,7 @@ input.focus.standalone,
 input.standalone:hover,
 #content a.link-parent:hover,
 .portalMessage.info span a:hover,
-.pat-tiles-management .actionsTiles a.plone-btn:hover {
+.actionsTiles a.plone-btn:hover {
   color: #fff;
   background-color: #31b0d5;
   border-color: #269abc;
@@ -3696,17 +3562,17 @@ input.standalone:hover,
 input.standalone:active,
 #content a.link-parent:active,
 .portalMessage.info span a:active,
-.pat-tiles-management .actionsTiles a.plone-btn:active,
+.actionsTiles a.plone-btn:active,
 .btn-info.active,
 input.active.standalone,
 #content a.active.link-parent,
 .portalMessage.info span a.active,
-.pat-tiles-management .actionsTiles a.active.plone-btn,
+.actionsTiles a.active.plone-btn,
 .open > .btn-info.dropdown-toggle,
 .open > input.dropdown-toggle.standalone,
 #content .open > a.dropdown-toggle.link-parent,
 .portalMessage.info span .open > a.dropdown-toggle,
-.pat-tiles-management .actionsTiles .open > a.dropdown-toggle.plone-btn {
+.actionsTiles .open > a.dropdown-toggle.plone-btn {
   color: #fff;
   background-color: #31b0d5;
   border-color: #269abc;
@@ -3715,47 +3581,47 @@ input.active.standalone,
 input.standalone:active:hover,
 #content a.link-parent:active:hover,
 .portalMessage.info span a:active:hover,
-.pat-tiles-management .actionsTiles a.plone-btn:active:hover,
+.actionsTiles a.plone-btn:active:hover,
 .btn-info:active:focus,
 input.standalone:active:focus,
 #content a.link-parent:active:focus,
 .portalMessage.info span a:active:focus,
-.pat-tiles-management .actionsTiles a.plone-btn:active:focus,
+.actionsTiles a.plone-btn:active:focus,
 .btn-info:active.focus,
 input.standalone:active.focus,
 #content a.link-parent:active.focus,
 .portalMessage.info span a:active.focus,
-.pat-tiles-management .actionsTiles a.plone-btn:active.focus,
+.actionsTiles a.plone-btn:active.focus,
 .btn-info.active:hover,
 input.active.standalone:hover,
 #content a.active.link-parent:hover,
 .portalMessage.info span a.active:hover,
-.pat-tiles-management .actionsTiles a.active.plone-btn:hover,
+.actionsTiles a.active.plone-btn:hover,
 .btn-info.active:focus,
 input.active.standalone:focus,
 #content a.active.link-parent:focus,
 .portalMessage.info span a.active:focus,
-.pat-tiles-management .actionsTiles a.active.plone-btn:focus,
+.actionsTiles a.active.plone-btn:focus,
 .btn-info.active.focus,
 input.active.focus.standalone,
 #content a.active.focus.link-parent,
 .portalMessage.info span a.active.focus,
-.pat-tiles-management .actionsTiles a.active.focus.plone-btn,
+.actionsTiles a.active.focus.plone-btn,
 .open > .btn-info.dropdown-toggle:hover,
 .open > input.dropdown-toggle.standalone:hover,
 #content .open > a.dropdown-toggle.link-parent:hover,
 .portalMessage.info span .open > a.dropdown-toggle:hover,
-.pat-tiles-management .actionsTiles .open > a.dropdown-toggle.plone-btn:hover,
+.actionsTiles .open > a.dropdown-toggle.plone-btn:hover,
 .open > .btn-info.dropdown-toggle:focus,
 .open > input.dropdown-toggle.standalone:focus,
 #content .open > a.dropdown-toggle.link-parent:focus,
 .portalMessage.info span .open > a.dropdown-toggle:focus,
-.pat-tiles-management .actionsTiles .open > a.dropdown-toggle.plone-btn:focus,
+.actionsTiles .open > a.dropdown-toggle.plone-btn:focus,
 .open > .btn-info.dropdown-toggle.focus,
 .open > input.dropdown-toggle.focus.standalone,
 #content .open > a.dropdown-toggle.focus.link-parent,
 .portalMessage.info span .open > a.dropdown-toggle.focus,
-.pat-tiles-management .actionsTiles .open > a.dropdown-toggle.focus.plone-btn {
+.actionsTiles .open > a.dropdown-toggle.focus.plone-btn {
   color: #fff;
   background-color: #269abc;
   border-color: #1b6d85;
@@ -3764,127 +3630,127 @@ input.active.focus.standalone,
 input.standalone:active,
 #content a.link-parent:active,
 .portalMessage.info span a:active,
-.pat-tiles-management .actionsTiles a.plone-btn:active,
+.actionsTiles a.plone-btn:active,
 .btn-info.active,
 input.active.standalone,
 #content a.active.link-parent,
 .portalMessage.info span a.active,
-.pat-tiles-management .actionsTiles a.active.plone-btn,
+.actionsTiles a.active.plone-btn,
 .open > .btn-info.dropdown-toggle,
 .open > input.dropdown-toggle.standalone,
 #content .open > a.dropdown-toggle.link-parent,
 .portalMessage.info span .open > a.dropdown-toggle,
-.pat-tiles-management .actionsTiles .open > a.dropdown-toggle.plone-btn {
+.actionsTiles .open > a.dropdown-toggle.plone-btn {
   background-image: none;
 }
 .btn-info.disabled,
 input.disabled.standalone,
 #content a.disabled.link-parent,
 .portalMessage.info span a.disabled,
-.pat-tiles-management .actionsTiles a.disabled.plone-btn,
+.actionsTiles a.disabled.plone-btn,
 .btn-info.disabled:hover,
 input.disabled.standalone:hover,
 #content a.disabled.link-parent:hover,
 .portalMessage.info span a.disabled:hover,
-.pat-tiles-management .actionsTiles a.disabled.plone-btn:hover,
+.actionsTiles a.disabled.plone-btn:hover,
 .btn-info.disabled:focus,
 input.disabled.standalone:focus,
 #content a.disabled.link-parent:focus,
 .portalMessage.info span a.disabled:focus,
-.pat-tiles-management .actionsTiles a.disabled.plone-btn:focus,
+.actionsTiles a.disabled.plone-btn:focus,
 .btn-info.disabled.focus,
 input.disabled.focus.standalone,
 #content a.disabled.focus.link-parent,
 .portalMessage.info span a.disabled.focus,
-.pat-tiles-management .actionsTiles a.disabled.focus.plone-btn,
+.actionsTiles a.disabled.focus.plone-btn,
 .btn-info.disabled:active,
 input.disabled.standalone:active,
 #content a.disabled.link-parent:active,
 .portalMessage.info span a.disabled:active,
-.pat-tiles-management .actionsTiles a.disabled.plone-btn:active,
+.actionsTiles a.disabled.plone-btn:active,
 .btn-info.disabled.active,
 input.disabled.active.standalone,
 #content a.disabled.active.link-parent,
 .portalMessage.info span a.disabled.active,
-.pat-tiles-management .actionsTiles a.disabled.active.plone-btn,
+.actionsTiles a.disabled.active.plone-btn,
 .btn-info[disabled],
 input[disabled].standalone,
 #content a[disabled].link-parent,
 .portalMessage.info span a[disabled],
-.pat-tiles-management .actionsTiles a[disabled].plone-btn,
+.actionsTiles a[disabled].plone-btn,
 .btn-info[disabled]:hover,
 input[disabled].standalone:hover,
 #content a[disabled].link-parent:hover,
 .portalMessage.info span a[disabled]:hover,
-.pat-tiles-management .actionsTiles a[disabled].plone-btn:hover,
+.actionsTiles a[disabled].plone-btn:hover,
 .btn-info[disabled]:focus,
 input[disabled].standalone:focus,
 #content a[disabled].link-parent:focus,
 .portalMessage.info span a[disabled]:focus,
-.pat-tiles-management .actionsTiles a[disabled].plone-btn:focus,
+.actionsTiles a[disabled].plone-btn:focus,
 .btn-info[disabled].focus,
 input[disabled].focus.standalone,
 #content a[disabled].focus.link-parent,
 .portalMessage.info span a[disabled].focus,
-.pat-tiles-management .actionsTiles a[disabled].focus.plone-btn,
+.actionsTiles a[disabled].focus.plone-btn,
 .btn-info[disabled]:active,
 input[disabled].standalone:active,
 #content a[disabled].link-parent:active,
 .portalMessage.info span a[disabled]:active,
-.pat-tiles-management .actionsTiles a[disabled].plone-btn:active,
+.actionsTiles a[disabled].plone-btn:active,
 .btn-info[disabled].active,
 input[disabled].active.standalone,
 #content a[disabled].active.link-parent,
 .portalMessage.info span a[disabled].active,
-.pat-tiles-management .actionsTiles a[disabled].active.plone-btn,
+.actionsTiles a[disabled].active.plone-btn,
 fieldset[disabled] .btn-info,
 fieldset[disabled] input.standalone,
 fieldset[disabled] #content a.link-parent,
 #content fieldset[disabled] a.link-parent,
 fieldset[disabled] .portalMessage.info span a,
 .portalMessage.info span fieldset[disabled] a,
-fieldset[disabled] .pat-tiles-management .actionsTiles a.plone-btn,
-.pat-tiles-management .actionsTiles fieldset[disabled] a.plone-btn,
+fieldset[disabled] .actionsTiles a.plone-btn,
+.actionsTiles fieldset[disabled] a.plone-btn,
 fieldset[disabled] .btn-info:hover,
 fieldset[disabled] input.standalone:hover,
 fieldset[disabled] #content a.link-parent:hover,
 #content fieldset[disabled] a.link-parent:hover,
 fieldset[disabled] .portalMessage.info span a:hover,
 .portalMessage.info span fieldset[disabled] a:hover,
-fieldset[disabled] .pat-tiles-management .actionsTiles a.plone-btn:hover,
-.pat-tiles-management .actionsTiles fieldset[disabled] a.plone-btn:hover,
+fieldset[disabled] .actionsTiles a.plone-btn:hover,
+.actionsTiles fieldset[disabled] a.plone-btn:hover,
 fieldset[disabled] .btn-info:focus,
 fieldset[disabled] input.standalone:focus,
 fieldset[disabled] #content a.link-parent:focus,
 #content fieldset[disabled] a.link-parent:focus,
 fieldset[disabled] .portalMessage.info span a:focus,
 .portalMessage.info span fieldset[disabled] a:focus,
-fieldset[disabled] .pat-tiles-management .actionsTiles a.plone-btn:focus,
-.pat-tiles-management .actionsTiles fieldset[disabled] a.plone-btn:focus,
+fieldset[disabled] .actionsTiles a.plone-btn:focus,
+.actionsTiles fieldset[disabled] a.plone-btn:focus,
 fieldset[disabled] .btn-info.focus,
 fieldset[disabled] input.focus.standalone,
 fieldset[disabled] #content a.focus.link-parent,
 #content fieldset[disabled] a.focus.link-parent,
 fieldset[disabled] .portalMessage.info span a.focus,
 .portalMessage.info span fieldset[disabled] a.focus,
-fieldset[disabled] .pat-tiles-management .actionsTiles a.focus.plone-btn,
-.pat-tiles-management .actionsTiles fieldset[disabled] a.focus.plone-btn,
+fieldset[disabled] .actionsTiles a.focus.plone-btn,
+.actionsTiles fieldset[disabled] a.focus.plone-btn,
 fieldset[disabled] .btn-info:active,
 fieldset[disabled] input.standalone:active,
 fieldset[disabled] #content a.link-parent:active,
 #content fieldset[disabled] a.link-parent:active,
 fieldset[disabled] .portalMessage.info span a:active,
 .portalMessage.info span fieldset[disabled] a:active,
-fieldset[disabled] .pat-tiles-management .actionsTiles a.plone-btn:active,
-.pat-tiles-management .actionsTiles fieldset[disabled] a.plone-btn:active,
+fieldset[disabled] .actionsTiles a.plone-btn:active,
+.actionsTiles fieldset[disabled] a.plone-btn:active,
 fieldset[disabled] .btn-info.active,
 fieldset[disabled] input.active.standalone,
 fieldset[disabled] #content a.active.link-parent,
 #content fieldset[disabled] a.active.link-parent,
 fieldset[disabled] .portalMessage.info span a.active,
 .portalMessage.info span fieldset[disabled] a.active,
-fieldset[disabled] .pat-tiles-management .actionsTiles a.active.plone-btn,
-.pat-tiles-management .actionsTiles fieldset[disabled] a.active.plone-btn {
+fieldset[disabled] .actionsTiles a.active.plone-btn,
+.actionsTiles fieldset[disabled] a.active.plone-btn {
   background-color: #5bc0de;
   border-color: #46b8da;
 }
@@ -3892,7 +3758,7 @@ fieldset[disabled] .pat-tiles-management .actionsTiles a.active.plone-btn,
 input.standalone .badge,
 #content a.link-parent .badge,
 .portalMessage.info span a .badge,
-.pat-tiles-management .actionsTiles a.plone-btn .badge {
+.actionsTiles a.plone-btn .badge {
   color: #5bc0de;
   background-color: #fff;
 }
@@ -8708,41 +8574,37 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 .pat-tiles-management {
   margin: 0;
 }
-.pat-tiles-management .actionsTiles {
+.pat-tiles-management.right-column
+  .actionsTiles
+  .available-tiles
+  .list-group-item {
+  width: 100%;
+}
+.actionsTiles {
   background: #eee;
   padding: 20px;
   text-align: center;
 }
-.pat-tiles-management .actionsTiles a.plone-btn {
+.actionsTiles a.plone-btn {
   text-transform: uppercase;
   font-weight: 600;
   color: #fff !important;
 }
-.pat-tiles-management .actionsTiles a.plone-btn:hover {
+.actionsTiles a.plone-btn:hover {
   color: #fff !important;
 }
-.pat-tiles-management .actionsTiles .available-tiles .list-group {
+.actionsTiles .available-tiles .list-group {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   font-size: 0.9em;
 }
-.pat-tiles-management
-  .actionsTiles
-  .available-tiles
-  .list-group
-  .list-group-item {
+.actionsTiles .available-tiles .list-group .list-group-item {
   width: 24%;
 }
-.pat-tiles-management .actionsTiles .available-tiles .list-group .tileTitle {
+.actionsTiles .available-tiles .list-group .tileTitle {
   font-size: 1.3em;
-}
-.pat-tiles-management.right-column
-  .actionsTiles
-  .available-tiles
-  .list-group-item {
-  width: 100%;
 }
 .tileTitle {
   font-size: 1.6em;
@@ -11379,13 +11241,13 @@ nav.pagination ul li.next span {
   display: none;
 }
 .section-homepage .actionsTiles,
-.section-homepage .edit-bar,
+.section-homepage #edit-bar,
 .section-homepage .portalMessage,
 .template-homepage_view .actionsTiles,
-.template-homepage_view .edit-bar,
+.template-homepage_view #edit-bar,
 .template-homepage_view .portalMessage,
 .template-tiles_page_view .actionsTiles,
-.template-tiles_page_view .edit-bar,
+.template-tiles_page_view #edit-bar,
 .template-tiles_page_view .portalMessage {
   margin-right: auto;
   margin-left: auto;
@@ -11394,71 +11256,71 @@ nav.pagination ul li.next span {
 }
 .section-homepage .actionsTiles:before,
 .section-homepage .actionsTiles:after,
-.section-homepage .edit-bar:before,
-.section-homepage .edit-bar:after,
+.section-homepage #edit-bar:before,
+.section-homepage #edit-bar:after,
 .section-homepage .portalMessage:before,
 .section-homepage .portalMessage:after,
 .template-homepage_view .actionsTiles:before,
 .template-homepage_view .actionsTiles:after,
-.template-homepage_view .edit-bar:before,
-.template-homepage_view .edit-bar:after,
+.template-homepage_view #edit-bar:before,
+.template-homepage_view #edit-bar:after,
 .template-homepage_view .portalMessage:before,
 .template-homepage_view .portalMessage:after,
 .template-tiles_page_view .actionsTiles:before,
 .template-tiles_page_view .actionsTiles:after,
-.template-tiles_page_view .edit-bar:before,
-.template-tiles_page_view .edit-bar:after,
+.template-tiles_page_view #edit-bar:before,
+.template-tiles_page_view #edit-bar:after,
 .template-tiles_page_view .portalMessage:before,
 .template-tiles_page_view .portalMessage:after {
   content: ' ';
   display: table;
 }
 .section-homepage .actionsTiles:after,
-.section-homepage .edit-bar:after,
+.section-homepage #edit-bar:after,
 .section-homepage .portalMessage:after,
 .template-homepage_view .actionsTiles:after,
-.template-homepage_view .edit-bar:after,
+.template-homepage_view #edit-bar:after,
 .template-homepage_view .portalMessage:after,
 .template-tiles_page_view .actionsTiles:after,
-.template-tiles_page_view .edit-bar:after,
+.template-tiles_page_view #edit-bar:after,
 .template-tiles_page_view .portalMessage:after {
   clear: both;
 }
 @media (min-width: 768px) {
   .section-homepage .actionsTiles,
-  .section-homepage .edit-bar,
+  .section-homepage #edit-bar,
   .section-homepage .portalMessage,
   .template-homepage_view .actionsTiles,
-  .template-homepage_view .edit-bar,
+  .template-homepage_view #edit-bar,
   .template-homepage_view .portalMessage,
   .template-tiles_page_view .actionsTiles,
-  .template-tiles_page_view .edit-bar,
+  .template-tiles_page_view #edit-bar,
   .template-tiles_page_view .portalMessage {
     width: auto;
   }
 }
 @media (min-width: 992px) {
   .section-homepage .actionsTiles,
-  .section-homepage .edit-bar,
+  .section-homepage #edit-bar,
   .section-homepage .portalMessage,
   .template-homepage_view .actionsTiles,
-  .template-homepage_view .edit-bar,
+  .template-homepage_view #edit-bar,
   .template-homepage_view .portalMessage,
   .template-tiles_page_view .actionsTiles,
-  .template-tiles_page_view .edit-bar,
+  .template-tiles_page_view #edit-bar,
   .template-tiles_page_view .portalMessage {
     width: auto;
   }
 }
 @media (min-width: 1360px) {
   .section-homepage .actionsTiles,
-  .section-homepage .edit-bar,
+  .section-homepage #edit-bar,
   .section-homepage .portalMessage,
   .template-homepage_view .actionsTiles,
-  .template-homepage_view .edit-bar,
+  .template-homepage_view #edit-bar,
   .template-homepage_view .portalMessage,
   .template-tiles_page_view .actionsTiles,
-  .template-tiles_page_view .edit-bar,
+  .template-tiles_page_view #edit-bar,
   .template-tiles_page_view .portalMessage {
     width: 1330px;
   }

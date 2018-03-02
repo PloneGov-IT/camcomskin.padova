@@ -66,45 +66,45 @@
 .pat-tiles-management {
     margin: 0;
 
-    .actionsTiles {
-        background: $gray-bg;
-        padding: 20px;
-        text-align: center;
-
-        a.plone-btn {
-          @extend .btn-info;
-          text-transform: uppercase;
-          font-weight: $semibold;
-          color: #FFF !important;
-
-          &:hover {
-              color: #FFF !important;
-          }
-        }
-
-        .available-tiles {
-            .list-group {
-                justify-content: center;
-                font-size: 0.9em;
-
-                .list-group-item {
-                     @extend .btn-default;
-                     width: 24%;
-                }
-
-                .tileTitle {
-                    font-size: 1.3em;
-                }
-            }
-        }
-    }
-
     &.right-column {
         .actionsTiles {
             .available-tiles {
                 .list-group-item {
                     width: 100%;
                 }
+            }
+        }
+    }
+}
+
+.actionsTiles {
+    background: $gray-bg;
+    padding: 20px;
+    text-align: center;
+
+    a.plone-btn {
+      @extend .btn-info;
+      text-transform: uppercase;
+      font-weight: $semibold;
+      color: #FFF !important;
+
+      &:hover {
+          color: #FFF !important;
+      }
+    }
+
+    .available-tiles {
+        .list-group {
+            justify-content: center;
+            font-size: 0.9em;
+
+            .list-group-item {
+                 @extend .btn-default;
+                 width: 24%;
+            }
+
+            .tileTitle {
+                font-size: 1.3em;
             }
         }
     }
