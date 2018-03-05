@@ -8,6 +8,117 @@
             display: none;
         }
     }
+
+    &.carousel {
+        div[class^="carousel-wrapper"] {
+            position: relative;
+        }
+
+        .slick-list {
+            width: 93%;
+            margin: auto;
+        }
+
+        .slick-track {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .slick-slide {
+            height: auto;
+        }
+
+        ul.slick-dots {
+            width: 100%;
+            padding: 15px 0 0;
+            margin: 0;
+            list-style: none;
+            display: inline-flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+
+            li {
+                padding: 0 5px;
+
+                button {
+                    padding: 0;
+                    overflow: hidden;
+                    width: 12px;
+                    height: 12px;
+                    text-indent: 1000px;
+                    border-radius: 4px;
+                    background: none;
+                }
+
+                &.slick-active {
+                    button {
+                        background-color: rgba(0, 0, 0, 0.67);
+                    }
+                }
+            }
+        }
+
+        .slick-arrow {
+            position: absolute;
+            top: calc(50% - 15px);
+            width: 30px;
+            height: 30px;
+            padding: 0 0 0 30px;
+            overflow: hidden;
+            z-index: 100;
+            background: none;
+            border: 0;
+
+            &:before {
+                @include make-ita('\23f4', #333);
+                position: absolute;
+                left: 5px;
+                top: 0;
+                font-size: 1.2em;
+                font-weight: 100;
+            }
+
+            &.slick-prev {
+                left: 0;
+                right: auto;
+            }
+
+            &.slick-next {
+                right: 0;
+                left: auto;
+
+                &:before {
+                    left: 7px;
+                    @include make-ita('\23f5', #333);
+                }
+            }
+
+            &:hover {
+                opacity: 0.7;
+                box-shadow: none;
+            }
+        }
+
+        &.sfondo-scuro {
+            ul.slick-dots {
+                button {
+                    border-color: #FFF;
+                }
+
+                .slick-active {
+                    button {
+                        background-color: #FFF;
+                    }
+                }
+            }
+
+            .slick-arrow {
+                &:before {
+                    color: #FFF;
+                }
+            }
+        }
+    }
 }
 
 .tile-collection {
@@ -346,8 +457,8 @@
     }
 }
 
-.aree-tematiche {
-    // padding-bottom: 40px;
+.aree-tematiche-collection {
+    position: relative;
 
     .tileTitle {
         font-size: 1.6em;
@@ -360,17 +471,25 @@
         flex-flow: row wrap;
         @include make-row();
         width: 100%;
+        list-style: none !important;
 
         li {
             @include make-xs-column(6);
             @include make-md-column(3);
 
             a {
-                display: block;
+                display: block !important;
                 overflow: auto;
-                border-top: 1px solid $gray-border;
+                border-top: 1px solid $gray-border !important;
+                border-bottom: 0 !important;
                 font-weight: $bold;
                 padding: 15px 10px;
+                color: $brand-primary !important;
+
+                &:hover,
+                &:focus {
+                    color: darken($brand-primary, 10%) !important;
+                }
 
                 .linkImage {
                     width: 40px;
@@ -379,8 +498,7 @@
                     text-align: center;
 
                     img {
-                        height: 100%;
-                        width: auto;
+                        height: auto;
                     }
                 }
 
@@ -402,12 +520,21 @@
         }
 
         @media (max-width: 550px) {
-            flex: column nowrap;
-
             li {
                 width: 100%;
                 float: none;
             }
+        }
+    }
+    .showMore {
+        position: absolute;
+        top: 30px;
+        right: 15px;
+
+        a {
+            font-size: 2rem;
+            font-weight: $bold;
+            border-bottom: 1px solid;
         }
     }
 }
@@ -752,5 +879,3 @@ h3.tileTitle,
 .tileTitle h3 {
     margin: 0;
 }
-
-

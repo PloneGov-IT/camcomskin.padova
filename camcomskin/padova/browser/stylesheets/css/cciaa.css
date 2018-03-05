@@ -371,7 +371,7 @@ nav.pagination ul {
 #header-social ul,
 #portal-mainnavigation ul#portal-globalnav,
 #portal-footer-wrapper ul.footer-social,
-.aree-tematiche ul,
+.aree-tematiche-collection ul,
 nav.pagination ul {
   padding-left: 0;
   list-style: none;
@@ -381,7 +381,7 @@ nav.pagination ul {
 #header-social ul > li,
 #portal-mainnavigation ul#portal-globalnav > li,
 #portal-footer-wrapper ul.footer-social > li,
-.aree-tematiche ul > li,
+.aree-tematiche-collection ul > li,
 nav.pagination ul > li {
   display: inline-block;
   padding-left: 5px;
@@ -9148,6 +9148,117 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 .collectionTile.senza-titolo .showMore {
   display: none;
 }
+.collectionTile.carousel div[class^='carousel-wrapper'] {
+  position: relative;
+}
+.collectionTile.carousel .slick-list {
+  width: 93%;
+  margin: auto;
+}
+.collectionTile.carousel .slick-track {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.collectionTile.carousel .slick-slide {
+  height: auto;
+}
+.collectionTile.carousel ul.slick-dots {
+  width: 100%;
+  padding: 15px 0 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.collectionTile.carousel ul.slick-dots li {
+  padding: 0 5px;
+}
+.collectionTile.carousel ul.slick-dots li button {
+  padding: 0;
+  overflow: hidden;
+  width: 12px;
+  height: 12px;
+  text-indent: 1000px;
+  border-radius: 4px;
+  background: none;
+}
+.collectionTile.carousel ul.slick-dots li.slick-active button {
+  background-color: rgba(0, 0, 0, 0.67);
+}
+.collectionTile.carousel .slick-arrow {
+  position: absolute;
+  top: -webkit-calc(50% - 15px);
+  top: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  padding: 0 0 0 30px;
+  overflow: hidden;
+  z-index: 100;
+  background: none;
+  border: 0;
+}
+.collectionTile.carousel .slick-arrow:before {
+  display: inline-block;
+  font-family: ita;
+  content: '⏴';
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+.collectionTile.carousel .slick-arrow.slick-prev {
+  left: 0;
+  right: auto;
+}
+.collectionTile.carousel .slick-arrow.slick-next {
+  right: 0;
+  left: auto;
+}
+.collectionTile.carousel .slick-arrow.slick-next:before {
+  left: 7px;
+  display: inline-block;
+  font-family: ita;
+  content: '⏵';
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.collectionTile.carousel .slick-arrow:hover {
+  opacity: 0.7;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.collectionTile.carousel.sfondo-scuro ul.slick-dots button {
+  border-color: #fff;
+}
+.collectionTile.carousel.sfondo-scuro ul.slick-dots .slick-active button {
+  background-color: #fff;
+}
+.collectionTile.carousel.sfondo-scuro .slick-arrow:before {
+  color: #fff;
+}
 .tile-collection.video-collection .collectionItemImage {
   position: relative;
 }
@@ -9509,11 +9620,14 @@ body.userrole-anonymous #portal-personaltools-wrapper {
     display: none;
   }
 }
-.aree-tematiche .tileTitle {
+.aree-tematiche-collection {
+  position: relative;
+}
+.aree-tematiche-collection .tileTitle {
   font-size: 1.6em;
   margin: 25px 0 12.5px;
 }
-.aree-tematiche ul {
+.aree-tematiche-collection ul {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -9526,16 +9640,17 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   margin-left: -15px;
   margin-right: -15px;
   width: 100%;
+  list-style: none !important;
 }
-.aree-tematiche ul:before,
-.aree-tematiche ul:after {
+.aree-tematiche-collection ul:before,
+.aree-tematiche-collection ul:after {
   content: ' ';
   display: table;
 }
-.aree-tematiche ul:after {
+.aree-tematiche-collection ul:after {
   clear: both;
 }
-.aree-tematiche ul li {
+.aree-tematiche-collection ul li {
   position: relative;
   float: left;
   width: 50%;
@@ -9548,49 +9663,58 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  .aree-tematiche ul li {
+  .aree-tematiche-collection ul li {
     float: left;
     width: 25%;
   }
 }
-.aree-tematiche ul li a {
-  display: block;
+.aree-tematiche-collection ul li a {
+  display: block !important;
   overflow: auto;
-  border-top: 1px solid #4a4a4a;
+  border-top: 1px solid #4a4a4a !important;
+  border-bottom: 0 !important;
   font-weight: 700;
   padding: 15px 10px;
+  color: #ac1b01 !important;
 }
-.aree-tematiche ul li a .linkImage {
+.aree-tematiche-collection ul li a:hover,
+.aree-tematiche-collection ul li a:focus {
+  color: #791301 !important;
+}
+.aree-tematiche-collection ul li a .linkImage {
   width: 40px;
   float: left;
   padding-right: 10px;
   text-align: center;
 }
-.aree-tematiche ul li a .linkImage img {
-  height: 100%;
-  width: auto;
+.aree-tematiche-collection ul li a .linkImage img {
+  height: auto;
 }
-.aree-tematiche ul li a .linkText {
+.aree-tematiche-collection ul li a .linkText {
   width: -webkit-calc(100% - 40px);
   width: calc(100% - 40px);
   padding-left: 10px;
   float: left;
 }
-.aree-tematiche ul li a:focus .linkText .title,
-.aree-tematiche ul li a:hover .linkText .title {
+.aree-tematiche-collection ul li a:focus .linkText .title,
+.aree-tematiche-collection ul li a:hover .linkText .title {
   border-bottom: 1px solid #ac1b01;
 }
 @media (max-width: 550px) {
-  .aree-tematiche ul {
-    -webkit-box-flex: column;
-    -webkit-flex: column nowrap;
-    -ms-flex: column nowrap;
-    flex: column 1 nowrap;
-  }
-  .aree-tematiche ul li {
+  .aree-tematiche-collection ul li {
     width: 100%;
     float: none;
   }
+}
+.aree-tematiche-collection .showMore {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+.aree-tematiche-collection .showMore a {
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 1px solid;
 }
 #portal-columns .news-highlight {
   background: #fff;
