@@ -8635,6 +8635,9 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 .tileWrapper.editableTile {
   background: rgba(245, 239, 186, 0.7);
 }
+.senza-titolo .tileTitle {
+  display: none;
+}
 #breadcrumbs {
   background: #eee;
   padding: 0.6em 0;
@@ -11361,10 +11364,7 @@ nav.pagination ul li.next span {
 .tile-advanced-static.sfondo-scuro,
 .tile-advanced-static.sfondo-chiaro {
   margin: 0;
-  padding: 20px 15px;
-}
-.tile-advanced-static.senza-titolo h3.tileTitle {
-  display: none;
+  padding: 20px 0;
 }
 .tile-advanced-static h3.tileTitle {
   margin-top: 0;
@@ -11376,6 +11376,105 @@ nav.pagination ul li.next span {
   border: 1px solid;
   border-radius: 3px;
   padding: 0 0.5em;
+}
+.tile-advanced-static.portletStaticNavigation .tile-text {
+  padding: 20px;
+}
+.tile-advanced-static.portletStaticNavigation .tile-text h3 {
+  border-bottom: 4px solid #666;
+  padding-bottom: 10px;
+  margin-bottom: 0.75em;
+}
+.tile-advanced-static.portletStaticNavigation .tile-text ul {
+  margin: 1.5rem 0 !important;
+  padding: 0;
+  list-style: none !important;
+}
+.tile-advanced-static.portletStaticNavigation .tile-text ul li {
+  padding: 1.5rem 0;
+  border-top: 1px solid #c1c1c1;
+}
+.tile-advanced-static.portletStaticNavigation .tile-text ul li a {
+  border-bottom: 0 none !important;
+}
+.tile-advanced-static.portletStaticNavigation .tile-text ul li a:focus,
+.tile-advanced-static.portletStaticNavigation .tile-text ul li a:hover {
+  color: #1c2024 !important;
+  border-bottom: 1px solid #1c2024 !important;
+}
+.PagesTileStatic,
+.tile-advanced-static.PagesTileStatic {
+  margin: 3rem 0;
+}
+.PagesTileStatic .tile-container:before,
+.tile-advanced-static.PagesTileStatic .tile-container:before {
+  border-top: 8px solid #ac1b01;
+  clear: both;
+  content: ' ';
+  display: block;
+  width: 200px;
+  max-width: 100%;
+}
+.PagesTileStatic a,
+.tile-advanced-static.PagesTileStatic a {
+  border-bottom: 1px solid #ac1b01;
+}
+.PagesTileStatic a:focus,
+.PagesTileStatic a:hover,
+.tile-advanced-static.PagesTileStatic a:focus,
+.tile-advanced-static.PagesTileStatic a:hover {
+  border-bottom: 1px solid #1c2024;
+}
+.PagesTileStatic h3.tileTitle,
+.tile-advanced-static.PagesTileStatic h3.tileTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1.5rem 0 1rem;
+  line-height: 1.3;
+}
+.PagesTileStatic h3.tileTitle a,
+.tile-advanced-static.PagesTileStatic h3.tileTitle a {
+  color: #000;
+  border-bottom: 0 none;
+}
+.PagesTileStatic h3.tileTitle a:focus,
+.PagesTileStatic h3.tileTitle a:hover,
+.tile-advanced-static.PagesTileStatic h3.tileTitle a:focus,
+.tile-advanced-static.PagesTileStatic h3.tileTitle a:hover {
+  color: #1c2024;
+  border-bottom: 1px solid #1c2024;
+}
+.PagesTileStatic .tile-text ul,
+.tile-advanced-static.PagesTileStatic .tile-text ul {
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+.PagesTileStatic .tile-text ul li,
+.tile-advanced-static.PagesTileStatic .tile-text ul li {
+  padding: 1.5rem 0;
+  border-top: 1px solid #c1c1c1;
+}
+.PagesTileStatic .tile-text ul li a,
+.tile-advanced-static.PagesTileStatic .tile-text ul li a {
+  border-bottom: 0 none;
+}
+.PagesTileStatic .tile-text ul li a:focus,
+.PagesTileStatic .tile-text ul li a:hover,
+.tile-advanced-static.PagesTileStatic .tile-text ul li a:focus,
+.tile-advanced-static.PagesTileStatic .tile-text ul li a:hover {
+  border-bottom: 1px solid #1c2024;
+}
+.sfondo-chiaro.portletStaticNavigation .tile-text {
+  background: #fff;
+}
+.sfondo-chiaro.portletStaticNavigation .tile-text:before,
+.sfondo-chiaro.portletStaticNavigation .tile-text:after {
+  content: ' ';
+  display: table;
+}
+.sfondo-chiaro.portletStaticNavigation .tile-text:after {
+  clear: both;
 }
 .section-homepage #viewlet-below-content,
 .template-homepage_view #viewlet-below-content,
