@@ -371,6 +371,7 @@ nav.pagination ul {
 #header-social ul,
 #portal-mainnavigation ul#portal-globalnav,
 #portal-footer-wrapper ul.footer-social,
+#content .aree-tematiche ul,
 .aree-tematiche ul,
 nav.pagination ul {
   padding-left: 0;
@@ -381,6 +382,7 @@ nav.pagination ul {
 #header-social ul > li,
 #portal-mainnavigation ul#portal-globalnav > li,
 #portal-footer-wrapper ul.footer-social > li,
+#content .aree-tematiche ul > li,
 .aree-tematiche ul > li,
 nav.pagination ul > li {
   display: inline-block;
@@ -9509,10 +9511,12 @@ body.userrole-anonymous #portal-personaltools-wrapper {
     display: none;
   }
 }
+#content .aree-tematiche .tileTitle,
 .aree-tematiche .tileTitle {
   font-size: 1.6em;
   margin: 25px 0 12.5px;
 }
+#content .aree-tematiche ul,
 .aree-tematiche ul {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -9527,14 +9531,18 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   margin-right: -15px;
   width: 100%;
 }
+#content .aree-tematiche ul:before,
+#content .aree-tematiche ul:after,
 .aree-tematiche ul:before,
 .aree-tematiche ul:after {
   content: ' ';
   display: table;
 }
+#content .aree-tematiche ul:after,
 .aree-tematiche ul:after {
   clear: both;
 }
+#content .aree-tematiche ul li,
 .aree-tematiche ul li {
   position: relative;
   float: left;
@@ -9548,11 +9556,13 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   padding-right: 15px;
 }
 @media (min-width: 992px) {
+  #content .aree-tematiche ul li,
   .aree-tematiche ul li {
     float: left;
     width: 25%;
   }
 }
+#content .aree-tematiche ul li a,
 .aree-tematiche ul li a {
   display: block;
   overflow: auto;
@@ -9560,33 +9570,40 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   font-weight: 700;
   padding: 15px 10px;
 }
+#content .aree-tematiche ul li a .linkImage,
 .aree-tematiche ul li a .linkImage {
   width: 40px;
   float: left;
   padding-right: 10px;
   text-align: center;
 }
+#content .aree-tematiche ul li a .linkImage img,
 .aree-tematiche ul li a .linkImage img {
   height: 100%;
   width: auto;
 }
+#content .aree-tematiche ul li a .linkText,
 .aree-tematiche ul li a .linkText {
   width: -webkit-calc(100% - 40px);
   width: calc(100% - 40px);
   padding-left: 10px;
   float: left;
 }
+#content .aree-tematiche ul li a:focus .linkText .title,
+#content .aree-tematiche ul li a:hover .linkText .title,
 .aree-tematiche ul li a:focus .linkText .title,
 .aree-tematiche ul li a:hover .linkText .title {
   border-bottom: 1px solid #ac1b01;
 }
 @media (max-width: 550px) {
+  #content .aree-tematiche ul,
   .aree-tematiche ul {
     -webkit-box-flex: column;
     -webkit-flex: column nowrap;
     -ms-flex: column nowrap;
     flex: column 1 nowrap;
   }
+  #content .aree-tematiche ul li,
   .aree-tematiche ul li {
     width: 100%;
     float: none;
