@@ -371,6 +371,7 @@ nav.pagination ul {
 #header-social ul,
 #portal-mainnavigation ul#portal-globalnav,
 #portal-footer-wrapper ul.footer-social,
+#content .aree-tematiche-collection ul,
 .aree-tematiche-collection ul,
 nav.pagination ul {
   padding-left: 0;
@@ -381,6 +382,7 @@ nav.pagination ul {
 #header-social ul > li,
 #portal-mainnavigation ul#portal-globalnav > li,
 #portal-footer-wrapper ul.footer-social > li,
+#content .aree-tematiche-collection ul > li,
 .aree-tematiche-collection ul > li,
 nav.pagination ul > li {
   display: inline-block;
@@ -9623,13 +9625,16 @@ body.userrole-anonymous #portal-personaltools-wrapper {
     display: none;
   }
 }
+#content .aree-tematiche-collection,
 .aree-tematiche-collection {
   position: relative;
 }
+#content .aree-tematiche-collection .tileTitle,
 .aree-tematiche-collection .tileTitle {
   font-size: 1.6em;
   margin: 25px 0 12.5px;
 }
+#content .aree-tematiche-collection ul,
 .aree-tematiche-collection ul {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -9645,14 +9650,18 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   width: 100%;
   list-style: none !important;
 }
+#content .aree-tematiche-collection ul:before,
+#content .aree-tematiche-collection ul:after,
 .aree-tematiche-collection ul:before,
 .aree-tematiche-collection ul:after {
   content: ' ';
   display: table;
 }
+#content .aree-tematiche-collection ul:after,
 .aree-tematiche-collection ul:after {
   clear: both;
 }
+#content .aree-tematiche-collection ul li,
 .aree-tematiche-collection ul li {
   position: relative;
   float: left;
@@ -9666,11 +9675,13 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   padding-right: 15px;
 }
 @media (min-width: 992px) {
+  #content .aree-tematiche-collection ul li,
   .aree-tematiche-collection ul li {
     float: left;
     width: 25%;
   }
 }
+#content .aree-tematiche-collection ul li a,
 .aree-tematiche-collection ul li a {
   display: block !important;
   overflow: auto;
@@ -9680,40 +9691,50 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   padding: 15px 10px;
   color: #ac1b01 !important;
 }
+#content .aree-tematiche-collection ul li a:hover,
+#content .aree-tematiche-collection ul li a:focus,
 .aree-tematiche-collection ul li a:hover,
 .aree-tematiche-collection ul li a:focus {
   color: #791301 !important;
 }
+#content .aree-tematiche-collection ul li a .linkImage,
 .aree-tematiche-collection ul li a .linkImage {
   width: 40px;
   float: left;
   padding-right: 10px;
   text-align: center;
 }
+#content .aree-tematiche-collection ul li a .linkImage img,
 .aree-tematiche-collection ul li a .linkImage img {
   height: auto;
 }
+#content .aree-tematiche-collection ul li a .linkText,
 .aree-tematiche-collection ul li a .linkText {
   width: -webkit-calc(100% - 40px);
   width: calc(100% - 40px);
   padding-left: 10px;
   float: left;
 }
+#content .aree-tematiche-collection ul li a:focus .linkText .title,
+#content .aree-tematiche-collection ul li a:hover .linkText .title,
 .aree-tematiche-collection ul li a:focus .linkText .title,
 .aree-tematiche-collection ul li a:hover .linkText .title {
   border-bottom: 1px solid #ac1b01;
 }
 @media (max-width: 550px) {
+  #content .aree-tematiche-collection ul li,
   .aree-tematiche-collection ul li {
     width: 100%;
     float: none;
   }
 }
+#content .aree-tematiche-collection .showMore,
 .aree-tematiche-collection .showMore {
   position: absolute;
   top: 30px;
   right: 15px;
 }
+#content .aree-tematiche-collection .showMore a,
 .aree-tematiche-collection .showMore a {
   font-size: 2rem;
   font-weight: 700;
@@ -11475,6 +11496,84 @@ nav.pagination ul li.next span {
 }
 .sfondo-chiaro.portletStaticNavigation .tile-text:after {
   clear: both;
+}
+#content .Bottoni:before,
+#content .Bottoni:after,
+.Bottoni:before,
+.Bottoni:after {
+  content: ' ';
+  display: table;
+}
+#content .Bottoni:after,
+.Bottoni:after {
+  clear: both;
+}
+#content .Bottoni h3.tileTitle,
+.Bottoni h3.tileTitle {
+  display: none;
+}
+#content .Bottoni .tileBody,
+.Bottoni .tileBody {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#content .Bottoni .tileBody > div,
+.Bottoni .tileBody > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+#content .Bottoni .Bottone,
+.Bottoni .Bottone {
+  background-color: #ac1b01;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 7.5px 0;
+  color: white;
+  width: 100%;
+}
+#content .Bottoni .Bottone h3,
+.Bottoni .Bottone h3 {
+  color: white;
+  margin: 0;
+  font-weight: 400;
+}
+#content .Bottoni .Bottone h3 a,
+.Bottoni .Bottone h3 a {
+  color: white;
+}
+#content .Bottoni .Bottone h3 a:hover,
+#content .Bottoni .Bottone h3 a:focus,
+.Bottoni .Bottone h3 a:hover,
+.Bottoni .Bottone h3 a:focus {
+  color: white !important;
+}
+#content .Bottoni .Bottone.Big,
+.Bottoni .Bottone.Big {
+  padding: 15px 20px;
+}
+#content .Bottoni .Bottone.Big h3,
+.Bottoni .Bottone.Big h3 {
+  font-size: 1.8em;
+}
+#content .Bottoni .Bottone.Small h3,
+.Bottoni .Bottone.Small h3 {
+  font-size: 1.3em;
 }
 .section-homepage #viewlet-below-content,
 .template-homepage_view #viewlet-below-content,
