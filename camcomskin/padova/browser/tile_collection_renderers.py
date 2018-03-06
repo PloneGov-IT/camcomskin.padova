@@ -21,7 +21,7 @@ class HelpersView(BrowserView):
                 request=self.request,
             )
             return scale_view.scale('image', scale=scale).tag()
-        except (InvalidParameterError, POSKeyError, AttributeError):
+        except (InvalidParameterError, POSKeyError, AttributeError, KeyError):
             # The object doesn't have an image field
             return ""
 

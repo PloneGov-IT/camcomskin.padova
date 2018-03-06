@@ -1,14 +1,3 @@
-<metal:styleslot fill-slot="style_slot">
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-</metal:styleslot>
-
-<metal:javascriptslot fill-slot="javascript_head_slot">
-  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-</metal:javascriptslot>
-
 <metal:macro define-macro="collection-tile-macro"
              tal:define="helper_view nocall:context/@@collection_tile_helpers;
                          showCarousel python:'carousel' in view.data.get('css_class', '');
