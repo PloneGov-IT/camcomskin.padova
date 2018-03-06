@@ -8633,6 +8633,7 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   position: absolute;
   top: 5px;
   right: 5px;
+  z-index: 100;
 }
 .tileWrapper.editableTile {
   background: rgba(245, 239, 186, 0.7);
@@ -9178,7 +9179,7 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   width: 100%;
   padding: 15px 0 0;
   margin: 0;
-  list-style: none;
+  list-style: none !important;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
