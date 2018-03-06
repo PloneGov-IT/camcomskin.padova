@@ -9391,6 +9391,89 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   font-size: 0.85em;
   line-height: 1.5em;
 }
+.tile-collection.news-two-rows-collection ul.tileContent {
+  padding: 20px 0;
+}
+.tile-collection.news-two-rows-collection .collectionItem {
+  width: 25%;
+  display: inline-block;
+  padding-top: 0;
+}
+.tile-collection.news-two-rows-collection .collectionItem.firstItem {
+  width: -webkit-calc(75% - 15px);
+  width: calc(75% - 15px);
+  margin-right: 15px;
+}
+.tile-collection.news-two-rows-collection .collectionItem.firstItem::after,
+.tile-collection.news-two-rows-collection
+  .collectionItem.firstItem
+  + .collectionItem::after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #cdcdcd;
+}
+.tile-collection.news-two-rows-collection
+  .collectionItem.firstItem
+  .collectionItemWrapper
+  > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+@media (max-width: 768px) {
+  .tile-collection.news-two-rows-collection
+    .collectionItem.firstItem
+    .collectionItemWrapper
+    > a {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.tile-collection.news-two-rows-collection
+  .collectionItem.firstItem
+  .collectionItemImage {
+  width: 100%;
+  max-height: 300px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  display: inline-block;
+  padding: 0 10px;
+}
+.tile-collection.news-two-rows-collection
+  .collectionItem.firstItem
+  .collectionItemText {
+  display: inline-block;
+}
+.tile-collection.news-two-rows-collection
+  .collectionItem:not(.firstItem)
+  .collectionItemText {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0 1 0%;
+}
+.tile-collection.news-two-rows-collection .collectionItemWrapper {
+  background-color: inherit;
+}
+.tile-collection.news-two-rows-collection
+  .collectionItemWrapper
+  .collectionItemText {
+  padding: 0 10px 20px;
+}
+.tile-collection.news-two-rows-collection
+  .collectionItemWrapper
+  .collectionItemDates {
+  text-align: left;
+  padding-top: 0;
+}
 .tile-collection .tile-collection-container {
   position: relative;
   overflow: auto;
@@ -9414,14 +9497,20 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   padding: 20px 10px;
 }
 .tile-collection .showMore {
-  position: absolute;
-  top: 1.6em;
-  right: 2%;
+  padding: 10px 0;
+  text-align: right;
 }
 .tile-collection .showMore a {
+  border-bottom: 1px solid transparent;
   font-size: 2rem;
-  font-weight: 700;
-  border-bottom: 1px solid;
+  font-weight: 600;
+}
+.tile-collection .showMore a:hover,
+.tile-collection .showMore a:focus {
+  border-bottom-color: inherit;
+}
+.tile-collection .showMore a::after {
+  content: '\203A';
 }
 .tile-collection .tileTitle {
   padding: 0 10px;
