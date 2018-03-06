@@ -16,7 +16,7 @@
       <script type="text/javascript"
               tal:attributes="src string:${portal_url}/++resource++redturtle.tiles.management/integration.js?v=${view/pkg_version}"></script>
     <script type="text/javascript"
-            tal:attributes="src string:${portal_url}/++resource++camcomskin.padova.javascripts/slick-integration.js"></script>
+            tal:attributes="src string:${portal_url}/++resource++camcomskin.padova.javascripts/integration-require.js"></script>
     </metal:javascriptslot>
 
     <body>

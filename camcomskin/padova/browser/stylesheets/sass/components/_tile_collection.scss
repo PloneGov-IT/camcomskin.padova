@@ -279,7 +279,7 @@
                     max-height: 300px;
                     max-height: fit-content;
                     display: inline-block;
-                    padding: 0 10px;
+                    padding: 15px;
                 }
 
                 .collectionItemText {
@@ -316,7 +316,7 @@
 
     ul.tileContent {
         list-style: none !important;
-        margin-left: 0 !important;
+        margin: 0 !important;
         padding-left: 0;
         display: flex;
         flex-flow: row wrap;
@@ -327,7 +327,7 @@
     }
 
     .showMore {
-        padding: 10px 0;
+        padding: 5px 0 15px;
         text-align: right;
 
         a {
