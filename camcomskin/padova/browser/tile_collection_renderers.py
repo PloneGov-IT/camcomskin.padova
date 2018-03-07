@@ -117,6 +117,12 @@ class NewsHighlightView(BrowserView):
     display_name = _("News highlight")
 
 
+class NewsTwoRowsView(BrowserView):
+    implements(ICollectionTileRenderer)
+
+    display_name = _("Layout news su due righe")
+
+
 class NewsBigPhotoView(BrowserView):
     """
     Custom view that shows a news with a big photo on the background

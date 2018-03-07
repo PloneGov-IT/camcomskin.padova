@@ -344,6 +344,15 @@
       />
 
   <browser:page
+      name="news_two_rows_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.NewsTwoRowsView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/news_two_rows_renderer.pt"
+      />
+
+  <browser:page
       name="news_big_photo_renderer"
       permission="zope2.View"
       for="*"

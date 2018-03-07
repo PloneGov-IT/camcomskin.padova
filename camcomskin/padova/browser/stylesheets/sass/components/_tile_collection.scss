@@ -292,6 +292,24 @@
                     flex: 0;
                 }
             }
+
+            @media (max-width: 991px) {
+                width: 50%;
+
+                &.firstItem {
+                    width: 100%;
+
+                    & + .collectionItem {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 600px) {
+                width: 100%;
+            }
         }
 
         .collectionItemWrapper {

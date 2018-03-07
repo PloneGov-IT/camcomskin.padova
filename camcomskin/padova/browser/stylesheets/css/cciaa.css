@@ -9460,6 +9460,24 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   -ms-flex: 0;
   flex: 0 1 0%;
 }
+@media (max-width: 991px) {
+  .tile-collection.news-two-rows-collection .collectionItem {
+    width: 50%;
+  }
+  .tile-collection.news-two-rows-collection .collectionItem.firstItem {
+    width: 100%;
+  }
+  .tile-collection.news-two-rows-collection
+    .collectionItem.firstItem
+    + .collectionItem::after {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .tile-collection.news-two-rows-collection .collectionItem {
+    width: 100%;
+  }
+}
 .tile-collection.news-two-rows-collection .collectionItemWrapper {
   background-color: inherit;
 }
