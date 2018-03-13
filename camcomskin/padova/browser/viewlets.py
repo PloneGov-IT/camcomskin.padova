@@ -7,6 +7,9 @@ from plone.app.layout.viewlets. content import DocumentBylineViewlet as BaseDocu
 from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
+from plone.app.layout.viewlets import common as base
+from plone import api
+
 
 class LeadImageViewlet(BaseLeadImageViewlet):
 
@@ -54,3 +57,4 @@ class ContentRelatedItems(BaseContentRelatedItems):
                 # permission to see the target object
                 brains.extend(catalog(path=dict(query=path, depth=0)))
         return brains
+

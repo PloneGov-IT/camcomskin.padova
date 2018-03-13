@@ -10968,7 +10968,7 @@ table tr.odd {
 }
 .share .share-button {
   display: inline-block;
-  background: #cb1d15;
+  background: #ac1b01;
   width: 45px;
   height: 45px;
   color: #fff;
@@ -11073,6 +11073,14 @@ table tr.odd {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.share .share-options ul.social-list li a .social.telegram:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .share.open .share-options {
   width: 275px;
   margin: 0;
@@ -11081,7 +11089,7 @@ table tr.odd {
   width: 0%;
 }
 .share.open .share-icon {
-  color: #cb1d15;
+  color: #ac1b01;
   background: #eee;
 }
 @media (max-width: 767px) {

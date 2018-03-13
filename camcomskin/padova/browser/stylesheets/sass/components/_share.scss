@@ -62,7 +62,7 @@
 
     .share-button {
         display: inline-block;
-        background: $social-icon-bg;
+        background: $brand-primary;
         width: 45px;
         height: 45px;
         color: #fff;
@@ -127,6 +127,9 @@
                         &.linkedin:before {
                             @include make-fa('\f0e1', #fff);
                         }
+                        &.telegram:before {
+                            @include make-fa('\f2c6', #fff);
+                        }
                     }
                 }
             }
@@ -144,7 +147,7 @@
         }
 
         .share-icon {
-            color: $social-icon-bg;
+            color: $brand-primary;
             background: $gray-bg;
         }
     }

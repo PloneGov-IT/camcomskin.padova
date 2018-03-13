@@ -89,6 +89,26 @@
     });
 
     /*
+     *  share button position
+     */
+    var $share = $('.share');
+    if ($('.news-column').length) {
+      $('.news-column').prepend($share);
+      $share.addClass('share-visible');
+    } else if ($('#portal-column-two').length) {
+      $('#portal-column-two').prepend($share);
+      $share.addClass('share-visible');
+    }
+
+    /*
+     * share button behavior
+     */
+    $('.share .share-toggle').on('click', function(e) {
+      e.preventDefault();
+      $share.toggleClass('open');
+    });
+
+    /*
      * gestione click fuori per chiudere menu, ricerca e condividi
      */
     $(document).on('click', function(e) {
