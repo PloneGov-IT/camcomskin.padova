@@ -92,10 +92,7 @@
      *  share button position
      */
     var $share = $('.share');
-    if ($('.news-column').length) {
-      $('.news-column').prepend($share);
-      $share.addClass('share-visible');
-    } else if ($('#portal-column-two').length) {
+    if ($('#portal-column-two').length > 0) {
       $('#portal-column-two').prepend($share);
       $share.addClass('share-visible');
     }
