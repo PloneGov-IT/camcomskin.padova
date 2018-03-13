@@ -10629,6 +10629,7 @@ table tr.odd {
   padding-left: 2rem;
   margin-bottom: 1.5rem;
   position: relative;
+  background: none;
 }
 .relatedItems #relatedItemBox ul li a:focus,
 .relatedItems #relatedItemBox ul li a:hover {
@@ -11221,6 +11222,49 @@ body.portaltype-event #parent-fieldname-text {
 }
 .template-event #calroot #calhead #caltitle select {
   padding: 0;
+}
+.template-event_view #content .eventDetails,
+.template-imagedevent_view #content .eventDetails {
+  border: 0;
+  clear: both;
+  float: none;
+  width: auto;
+  margin: 0 0 1em;
+  max-width: 100%;
+}
+.template-event_view abbr,
+.template-imagedevent_view abbr {
+  cursor: default;
+  border: 0;
+  text-decoration: none;
+}
+.template-event_view table,
+.template-imagedevent_view table {
+  border: 1px solid #ccc;
+}
+.template-event_view table tbody tr,
+.template-event_view table tbody tr td,
+.template-event_view table tbody tr th,
+.template-event_view table tbody tr.odd,
+.template-event_view table tbody tr.odd td,
+.template-event_view table tbody tr.odd th,
+.template-imagedevent_view table tbody tr,
+.template-imagedevent_view table tbody tr td,
+.template-imagedevent_view table tbody tr th,
+.template-imagedevent_view table tbody tr.odd,
+.template-imagedevent_view table tbody tr.odd td,
+.template-imagedevent_view table tbody tr.odd th {
+  border: 0;
+  background: none;
+}
+.template-event_view table tbody tr:first-of-type,
+.template-imagedevent_view table tbody tr:first-of-type {
+  border-bottom: 1px solid #ccc;
+}
+.template-event_view table tbody th,
+.template-imagedevent_view table tbody th {
+  color: #333;
+  max-width: 10em;
 }
 .template-event_listing .cal_info .documentByLine {
   margin: 5px 0;

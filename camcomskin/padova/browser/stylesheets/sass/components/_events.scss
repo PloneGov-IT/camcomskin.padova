@@ -116,6 +116,48 @@ body.portaltype-event {
     }
 }
 
+.template-event_view,
+.template-imagedevent_view {
+    #content .eventDetails {
+        border: 0;
+        clear: both;
+        float: none;
+        width: auto;
+        margin: 0 0 1em;
+        max-width: 100%;
+    }
+
+    abbr {
+        cursor: default;
+        border: 0;
+        text-decoration: none;
+    }
+
+    table {
+        $borderColor: #CCC;
+
+        border: 1px solid $borderColor;
+
+        tbody {
+            tr, tr.odd {
+                &, td, th {
+                    border: 0;
+                    background: none;
+                }
+            }
+
+            tr:first-of-type {
+                border-bottom: 1px solid $borderColor;
+            }
+
+            th {
+                color: #333;
+                max-width: 10em;
+            }
+        }
+    }
+}
+
 .template-event_listing {
     .cal_info {
         .documentByLine {

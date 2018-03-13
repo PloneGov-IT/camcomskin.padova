@@ -10,6 +10,7 @@
             line-height: 1.5em;
             margin-bottom: 2rem;
         }
+
         ul {
             margin: 0;
             padding: 0;
@@ -19,6 +20,7 @@
                 padding-left: 2rem;
                 margin-bottom: 1.5rem;
                 position: relative;
+                background: none;
 
                 a {
                     &:focus,
