@@ -95,6 +95,7 @@
     .searchOpened,
     .menuOpened {
         position: relative;
+        overflow: hidden;
 
         &:after {
             content: '';
@@ -205,7 +206,6 @@
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
         width: 100%;
         left: 0;
-        top: 100%;
         z-index: 10;
 
         li {
@@ -260,11 +260,6 @@
 
                 a {
                     color: $text-color;
-
-                    &:focus,
-                    &:hover {
-                        // text-decoration: underline !important;
-                    }
                 }
             }
 
@@ -453,7 +448,7 @@
 
                         &:not(.clickandgo) {
                             &:after {
-                                @include make-fa('\f078');
+                                @include make-fa('\f077');
                             }
                         }
 
@@ -484,41 +479,41 @@
                     }
                 }
             }
+        }
 
-            #submenu-details {
-                position: static;
-                background: inherit;
+        #submenu-details {
+            position: static;
+            background: inherit;
+        }
+
+        .submenuDetailsContent {
+            flex-flow: column wrap;
+
+            @media (max-width: $screen-sm-max) {
+                display: block;
             }
+        }
 
-            .submenuDetailsContent {
+        .submenuStaticWrapper {
+            flex-flow: column nowrap;
+            font-size: 0.8em;
+            padding-top: 15px;
+
+            .staticItem {
                 padding: 0;
 
-                @media (max-width: $screen-sm-max) {
-                    display: block;
+                h4 {
+                    margin: 0;
+                }
+
+                ul {
+                    border-left: 0;
+                    padding-left: 0;
                 }
             }
 
-            .submenuStaticWrapper {
-                flex-flow: column nowrap;
-                font-size: 0.8em;
-                padding-top: 15px;
-
-                .staticItem {
-                    padding: 20px 0 10px;
-
-                    h4 {
-                        margin: 0;
-                    }
-
-                    ul {
-                        border-left: 0;
-                        padding-left: 0;
-                    }
-                }
-
-                @media (max-width: $screen-sm-max) {
-                    padding-bottom: 15px;
-                }
+            @media (max-width: $screen-sm-max) {
+                padding-bottom: 15px;
             }
         }
     }

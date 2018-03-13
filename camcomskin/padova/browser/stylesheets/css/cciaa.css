@@ -7950,6 +7950,7 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   .searchOpened,
   .menuOpened {
     position: relative;
+    overflow: hidden;
   }
   .searchOpened:after,
   .menuOpened:after {
@@ -8063,7 +8064,6 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
   width: 100%;
   left: 0;
-  top: 100%;
   z-index: 10;
 }
 #portal-mainnavigation #submenu-details li {
@@ -8347,7 +8347,7 @@ body.userrole-anonymous #portal-personaltools-wrapper {
     .menuTabLink:not(.clickandgo):after {
     display: inline-block;
     font-family: FontAwesome;
-    content: '';
+    content: '';
     color: inherit;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -8376,21 +8376,25 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   #portal-mainnavigation ul#portal-globalnav > li a a:focus {
     border-color: #fff;
   }
-  #portal-mainnavigation ul#portal-globalnav #submenu-details {
+  #portal-mainnavigation #submenu-details {
     position: static;
     background: inherit;
   }
-  #portal-mainnavigation ul#portal-globalnav .submenuDetailsContent {
-    padding: 0;
+  #portal-mainnavigation .submenuDetailsContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
   }
 }
 @media (max-width: 991px) and (max-width: 991px) {
-  #portal-mainnavigation ul#portal-globalnav .submenuDetailsContent {
+  #portal-mainnavigation .submenuDetailsContent {
     display: block;
   }
 }
 @media (max-width: 991px) {
-  #portal-mainnavigation ul#portal-globalnav .submenuStaticWrapper {
+  #portal-mainnavigation .submenuStaticWrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-flow: column nowrap;
@@ -8399,27 +8403,19 @@ body.userrole-anonymous #portal-personaltools-wrapper {
     font-size: 0.8em;
     padding-top: 15px;
   }
-  #portal-mainnavigation ul#portal-globalnav .submenuStaticWrapper .staticItem {
-    padding: 20px 0 10px;
+  #portal-mainnavigation .submenuStaticWrapper .staticItem {
+    padding: 0;
   }
-  #portal-mainnavigation
-    ul#portal-globalnav
-    .submenuStaticWrapper
-    .staticItem
-    h4 {
+  #portal-mainnavigation .submenuStaticWrapper .staticItem h4 {
     margin: 0;
   }
-  #portal-mainnavigation
-    ul#portal-globalnav
-    .submenuStaticWrapper
-    .staticItem
-    ul {
+  #portal-mainnavigation .submenuStaticWrapper .staticItem ul {
     border-left: 0;
     padding-left: 0;
   }
 }
 @media (max-width: 991px) and (max-width: 991px) {
-  #portal-mainnavigation ul#portal-globalnav .submenuStaticWrapper {
+  #portal-mainnavigation .submenuStaticWrapper {
     padding-bottom: 15px;
   }
 }
