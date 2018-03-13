@@ -10613,6 +10613,7 @@ table tr.odd {
   margin: 3.5rem 0 1rem;
   padding: 2rem 3.5rem 3rem;
   background-color: #eee;
+  clear: both;
 }
 .relatedItems #relatedItemBox header {
   font-size: 2.3rem;
@@ -12038,5 +12039,253 @@ nav.pagination ul li.next span {
   height: 50vh;
   width: 50vw;
   max-width: 100%;
+}
+body.portaltype-news-item #content a,
+.parent-fieldname-text a,
+.content-text a,
+.document-text a {
+  border-bottom: 1px solid #ac1b01;
+}
+body.portaltype-news-item #content a:hover,
+body.portaltype-news-item #content a:focus,
+.parent-fieldname-text a:hover,
+.parent-fieldname-text a:focus,
+.content-text a:hover,
+.content-text a:focus,
+.document-text a:hover,
+.document-text a:focus {
+  border-bottom: 1px solid #1c2024;
+}
+body.portaltype-news-item #content .leadImage a,
+.parent-fieldname-text .leadImage a,
+.content-text .leadImage a,
+.document-text .leadImage a {
+  border: 0;
+}
+body.portaltype-news-item #content .leadImage a:hover,
+body.portaltype-news-item #content .leadImage a:focus,
+.parent-fieldname-text .leadImage a:hover,
+.parent-fieldname-text .leadImage a:focus,
+.content-text .leadImage a:hover,
+.content-text .leadImage a:focus,
+.document-text .leadImage a:hover,
+.document-text .leadImage a:focus {
+  border: 0;
+}
+body.template-tiles_view #portal-columns.with-column-two #portal-column-content,
+body.template-tiles_page_view
+  #portal-columns.with-column-two
+  #portal-column-content,
+body.template-document_view
+  #portal-columns.with-column-two
+  #portal-column-content,
+body.template-structured_content_view
+  #portal-columns.with-column-two
+  #portal-column-content,
+body.template-listing_view
+  #portal-columns.with-column-two
+  #portal-column-content,
+body.template-summary_view
+  #portal-columns.with-column-two
+  #portal-column-content,
+body.template-newsitem_view
+  #portal-columns.with-column-two
+  #portal-column-content,
+body.template-bando_view #portal-columns.with-column-two #portal-column-content,
+body.template-pubblicazione_main_view
+  #portal-columns.with-column-two
+  #portal-column-content,
+body.template-pubblicazioni_collection_view
+  #portal-columns.with-column-two
+  #portal-column-content,
+body.template-event_view #portal-columns.with-column-two #portal-column-content,
+body.template-scheda_view
+  #portal-columns.with-column-two
+  #portal-column-content,
+body.template-imagedevent_view
+  #portal-columns.with-column-two
+  #portal-column-content {
+  max-width: 75rem;
+  width: 100%;
+  font-size: 19px;
+  padding-right: 6%;
+}
+@media (max-width: 1150px) {
+  body.template-tiles_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-tiles_page_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-document_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-structured_content_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-listing_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-summary_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-newsitem_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-bando_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-pubblicazione_main_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-pubblicazioni_collection_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-event_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-scheda_view
+    #portal-columns.with-column-two
+    #portal-column-content,
+  body.template-imagedevent_view
+    #portal-columns.with-column-two
+    #portal-column-content {
+    padding-right: 0;
+  }
+}
+body.template-tiles_view #portal-columns.with-column-one #portal-column-content,
+body.template-tiles_page_view
+  #portal-columns.with-column-one
+  #portal-column-content,
+body.template-document_view
+  #portal-columns.with-column-one
+  #portal-column-content,
+body.template-structured_content_view
+  #portal-columns.with-column-one
+  #portal-column-content,
+body.template-listing_view
+  #portal-columns.with-column-one
+  #portal-column-content,
+body.template-summary_view
+  #portal-columns.with-column-one
+  #portal-column-content,
+body.template-newsitem_view
+  #portal-columns.with-column-one
+  #portal-column-content,
+body.template-bando_view #portal-columns.with-column-one #portal-column-content,
+body.template-pubblicazione_main_view
+  #portal-columns.with-column-one
+  #portal-column-content,
+body.template-pubblicazioni_collection_view
+  #portal-columns.with-column-one
+  #portal-column-content,
+body.template-event_view #portal-columns.with-column-one #portal-column-content,
+body.template-scheda_view
+  #portal-columns.with-column-one
+  #portal-column-content,
+body.template-imagedevent_view
+  #portal-columns.with-column-one
+  #portal-column-content {
+  left: 0;
+}
+@media (min-width: 767px) {
+  body.template-tiles_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-tiles_page_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-document_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-structured_content_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-listing_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-summary_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-newsitem_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-bando_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-pubblicazione_main_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-pubblicazioni_collection_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-event_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-scheda_view
+    #portal-columns.with-column-one
+    #portal-column-content,
+  body.template-imagedevent_view
+    #portal-columns.with-column-one
+    #portal-column-content {
+    padding-left: 0;
+    padding-right: inherit;
+  }
+}
+body.template-tiles_view #portal-column-two,
+body.template-tiles_page_view #portal-column-two,
+body.template-document_view #portal-column-two,
+body.template-structured_content_view #portal-column-two,
+body.template-listing_view #portal-column-two,
+body.template-summary_view #portal-column-two,
+body.template-newsitem_view #portal-column-two,
+body.template-bando_view #portal-column-two,
+body.template-pubblicazione_main_view #portal-column-two,
+body.template-pubblicazioni_collection_view #portal-column-two,
+body.template-event_view #portal-column-two,
+body.template-scheda_view #portal-column-two,
+body.template-imagedevent_view #portal-column-two {
+  padding-left: 0;
+  padding-right: 0;
+  width: 33%;
+  max-width: -webkit-calc(100% - 80rem);
+  max-width: calc(100% - 80rem);
+  float: right;
+  font-size: 18px;
+}
+@media (max-width: 1150px) {
+  body.template-tiles_view #portal-column-two,
+  body.template-tiles_page_view #portal-column-two,
+  body.template-document_view #portal-column-two,
+  body.template-structured_content_view #portal-column-two,
+  body.template-listing_view #portal-column-two,
+  body.template-summary_view #portal-column-two,
+  body.template-newsitem_view #portal-column-two,
+  body.template-bando_view #portal-column-two,
+  body.template-pubblicazione_main_view #portal-column-two,
+  body.template-pubblicazioni_collection_view #portal-column-two,
+  body.template-event_view #portal-column-two,
+  body.template-scheda_view #portal-column-two,
+  body.template-imagedevent_view #portal-column-two {
+    width: 100%;
+    max-width: 75rem;
+    float: none;
+    clear: both;
+  }
+}
+body.template-tiles_view #portal-column-one,
+body.template-tiles_page_view #portal-column-one,
+body.template-document_view #portal-column-one,
+body.template-structured_content_view #portal-column-one,
+body.template-listing_view #portal-column-one,
+body.template-summary_view #portal-column-one,
+body.template-newsitem_view #portal-column-one,
+body.template-bando_view #portal-column-one,
+body.template-pubblicazione_main_view #portal-column-one,
+body.template-pubblicazioni_collection_view #portal-column-one,
+body.template-event_view #portal-column-one,
+body.template-scheda_view #portal-column-one,
+body.template-imagedevent_view #portal-column-one {
+  display: none;
 }
 /*# sourceMappingURL=cciaa.css.map */
