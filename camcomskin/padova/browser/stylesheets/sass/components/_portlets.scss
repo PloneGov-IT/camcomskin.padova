@@ -27,17 +27,22 @@
 
 // NAVIGAZIONE
 .portletNavigationTree {
-    nav.portletContent {
+    dd.portletItem {
         ul.navTree {
             margin: 0;
             padding: 0;
             list-style-type: none;
 
             li {
+                padding: 0;
+                margin: 0;
+                border: 0 none;
+
                 a {
                     padding: 1.5rem 2.5rem 1.5rem 2rem;
                     border-bottom: 1px solid $gray-desc-border;
                     display: block;
+                    color: $text-color !important;
 
                     &.navTreeFolderish {
                         position: relative;
@@ -83,7 +88,7 @@
                     a.navTreeItemInPath,
                     a.navTreeCurrentItem {
                         background-color: $brand-primary;
-                        color: #fff;
+                        color: #fff !important;
                         font-weight: $semibold;
                             &:after {
                                 color: #fff;
@@ -106,9 +111,29 @@
                     }
                 }
             }
+
+            .navTreeCurrentItem {
+                border-left: 0 none;
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
     }
 }
+.icons-on {
+    .portletNavigationTree {
+        dd.portletItem {
+            ul.navTree {
+                li {
+                    a {
+                        background-image: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 // STATICA AVANZATA
 .rerPortletAdvancedStatic {

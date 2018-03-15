@@ -10368,24 +10368,26 @@ table tr.odd {
 .portletContent a:focus {
   border-bottom-color: #1c2024;
 }
-.portletNavigationTree nav.portletContent ul.navTree {
+.portletNavigationTree dd.portletItem ul.navTree {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.portletNavigationTree nav.portletContent ul.navTree li a {
+.portletNavigationTree dd.portletItem ul.navTree li {
+  padding: 0;
+  margin: 0;
+  border: 0 none;
+}
+.portletNavigationTree dd.portletItem ul.navTree li a {
   padding: 1.5rem 2.5rem 1.5rem 2rem;
   border-bottom: 1px solid #c1c1c1;
   display: block;
+  color: #1c2024 !important;
 }
-.portletNavigationTree nav.portletContent ul.navTree li a.navTreeFolderish {
+.portletNavigationTree dd.portletItem ul.navTree li a.navTreeFolderish {
   position: relative;
 }
-.portletNavigationTree
-  nav.portletContent
-  ul.navTree
-  li
-  a.navTreeFolderish:after {
+.portletNavigationTree dd.portletItem ul.navTree li a.navTreeFolderish:after {
   display: inline-block;
   font-family: FontAwesome;
   content: '';
@@ -10400,12 +10402,12 @@ table tr.odd {
   color: #000;
 }
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree
   li
   a.navTreeFolderish.navTreeCurrentNode:after,
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree
   li
   a.navTreeFolderish.navTreeItemInPath:after {
@@ -10418,15 +10420,15 @@ table tr.odd {
   top: 0.5rem;
   font-weight: 400;
 }
-.portletNavigationTree nav.portletContent ul.navTree li a:hover,
-.portletNavigationTree nav.portletContent ul.navTree li a:focus {
+.portletNavigationTree dd.portletItem ul.navTree li a:hover,
+.portletNavigationTree dd.portletItem ul.navTree li a:focus {
   text-decoration: underline;
 }
-.portletNavigationTree nav.portletContent ul.navTree li a img.image-icon {
+.portletNavigationTree dd.portletItem ul.navTree li a img.image-icon {
   display: none;
 }
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree
   li.navTreeFolderish
   > ul
@@ -10435,61 +10437,69 @@ table tr.odd {
   background-color: #eee;
 }
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree
   li.navTreeItemInPath
   a.navTreeItemInPath,
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree
   li.navTreeItemInPath
   a.navTreeCurrentItem,
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree
   li.navTreeCurrentNode
   a.navTreeItemInPath,
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree
   li.navTreeCurrentNode
   a.navTreeCurrentItem {
   background-color: #ac1b01;
-  color: #fff;
+  color: #fff !important;
   font-weight: 600;
 }
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree
   li.navTreeItemInPath
   a.navTreeItemInPath:after,
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree
   li.navTreeItemInPath
   a.navTreeCurrentItem:after,
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree
   li.navTreeCurrentNode
   a.navTreeItemInPath:after,
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree
   li.navTreeCurrentNode
   a.navTreeCurrentItem:after {
   color: #fff;
 }
-.portletNavigationTree nav.portletContent ul.navTree ul {
+.portletNavigationTree dd.portletItem ul.navTree ul {
   margin-left: 2rem;
   margin-top: 0;
 }
 .portletNavigationTree
-  nav.portletContent
+  dd.portletItem
   ul.navTree.navTreeLevel0
   > li:last-child
   > a {
   border-bottom: 0 none;
+}
+.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
+  border-left: 0 none;
+  margin-left: 0;
+  margin-right: 0;
+}
+.icons-on .portletNavigationTree dd.portletItem ul.navTree li a {
+  background-image: none;
 }
 .rerPortletAdvancedStatic .portletHeader h4.portlet-header {
   margin: 0;
