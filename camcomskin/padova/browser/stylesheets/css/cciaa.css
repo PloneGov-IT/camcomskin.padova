@@ -10342,6 +10342,12 @@ table tr.odd {
 #content dl.portlet.toc dd.portletItem > ol {
   margin-left: 3em;
 }
+#content dl.portlet.toc dd.portletItem > ol li {
+  padding-left: 10px;
+}
+#content dl.portlet.toc dd.portletItem > ol li a {
+  border-bottom: 0 none;
+}
 .portlet {
   margin-bottom: 1.5rem;
 }

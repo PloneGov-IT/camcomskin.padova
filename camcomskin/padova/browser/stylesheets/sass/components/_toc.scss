@@ -33,6 +33,14 @@
 
         > ol {
             margin-left: 3em;
+
+            li {
+                padding-left: 10px;
+
+                a {
+                    border-bottom: 0 none;
+                }
+            }
         }
     }
 }
