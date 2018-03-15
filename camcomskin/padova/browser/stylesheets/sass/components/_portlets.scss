@@ -66,7 +66,7 @@
                     }
                     &:hover,
                     &:focus {
-                        text-decoration: underline;
+                        text-decoration: underline !important;
                     }
                     img.image-icon {
                         display: none;
@@ -127,6 +127,11 @@
                 li {
                     a {
                         background-image: none;
+                        padding-left: 2em !important;
+
+                        img {
+                            display: none;
+                        }
                     }
                 }
             }

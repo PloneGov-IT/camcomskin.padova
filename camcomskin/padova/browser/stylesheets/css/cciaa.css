@@ -10422,7 +10422,7 @@ table tr.odd {
 }
 .portletNavigationTree dd.portletItem ul.navTree li a:hover,
 .portletNavigationTree dd.portletItem ul.navTree li a:focus {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .portletNavigationTree dd.portletItem ul.navTree li a img.image-icon {
   display: none;
@@ -10500,6 +10500,10 @@ table tr.odd {
 }
 .icons-on .portletNavigationTree dd.portletItem ul.navTree li a {
   background-image: none;
+  padding-left: 2em !important;
+}
+.icons-on .portletNavigationTree dd.portletItem ul.navTree li a img {
+  display: none;
 }
 .rerPortletAdvancedStatic .portletHeader h4.portlet-header {
   margin: 0;
