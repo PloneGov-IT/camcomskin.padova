@@ -10351,14 +10351,20 @@ table tr.odd {
 .portlet {
   margin-bottom: 1.5rem;
 }
+dl.portlet dt,
 .portletHeader {
   border-bottom: 4px solid #4a4a4a;
-  font-size: 2.1rem;
+  font-size: 2.3rem;
   font-weight: 600;
-  padding: 0.8rem 0.3rem;
+  padding: 0.8rem 0;
   margin-bottom: 0.5em;
+  background-color: transparent;
+  text-transform: uppercase;
 }
-.portletHeader a {
+dl.portlet dt a:link,
+dl.portlet dt a:visited,
+.portletHeader a:link,
+.portletHeader a:visited {
   color: #000;
 }
 .portletContent a {
