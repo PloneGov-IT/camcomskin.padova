@@ -10671,6 +10671,32 @@ dl.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
   color: #fff !important;
   border-bottom: 1px solid #fff;
 }
+.rerPortletAdvancedStatic.TornaIndietro {
+  border: 1px solid #4a4a4a;
+}
+.rerPortletAdvancedStatic.TornaIndietro dt.portletHeader,
+.rerPortletAdvancedStatic.TornaIndietro .portletHeader {
+  border-bottom: 0 none;
+  padding: 1.4rem;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: none;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.rerPortletAdvancedStatic.TornaIndietro dt.portletHeader a span,
+.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span {
+  background: transparent
+    url('++resource++camcomskin.padova.images/arrow_left.svg') no-repeat 0
+    center;
+  padding-left: 4rem;
+}
+.rerPortletAdvancedStatic.TornaIndietro dt.portletHeader a span:hover,
+.rerPortletAdvancedStatic.TornaIndietro dt.portletHeader a span:focus,
+.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:hover,
+.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus {
+  border-bottom: 1px solid #1c2024;
+}
 .portletCollection ul.portletContent {
   padding: 0;
   list-style-type: none;

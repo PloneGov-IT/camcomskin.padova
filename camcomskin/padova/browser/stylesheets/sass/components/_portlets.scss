@@ -206,6 +206,32 @@ dl.portletNavigationTree {
             }
         }
     }
+    &.TornaIndietro {
+        border: 1px solid $gray-nav;
+
+        dt.portletHeader,
+        .portletHeader {
+            border-bottom: 0 none;
+            padding: 1.4rem;
+            margin-bottom: 0;
+            text-align: center;
+            text-transform: none;
+            font-weight: 300;
+            font-size: 2rem;
+
+            a {
+                span {
+                    background: transparent url($img-path + 'arrow_left.svg') no-repeat 0 center;
+                    padding-left: 4rem;
+
+                    &:hover,
+                    &:focus {
+                        border-bottom: 1px solid $link-hover-color;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // COLLEZIONE
