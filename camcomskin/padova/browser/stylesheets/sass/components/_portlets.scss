@@ -30,8 +30,11 @@ dl.portlet dt,
 }
 
 // NAVIGAZIONE
-.portletNavigationTree {
+dl.portletERPortletNavigation,
+dl.portletNavigationTree {
     dd.portletItem {
+        padding: 0;
+
         ul.navTree {
             margin: 0;
             padding: 0;
@@ -80,6 +83,7 @@ dl.portlet dt,
                 &.navTreeFolderish {
                     > ul {
                         > li {
+                            > div > a,
                             > a {
                                 background-color: $gray-bg;
                             }
@@ -125,6 +129,7 @@ dl.portlet dt,
     }
 }
 .icons-on {
+    .portletERPortletNavigation,
     .portletNavigationTree {
         dd.portletItem {
             ul.navTree {

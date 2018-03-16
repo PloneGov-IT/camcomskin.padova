@@ -10374,26 +10374,39 @@ dl.portlet dt a:visited,
 .portletContent a:focus {
   border-bottom-color: #1c2024;
 }
-.portletNavigationTree dd.portletItem ul.navTree {
+dl.portletERPortletNavigation dd.portletItem,
+dl.portletNavigationTree dd.portletItem {
+  padding: 0;
+}
+dl.portletERPortletNavigation dd.portletItem ul.navTree,
+dl.portletNavigationTree dd.portletItem ul.navTree {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.portletNavigationTree dd.portletItem ul.navTree li {
+dl.portletERPortletNavigation dd.portletItem ul.navTree li,
+dl.portletNavigationTree dd.portletItem ul.navTree li {
   padding: 0;
   margin: 0;
   border: 0 none;
 }
-.portletNavigationTree dd.portletItem ul.navTree li a {
+dl.portletERPortletNavigation dd.portletItem ul.navTree li a,
+dl.portletNavigationTree dd.portletItem ul.navTree li a {
   padding: 1.5rem 2.5rem 1.5rem 2rem;
   border-bottom: 1px solid #c1c1c1;
   display: block;
   color: #ac1b01 !important;
 }
-.portletNavigationTree dd.portletItem ul.navTree li a.navTreeFolderish {
+dl.portletERPortletNavigation dd.portletItem ul.navTree li a.navTreeFolderish,
+dl.portletNavigationTree dd.portletItem ul.navTree li a.navTreeFolderish {
   position: relative;
 }
-.portletNavigationTree dd.portletItem ul.navTree li a.navTreeFolderish:after {
+dl.portletERPortletNavigation
+  dd.portletItem
+  ul.navTree
+  li
+  a.navTreeFolderish:after,
+dl.portletNavigationTree dd.portletItem ul.navTree li a.navTreeFolderish:after {
   display: inline-block;
   font-family: FontAwesome;
   content: '';
@@ -10407,12 +10420,22 @@ dl.portlet dt a:visited,
   font-size: 2.5rem;
   color: #000;
 }
-.portletNavigationTree
+dl.portletERPortletNavigation
   dd.portletItem
   ul.navTree
   li
   a.navTreeFolderish.navTreeCurrentNode:after,
-.portletNavigationTree
+dl.portletERPortletNavigation
+  dd.portletItem
+  ul.navTree
+  li
+  a.navTreeFolderish.navTreeItemInPath:after,
+dl.portletNavigationTree
+  dd.portletItem
+  ul.navTree
+  li
+  a.navTreeFolderish.navTreeCurrentNode:after,
+dl.portletNavigationTree
   dd.portletItem
   ul.navTree
   li
@@ -10426,14 +10449,40 @@ dl.portlet dt a:visited,
   top: 0.5rem;
   font-weight: 400;
 }
-.portletNavigationTree dd.portletItem ul.navTree li a:hover,
-.portletNavigationTree dd.portletItem ul.navTree li a:focus {
+dl.portletERPortletNavigation dd.portletItem ul.navTree li a:hover,
+dl.portletERPortletNavigation dd.portletItem ul.navTree li a:focus,
+dl.portletNavigationTree dd.portletItem ul.navTree li a:hover,
+dl.portletNavigationTree dd.portletItem ul.navTree li a:focus {
   text-decoration: underline !important;
 }
-.portletNavigationTree dd.portletItem ul.navTree li a img.image-icon {
+dl.portletERPortletNavigation dd.portletItem ul.navTree li a img.image-icon,
+dl.portletNavigationTree dd.portletItem ul.navTree li a img.image-icon {
   display: none;
 }
-.portletNavigationTree
+dl.portletERPortletNavigation
+  dd.portletItem
+  ul.navTree
+  li.navTreeFolderish
+  > ul
+  > li
+  > div
+  > a,
+dl.portletERPortletNavigation
+  dd.portletItem
+  ul.navTree
+  li.navTreeFolderish
+  > ul
+  > li
+  > a,
+dl.portletNavigationTree
+  dd.portletItem
+  ul.navTree
+  li.navTreeFolderish
+  > ul
+  > li
+  > div
+  > a,
+dl.portletNavigationTree
   dd.portletItem
   ul.navTree
   li.navTreeFolderish
@@ -10442,22 +10491,42 @@ dl.portlet dt a:visited,
   > a {
   background-color: #eee;
 }
-.portletNavigationTree
+dl.portletERPortletNavigation
   dd.portletItem
   ul.navTree
   li.navTreeItemInPath
   a.navTreeItemInPath,
-.portletNavigationTree
+dl.portletERPortletNavigation
   dd.portletItem
   ul.navTree
   li.navTreeItemInPath
   a.navTreeCurrentItem,
-.portletNavigationTree
+dl.portletERPortletNavigation
   dd.portletItem
   ul.navTree
   li.navTreeCurrentNode
   a.navTreeItemInPath,
-.portletNavigationTree
+dl.portletERPortletNavigation
+  dd.portletItem
+  ul.navTree
+  li.navTreeCurrentNode
+  a.navTreeCurrentItem,
+dl.portletNavigationTree
+  dd.portletItem
+  ul.navTree
+  li.navTreeItemInPath
+  a.navTreeItemInPath,
+dl.portletNavigationTree
+  dd.portletItem
+  ul.navTree
+  li.navTreeItemInPath
+  a.navTreeCurrentItem,
+dl.portletNavigationTree
+  dd.portletItem
+  ul.navTree
+  li.navTreeCurrentNode
+  a.navTreeItemInPath,
+dl.portletNavigationTree
   dd.portletItem
   ul.navTree
   li.navTreeCurrentNode
@@ -10466,48 +10535,77 @@ dl.portlet dt a:visited,
   color: #fff !important;
   font-weight: 600;
 }
-.portletNavigationTree
+dl.portletERPortletNavigation
   dd.portletItem
   ul.navTree
   li.navTreeItemInPath
   a.navTreeItemInPath:after,
-.portletNavigationTree
+dl.portletERPortletNavigation
   dd.portletItem
   ul.navTree
   li.navTreeItemInPath
   a.navTreeCurrentItem:after,
-.portletNavigationTree
+dl.portletERPortletNavigation
   dd.portletItem
   ul.navTree
   li.navTreeCurrentNode
   a.navTreeItemInPath:after,
-.portletNavigationTree
+dl.portletERPortletNavigation
+  dd.portletItem
+  ul.navTree
+  li.navTreeCurrentNode
+  a.navTreeCurrentItem:after,
+dl.portletNavigationTree
+  dd.portletItem
+  ul.navTree
+  li.navTreeItemInPath
+  a.navTreeItemInPath:after,
+dl.portletNavigationTree
+  dd.portletItem
+  ul.navTree
+  li.navTreeItemInPath
+  a.navTreeCurrentItem:after,
+dl.portletNavigationTree
+  dd.portletItem
+  ul.navTree
+  li.navTreeCurrentNode
+  a.navTreeItemInPath:after,
+dl.portletNavigationTree
   dd.portletItem
   ul.navTree
   li.navTreeCurrentNode
   a.navTreeCurrentItem:after {
   color: #fff;
 }
-.portletNavigationTree dd.portletItem ul.navTree ul {
+dl.portletERPortletNavigation dd.portletItem ul.navTree ul,
+dl.portletNavigationTree dd.portletItem ul.navTree ul {
   margin-left: 2rem;
   margin-top: 0;
 }
-.portletNavigationTree
+dl.portletERPortletNavigation
+  dd.portletItem
+  ul.navTree.navTreeLevel0
+  > li:last-child
+  > a,
+dl.portletNavigationTree
   dd.portletItem
   ul.navTree.navTreeLevel0
   > li:last-child
   > a {
   border-bottom: 0 none;
 }
-.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
+dl.portletERPortletNavigation dd.portletItem ul.navTree .navTreeCurrentItem,
+dl.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
   border-left: 0 none;
   margin-left: 0;
   margin-right: 0;
 }
+.icons-on .portletERPortletNavigation dd.portletItem ul.navTree li a,
 .icons-on .portletNavigationTree dd.portletItem ul.navTree li a {
   background-image: none;
   padding-left: 2rem !important;
 }
+.icons-on .portletERPortletNavigation dd.portletItem ul.navTree li a img,
 .icons-on .portletNavigationTree dd.portletItem ul.navTree li a img {
   display: none;
 }
