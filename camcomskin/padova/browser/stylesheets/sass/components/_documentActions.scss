@@ -18,10 +18,18 @@
                     text-decoration: underline;
                 }
             }
+            &#document-action-sendto {
+                &::before {
+                    @include make-fa('\f003', $brand-primary);
+                    font-size: 1.2em;
+                }
+            }
+
             &#document-action-print {
                 a {
                     background: url($img-path + 'print.png') no-repeat center left;
                     padding-left: 35px;
+                    background-size: 1.2em;
                 }
             }
         }

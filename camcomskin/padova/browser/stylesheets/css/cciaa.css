@@ -10372,6 +10372,19 @@ h3.tileTitle,
   text-decoration: none;
   cursor: inherit;
 }
+#category span a.link-category {
+  background: none;
+  color: #ac1b01;
+  border: 1px solid #ac1b01;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+#category span a.link-category:hover,
+#category span a.link-category:focus {
+  background: #ac1b01;
+  border-color: #ac1b01;
+  color: #fff;
+}
 #plone-document-byline {
   display: block;
   margin-bottom: 0.7rem;
@@ -10896,10 +10909,20 @@ dl.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
 .documentActions ul li a:focus {
   text-decoration: underline;
 }
+.documentActions ul li#document-action-sendto::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: #ac1b01;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.2em;
+}
 .documentActions ul li#document-action-print a {
   background: url('++resource++camcomskin.padova.images/print.png') no-repeat
     center left;
   padding-left: 35px;
+  background-size: 1.2em;
 }
 @media (max-width: 991px) {
   .documentActions {

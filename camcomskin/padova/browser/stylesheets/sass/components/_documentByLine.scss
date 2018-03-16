@@ -11,6 +11,24 @@
     }
 }
 
+#category {
+    span {
+        a.link-category {
+            background: none;
+            color: $brand-primary;
+            border: 1px solid $brand-primary;
+            padding: 2px 7px;
+            border-radius: 4px;
+
+            &:hover, &:focus {
+                background: $brand-primary;
+                border-color: $brand-primary;
+                color: #FFF;
+            }
+        }
+    }
+}
+
 #plone-document-byline {
     display: block;
     margin-bottom: 0.7rem;
