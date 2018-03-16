@@ -177,6 +177,35 @@ dl.portletNavigationTree {
             }
         }
     }
+
+    &.LinkDiretto {
+        background-color: $brand-primary;
+        display: inline-block;
+
+        dt.portletHeader,
+        .portletHeader {
+            border-bottom: 0 none;
+            font-size: 1.8rem;
+            padding: 1rem 5rem;
+            margin-bottom: 0;
+            text-align: center;
+            display: inline-block;
+
+            a {
+                display: inline;
+
+                &:link,
+                &:visited {
+                    color: #fff;
+                }
+                &:focus,
+                &:hover {
+                    color: #fff !important;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
 }
 
 // COLLEZIONE

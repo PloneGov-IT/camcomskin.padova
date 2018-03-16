@@ -10641,6 +10641,36 @@ dl.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
   li:last-child {
   border-bottom: 0 none;
 }
+.rerPortletAdvancedStatic.LinkDiretto {
+  background-color: #ac1b01;
+  display: inline-block;
+}
+.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader,
+.rerPortletAdvancedStatic.LinkDiretto .portletHeader {
+  border-bottom: 0 none;
+  font-size: 1.8rem;
+  padding: 1rem 5rem;
+  margin-bottom: 0;
+  text-align: center;
+  display: inline-block;
+}
+.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a,
+.rerPortletAdvancedStatic.LinkDiretto .portletHeader a {
+  display: inline;
+}
+.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:link,
+.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:visited,
+.rerPortletAdvancedStatic.LinkDiretto .portletHeader a:link,
+.rerPortletAdvancedStatic.LinkDiretto .portletHeader a:visited {
+  color: #fff;
+}
+.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:focus,
+.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:hover,
+.rerPortletAdvancedStatic.LinkDiretto .portletHeader a:focus,
+.rerPortletAdvancedStatic.LinkDiretto .portletHeader a:hover {
+  color: #fff !important;
+  border-bottom: 1px solid #fff;
+}
 .portletCollection ul.portletContent {
   padding: 0;
   list-style-type: none;
