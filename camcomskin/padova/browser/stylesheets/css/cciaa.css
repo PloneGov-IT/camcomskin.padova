@@ -10506,7 +10506,7 @@ dl.portlet dt a:visited,
 }
 .icons-on .portletNavigationTree dd.portletItem ul.navTree li a {
   background-image: none;
-  padding-left: 2em !important;
+  padding-left: 2rem !important;
 }
 .icons-on .portletNavigationTree dd.portletItem ul.navTree li a img {
   display: none;
