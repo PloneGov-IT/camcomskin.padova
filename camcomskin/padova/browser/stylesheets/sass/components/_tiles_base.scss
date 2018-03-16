@@ -138,6 +138,7 @@
 
 .tileWrapper {
     position: relative;
+    clear: both;
 
     .tileEditButtons {
         position: absolute;
@@ -170,6 +171,14 @@
                 }
             }
         }
+    }
+
+    &.tile-dx {
+        clear: right;
+    }
+
+    &.tile-sx {
+        clear: left;
     }
 
     @media (min-width: 600px) {

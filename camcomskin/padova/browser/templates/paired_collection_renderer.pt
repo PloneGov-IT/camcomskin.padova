@@ -49,11 +49,11 @@
                                 <div class="collectionItemTitle">
                                     <h3 tal:content="obj/Title"> Title </h3>
                                 </div>
-                                <div class="collectionItemDescription">
-                                    <div class="description">
-                                        <span tal:content="obj/Description"> Description </span>
-                                    </div>
-                                </div>
+                                <!-- <div class="collectionItemDescription"> -->
+                                <!--     <div class="description"> -->
+                                <!--         <span tal:content="obj/Description"> Description </span> -->
+                                <!--     </div> -->
+                                <!-- </div> -->
                             </div>
                         </a>
                     </div>

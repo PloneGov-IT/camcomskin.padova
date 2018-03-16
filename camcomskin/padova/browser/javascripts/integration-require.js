@@ -27,7 +27,10 @@ require([
     responsive: true,
   });
   ellipsis('.news-highlight .news-description', 4, { responsive: true });
-  ellipsis('.news-two-rows-collection .collectionItemTitle', 3, {
+  ellipsis('.news-two-rows-collection .collectionItemTitle h3', 3, {
+    responsive: true,
+  });
+  ellipsis('.paired-collection .collectionItemTitle h3', 3, {
     responsive: true,
   });
 });

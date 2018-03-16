@@ -980,6 +980,16 @@ h3.tileTitle,
 
         .collectionItemDates {
             text-align: left;
+            padding-bottom: 10px;
+        }
+
+        .collectionItemText {
+            flex: 0;
+        }
+
+        .collectionItemTitle h3 {
+            font-weight: 400;
+            font-size: 1em;
         }
     }
 
