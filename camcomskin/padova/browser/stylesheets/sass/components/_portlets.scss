@@ -113,6 +113,7 @@ dl.portletNavigationTree {
             &.navTreeLevel0 {
                 > li {
                     &:last-child {
+                        > div > a,
                         > a {
                             border-bottom: 0 none;
                         }

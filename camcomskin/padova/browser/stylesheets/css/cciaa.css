@@ -10586,6 +10586,18 @@ dl.portletERPortletNavigation
   dd.portletItem
   ul.navTree.navTreeLevel0
   > li:last-child
+  > div
+  > a,
+dl.portletERPortletNavigation
+  dd.portletItem
+  ul.navTree.navTreeLevel0
+  > li:last-child
+  > a,
+dl.portletNavigationTree
+  dd.portletItem
+  ul.navTree.navTreeLevel0
+  > li:last-child
+  > div
   > a,
 dl.portletNavigationTree
   dd.portletItem
