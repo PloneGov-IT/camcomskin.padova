@@ -149,6 +149,71 @@
     &.editableTile {
         background: rgba(245, 239, 186, 0.7);
     }
+
+    &.tile-sx,
+    &.tile-dx {
+        @media (min-width: 992px) {
+            width: calc(50% - 10px);
+            float: left;
+        }
+
+        .tile-collection-container {
+            width: auto;
+        }
+
+        ul.tileContent {
+            li {
+                width: 50%;
+
+                @media (max-width: 600px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 600px) {
+        &.tile-sx {
+            padding-right: 20px;
+            margin-right: 20px;
+        }
+
+        &.tile-dx {
+            border-left: 1px solid #CCC;
+        }
+    }
+}
+
+body.template-homepage_view,
+body.template-tiles_page_view {
+    @media (min-width: 1361px) {
+        .tileWrapper {
+            &.tile-sx,
+            &.tile-dx {
+                .tile-collection {
+                    width: 665px;
+                }
+            }
+
+            &.tile-sx {
+                padding-left: calc(50% - 665px);
+            }
+
+            &.tile-dx {
+                padding-right: calc(50% - 665px);
+            }
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1360px) {
+        .tileWrapper {
+            &.tile-sx,
+            &.tile-dx {
+                width: calc(50% - 10px);
+                float: left;
+            }
+        }
+    }
 }
 
 .senza-titolo {

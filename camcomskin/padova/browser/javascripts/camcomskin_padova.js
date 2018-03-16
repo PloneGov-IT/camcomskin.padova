@@ -1,4 +1,32 @@
 (function($) {
+  function onTilesLoaded(callback, timeout) {
+    if ($('.tileWrapper').length > 0) {
+      callback();
+      return;
+    }
+
+    if (timeout > 0) {
+      setTimeout(onTilesLoaded(callback, timeout - 100), timeout);
+    }
+
+    return;
+  }
+
+  function pairTiles() {
+    var tiles = $('.paired-collection');
+    if (tiles.length === 0) return;
+
+    tiles.each(function() {
+      var tile = $(this);
+
+      if (tile.hasClass('tile-sx')) {
+        tile.closest('.tileWrapper').addClass('tile-sx');
+      } else if (tile.hasClass('tile-dx')) {
+        tile.closest('.tileWrapper').addClass('tile-dx');
+      }
+    });
+  }
+
   $(document).ready(function() {
     //expand/collapse tile
     $('div.tile-advanced-static.collapsible').each(function() {
@@ -139,5 +167,7 @@
 
     $('#portal-footer-wrapper').prepend($('.portlet.footer-logo'));
     $('#portal-footer-wrapper').prepend($('.portlet.valuta-sito'));
+
+    onTilesLoaded(pairTiles);
   });
 })(jQuery);

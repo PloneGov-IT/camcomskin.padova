@@ -388,5 +388,15 @@
       layer=".interfaces.IThemeSpecific"
       template="templates/servizi_area_tematica.pt"
       />
+
+  <browser:page
+      name="paired_collection_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.PairedCollectionView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/paired_collection_renderer.pt"
+      />
+
   <!-- end of custom tile collection renderers -->
 </configure>

@@ -973,3 +973,41 @@ h3.tileTitle,
 .tileTitle h3 {
     margin: 0;
 }
+
+.tile-collection.paired-collection {
+    .collectionItemWrapper {
+        background: none;
+
+        .collectionItemDates {
+            text-align: left;
+        }
+    }
+
+    .sfondo-scuro & {
+        .collectionItemWrapper {
+            background: #EEE;
+        }
+    }
+
+    .sfondo-chiaro & {
+        .collectionItemWrapper {
+            background: #FFF;
+        }
+    }
+
+    &:not(.tile-sx):not(.tile-dx) {
+        ul.tileContent {
+            li {
+                width: 25%;
+
+                @media (max-width: 768px) {
+                    width: 50%;
+                }
+
+                @media (max-width: 600px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

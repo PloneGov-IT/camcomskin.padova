@@ -123,6 +123,12 @@ class NewsTwoRowsView(BrowserView):
     display_name = _("Layout news su due righe")
 
 
+class PairedCollectionView(BrowserView):
+    implements(ICollectionTileRenderer)
+
+    display_name = _("Layout tile affiancate")
+
+
 class NewsBigPhotoView(BrowserView):
     """
     Custom view that shows a news with a big photo on the background
