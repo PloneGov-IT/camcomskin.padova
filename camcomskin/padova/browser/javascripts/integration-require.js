@@ -23,14 +23,16 @@ require([
 
   $('.collectionTile.carousel .pat-slider').slick(options);
 
-  ellipsis('.tile-collection .collectionItemDescription', 4, {
-    responsive: true,
-  });
-  ellipsis('.news-highlight .news-description', 4, { responsive: true });
-  ellipsis('.news-two-rows-collection .collectionItemTitle h3', 3, {
-    responsive: true,
-  });
-  ellipsis('.paired-collection .collectionItemTitle h3', 3, {
-    responsive: true,
-  });
+  setTimeout(function() {
+    ellipsis('.tile-collection .collectionItemDescription', 4, {
+      responsive: true,
+    });
+    ellipsis('.news-highlight .news-description', 4, { responsive: true });
+    ellipsis('.news-two-rows-collection .collectionItemTitle h3', 3, {
+      responsive: true,
+    });
+    ellipsis('.paired-collection .collectionItemTitle h3', 3, {
+      responsive: true,
+    });
+  }, 0);
 });
