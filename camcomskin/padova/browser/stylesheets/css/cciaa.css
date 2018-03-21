@@ -10753,29 +10753,29 @@ dl.portlet.rerPortletAdvancedStatic .portletItem,
 .rerPortletAdvancedStatic .portletItem {
   background-color: #f0f0f0;
 }
-dl.portlet.rerPortletAdvancedStatic.Modulistica .portletItem,
-.rerPortletAdvancedStatic.Modulistica .portletItem {
+dl.portlet.rerPortletAdvancedStatic.ModuliNorme .portletItem,
+.rerPortletAdvancedStatic.ModuliNorme .portletItem {
   padding: 0;
 }
-dl.portlet.rerPortletAdvancedStatic.Modulistica .portletItem ul,
-.rerPortletAdvancedStatic.Modulistica .portletItem ul {
+dl.portlet.rerPortletAdvancedStatic.ModuliNorme .portletItem ul,
+.rerPortletAdvancedStatic.ModuliNorme .portletItem ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-dl.portlet.rerPortletAdvancedStatic.Modulistica .portletItem ul li,
-.rerPortletAdvancedStatic.Modulistica .portletItem ul li {
+dl.portlet.rerPortletAdvancedStatic.ModuliNorme .portletItem ul li,
+.rerPortletAdvancedStatic.ModuliNorme .portletItem ul li {
   padding: 1.5rem 2.5rem 1.5rem 2rem;
   border-bottom: 1px solid #c1c1c1;
   margin: 0;
   display: block;
 }
-dl.portlet.rerPortletAdvancedStatic.Modulistica .portletItem ul li:last-child,
-.rerPortletAdvancedStatic.Modulistica .portletItem ul li:last-child {
+dl.portlet.rerPortletAdvancedStatic.ModuliNorme .portletItem ul li:last-child,
+.rerPortletAdvancedStatic.ModuliNorme .portletItem ul li:last-child {
   border-bottom: 0 none;
 }
-dl.portlet.rerPortletAdvancedStatic.Modulistica .portletItem ul li a,
-.rerPortletAdvancedStatic.Modulistica .portletItem ul li a {
+dl.portlet.rerPortletAdvancedStatic.ModuliNorme .portletItem ul li a,
+.rerPortletAdvancedStatic.ModuliNorme .portletItem ul li a {
   border-bottom: 0 none;
 }
 dl.portlet.rerPortletAdvancedStatic.LinkDiretto,
