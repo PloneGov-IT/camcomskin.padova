@@ -161,7 +161,9 @@ dl.portlet.rerPortletAdvancedStatic,
     }
 
     &.portletStaticNavigation {
-        .portletContent {
+        .portletItem {
+            padding: 0;
+
             ul {
                 margin: 0;
                 padding: 0;
@@ -170,7 +172,14 @@ dl.portlet.rerPortletAdvancedStatic,
                 li {
                     padding: 1.5rem 2.5rem 1.5rem 2rem;
                     border-bottom: 1px solid $gray-desc-border;
+                    margin: 0;
+                    display: block;
+
                     &:last-child {
+                        border-bottom: 0 none;
+                    }
+
+                    a {
                         border-bottom: 0 none;
                     }
                 }

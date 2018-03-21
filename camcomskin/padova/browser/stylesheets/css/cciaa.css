@@ -10753,28 +10753,39 @@ dl.portlet.rerPortletAdvancedStatic .portletItem,
 .rerPortletAdvancedStatic .portletItem {
   background-color: #f0f0f0;
 }
-dl.portlet.rerPortletAdvancedStatic.portletStaticNavigation .portletContent ul,
-.rerPortletAdvancedStatic.portletStaticNavigation .portletContent ul {
+dl.portlet.rerPortletAdvancedStatic.portletStaticNavigation .portletItem,
+.rerPortletAdvancedStatic.portletStaticNavigation .portletItem {
+  padding: 0;
+}
+dl.portlet.rerPortletAdvancedStatic.portletStaticNavigation .portletItem ul,
+.rerPortletAdvancedStatic.portletStaticNavigation .portletItem ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-dl.portlet.rerPortletAdvancedStatic.portletStaticNavigation
-  .portletContent
-  ul
-  li,
-.rerPortletAdvancedStatic.portletStaticNavigation .portletContent ul li {
+dl.portlet.rerPortletAdvancedStatic.portletStaticNavigation .portletItem ul li,
+.rerPortletAdvancedStatic.portletStaticNavigation .portletItem ul li {
   padding: 1.5rem 2.5rem 1.5rem 2rem;
   border-bottom: 1px solid #c1c1c1;
+  margin: 0;
+  display: block;
 }
 dl.portlet.rerPortletAdvancedStatic.portletStaticNavigation
-  .portletContent
+  .portletItem
   ul
   li:last-child,
 .rerPortletAdvancedStatic.portletStaticNavigation
-  .portletContent
+  .portletItem
   ul
   li:last-child {
+  border-bottom: 0 none;
+}
+dl.portlet.rerPortletAdvancedStatic.portletStaticNavigation
+  .portletItem
+  ul
+  li
+  a,
+.rerPortletAdvancedStatic.portletStaticNavigation .portletItem ul li a {
   border-bottom: 0 none;
 }
 dl.portlet.rerPortletAdvancedStatic.LinkDiretto,
