@@ -10919,6 +10919,28 @@ dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus,
 .boxScheda .boxContent ul li a {
   border-bottom: 0 none;
 }
+.boxScheda .boxContent ul.listLink li a {
+  display: block;
+  position: relative;
+  padding-right: 40px;
+}
+.boxScheda .boxContent ul.listLink li a:after {
+  background: url('++resource++camcomskin.padova.images/arrow_right.png')
+    no-repeat center center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 32px;
+  width: 32px;
+  content: ' ';
+  display: block;
+}
+.boxScheda .boxContent ul.listLink li.linkFile a:after {
+  background-image: url('++resource++camcomskin.padova.images/file.png');
+}
+.boxScheda .boxContent ul.listLink li.linkFilePdf a:after {
+  background-image: url('++resource++camcomskin.padova.images/pdf.png');
+}
 #viewlet-below-content {
   margin: 5rem 0 1.5rem;
   border-top: 1px solid #c1c1c1;

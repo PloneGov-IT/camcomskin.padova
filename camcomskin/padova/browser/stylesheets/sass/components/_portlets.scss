@@ -327,6 +327,37 @@ dl.portlet.rerPortletAdvancedStatic,
                     border-bottom: 0 none;
                 }
             }
+
+            &.listLink {
+                li {
+                    a {
+                        display: block;
+                        position: relative;
+                        padding-right: 40px;
+
+                        &:after {
+                            background: url($img-path + 'arrow_right.png') no-repeat center center;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            height: 32px;
+                            width: 32px;
+                            content: " ";
+                            display: block;
+                        }
+                    }
+                    &.linkFile {
+                        a:after {
+                            background-image: url($img-path + 'file.png');
+                        }
+                    }
+                    &.linkFilePdf {
+                        a:after {
+                            background-image: url($img-path + 'pdf.png');
+                        }
+                    }
+                }
+            }
         }
     }
 }
