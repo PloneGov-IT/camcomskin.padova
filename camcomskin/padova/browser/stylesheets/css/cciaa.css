@@ -10745,30 +10745,45 @@ dl.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
 .icons-on .portletNavigationTree dd.portletItem ul.navTree li a img {
   display: none;
 }
-.rerPortletAdvancedStatic .portletHeader h4.portlet-header {
-  margin: 0;
-  font-size: 1em;
-  line-height: 1em;
+dl.portlet.rerPortletAdvancedStatic .portletHeader,
+.rerPortletAdvancedStatic .portletHeader {
+  margin-bottom: 0;
 }
+dl.portlet.rerPortletAdvancedStatic .portletItem,
+.rerPortletAdvancedStatic .portletItem {
+  background-color: #f0f0f0;
+}
+dl.portlet.rerPortletAdvancedStatic.portletStaticNavigation .portletContent ul,
 .rerPortletAdvancedStatic.portletStaticNavigation .portletContent ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+dl.portlet.rerPortletAdvancedStatic.portletStaticNavigation
+  .portletContent
+  ul
+  li,
 .rerPortletAdvancedStatic.portletStaticNavigation .portletContent ul li {
   padding: 1.5rem 2.5rem 1.5rem 2rem;
   border-bottom: 1px solid #c1c1c1;
 }
+dl.portlet.rerPortletAdvancedStatic.portletStaticNavigation
+  .portletContent
+  ul
+  li:last-child,
 .rerPortletAdvancedStatic.portletStaticNavigation
   .portletContent
   ul
   li:last-child {
   border-bottom: 0 none;
 }
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto,
 .rerPortletAdvancedStatic.LinkDiretto {
   background-color: #ac1b01;
   display: inline-block;
 }
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader,
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto .portletHeader,
 .rerPortletAdvancedStatic.LinkDiretto dt.portletHeader,
 .rerPortletAdvancedStatic.LinkDiretto .portletHeader {
   border-bottom: 0 none;
@@ -10778,16 +10793,26 @@ dl.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
   text-align: center;
   display: inline-block;
 }
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a,
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto .portletHeader a,
 .rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a,
 .rerPortletAdvancedStatic.LinkDiretto .portletHeader a {
   display: inline;
 }
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:link,
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:visited,
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto .portletHeader a:link,
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto .portletHeader a:visited,
 .rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:link,
 .rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:visited,
 .rerPortletAdvancedStatic.LinkDiretto .portletHeader a:link,
 .rerPortletAdvancedStatic.LinkDiretto .portletHeader a:visited {
   color: #fff;
 }
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:focus,
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:hover,
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto .portletHeader a:focus,
+dl.portlet.rerPortletAdvancedStatic.LinkDiretto .portletHeader a:hover,
 .rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:focus,
 .rerPortletAdvancedStatic.LinkDiretto dt.portletHeader a:hover,
 .rerPortletAdvancedStatic.LinkDiretto .portletHeader a:focus,
@@ -10795,9 +10820,12 @@ dl.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
   color: #fff !important;
   border-bottom: 1px solid #fff;
 }
+dl.portlet.rerPortletAdvancedStatic.TornaIndietro,
 .rerPortletAdvancedStatic.TornaIndietro {
   border: 1px solid #4a4a4a;
 }
+dl.portlet.rerPortletAdvancedStatic.TornaIndietro dt.portletHeader,
+dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader,
 .rerPortletAdvancedStatic.TornaIndietro dt.portletHeader,
 .rerPortletAdvancedStatic.TornaIndietro .portletHeader {
   border-bottom: 0 none;
@@ -10808,6 +10836,8 @@ dl.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
   font-weight: 300;
   font-size: 2rem;
 }
+dl.portlet.rerPortletAdvancedStatic.TornaIndietro dt.portletHeader a span,
+dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span,
 .rerPortletAdvancedStatic.TornaIndietro dt.portletHeader a span,
 .rerPortletAdvancedStatic.TornaIndietro .portletHeader a span {
   background: transparent
@@ -10815,6 +10845,10 @@ dl.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
     center;
   padding-left: 4rem;
 }
+dl.portlet.rerPortletAdvancedStatic.TornaIndietro dt.portletHeader a span:hover,
+dl.portlet.rerPortletAdvancedStatic.TornaIndietro dt.portletHeader a span:focus,
+dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:hover,
+dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus,
 .rerPortletAdvancedStatic.TornaIndietro dt.portletHeader a span:hover,
 .rerPortletAdvancedStatic.TornaIndietro dt.portletHeader a span:focus,
 .rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:hover,

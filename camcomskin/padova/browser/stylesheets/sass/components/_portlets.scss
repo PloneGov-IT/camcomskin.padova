@@ -151,13 +151,13 @@ dl.portletNavigationTree {
 
 
 // STATICA AVANZATA
+dl.portlet.rerPortletAdvancedStatic,
 .rerPortletAdvancedStatic {
     .portletHeader {
-        h4.portlet-header {
-            margin: 0;
-            font-size: 1em;
-            line-height: 1em;
-        }
+        margin-bottom: 0;
+    }
+    .portletItem {
+        background-color: $globalBackgroundColor;
     }
 
     &.portletStaticNavigation {
