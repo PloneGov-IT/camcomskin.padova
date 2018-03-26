@@ -9128,7 +9128,7 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   font-size: 1.5em;
 }
 #portal-footer-wrapper .portletItem {
-  background-color: none;
+  background-color: inherit;
 }
 #portal-footer-wrapper .portletItem h2,
 #portal-footer-wrapper .portletItem h4 {
