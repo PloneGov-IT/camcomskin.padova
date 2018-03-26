@@ -176,6 +176,9 @@
                 &.rss:before {
                     @include make-fa('\f09e', $footer-bg);
                 }
+                &.gplus:before {
+                    @include make-fa('\f0d5', $footer-bg);
+                }
                 &.medium:before {
                   background-image: url($img-path + 'medium.svg');
                   background-repeat: no-repeat;
@@ -247,6 +250,8 @@
     }
 
     .portletItem {
+        background-color: none;
+
         h2,
         h4 {
             font-size: 1.2em;
