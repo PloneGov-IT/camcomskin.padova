@@ -183,7 +183,7 @@ body.userrole-anonymous {
             &.open {
                 .icon {
                     &:before {
-                        @include make-ita('\1f5f5');
+                        @include make-fa('\1f5f5');
                         font-size: 0.9em;
                     }
                 }

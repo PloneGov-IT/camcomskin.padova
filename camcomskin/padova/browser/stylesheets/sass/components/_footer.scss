@@ -25,14 +25,21 @@
 
         li {
             padding-bottom: 5px;
-            display: table;
 
             &:before {
                 padding-right: 15px;
-                @include make-ita("\23f5", #fff);
+                @include make-ita("\023f5", #fff);
                 font-size: 0.4em;
-                display: table-cell;
                 text-align: right;
+            }
+
+            // hack to avoid IE
+            @supports(display: grid) {
+                display: table;
+
+                &:before {
+                    display: table-cell;
+                }
             }
         }
     }
@@ -135,7 +142,7 @@
                     height: 3rem;
                     text-align: center;
                     font-size: 2rem;
-                    line-height: 3rem;
+                    line-height: 1.5;
                 }
 
                 &.fb:before {

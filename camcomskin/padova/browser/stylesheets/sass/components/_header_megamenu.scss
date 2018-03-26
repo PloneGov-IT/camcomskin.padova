@@ -3,6 +3,10 @@
         display: none;
     }
 
+    .search-social-wrapper {
+        -ms-flex: 1;
+    }
+
     @media (max-width: $screen-sm-max) {
         border-bottom: 1px solid $gray-light;
         position: relative;
