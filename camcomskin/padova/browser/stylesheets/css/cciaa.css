@@ -8642,13 +8642,38 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 .tileWrapper .tileEditButtons a.tileEditLink,
 .tileWrapper .tileEditButtons a.tileDeleteLink {
   border-color: #ccc !important;
+}
+.tileWrapper .tileEditButtons a.tileEditLink .icon-edit::before,
+.tileWrapper .tileEditButtons a.tileEditLink .icon-delete::before,
+.tileWrapper .tileEditButtons a.tileDeleteLink .icon-edit::before,
+.tileWrapper .tileEditButtons a.tileDeleteLink .icon-delete::before {
   color: #333 !important;
 }
-.tileWrapper .tileEditButtons a.tileEditLink:hover,
-.tileWrapper .tileEditButtons a.tileEditLink:focus,
-.tileWrapper .tileEditButtons a.tileDeleteLink:hover,
-.tileWrapper .tileEditButtons a.tileDeleteLink:focus {
+.tileWrapper .tileEditButtons a.tileEditLink:hover .icon-edit::before,
+.tileWrapper .tileEditButtons a.tileEditLink:hover .icon-delete::before,
+.tileWrapper .tileEditButtons a.tileEditLink:focus .icon-edit::before,
+.tileWrapper .tileEditButtons a.tileEditLink:focus .icon-delete::before,
+.tileWrapper .tileEditButtons a.tileDeleteLink:hover .icon-edit::before,
+.tileWrapper .tileEditButtons a.tileDeleteLink:hover .icon-delete::before,
+.tileWrapper .tileEditButtons a.tileDeleteLink:focus .icon-edit::before,
+.tileWrapper .tileEditButtons a.tileDeleteLink:focus .icon-delete::before {
   color: #fff !important;
+}
+.tileWrapper .tileEditButtons a.tileEditLink .icon-edit::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tileWrapper .tileEditButtons a.tileDeleteLink .icon-delete::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .tileWrapper.editableTile {
   background: rgba(245, 239, 186, 0.7);
