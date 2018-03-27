@@ -131,6 +131,7 @@
        name="camcomskin.padova.social"
        manager="plone.app.layout.viewlets.interfaces.IAboveContent"
        layer="camcomskin.padova.browser.interfaces.IThemeSpecific"
+       class="camcomskin.padova.browser.viewlets.SocialViewlet"
        template="templates/social_viewlet.pt"
        permission="zope2.View"
        />

@@ -1,4 +1,4 @@
-<div class="share">
+<div class="share" tal:define="results view/get_socials">
     <tal:comment replace="nothing">
     <!-- Rendeder all viewlets inside this manager.
         Pull viewlets out of the manager and render then one-by-one
@@ -13,21 +13,14 @@
         </div>
         <div class="share-options">
             <ul class="social-list"
-                ><li
-                  ><a href="https://www.facebook.com/pdcamcom" title="Facebook - apri in una nuova scheda" target="_blank"><span class="social facebook"></span><span class="u-hiddenVisually">Facebook</span></a
+                  ><tal:results tal:repeat="social results"
+                  ><li
+                    ><a tal:attributes="href python: view.get_sharer_url(social); title python: social + ' - apri in una nuova scheda'" href="#" title="Apri in una nuova scheda" target="_blank"
+                        ><span tal:attributes="class python: 'social ' + social" class=""></span
+                        ><span tal:content="python: social" class="u-hiddenVisually">Social</span
+                    ></a
                 ></li
-                ><li
-                  ><a href="https://twitter.com/pdcamcom" title="Twitter - apri in una nuova scheda" target="_blank"><span class="social twitter"></span><span class="u-hiddenVisually">Twitter</span></a
-                ></li
-                ><li
-                  ><a href="https://plus.google.com/+pdcamcom/posts" title="Google+ - apri in una nuova scheda" target="_blank"><span class="social google"></span><span class="u-hiddenVisually">Google+</span></a
-                ></li
-                ><li
-                  ><a href="https://www.youtube.com/user/CCIAAPD" title="Youtube - apri in una nuova scheda" target="_blank"><span class="social youtube"></span><span class="u-hiddenVisually">Youtube</span></a
-                ></li
-                ><li
-                  ><a href="https://telegram.me/cameracommerciopadova/" title="Telegram - apri in una nuova scheda" target="_blank"><span class="social telegram"></span><span class="u-hiddenVisually">Telegram</span></a
-                ></li
+            ></tal:results
             ></ul>
         </div>
     </div>

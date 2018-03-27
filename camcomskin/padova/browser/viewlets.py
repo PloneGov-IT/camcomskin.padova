@@ -10,6 +10,48 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets import common as base
 from plone import api
 
+from urllib2 import quote
+
+
+SHARES = {
+    'facebook': {
+        'share_url': 'https://www.facebook.com/sharer/sharer.php?u={0}',
+        'label': 'Facebook',
+        'cssClass': 'fab fa-facebook-f',
+    },
+    'twitter': {
+        'share_url': 'https://twitter.com/intent/tweet?url={0}&text={1}',
+
+        'label': 'Twitter',
+        'cssClass': 'fab fa-twitter',
+    },
+    'google': {
+        'share_url': 'https://plus.google.com/share?url={0}',
+        'label': 'Google',
+        'cssClass': 'fab fa-google-plus-g',
+    },
+    'linkedin': {
+        'share_url': 'http://www.linkedin.com/shareArticle?url={0}&title={1}',
+        'label': 'Linkedin',
+        'cssClass': 'fab fa-linkedin-in',
+    },
+    'pinterest': {
+        'share_url': 'https://pinterest.com/pin/create/bookmarklet/?media={0}&url={1}&is_video={2}&description={3}',  # noqa
+        'label': 'Pinterest',
+        'cssClass': 'fab fa-pinterest',
+    },
+    'pocket': {
+        'share_url': 'https://getpocket.com/save?url={0}&title={1}',
+        'label': 'Pocket',
+        'cssClass': 'fab fa-pocket',
+    },
+    'telegram': {
+        'share_url': 'https://telegram.me/share/url?url={0}&text={1}',
+        'label': 'Telegram',
+        'cssClass': 'fab fa-telegram'
+    }
+}
+
 
 class LeadImageViewlet(BaseLeadImageViewlet):
 
@@ -57,4 +99,32 @@ class ContentRelatedItems(BaseContentRelatedItems):
                 # permission to see the target object
                 brains.extend(catalog(path=dict(query=path, depth=0)))
         return brains
+
+
+class SocialViewlet(base.ViewletBase):
+    def __init__(self, context, request, view, manager):
+        super(SocialViewlet, self).__init__(context, request, view, manager)
+
+    def get_css_class(self, social_type):
+        cssClass = SHARES[social_type]['cssClass']
+        return cssClass or ''
+
+    def get_sharer_url(self, social_type):
+        share_url = SHARES[social_type]['share_url']
+        title = quote(self.context.title.encode('utf-8'))
+        item_url = self.context.absolute_url()
+        if social_type == 'linkedin':
+            return share_url.format(item_url, self.context.title)
+        if social_type == 'twitter':
+            return share_url.format(item_url, title)
+        if social_type == 'pinterest':
+            return share_url.format('', item_url, 'false', title)
+        if social_type == 'pocket':
+            return share_url.format(item_url, title)
+        if social_type == 'telegram':
+            return share_url.format(item_url, title)
+        return share_url.format(item_url)
+
+    def get_socials(self):
+        return ('facebook', 'twitter', 'google', 'telegram',)
 
