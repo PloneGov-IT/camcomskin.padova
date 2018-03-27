@@ -4381,13 +4381,14 @@ input[type='button'].btn-block {
   font-family: 'ita';
   font-style: normal;
   font-weight: normal;
-  src: url('++resource++camcomskin.padova.stylesheets/ita.eot?v2');
-  src: url('++resource++camcomskin.padova.stylesheets/ita.eot?v2#iefix')
+  src: url('++resource++camcomskin.padova.stylesheets/fonts/ita.eot?v2');
+  src: url('++resource++camcomskin.padova.stylesheets/fonts/ita.eot?v2#iefix')
       format('embedded-opentype'),
-    url('++resource++camcomskin.padova.stylesheets/ita.ttf?v2')
+    url('++resource++camcomskin.padova.stylesheets/fonts/ita.ttf?v2')
       format('truetype'),
-    url('++resource++camcomskin.padova.stylesheets/ita.woff?v2') format('woff'),
-    url('++resource++camcomskin.padova.stylesheets/ita.svg?v2#ita')
+    url('++resource++camcomskin.padova.stylesheets/fonts/ita.woff?v2')
+      format('woff'),
+    url('++resource++camcomskin.padova.stylesheets/fonts/ita.svg?v2#ita')
       format('svg');
 }
 .Icon::before,
