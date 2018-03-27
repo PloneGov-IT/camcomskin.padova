@@ -10968,6 +10968,15 @@ dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus,
 .boxScheda .boxContent ul.listLink li.linkFilePdf a:after {
   background-image: url('++resource++camcomskin.padova.images/pdf.png');
 }
+.boxScheda:not(.boxNorma):not(.boxModuli) .boxContent > div {
+  padding: 0 20px;
+}
+.boxScheda:not(.boxNorma):not(.boxModuli) .boxContent > div:last-of-type {
+  padding-bottom: 20px;
+}
+.boxScheda:not(.boxNorma):not(.boxModuli) .boxContent > h5 {
+  padding: 20px 20px 0;
+}
 #viewlet-below-content {
   margin: 5rem 0 1.5rem;
   border-top: 1px solid #c1c1c1;

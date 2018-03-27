@@ -360,4 +360,20 @@ dl.portlet.rerPortletAdvancedStatic,
             }
         }
     }
+
+    &:not(.boxNorma):not(.boxModuli) {
+        .boxContent {
+            > div {
+                padding: 0 20px;
+
+                &:last-of-type {
+                    padding-bottom: 20px;
+                }
+            }
+
+            > h5 {
+                padding: 20px 20px 0;
+            }
+        }
+    }
 }
