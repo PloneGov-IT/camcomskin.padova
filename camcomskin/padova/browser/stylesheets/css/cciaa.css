@@ -8639,6 +8639,17 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   right: 5px;
   z-index: 100;
 }
+.tileWrapper .tileEditButtons a.tileEditLink,
+.tileWrapper .tileEditButtons a.tileDeleteLink {
+  border-color: #ccc !important;
+  color: #333 !important;
+}
+.tileWrapper .tileEditButtons a.tileEditLink:hover,
+.tileWrapper .tileEditButtons a.tileEditLink:focus,
+.tileWrapper .tileEditButtons a.tileDeleteLink:hover,
+.tileWrapper .tileEditButtons a.tileDeleteLink:focus {
+  color: #fff !important;
+}
 .tileWrapper.editableTile {
   background: rgba(245, 239, 186, 0.7);
 }

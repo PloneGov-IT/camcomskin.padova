@@ -145,6 +145,16 @@
         top: 5px;
         right: 5px;
         z-index: 100;
+
+        a.tileEditLink,
+        a.tileDeleteLink {
+            border-color: #CCC !important;
+            color: #333 !important;
+
+            &:hover, &:focus {
+                color: #FFF !important;
+            }
+        }
     }
 
     &.editableTile {
