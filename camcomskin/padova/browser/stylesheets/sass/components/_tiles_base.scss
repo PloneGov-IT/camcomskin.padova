@@ -150,18 +150,11 @@
         a.tileDeleteLink {
             border-color: #CCC !important;
 
-            .icon-edit,
-            .icon-delete {
-                &::before {
-                    color: #333 !important;
-                }
-            }
-
             &:hover, &:focus {
                 .icon-edit,
                 .icon-delete {
                     &::before {
-                        color: #FFF !important;
+                        color: #333 !important;
                     }
                 }
             }
@@ -169,13 +162,15 @@
 
         a.tileEditLink {
             .icon-edit::before {
-                @include make-fa('\f040', #333);
+                @include make-fa('\f040', #FFF);
+                color: #FFF !important;
             }
         }
 
         a.tileDeleteLink {
             .icon-delete::before {
-                @include make-fa('\f00d', #333);
+                @include make-fa('\f00d', #FFF);
+                color: #FFF !important;
             }
         }
     }
