@@ -12827,4 +12827,9 @@ body.template-scheda_view #portal-column-one,
 body.template-imagedevent_view #portal-column-one {
   display: none;
 }
+.documentDescription {
+  padding-left: 20px;
+  margin: 30px 0 40px;
+  border-left: 9px solid #c1c1c1;
+}
 /*# sourceMappingURL=cciaa.css.map */
