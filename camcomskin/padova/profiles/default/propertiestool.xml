@@ -40,7 +40,7 @@
             <!-- <element value="news 300:300"/> -->
             <!-- <element value="hpslider 1260:270"/> -->
         </property>
-    </object
+    </object>
     <object name="navtree_properties" meta_type="Plone Property Sheet">
       <property name="title">NavigationTree properties</property>
       <property name="currentFolderOnlyInNavtree" type="boolean">False</property>
