@@ -3,7 +3,6 @@
   <version>2000</version>
   <dependencies>
     <dependency>profile-collective.editablemenu:default</dependency>
-    <dependency>profile-sc.social.like:default</dependency>
     <dependency>profile-rer.portlet.advanced_static:default</dependency>
     <dependency>profile-rer.portlet.er_navigation:default</dependency>
     <dependency>profile-Products.ContentWellPortlets:default</dependency>

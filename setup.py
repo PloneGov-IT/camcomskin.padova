@@ -38,7 +38,6 @@ setup(name='camcomskin.padova',
           'rer.portlet.er_navigation',
           'collective.tiles.advancedstatic',
           'collective.tiles.collection',
-          'sc.social.like',
           'z3c.jbot',
           # Non metto come dipendenza direttamente pd.prenotazioni, perché
           # sennò non funziona l'override delle traduzioni, e z3c.pdftemplate
