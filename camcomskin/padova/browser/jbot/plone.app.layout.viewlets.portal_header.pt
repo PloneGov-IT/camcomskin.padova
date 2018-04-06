@@ -2,15 +2,25 @@
     <div class="header-banner-inner">
         <div class="header-banner-owner">
         </div>
-        <div class="dropdown-languages">
+        <div class="dropdown-languages"
+             tal:define="absolute_url here/absolute_url;
+                         eng_url string:${context/portal_url}/english;
+                         isENG python: eng_url in absolute_url;
+                         esp_url string:${context/portal_url}/informacion-espanol;
+                         isESP python: esp_url in absolute_url;
+                         fra_url string:${context/portal_url}/francais-information;
+                         isFRA python: fra_url in absolute_url;
+                         ita_url string:${context/portal_url};
+                         isITA python: not (isENG or isESP or isFRA);
+                         lang python: 'ENG' if isENG else 'ESP' if isESP else 'FRA' if isFRA else 'ITA';">
           <button class="dropdown-toggle" type="button" id="dropdown-lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Seleziona la lingua">
-            <span class="sr-only">lingua attiva:</span> <span>ITA</span>
+            <span class="sr-only">lingua attiva:</span><span class="active-lang" tal:content="lang">ITA</span>
           </button>
           <ul class="languages dropdown-menu" aria-labelledby="dropdown-lang">
-            <li><a href="/" title="English"><span>ITA</span></a></li>
-            <li><a href="/english" title="English"><span>ENG</span></a></li>
-            <li><a href="/informacion-espanol" title="Español"><span>ESP</span></a></li>
-            <li><a href="/francais-information" title="Français"><span>FRA</span></a></li>
+            <li tal:condition="python: not isITA" class="lang-ita"><a title="Italiano" href="#" tal:attributes="href ita_url"><span>ITA</span></a></li>
+            <li tal:condition="python: not isENG" class="lang-eng"><a title="English"  href="#" tal:attributes="href eng_url"><span>ENG</span></a></li>
+            <li tal:condition="python: not isESP" class="lang-esp"><a title="Español"  href="#" tal:attributes="href esp_url"><span>ESP</span></a></li>
+            <li tal:condition="python: not isFRA" class="lang-fra"><a title="Français" href="#" tal:attributes="href fra_url"><span>FRA</span></a></li>
           </ul>
         </div>
     </div>

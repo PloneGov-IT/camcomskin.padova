@@ -6905,6 +6905,18 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 #header-banner .dropdown-languages ul.languages.open {
   display: block;
 }
+#header-banner .dropdown-languages ul.languages[data-lang='ITA'] li.lang-ita {
+  display: none;
+}
+#header-banner .dropdown-languages ul.languages[data-lang='ENG'] li.lang-eng {
+  display: none;
+}
+#header-banner .dropdown-languages ul.languages[data-lang='ESP'] li.lang-esp {
+  display: none;
+}
+#header-banner .dropdown-languages ul.languages[data-lang='FRA'] li.lang-fra {
+  display: none;
+}
 #portal-header-wrapper {
   background-color: #ac1b01;
 }
@@ -11013,9 +11025,11 @@ dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus,
 .boxScheda:not(.boxNorma):not(.boxModuli) .boxContent > h5 {
   padding: 20px 20px 0;
 }
+#column-collective-portletpage-toprow-portlet-in-this-section ul li,
 #column-collective-portletpage-toprow-portlet-in-questa-sezione ul li {
   border-bottom: 1px solid #ccc;
 }
+#column-collective-portletpage-toprow-portlet-in-this-section a,
 #column-collective-portletpage-toprow-portlet-in-questa-sezione a {
   border-bottom: 0 !important;
 }

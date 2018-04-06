@@ -79,6 +79,30 @@ body.userrole-anonymous {
             &.open {
                 display: block;
             }
+
+            &[data-lang="ITA"] {
+                li.lang-ita {
+                    display: none;
+                }
+            }
+
+            &[data-lang="ENG"] {
+                li.lang-eng {
+                    display: none;
+                }
+            }
+
+            &[data-lang="ESP"] {
+                li.lang-esp {
+                    display: none;
+                }
+            }
+
+            &[data-lang="FRA"] {
+                li.lang-fra {
+                    display: none;
+                }
+            }
         }
     }
 }
