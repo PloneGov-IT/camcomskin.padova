@@ -12832,4 +12832,12 @@ body.template-imagedevent_view #portal-column-one {
   margin: 30px 0 40px;
   border-left: 9px solid #c1c1c1;
 }
+table.modulisticaListing tbody tr td {
+  padding: 5px;
+  min-width: 2em;
+}
+table.modulisticaListing tbody tr td a {
+  width: 100%;
+  text-align: center;
+}
 /*# sourceMappingURL=cciaa.css.map */
