@@ -1,0 +1,23 @@
+.officeContactsWrapper {
+    margin: 0 0 40px;
+
+    .officeContactsContent {
+        display: flex;
+        background: rgba($brand-primary, 0.2);
+        border-top: 1px solid $brand-primary;
+
+        > div {
+            padding: 20px;
+            width: 100%;
+            min-width: 25em;
+
+            h6 {
+                margin: 0;
+            }
+
+            h5 {
+                margin: 0 0 10px;
+            }
+        }
+    }
+}

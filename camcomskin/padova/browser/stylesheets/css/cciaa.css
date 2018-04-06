@@ -11013,6 +11013,12 @@ dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus,
 .boxScheda:not(.boxNorma):not(.boxModuli) .boxContent > h5 {
   padding: 20px 20px 0;
 }
+#column-collective-portletpage-toprow-portlet-in-questa-sezione ul li {
+  border-bottom: 1px solid #ccc;
+}
+#column-collective-portletpage-toprow-portlet-in-questa-sezione a {
+  border-bottom: 0 !important;
+}
 #viewlet-below-content {
   margin: 5rem 0 1.5rem;
   border-top: 1px solid #c1c1c1;
@@ -12839,5 +12845,27 @@ table.modulisticaListing tbody tr td {
 table.modulisticaListing tbody tr td a {
   width: 100%;
   text-align: center;
+}
+.officeContactsWrapper {
+  margin: 0 0 40px;
+}
+.officeContactsWrapper .officeContactsContent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(172, 27, 1, 0.2);
+  border-top: 1px solid #ac1b01;
+}
+.officeContactsWrapper .officeContactsContent > div {
+  padding: 20px;
+  width: 100%;
+  min-width: 25em;
+}
+.officeContactsWrapper .officeContactsContent > div h6 {
+  margin: 0;
+}
+.officeContactsWrapper .officeContactsContent > div h5 {
+  margin: 0 0 10px;
 }
 /*# sourceMappingURL=cciaa.css.map */
