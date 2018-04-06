@@ -10833,8 +10833,8 @@ dl.portlet.rerPortletAdvancedStatic .portletHeader,
 .rerPortletAdvancedStatic .portletHeader {
   margin-bottom: 0;
 }
-dl.portlet.rerPortletAdvancedStatic .portletItem,
-.rerPortletAdvancedStatic .portletItem {
+dl.portlet.rerPortletAdvancedStatic dl.portletItem,
+.rerPortletAdvancedStatic dl.portletItem {
   background-color: #f0f0f0;
 }
 dl.portlet.rerPortletAdvancedStatic.ModuliNorme .portletItem,
