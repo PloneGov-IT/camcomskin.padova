@@ -111,7 +111,8 @@ class SocialViewlet(base.ViewletBase):
 
     def get_sharer_url(self, social_type):
         share_url = SHARES[social_type]['share_url']
-        title = quote(self.context.title)
+        #  title = quote(self.context.title)
+        title = quote(self.context.title.encode('utf-8'))
         item_url = self.context.absolute_url()
         if social_type == 'linkedin':
             return share_url.format(item_url, self.context.title)

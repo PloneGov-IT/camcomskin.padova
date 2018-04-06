@@ -4116,17 +4116,20 @@ input[type='button'].btn-block {
 #portletPageColumns:before,
 .template-summary_view .tileItem:before,
 #parent-fieldname-text:before,
+#week-table-wrapper table#week .gates:before,
 .clearfix:after,
 #portletPageColumns:after,
 .template-summary_view .tileItem:after,
-#parent-fieldname-text:after {
+#parent-fieldname-text:after,
+#week-table-wrapper table#week .gates:after {
   content: ' ';
   display: table;
 }
 .clearfix:after,
 #portletPageColumns:after,
 .template-summary_view .tileItem:after,
-#parent-fieldname-text:after {
+#parent-fieldname-text:after,
+#week-table-wrapper table#week .gates:after {
   clear: both;
 }
 .center-block {
@@ -5653,15 +5656,21 @@ input.inputLabelActive {
 .template-folder_contents .newsImageContainer {
   display: none;
 }
-.light {
+.light,
+#week-table-wrapper table#week caption strong {
   font-weight: 300;
 }
 .regular,
 #search-filter legend,
-#content #search-filter legend {
+#content #search-filter legend,
+#week-table-wrapper table#week .fromto {
   font-weight: 400;
 }
-.semibold {
+.semibold,
+#week-table-wrapper table#week caption a.floatleft,
+#week-table-wrapper table#week caption a.floatright,
+#week-table-wrapper table#week caption a:not([class]),
+#week-table-wrapper table#week thead th {
   font-weight: 600;
 }
 .bold,
@@ -12881,5 +12890,120 @@ table.modulisticaListing tbody tr td a {
 }
 .officeContactsWrapper .officeContactsContent > div h5 {
   margin: 0 0 10px;
+}
+#week-table-wrapper table#week {
+  width: 99.9%;
+}
+#week-table-wrapper table#week a {
+  border: 0;
+}
+#week-table-wrapper table#week caption {
+  background-color: #ac1b01;
+  border: 0;
+  text-align: center;
+  color: #ccc;
+  padding-top: 0.5em;
+}
+#week-table-wrapper table#week caption a {
+  color: #fff;
+  border: 0;
+}
+#week-table-wrapper table#week caption a:focus,
+#week-table-wrapper table#week caption a:hover {
+  color: #fff !important;
+  text-decoration: underline !important;
+}
+#week-table-wrapper table#week caption a.floatleft,
+#week-table-wrapper table#week caption a.floatright {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+#week-table-wrapper table#week caption a.floatright:after {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 5px;
+}
+#week-table-wrapper table#week caption a.floatleft:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 5px;
+}
+#week-table-wrapper table#week caption strong {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+#week-table-wrapper table#week caption a:not([class]) {
+  margin-left: 1em;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  padding: 0.2em 0.8em;
+  background-color: #ccc;
+  border-radius: 4px;
+  vertical-align: text-bottom;
+  color: #1c2024;
+}
+#week-table-wrapper table#week caption a:not([class]):focus,
+#week-table-wrapper table#week caption a:not([class]):hover {
+  background-color: #ac1b01;
+  color: #fff !important;
+}
+#week-table-wrapper table#week thead th {
+  padding: 0 0.5em 0.5em;
+  border: 0;
+}
+#week-table-wrapper table#week .gatesheader .gate a {
+  color: #777;
+  height: auto !important;
+}
+#week-table-wrapper table#week .gatesheader .gate a:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+#week-table-wrapper table#week .fromto {
+  background-color: #eee;
+  padding: 0.3em;
+  border-bottom: 1px solid #ddd;
+}
+#week-table-wrapper table#week .slot .links a {
+  background-color: #fff3d8;
+  border: 1px solid #e4d7b9;
+  border-width: 0 0 1px 1px;
+}
+#week-table-wrapper table#week .slot .links a:focus,
+#week-table-wrapper table#week .slot .links a:hover {
+  background-color: #326309;
+}
+.week-legend ul.legend li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-flow: row-reverse wrap;
+  -ms-flex-flow: row-reverse wrap;
+  flex-flow: row-reverse wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.week-legend ul.legend li .square {
+  float: none;
+  clear: both;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=cciaa.css.map */
