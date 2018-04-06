@@ -12854,7 +12854,7 @@ table.modulisticaListing tbody tr td a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: rgba(172, 27, 1, 0.2);
+  background: #eee;
   border-top: 1px solid #ac1b01;
 }
 .officeContactsWrapper .officeContactsContent > div {

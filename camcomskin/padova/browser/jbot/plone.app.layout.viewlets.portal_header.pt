@@ -1,4 +1,3 @@
-
 <div id="header-banner">
     <div class="header-banner-inner">
         <div class="header-banner-owner">
@@ -8,6 +7,7 @@
             <span class="sr-only">lingua attiva:</span> <span>ITA</span>
           </button>
           <ul class="languages dropdown-menu" aria-labelledby="dropdown-lang">
+            <li><a href="/" title="English"><span>ITA</span></a></li>
             <li><a href="/english" title="English"><span>ENG</span></a></li>
             <li><a href="/informacion-espanol" title="Español"><span>ESP</span></a></li>
             <li><a href="/francais-information" title="Français"><span>FRA</span></a></li>
