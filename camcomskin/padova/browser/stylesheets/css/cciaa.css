@@ -12821,6 +12821,21 @@ body.template-imagedevent_view #portal-column-two {
   float: right;
   font-size: 18px;
 }
+body.template-tiles_view #portal-column-two > *:not(.share),
+body.template-tiles_page_view #portal-column-two > *:not(.share),
+body.template-document_view #portal-column-two > *:not(.share),
+body.template-structured_content_view #portal-column-two > *:not(.share),
+body.template-listing_view #portal-column-two > *:not(.share),
+body.template-summary_view #portal-column-two > *:not(.share),
+body.template-newsitem_view #portal-column-two > *:not(.share),
+body.template-bando_view #portal-column-two > *:not(.share),
+body.template-pubblicazione_main_view #portal-column-two > *:not(.share),
+body.template-pubblicazioni_collection_view #portal-column-two > *:not(.share),
+body.template-event_view #portal-column-two > *:not(.share),
+body.template-scheda_view #portal-column-two > *:not(.share),
+body.template-imagedevent_view #portal-column-two > *:not(.share) {
+  font-size: 16px;
+}
 @media (max-width: 1150px) {
   body.template-tiles_view #portal-column-two,
   body.template-tiles_page_view #portal-column-two,
