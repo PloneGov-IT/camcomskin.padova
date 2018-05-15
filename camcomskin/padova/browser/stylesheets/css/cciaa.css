@@ -12906,6 +12906,50 @@ table.modulisticaListing tbody tr td a {
 .officeContactsWrapper .officeContactsContent > div h5 {
   margin: 0 0 10px;
 }
+.boxOffice h6::before {
+  display: inline-block;
+  padding-right: 1em;
+}
+.boxOffice .officeTime h6::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.boxOffice .officePhone h6::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.boxOffice .officeFax h6::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.boxOffice .officeEmail h6::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.boxOffice .officePec h6::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 #week-table-wrapper table#week {
   width: 99.9%;
 }

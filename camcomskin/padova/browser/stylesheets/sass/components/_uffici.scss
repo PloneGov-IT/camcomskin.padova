@@ -21,3 +21,41 @@
         }
     }
 }
+
+// portlet Uffici
+.boxOffice {
+    h6::before {
+        display: inline-block;
+        padding-right: 1em;
+    }
+
+    .officeTime {
+        h6::before {
+            @include make-fa('\f017', $gray-nav);
+        }
+    }
+
+    .officePhone {
+        h6::before {
+            @include make-fa('\f095', $gray-nav);
+        }
+    }
+
+    .officeFax {
+        h6::before {
+            @include make-fa('\f1ac', $gray-nav);
+        }
+    }
+
+    .officeEmail {
+        h6::before {
+            @include make-fa('\f003', $gray-nav);
+        }
+    }
+
+    .officePec {
+        h6::before {
+            @include make-fa('\f0e0', $gray-nav);
+        }
+    }
+}
