@@ -18,7 +18,7 @@
                i18n:translate="tiles_collection_noresults">
                 No results found
             </p>
-            <ul class="tileContent" tal:condition="results">
+            <ul class="tileContent" tal:condition="results" data-pat-slider='{ "initialSlide": 0, "slidesToShow": 3, "slidesToScroll": 1, "appendArrows": ".${classID}", "responsive": [{ "breakpoint": 768, "settings": { "slidesToShow": 1, "slidesToScroll": 1 } }] }'>
                 <tal:results tal:repeat="obj results">
                 <li tal:define="oddrow repeat/obj/odd;
                                 notizia obj/getObject;
