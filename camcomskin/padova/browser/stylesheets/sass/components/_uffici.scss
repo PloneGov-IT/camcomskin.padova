@@ -3,7 +3,7 @@
 
     .officeContactsContent {
         display: flex;
-        background: #EEE;
+        background: #eee;
         border-top: 1px solid $brand-primary;
 
         > div {
@@ -24,37 +24,50 @@
 
 // portlet Uffici
 .boxOffice {
-    h6::before {
-        display: inline-block;
-        padding-right: 1em;
+    .officeTime,
+    .officePhone,
+    .officeFax,
+    .officeEmail,
+    .officePec {
+        &::before {
+            padding-right: 1em;
+        }
+
+        h6 {
+            display: none;
+        }
+
+        > * {
+            display: inline-block;
+        }
     }
 
     .officeTime {
-        h6::before {
+        &::before {
             @include make-fa('\f017', $gray-nav);
         }
     }
 
     .officePhone {
-        h6::before {
+        &::before {
             @include make-fa('\f095', $gray-nav);
         }
     }
 
     .officeFax {
-        h6::before {
+        &::before {
             @include make-fa('\f1ac', $gray-nav);
         }
     }
 
     .officeEmail {
-        h6::before {
+        &::before {
             @include make-fa('\f003', $gray-nav);
         }
     }
 
     .officePec {
-        h6::before {
+        &::before {
             @include make-fa('\f0e0', $gray-nav);
         }
     }
