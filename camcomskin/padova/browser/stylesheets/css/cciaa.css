@@ -9258,8 +9258,8 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 #portal-footer-wrapper ul#portal-siteactions li::before {
   display: none;
 }
-#portal-footer-wrapper ul#portal-siteactions li:hover,
-#portal-footer-wrapper ul#portal-siteactions li:focus {
+#portal-footer-wrapper ul#portal-siteactions li a:hover,
+#portal-footer-wrapper ul#portal-siteactions li a:focus {
   color: #21a1a4;
 }
 #portal-footer-wrapper #portal-colophon {

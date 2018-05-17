@@ -316,9 +316,11 @@
                 display: none;
             }
 
-            &:hover,
-            &:focus {
-                color: $footer-link-hover;
+            a {
+                &:hover,
+                &:focus {
+                    color: $footer-link-hover;
+                }
             }
         }
     }
