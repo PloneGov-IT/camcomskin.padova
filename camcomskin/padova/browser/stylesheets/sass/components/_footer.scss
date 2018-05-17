@@ -1,7 +1,7 @@
 #portal-footer-wrapper {
     background-color: $footer-bg;
     // overflow: auto;
-    padding: 0 0 50px;
+    padding: 0 0 3.5rem;
     color: #fff;
 
     .portal-footer {
@@ -28,13 +28,13 @@
 
             &:before {
                 padding-right: 15px;
-                @include make-ita("\023f5", #fff);
+                @include make-ita('\023f5', #fff);
                 font-size: 0.4em;
                 text-align: right;
             }
 
             // hack to avoid IE
-            @supports(display: grid) {
+            @supports (display: grid) {
                 display: table;
 
                 &:before {
@@ -90,10 +90,12 @@
         }
     }
 
-    #portlets-footer {
+    .footer-inner-wrapper {
         @include make-container;
         padding-left: 0;
         padding-bottom: 0;
+        display: flex;
+        flex-direction: column-reverse;
 
         a {
             text-decoration: underline !important;
@@ -128,7 +130,7 @@
         display: inline-block;
 
         li {
-          float: left;
+            float: left;
 
             a {
                 display: inline-block;
@@ -137,7 +139,7 @@
                     display: inline-block;
                     border-radius: 100%;
                     background-color: $footer-link;
-                    color: #FFF;
+                    color: #fff;
                     width: 3rem;
                     height: 3rem;
                     text-align: center;
@@ -162,9 +164,9 @@
                 }
                 &.st {
                     &:before {
-                        content: "";
+                        content: '';
                         vertical-align: bottom;
-                        background-image: url($img-path + 'storify.svg');
+                        background-image: url($img-path+'storify.svg');
                         background-size: 2rem;
                         background-repeat: no-repeat;
                         background-position: center center;
@@ -180,11 +182,11 @@
                     @include make-fa('\f0d5', $footer-bg);
                 }
                 &.medium:before {
-                  background-image: url($img-path + 'medium.svg');
-                  background-repeat: no-repeat;
-                  background-position: center center;
-                  background-size: 75%;
-                  content:'';
+                    background-image: url($img-path+'medium.svg');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 75%;
+                    content: '';
                 }
 
                 &:focus,
@@ -196,13 +198,13 @@
 
                     &.st {
                         &:before {
-                            background-image: url($img-path + 'storifyHover.svg');
+                            background-image: url($img-path+'storifyHover.svg');
                         }
                     }
 
                     &.medium {
                         &:before {
-                            background-image: url($img-path + 'mediumHover.svg');
+                            background-image: url($img-path+'mediumHover.svg');
                         }
                     }
                 }
@@ -220,7 +222,7 @@
 
     .newsletter {
         &:before {
-            @include make-ita("\1f4e7", #EEE);
+            @include make-ita('\1f4e7', #eee);
             display: block;
             font-size: 2em;
         }
@@ -297,7 +299,23 @@
     }
 
     ul#portal-siteactions {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid $footer-hr;
+        padding: 1rem 0 0;
+
+        li {
+            margin: 0;
+            padding: 2rem 0 0;
+
+            &::before {
+                display: none;
+            }
+
+            + li {
+                padding-left: 2.5rem;
+            }
+        }
     }
 
     #portal-colophon {

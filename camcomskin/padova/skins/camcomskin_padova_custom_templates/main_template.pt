@@ -179,7 +179,7 @@
     <div id="portal-footer-wrapper"
         i18n:domain="plone"
         tal:condition="not:ajax_load">
-        <div>
+        <div class="footer-inner-wrapper">
             <div tal:replace="structure provider:plone.portalfooter" />
         </div>
     </div>

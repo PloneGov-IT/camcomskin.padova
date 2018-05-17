@@ -8856,7 +8856,7 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 }
 #portal-footer-wrapper {
   background-color: #30373d;
-  padding: 0 0 50px;
+  padding: 0 0 3.5rem;
   color: #fff;
 }
 #portal-footer-wrapper .portal-footer {
@@ -8988,38 +8988,47 @@ body.userrole-anonymous #portal-personaltools-wrapper {
     margin: 0;
   }
 }
-#portal-footer-wrapper #portlets-footer {
+#portal-footer-wrapper .footer-inner-wrapper {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
   padding-left: 0;
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
-#portal-footer-wrapper #portlets-footer:before,
-#portal-footer-wrapper #portlets-footer:after {
+#portal-footer-wrapper .footer-inner-wrapper:before,
+#portal-footer-wrapper .footer-inner-wrapper:after {
   content: ' ';
   display: table;
 }
-#portal-footer-wrapper #portlets-footer:after {
+#portal-footer-wrapper .footer-inner-wrapper:after {
   clear: both;
 }
 @media (min-width: 768px) {
-  #portal-footer-wrapper #portlets-footer {
+  #portal-footer-wrapper .footer-inner-wrapper {
     width: auto;
   }
 }
 @media (min-width: 992px) {
-  #portal-footer-wrapper #portlets-footer {
+  #portal-footer-wrapper .footer-inner-wrapper {
     width: auto;
   }
 }
 @media (min-width: 1360px) {
-  #portal-footer-wrapper #portlets-footer {
+  #portal-footer-wrapper .footer-inner-wrapper {
     width: 1330px;
   }
 }
-#portal-footer-wrapper #portlets-footer a {
+#portal-footer-wrapper .footer-inner-wrapper a {
   text-decoration: underline !important;
 }
 #portal-footer-wrapper .footer-actions {
@@ -9229,7 +9238,25 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   }
 }
 #portal-footer-wrapper ul#portal-siteactions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-top: 1px solid #979797;
+  padding: 1rem 0 0;
+}
+#portal-footer-wrapper ul#portal-siteactions li {
+  margin: 0;
+  padding: 2rem 0 0;
+}
+#portal-footer-wrapper ul#portal-siteactions li::before {
   display: none;
+}
+#portal-footer-wrapper ul#portal-siteactions li + li {
+  padding-left: 2.5rem;
 }
 #portal-footer-wrapper #portal-colophon {
   display: none;
