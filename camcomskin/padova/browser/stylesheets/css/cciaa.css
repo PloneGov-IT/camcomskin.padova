@@ -9247,6 +9247,7 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   flex-wrap: wrap;
   border-top: 1px solid #979797;
   padding: 1rem 0 0;
+  margin: 0 20px;
 }
 #portal-footer-wrapper ul#portal-siteactions li {
   margin: 0;
