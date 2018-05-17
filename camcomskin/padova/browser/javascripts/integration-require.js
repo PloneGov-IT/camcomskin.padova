@@ -6,7 +6,7 @@ require([
 
   var options = {
     initialSlide: 0,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
     dots: true,
