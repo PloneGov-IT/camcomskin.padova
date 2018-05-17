@@ -9252,11 +9252,15 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   margin: 0;
   padding: 2rem 0 0;
 }
+#portal-footer-wrapper ul#portal-siteactions li + li {
+  padding-left: 2.5rem;
+}
 #portal-footer-wrapper ul#portal-siteactions li::before {
   display: none;
 }
-#portal-footer-wrapper ul#portal-siteactions li + li {
-  padding-left: 2.5rem;
+#portal-footer-wrapper ul#portal-siteactions li:hover,
+#portal-footer-wrapper ul#portal-siteactions li:focus {
+  color: #21a1a4;
 }
 #portal-footer-wrapper #portal-colophon {
   display: none;

@@ -308,12 +308,17 @@
             margin: 0;
             padding: 2rem 0 0;
 
+            + li {
+                padding-left: 2.5rem;
+            }
+
             &::before {
                 display: none;
             }
 
-            + li {
-                padding-left: 2.5rem;
+            &:hover,
+            &:focus {
+                color: $footer-link-hover;
             }
         }
     }
