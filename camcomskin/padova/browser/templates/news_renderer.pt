@@ -35,9 +35,7 @@
                                            class string:tile $item_type_class $item_wf_state_class;
                                            title obj/Description">
                             <div class="collectionItemImage">
-                                <img class="image-thumb"
-                                     tal:define="scales notizia/@@images"
-                                     tal:replace="structure python: scales.tag('image', scale='newshome', css_class='image-thumb', direction='down')" />
+                                <img tal:replace="structure python:helper_view.get_image_tag(notizia, 'newshome', 'down', 'image-thumb')" />
                             </div>
                             <div class="collectionItemText">
                                 <div class="collectionItemTitle">

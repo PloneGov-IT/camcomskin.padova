@@ -3,9 +3,10 @@ from collective.tiles.collection.interfaces import ICollectionTileRenderer
 from plone import api
 from plone.api.exc import InvalidParameterError
 from Products.Five.browser import BrowserView
-from camcomskin.padova import _
 from ZODB.POSException import POSKeyError
 from zope.interface import implements
+
+from camcomskin.padova import _
 
 
 class HelpersView(BrowserView):
@@ -13,14 +14,20 @@ class HelpersView(BrowserView):
     A set of helper functions for tile collection views.
     """
 
-    def get_image_tag(self, item, scale='thumb'):
+    def get_image_tag(self,
+                      item,
+                      scale='thumb',
+                      direction='down',
+                      css_class=''):
         try:
             scale_view = api.content.get_view(
                 name='images',
                 context=item,
                 request=self.request,
             )
-            return scale_view.scale('image', scale=scale).tag()
+            return scale_view.scale(
+                'image', scale=scale, direction=direction,
+                css_class=css_class).tag()
         except (InvalidParameterError, POSKeyError, AttributeError, KeyError):
             # The object doesn't have an image field
             return ""
@@ -76,8 +83,7 @@ class HelpersView(BrowserView):
 
         date_string = ""
         start_date_parts = [
-            event.startDate.day(),
-            months[str(event.startDate.month())],
+            event.startDate.day(), months[str(event.startDate.month())],
             event.startDate.year()
         ]
         startDate = ' '.join([str(x) for x in start_date_parts])
@@ -89,8 +95,7 @@ class HelpersView(BrowserView):
 
         else:
             end_date_parts = [
-                event.endDate.day(),
-                months[str(event.endDate.month())],
+                event.endDate.day(), months[str(event.endDate.month())],
                 event.endDate.year()
             ]
             endDate = ' '.join([str(x) for x in end_date_parts])

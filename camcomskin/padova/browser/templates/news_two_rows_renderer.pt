@@ -37,9 +37,7 @@
                                            title obj/Description">
                             <div class="collectionItemImage"
                                  tal:condition="isFirst">
-                                <img class="image-thumb"
-                                     tal:define="scales notizia/@@images"
-                                     tal:replace="structure python: scales.tag('image', scale='newshome', css_class='image-thumb', direction='down')" />
+                                <img tal:replace="structure python:helper_view.get_image_tag(notizia, 'newshome', 'down', 'image-thumb')" />
                             </div>
                             <div class="collectionItemText">
                                 <div class="collectionItemDates"
