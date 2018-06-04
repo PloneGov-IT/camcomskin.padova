@@ -32,8 +32,12 @@
                             </a>
             </th>
             <td tal:content="python: view.get_phone(office)"></td>
-            <td tal:content="python: view.get_email(office)"></td>
-            <td tal:content="python: view.get_pec(office)"></td>
+            <td tal:define="email python: view.get_email(office)">
+              <a tal:condition="email" href="#" tal:attributes="href python:'mailto:' + email" tal:content="email" />
+            </td>
+            <td tal:define="pec python: view.get_pec(office)">
+              <a tal:condition="pec" href="#" tal:attributes="href python:'mailto:' + pec" tal:content="pec" />
+            </td>
           </tr>
         </tal:loop>
       </tbody>
