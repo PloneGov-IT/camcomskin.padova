@@ -11784,6 +11784,10 @@ body.portaltype-event #parent-fieldname-text {
   margin: 0 0 1em;
   max-width: 100%;
 }
+.template-event_view #content .eventDetails table,
+.template-imagedevent_view #content .eventDetails table {
+  width: 100%;
+}
 .template-event_view abbr,
 .template-imagedevent_view abbr {
   cursor: default;
