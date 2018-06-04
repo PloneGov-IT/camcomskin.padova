@@ -96,3 +96,16 @@ body {
         }
     }
 }
+
+#content-core {
+    pre {
+        background: rgba(40, 54, 64, 0.7);
+        color: #FFF;
+        font-size: 1em;
+        font-family: inherit;
+        overflow: visible;
+        white-space: initial;
+        line-height: normal;
+        border-radius: 5px;
+    }
+}
