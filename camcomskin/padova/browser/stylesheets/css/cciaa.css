@@ -11059,6 +11059,10 @@ dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus,
 }
 .boxScheda:not(.boxNorma):not(.boxModuli) .boxContent > div {
   padding: 0 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 .boxScheda:not(.boxNorma):not(.boxModuli) .boxContent > div:last-of-type {
   padding-bottom: 20px;

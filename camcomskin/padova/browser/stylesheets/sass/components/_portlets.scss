@@ -365,6 +365,7 @@ dl.portlet.rerPortletAdvancedStatic,
         .boxContent {
             > div {
                 padding: 0 20px;
+                display: flex;
 
                 &:last-of-type {
                     padding-bottom: 20px;
