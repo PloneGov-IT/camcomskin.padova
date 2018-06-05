@@ -169,5 +169,13 @@
     $('#portal-footer-wrapper').prepend($('.portlet.valuta-sito'));
 
     onTilesLoaded(pairTiles);
+
+    $('#portal-column-two .share')
+      .after(
+        $('#portal-column-two .portletERPortletNavigation').closest(
+          '.portletWrapper'
+        )
+      )
+      .after($('#portal-column-two .TornaIndietro').closest('.portletWrapper'));
   });
 })(jQuery);
