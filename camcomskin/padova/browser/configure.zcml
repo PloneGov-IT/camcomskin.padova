@@ -198,6 +198,15 @@
 
 
   <!-- tiles management -->
+  <!-- custom contenttree-fetch view, to show also contents set as default view -->
+  <browser:page
+    name="contenttree-fetch"
+    for="plone.formwidget.contenttree.interfaces.IContentTreeWidget"
+    permission="zope.Public"
+    layer=".interfaces.IThemeSpecific"
+    class=".contenttree_widget.Fetch"
+    />
+
   <!-- Customized add view and form - invoked from the @@add-tile traversal view -->
   <adapter
       for="Products.ATContentTypes.interfaces.document.IATDocument
