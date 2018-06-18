@@ -13120,4 +13120,80 @@ table.modulisticaListing tbody tr td a {
   clear: both;
   margin-right: 10px;
 }
+body.template-cciaa_collection_view #content .cciaa_topic_view .cciaaTopicItem {
+  padding: 1.5rem 1.5rem 1.5rem 5rem;
+  border-bottom: 1px dashed #ccc;
+  position: relative;
+}
+body.template-cciaa_collection_view
+  #content
+  .cciaa_topic_view
+  .cciaaTopicItem
+  h4 {
+  margin: 0.5rem 0;
+}
+body.template-cciaa_collection_view
+  #content
+  .cciaa_topic_view
+  .cciaaTopicItem
+  p {
+  margin-bottom: 0;
+}
+body.template-cciaa_collection_view
+  #content
+  .cciaa_topic_view
+  .cciaaTopicItem::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 2.5rem;
+  position: absolute;
+  left: 0;
+  top: -webkit-calc(50% - 1.25rem);
+  top: calc(50% - 1.25rem);
+}
+body.template-cciaa_collection_view
+  #content
+  .cciaa_topic_view
+  .cciaaTopicItem.topic-news-item::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.template-cciaa_collection_view
+  #content
+  .cciaa_topic_view
+  .cciaaTopicItem.topic-event::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.template-cciaa_collection_view #content .cciaa_topic_view .listingBar a {
+  border-width: 1px;
+  border-color: #ac1b01;
+  border-radius: 3px;
+}
+body.template-cciaa_collection_view
+  #content
+  .cciaa_topic_view
+  .listingBar
+  a:hover,
+body.template-cciaa_collection_view
+  #content
+  .cciaa_topic_view
+  .listingBar
+  a:focus {
+  background: #ac1b01;
+  color: #fff !important;
+  border-color: #ac1b01 !important;
+}
 /*# sourceMappingURL=cciaa.css.map */
