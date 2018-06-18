@@ -24,7 +24,8 @@ class ThemeBaseView(BrowserView):
         portal_state = getMultiAdapter(
             (self.context, self.request), name=u'plone_portal_state')
 
-        sl = plone_view.have_portlets('plone.leftcolumn', view=view)
+        #  sl = plone_view.have_portlets('plone.leftcolumn', view=view)
+        sl = False # hidden by italia design guidelines
         sr = plone_view.have_portlets('plone.rightcolumn', view=view)
 
         isRTL = portal_state.is_rtl()
