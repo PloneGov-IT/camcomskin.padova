@@ -12117,6 +12117,10 @@ nav.pagination ul li.next span {
 }
 .tile-advanced-static.portletStaticNavigation .tile-text {
   padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 .tile-advanced-static.portletStaticNavigation .tile-text h3 {
   border-bottom: 4px solid #666;
@@ -12130,6 +12134,11 @@ nav.pagination ul li.next span {
 }
 .tile-advanced-static.portletStaticNavigation .tile-text ul li {
   padding: 1.5rem 0;
+}
+.tile-advanced-static.portletStaticNavigation
+  .tile-text
+  ul
+  li:nth-of-type(n + 2) {
   border-top: 1px solid #c1c1c1;
 }
 .tile-advanced-static.portletStaticNavigation .tile-text ul li a {
@@ -12139,6 +12148,16 @@ nav.pagination ul li.next span {
 .tile-advanced-static.portletStaticNavigation .tile-text ul li a:hover {
   color: #1c2024 !important;
   border-bottom: 1px solid #1c2024 !important;
+}
+.tile-advanced-static.portletStaticNavigation
+  .tile-text
+  [class*='colonna-1-di-']:not(:first-of-type) {
+  margin-left: 0.5rem;
+}
+.tile-advanced-static.portletStaticNavigation
+  .tile-text
+  [class*='colonna-1-di-']:not(:last-of-type) {
+  margin-right: 0.5rem;
 }
 .PagesTileStatic,
 .tile-advanced-static.PagesTileStatic {
@@ -12203,16 +12222,20 @@ nav.pagination ul li.next span {
 .tile-advanced-static.PagesTileStatic .tile-text ul li a:hover {
   border-bottom: 1px solid #1c2024;
 }
-.sfondo-chiaro.portletStaticNavigation .tile-text {
-  background: #fff;
-}
+.sfondo-scuro.portletStaticNavigation .tile-text:before,
+.sfondo-scuro.portletStaticNavigation .tile-text:after,
 .sfondo-chiaro.portletStaticNavigation .tile-text:before,
 .sfondo-chiaro.portletStaticNavigation .tile-text:after {
   content: ' ';
   display: table;
 }
+.sfondo-scuro.portletStaticNavigation .tile-text:after,
 .sfondo-chiaro.portletStaticNavigation .tile-text:after {
   clear: both;
+}
+.sfondo-scuro.portletStaticNavigation .tile-text [class*='colonna-1-di-'],
+.sfondo-chiaro.portletStaticNavigation .tile-text [class*='colonna-1-di-'] {
+  background: #fff;
 }
 #content .Bottoni:before,
 #content .Bottoni:after,
