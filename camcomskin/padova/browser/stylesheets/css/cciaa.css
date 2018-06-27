@@ -11163,6 +11163,26 @@ dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus,
 #column-collective-portletpage-toprow-portlet-in-questa-sezione a {
   border-bottom: 0 !important;
 }
+.boxApprofondimenti .boxHeader {
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+.boxApprofondimenti ul.listLink {
+  padding: 0.5rem 0;
+}
+.boxApprofondimenti ul.listLink li {
+  display: block;
+  padding: 0.25rem 0;
+}
+.boxApprofondimenti ul.listLink li::before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 0.5rem;
+}
 #viewlet-below-content {
   margin: 5rem 0 1.5rem;
   border-top: 1px solid #c1c1c1;

@@ -98,9 +98,9 @@ dl.portletNavigationTree {
                         background-color: $brand-primary;
                         color: #fff !important;
                         font-weight: $semibold;
-                            &:after {
-                                color: #fff;
-                            }
+                        &:after {
+                            color: #fff;
+                        }
                     }
                 }
             }
@@ -148,7 +148,6 @@ dl.portletNavigationTree {
         }
     }
 }
-
 
 // STATICA AVANZATA
 dl.portlet.rerPortletAdvancedStatic,
@@ -230,7 +229,8 @@ dl.portlet.rerPortletAdvancedStatic,
 
             a {
                 span {
-                    background: transparent url($img-path + 'arrow_left.svg') no-repeat 0 center;
+                    background: transparent url($img-path+'arrow_left.svg')
+                        no-repeat 0 center;
                     padding-left: 4rem;
 
                     &:hover,
@@ -245,7 +245,6 @@ dl.portlet.rerPortletAdvancedStatic,
 
 // COLLEZIONE
 .portletCollection {
-
     ul.portletContent {
         padding: 0;
         list-style-type: none;
@@ -336,24 +335,25 @@ dl.portlet.rerPortletAdvancedStatic,
                         padding-right: 40px;
 
                         &:after {
-                            background: url($img-path + 'arrow_right.png') no-repeat center center;
+                            background: url($img-path+'arrow_right.png')
+                                no-repeat center center;
                             position: absolute;
                             top: 0;
                             right: 0;
                             height: 32px;
                             width: 32px;
-                            content: " ";
+                            content: ' ';
                             display: block;
                         }
                     }
                     &.linkFile {
                         a:after {
-                            background-image: url($img-path + 'file.png');
+                            background-image: url($img-path+'file.png');
                         }
                     }
                     &.linkFilePdf {
                         a:after {
-                            background-image: url($img-path + 'pdf.png');
+                            background-image: url($img-path+'pdf.png');
                         }
                     }
                 }
@@ -383,11 +383,32 @@ dl.portlet.rerPortletAdvancedStatic,
 #column-collective-portletpage-toprow-portlet-in-questa-sezione {
     ul {
         li {
-            border-bottom: 1px solid #CCC;
+            border-bottom: 1px solid #ccc;
         }
     }
 
     a {
         border-bottom: 0 !important;
+    }
+}
+
+.boxApprofondimenti {
+    .boxHeader {
+        text-transform: uppercase;
+        margin: 0.5rem 0;
+    }
+
+    ul.listLink {
+        padding: 0.5rem 0;
+
+        li {
+            display: block;
+            padding: 0.25rem 0;
+
+            &::before {
+                @include make-fa('\f105');
+                margin-right: 0.5rem;
+            }
+        }
     }
 }
