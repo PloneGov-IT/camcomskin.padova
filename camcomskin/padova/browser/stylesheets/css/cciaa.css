@@ -9459,20 +9459,24 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 #content .collectionTile.carousel.sfondo-scuro .slick-arrow:before {
   color: #fff;
 }
-.collectionTile.None ul.tileContent,
-#content .collectionTile.None ul.tileContent {
+.collectionTile > .tileBody,
+#content .collectionTile > .tileBody {
+  margin-bottom: 2rem;
+}
+.collectionTile > .tileBody ul.tileContent,
+#content .collectionTile > .tileBody ul.tileContent {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 0;
 }
-.collectionTile.None ul.tileContent li.collectionItem,
-#content .collectionTile.None ul.tileContent li.collectionItem {
+.collectionTile > .tileBody ul.tileContent li.collectionItem,
+#content .collectionTile > .tileBody ul.tileContent li.collectionItem {
   padding: 1.5rem;
   border-bottom: 1px dashed #ccc;
   position: relative;
 }
-.collectionTile.None ul.tileContent li.collectionItem a,
-#content .collectionTile.None ul.tileContent li.collectionItem a {
+.collectionTile > .tileBody ul.tileContent li.collectionItem a,
+#content .collectionTile > .tileBody ul.tileContent li.collectionItem a {
   color: #ac1b01 !important;
   border-bottom: 0;
   display: -webkit-inline-box;
@@ -9484,14 +9488,17 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   -webkit-flex-flow: column-reverse;
   -ms-flex-flow: column-reverse;
   flex-flow: column-reverse;
+  padding-left: 0 !important;
+  background: none;
 }
-.collectionTile.None ul.tileContent li.collectionItem a img,
-#content .collectionTile.None ul.tileContent li.collectionItem a img {
+.collectionTile > .tileBody ul.tileContent li.collectionItem a img,
+#content .collectionTile > .tileBody ul.tileContent li.collectionItem a img {
   display: none;
 }
-.collectionTile.None ul.tileContent li.collectionItem a .tileItemDetails,
+.collectionTile > .tileBody ul.tileContent li.collectionItem a .tileItemDetails,
 #content
-  .collectionTile.None
+  .collectionTile
+  > .tileBody
   ul.tileContent
   li.collectionItem
   a
@@ -9499,11 +9506,20 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   font-size: 0.8em;
   color: #666;
 }
-.collectionTile.None ul.tileContent li.collectionItem a:hover,
-.collectionTile.None ul.tileContent li.collectionItem a:focus,
-#content .collectionTile.None ul.tileContent li.collectionItem a:hover,
-#content .collectionTile.None ul.tileContent li.collectionItem a:focus {
+.collectionTile > .tileBody ul.tileContent li.collectionItem a:hover,
+.collectionTile > .tileBody ul.tileContent li.collectionItem a:focus,
+#content .collectionTile > .tileBody ul.tileContent li.collectionItem a:hover,
+#content .collectionTile > .tileBody ul.tileContent li.collectionItem a:focus {
   color: #333 !important;
+}
+.collectionTile > .tileBody .showMore,
+#content .collectionTile > .tileBody .showMore {
+  margin: 1rem 0;
+  padding: 0 1.5rem;
+}
+.collectionTile > .tileTitle,
+#content .collectionTile > .tileTitle {
+  padding: 1.5rem 1.5rem 0;
 }
 .tile-collection.video-collection .collectionItemImage {
   position: relative;
