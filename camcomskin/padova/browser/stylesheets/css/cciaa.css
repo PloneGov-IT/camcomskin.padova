@@ -9319,20 +9319,25 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   padding: 0;
   width: 100%;
 }
-.collectionTile.senza-titolo .tileTitle {
+.collectionTile.senza-titolo .tileTitle,
+#content .collectionTile.senza-titolo .tileTitle {
   display: none;
 }
-.collectionTile.senza-titolo .showMore {
+.collectionTile.senza-titolo .showMore,
+#content .collectionTile.senza-titolo .showMore {
   display: none;
 }
-.collectionTile.carousel div[class^='carousel-wrapper'] {
+.collectionTile.carousel div[class^='carousel-wrapper'],
+#content .collectionTile.carousel div[class^='carousel-wrapper'] {
   position: relative;
 }
-.collectionTile.carousel .slick-list {
+.collectionTile.carousel .slick-list,
+#content .collectionTile.carousel .slick-list {
   width: 93%;
   margin: auto;
 }
-.collectionTile.carousel .slick-track {
+.collectionTile.carousel .slick-track,
+#content .collectionTile.carousel .slick-track {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9343,10 +9348,12 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
 }
-.collectionTile.carousel .slick-slide {
+.collectionTile.carousel .slick-slide,
+#content .collectionTile.carousel .slick-slide {
   height: auto;
 }
-.collectionTile.carousel ul.slick-dots {
+.collectionTile.carousel ul.slick-dots,
+#content .collectionTile.carousel ul.slick-dots {
   width: 100%;
   padding: 15px 0 0;
   margin: 0;
@@ -9365,10 +9372,12 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.collectionTile.carousel ul.slick-dots li {
+.collectionTile.carousel ul.slick-dots li,
+#content .collectionTile.carousel ul.slick-dots li {
   padding: 0 5px;
 }
-.collectionTile.carousel ul.slick-dots li button {
+.collectionTile.carousel ul.slick-dots li button,
+#content .collectionTile.carousel ul.slick-dots li button {
   padding: 0;
   overflow: hidden;
   width: 12px;
@@ -9377,10 +9386,12 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   border-radius: 4px;
   background: none;
 }
-.collectionTile.carousel ul.slick-dots li.slick-active button {
+.collectionTile.carousel ul.slick-dots li.slick-active button,
+#content .collectionTile.carousel ul.slick-dots li.slick-active button {
   background-color: rgba(0, 0, 0, 0.67);
 }
-.collectionTile.carousel .slick-arrow {
+.collectionTile.carousel .slick-arrow,
+#content .collectionTile.carousel .slick-arrow {
   position: absolute;
   top: -webkit-calc(50% - 15px);
   top: calc(50% - 15px);
@@ -9392,7 +9403,8 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   background: none;
   border: 0;
 }
-.collectionTile.carousel .slick-arrow:before {
+.collectionTile.carousel .slick-arrow:before,
+#content .collectionTile.carousel .slick-arrow:before {
   display: inline-block;
   font-family: ita;
   content: '⏴';
@@ -9405,15 +9417,18 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   font-size: 1.2em;
   font-weight: 100;
 }
-.collectionTile.carousel .slick-arrow.slick-prev {
+.collectionTile.carousel .slick-arrow.slick-prev,
+#content .collectionTile.carousel .slick-arrow.slick-prev {
   left: 0;
   right: auto;
 }
-.collectionTile.carousel .slick-arrow.slick-next {
+.collectionTile.carousel .slick-arrow.slick-next,
+#content .collectionTile.carousel .slick-arrow.slick-next {
   right: 0;
   left: auto;
 }
-.collectionTile.carousel .slick-arrow.slick-next:before {
+.collectionTile.carousel .slick-arrow.slick-next:before,
+#content .collectionTile.carousel .slick-arrow.slick-next:before {
   left: 7px;
   display: inline-block;
   font-family: ita;
@@ -9422,19 +9437,73 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.collectionTile.carousel .slick-arrow:hover {
+.collectionTile.carousel .slick-arrow:hover,
+#content .collectionTile.carousel .slick-arrow:hover {
   opacity: 0.7;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.collectionTile.carousel.sfondo-scuro ul.slick-dots button {
+.collectionTile.carousel.sfondo-scuro ul.slick-dots button,
+#content .collectionTile.carousel.sfondo-scuro ul.slick-dots button {
   border-color: #fff;
 }
-.collectionTile.carousel.sfondo-scuro ul.slick-dots .slick-active button {
+.collectionTile.carousel.sfondo-scuro ul.slick-dots .slick-active button,
+#content
+  .collectionTile.carousel.sfondo-scuro
+  ul.slick-dots
+  .slick-active
+  button {
   background-color: #fff;
 }
-.collectionTile.carousel.sfondo-scuro .slick-arrow:before {
+.collectionTile.carousel.sfondo-scuro .slick-arrow:before,
+#content .collectionTile.carousel.sfondo-scuro .slick-arrow:before {
   color: #fff;
+}
+.collectionTile.None ul.tileContent,
+#content .collectionTile.None ul.tileContent {
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+.collectionTile.None ul.tileContent li.collectionItem,
+#content .collectionTile.None ul.tileContent li.collectionItem {
+  padding: 1.5rem;
+  border-bottom: 1px dashed #ccc;
+  position: relative;
+}
+.collectionTile.None ul.tileContent li.collectionItem a,
+#content .collectionTile.None ul.tileContent li.collectionItem a {
+  color: #ac1b01 !important;
+  border-bottom: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-flow: column-reverse;
+  -ms-flex-flow: column-reverse;
+  flex-flow: column-reverse;
+}
+.collectionTile.None ul.tileContent li.collectionItem a img,
+#content .collectionTile.None ul.tileContent li.collectionItem a img {
+  display: none;
+}
+.collectionTile.None ul.tileContent li.collectionItem a .tileItemDetails,
+#content
+  .collectionTile.None
+  ul.tileContent
+  li.collectionItem
+  a
+  .tileItemDetails {
+  font-size: 0.8em;
+  color: #666;
+}
+.collectionTile.None ul.tileContent li.collectionItem a:hover,
+.collectionTile.None ul.tileContent li.collectionItem a:focus,
+#content .collectionTile.None ul.tileContent li.collectionItem a:hover,
+#content .collectionTile.None ul.tileContent li.collectionItem a:focus {
+  color: #333 !important;
 }
 .tile-collection.video-collection .collectionItemImage {
   position: relative;
