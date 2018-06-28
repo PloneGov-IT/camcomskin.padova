@@ -9459,6 +9459,29 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 #content .collectionTile.carousel.sfondo-scuro .slick-arrow:before {
   color: #fff;
 }
+.collectionTile .PagesTileCollection .tileContent,
+#content .collectionTile .PagesTileCollection .tileContent {
+  -webkit-box-pack: normal;
+  -webkit-justify-content: normal;
+  -ms-flex-pack: normal;
+  justify-content: normal;
+}
+.collectionTile
+  .PagesTileCollection
+  .tileContent
+  .collectionItem
+  .TextWrapper
+  ul,
+#content
+  .collectionTile
+  .PagesTileCollection
+  .tileContent
+  .collectionItem
+  .TextWrapper
+  ul {
+  margin-left: 0;
+  list-style-type: none;
+}
 .collectionTile > .tileBody,
 #content .collectionTile > .tileBody {
   margin-bottom: 2rem;
@@ -9520,6 +9543,22 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 .collectionTile > .tileTitle,
 #content .collectionTile > .tileTitle {
   padding: 1.5rem 1.5rem 0;
+}
+#portal-columns.with-column-two
+  .collectionTile
+  .PagesTileCollection
+  .tileContent {
+  -webkit-box-pack: normal;
+  -webkit-justify-content: normal;
+  -ms-flex-pack: normal;
+  justify-content: normal;
+}
+#portal-columns.with-column-two
+  .collectionTile
+  .PagesTileCollection
+  .tileContent
+  .collectionItem {
+  width: 50%;
 }
 .tile-collection.video-collection .collectionItemImage {
   position: relative;

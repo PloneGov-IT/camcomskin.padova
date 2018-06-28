@@ -121,6 +121,21 @@
         }
     }
 
+    .PagesTileCollection {
+        .tileContent {
+            justify-content: normal;
+
+            .collectionItem {
+                .TextWrapper {
+                    ul {
+                        margin-left: 0;
+                        list-style-type: none;
+                    }
+                }
+            }
+        }
+    }
+
     > .tileBody {
         margin-bottom: 2rem;
 
@@ -167,6 +182,20 @@
 
     > .tileTitle {
         padding: 1.5rem 1.5rem 0;
+    }
+}
+
+#portal-columns.with-column-two {
+    .collectionTile {
+        .PagesTileCollection {
+            .tileContent {
+                justify-content: normal;
+
+                .collectionItem {
+                    width: 50%;
+                }
+            }
+        }
     }
 }
 
