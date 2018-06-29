@@ -313,6 +313,20 @@
         }
     }
 
+    &.sights-collection {
+        .tileBody {
+            h3 {
+                color: $brand-primary;
+                margin: 0;
+            }
+        }
+    }
+
+    &.empty {
+        opacity: 0.35;
+        background: #e3e3e3;
+    }
+
     &.events-collection {
         .collectionItemWrapper {
             .collectionItemText {
@@ -889,6 +903,7 @@
         }
     }
 }
+
 .sfondo-chiaro {
     .news-highlight {
         background: $gray-bg;

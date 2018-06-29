@@ -9672,6 +9672,14 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.tile-collection.sights-collection .tileBody h3 {
+  color: #ac1b01;
+  margin: 0;
+}
+.tile-collection.empty {
+  opacity: 0.35;
+  background: #e3e3e3;
+}
 .tile-collection.events-collection .collectionItemWrapper .collectionItemText {
   -webkit-box-flex: 0;
   -webkit-flex: 0;
