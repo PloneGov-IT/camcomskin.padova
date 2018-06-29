@@ -175,8 +175,26 @@
         }
 
         .showMore {
-            margin: 1rem 0;
+            margin: 1.5rem 0;
             padding: 0 1.5rem;
+            text-align: right;
+
+            a {
+                border-bottom: 1px solid;
+                font-size: 2rem;
+                font-weight: 600;
+                color: $brand-primary;
+
+                &:hover,
+                &:focus {
+                    border-bottom-color: inherit;
+                    color: darken($brand-primary, 10%) !important;
+                }
+
+                &::after {
+                    content: '\203A';
+                }
+            }
         }
     }
 

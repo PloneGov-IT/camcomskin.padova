@@ -9537,8 +9537,27 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 }
 .collectionTile > .tileBody .showMore,
 #content .collectionTile > .tileBody .showMore {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   padding: 0 1.5rem;
+  text-align: right;
+}
+.collectionTile > .tileBody .showMore a,
+#content .collectionTile > .tileBody .showMore a {
+  border-bottom: 1px solid;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ac1b01;
+}
+.collectionTile > .tileBody .showMore a:hover,
+.collectionTile > .tileBody .showMore a:focus,
+#content .collectionTile > .tileBody .showMore a:hover,
+#content .collectionTile > .tileBody .showMore a:focus {
+  border-bottom-color: inherit;
+  color: #791301 !important;
+}
+.collectionTile > .tileBody .showMore a::after,
+#content .collectionTile > .tileBody .showMore a::after {
+  content: '\203A';
 }
 .collectionTile > .tileTitle,
 #content .collectionTile > .tileTitle {
