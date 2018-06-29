@@ -9847,8 +9847,8 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   content: '\203A';
 }
 .tile-collection .tileTitle {
-  padding: 0 10px;
   font-size: 1.6em;
+  padding: 0 10px;
 }
 .tile-collection .tileTitle .tile-collapse-button {
   border: 0;
@@ -9962,6 +9962,9 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 .tile-collection .collectionItemWrapper .collectionItemDescription {
   font-size: 1.7rem;
   line-height: 1.75em;
+}
+.tile-collection .noResults {
+  padding: 1rem 10px;
 }
 @media (max-width: 767px) {
   .tile-collection ul.tileContent {

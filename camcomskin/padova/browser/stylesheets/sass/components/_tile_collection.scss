@@ -464,8 +464,8 @@
     }
 
     .tileTitle {
-        padding: 0 10px;
         font-size: 1.6em;
+        padding: 0 10px;
 
         .tile-collapse-button {
             border: 0;
@@ -560,6 +560,10 @@
             font-size: 1.7rem;
             line-height: 1.75em;
         }
+    }
+
+    .noResults {
+        padding: 1rem 10px;
     }
 
     @media (max-width: $screen-xs-max) {
