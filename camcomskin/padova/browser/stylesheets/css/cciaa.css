@@ -13363,4 +13363,50 @@ body.template-cciaa_collection_view
   color: #fff !important;
   border-color: #ac1b01 !important;
 }
+.collapse-wrapper,
+#content .collapse-wrapper {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #eee;
+  border-radius: 4px;
+}
+.collapse-wrapper button,
+#content .collapse-wrapper button {
+  background: none;
+  border: 1px solid #ac1b01;
+}
+.collapse-wrapper button:hover,
+.collapse-wrapper button:focus,
+#content .collapse-wrapper button:hover,
+#content .collapse-wrapper button:focus {
+  border: 1px solid #ac1b01;
+  outline: none;
+}
+.collapse-wrapper button:hover,
+#content .collapse-wrapper button:hover {
+  background: #e3e3e3;
+}
+.collapse-wrapper button i,
+#content .collapse-wrapper button i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.collapse-wrapper button span,
+#content .collapse-wrapper button span {
+  color: #000;
+  margin-left: 0.5rem;
+}
+.collapse-wrapper button[aria-expanded='true'] i,
+#content .collapse-wrapper button[aria-expanded='true'] i {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.collapse-wrapper .collapse,
+#content .collapse-wrapper .collapse {
+  padding: 1rem 0;
+}
+.collapse-wrapper .collapse p,
+#content .collapse-wrapper .collapse p {
+  margin-bottom: 0.5rem;
+}
 /*# sourceMappingURL=cciaa.css.map */

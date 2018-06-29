@@ -27,6 +27,40 @@
     });
   }
 
+  function createCollapse() {
+    $('.collapse-wrapper').each(function() {
+      var collapse = '';
+      var header = $(this)
+        .find('.collapse-header')
+        .html();
+      var collapseId = 'collapse-' + header.trim().replace(/\ /g, '-');
+      var content = $(this)
+        .find('.collapse-content')
+        .html();
+
+      collapse +=
+        '<button class="btn btn-default" type="button" data-toggle="collapse" data-target="#' +
+        collapseId +
+        '" aria-expanded="false" aria-controls="' +
+        collapseId +
+        '">' +
+        '  <i class="fa fa-plus"></i>' +
+        '  <span>' +
+        header +
+        '</span>' +
+        '</button>' +
+        '<div class="collapse" id="' +
+        collapseId +
+        '">' +
+        '  <div class="collapse-content">' +
+        content +
+        '</div>' +
+        '</div>';
+
+      $(this).html(collapse);
+    });
+  }
+
   $(document).ready(function() {
     //expand/collapse tile
     $('div.tile-advanced-static.collapsible').each(function() {
@@ -169,5 +203,7 @@
     $('#portal-footer-wrapper').prepend($('.portlet.valuta-sito'));
 
     onTilesLoaded(pairTiles);
+
+    createCollapse();
   });
 })(jQuery);
