@@ -23,13 +23,15 @@
                 <li tal:define="oddrow repeat/obj/odd;
                                 notizia obj/getObject;
                                 isFirst repeat/obj/first/results;
+                                imageTag python:helper_view.get_image_tag(notizia, 'newshome', 'down', 'image-thumb');
+                                hasImage python: imageTag and len(imageTag) > 0 or False;
                                 useView python:obj.portal_type in viewActions;
                                 itemUrl python:useView and obj.getURL() + '/view' or obj.getURL();
                                 item_wf_state obj/review_state;
                                 item_wf_state_class python:'state-' + plone_view.normalizeString(item_wf_state);
                                 item_type obj/portal_type;
                                 item_type_class python:'contenttype-' + plone_view.normalizeString(item_type);"
-                    tal:attributes="class python: 'collectionItem' + (oddrow and ' even' or ' odd') + (isFirst and ' firstItem' or '')">
+                    tal:attributes="class python: 'collectionItem' + (oddrow and ' even' or ' odd') + (isFirst and hasImage and ' firstItem' or '')">
                     <div class="collectionItemWrapper">
                         <a href="#"
                            tal:attributes="href itemUrl;

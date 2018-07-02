@@ -28,13 +28,13 @@
     }
 
     .valuta-sito-content:before {
-        content: "";
+        content: '';
         padding-right: 4em;
         display: inline-block;
         width: auto;
         height: 1.5em;
         vertical-align: top;
-        background-image: url($img-path + 'rectangle-tool.svg');
+        background-image: url($img-path+'rectangle-tool.svg');
         background-size: 4rem;
         background-repeat: no-repeat;
         background-position: center center;
@@ -51,12 +51,12 @@
 
     &.sfondo-scuro,
     &.sfondo-chiaro {
-        margin:0;
+        margin: 0;
         padding: 20px 0;
     }
 
     h3.tileTitle {
-        margin-top:0;
+        margin-top: 0;
     }
 
     .tileFooter {
@@ -72,6 +72,7 @@
     &.portletStaticNavigation {
         .tile-text {
             padding: 20px;
+            display: flex;
 
             h3 {
                 border-bottom: 4px solid #666;
@@ -86,7 +87,10 @@
 
                 li {
                     padding: 1.5rem 0;
-                    border-top: 1px solid $gray-desc-border;
+
+                    &:nth-of-type(n + 2) {
+                        border-top: 1px solid $gray-desc-border;
+                    }
 
                     a {
                         border-bottom: 0 none !important;
@@ -97,6 +101,16 @@
                             border-bottom: 1px solid $link-hover-color !important;
                         }
                     }
+                }
+            }
+
+            [class*='colonna-1-di-'] {
+                &:not(:first-of-type) {
+                    margin-left: 0.5rem;
+                }
+
+                &:not(:last-of-type) {
+                    margin-right: 0.5rem;
                 }
             }
         }
@@ -110,7 +124,7 @@
     .tile-container:before {
         border-top: 8px solid $brand-primary;
         clear: both;
-        content: " ";
+        content: ' ';
         display: block;
         width: 200px;
         max-width: 100%;
@@ -166,11 +180,15 @@
     }
 }
 
+.sfondo-scuro,
 .sfondo-chiaro {
     &.portletStaticNavigation {
         .tile-text {
-            background: #FFF;
             @include clearfix;
+
+            [class*='colonna-1-di-'] {
+                background: #fff;
+            }
         }
     }
 }
