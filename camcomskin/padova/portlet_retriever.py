@@ -5,7 +5,6 @@ from plone.portlets.retriever import PortletRetriever as BasePortletRetriever
 class PortletRetriever(BasePortletRetriever):
 
     def getPortlets(self):
-        return super(PortletRetriever, self).getPortlets()
         assignments = super(PortletRetriever, self).getPortlets()
         context = self.context.aq_inner
         path = '/'.join(context.getPhysicalPath())
