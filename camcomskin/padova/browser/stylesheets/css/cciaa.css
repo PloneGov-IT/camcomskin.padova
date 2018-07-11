@@ -9482,24 +9482,57 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   margin-left: 0;
   list-style-type: none;
 }
-.collectionTile > .tileBody,
-#content .collectionTile > .tileBody {
+.collectionTile [class='tile-collection'] .tileBody,
+#content .collectionTile [class='tile-collection'] .tileBody {
   margin-bottom: 2rem;
 }
-.collectionTile > .tileBody ul.tileContent,
-#content .collectionTile > .tileBody ul.tileContent {
+.collectionTile [class='tile-collection'] .tileBody ul.tileContent,
+#content .collectionTile [class='tile-collection'] .tileBody ul.tileContent {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 0;
 }
-.collectionTile > .tileBody ul.tileContent li.collectionItem,
-#content .collectionTile > .tileBody ul.tileContent li.collectionItem {
+.collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem,
+#content
+  .collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem {
   padding: 1.5rem;
-  border-bottom: 1px dashed #ccc;
   position: relative;
+  width: 100%;
 }
-.collectionTile > .tileBody ul.tileContent li.collectionItem a,
-#content .collectionTile > .tileBody ul.tileContent li.collectionItem a {
+.collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem:not(:last-of-type),
+#content
+  .collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem:not(:last-of-type) {
+  border-bottom: 1px dashed #ccc;
+}
+.collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem
+  a,
+#content
+  .collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem
+  a {
   color: #ac1b01 !important;
   border-bottom: 0;
   display: -webkit-inline-box;
@@ -9514,14 +9547,34 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   padding-left: 0 !important;
   background: none;
 }
-.collectionTile > .tileBody ul.tileContent li.collectionItem a img,
-#content .collectionTile > .tileBody ul.tileContent li.collectionItem a img {
-  display: none;
-}
-.collectionTile > .tileBody ul.tileContent li.collectionItem a .tileItemDetails,
+.collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem
+  a
+  img,
 #content
   .collectionTile
-  > .tileBody
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem
+  a
+  img {
+  display: none;
+}
+.collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem
+  a
+  .tileItemDetails,
+#content
+  .collectionTile
+  [class='tile-collection']
+  .tileBody
   ul.tileContent
   li.collectionItem
   a
@@ -9529,34 +9582,61 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   font-size: 0.8em;
   color: #666;
 }
-.collectionTile > .tileBody ul.tileContent li.collectionItem a:hover,
-.collectionTile > .tileBody ul.tileContent li.collectionItem a:focus,
-#content .collectionTile > .tileBody ul.tileContent li.collectionItem a:hover,
-#content .collectionTile > .tileBody ul.tileContent li.collectionItem a:focus {
+.collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem
+  a:hover,
+.collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem
+  a:focus,
+#content
+  .collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem
+  a:hover,
+#content
+  .collectionTile
+  [class='tile-collection']
+  .tileBody
+  ul.tileContent
+  li.collectionItem
+  a:focus {
   color: #333 !important;
 }
-.collectionTile > .tileBody .showMore,
-#content .collectionTile > .tileBody .showMore {
+.collectionTile [class='tile-collection'] .tileBody .showMore,
+#content .collectionTile [class='tile-collection'] .tileBody .showMore {
   margin: 1.5rem 0;
   padding: 0 1.5rem;
   text-align: right;
 }
-.collectionTile > .tileBody .showMore a,
-#content .collectionTile > .tileBody .showMore a {
+.collectionTile [class='tile-collection'] .tileBody .showMore a,
+#content .collectionTile [class='tile-collection'] .tileBody .showMore a {
   border-bottom: 1px solid;
   font-size: 2rem;
   font-weight: 600;
   color: #ac1b01;
 }
-.collectionTile > .tileBody .showMore a:hover,
-.collectionTile > .tileBody .showMore a:focus,
-#content .collectionTile > .tileBody .showMore a:hover,
-#content .collectionTile > .tileBody .showMore a:focus {
+.collectionTile [class='tile-collection'] .tileBody .showMore a:hover,
+.collectionTile [class='tile-collection'] .tileBody .showMore a:focus,
+#content .collectionTile [class='tile-collection'] .tileBody .showMore a:hover,
+#content .collectionTile [class='tile-collection'] .tileBody .showMore a:focus {
   border-bottom-color: inherit;
   color: #791301 !important;
 }
-.collectionTile > .tileBody .showMore a::after,
-#content .collectionTile > .tileBody .showMore a::after {
+.collectionTile [class='tile-collection'] .tileBody .showMore a::after,
+#content
+  .collectionTile
+  [class='tile-collection']
+  .tileBody
+  .showMore
+  a::after {
   content: '\203A';
 }
 .collectionTile > .tileTitle,
