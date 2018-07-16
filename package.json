@@ -34,7 +34,7 @@
       "prettier --write 'camcomskin/padova/browser/stylesheets/sass/**/*.scss'",
     "precommit": "lint-staged",
     "prewatch": "grunt compile",
-    "watch": "grunt",
+    "develop": "grunt compile && grunt",
     "build": "grunt compile"
   },
   "stylelint": {
