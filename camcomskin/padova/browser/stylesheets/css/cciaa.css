@@ -11291,17 +11291,23 @@ dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus,
 .boxScheda .boxContent ul.listLink li.linkFilePdf a:after {
   background-image: url('++resource++camcomskin.padova.images/pdf.png');
 }
-.boxScheda:not(.boxNorma):not(.boxModuli) .boxContent > div {
+.boxScheda:not(.boxNorma):not(.boxModuli):not(.boxBandoDetail)
+  .boxContent
+  > div {
   padding: 0 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-.boxScheda:not(.boxNorma):not(.boxModuli) .boxContent > div:last-of-type {
+.boxScheda:not(.boxNorma):not(.boxModuli):not(.boxBandoDetail)
+  .boxContent
+  > div:last-of-type {
   padding-bottom: 20px;
 }
-.boxScheda:not(.boxNorma):not(.boxModuli) .boxContent > h5 {
+.boxScheda:not(.boxNorma):not(.boxModuli):not(.boxBandoDetail)
+  .boxContent
+  > h5 {
   padding: 20px 20px 0;
 }
 #column-collective-portletpage-toprow-portlet-in-this-section ul li,
@@ -11331,6 +11337,21 @@ dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-right: 0.5rem;
+}
+.boxBandoDetail .boxContent {
+  padding: 2rem;
+}
+.boxBandoDetail .boxContent .tipologiaBando {
+  padding-bottom: 1.5rem;
+}
+.boxBandoDetail .boxContent > div {
+  padding-bottom: 1rem;
+}
+.boxBandoDetail .boxContent > div li {
+  padding: 0;
+}
+.boxBandoDetail .boxContent > div p {
+  margin-bottom: 0;
 }
 #viewlet-below-content {
   margin: 5rem 0 1.5rem;

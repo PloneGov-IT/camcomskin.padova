@@ -361,7 +361,7 @@ dl.portlet.rerPortletAdvancedStatic,
         }
     }
 
-    &:not(.boxNorma):not(.boxModuli) {
+    &:not(.boxNorma):not(.boxModuli):not(.boxBandoDetail) {
         .boxContent {
             > div {
                 padding: 0 20px;
@@ -408,6 +408,29 @@ dl.portlet.rerPortletAdvancedStatic,
             &::before {
                 @include make-fa('\f105');
                 margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+// PORTLET BANDI DETAILS
+.boxBandoDetail {
+    .boxContent {
+        padding: 2rem;
+
+        .tipologiaBando {
+            padding-bottom: 1.5rem;
+        }
+
+        > div {
+            padding-bottom: 1rem;
+
+            li {
+                padding: 0;
+            }
+
+            p {
+                margin-bottom: 0;
             }
         }
     }
