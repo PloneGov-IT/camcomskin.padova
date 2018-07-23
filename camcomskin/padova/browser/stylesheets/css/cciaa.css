@@ -13505,6 +13505,7 @@ body.template-cciaa_collection_view
 #content .collapse-wrapper button {
   background: none;
   border: 1px solid #ac1b01;
+  text-align: left;
 }
 .collapse-wrapper button:hover,
 .collapse-wrapper button:focus,
@@ -13526,6 +13527,7 @@ body.template-cciaa_collection_view
 #content .collapse-wrapper button span {
   color: #000;
   margin-left: 0.5rem;
+  white-space: normal;
 }
 .collapse-wrapper button[aria-expanded='true'] i,
 #content .collapse-wrapper button[aria-expanded='true'] i {

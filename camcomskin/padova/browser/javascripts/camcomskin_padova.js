@@ -33,29 +33,26 @@
       var header = $(this)
         .find('.collapse-header')
         .html();
-      var collapseId = 'collapse-' + header.trim().replace(/\ /g, '-');
+      var collapseId =
+        'collapse-' +
+        header
+          .trim()
+          .replace(/[\W_]+/g, '')
+          .toLowerCase();
       var content = $(this)
         .find('.collapse-content')
         .html();
 
-      collapse +=
-        '<button class="btn btn-default" type="button" data-toggle="collapse" data-target="#' +
-        collapseId +
-        '" aria-expanded="false" aria-controls="' +
-        collapseId +
-        '">' +
-        '  <i class="fa fa-plus"></i>' +
-        '  <span>' +
-        header +
-        '</span>' +
-        '</button>' +
-        '<div class="collapse" id="' +
-        collapseId +
-        '">' +
-        '  <div class="collapse-content">' +
-        content +
-        '</div>' +
-        '</div>';
+      // prettier-ignore
+      collapse = '<button class="btn btn-default" type="button" data-toggle="collapse" data-target="#' + collapseId + '" aria-expanded="false" aria-controls="' + collapseId + '">' +
+                 '  <i class="fa fa-plus"></i>' +
+                 '  <span>' + header + '</span>' +
+                 '</button>' +
+                 '<div class="collapse" id="' + collapseId + '">' +
+                 '  <div class="collapse-content">' +
+                      content +
+                   '</div>' +
+                 '</div>';
 
       $(this).html(collapse);
     });

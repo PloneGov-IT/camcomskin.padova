@@ -8,6 +8,7 @@
     button {
         background: none;
         border: 1px solid $brand-primary;
+        text-align: left;
 
         &:hover,
         &:focus {
@@ -26,6 +27,7 @@
         span {
             color: #000;
             margin-left: 0.5rem;
+            white-space: normal;
         }
 
         &[aria-expanded='true'] {
