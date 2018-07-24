@@ -160,11 +160,11 @@
                 font-size: 0.95em;
 
                 &:not(.clickandgo) {
-                    span + span:after {
+                    &::after {
                         @include make-fa('\f078');
                         position: absolute;
-                        right: -1.8em;
-                        bottom: 0.1rem;
+                        right: 1.5em;
+                        bottom: 1.3rem;
                         font-size: 0.8em;
                     }
                 }
@@ -191,7 +191,7 @@
                 a.menuTabLink {
                     color: darken($brand-primary, 10%);
 
-                    span + span:after {
+                    &::after {
                         @include make-fa('\f077');
                     }
                 }
