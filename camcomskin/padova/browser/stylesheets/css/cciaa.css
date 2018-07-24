@@ -8038,9 +8038,7 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 #portal-mainnavigation
   ul#portal-globalnav
   > li
-  a.menuTabLink:not(.clickandgo)
-  span
-  + span:after {
+  a.menuTabLink:not(.clickandgo)::after {
   display: inline-block;
   font-family: FontAwesome;
   content: '';
@@ -8048,8 +8046,8 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
-  right: -1.8em;
-  bottom: 0.1rem;
+  right: 1.5em;
+  bottom: 1.3rem;
   font-size: 0.8em;
 }
 #portal-mainnavigation ul#portal-globalnav > li a.menuTabLink span + span {
@@ -8068,12 +8066,7 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 #portal-mainnavigation ul#portal-globalnav > li.tabOpen a.menuTabLink {
   color: #791301;
 }
-#portal-mainnavigation
-  ul#portal-globalnav
-  > li.tabOpen
-  a.menuTabLink
-  span
-  + span:after {
+#portal-mainnavigation ul#portal-globalnav > li.tabOpen a.menuTabLink::after {
   display: inline-block;
   font-family: FontAwesome;
   content: '';
@@ -10849,30 +10842,36 @@ dl.portlet dt a:visited,
   border-bottom-color: #1c2024;
 }
 dl.portletERPortletNavigation dd.portletItem,
-dl.portletNavigationTree dd.portletItem {
+dl.portletNavigationTree dd.portletItem,
+.navigationTile {
   padding: 0;
 }
 dl.portletERPortletNavigation dd.portletItem ul.navTree,
-dl.portletNavigationTree dd.portletItem ul.navTree {
+dl.portletNavigationTree dd.portletItem ul.navTree,
+.navigationTile ul.navTree {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 dl.portletERPortletNavigation dd.portletItem ul.navTree li,
-dl.portletNavigationTree dd.portletItem ul.navTree li {
+dl.portletNavigationTree dd.portletItem ul.navTree li,
+.navigationTile ul.navTree li {
   padding: 0;
   margin: 0;
   border: 0 none;
 }
 dl.portletERPortletNavigation dd.portletItem ul.navTree li a,
-dl.portletNavigationTree dd.portletItem ul.navTree li a {
+dl.portletNavigationTree dd.portletItem ul.navTree li a,
+.navigationTile ul.navTree li a {
   padding: 1.5rem 2.5rem 1.5rem 2rem;
-  border-bottom: 1px solid #c1c1c1;
+  border-bottom: 1px solid #c1c1c1 !important;
   display: block;
   color: #ac1b01 !important;
+  background-image: none !important;
 }
 dl.portletERPortletNavigation dd.portletItem ul.navTree li a.navTreeFolderish,
-dl.portletNavigationTree dd.portletItem ul.navTree li a.navTreeFolderish {
+dl.portletNavigationTree dd.portletItem ul.navTree li a.navTreeFolderish,
+.navigationTile ul.navTree li a.navTreeFolderish {
   position: relative;
 }
 dl.portletERPortletNavigation
@@ -10880,7 +10879,8 @@ dl.portletERPortletNavigation
   ul.navTree
   li
   a.navTreeFolderish:after,
-dl.portletNavigationTree dd.portletItem ul.navTree li a.navTreeFolderish:after {
+dl.portletNavigationTree dd.portletItem ul.navTree li a.navTreeFolderish:after,
+.navigationTile ul.navTree li a.navTreeFolderish:after {
   display: inline-block;
   font-family: FontAwesome;
   content: '';
@@ -10913,7 +10913,9 @@ dl.portletNavigationTree
   dd.portletItem
   ul.navTree
   li
-  a.navTreeFolderish.navTreeItemInPath:after {
+  a.navTreeFolderish.navTreeItemInPath:after,
+.navigationTile ul.navTree li a.navTreeFolderish.navTreeCurrentNode:after,
+.navigationTile ul.navTree li a.navTreeFolderish.navTreeItemInPath:after {
   display: inline-block;
   font-family: FontAwesome;
   content: '';
@@ -10926,11 +10928,14 @@ dl.portletNavigationTree
 dl.portletERPortletNavigation dd.portletItem ul.navTree li a:hover,
 dl.portletERPortletNavigation dd.portletItem ul.navTree li a:focus,
 dl.portletNavigationTree dd.portletItem ul.navTree li a:hover,
-dl.portletNavigationTree dd.portletItem ul.navTree li a:focus {
+dl.portletNavigationTree dd.portletItem ul.navTree li a:focus,
+.navigationTile ul.navTree li a:hover,
+.navigationTile ul.navTree li a:focus {
   text-decoration: underline !important;
 }
-dl.portletERPortletNavigation dd.portletItem ul.navTree li a img.image-icon,
-dl.portletNavigationTree dd.portletItem ul.navTree li a img.image-icon {
+dl.portletERPortletNavigation dd.portletItem ul.navTree li a img,
+dl.portletNavigationTree dd.portletItem ul.navTree li a img,
+.navigationTile ul.navTree li a img {
   display: none;
 }
 dl.portletERPortletNavigation
@@ -10962,7 +10967,9 @@ dl.portletNavigationTree
   li.navTreeFolderish
   > ul
   > li
-  > a {
+  > a,
+.navigationTile ul.navTree li.navTreeFolderish > ul > li > div > a,
+.navigationTile ul.navTree li.navTreeFolderish > ul > li > a {
   background-color: #eee;
 }
 dl.portletERPortletNavigation
@@ -11004,7 +11011,11 @@ dl.portletNavigationTree
   dd.portletItem
   ul.navTree
   li.navTreeCurrentNode
-  a.navTreeCurrentItem {
+  a.navTreeCurrentItem,
+.navigationTile ul.navTree li.navTreeItemInPath a.navTreeItemInPath,
+.navigationTile ul.navTree li.navTreeItemInPath a.navTreeCurrentItem,
+.navigationTile ul.navTree li.navTreeCurrentNode a.navTreeItemInPath,
+.navigationTile ul.navTree li.navTreeCurrentNode a.navTreeCurrentItem {
   background-color: #ac1b01;
   color: #fff !important;
   font-weight: 600;
@@ -11048,11 +11059,16 @@ dl.portletNavigationTree
   dd.portletItem
   ul.navTree
   li.navTreeCurrentNode
-  a.navTreeCurrentItem:after {
+  a.navTreeCurrentItem:after,
+.navigationTile ul.navTree li.navTreeItemInPath a.navTreeItemInPath:after,
+.navigationTile ul.navTree li.navTreeItemInPath a.navTreeCurrentItem:after,
+.navigationTile ul.navTree li.navTreeCurrentNode a.navTreeItemInPath:after,
+.navigationTile ul.navTree li.navTreeCurrentNode a.navTreeCurrentItem:after {
   color: #fff;
 }
 dl.portletERPortletNavigation dd.portletItem ul.navTree ul,
-dl.portletNavigationTree dd.portletItem ul.navTree ul {
+dl.portletNavigationTree dd.portletItem ul.navTree ul,
+.navigationTile ul.navTree ul {
   margin-left: 2rem;
   margin-top: 0;
 }
@@ -11077,11 +11093,14 @@ dl.portletNavigationTree
   dd.portletItem
   ul.navTree.navTreeLevel0
   > li:last-child
-  > a {
+  > a,
+.navigationTile ul.navTree.navTreeLevel0 > li:last-child > div > a,
+.navigationTile ul.navTree.navTreeLevel0 > li:last-child > a {
   border-bottom: 0 none;
 }
 dl.portletERPortletNavigation dd.portletItem ul.navTree .navTreeCurrentItem,
-dl.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem {
+dl.portletNavigationTree dd.portletItem ul.navTree .navTreeCurrentItem,
+.navigationTile ul.navTree .navTreeCurrentItem {
   border-left: 0 none;
   margin-left: 0;
   margin-right: 0;
@@ -13541,5 +13560,214 @@ body.template-cciaa_collection_view
 .collapse-wrapper .collapse p,
 #content .collapse-wrapper .collapse p {
   margin-bottom: 0.5rem;
+}
+.navigationTile body.homepage_view,
+body.tiles_page_view .navigationTile,
+.portletNavigationTree nav.portletContent body.homepage_view,
+body.tiles_page_view .portletNavigationTree nav.portletContent {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navigationTile body.homepage_view:before,
+.navigationTile body.homepage_view:after,
+body.tiles_page_view .navigationTile:before,
+body.tiles_page_view .navigationTile:after,
+.portletNavigationTree nav.portletContent body.homepage_view:before,
+.portletNavigationTree nav.portletContent body.homepage_view:after,
+body.tiles_page_view .portletNavigationTree nav.portletContent:before,
+body.tiles_page_view .portletNavigationTree nav.portletContent:after {
+  content: ' ';
+  display: table;
+}
+.navigationTile body.homepage_view:after,
+body.tiles_page_view .navigationTile:after,
+.portletNavigationTree nav.portletContent body.homepage_view:after,
+body.tiles_page_view .portletNavigationTree nav.portletContent:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .navigationTile body.homepage_view,
+  body.tiles_page_view .navigationTile,
+  .portletNavigationTree nav.portletContent body.homepage_view,
+  body.tiles_page_view .portletNavigationTree nav.portletContent {
+    width: auto;
+  }
+}
+@media (min-width: 992px) {
+  .navigationTile body.homepage_view,
+  body.tiles_page_view .navigationTile,
+  .portletNavigationTree nav.portletContent body.homepage_view,
+  body.tiles_page_view .portletNavigationTree nav.portletContent {
+    width: auto;
+  }
+}
+@media (min-width: 1360px) {
+  .navigationTile body.homepage_view,
+  body.tiles_page_view .navigationTile,
+  .portletNavigationTree nav.portletContent body.homepage_view,
+  body.tiles_page_view .portletNavigationTree nav.portletContent {
+    width: 1330px;
+  }
+}
+.navigationTile ul.navTree,
+.portletNavigationTree nav.portletContent ul.navTree {
+  margin: 0 !important;
+  padding: 0;
+  list-style: none;
+}
+.navigationTile ul.navTree li,
+.portletNavigationTree nav.portletContent ul.navTree li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.navigationTile ul.navTree li a,
+.portletNavigationTree nav.portletContent ul.navTree li a {
+  padding: 1.5rem 2.5rem 1.5rem 2rem;
+  border-bottom: 1px solid #c1c1c1;
+  display: block;
+}
+.navigationTile ul.navTree li a.navTreeFolderish,
+.portletNavigationTree nav.portletContent ul.navTree li a.navTreeFolderish {
+  position: relative;
+}
+.navigationTile ul.navTree li a.navTreeFolderish svg,
+.navigationTile ul.navTree li a.navTreeFolderish i:before,
+.portletNavigationTree nav.portletContent ul.navTree li a.navTreeFolderish svg,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li
+  a.navTreeFolderish
+  i:before {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  color: #000;
+}
+.navigationTile ul.navTree li a:hover,
+.navigationTile ul.navTree li a:focus,
+.portletNavigationTree nav.portletContent ul.navTree li a:hover,
+.portletNavigationTree nav.portletContent ul.navTree li a:focus {
+  text-decoration: underline;
+}
+.navigationTile ul.navTree li a img.image-icon,
+.portletNavigationTree nav.portletContent ul.navTree li a img.image-icon {
+  display: none;
+}
+.navigationTile ul.navTree li.navTreeFolderish > ul > li > a,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeFolderish
+  > ul
+  > li
+  > a {
+  background-color: #eee;
+}
+.navigationTile ul.navTree li.navTreeItemInPath a.navTreeItemInPath,
+.navigationTile ul.navTree li.navTreeItemInPath a.navTreeCurrentItem,
+.navigationTile ul.navTree li.navTreeCurrentNode a.navTreeItemInPath,
+.navigationTile ul.navTree li.navTreeCurrentNode a.navTreeCurrentItem,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeItemInPath
+  a.navTreeItemInPath,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeItemInPath
+  a.navTreeCurrentItem,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeCurrentNode
+  a.navTreeItemInPath,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeCurrentNode
+  a.navTreeCurrentItem {
+  background-color: #ac1b01;
+  color: #fff;
+  font-weight: 600;
+}
+.navigationTile ul.navTree li.navTreeItemInPath a.navTreeItemInPath svg,
+.navigationTile ul.navTree li.navTreeItemInPath a.navTreeItemInPath i:before,
+.navigationTile ul.navTree li.navTreeItemInPath a.navTreeCurrentItem svg,
+.navigationTile ul.navTree li.navTreeItemInPath a.navTreeCurrentItem i:before,
+.navigationTile ul.navTree li.navTreeCurrentNode a.navTreeItemInPath svg,
+.navigationTile ul.navTree li.navTreeCurrentNode a.navTreeItemInPath i:before,
+.navigationTile ul.navTree li.navTreeCurrentNode a.navTreeCurrentItem svg,
+.navigationTile ul.navTree li.navTreeCurrentNode a.navTreeCurrentItem i:before,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeItemInPath
+  a.navTreeItemInPath
+  svg,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeItemInPath
+  a.navTreeItemInPath
+  i:before,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeItemInPath
+  a.navTreeCurrentItem
+  svg,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeItemInPath
+  a.navTreeCurrentItem
+  i:before,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeCurrentNode
+  a.navTreeItemInPath
+  svg,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeCurrentNode
+  a.navTreeItemInPath
+  i:before,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeCurrentNode
+  a.navTreeCurrentItem
+  svg,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree
+  li.navTreeCurrentNode
+  a.navTreeCurrentItem
+  i:before {
+  color: #fff;
+}
+.navigationTile ul.navTree ul,
+.portletNavigationTree nav.portletContent ul.navTree ul {
+  margin-left: 2rem;
+  margin-top: 0;
+}
+.navigationTile ul.navTree.navTreeLevel0 > li:last-child > a,
+.portletNavigationTree
+  nav.portletContent
+  ul.navTree.navTreeLevel0
+  > li:last-child
+  > a {
+  border-bottom: 0 none;
+}
+.navigationTile > ul.navTree,
+.portletNavigationTree nav.portletContent > ul.navTree {
+  margin: 1.5rem 0 !important;
 }
 /*# sourceMappingURL=cciaa.css.map */

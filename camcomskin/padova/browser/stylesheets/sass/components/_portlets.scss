@@ -30,102 +30,102 @@ dl.portlet dt,
 }
 
 // NAVIGAZIONE
-dl.portletERPortletNavigation,
-dl.portletNavigationTree {
-    dd.portletItem {
+dl.portletERPortletNavigation dd.portletItem,
+dl.portletNavigationTree dd.portletItem,
+.navigationTile {
+    padding: 0;
+
+    ul.navTree {
+        margin: 0;
         padding: 0;
+        list-style-type: none;
 
-        ul.navTree {
-            margin: 0;
+        li {
             padding: 0;
-            list-style-type: none;
+            margin: 0;
+            border: 0 none;
 
-            li {
-                padding: 0;
-                margin: 0;
-                border: 0 none;
-
-                a {
-                    padding: 1.5rem 2.5rem 1.5rem 2rem;
-                    border-bottom: 1px solid $gray-desc-border;
-                    display: block;
-                    color: $link-color !important;
-
-                    &.navTreeFolderish {
-                        position: relative;
-                        &:after {
-                            @include make-fa('\f107');
-                            display: block;
-                            position: absolute;
-                            top: 1rem;
-                            right: 1rem;
-                            font-size: 2.5rem;
-                            color: #000;
-                        }
-                        &.navTreeCurrentNode,
-                        &.navTreeItemInPath {
-                            &:after {
-                                @include make-fa('\f106');
-                                top: 0.5rem;
-                                font-weight: $regular;
-                            }
-                        }
-                    }
-                    &:hover,
-                    &:focus {
-                        text-decoration: underline !important;
-                    }
-                    img.image-icon {
-                        display: none;
-                    }
-                }
+            a {
+                padding: 1.5rem 2.5rem 1.5rem 2rem;
+                border-bottom: 1px solid $gray-desc-border !important;
+                display: block;
+                color: $link-color !important;
+                background-image: none !important;
 
                 &.navTreeFolderish {
-                    > ul {
-                        > li {
-                            > div > a,
-                            > a {
-                                background-color: $gray-bg;
-                            }
-                        }
+                    position: relative;
+                    &:after {
+                        @include make-fa('\f107');
+                        display: block;
+                        position: absolute;
+                        top: 1rem;
+                        right: 1rem;
+                        font-size: 2.5rem;
+                        color: #000;
                     }
-                }
-
-                &.navTreeItemInPath,
-                &.navTreeCurrentNode {
-                    a.navTreeItemInPath,
-                    a.navTreeCurrentItem {
-                        background-color: $brand-primary;
-                        color: #fff !important;
-                        font-weight: $semibold;
+                    &.navTreeCurrentNode,
+                    &.navTreeItemInPath {
                         &:after {
-                            color: #fff;
+                            @include make-fa('\f106');
+                            top: 0.5rem;
+                            font-weight: $regular;
                         }
                     }
                 }
+                &:hover,
+                &:focus {
+                    text-decoration: underline !important;
+                }
+                img {
+                    display: none;
+                }
             }
 
-            ul {
-                margin-left: 2rem;
-                margin-top: 0;
-            }
-
-            &.navTreeLevel0 {
-                > li {
-                    &:last-child {
+            &.navTreeFolderish {
+                > ul {
+                    > li {
                         > div > a,
                         > a {
-                            border-bottom: 0 none;
+                            background-color: $gray-bg;
                         }
                     }
                 }
             }
 
-            .navTreeCurrentItem {
-                border-left: 0 none;
-                margin-left: 0;
-                margin-right: 0;
+            &.navTreeItemInPath,
+            &.navTreeCurrentNode {
+                a.navTreeItemInPath,
+                a.navTreeCurrentItem {
+                    background-color: $brand-primary;
+                    color: #fff !important;
+                    font-weight: $semibold;
+                    &:after {
+                        color: #fff;
+                    }
+                }
             }
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-top: 0;
+        }
+
+        &.navTreeLevel0 {
+            > li {
+                &:last-child {
+                    > div > a,
+                    > a {
+                        border-bottom: 0 none;
+                    }
+                }
+            }
+        }
+
+        .navTreeCurrentItem {
+            border-left: 0 none;
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 }
