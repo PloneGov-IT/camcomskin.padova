@@ -22,7 +22,7 @@ from plone.formwidget.contenttree import UUIDSourceBinder
 from plone.i18n.normalizer.interfaces import IIDNormalizer
 from plone.memoize.instance import memoize
 from plone.supermodel.model import Schema
-from plone.tiles import Tile
+from plone.tiles import PersistentTile
 from plone.uuid.interfaces import IUUID
 from z3c.form.interfaces import IValue
 from z3c.form.util import getSpecification
@@ -140,7 +140,7 @@ class DefaultRoot(object):
 
 
 @implementer(INavigationTile)
-class NavigationTile(Tile):
+class NavigationTile(PersistentTile):
 
     def __init__(self, context, *args, **kwargs):
         # Fix issue where context is a template based view class
