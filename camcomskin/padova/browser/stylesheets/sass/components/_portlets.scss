@@ -435,3 +435,23 @@ dl.portlet.rerPortletAdvancedStatic,
         }
     }
 }
+
+#content {
+    .portletPageColumn {
+        .portletERPortletNavigation {
+            ul.navTree {
+                margin-left: 0;
+
+                a {
+                    border-bottom-color: #bbb;
+                }
+            }
+        }
+
+        .portletBandi {
+            .portletItem:not(:last-of-type) {
+                border-bottom: 1px dashed #ccc;
+            }
+        }
+    }
+}

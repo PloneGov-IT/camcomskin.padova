@@ -11372,6 +11372,15 @@ dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus,
 .boxBandoDetail .boxContent > div p {
   margin-bottom: 0;
 }
+#content .portletPageColumn .portletERPortletNavigation ul.navTree {
+  margin-left: 0;
+}
+#content .portletPageColumn .portletERPortletNavigation ul.navTree a {
+  border-bottom-color: #bbb;
+}
+#content .portletPageColumn .portletBandi .portletItem:not(:last-of-type) {
+  border-bottom: 1px dashed #ccc;
+}
 #viewlet-below-content {
   margin: 5rem 0 1.5rem;
   border-top: 1px solid #c1c1c1;
