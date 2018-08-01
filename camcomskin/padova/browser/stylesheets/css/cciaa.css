@@ -11381,6 +11381,9 @@ dl.portlet.rerPortletAdvancedStatic.TornaIndietro .portletHeader a span:focus,
 #content .portletPageColumn .portletBandi .portletItem:not(:last-of-type) {
   border-bottom: 1px dashed #ccc;
 }
+#content .portletPageColumn .portletBandi .labelTB:not(:first-of-type) {
+  padding-left: 1rem;
+}
 #viewlet-below-content {
   margin: 5rem 0 1.5rem;
   border-top: 1px solid #c1c1c1;

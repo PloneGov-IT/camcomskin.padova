@@ -452,6 +452,10 @@ dl.portlet.rerPortletAdvancedStatic,
             .portletItem:not(:last-of-type) {
                 border-bottom: 1px dashed #ccc;
             }
+
+            .labelTB:not(:first-of-type) {
+                padding-left: 1rem;
+            }
         }
     }
 }
