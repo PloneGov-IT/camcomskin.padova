@@ -19,9 +19,17 @@
     tiles.each(function() {
       var tile = $(this);
 
-      if (tile.hasClass('empty') && tile.closest('.collectionTile').hasClass('tile-sx') || tile.hasClass('tile-sx')) {
+      if (
+        (tile.hasClass('empty') &&
+          tile.closest('.collectionTile').hasClass('tile-sx')) ||
+        tile.hasClass('tile-sx')
+      ) {
         tile.closest('.tileWrapper').addClass('tile-sx');
-      } else if (tile.hasClass('empty') && tile.closest('.collectionTile').hasClass('tile-dx') || tile.hasClass('tile-dx')) {
+      } else if (
+        (tile.hasClass('empty') &&
+          tile.closest('.collectionTile').hasClass('tile-dx')) ||
+        tile.hasClass('tile-dx')
+      ) {
         tile.closest('.tileWrapper').addClass('tile-dx');
       }
     });
