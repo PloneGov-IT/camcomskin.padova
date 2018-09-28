@@ -409,4 +409,79 @@
       />
 
   <!-- end of custom tile collection renderers -->
+  <!-- RATING -->
+  <!-- viewlet for rating in object's view -->
+  <browser:viewlet
+    name="rating_viewlet"
+    for="camcomskin.padova.interfaces.IRatingEnabled"
+    manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+    class=".rating_viewlet.RatingManagerViewlet"
+    layer=".interfaces.IThemeSpecific"
+    permission="zope2.View"
+    template="templates/rating_viewlet.pt"
+    />
+    
+  <!-- helper view for rating -->
+    <browser:page
+    for="*"
+    name="enable_rating"
+    class=".manage_rating.ToggleEnableRating"
+    attribute="add_interface"
+    permission="cmf.ModifyPortalContent"
+    layer=".interfaces.IThemeSpecific"
+    />
+
+    <browser:page
+    for="*"
+    name="disable_rating"
+    class=".manage_rating.ToggleEnableRating"
+    attribute="remove_interface"
+    permission="cmf.ModifyPortalContent"
+    layer=".interfaces.IThemeSpecific"
+    />
+
+    <browser:page
+    for="*"
+    name="check_rating_action_add"
+    attribute="check_rating_action_add"
+    class=".manage_rating.CheckRatingAction"
+    permission="cmf.ModifyPortalContent"
+    layer=".interfaces.IThemeSpecific"
+    />
+    <browser:page
+    for="*"
+    name="check_rating_action_remove"
+    attribute="check_rating_action_remove"
+    class=".manage_rating.CheckRatingAction"
+    permission="cmf.ModifyPortalContent"
+    layer=".interfaces.IThemeSpecific"
+    />
+  <browser:pages
+    for="camcomskin.padova.interfaces.IRatingEnabled"
+    permission="zope2.View"
+    class=".manage_rating.ManageRating">
+       <browser:page name="update_rating" attribute="update_rating" />
+       <browser:page name="delete_rating" attribute="delete_rating" />
+       <browser:page name="get_rating" attribute="get_rating" />
+       <browser:page name="get_avg_rating" attribute="get_avg_rating" />
+       <browser:page name="get_star_size" attribute="get_star_size" />
+  </browser:pages>
+
+  <browser:page
+    for=" plone.app.collection.interfaces.ICollection"
+    name="rating_topic_view"
+    permission="zope2.View"
+    class=".rating_topic_view.View"
+    template="templates/rating_topic_view.pt"
+    layer=".interfaces.IThemeSpecific"
+    />
+
+  <browser:menuItems
+      for="plone.app.collection.interfaces.ICollection"
+      menu="plone_displayviews">
+    <browser:menuItem
+        title="Rating view"
+        action="rating_topic_view"
+        />
+  </browser:menuItems>
 </configure>
