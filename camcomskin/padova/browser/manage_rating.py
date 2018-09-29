@@ -6,7 +6,6 @@ from Products.ATContentTypes.interfaces.document import IATDocument
 from Products.Five import BrowserView
 from zope.annotation.interfaces import IAnnotations
 from zope.interface import alsoProvides
-from zope.interface import implementer
 from zope.interface import noLongerProvides
 
 import json
@@ -21,6 +20,8 @@ class ManageRating(BrowserView):
         return annotations['collective.rating.values']
 
     def update_rating(self):
+        if api.user.is_anonymous():
+            return
         current_rating = self.request.get('current_rating', None)
         if current_rating:
             annotations = self.storage()
@@ -31,6 +32,8 @@ class ManageRating(BrowserView):
             }
 
     def delete_rating(self):
+        if api.user.is_anonymous():
+            return
         annotations = self.storage()
         username = api.user.get_current().getUserName()
         if username in annotations.keys():

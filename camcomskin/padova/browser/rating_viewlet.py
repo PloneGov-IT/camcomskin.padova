@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from plone.app.layout.viewlets import ViewletBase
+from plone import api
 
 
 class RatingManagerViewlet(ViewletBase):
@@ -9,6 +10,9 @@ class RatingManagerViewlet(ViewletBase):
     #     if not field:
     #         return False
     #     return field.get(self.context)
+
+    def can_rate(self):
+        return not api.user.is_anonymous()
 
     def render(self):
         return self.index()
