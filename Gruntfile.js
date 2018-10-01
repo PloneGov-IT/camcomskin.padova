@@ -43,7 +43,7 @@ module.exports = function(grunt) {
         ],
       },
       dist: {
-        src: ['css/*.css'],
+        src: ['css/bootstrap*.css', 'css/cciaa*.css'],
       },
     },
     watch: {
