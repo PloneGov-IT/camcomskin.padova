@@ -5533,18 +5533,6 @@ dl.info dd {
 dl.collapsible {
   border-color: #8cacbb;
 }
-.comment {
-  border-color: #ccc;
-  background-color: #f2f2f2;
-}
-.comment h1,
-.comment h2,
-.comment h3,
-.comment h4,
-.comment h5,
-.comment h6 {
-  border-bottom-color: #777;
-}
 .optionsToggle {
   border-color: #8cacbb;
   color: #000;
@@ -13455,7 +13443,8 @@ table.modulisticaListing tbody tr td a {
   clear: both;
   margin-right: 10px;
 }
-body.template-cciaa_collection_view #content .cciaa_topic_view .cciaaTopicItem {
+body.template-cciaa_collection_view #content .cciaa_topic_view .cciaaTopicItem,
+body.template-rating_topic_view #content .cciaa_topic_view .cciaaTopicItem {
   padding: 1.5rem 1.5rem 1.5rem 5rem;
   border-bottom: 1px dashed #ccc;
   position: relative;
@@ -13464,17 +13453,23 @@ body.template-cciaa_collection_view
   #content
   .cciaa_topic_view
   .cciaaTopicItem
-  h4 {
+  h4,
+body.template-rating_topic_view #content .cciaa_topic_view .cciaaTopicItem h4 {
   margin: 0.5rem 0;
 }
 body.template-cciaa_collection_view
   #content
   .cciaa_topic_view
   .cciaaTopicItem
-  p {
+  p,
+body.template-rating_topic_view #content .cciaa_topic_view .cciaaTopicItem p {
   margin-bottom: 0;
 }
 body.template-cciaa_collection_view
+  #content
+  .cciaa_topic_view
+  .cciaaTopicItem::before,
+body.template-rating_topic_view
   #content
   .cciaa_topic_view
   .cciaaTopicItem::before {
@@ -13493,6 +13488,10 @@ body.template-cciaa_collection_view
 body.template-cciaa_collection_view
   #content
   .cciaa_topic_view
+  .cciaaTopicItem.topic-news-item::before,
+body.template-rating_topic_view
+  #content
+  .cciaa_topic_view
   .cciaaTopicItem.topic-news-item::before {
   display: inline-block;
   font-family: FontAwesome;
@@ -13504,6 +13503,10 @@ body.template-cciaa_collection_view
 body.template-cciaa_collection_view
   #content
   .cciaa_topic_view
+  .cciaaTopicItem.topic-event::before,
+body.template-rating_topic_view
+  #content
+  .cciaa_topic_view
   .cciaaTopicItem.topic-event::before {
   display: inline-block;
   font-family: FontAwesome;
@@ -13512,7 +13515,8 @@ body.template-cciaa_collection_view
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body.template-cciaa_collection_view #content .cciaa_topic_view .listingBar a {
+body.template-cciaa_collection_view #content .cciaa_topic_view .listingBar a,
+body.template-rating_topic_view #content .cciaa_topic_view .listingBar a {
   border-width: 1px;
   border-color: #ac1b01;
   border-radius: 3px;
@@ -13526,10 +13530,39 @@ body.template-cciaa_collection_view
   #content
   .cciaa_topic_view
   .listingBar
-  a:focus {
+  a:focus,
+body.template-rating_topic_view #content .cciaa_topic_view .listingBar a:hover,
+body.template-rating_topic_view #content .cciaa_topic_view .listingBar a:focus {
   background: #ac1b01;
   color: #fff !important;
   border-color: #ac1b01 !important;
+}
+body.template-cciaa_collection_view .comments-ratings,
+body.template-rating_topic_view .comments-ratings {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+body.template-cciaa_collection_view .comments-ratings .dash,
+body.template-rating_topic_view .comments-ratings .dash {
+  margin: 0 1.5rem;
+}
+body.template-cciaa_collection_view .comments-ratings .rating-collection,
+body.template-rating_topic_view .comments-ratings .rating-collection {
+  margin-top: 0;
 }
 .collapse-wrapper,
 #content .collapse-wrapper {
@@ -13804,22 +13837,30 @@ dt.bandoTitle {
   padding: 0.5em 0.5em 0.5em 0;
   font-weight: normal;
 }
+#commenting,
 .discussion {
   margin: 30px 0;
 }
+#commenting:before,
+#commenting:after,
 .discussion:before,
 .discussion:after {
   content: ' ';
   display: table;
 }
+#commenting:after,
 .discussion:after {
   clear: both;
 }
+#commenting .comment,
 .discussion .comment {
   margin-bottom: 1em;
+  margin-top: 0;
+  font-size: 100%;
   padding-left: 40px;
   position: relative;
 }
+#commenting .commentImage,
 .discussion .commentImage {
   border-radius: 50px;
   overflow: hidden;
@@ -13829,6 +13870,7 @@ dt.bandoTitle {
   width: 40px;
   height: 40px;
 }
+#commenting .commentImage img,
 .discussion .commentImage img {
   max-width: none !important;
   min-width: 100%;
@@ -13846,33 +13888,49 @@ dt.bandoTitle {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+#commenting .documentByLine,
 .discussion .documentByLine {
   font-weight: normal;
+  margin-left: 0;
+  float: none;
 }
+#commenting .commentDate,
 .discussion .commentDate {
   float: right;
   display: inline;
   font-size: 0.85em;
   color: #76797c;
 }
+#commenting .commentBody,
 .discussion .commentBody {
   margin: 0.5em 0;
   padding: 1em;
   overflow: auto;
   border: 1px solid #ccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
 }
+#commenting .commentBody p,
 .discussion .commentBody p {
   float: left;
   margin-bottom: 0;
 }
+#commenting .formControls,
+.discussion .formControls {
+  margin-left: 0;
+}
+#commenting .commentactionsform,
 .discussion .commentactionsform {
   display: inline;
   margin-left: 6px;
 }
+#commenting .commentActions,
 .discussion .commentActions {
   float: right;
   text-align: right;
 }
+#commenting .reply,
 .discussion .reply {
   border-bottom: 20px;
 }
@@ -13938,6 +13996,14 @@ body.template-check_comments .comments_list ul li {
 body .discussion .comment {
   padding-left: 5rem;
 }
+textarea#form-widgets-comment-text {
+  min-height: 9em;
+  min-width: 10em;
+  resize: vertical;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+}
 #manage-rating {
   padding: 10px 0 20px;
 }
@@ -13972,7 +14038,7 @@ body .discussion .comment {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 15px 0;
+  margin: 1rem 0 0;
 }
 .rating-collection .jq-star {
   cursor: auto;

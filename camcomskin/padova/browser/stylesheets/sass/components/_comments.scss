@@ -10,12 +10,15 @@
     }
 }
 
+#commenting,
 .discussion {
     margin: 30px 0;
     @include clearfix;
 
     .comment {
         margin-bottom: 1em;
+        margin-top: 0;
+        font-size: 100%;
         padding-left: 40px;
         position: relative;
     }
@@ -40,6 +43,8 @@
 
     .documentByLine {
         font-weight: normal;
+        margin-left: 0;
+        float: none;
     }
 
     .commentDate {
@@ -54,11 +59,17 @@
         padding: 1em;
         overflow: auto;
         border: 1px solid #ccc;
+        box-shadow: none;
+        border-radius: 0;
 
         p {
             float: left;
             margin-bottom: 0;
         }
+    }
+
+    .formControls {
+        margin-left: 0;
     }
 
     .commentactionsform {
@@ -168,4 +179,13 @@ body {
             padding-left: $comment-offset;
         }
     }
+}
+
+textarea#form-widgets-comment-text {
+    min-height: 9em;
+    min-width: 10em;
+    resize: vertical;
+    display: block;
+    width: 100%;
+    padding: 1rem;
 }

@@ -1,4 +1,5 @@
-body.template-cciaa_collection_view {
+body.template-cciaa_collection_view,
+body.template-rating_topic_view {
     #content {
         .cciaa_topic_view {
             .cciaaTopicItem {
@@ -49,6 +50,22 @@ body.template-cciaa_collection_view {
                     }
                 }
             }
+        }
+    }
+
+    .comments-ratings {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1rem;
+
+        .dash {
+            margin: 0 1.5rem;
+        }
+
+        .rating-collection {
+            margin-top: 0;
         }
     }
 }

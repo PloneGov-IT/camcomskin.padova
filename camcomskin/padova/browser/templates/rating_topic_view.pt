@@ -46,9 +46,7 @@
                           <span tal:condition="python:item_comments == 1">Commento</span>
                           <span tal:condition="python:item_comments != 1">Commenti</span>
                       </div>
-                      <tal:dash condition="python: item_comments and item_rating">
-                        &mdash;
-                      </tal:dash>
+                      <span class="dash" tal:condition="python: item_comments and item_rating">&mdash;</span>
                       <div class="ratings" tal:condition="item_rating">
                         <div class="rating-collection"
                              tal:attributes="data-rating item_rating">
