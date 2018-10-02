@@ -15,11 +15,19 @@ body.userrole-anonymous {
 
 #header-banner {
     background-color: $gray-agid;
-    color: #FFF;
+    color: #fff;
     font-weight: $regular;
 
     .header-banner-inner {
         @include make-container;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+
+        .header-banner-owner {
+            flex: 1;
+        }
     }
 
     .header-banner-owner,
@@ -28,17 +36,31 @@ body.userrole-anonymous {
         float: left;
 
         a {
-            color: #FFF;
+            color: #fff;
 
             &:focus,
             &:hover {
-                border-bottom: 1px solid #FFF;
+                border-bottom: 1px solid #fff;
             }
         }
     }
 
     .header-banner-second-link {
         text-align: right;
+    }
+
+    .header-banner-login-button {
+        margin-left: 1.5rem;
+
+        a {
+            color: #fff;
+            padding: 0.65rem 1.25rem;
+
+            &:focus,
+            &:hover {
+                background-color: transparentize(#fff, 0.6);
+            }
+        }
     }
 
     @media (max-width: 600px) {
@@ -48,13 +70,12 @@ body.userrole-anonymous {
     // LINGUE
     .dropdown-languages {
         font-size: 0.9em;
-        float: right;
         position: relative;
 
         button {
             background: transparent;
-            color: #FFF;
-            padding: .8rem .5rem;
+            color: #fff;
+            padding: 0.8rem 0.5rem;
             border-radius: 0;
             box-shadow: none;
             border: 0;
@@ -66,7 +87,7 @@ body.userrole-anonymous {
 
             &:focus,
             &:hover {
-                background-color: transparentize(#FFF, .6);
+                background-color: transparentize(#fff, 0.6);
             }
         }
 
@@ -80,25 +101,25 @@ body.userrole-anonymous {
                 display: block;
             }
 
-            &[data-lang="ITA"] {
+            &[data-lang='ITA'] {
                 li.lang-ita {
                     display: none;
                 }
             }
 
-            &[data-lang="ENG"] {
+            &[data-lang='ENG'] {
                 li.lang-eng {
                     display: none;
                 }
             }
 
-            &[data-lang="ESP"] {
+            &[data-lang='ESP'] {
                 li.lang-esp {
                     display: none;
                 }
             }
 
-            &[data-lang="FRA"] {
+            &[data-lang='FRA'] {
                 li.lang-fra {
                     display: none;
                 }
@@ -117,7 +138,7 @@ body.userrole-anonymous {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #FFF;
+    color: #fff;
 
     &:before,
     &:after {
@@ -125,7 +146,7 @@ body.userrole-anonymous {
     }
 
     #portal-logo {
-        margin:0;
+        margin: 0;
 
         &:focus {
             background-color: transparentize(#fff, 0.9);
