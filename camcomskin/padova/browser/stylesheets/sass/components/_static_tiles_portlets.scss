@@ -73,6 +73,7 @@
         .tile-text {
             padding: 20px;
             display: flex;
+            flex-wrap: wrap;
 
             h3 {
                 border-bottom: 4px solid #666;
