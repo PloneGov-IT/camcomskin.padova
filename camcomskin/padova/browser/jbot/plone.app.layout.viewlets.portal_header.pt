@@ -23,6 +23,15 @@
             <li tal:condition="python: not isFRA" class="lang-fra"><a title="Français" href="#" tal:attributes="href fra_url"><span>FRA</span></a></li>
           </ul>
         </div>
+        <div class="header-banner-login-button"
+             tal:define="isAnon context/@@plone_portal_state/anonymous">
+          <a href="#" tal:attributes="href string:${context/absolute_url}/login" tal:condition="isAnon">
+            <span i18n:translate="login">Login</span>
+          </a>
+          <a href="#" tal:attributes="href string:${context/absolute_url}/logout" tal:condition="not: isAnon">
+            <span i18n:translate="logout">Logout</span>
+          </a>
+        </div>
     </div>
 </div>
 
