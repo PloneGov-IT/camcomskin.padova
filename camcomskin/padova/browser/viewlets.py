@@ -2,8 +2,8 @@
 from Acquisition import aq_inner
 from collective.contentleadimage.browser.viewlets import LeadImageViewlet as BaseLeadImageViewlet  # noqa
 from collective.contentleadimage.config import IMAGE_FIELD_NAME
-from plone.app.layout.viewlets. content import ContentRelatedItems as BaseContentRelatedItems  # noqa
-from plone.app.layout.viewlets. content import DocumentBylineViewlet as BaseDocumentBylineViewlet  # noqa
+from plone.app.layout.viewlets.content import ContentRelatedItems as BaseContentRelatedItems  # noqa
+from plone.app.layout.viewlets.content import DocumentBylineViewlet as BaseDocumentBylineViewlet  # noqa
 from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
@@ -129,3 +129,33 @@ class SocialViewlet(base.ViewletBase):
     def get_socials(self):
         return ('facebook', 'twitter', 'google', 'telegram',)
 
+
+class PersonalBarViewlet(base.PersonalBarViewlet):
+    """
+    Override of Personal Bar
+    Conditional rendering of this for user roles
+    If the user has only `authenitcated` can't see the personal bar
+    """
+
+    def userHasEnoughPermissions(self):
+        """
+        Checks user permissions
+        Returns True if the user has not only the role `authenticated`
+        """
+        if self.anonymous:
+            return False
+
+        user_roles = self.portal_state.member().getRoles()
+        return len(user_roles) > 1
+
+    def render(self):
+        """
+        Render viewlet only if the user has enough permissions
+        """
+
+        if self.userHasEnoughPermissions():
+            # Call parent method
+            return super(PersonalBarViewlet, self).render()
+        else:
+            # No output, the viewlet is disabled
+            return ""
