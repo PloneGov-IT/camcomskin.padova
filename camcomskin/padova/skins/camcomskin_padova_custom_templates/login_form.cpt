@@ -228,7 +228,7 @@
                 <div class="social-login"
                     tal:condition="social_providers">
                     <h3>Esegui l'accesso con un servizio esterno</h3>
-                    <ul>
+                    <!-- <ul>
                         <li tal:repeat="provider social_providers">
 
                             <a tal:condition="not:provider/as_form"
@@ -258,7 +258,49 @@
                             </form>
 
                         </li>
-                    </ul>
+                    </ul> -->
+                    <ul>
+            <li tal:repeat="provider social_providers">
+
+                <form tal:attributes="action string:${context/absolute_url}/@@authomatic-handler/${provider/identifier};"
+                      class="authomatic-handler-form">
+		    <input
+		        type="hidden"
+			name="came_from"
+			tal:define="came_from request/form/came_from|nothing"
+			tal:condition="came_from"
+			tal:attributes="value came_from"
+		    />
+		    <input
+		        type="hidden"
+			name="next"
+			tal:define="next request/form/next|nothing"
+			tal:condition="next"
+			tal:attributes="value next"
+		    />
+                    <input
+                        type="text"
+                        placeholder="Your claimed ID"
+                        name="id"
+                        tal:condition="provider/as_form"
+                        tal:attributes="class string:${provider/iconclasses}"
+                    />
+                    <button
+                        type="submit"
+                        value="Authenticate"
+                        class="btn btn-default"
+                        tal:attributes="class string:${provider/buttonclasses};
+                                        value provider/title"
+                    >
+                    <span tal:attributes="class string:${provider/iconclasses}"></span>
+                    <span tal:content="provider/title">
+                        name of oauth provider
+                    </span>
+                    </button>
+                </form>
+
+            </li>
+        </ul>
                 </div>
             </tal:login_methods>
         </metal:login>

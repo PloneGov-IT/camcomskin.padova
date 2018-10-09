@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="login" tal:condition="not:view/can_rate">
-        <a tal:attributes="href string:${context/portal_url}/login">Devi effettuare il login per poter votare</a>
+        <a tal:attributes="href view/generate_came_from">Devi effettuare il login per poter votare</a>
     </div>
     <div class="rating-group" tal:condition="view/can_rate">
         <span class="rating-label">Vota</span>

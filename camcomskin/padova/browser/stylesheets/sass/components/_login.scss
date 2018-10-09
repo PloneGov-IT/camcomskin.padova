@@ -30,7 +30,8 @@ body.template-logged_out {
                 }
             }
 
-            a {
+            a,
+            button {
                 @extend .btn;
                 @extend .btn-default;
                 width: 10rem;
