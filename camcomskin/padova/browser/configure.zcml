@@ -52,7 +52,7 @@
   <browser:viewlet
         name="plone.personal_bar"
         manager="plone.app.layout.viewlets.interfaces.IPortalTop"
-        class="plone.app.layout.viewlets.common.PersonalBarViewlet"
+        class=".viewlets.PersonalBarViewlet"
         permission="zope2.View"
         layer=".interfaces.IThemeSpecific" />
     />
@@ -409,7 +409,7 @@
       />
 
   <!-- end of custom tile collection renderers -->
-  
+
   <browser:page
     for="*"
     name="social_providers_view"
@@ -429,7 +429,7 @@
     permission="zope2.View"
     template="templates/rating_viewlet.pt"
     />
-    
+
   <!-- helper view for rating -->
     <browser:page
     for="*"
