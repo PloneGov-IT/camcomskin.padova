@@ -6,7 +6,7 @@ from plone.app.layout.viewlets.content import ContentRelatedItems as BaseContent
 from plone.app.layout.viewlets.content import DocumentBylineViewlet as BaseDocumentBylineViewlet  # noqa
 from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from plone.app.layout.viewlets.comments import CommentsViewlet as BaseCommentsViewlet
+
 from plone.app.layout.viewlets import common as base
 from plone import api
 
@@ -159,6 +159,3 @@ class PersonalBarViewlet(base.PersonalBarViewlet):
         else:
             # No output, the viewlet is disabled
             return ""
-
-class CommentsViewlet(BaseCommentsViewlet):
-    index = ViewPageTemplateFile('templates/comments_viewlet.pt')
