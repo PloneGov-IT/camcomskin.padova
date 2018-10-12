@@ -7,8 +7,8 @@ version = '1.0.8.dev0'
 setup(name='camcomskin.padova',
       version=version,
       description="CCIAAPD Plone Theme",
-      long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+      long_description=open("README.rst").read() + "\n" +
+                       open(os.path.join("docs", "HISTORY.rst")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
