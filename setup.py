@@ -2,11 +2,11 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0.8.dev0'
+version = '2.0.0.dev0'
 
 setup(name='camcomskin.padova',
       version=version,
-      description="CCIAAPD Plone Theme",
+      description="CCIAAPD Plone Theme Agid",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.rst")).read(),
       # Get more strings from
