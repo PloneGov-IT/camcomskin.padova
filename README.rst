@@ -70,7 +70,6 @@ Per la compilazione del codice Sass e la build del bundle JavaScript, sono prese
 
 - ``npm run develop``: esegue la compilazione con grunt e lo lascia avviato in modalità watch
 - ``npm run build``: compila con grunt e esegue prettier
-- ``npm run test``: esegue il linting con stylelint.
 
 
 Compatibilità
