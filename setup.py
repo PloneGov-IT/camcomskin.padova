@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '2.0.0'
+version = '2.0.1.dev0'
 
 setup(name='camcomskin.padova',
       version=version,
