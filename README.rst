@@ -1,6 +1,6 @@
-==============================================================================
+===================
 CCIAPD - Agid theme
-==============================================================================
+===================
 
 Tema Plone per la Camera di commercio di Padova conforme a `Italia design system`__.
 
@@ -24,7 +24,7 @@ Documentazione
 
 La documentazione per l'utente finale è disponibile in `questo documento`__.
 
-__ https://docs.google.com/document/d/1ncSgzj0JABBWR1Jt7sxtIH5qwjCVN10qBm7uA8uM5cw/export?format=pdf
+__ https://github.com/PloneGov-IT/camcomskin.padova/blob/master/docs/manuale-camcomskin-padova.pdf
 
 
 Esempi
