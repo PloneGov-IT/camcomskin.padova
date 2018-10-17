@@ -100,12 +100,23 @@ body {
 #content-core {
     pre {
         background: rgba(40, 54, 64, 0.7);
-        color: #FFF;
+        color: #fff;
         font-size: 1em;
         font-family: inherit;
         overflow: visible;
-        white-space: initial;
+        white-space: normal;
         line-height: normal;
         border-radius: 5px;
+
+        a {
+            color: #fff !important;
+            border-color: #fff !important;
+
+            &:hover,
+            &:focus {
+                color: darken(#fff, 15%) !important;
+                border-color: darken(#fff, 15%) !important;
+            }
+        }
     }
 }
