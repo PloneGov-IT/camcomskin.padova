@@ -59,9 +59,7 @@ h3 { font-size: 12pt; font-weight: 600; }
 .managePortletsFallback,
 #return-to-top,
 .valuta-sito,
-#portal-column-one,
-#portal-column-two,
-.managePortletsLink { display: none; }
+.managePortletsLink { display: none !important; }
 
 #portal-header {
   margin: 1rem;
@@ -127,4 +125,16 @@ blockquote {
 
 .newsWrapper > a {
   text-decoration: none !important;
+}
+
+#portal-column-content,
+#portal-column-one,
+#portal-column-two {
+    clear: both !important;
+    float: none !important;
+    display: block !important;
+}
+
+.share {
+    display: none !important;
 }
