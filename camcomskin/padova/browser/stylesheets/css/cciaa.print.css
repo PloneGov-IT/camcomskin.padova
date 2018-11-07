@@ -157,4 +157,7 @@ blockquote {
 .share {
   display: none !important;
 }
+.portlet.portletNavigationTree {
+  display: none;
+}
 /*# sourceMappingURL=cciaa.print.css.map */
