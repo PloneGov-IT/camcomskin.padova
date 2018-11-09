@@ -227,7 +227,7 @@
                 </div>
                 <div class="social-login"
                     tal:condition="social_providers">
-                    <h3>Esegui l'accesso tramite social</h3>
+                    <h3>Esegui l'accesso al forum tramite social</h3>
                     <!-- <ul>
                         <li tal:repeat="provider social_providers">
 
