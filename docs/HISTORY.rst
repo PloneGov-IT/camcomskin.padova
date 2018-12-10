@@ -4,7 +4,7 @@ Changelog
 2.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Print styles [nzambello]
 
 
 2.0.1 (2018-12-10)
