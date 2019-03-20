@@ -126,7 +126,7 @@
                             <tal:author tal:condition="python:not isAnon">
                             &mdash;
 
-                            <tal:name tal:condition="python: item_creator"
+                            <tal:name tal:condition="item_creator"
                                 tal:define="author python:pas_member.info(item_creator);
                                             creator_short_form author/username;
                                             creator_long_form string:?author=${author/username};
