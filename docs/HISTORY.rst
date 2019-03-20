@@ -4,7 +4,7 @@ Changelog
 2.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Customize folder_listing view: author not visible for anonymous [fdelia]
 
 
 2.0.2 (2018-12-10)
