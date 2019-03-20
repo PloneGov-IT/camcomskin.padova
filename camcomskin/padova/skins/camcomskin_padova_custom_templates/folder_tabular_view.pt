@@ -22,7 +22,7 @@
                         <th class="nosort">&nbsp;<tal:title i18n:translate="listingheader_title"
                           >Title</tal:title>&nbsp;</th>
                         <th class="nosort"
-                            tal:condition="show_about">&nbsp;<tal:title i18n:translate="listingheader_author"
+                            tal:condition="python: not isAnon and show_about">&nbsp;<tal:title i18n:translate="listingheader_author"
                           >Author</tal:title>&nbsp;</th>
                         <th class="nosort">&nbsp;<tal:title i18n:translate="listingheader_type"
                           >Type</tal:title>&nbsp;</th>
@@ -58,7 +58,7 @@
                                 </a>
                             </td>
 
-                            <td tal:condition="show_about">
+                            <td tal:condition="python: not isAnon and show_about">
                                 <tal:name tal:condition="item_creator"
                                   tal:define="author python:pas_member.info(item_creator)">
                                 <a href="#"
