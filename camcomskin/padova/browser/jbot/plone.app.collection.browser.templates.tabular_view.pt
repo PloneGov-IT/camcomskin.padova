@@ -32,16 +32,20 @@
           <table class="listing collection-listing" summary="Content listing"
               i18n:attributes="summary"
               tal:define="fields context/selectedViewFields;
+                          isAnon context/@@plone_portal_state/anonymous;
                           pas_member context/@@pas_member;
                           site_properties context/portal_properties/site_properties;
                           use_view_action site_properties/typesUseViewActionInListings|python:();">
+
               <thead>
                   <tr>
+                      <tal:block repeat="field fields">
                       <th class="nosort"
                           i18n:translate=""
-                          tal:repeat="field fields"
+                          tal:condition="python: field[0] != 'Creator' or not isAnon"
                           tal:attributes="class python:'listing-header-%s' % field[0]"
                           tal:content="python: field[1]">Field name</th>
+                      </tal:block>
                   </tr>
               </thead>
               <tbody>
@@ -49,6 +53,7 @@
                   <tr tal:define="oddrow repeat/item/odd;"
                       tal:attributes="class python:oddrow and 'even' or 'odd'" >
                   <tal:block tal:repeat="field fields">
+                  <tal:block tal:condition="python: field[0] != 'Creator' or not isAnon">
                       <td tal:condition="python:field[0] not in [
                             'Title', 'Creator', 'ModificationDate',
                             'CreationDate', 'EffectiveDate',
@@ -83,7 +88,7 @@
                             August 16, 2001 at 23:35:59
                           </span>
                       </td>
-
+                  </tal:block>
                   </tal:block>
                   </tr>
               </tal:block>
