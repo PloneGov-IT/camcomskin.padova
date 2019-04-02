@@ -7,7 +7,9 @@ from collective.editablemenu.browser.interfaces import MenuEntrySubitem
 default_profile = 'profile-camcomskin.padova:default'
 agid_profile = 'profile-camcomskin.padova:to_agid'
 
-REGISTRY_NAME = "camcomskin.padova.interfaces.IEditableSecondaryMenuSettings.menu_tabs"
+REGISTRY_NAME = (
+    "camcomskin.padova.interfaces.IEditableSecondaryMenuSettings.menu_tabs"
+)
 
 
 def generate_new_settings():
@@ -27,7 +29,8 @@ def generate_new_settings():
         navigation_folder = api.content.get(UID=setting.navigation_folder)
         if navigation_folder:
             new_entry.navigation_folder = '/'.join(
-                navigation_folder.getPhysicalPath()).decode('utf-8')
+                navigation_folder.getPhysicalPath()
+            ).decode('utf-8')
         # we don't migrate additional columns because we can't know what's
         # the common folder.
         new_settings.append(new_entry)
@@ -52,3 +55,10 @@ def to_2000(context):
     setup_tool.runImportStepFromProfile(default_profile, 'cssregistry')
     setup_tool.runImportStepFromProfile(default_profile, 'jsregistry')
     setup_tool.runAllImportStepsFromProfile(agid_profile)
+
+
+def to_2100(context):
+    """
+    """
+    setup_tool = getToolByName(context, 'portal_setup')
+    setup_tool.runImportStepFromProfile(default_profile, 'plone.app.registry')

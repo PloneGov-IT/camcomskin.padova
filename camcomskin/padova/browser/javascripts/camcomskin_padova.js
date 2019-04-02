@@ -12,6 +12,11 @@
     return;
   }
 
+  function initializeTiles() {
+    pairTiles();
+    loadPrenotazioni();
+  }
+  
   function pairTiles() {
     var tiles = $('.paired-collection, .empty');
     if (tiles.length === 0) return;
@@ -32,6 +37,33 @@
       ) {
         tile.closest('.tileWrapper').addClass('tile-dx');
       }
+    });
+  }
+
+  function loadPrenotazioneInPlace(context, url) {
+    var formattedUrl = url.indexOf('?') !== -1 ? url + "&ajax_load=1" : url + "?ajax_load=1"
+    context.find(".prenotazione-calendar").load( formattedUrl + " #week-table-wrapper", function() {
+      $(this).find('.navigator a').each(function() {
+        $(this).on('click', function(e) {
+          e.preventDefault();
+          var newUrl = e.target.href;
+          loadPrenotazioneInPlace(context, newUrl);
+        })
+      })
+    });
+  }
+
+  function loadPrenotazioni() {
+    var tiles = $('.prenotazioni-tile');
+    if (tiles.length === 0) return;
+
+    tiles.each(function() {
+      var tile = $(this);
+      tile.find('div.prenotazione-detail').each(function() {
+        var url = $(this).find('a.prenotazione-title').attr('href');
+        var parent = $(this);
+        loadPrenotazioneInPlace(parent, url);
+      })
     });
   }
 
@@ -207,8 +239,9 @@
     $('#portal-footer-wrapper').prepend($('.portlet.footer-logo'));
     $('#portal-footer-wrapper').prepend($('.portlet.valuta-sito'));
 
-    onTilesLoaded(pairTiles);
+    onTilesLoaded(initializeTiles);
 
     createCollapse();
+
   });
 })(jQuery);

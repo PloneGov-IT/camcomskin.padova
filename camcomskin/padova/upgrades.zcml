@@ -17,4 +17,11 @@
         destination="2000"
         handler=".upgrades.to_2000"
         profile="camcomskin.padova:default" />
+  <gs:upgradeStep
+        title="Upgrade camcomskin.padova 2100"
+        description="camcomskin.padova upgrade step"
+        source="2000"
+        destination="2100"
+        handler=".upgrades.to_2100"
+        profile="camcomskin.padova:default" />
 </configure>

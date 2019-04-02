@@ -22,5 +22,15 @@
     <adapter factory=".navigation.QueryBuilder" />
     <adapter factory=".navigation.NavtreeStrategy" />
 
+    <plone:tile
+        name="camcomskin.tiles.prenotazioni"
+        title="Tile prenotazioni"
+        description="Tile che mostra una serie di calendari delle prenotazioni selezionate."
+        class=".prenotazioni.PrenotazioniTile"
+        schema=".prenotazioni.IPrenotazioniTile"
+        template="prenotazioni.pt"
+        add_permission="cmf.ManagePortal"
+        permission="zope.Public"
+        />
 
 </configure>
