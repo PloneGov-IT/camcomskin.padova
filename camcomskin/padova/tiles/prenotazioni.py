@@ -37,6 +37,13 @@ class IPrenotazioniTile(Schema):
     )
     directives.widget(folders=MultiContentTreeFieldWidget)
 
+    css_class = schema.TextLine(
+        title=u'Classe CSS',
+        description=u'Inserisci una lista di classi CSS aggiuntive per'
+        u' questa tile.',
+        required=False,
+    )
+
 
 @implementer(IPrenotazioniTile)
 class PrenotazioniTile(PersistentTile):

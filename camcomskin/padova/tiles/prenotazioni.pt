@@ -7,7 +7,8 @@
       i18n:domain="camcomskin.padova">
   <body>
     <div class="prenotazioni-tile"
-         tal:attributes="data-tileid tile_id"
+         tal:attributes="data-tileid tile_id;
+                         class string:prenotazioni-tile ${view/data/css_class}"
          tal:define="tile_id view/id;
                      results view/results;">
       <h2 class="tileHeader"
