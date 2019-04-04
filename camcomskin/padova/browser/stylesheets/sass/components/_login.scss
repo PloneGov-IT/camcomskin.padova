@@ -1,5 +1,4 @@
 body {
-
     &.template-login_form,
     &.template-login_failed,
     &.template-logged_out {
@@ -18,41 +17,91 @@ body {
                 padding: 0;
                 margin: 5rem 0;
                 margin-left: 0 !important;
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-                justify-content: center;
-                text-align: center;
 
-                @supports (display: grid) {
-                    grid-gap: 2rem 1rem;
-                }
-
-                @supports not (display: grid) {
-                    li {
-                        margin: 2rem 1rem;
-                    }
+                li {
+                    margin: 2rem 1rem;
                 }
 
                 a,
                 button {
                     @extend .btn;
                     @extend .btn-default;
-                    width: 10rem;
-                    height: 10rem;
+                    width: 40rem;
+                    max-width: 100%;
+                    min-height: 7rem;
                     margin: auto;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    flex-direction: column;
+                    box-shadow: none;
+
+                    span.fa {
+                        font-size: 3rem;
+                        width: 3rem;
+                    }
 
                     span:not(.fa) {
                         margin-top: 1rem;
                     }
 
-                    span.fa {
-                        &::before {
-                            font-size: 3rem;
+                    p {
+                        margin-bottom: 0 !important;
+                        margin-left: 1rem;
+                        font-size: 1.75rem;
+
+                        span {
+                            font-weight: 600;
                         }
+                    }
+
+                    &.facebook {
+                        $facebook-color: #4065b3;
+                        background: $facebook-color;
+                        color: #fff;
+                        @include antialias();
+
+                        &:hover,
+                        &:focus {
+                            background: darken($facebook-color, 10%);
+                        }
+                    }
+
+                    &.linkedin {
+                        $linkedin-color: #006097;
+                        background: $linkedin-color;
+                        color: #fff;
+                        @include antialias();
+
+                        &:hover,
+                        &:focus {
+                            background: darken($linkedin-color, 10%);
+                        }
+                    }
+
+                    &.twitter {
+                        $twitter-color: #1da1f2;
+                        background: $twitter-color;
+                        color: #fff;
+                        @include antialias();
+
+                        &:hover,
+                        &:focus {
+                            background: darken($twitter-color, 10%);
+                        }
+                    }
+
+                    &.google {
+                        $google-color: #1a73e8;
+                        border-color: $google-color;
+
+                        span.fa {
+                            color: $google-color;
+                        }
+                    }
+
+                    &:hover,
+                    &:focus {
+                        box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
                     }
                 }
             }

@@ -293,9 +293,13 @@
                                         value provider/title"
                     >
                     <span tal:attributes="class string:${provider/iconclasses}"></span>
-                    <span tal:content="provider/title">
-                        name of oauth provider
-                    </span>
+
+                    <p>
+                        Accedi con
+                        <span tal:content="provider/title">
+                            name of oauth provider
+                        </span>
+                    </p>
                     </button>
                 </form>
 
