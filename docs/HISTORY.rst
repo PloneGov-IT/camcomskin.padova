@@ -6,6 +6,7 @@ Changelog
 
 - Add new tile for show a list of FolderPrenotazione (#3043).
   [cekk]
+- Updated login layout and styles to be Facebook brand policy compliant [nzambello]
 
 
 2.0.3 (2019-03-21)

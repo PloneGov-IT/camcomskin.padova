@@ -14663,27 +14663,11 @@ body.template-logged_out .social-login ul {
   padding: 0;
   margin: 5rem 0;
   margin-left: 0 !important;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
 }
-@supports (display: grid) {
-  body.template-login_form .social-login ul,
-  body.template-login_failed .social-login ul,
-  body.template-logged_out .social-login ul {
-    grid-gap: 2rem 1rem;
-  }
-}
-@supports not (display: grid) {
-  body.template-login_form .social-login ul li,
-  body.template-login_failed .social-login ul li,
-  body.template-logged_out .social-login ul li {
-    margin: 2rem 1rem;
-  }
+body.template-login_form .social-login ul li,
+body.template-login_failed .social-login ul li,
+body.template-logged_out .social-login ul li {
+  margin: 2rem 1rem;
 }
 body.template-login_form .social-login ul a,
 body.template-login_form .social-login ul button,
@@ -14691,8 +14675,9 @@ body.template-login_failed .social-login ul a,
 body.template-login_failed .social-login ul button,
 body.template-logged_out .social-login ul a,
 body.template-logged_out .social-login ul button {
-  width: 10rem;
-  height: 10rem;
+  width: 40rem;
+  max-width: 100%;
+  min-height: 7rem;
   margin: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -14706,11 +14691,17 @@ body.template-logged_out .social-login ul button {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+body.template-login_form .social-login ul a span.fa,
+body.template-login_form .social-login ul button span.fa,
+body.template-login_failed .social-login ul a span.fa,
+body.template-login_failed .social-login ul button span.fa,
+body.template-logged_out .social-login ul a span.fa,
+body.template-logged_out .social-login ul button span.fa {
+  font-size: 3rem;
+  width: 3rem;
 }
 body.template-login_form .social-login ul a span:not(.fa),
 body.template-login_form .social-login ul button span:not(.fa),
@@ -14720,13 +14711,129 @@ body.template-logged_out .social-login ul a span:not(.fa),
 body.template-logged_out .social-login ul button span:not(.fa) {
   margin-top: 1rem;
 }
-body.template-login_form .social-login ul a span.fa::before,
-body.template-login_form .social-login ul button span.fa::before,
-body.template-login_failed .social-login ul a span.fa::before,
-body.template-login_failed .social-login ul button span.fa::before,
-body.template-logged_out .social-login ul a span.fa::before,
-body.template-logged_out .social-login ul button span.fa::before {
-  font-size: 3rem;
+body.template-login_form .social-login ul a p,
+body.template-login_form .social-login ul button p,
+body.template-login_failed .social-login ul a p,
+body.template-login_failed .social-login ul button p,
+body.template-logged_out .social-login ul a p,
+body.template-logged_out .social-login ul button p {
+  margin-bottom: 0 !important;
+  margin-left: 1rem;
+  font-size: 1.75rem;
+}
+body.template-login_form .social-login ul a p span,
+body.template-login_form .social-login ul button p span,
+body.template-login_failed .social-login ul a p span,
+body.template-login_failed .social-login ul button p span,
+body.template-logged_out .social-login ul a p span,
+body.template-logged_out .social-login ul button p span {
+  font-weight: 600;
+}
+body.template-login_form .social-login ul a.facebook,
+body.template-login_form .social-login ul button.facebook,
+body.template-login_failed .social-login ul a.facebook,
+body.template-login_failed .social-login ul button.facebook,
+body.template-logged_out .social-login ul a.facebook,
+body.template-logged_out .social-login ul button.facebook {
+  background: #4065b3;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.template-login_form .social-login ul a.facebook:hover,
+body.template-login_form .social-login ul a.facebook:focus,
+body.template-login_form .social-login ul button.facebook:hover,
+body.template-login_form .social-login ul button.facebook:focus,
+body.template-login_failed .social-login ul a.facebook:hover,
+body.template-login_failed .social-login ul a.facebook:focus,
+body.template-login_failed .social-login ul button.facebook:hover,
+body.template-login_failed .social-login ul button.facebook:focus,
+body.template-logged_out .social-login ul a.facebook:hover,
+body.template-logged_out .social-login ul a.facebook:focus,
+body.template-logged_out .social-login ul button.facebook:hover,
+body.template-logged_out .social-login ul button.facebook:focus {
+  background: #33508d;
+}
+body.template-login_form .social-login ul a.linkedin,
+body.template-login_form .social-login ul button.linkedin,
+body.template-login_failed .social-login ul a.linkedin,
+body.template-login_failed .social-login ul button.linkedin,
+body.template-logged_out .social-login ul a.linkedin,
+body.template-logged_out .social-login ul button.linkedin {
+  background: #006097;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.template-login_form .social-login ul a.linkedin:hover,
+body.template-login_form .social-login ul a.linkedin:focus,
+body.template-login_form .social-login ul button.linkedin:hover,
+body.template-login_form .social-login ul button.linkedin:focus,
+body.template-login_failed .social-login ul a.linkedin:hover,
+body.template-login_failed .social-login ul a.linkedin:focus,
+body.template-login_failed .social-login ul button.linkedin:hover,
+body.template-login_failed .social-login ul button.linkedin:focus,
+body.template-logged_out .social-login ul a.linkedin:hover,
+body.template-logged_out .social-login ul a.linkedin:focus,
+body.template-logged_out .social-login ul button.linkedin:hover,
+body.template-logged_out .social-login ul button.linkedin:focus {
+  background: #004064;
+}
+body.template-login_form .social-login ul a.twitter,
+body.template-login_form .social-login ul button.twitter,
+body.template-login_failed .social-login ul a.twitter,
+body.template-login_failed .social-login ul button.twitter,
+body.template-logged_out .social-login ul a.twitter,
+body.template-logged_out .social-login ul button.twitter {
+  background: #1da1f2;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.template-login_form .social-login ul a.twitter:hover,
+body.template-login_form .social-login ul a.twitter:focus,
+body.template-login_form .social-login ul button.twitter:hover,
+body.template-login_form .social-login ul button.twitter:focus,
+body.template-login_failed .social-login ul a.twitter:hover,
+body.template-login_failed .social-login ul a.twitter:focus,
+body.template-login_failed .social-login ul button.twitter:hover,
+body.template-login_failed .social-login ul button.twitter:focus,
+body.template-logged_out .social-login ul a.twitter:hover,
+body.template-logged_out .social-login ul a.twitter:focus,
+body.template-logged_out .social-login ul button.twitter:hover,
+body.template-logged_out .social-login ul button.twitter:focus {
+  background: #0c85d0;
+}
+body.template-login_form .social-login ul a.google,
+body.template-login_form .social-login ul button.google,
+body.template-login_failed .social-login ul a.google,
+body.template-login_failed .social-login ul button.google,
+body.template-logged_out .social-login ul a.google,
+body.template-logged_out .social-login ul button.google {
+  border-color: #1a73e8;
+}
+body.template-login_form .social-login ul a.google span.fa,
+body.template-login_form .social-login ul button.google span.fa,
+body.template-login_failed .social-login ul a.google span.fa,
+body.template-login_failed .social-login ul button.google span.fa,
+body.template-logged_out .social-login ul a.google span.fa,
+body.template-logged_out .social-login ul button.google span.fa {
+  color: #1a73e8;
+}
+body.template-login_form .social-login ul a:hover,
+body.template-login_form .social-login ul a:focus,
+body.template-login_form .social-login ul button:hover,
+body.template-login_form .social-login ul button:focus,
+body.template-login_failed .social-login ul a:hover,
+body.template-login_failed .social-login ul a:focus,
+body.template-login_failed .social-login ul button:hover,
+body.template-login_failed .social-login ul button:focus,
+body.template-logged_out .social-login ul a:hover,
+body.template-logged_out .social-login ul a:focus,
+body.template-logged_out .social-login ul button:hover,
+body.template-logged_out .social-login ul button:focus {
+  -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 768px) {
   body.template-login_form .site-login.with-social,
