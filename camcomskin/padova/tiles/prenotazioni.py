@@ -2,12 +2,23 @@
 from plone import api
 from plone.app.vocabularies.catalog import CatalogSource as CatalogSourceBase
 from plone.autoform import directives
-from plone.formwidget.contenttree import MultiContentTreeFieldWidget
+from plone.formwidget.contenttree import ContentTreeFieldWidget
 from plone.formwidget.contenttree import UUIDSourceBinder
 from plone.supermodel.model import Schema
 from plone.tiles import PersistentTile
 from zope import schema
 from zope.interface import implementer
+from zope.schema.vocabulary import SimpleTerm
+from zope.schema.vocabulary import SimpleVocabulary
+
+
+layouts = SimpleVocabulary(
+    [
+        SimpleTerm(value='', title=u'Espanso'),
+        SimpleTerm(value='paired-collection tile-sx', title=u'Metà sinistra'),
+        SimpleTerm(value='paired-collection tile-dx', title=u'Metà destra'),
+    ]
+)
 
 
 class CatalogSource(CatalogSourceBase):
@@ -18,24 +29,21 @@ class IPrenotazioniTile(Schema):
     """
     """
 
-    title = schema.TextLine(
-        title=u'Titolo',
-        description=u'Il titolo da mostrare in testata della tile',
-        default=u'',
+    prenotazione_folder = schema.Choice(
+        title=u'Sportello prenotazione',
+        description=u'Seleziona uno sportello prenotazione.',
+        source=UUIDSourceBinder(portal_type=('PrenotazioniFolder')),
         required=True,
     )
+    directives.widget(prenotazione_folder=ContentTreeFieldWidget)
 
-    folders = schema.List(
-        title=u'Sportelli prenotazione',
-        description=u'Seleziona una lista di sportelli prenotazione che '
-        u'offrono lo stesso servizio.',
-        value_type=schema.Choice(
-            title=u"Selection",
-            source=UUIDSourceBinder(portal_type=('PrenotazioniFolder')),
-        ),
+    calendar_layout = schema.Choice(
+        title=u'Layout calendario',
+        description=u'Seleziona se mostrare il calendario a tutta larghezza o'
+        u' a metà. I calendari a metà larghezza vanno accoppiati a due a due.',
         required=True,
+        vocabulary=layouts,
     )
-    directives.widget(folders=MultiContentTreeFieldWidget)
 
     css_class = schema.TextLine(
         title=u'Classe CSS',
@@ -50,17 +58,22 @@ class PrenotazioniTile(PersistentTile):
     def title(self):
         return self.data.get('title', u'')
 
-    def results(self):
-        res = []
-        for uid in self.data.get('folders', []):
-            infos = self.get_folder_infos(uid)
-            if infos:
-                res.append(infos)
-        return res
-
-    def get_folder_infos(self, uid):
+    def get_folder(self):
+        uid = self.data.get('prenotazione_folder', None)
+        if not uid:
+            return {}
         folder = api.content.get(UID=uid)
         if not folder:
             return {}
         return {'title': folder.Title(), 'url': folder.absolute_url()}
 
+    def get_additional_css_classes(self, tile_class):
+        if self.data.get('calendar_layout', ''):
+            tile_class = '{0} {1}'.format(
+                tile_class, self.data.get('calendar_layout', '')
+            )
+        if self.data.get('css_class', ''):
+            tile_class = '{0} {1}'.format(
+                tile_class, self.data.get('css_class', '')
+            )
+        return tile_class

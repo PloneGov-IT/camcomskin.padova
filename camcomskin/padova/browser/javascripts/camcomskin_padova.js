@@ -42,7 +42,7 @@
 
   function loadPrenotazioneInPlace(context, url) {
     var formattedUrl = url.indexOf('?') !== -1 ? url + "&ajax_load=1" : url + "?ajax_load=1"
-    context.find(".prenotazione-calendar").load( formattedUrl + " #week-table-wrapper", function() {
+    context.find(".prenotazione-calendar").load( formattedUrl + " #content-core", function() {
       $(this).find('.navigator a').each(function() {
         $(this).on('click', function(e) {
           e.preventDefault();
@@ -59,11 +59,9 @@
 
     tiles.each(function() {
       var tile = $(this);
-      tile.find('div.prenotazione-detail').each(function() {
-        var url = $(this).find('a.prenotazione-title').attr('href');
-        var parent = $(this);
-        loadPrenotazioneInPlace(parent, url);
-      })
+      var url = tile.find('a.prenotazione-title').attr('href');
+      var container = tile.find('div.prenotazione-detail');
+      loadPrenotazioneInPlace(container, url);
     });
   }
 
