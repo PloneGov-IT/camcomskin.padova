@@ -1,0 +1,15 @@
+.tilesList {
+    @include clearfix;
+}
+.tileWrapper {
+    .prenotazioni-tile {
+        legend {
+            border-bottom: none;
+        }
+    }
+    @media (min-width: 600px) {
+        &.tile-dx {
+            border-left: none;
+        }
+    }
+}
