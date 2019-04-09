@@ -1,9 +1,30 @@
-.colonna-1-di-2         { width: 100%; @include make-sm-column(12); @include make-md-column(6); }
-.colonna-1-di-3         { width: 100%; @include make-sm-column(4); }
-.colonna-2-di-3         { width: 100%; @include make-sm-column(8); }
-.colonna-1-di-4         { width: 100%; @include make-sm-column(6); @include make-md-column(3); }
-.colonna-1-di-5         { width: 20%; float: left; }
-.colonna-1-di-6         { width: 100%; @include make-md-column(2); @include make-sm-column(4); }
+.colonna-1-di-2 {
+    width: 100%;
+    @include make-sm-column(12);
+    @include make-md-column(6);
+}
+.colonna-1-di-3 {
+    width: 100%;
+    @include make-sm-column(4);
+}
+.colonna-2-di-3 {
+    width: 100%;
+    @include make-sm-column(8);
+}
+.colonna-1-di-4 {
+    width: 100%;
+    @include make-sm-column(6);
+    @include make-md-column(3);
+}
+.colonna-1-di-5 {
+    width: 20%;
+    float: left;
+}
+.colonna-1-di-6 {
+    width: 100%;
+    @include make-md-column(2);
+    @include make-sm-column(4);
+}
 
 #content {
     .sfondo-chiaro {
@@ -19,12 +40,12 @@
         }
 
         .news-collection .newsWrapper {
-            background-color: #FFF;
+            background-color: #fff;
         }
 
         .tile-collection {
             .collectionItemWrapper {
-                background-color: #FFF;
+                background-color: #fff;
             }
         }
     }
@@ -40,42 +61,42 @@
 
             &:focus,
             &:hover {
-                color: #DDD;
-                border-color: #DDD;
+                color: #ddd;
+                border-color: #ddd;
             }
         }
 
         .tileTitle {
             &,
             .title-content {
-                color: #FFF;
+                color: #fff;
             }
         }
 
         .news-collection .newsWrapper {
-          background-color: #FFF;
+            background-color: #fff;
         }
 
         .tile-collection {
             .collectionItemWrapper {
-                background-color: #FFF;
+                background-color: #fff;
                 color: #333;
             }
 
             .showMore {
                 a {
-                    color: #FFF;
+                    color: #fff;
 
                     span {
-                        border-bottom: 1px solid #FFF;
+                        border-bottom: 1px solid #fff;
                     }
 
                     &:hover,
                     &:focus {
-                        color: #DDD !important;
+                        color: #ddd !important;
 
                         span {
-                            border-bottom-color: #DDD;
+                            border-bottom-color: #ddd;
                         }
                     }
                 }
@@ -105,14 +126,14 @@
     text-align: center;
 
     a.plone-btn {
-      @extend .btn-info;
-      text-transform: uppercase;
-      font-weight: $semibold;
-      color: #FFF !important;
+        @extend .btn-info;
+        text-transform: uppercase;
+        font-weight: $semibold;
+        color: #fff !important;
 
-      &:hover {
-          color: #FFF !important;
-      }
+        &:hover {
+            color: #fff !important;
+        }
     }
 
     .available-tiles {
@@ -121,8 +142,8 @@
             font-size: 0.9em;
 
             .list-group-item {
-                 @extend .btn-default;
-                 width: 24%;
+                @extend .btn-default;
+                width: 24%;
             }
 
             .tileTitle {
@@ -148,9 +169,10 @@
 
         a.tileEditLink,
         a.tileDeleteLink {
-            border-color: #CCC !important;
+            border-color: #ccc !important;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 .icon-edit,
                 .icon-delete {
                     &::before {
@@ -162,15 +184,15 @@
 
         a.tileEditLink {
             .icon-edit::before {
-                @include make-fa('\f040', #FFF);
-                color: #FFF !important;
+                @include make-fa('\f040', #fff);
+                color: #fff !important;
             }
         }
 
         a.tileDeleteLink {
             .icon-delete::before {
-                @include make-fa('\f00d', #FFF);
-                color: #FFF !important;
+                @include make-fa('\f00d', #fff);
+                color: #fff !important;
             }
         }
     }
@@ -216,7 +238,7 @@
         }
 
         &.tile-dx {
-            border-left: 1px solid #CCC;
+            border-left: 1px solid #ccc;
         }
     }
 }
@@ -257,4 +279,8 @@ body.template-tiles_page_view {
     .tileTitle {
         display: none;
     }
+}
+
+.tilesList {
+    @include clearfix;
 }

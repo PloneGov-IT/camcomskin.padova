@@ -9296,6 +9296,14 @@ body.userrole-anonymous #portal-personaltools-wrapper {
 .senza-titolo .tileTitle {
   display: none;
 }
+.tilesList:before,
+.tilesList:after {
+  content: ' ';
+  display: table;
+}
+.tilesList:after {
+  clear: both;
+}
 #breadcrumbs {
   background: #eee;
   padding: 0.6em 0;
@@ -14870,6 +14878,25 @@ body.template-logged_out .social-login ul button:focus {
     border-left: 1px solid #ccc;
     border-top: 0;
     padding-left: 1rem;
+  }
+}
+.tileWrapper .prenotazioni-tile legend {
+  border-bottom: none;
+}
+.tileWrapper .prenotazioni-tile .week-legend {
+  width: 100%;
+}
+.tileWrapper .prenotazioni-tile .week-legend table {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .tileWrapper.tile-dx .prenotazioni-tile {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 600px) {
+  .tileWrapper.tile-sx .prenotazioni-tile {
+    margin-right: -20px;
   }
 }
 /*# sourceMappingURL=cciaa.css.map */
