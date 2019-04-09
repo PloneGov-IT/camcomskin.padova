@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.0.4 (unreleased)
+2.1.0 (2019-04-09)
 ------------------
 
 - Add new tile for show a list of FolderPrenotazione (#3043) [cekk]
