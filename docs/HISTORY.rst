@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.1.0 (unreleased)
+2.0.4 (unreleased)
 ------------------
 
-- Add new tile for show a list of FolderPrenotazione (#3043).
-  [cekk]
+- Add new tile for show a list of FolderPrenotazione (#3043) [cekk]
 - Updated login layout and styles to be Facebook brand policy compliant [nzambello]
 
 
