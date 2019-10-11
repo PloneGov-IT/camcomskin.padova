@@ -1,16 +1,24 @@
 # -*- coding: utf-8 -*-
 from Acquisition import aq_inner
-from collective.contentleadimage.browser.viewlets import LeadImageViewlet as BaseLeadImageViewlet  # noqa
+from collective.contentleadimage.browser.viewlets import (
+    LeadImageViewlet as BaseLeadImageViewlet,
+)  # noqa
 from collective.contentleadimage.config import IMAGE_FIELD_NAME
-from plone.app.layout.viewlets.content import ContentRelatedItems as BaseContentRelatedItems  # noqa
-from plone.app.layout.viewlets.content import DocumentBylineViewlet as BaseDocumentBylineViewlet  # noqa
+from plone import api
+from plone.app.discussion.browser.comments import CommentsViewlet
+from plone.app.layout.viewlets import common as base
+from plone.app.layout.viewlets.content import (
+    ContentRelatedItems as BaseContentRelatedItems,
+)  # noqa
+from plone.app.layout.viewlets.content import (
+    DocumentBylineViewlet as BaseDocumentBylineViewlet,
+)  # noqa
 from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-
-from plone.app.layout.viewlets import common as base
-from plone import api
-
 from urllib2 import quote
+from plone.registry.interfaces import IRegistry
+from zope.component import queryUtility
+from plone.app.discussion.interfaces import IDiscussionSettings
 
 
 SHARES = {
@@ -21,7 +29,6 @@ SHARES = {
     },
     'twitter': {
         'share_url': 'https://twitter.com/intent/tweet?url={0}&text={1}',
-
         'label': 'Twitter',
         'cssClass': 'fab fa-twitter',
     },
@@ -48,13 +55,12 @@ SHARES = {
     'telegram': {
         'share_url': 'https://telegram.me/share/url?url={0}&text={1}',
         'label': 'Telegram',
-        'cssClass': 'fab fa-telegram'
-    }
+        'cssClass': 'fab fa-telegram',
+    },
 }
 
 
 class LeadImageViewlet(BaseLeadImageViewlet):
-
     def descTag(self, css_class='tileImage'):
         """ returns img tag """
         context = aq_inner(self.context)
@@ -66,7 +72,8 @@ class LeadImageViewlet(BaseLeadImageViewlet):
                 scale=scale,
                 css_class=css_class,
                 title="immagine",
-                alt="immagine")
+                alt="immagine",
+            )
         return ''
 
 
@@ -127,7 +134,7 @@ class SocialViewlet(base.ViewletBase):
         return share_url.format(item_url)
 
     def get_socials(self):
-        return ('facebook', 'twitter', 'google', 'telegram',)
+        return ('facebook', 'twitter', 'google', 'telegram')
 
 
 class PersonalBarViewlet(base.PersonalBarViewlet):
@@ -159,3 +166,19 @@ class PersonalBarViewlet(base.PersonalBarViewlet):
         else:
             # No output, the viewlet is disabled
             return ""
+
+
+class CCPDCommentsViewlet(CommentsViewlet):
+    index = ViewPageTemplateFile('templates/comments_viewlet.pt')
+
+    @property
+    def isAdmin(self):
+        return api.user.has_permission('Manage portal')
+
+    def show_commenter_image(self):
+        # Check if showing commenter image is enabled in the registry
+        if not self.isAdmin:
+            return False
+        registry = queryUtility(IRegistry)
+        settings = registry.forInterface(IDiscussionSettings, check=False)
+        return settings.show_commenter_image

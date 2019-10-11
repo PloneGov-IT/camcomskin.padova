@@ -6,7 +6,8 @@ Changelog
 
 - Move text under description in rating_topic_view
   [cekk]
-
+- Anonymize comment authors.
+  [cekk]
 
 2.1.0 (2019-04-09)
 ------------------
