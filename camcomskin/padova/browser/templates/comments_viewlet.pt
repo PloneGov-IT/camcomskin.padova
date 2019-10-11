@@ -3,6 +3,7 @@
                        isAnonymousDiscussionAllowed view/anonymous_discussion_allowed;
                        isEditCommentAllowed view/edit_comment_allowed;
                        isAnon view/is_anonymous;
+                       isAdmin view/isAdmin;
                        canReview view/can_review;
                        replies python:view.get_replies(canReview);
                        has_replies python:view.has_replies(canReview);
@@ -63,19 +64,21 @@
                 </div>
 
                 <div class="documentByLine" i18n:domain="plone.app.discussion">
-                    <tal:name>
-                        <a href=""
-                           tal:condition="has_author_link"
-                           tal:content="reply/author_name"
-                           tal:attributes="href author_home_url">
-                            Poster Name
-                        </a>
-                        <span tal:condition="not: has_author_link"
-                              tal:replace="reply/author_name" />
-                        <span tal:condition="not: reply/author_name"
-                              i18n:translate="label_anonymous">Anonymous</span>
-                    </tal:name>
-                    <tal:posted i18n:translate="label_says">says:</tal:posted>
+                    <tal:admin tal:condition="isAdmin">
+                        <tal:name>
+                            <a href=""
+                            tal:condition="has_author_link"
+                            tal:content="reply/author_name"
+                            tal:attributes="href author_home_url">
+                                Poster Name
+                            </a>
+                            <span tal:condition="not: has_author_link"
+                                tal:replace="reply/author_name" />
+                            <span tal:condition="not: reply/author_name"
+                                i18n:translate="label_anonymous">Anonymous</span>
+                        </tal:name>
+                        <tal:posted i18n:translate="label_says">says:</tal:posted>
+                    </tal:admin>
                     <div class="commentDate"
                          tal:content="python:view.format_time(reply.modification_date)">
                          8/23/2001 12:40:44 PM
