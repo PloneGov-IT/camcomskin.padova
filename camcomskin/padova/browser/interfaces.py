@@ -1,10 +1,8 @@
-# -*- coding: utf-8 -*-
-from plone.app.discussion.interfaces import IDiscussionLayer
-from plone.theme.interfaces import IDefaultPloneLayer
 from zope.interface import Interface
+from plone.theme.interfaces import IDefaultPloneLayer
 
 
-class IThemeSpecific(IDefaultPloneLayer, IDiscussionLayer):
+class IThemeSpecific(IDefaultPloneLayer):
     """Marker interface that defines a Zope 3 browser layer.
     """
 
