@@ -13,7 +13,16 @@
                  tal:define="kssClassesView context/@@kss_field_decorator_view;
                              getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
                              templateId template/getId">
-
+        <div metal:define-macro="text-field-view"
+             id="parent-fieldname-text" class="stx"
+             tal:define="kss_class python:getKssClasses('text',
+                         templateId=templateId, macro='text-field-view');
+                         has_text exists:context/aq_explicit/getText;
+                         text python:has_text and here.getText() or ''"
+             tal:condition="text"
+             tal:attributes="class python:context.Format() in ('text/structured', 'text/x-rst', ) and 'stx' + kss_class or 'plain' + kss_class">
+            <div metal:define-slot="inside" tal:replace="structure text">The body</div>
+        </div>
         <metal:listingmacro define-macro="listing">
         <tal:results define="b_start python:request.get('b_start', 0);
                              batch python:context.results(b_start=b_start);
@@ -68,16 +77,6 @@
 
         </tal:results>
         </metal:listingmacro>
-        <div metal:define-macro="text-field-view"
-             id="parent-fieldname-text" class="stx"
-             tal:define="kss_class python:getKssClasses('text',
-                         templateId=templateId, macro='text-field-view');
-                         has_text exists:context/aq_explicit/getText;
-                         text python:has_text and here.getText() or ''"
-             tal:condition="text"
-             tal:attributes="class python:context.Format() in ('text/structured', 'text/x-rst', ) and 'stx' + kss_class or 'plain' + kss_class">
-            <div metal:define-slot="inside" tal:replace="structure text">The body</div>
-        </div>
     </metal:block>
   </div>
 

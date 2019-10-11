@@ -4,7 +4,8 @@ Changelog
 2.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Move text under description in rating_topic_view
+  [cekk]
 
 
 2.1.0 (2019-04-09)
