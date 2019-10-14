@@ -10,8 +10,8 @@ from Products.CMFPlone import PloneMessageFactory as _
 
 class ICaptchaSchema(Interface):
     captcha = Captcha(
-        title=u'Type the code',
-        description=u'Type the code from the picture shown below.',
+        title=u'Codice di verifica',
+        description=u'Inserisci il codice di verifica che vedi.',
     )
 
 
