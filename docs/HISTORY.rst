@@ -8,6 +8,8 @@ Changelog
   [cekk]
 - Anonymize comment authors.
   [cekk]
+- Add link to auto-registration with captcha.
+  [cekk]
 
 2.1.0 (2019-04-09)
 ------------------

@@ -505,4 +505,12 @@
       class=".viewlets.CCPDCommentsViewlet"
       permission="zope2.View"
       />
+   <!-- Join form definition -->
+  <browser:page
+    name="register"
+    layer=".interfaces.IThemeSpecific"
+    for="plone.app.layout.navigation.interfaces.INavigationRoot"
+    class=".register.RegistrationForm"
+    permission="cmf.AddPortalMember"
+    />
 </configure>
