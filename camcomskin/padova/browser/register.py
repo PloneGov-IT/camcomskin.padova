@@ -8,7 +8,9 @@ from plone import api
 from Products.CMFPlone import PloneMessageFactory as _
 
 
-class ICaptchaSchema(Interface):
+class ICCPDCaptchaSchema(Interface):
+    """ """
+
     captcha = Captcha(
         title=u'Codice di verifica',
         description=u'Inserisci il codice di verifica che vedi.',
@@ -22,7 +24,7 @@ class RegistrationForm(BaseForm):
     @property
     def form_fields(self):
         fields = super(RegistrationForm, self).form_fields
-        fields += form.Fields(ICaptchaSchema)
+        fields += form.Fields(ICCPDCaptchaSchema)
         fields['captcha'].custom_widget = CaptchaWidget
 
         return fields

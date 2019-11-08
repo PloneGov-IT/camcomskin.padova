@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.1.1 (unreleased)
+2.2.0 (unreleased)
 ------------------
 
 - Move text under description in rating_topic_view
@@ -10,6 +10,9 @@ Changelog
   [cekk]
 - Add link to auto-registration with captcha.
   [cekk]
+- Add registry entry to select number of comments to show in rating_topic_view
+  [cekk]
+
 
 2.1.0 (2019-04-09)
 ------------------
