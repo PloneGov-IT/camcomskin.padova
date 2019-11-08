@@ -62,3 +62,10 @@ def to_2100(context):
     """
     setup_tool = getToolByName(context, 'portal_setup')
     setup_tool.runImportStepFromProfile(default_profile, 'plone.app.registry')
+
+
+def to_2200(context):
+    """
+    """
+    setup_tool = getToolByName(context, 'portal_setup')
+    setup_tool.runImportStepFromProfile(default_profile, 'plone.app.registry')

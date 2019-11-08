@@ -1,6 +1,8 @@
 from collective.editablemenu.browser.interfaces import IEditableMenuSettings
 from collective.editablemenu.browser.interfaces import IEditableMenuSettings
 from zope.interface import Interface
+from zope.interface import Interface
+from zope import schema
 
 
 class IEditableSecondaryMenuSettings(IEditableMenuSettings):
@@ -17,3 +19,11 @@ class ISecondaryMenuControlpanelSchema(IEditableMenuSettings):
 
 class IRatingEnabled(Interface):
     """marker interface for enable rating"""
+
+
+class IPartecipazioneAttivaSettings(Interface):
+
+    comments_to_show = schema.Int(
+        title=u"Commenti da mostrare",
+        description=u"Commenti da mostrare nella sezione partecipazione attiva",  # noqa
+    )
