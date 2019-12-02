@@ -14,7 +14,7 @@
 }
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
   font-family: 'Titillium Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -1279,7 +1279,7 @@ address {
   }
 }
 table {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 caption {
   padding-top: 8px;
@@ -1892,8 +1892,8 @@ input[type='password'] {
 }
 .form-control:focus,
 select:focus,
-input[type='text']:focus,
-input[type='password']:focus {
+input:focus[type='text'],
+input:focus[type='password'] {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
@@ -1910,8 +1910,8 @@ input[type='password']::-moz-placeholder {
 }
 .form-control:-ms-input-placeholder,
 select:-ms-input-placeholder,
-input[type='text']:-ms-input-placeholder,
-input[type='password']:-ms-input-placeholder {
+input:-ms-input-placeholder[type='text'],
+input:-ms-input-placeholder[type='password'] {
   color: #999;
 }
 .form-control::-webkit-input-placeholder,
@@ -2176,8 +2176,8 @@ select[multiple].input-lg {
 }
 .has-success .form-control:focus,
 .has-success select:focus,
-.has-success input[type='text']:focus,
-.has-success input[type='password']:focus {
+.has-success input:focus[type='text'],
+.has-success input:focus[type='password'] {
   border-color: #2b542c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
@@ -2214,8 +2214,8 @@ select[multiple].input-lg {
 }
 .has-warning .form-control:focus,
 .has-warning select:focus,
-.has-warning input[type='text']:focus,
-.has-warning input[type='password']:focus {
+.has-warning input:focus[type='text'],
+.has-warning input:focus[type='password'] {
   border-color: #66512c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
@@ -2252,8 +2252,8 @@ select[multiple].input-lg {
 }
 .has-error .form-control:focus,
 .has-error select:focus,
-.has-error input[type='text']:focus,
-.has-error input[type='password']:focus {
+.has-error input:focus[type='text'],
+.has-error input:focus[type='password'] {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
@@ -2523,7 +2523,7 @@ input.context,
 input.destructive,
 input.standalone,
 #manage-rating .login a,
-input[type='submit'].discreet,
+input.discreet[type='submit'],
 input.standalone[name='form.button.cancel'],
 #content-history input.standalone[type='submit'],
 #content-history #manage-rating .login a[type='submit'],
@@ -2556,17 +2556,17 @@ body.template-logged_out .social-login ul button {
   -ms-user-select: none;
 }
 .btn:focus,
-input[type='submit']:focus,
-input[type='button']:focus,
+input:focus[type='submit'],
+input:focus[type='button'],
 .context:focus,
 input.destructive:focus,
 input.standalone:focus,
 #manage-rating .login a:focus,
-#content-history input.standalone[type='submit']:focus,
+#content-history input.standalone:focus[type='submit'],
 #content a.link-parent:focus,
 .portalMessage.info span a:focus,
 input[type='text'].text-widget.textline-field + input.searchButton:focus,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:focus,
+#content.dialog-wrapper .mceActionPanel input:focus[type='submit'],
 body.template-login_form .social-login ul a:focus,
 body.template-login_form .social-login ul button:focus,
 body.template-login_failed .social-login ul a:focus,
@@ -2592,17 +2592,17 @@ body.template-login_failed .social-login ul button.focus,
 body.template-logged_out .social-login ul a.focus,
 body.template-logged_out .social-login ul button.focus,
 .btn:active:focus,
-input[type='submit']:active:focus,
-input[type='button']:active:focus,
+input:active:focus[type='submit'],
+input:active:focus[type='button'],
 .context:active:focus,
 input.destructive:active:focus,
 input.standalone:active:focus,
 #manage-rating .login a:active:focus,
-#content-history input.standalone[type='submit']:active:focus,
+#content-history input.standalone:active:focus[type='submit'],
 #content a.link-parent:active:focus,
 .portalMessage.info span a:active:focus,
 input[type='text'].text-widget.textline-field + input.searchButton:active:focus,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:active:focus,
+#content.dialog-wrapper .mceActionPanel input:active:focus[type='submit'],
 body.template-login_form .social-login ul a:active:focus,
 body.template-login_form .social-login ul button:active:focus,
 body.template-login_failed .social-login ul a:active:focus,
@@ -2610,17 +2610,17 @@ body.template-login_failed .social-login ul button:active:focus,
 body.template-logged_out .social-login ul a:active:focus,
 body.template-logged_out .social-login ul button:active:focus,
 .btn:active.focus,
-input[type='submit']:active.focus,
-input[type='button']:active.focus,
+input:active.focus[type='submit'],
+input:active.focus[type='button'],
 .context:active.focus,
 input.destructive:active.focus,
 input.standalone:active.focus,
 #manage-rating .login a:active.focus,
-#content-history input.standalone[type='submit']:active.focus,
+#content-history input.standalone:active.focus[type='submit'],
 #content a.link-parent:active.focus,
 .portalMessage.info span a:active.focus,
 input[type='text'].text-widget.textline-field + input.searchButton:active.focus,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:active.focus,
+#content.dialog-wrapper .mceActionPanel input:active.focus[type='submit'],
 body.template-login_form .social-login ul a:active.focus,
 body.template-login_form .social-login ul button:active.focus,
 body.template-login_failed .social-login ul a:active.focus,
@@ -2628,17 +2628,17 @@ body.template-login_failed .social-login ul button:active.focus,
 body.template-logged_out .social-login ul a:active.focus,
 body.template-logged_out .social-login ul button:active.focus,
 .btn.active:focus,
-input.active[type='submit']:focus,
-input.active[type='button']:focus,
+input.active:focus[type='submit'],
+input.active:focus[type='button'],
 .active.context:focus,
 input.active.destructive:focus,
 input.active.standalone:focus,
 #manage-rating .login a.active:focus,
-#content-history input.active.standalone[type='submit']:focus,
+#content-history input.active.standalone:focus[type='submit'],
 #content a.active.link-parent:focus,
 .portalMessage.info span a.active:focus,
 input[type='text'].text-widget.textline-field + input.active.searchButton:focus,
-#content.dialog-wrapper .mceActionPanel input.active[type='submit']:focus,
+#content.dialog-wrapper .mceActionPanel input.active:focus[type='submit'],
 body.template-login_form .social-login ul a.active:focus,
 body.template-login_form .social-login ul button.active:focus,
 body.template-login_failed .social-login ul a.active:focus,
@@ -2668,17 +2668,17 @@ body.template-logged_out .social-login ul button.active.focus {
   outline-offset: -2px;
 }
 .btn:hover,
-input[type='submit']:hover,
-input[type='button']:hover,
+input:hover[type='submit'],
+input:hover[type='button'],
 .context:hover,
 input.destructive:hover,
 input.standalone:hover,
 #manage-rating .login a:hover,
-#content-history input.standalone[type='submit']:hover,
+#content-history input.standalone:hover[type='submit'],
 #content a.link-parent:hover,
 .portalMessage.info span a:hover,
 input[type='text'].text-widget.textline-field + input.searchButton:hover,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:hover,
+#content.dialog-wrapper .mceActionPanel input:hover[type='submit'],
 body.template-login_form .social-login ul a:hover,
 body.template-login_form .social-login ul button:hover,
 body.template-login_failed .social-login ul a:hover,
@@ -2686,17 +2686,17 @@ body.template-login_failed .social-login ul button:hover,
 body.template-logged_out .social-login ul a:hover,
 body.template-logged_out .social-login ul button:hover,
 .btn:focus,
-input[type='submit']:focus,
-input[type='button']:focus,
+input:focus[type='submit'],
+input:focus[type='button'],
 .context:focus,
 input.destructive:focus,
 input.standalone:focus,
 #manage-rating .login a:focus,
-#content-history input.standalone[type='submit']:focus,
+#content-history input.standalone:focus[type='submit'],
 #content a.link-parent:focus,
 .portalMessage.info span a:focus,
 input[type='text'].text-widget.textline-field + input.searchButton:focus,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:focus,
+#content.dialog-wrapper .mceActionPanel input:focus[type='submit'],
 body.template-login_form .social-login ul a:focus,
 body.template-login_form .social-login ul button:focus,
 body.template-login_failed .social-login ul a:focus,
@@ -2725,17 +2725,17 @@ body.template-logged_out .social-login ul button.focus {
   text-decoration: none;
 }
 .btn:active,
-input[type='submit']:active,
-input[type='button']:active,
+input:active[type='submit'],
+input:active[type='button'],
 .context:active,
 input.destructive:active,
 input.standalone:active,
 #manage-rating .login a:active,
-#content-history input.standalone[type='submit']:active,
+#content-history input.standalone:active[type='submit'],
 #content a.link-parent:active,
 .portalMessage.info span a:active,
 input[type='text'].text-widget.textline-field + input.searchButton:active,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:active,
+#content.dialog-wrapper .mceActionPanel input:active[type='submit'],
 body.template-login_form .social-login ul a:active,
 body.template-login_form .social-login ul button:active,
 body.template-login_failed .social-login ul a:active,
@@ -2786,14 +2786,14 @@ body.template-logged_out .social-login ul button.disabled,
 .btn[disabled],
 input[disabled][type='submit'],
 input[disabled][type='button'],
-[disabled].context,
-input[disabled].destructive,
-input[disabled].standalone,
+.context[disabled],
+input.destructive[disabled],
+input.standalone[disabled],
 #manage-rating .login a[disabled],
-#content-history input[disabled].standalone[type='submit'],
-#content a[disabled].link-parent,
+#content-history input.standalone[disabled][type='submit'],
+#content a.link-parent[disabled],
 .portalMessage.info span a[disabled],
-input[type='text'].text-widget.textline-field + input[disabled].searchButton,
+input[type='text'].text-widget.textline-field + input.searchButton[disabled],
 #content.dialog-wrapper .mceActionPanel input[disabled][type='submit'],
 body.template-login_form .social-login ul a[disabled],
 body.template-login_form .social-login ul button[disabled],
@@ -2843,7 +2843,7 @@ input.context,
 input.destructive,
 input.standalone,
 #manage-rating .login a,
-input[type='submit'].discreet,
+input.discreet[type='submit'],
 input.standalone[name='form.button.cancel'],
 input[type='text'].text-widget.textline-field + input.searchButton,
 .actionsTiles .available-tiles .list-group .list-group-item,
@@ -2862,7 +2862,7 @@ body.template-logged_out .social-login ul button {
 input.destructive:focus,
 input.standalone:focus,
 #manage-rating .login a:focus,
-input[type='submit'].discreet:focus,
+input.discreet:focus[type='submit'],
 input[type='text'].text-widget.textline-field + input.searchButton:focus,
 .actionsTiles .available-tiles .list-group .list-group-item:focus,
 body.template-login_form .social-login ul a:focus,
@@ -2876,7 +2876,7 @@ body.template-logged_out .social-login ul button:focus,
 input.focus.destructive,
 input.focus.standalone,
 #manage-rating .login a.focus,
-input.focus[type='submit'].discreet,
+input.focus.discreet[type='submit'],
 input[type='text'].text-widget.textline-field + input.focus.searchButton,
 .actionsTiles .available-tiles .list-group .focus.list-group-item,
 body.template-login_form .social-login ul a.focus,
@@ -2894,7 +2894,7 @@ body.template-logged_out .social-login ul button.focus {
 input.destructive:hover,
 input.standalone:hover,
 #manage-rating .login a:hover,
-input[type='submit'].discreet:hover,
+input.discreet:hover[type='submit'],
 input[type='text'].text-widget.textline-field + input.searchButton:hover,
 .actionsTiles .available-tiles .list-group .list-group-item:hover,
 body.template-login_form .social-login ul a:hover,
@@ -2912,7 +2912,7 @@ body.template-logged_out .social-login ul button:hover {
 input.destructive:active,
 input.standalone:active,
 #manage-rating .login a:active,
-input[type='submit'].discreet:active,
+input.discreet:active[type='submit'],
 input[type='text'].text-widget.textline-field + input.searchButton:active,
 .actionsTiles .available-tiles .list-group .list-group-item:active,
 body.template-login_form .social-login ul a:active,
@@ -2926,7 +2926,7 @@ body.template-logged_out .social-login ul button:active,
 input.active.destructive,
 input.active.standalone,
 #manage-rating .login a.active,
-input.active[type='submit'].discreet,
+input.active.discreet[type='submit'],
 input[type='text'].text-widget.textline-field + input.active.searchButton,
 .actionsTiles .available-tiles .list-group .active.list-group-item,
 body.template-login_form .social-login ul a.active,
@@ -2940,7 +2940,7 @@ body.template-logged_out .social-login ul button.active,
 .open > input.dropdown-toggle.destructive,
 .open > input.dropdown-toggle.standalone,
 #manage-rating .login .open > a.dropdown-toggle,
-.open > input.dropdown-toggle[type='submit'].discreet,
+.open > input.dropdown-toggle.discreet[type='submit'],
 .open
   > input[type='text'].text-widget.textline-field
   + input.dropdown-toggle.searchButton,
@@ -2964,7 +2964,7 @@ body.template-logged_out .social-login ul .open > button.dropdown-toggle {
 input.destructive:active:hover,
 input.standalone:active:hover,
 #manage-rating .login a:active:hover,
-input[type='submit'].discreet:active:hover,
+input.discreet:active:hover[type='submit'],
 input[type='text'].text-widget.textline-field + input.searchButton:active:hover,
 .actionsTiles .available-tiles .list-group .list-group-item:active:hover,
 body.template-login_form .social-login ul a:active:hover,
@@ -2978,7 +2978,7 @@ body.template-logged_out .social-login ul button:active:hover,
 input.destructive:active:focus,
 input.standalone:active:focus,
 #manage-rating .login a:active:focus,
-input[type='submit'].discreet:active:focus,
+input.discreet:active:focus[type='submit'],
 input[type='text'].text-widget.textline-field + input.searchButton:active:focus,
 .actionsTiles .available-tiles .list-group .list-group-item:active:focus,
 body.template-login_form .social-login ul a:active:focus,
@@ -2992,7 +2992,7 @@ body.template-logged_out .social-login ul button:active:focus,
 input.destructive:active.focus,
 input.standalone:active.focus,
 #manage-rating .login a:active.focus,
-input[type='submit'].discreet:active.focus,
+input.discreet:active.focus[type='submit'],
 input[type='text'].text-widget.textline-field + input.searchButton:active.focus,
 .actionsTiles .available-tiles .list-group .list-group-item:active.focus,
 body.template-login_form .social-login ul a:active.focus,
@@ -3006,7 +3006,7 @@ body.template-logged_out .social-login ul button:active.focus,
 input.active.destructive:hover,
 input.active.standalone:hover,
 #manage-rating .login a.active:hover,
-input.active[type='submit'].discreet:hover,
+input.active.discreet:hover[type='submit'],
 input[type='text'].text-widget.textline-field + input.active.searchButton:hover,
 .actionsTiles .available-tiles .list-group .active.list-group-item:hover,
 body.template-login_form .social-login ul a.active:hover,
@@ -3020,7 +3020,7 @@ body.template-logged_out .social-login ul button.active:hover,
 input.active.destructive:focus,
 input.active.standalone:focus,
 #manage-rating .login a.active:focus,
-input.active[type='submit'].discreet:focus,
+input.active.discreet:focus[type='submit'],
 input[type='text'].text-widget.textline-field + input.active.searchButton:focus,
 .actionsTiles .available-tiles .list-group .active.list-group-item:focus,
 body.template-login_form .social-login ul a.active:focus,
@@ -3034,7 +3034,7 @@ body.template-logged_out .social-login ul button.active:focus,
 input.active.focus.destructive,
 input.active.focus.standalone,
 #manage-rating .login a.active.focus,
-input.active.focus[type='submit'].discreet,
+input.active.focus.discreet[type='submit'],
 input[type='text'].text-widget.textline-field + input.active.focus.searchButton,
 .actionsTiles .available-tiles .list-group .active.focus.list-group-item,
 body.template-login_form .social-login ul a.active.focus,
@@ -3048,7 +3048,7 @@ body.template-logged_out .social-login ul button.active.focus,
 .open > input.dropdown-toggle.destructive:hover,
 .open > input.dropdown-toggle.standalone:hover,
 #manage-rating .login .open > a.dropdown-toggle:hover,
-.open > input.dropdown-toggle[type='submit'].discreet:hover,
+.open > input.dropdown-toggle.discreet:hover[type='submit'],
 .open
   > input[type='text'].text-widget.textline-field
   + input.dropdown-toggle.searchButton:hover,
@@ -3072,7 +3072,7 @@ body.template-logged_out .social-login ul .open > button.dropdown-toggle:hover,
 .open > input.dropdown-toggle.destructive:focus,
 .open > input.dropdown-toggle.standalone:focus,
 #manage-rating .login .open > a.dropdown-toggle:focus,
-.open > input.dropdown-toggle[type='submit'].discreet:focus,
+.open > input.dropdown-toggle.discreet:focus[type='submit'],
 .open
   > input[type='text'].text-widget.textline-field
   + input.dropdown-toggle.searchButton:focus,
@@ -3096,7 +3096,7 @@ body.template-logged_out .social-login ul .open > button.dropdown-toggle:focus,
 .open > input.dropdown-toggle.focus.destructive,
 .open > input.dropdown-toggle.focus.standalone,
 #manage-rating .login .open > a.dropdown-toggle.focus,
-.open > input.dropdown-toggle.focus[type='submit'].discreet,
+.open > input.dropdown-toggle.focus.discreet[type='submit'],
 .open
   > input[type='text'].text-widget.textline-field
   + input.dropdown-toggle.focus.searchButton,
@@ -3124,7 +3124,7 @@ body.template-logged_out .social-login ul .open > button.dropdown-toggle.focus {
 input.destructive:active,
 input.standalone:active,
 #manage-rating .login a:active,
-input[type='submit'].discreet:active,
+input.discreet:active[type='submit'],
 input[type='text'].text-widget.textline-field + input.searchButton:active,
 .actionsTiles .available-tiles .list-group .list-group-item:active,
 body.template-login_form .social-login ul a:active,
@@ -3138,7 +3138,7 @@ body.template-logged_out .social-login ul button:active,
 input.active.destructive,
 input.active.standalone,
 #manage-rating .login a.active,
-input.active[type='submit'].discreet,
+input.active.discreet[type='submit'],
 input[type='text'].text-widget.textline-field + input.active.searchButton,
 .actionsTiles .available-tiles .list-group .active.list-group-item,
 body.template-login_form .social-login ul a.active,
@@ -3152,7 +3152,7 @@ body.template-logged_out .social-login ul button.active,
 .open > input.dropdown-toggle.destructive,
 .open > input.dropdown-toggle.standalone,
 #manage-rating .login .open > a.dropdown-toggle,
-.open > input.dropdown-toggle[type='submit'].discreet,
+.open > input.dropdown-toggle.discreet[type='submit'],
 .open
   > input[type='text'].text-widget.textline-field
   + input.dropdown-toggle.searchButton,
@@ -3174,7 +3174,7 @@ body.template-logged_out .social-login ul .open > button.dropdown-toggle {
 input.disabled.destructive,
 input.disabled.standalone,
 #manage-rating .login a.disabled,
-input.disabled[type='submit'].discreet,
+input.disabled.discreet[type='submit'],
 input[type='text'].text-widget.textline-field + input.disabled.searchButton,
 .actionsTiles .available-tiles .list-group .disabled.list-group-item,
 body.template-login_form .social-login ul a.disabled,
@@ -3188,7 +3188,7 @@ body.template-logged_out .social-login ul button.disabled,
 input.disabled.destructive:hover,
 input.disabled.standalone:hover,
 #manage-rating .login a.disabled:hover,
-input.disabled[type='submit'].discreet:hover,
+input.disabled.discreet:hover[type='submit'],
 input[type='text'].text-widget.textline-field
   + input.disabled.searchButton:hover,
 .actionsTiles .available-tiles .list-group .disabled.list-group-item:hover,
@@ -3203,7 +3203,7 @@ body.template-logged_out .social-login ul button.disabled:hover,
 input.disabled.destructive:focus,
 input.disabled.standalone:focus,
 #manage-rating .login a.disabled:focus,
-input.disabled[type='submit'].discreet:focus,
+input.disabled.discreet:focus[type='submit'],
 input[type='text'].text-widget.textline-field
   + input.disabled.searchButton:focus,
 .actionsTiles .available-tiles .list-group .disabled.list-group-item:focus,
@@ -3218,7 +3218,7 @@ body.template-logged_out .social-login ul button.disabled:focus,
 input.disabled.focus.destructive,
 input.disabled.focus.standalone,
 #manage-rating .login a.disabled.focus,
-input.disabled.focus[type='submit'].discreet,
+input.disabled.focus.discreet[type='submit'],
 input[type='text'].text-widget.textline-field
   + input.disabled.focus.searchButton,
 .actionsTiles .available-tiles .list-group .disabled.focus.list-group-item,
@@ -3233,7 +3233,7 @@ body.template-logged_out .social-login ul button.disabled.focus,
 input.disabled.destructive:active,
 input.disabled.standalone:active,
 #manage-rating .login a.disabled:active,
-input.disabled[type='submit'].discreet:active,
+input.disabled.discreet:active[type='submit'],
 input[type='text'].text-widget.textline-field
   + input.disabled.searchButton:active,
 .actionsTiles .available-tiles .list-group .disabled.list-group-item:active,
@@ -3248,7 +3248,7 @@ body.template-logged_out .social-login ul button.disabled:active,
 input.disabled.active.destructive,
 input.disabled.active.standalone,
 #manage-rating .login a.disabled.active,
-input.disabled.active[type='submit'].discreet,
+input.disabled.active.discreet[type='submit'],
 input[type='text'].text-widget.textline-field
   + input.disabled.active.searchButton,
 .actionsTiles .available-tiles .list-group .disabled.active.list-group-item,
@@ -3259,13 +3259,13 @@ body.template-login_failed .social-login ul button.disabled.active,
 body.template-logged_out .social-login ul a.disabled.active,
 body.template-logged_out .social-login ul button.disabled.active,
 .btn-default[disabled],
-[disabled].context,
-input[disabled].destructive,
-input[disabled].standalone,
+.context[disabled],
+input.destructive[disabled],
+input.standalone[disabled],
 #manage-rating .login a[disabled],
-input[disabled][type='submit'].discreet,
-input[type='text'].text-widget.textline-field + input[disabled].searchButton,
-.actionsTiles .available-tiles .list-group [disabled].list-group-item,
+input.discreet[disabled][type='submit'],
+input[type='text'].text-widget.textline-field + input.searchButton[disabled],
+.actionsTiles .available-tiles .list-group .list-group-item[disabled],
 body.template-login_form .social-login ul a[disabled],
 body.template-login_form .social-login ul button[disabled],
 body.template-login_failed .social-login ul a[disabled],
@@ -3273,14 +3273,14 @@ body.template-login_failed .social-login ul button[disabled],
 body.template-logged_out .social-login ul a[disabled],
 body.template-logged_out .social-login ul button[disabled],
 .btn-default[disabled]:hover,
-[disabled].context:hover,
-input[disabled].destructive:hover,
-input[disabled].standalone:hover,
+.context[disabled]:hover,
+input.destructive[disabled]:hover,
+input.standalone[disabled]:hover,
 #manage-rating .login a[disabled]:hover,
-input[disabled][type='submit'].discreet:hover,
+input.discreet[disabled]:hover[type='submit'],
 input[type='text'].text-widget.textline-field
-  + input[disabled].searchButton:hover,
-.actionsTiles .available-tiles .list-group [disabled].list-group-item:hover,
+  + input.searchButton[disabled]:hover,
+.actionsTiles .available-tiles .list-group .list-group-item[disabled]:hover,
 body.template-login_form .social-login ul a[disabled]:hover,
 body.template-login_form .social-login ul button[disabled]:hover,
 body.template-login_failed .social-login ul a[disabled]:hover,
@@ -3288,14 +3288,14 @@ body.template-login_failed .social-login ul button[disabled]:hover,
 body.template-logged_out .social-login ul a[disabled]:hover,
 body.template-logged_out .social-login ul button[disabled]:hover,
 .btn-default[disabled]:focus,
-[disabled].context:focus,
-input[disabled].destructive:focus,
-input[disabled].standalone:focus,
+.context[disabled]:focus,
+input.destructive[disabled]:focus,
+input.standalone[disabled]:focus,
 #manage-rating .login a[disabled]:focus,
-input[disabled][type='submit'].discreet:focus,
+input.discreet[disabled]:focus[type='submit'],
 input[type='text'].text-widget.textline-field
-  + input[disabled].searchButton:focus,
-.actionsTiles .available-tiles .list-group [disabled].list-group-item:focus,
+  + input.searchButton[disabled]:focus,
+.actionsTiles .available-tiles .list-group .list-group-item[disabled]:focus,
 body.template-login_form .social-login ul a[disabled]:focus,
 body.template-login_form .social-login ul button[disabled]:focus,
 body.template-login_failed .social-login ul a[disabled]:focus,
@@ -3303,14 +3303,14 @@ body.template-login_failed .social-login ul button[disabled]:focus,
 body.template-logged_out .social-login ul a[disabled]:focus,
 body.template-logged_out .social-login ul button[disabled]:focus,
 .btn-default[disabled].focus,
-[disabled].focus.context,
-input[disabled].focus.destructive,
-input[disabled].focus.standalone,
+.context[disabled].focus,
+input.destructive[disabled].focus,
+input.standalone[disabled].focus,
 #manage-rating .login a[disabled].focus,
-input[disabled].focus[type='submit'].discreet,
+input.discreet[disabled].focus[type='submit'],
 input[type='text'].text-widget.textline-field
-  + input[disabled].focus.searchButton,
-.actionsTiles .available-tiles .list-group [disabled].focus.list-group-item,
+  + input.searchButton[disabled].focus,
+.actionsTiles .available-tiles .list-group .list-group-item[disabled].focus,
 body.template-login_form .social-login ul a[disabled].focus,
 body.template-login_form .social-login ul button[disabled].focus,
 body.template-login_failed .social-login ul a[disabled].focus,
@@ -3318,14 +3318,14 @@ body.template-login_failed .social-login ul button[disabled].focus,
 body.template-logged_out .social-login ul a[disabled].focus,
 body.template-logged_out .social-login ul button[disabled].focus,
 .btn-default[disabled]:active,
-[disabled].context:active,
-input[disabled].destructive:active,
-input[disabled].standalone:active,
+.context[disabled]:active,
+input.destructive[disabled]:active,
+input.standalone[disabled]:active,
 #manage-rating .login a[disabled]:active,
-input[disabled][type='submit'].discreet:active,
+input.discreet[disabled]:active[type='submit'],
 input[type='text'].text-widget.textline-field
-  + input[disabled].searchButton:active,
-.actionsTiles .available-tiles .list-group [disabled].list-group-item:active,
+  + input.searchButton[disabled]:active,
+.actionsTiles .available-tiles .list-group .list-group-item[disabled]:active,
 body.template-login_form .social-login ul a[disabled]:active,
 body.template-login_form .social-login ul button[disabled]:active,
 body.template-login_failed .social-login ul a[disabled]:active,
@@ -3333,14 +3333,14 @@ body.template-login_failed .social-login ul button[disabled]:active,
 body.template-logged_out .social-login ul a[disabled]:active,
 body.template-logged_out .social-login ul button[disabled]:active,
 .btn-default[disabled].active,
-[disabled].active.context,
-input[disabled].active.destructive,
-input[disabled].active.standalone,
+.context[disabled].active,
+input.destructive[disabled].active,
+input.standalone[disabled].active,
 #manage-rating .login a[disabled].active,
-input[disabled].active[type='submit'].discreet,
+input.discreet[disabled].active[type='submit'],
 input[type='text'].text-widget.textline-field
-  + input[disabled].active.searchButton,
-.actionsTiles .available-tiles .list-group [disabled].active.list-group-item,
+  + input.searchButton[disabled].active,
+.actionsTiles .available-tiles .list-group .list-group-item[disabled].active,
 body.template-login_form .social-login ul a[disabled].active,
 body.template-login_form .social-login ul button[disabled].active,
 body.template-login_failed .social-login ul a[disabled].active,
@@ -3353,7 +3353,7 @@ fieldset[disabled] input.destructive,
 fieldset[disabled] input.standalone,
 fieldset[disabled] #manage-rating .login a,
 #manage-rating .login fieldset[disabled] a,
-fieldset[disabled] input[type='submit'].discreet,
+fieldset[disabled] input.discreet[type='submit'],
 fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.searchButton,
@@ -3377,7 +3377,7 @@ fieldset[disabled] input.destructive:hover,
 fieldset[disabled] input.standalone:hover,
 fieldset[disabled] #manage-rating .login a:hover,
 #manage-rating .login fieldset[disabled] a:hover,
-fieldset[disabled] input[type='submit'].discreet:hover,
+fieldset[disabled] input.discreet:hover[type='submit'],
 fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.searchButton:hover,
@@ -3409,7 +3409,7 @@ fieldset[disabled] input.destructive:focus,
 fieldset[disabled] input.standalone:focus,
 fieldset[disabled] #manage-rating .login a:focus,
 #manage-rating .login fieldset[disabled] a:focus,
-fieldset[disabled] input[type='submit'].discreet:focus,
+fieldset[disabled] input.discreet:focus[type='submit'],
 fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.searchButton:focus,
@@ -3441,7 +3441,7 @@ fieldset[disabled] input.focus.destructive,
 fieldset[disabled] input.focus.standalone,
 fieldset[disabled] #manage-rating .login a.focus,
 #manage-rating .login fieldset[disabled] a.focus,
-fieldset[disabled] input.focus[type='submit'].discreet,
+fieldset[disabled] input.focus.discreet[type='submit'],
 fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.focus.searchButton,
@@ -3473,7 +3473,7 @@ fieldset[disabled] input.destructive:active,
 fieldset[disabled] input.standalone:active,
 fieldset[disabled] #manage-rating .login a:active,
 #manage-rating .login fieldset[disabled] a:active,
-fieldset[disabled] input[type='submit'].discreet:active,
+fieldset[disabled] input.discreet:active[type='submit'],
 fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.searchButton:active,
@@ -3505,7 +3505,7 @@ fieldset[disabled] input.active.destructive,
 fieldset[disabled] input.active.standalone,
 fieldset[disabled] #manage-rating .login a.active,
 #manage-rating .login fieldset[disabled] a.active,
-fieldset[disabled] input.active[type='submit'].discreet,
+fieldset[disabled] input.active.discreet[type='submit'],
 fieldset[disabled]
   input[type='text'].text-widget.textline-field
   + input.active.searchButton,
@@ -3539,7 +3539,7 @@ body.template-logged_out .social-login ul fieldset[disabled] button.active {
 input.destructive .badge,
 input.standalone .badge,
 #manage-rating .login a .badge,
-input[type='submit'].discreet .badge,
+input.discreet[type='submit'] .badge,
 input[type='text'].text-widget.textline-field + input.searchButton .badge,
 .actionsTiles .available-tiles .list-group .list-group-item .badge,
 body.template-login_form .social-login ul a .badge,
@@ -3559,7 +3559,7 @@ input[type='button'],
   border-color: #931701;
 }
 .btn-primary:focus,
-input[type='button']:focus,
+input:focus[type='button'],
 .plone-btn-primary:focus,
 .btn-primary.focus,
 input.focus[type='button'],
@@ -3569,14 +3569,14 @@ input.focus[type='button'],
   border-color: #140300;
 }
 .btn-primary:hover,
-input[type='button']:hover,
+input:hover[type='button'],
 .plone-btn-primary:hover {
   color: #fff;
   background-color: #791301;
   border-color: #560d00;
 }
 .btn-primary:active,
-input[type='button']:active,
+input:active[type='button'],
 .plone-btn-primary:active,
 .btn-primary.active,
 input.active[type='button'],
@@ -3589,28 +3589,28 @@ input.active[type='button'],
   border-color: #560d00;
 }
 .btn-primary:active:hover,
-input[type='button']:active:hover,
+input:active:hover[type='button'],
 .plone-btn-primary:active:hover,
 .btn-primary:active:focus,
-input[type='button']:active:focus,
+input:active:focus[type='button'],
 .plone-btn-primary:active:focus,
 .btn-primary:active.focus,
-input[type='button']:active.focus,
+input:active.focus[type='button'],
 .plone-btn-primary:active.focus,
 .btn-primary.active:hover,
-input.active[type='button']:hover,
+input.active:hover[type='button'],
 .active.plone-btn-primary:hover,
 .btn-primary.active:focus,
-input.active[type='button']:focus,
+input.active:focus[type='button'],
 .active.plone-btn-primary:focus,
 .btn-primary.active.focus,
 input.active.focus[type='button'],
 .active.focus.plone-btn-primary,
 .open > .btn-primary.dropdown-toggle:hover,
-.open > input.dropdown-toggle[type='button']:hover,
+.open > input.dropdown-toggle:hover[type='button'],
 .open > .dropdown-toggle.plone-btn-primary:hover,
 .open > .btn-primary.dropdown-toggle:focus,
-.open > input.dropdown-toggle[type='button']:focus,
+.open > input.dropdown-toggle:focus[type='button'],
 .open > .dropdown-toggle.plone-btn-primary:focus,
 .open > .btn-primary.dropdown-toggle.focus,
 .open > input.dropdown-toggle.focus[type='button'],
@@ -3620,7 +3620,7 @@ input.active.focus[type='button'],
   border-color: #140300;
 }
 .btn-primary:active,
-input[type='button']:active,
+input:active[type='button'],
 .plone-btn-primary:active,
 .btn-primary.active,
 input.active[type='button'],
@@ -3634,52 +3634,52 @@ input.active[type='button'],
 input.disabled[type='button'],
 .disabled.plone-btn-primary,
 .btn-primary.disabled:hover,
-input.disabled[type='button']:hover,
+input.disabled:hover[type='button'],
 .disabled.plone-btn-primary:hover,
 .btn-primary.disabled:focus,
-input.disabled[type='button']:focus,
+input.disabled:focus[type='button'],
 .disabled.plone-btn-primary:focus,
 .btn-primary.disabled.focus,
 input.disabled.focus[type='button'],
 .disabled.focus.plone-btn-primary,
 .btn-primary.disabled:active,
-input.disabled[type='button']:active,
+input.disabled:active[type='button'],
 .disabled.plone-btn-primary:active,
 .btn-primary.disabled.active,
 input.disabled.active[type='button'],
 .disabled.active.plone-btn-primary,
 .btn-primary[disabled],
 input[disabled][type='button'],
-[disabled].plone-btn-primary,
+.plone-btn-primary[disabled],
 .btn-primary[disabled]:hover,
-input[disabled][type='button']:hover,
-[disabled].plone-btn-primary:hover,
+input[disabled]:hover[type='button'],
+.plone-btn-primary[disabled]:hover,
 .btn-primary[disabled]:focus,
-input[disabled][type='button']:focus,
-[disabled].plone-btn-primary:focus,
+input[disabled]:focus[type='button'],
+.plone-btn-primary[disabled]:focus,
 .btn-primary[disabled].focus,
 input[disabled].focus[type='button'],
-[disabled].focus.plone-btn-primary,
+.plone-btn-primary[disabled].focus,
 .btn-primary[disabled]:active,
-input[disabled][type='button']:active,
-[disabled].plone-btn-primary:active,
+input[disabled]:active[type='button'],
+.plone-btn-primary[disabled]:active,
 .btn-primary[disabled].active,
 input[disabled].active[type='button'],
-[disabled].active.plone-btn-primary,
+.plone-btn-primary[disabled].active,
 fieldset[disabled] .btn-primary,
 fieldset[disabled] input[type='button'],
 fieldset[disabled] .plone-btn-primary,
 fieldset[disabled] .btn-primary:hover,
-fieldset[disabled] input[type='button']:hover,
+fieldset[disabled] input:hover[type='button'],
 fieldset[disabled] .plone-btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
-fieldset[disabled] input[type='button']:focus,
+fieldset[disabled] input:focus[type='button'],
 fieldset[disabled] .plone-btn-primary:focus,
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] input.focus[type='button'],
 fieldset[disabled] .focus.plone-btn-primary,
 fieldset[disabled] .btn-primary:active,
-fieldset[disabled] input[type='button']:active,
+fieldset[disabled] input:active[type='button'],
 fieldset[disabled] .plone-btn-primary:active,
 fieldset[disabled] .btn-primary.active,
 fieldset[disabled] input.active[type='button'],
@@ -3703,10 +3703,10 @@ input.context[name='form.actions.save'],
   border-color: #4cae4c;
 }
 .btn-success:focus,
-input[type='submit']:focus,
-input.context[name='form.button.save']:focus,
-input.context[name='form.actions.save']:focus,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:focus,
+input:focus[type='submit'],
+input.context:focus[name='form.button.save'],
+input.context:focus[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input:focus[type='submit'],
 .btn-success.focus,
 input.focus[type='submit'],
 input.focus.context[name='form.button.save'],
@@ -3717,19 +3717,19 @@ input.focus.context[name='form.actions.save'],
   border-color: #255625;
 }
 .btn-success:hover,
-input[type='submit']:hover,
-input.context[name='form.button.save']:hover,
-input.context[name='form.actions.save']:hover,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:hover {
+input:hover[type='submit'],
+input.context:hover[name='form.button.save'],
+input.context:hover[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input:hover[type='submit'] {
   color: #fff;
   background-color: #449d44;
   border-color: #398439;
 }
 .btn-success:active,
-input[type='submit']:active,
-input.context[name='form.button.save']:active,
-input.context[name='form.actions.save']:active,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:active,
+input:active[type='submit'],
+input.context:active[name='form.button.save'],
+input.context:active[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input:active[type='submit'],
 .btn-success.active,
 input.active[type='submit'],
 input.active.context[name='form.button.save'],
@@ -3748,51 +3748,51 @@ input.active.context[name='form.actions.save'],
   border-color: #398439;
 }
 .btn-success:active:hover,
-input[type='submit']:active:hover,
-input.context[name='form.button.save']:active:hover,
-input.context[name='form.actions.save']:active:hover,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:active:hover,
+input:active:hover[type='submit'],
+input.context:active:hover[name='form.button.save'],
+input.context:active:hover[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input:active:hover[type='submit'],
 .btn-success:active:focus,
-input[type='submit']:active:focus,
-input.context[name='form.button.save']:active:focus,
-input.context[name='form.actions.save']:active:focus,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:active:focus,
+input:active:focus[type='submit'],
+input.context:active:focus[name='form.button.save'],
+input.context:active:focus[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input:active:focus[type='submit'],
 .btn-success:active.focus,
-input[type='submit']:active.focus,
-input.context[name='form.button.save']:active.focus,
-input.context[name='form.actions.save']:active.focus,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:active.focus,
+input:active.focus[type='submit'],
+input.context:active.focus[name='form.button.save'],
+input.context:active.focus[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input:active.focus[type='submit'],
 .btn-success.active:hover,
-input.active[type='submit']:hover,
-input.active.context[name='form.button.save']:hover,
-input.active.context[name='form.actions.save']:hover,
-#content.dialog-wrapper .mceActionPanel input.active[type='submit']:hover,
+input.active:hover[type='submit'],
+input.active.context:hover[name='form.button.save'],
+input.active.context:hover[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input.active:hover[type='submit'],
 .btn-success.active:focus,
-input.active[type='submit']:focus,
-input.active.context[name='form.button.save']:focus,
-input.active.context[name='form.actions.save']:focus,
-#content.dialog-wrapper .mceActionPanel input.active[type='submit']:focus,
+input.active:focus[type='submit'],
+input.active.context:focus[name='form.button.save'],
+input.active.context:focus[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input.active:focus[type='submit'],
 .btn-success.active.focus,
 input.active.focus[type='submit'],
 input.active.focus.context[name='form.button.save'],
 input.active.focus.context[name='form.actions.save'],
 #content.dialog-wrapper .mceActionPanel input.active.focus[type='submit'],
 .open > .btn-success.dropdown-toggle:hover,
-.open > input.dropdown-toggle[type='submit']:hover,
-.open > input.dropdown-toggle.context[name='form.button.save']:hover,
-.open > input.dropdown-toggle.context[name='form.actions.save']:hover,
+.open > input.dropdown-toggle:hover[type='submit'],
+.open > input.dropdown-toggle.context:hover[name='form.button.save'],
+.open > input.dropdown-toggle.context:hover[name='form.actions.save'],
 #content.dialog-wrapper
   .mceActionPanel
   .open
-  > input.dropdown-toggle[type='submit']:hover,
+  > input.dropdown-toggle:hover[type='submit'],
 .open > .btn-success.dropdown-toggle:focus,
-.open > input.dropdown-toggle[type='submit']:focus,
-.open > input.dropdown-toggle.context[name='form.button.save']:focus,
-.open > input.dropdown-toggle.context[name='form.actions.save']:focus,
+.open > input.dropdown-toggle:focus[type='submit'],
+.open > input.dropdown-toggle.context:focus[name='form.button.save'],
+.open > input.dropdown-toggle.context:focus[name='form.actions.save'],
 #content.dialog-wrapper
   .mceActionPanel
   .open
-  > input.dropdown-toggle[type='submit']:focus,
+  > input.dropdown-toggle:focus[type='submit'],
 .open > .btn-success.dropdown-toggle.focus,
 .open > input.dropdown-toggle.focus[type='submit'],
 .open > input.dropdown-toggle.focus.context[name='form.button.save'],
@@ -3806,10 +3806,10 @@ input.active.focus.context[name='form.actions.save'],
   border-color: #255625;
 }
 .btn-success:active,
-input[type='submit']:active,
-input.context[name='form.button.save']:active,
-input.context[name='form.actions.save']:active,
-#content.dialog-wrapper .mceActionPanel input[type='submit']:active,
+input:active[type='submit'],
+input.context:active[name='form.button.save'],
+input.context:active[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input:active[type='submit'],
 .btn-success.active,
 input.active[type='submit'],
 input.active.context[name='form.button.save'],
@@ -3831,25 +3831,25 @@ input.disabled.context[name='form.button.save'],
 input.disabled.context[name='form.actions.save'],
 #content.dialog-wrapper .mceActionPanel input.disabled[type='submit'],
 .btn-success.disabled:hover,
-input.disabled[type='submit']:hover,
-input.disabled.context[name='form.button.save']:hover,
-input.disabled.context[name='form.actions.save']:hover,
-#content.dialog-wrapper .mceActionPanel input.disabled[type='submit']:hover,
+input.disabled:hover[type='submit'],
+input.disabled.context:hover[name='form.button.save'],
+input.disabled.context:hover[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input.disabled:hover[type='submit'],
 .btn-success.disabled:focus,
-input.disabled[type='submit']:focus,
-input.disabled.context[name='form.button.save']:focus,
-input.disabled.context[name='form.actions.save']:focus,
-#content.dialog-wrapper .mceActionPanel input.disabled[type='submit']:focus,
+input.disabled:focus[type='submit'],
+input.disabled.context:focus[name='form.button.save'],
+input.disabled.context:focus[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input.disabled:focus[type='submit'],
 .btn-success.disabled.focus,
 input.disabled.focus[type='submit'],
 input.disabled.focus.context[name='form.button.save'],
 input.disabled.focus.context[name='form.actions.save'],
 #content.dialog-wrapper .mceActionPanel input.disabled.focus[type='submit'],
 .btn-success.disabled:active,
-input.disabled[type='submit']:active,
-input.disabled.context[name='form.button.save']:active,
-input.disabled.context[name='form.actions.save']:active,
-#content.dialog-wrapper .mceActionPanel input.disabled[type='submit']:active,
+input.disabled:active[type='submit'],
+input.disabled.context:active[name='form.button.save'],
+input.disabled.context:active[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input.disabled:active[type='submit'],
 .btn-success.disabled.active,
 input.disabled.active[type='submit'],
 input.disabled.active.context[name='form.button.save'],
@@ -3857,33 +3857,33 @@ input.disabled.active.context[name='form.actions.save'],
 #content.dialog-wrapper .mceActionPanel input.disabled.active[type='submit'],
 .btn-success[disabled],
 input[disabled][type='submit'],
-input[disabled].context[name='form.button.save'],
-input[disabled].context[name='form.actions.save'],
+input.context[disabled][name='form.button.save'],
+input.context[disabled][name='form.actions.save'],
 #content.dialog-wrapper .mceActionPanel input[disabled][type='submit'],
 .btn-success[disabled]:hover,
-input[disabled][type='submit']:hover,
-input[disabled].context[name='form.button.save']:hover,
-input[disabled].context[name='form.actions.save']:hover,
-#content.dialog-wrapper .mceActionPanel input[disabled][type='submit']:hover,
+input[disabled]:hover[type='submit'],
+input.context[disabled]:hover[name='form.button.save'],
+input.context[disabled]:hover[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input[disabled]:hover[type='submit'],
 .btn-success[disabled]:focus,
-input[disabled][type='submit']:focus,
-input[disabled].context[name='form.button.save']:focus,
-input[disabled].context[name='form.actions.save']:focus,
-#content.dialog-wrapper .mceActionPanel input[disabled][type='submit']:focus,
+input[disabled]:focus[type='submit'],
+input.context[disabled]:focus[name='form.button.save'],
+input.context[disabled]:focus[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input[disabled]:focus[type='submit'],
 .btn-success[disabled].focus,
 input[disabled].focus[type='submit'],
-input[disabled].focus.context[name='form.button.save'],
-input[disabled].focus.context[name='form.actions.save'],
+input.context[disabled].focus[name='form.button.save'],
+input.context[disabled].focus[name='form.actions.save'],
 #content.dialog-wrapper .mceActionPanel input[disabled].focus[type='submit'],
 .btn-success[disabled]:active,
-input[disabled][type='submit']:active,
-input[disabled].context[name='form.button.save']:active,
-input[disabled].context[name='form.actions.save']:active,
-#content.dialog-wrapper .mceActionPanel input[disabled][type='submit']:active,
+input[disabled]:active[type='submit'],
+input.context[disabled]:active[name='form.button.save'],
+input.context[disabled]:active[name='form.actions.save'],
+#content.dialog-wrapper .mceActionPanel input[disabled]:active[type='submit'],
 .btn-success[disabled].active,
 input[disabled].active[type='submit'],
-input[disabled].active.context[name='form.button.save'],
-input[disabled].active.context[name='form.actions.save'],
+input.context[disabled].active[name='form.button.save'],
+input.context[disabled].active[name='form.actions.save'],
 #content.dialog-wrapper .mceActionPanel input[disabled].active[type='submit'],
 fieldset[disabled] .btn-success,
 fieldset[disabled] input[type='submit'],
@@ -3892,29 +3892,29 @@ fieldset[disabled] input.context[name='form.actions.save'],
 fieldset[disabled] #content.dialog-wrapper .mceActionPanel input[type='submit'],
 #content.dialog-wrapper .mceActionPanel fieldset[disabled] input[type='submit'],
 fieldset[disabled] .btn-success:hover,
-fieldset[disabled] input[type='submit']:hover,
-fieldset[disabled] input.context[name='form.button.save']:hover,
-fieldset[disabled] input.context[name='form.actions.save']:hover,
+fieldset[disabled] input:hover[type='submit'],
+fieldset[disabled] input.context:hover[name='form.button.save'],
+fieldset[disabled] input.context:hover[name='form.actions.save'],
 fieldset[disabled]
   #content.dialog-wrapper
   .mceActionPanel
-  input[type='submit']:hover,
+  input:hover[type='submit'],
 #content.dialog-wrapper
   .mceActionPanel
   fieldset[disabled]
-  input[type='submit']:hover,
+  input:hover[type='submit'],
 fieldset[disabled] .btn-success:focus,
-fieldset[disabled] input[type='submit']:focus,
-fieldset[disabled] input.context[name='form.button.save']:focus,
-fieldset[disabled] input.context[name='form.actions.save']:focus,
+fieldset[disabled] input:focus[type='submit'],
+fieldset[disabled] input.context:focus[name='form.button.save'],
+fieldset[disabled] input.context:focus[name='form.actions.save'],
 fieldset[disabled]
   #content.dialog-wrapper
   .mceActionPanel
-  input[type='submit']:focus,
+  input:focus[type='submit'],
 #content.dialog-wrapper
   .mceActionPanel
   fieldset[disabled]
-  input[type='submit']:focus,
+  input:focus[type='submit'],
 fieldset[disabled] .btn-success.focus,
 fieldset[disabled] input.focus[type='submit'],
 fieldset[disabled] input.focus.context[name='form.button.save'],
@@ -3928,17 +3928,17 @@ fieldset[disabled]
   fieldset[disabled]
   input.focus[type='submit'],
 fieldset[disabled] .btn-success:active,
-fieldset[disabled] input[type='submit']:active,
-fieldset[disabled] input.context[name='form.button.save']:active,
-fieldset[disabled] input.context[name='form.actions.save']:active,
+fieldset[disabled] input:active[type='submit'],
+fieldset[disabled] input.context:active[name='form.button.save'],
+fieldset[disabled] input.context:active[name='form.actions.save'],
 fieldset[disabled]
   #content.dialog-wrapper
   .mceActionPanel
-  input[type='submit']:active,
+  input:active[type='submit'],
 #content.dialog-wrapper
   .mceActionPanel
   fieldset[disabled]
-  input[type='submit']:active,
+  input:active[type='submit'],
 fieldset[disabled] .btn-success.active,
 fieldset[disabled] input.active[type='submit'],
 fieldset[disabled] input.active.context[name='form.button.save'],
@@ -4135,41 +4135,41 @@ input.disabled.active.standalone,
 .portalMessage.info span a.disabled.active,
 .actionsTiles a.disabled.active.plone-btn,
 .btn-info[disabled],
-input[disabled].standalone,
+input.standalone[disabled],
 #manage-rating .login a[disabled],
-#content a[disabled].link-parent,
+#content a.link-parent[disabled],
 .portalMessage.info span a[disabled],
-.actionsTiles a[disabled].plone-btn,
+.actionsTiles a.plone-btn[disabled],
 .btn-info[disabled]:hover,
-input[disabled].standalone:hover,
+input.standalone[disabled]:hover,
 #manage-rating .login a[disabled]:hover,
-#content a[disabled].link-parent:hover,
+#content a.link-parent[disabled]:hover,
 .portalMessage.info span a[disabled]:hover,
-.actionsTiles a[disabled].plone-btn:hover,
+.actionsTiles a.plone-btn[disabled]:hover,
 .btn-info[disabled]:focus,
-input[disabled].standalone:focus,
+input.standalone[disabled]:focus,
 #manage-rating .login a[disabled]:focus,
-#content a[disabled].link-parent:focus,
+#content a.link-parent[disabled]:focus,
 .portalMessage.info span a[disabled]:focus,
-.actionsTiles a[disabled].plone-btn:focus,
+.actionsTiles a.plone-btn[disabled]:focus,
 .btn-info[disabled].focus,
-input[disabled].focus.standalone,
+input.standalone[disabled].focus,
 #manage-rating .login a[disabled].focus,
-#content a[disabled].focus.link-parent,
+#content a.link-parent[disabled].focus,
 .portalMessage.info span a[disabled].focus,
-.actionsTiles a[disabled].focus.plone-btn,
+.actionsTiles a.plone-btn[disabled].focus,
 .btn-info[disabled]:active,
-input[disabled].standalone:active,
+input.standalone[disabled]:active,
 #manage-rating .login a[disabled]:active,
-#content a[disabled].link-parent:active,
+#content a.link-parent[disabled]:active,
 .portalMessage.info span a[disabled]:active,
-.actionsTiles a[disabled].plone-btn:active,
+.actionsTiles a.plone-btn[disabled]:active,
 .btn-info[disabled].active,
-input[disabled].active.standalone,
+input.standalone[disabled].active,
 #manage-rating .login a[disabled].active,
-#content a[disabled].active.link-parent,
+#content a.link-parent[disabled].active,
 .portalMessage.info span a[disabled].active,
-.actionsTiles a[disabled].active.plone-btn,
+.actionsTiles a.plone-btn[disabled].active,
 fieldset[disabled] .btn-info,
 fieldset[disabled] input.standalone,
 fieldset[disabled] #manage-rating .login a,
@@ -4381,17 +4381,17 @@ input.disabled.destructive:active,
 .btn-danger.disabled.active,
 input.disabled.active.destructive,
 .btn-danger[disabled],
-input[disabled].destructive,
+input.destructive[disabled],
 .btn-danger[disabled]:hover,
-input[disabled].destructive:hover,
+input.destructive[disabled]:hover,
 .btn-danger[disabled]:focus,
-input[disabled].destructive:focus,
+input.destructive[disabled]:focus,
 .btn-danger[disabled].focus,
-input[disabled].focus.destructive,
+input.destructive[disabled].focus,
 .btn-danger[disabled]:active,
-input[disabled].destructive:active,
+input.destructive[disabled]:active,
 .btn-danger[disabled].active,
-input[disabled].active.destructive,
+input.destructive[disabled].active,
 fieldset[disabled] .btn-danger,
 fieldset[disabled] input.destructive,
 fieldset[disabled] .btn-danger:hover,
@@ -4425,7 +4425,7 @@ input.destructive .badge {
 .btn-link.active,
 #content .active#uponelevel.link-parent,
 .btn-link[disabled],
-#content [disabled]#uponelevel.link-parent,
+#content #uponelevel.link-parent[disabled],
 fieldset[disabled] .btn-link,
 fieldset[disabled] #content #uponelevel.link-parent,
 #content fieldset[disabled] #uponelevel.link-parent {
@@ -4452,9 +4452,9 @@ fieldset[disabled] #content #uponelevel.link-parent,
   background-color: transparent;
 }
 .btn-link[disabled]:hover,
-#content [disabled]#uponelevel.link-parent:hover,
+#content #uponelevel.link-parent[disabled]:hover,
 .btn-link[disabled]:focus,
-#content [disabled]#uponelevel.link-parent:focus,
+#content #uponelevel.link-parent[disabled]:focus,
 fieldset[disabled] .btn-link:hover,
 fieldset[disabled] #content #uponelevel.link-parent:hover,
 #content fieldset[disabled] #uponelevel.link-parent:hover,
@@ -4478,7 +4478,7 @@ input[type='text'].text-widget.textline-field + input.searchButton {
   border-radius: 3px;
 }
 .btn-xs,
-input[type='submit'].discreet,
+input.discreet[type='submit'],
 .widget fieldset input.context,
 #content-history input.standalone[type='submit'],
 #content-history #manage-rating .login a[type='submit'],
@@ -5221,7 +5221,7 @@ input.label:empty {
 }
 .calendar table thead .title {
   border: 0;
-  background: transparent none !important;
+  background: rgba(0, 0, 0, 0) none !important;
 }
 #formfield-form-image_ref.field,
 #formfield-form-internal_url.field {
@@ -5281,10 +5281,10 @@ input.label:empty {
   font-size: 14px;
 }
 #content .fc .btn-group > input.btn.context:focus,
-#content .fc .btn-group > input.context[type='submit']:focus,
-#content .fc .btn-group > input.context[name='form.button.save']:focus,
-#content .fc .btn-group > input.context[name='form.actions.save']:focus,
-#content .fc .btn-group > input.context[type='button']:focus,
+#content .fc .btn-group > input.context:focus[type='submit'],
+#content .fc .btn-group > input.context:focus[name='form.button.save'],
+#content .fc .btn-group > input.context:focus[name='form.actions.save'],
+#content .fc .btn-group > input.context:focus[type='button'],
 #content .fc .btn-group > input.context:focus,
 #content .fc .btn-group > input.context.destructive:focus,
 #content .fc .btn-group > input.context.standalone:focus,
@@ -5294,14 +5294,14 @@ input.label:empty {
   .fc
   #content-history
   .btn-group
-  > input.context.standalone[type='submit']:focus,
+  > input.context.standalone:focus[type='submit'],
 #content
   .fc
   #manage-rating
   .login
   #content-history
   .btn-group
-  > a.context[type='submit']:focus,
+  > a.context:focus[type='submit'],
 #content
   .fc
   .btn-group
@@ -5311,12 +5311,12 @@ input.label:empty {
   .fc
   .mceActionPanel
   .btn-group
-  > input.context[type='submit']:focus,
+  > input.context:focus[type='submit'],
 #content .fc .btn-group > input.btn.context:hover,
-#content .fc .btn-group > input.context[type='submit']:hover,
-#content .fc .btn-group > input.context[name='form.button.save']:hover,
-#content .fc .btn-group > input.context[name='form.actions.save']:hover,
-#content .fc .btn-group > input.context[type='button']:hover,
+#content .fc .btn-group > input.context:hover[type='submit'],
+#content .fc .btn-group > input.context:hover[name='form.button.save'],
+#content .fc .btn-group > input.context:hover[name='form.actions.save'],
+#content .fc .btn-group > input.context:hover[type='button'],
 #content .fc .btn-group > input.context:hover,
 #content .fc .btn-group > input.context.destructive:hover,
 #content .fc .btn-group > input.context.standalone:hover,
@@ -5326,14 +5326,14 @@ input.label:empty {
   .fc
   #content-history
   .btn-group
-  > input.context.standalone[type='submit']:hover,
+  > input.context.standalone:hover[type='submit'],
 #content
   .fc
   #manage-rating
   .login
   #content-history
   .btn-group
-  > a.context[type='submit']:hover,
+  > a.context:hover[type='submit'],
 #content
   .fc
   .btn-group
@@ -5343,7 +5343,7 @@ input.label:empty {
   .fc
   .mceActionPanel
   .btn-group
-  > input.context[type='submit']:hover {
+  > input.context:hover[type='submit'] {
   color: #1c2024 !important;
 }
 #fileupload .span7 {
@@ -5867,10 +5867,10 @@ table .listing tr.odd th {
   border-color: #fff;
 }
 table .listing tbody tr.odd {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
 }
 table .listing tbody tr.odd td {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
 }
 table .listing tbody tr.odd.selected td {
   background-color: #ffa;
@@ -6127,7 +6127,7 @@ input.inputLabelActive {
 }
 #portal-footer {
   color: #1c2024;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   line-height: inherit;
 }
 #portal-colophon a {
@@ -6228,7 +6228,7 @@ a {
 }
 #search-filter .field .optionsToggle {
   border: 0;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   padding: 0;
 }
 #search-filter .field .optionsToggle label {
@@ -6247,13 +6247,6 @@ a {
     color-stop(33%, #0e7996),
     color-stop(66%, #036b87),
     to(#0e8480)
-  );
-  background: -webkit-linear-gradient(
-    left,
-    #1ab7b1 0,
-    #0e7996 33%,
-    #036b87 66%,
-    #0e8480 100%
   );
   background: linear-gradient(
     to right,
@@ -6334,7 +6327,7 @@ a.buttonService:focus,
   #mail_password
   .formControls
   input.context:focus,
-.template-contact-info #content form .formControls input[type='submit']:focus,
+.template-contact-info #content form .formControls input:focus[type='submit'],
 a.buttonService:hover,
 #content a.buttonService:hover,
 #content a .buttonService:hover,
@@ -6343,7 +6336,7 @@ a.buttonService:hover,
   #mail_password
   .formControls
   input.context:hover,
-.template-contact-info #content form .formControls input[type='submit']:hover {
+.template-contact-info #content form .formControls input:hover[type='submit'] {
   color: #ac1b01;
   border-color: #ac1b01;
 }
@@ -6381,7 +6374,7 @@ a.buttonService:focus,
   #mail_password
   .formControls
   input.context:focus,
-.template-contact-info #content form .formControls input[type='submit']:focus,
+.template-contact-info #content form .formControls input:focus[type='submit'],
 a.buttonService:hover,
 #content a.buttonService:hover,
 #content a .buttonService:hover,
@@ -6390,7 +6383,7 @@ a.buttonService:hover,
   #mail_password
   .formControls
   input.context:hover,
-.template-contact-info #content form .formControls input[type='submit']:hover {
+.template-contact-info #content form .formControls input:hover[type='submit'] {
   background-color: #1c2024;
   border-color: #1c2024;
   color: #fff;
@@ -6813,7 +6806,7 @@ body#content.mceContentBody a:hover {
   cursor: default;
 }
 .pattern-relateditems-dropdown .select2-results .select2-highlighted {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 .pattern-relateditems-dropdown .select2-results .pattern-relateditems-result {
   padding: 4px 30px 6px 26px;
@@ -6852,7 +6845,7 @@ body#content.mceContentBody a:hover {
   color: #ac1b01;
 }
 .pattern-relateditems-dropdown .select2-results .pattern-relateditems-active {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 .pattern-relateditems-dropdown
   .select2-results
@@ -7369,7 +7362,7 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
-  flex: 1 1 0%;
+  flex: 1 1;
 }
 #header-banner .header-banner-owner,
 #header-banner .header-banner-second-link {
@@ -8694,7 +8687,7 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   -webkit-box-flex: 2;
   -webkit-flex: 2 0 0;
   -ms-flex: 2 0 0px;
-  flex: 2 0 0%;
+  flex: 2 0;
 }
 #portal-mainnavigation .submenuDynamicWrapper .dynamicSectionLabel {
   text-transform: uppercase;
@@ -10308,7 +10301,7 @@ body.template-homepage_view #breadcrumbs {
   -webkit-box-flex: 0;
   -webkit-flex: 0;
   -ms-flex: 0;
-  flex: 0 1 0%;
+  flex: 0 1;
 }
 .tile-collection.events-collection
   .collectionItemWrapper
@@ -10412,7 +10405,7 @@ body.template-homepage_view #breadcrumbs {
   -webkit-box-flex: 0;
   -webkit-flex: 0;
   -ms-flex: 0;
-  flex: 0 1 0%;
+  flex: 0 1;
 }
 @media (max-width: 991px) {
   .tile-collection.news-two-rows-collection .collectionItem {
@@ -11227,7 +11220,7 @@ h3.tileTitle,
   -webkit-box-flex: 0;
   -webkit-flex: 0;
   -ms-flex: 0;
-  flex: 0 1 0%;
+  flex: 0 1;
 }
 .tile-collection.paired-collection
   .collectionItemWrapper
@@ -13803,7 +13796,7 @@ body.template-imagedevent_view #portal-column-one {
 body #portal-column-two > *:not(.share) {
   font-size: 16px;
 }
-#content-core pre {
+#content pre {
   background: rgba(40, 54, 64, 0.7);
   color: #fff;
   font-size: 1em;
@@ -13813,12 +13806,12 @@ body #portal-column-two > *:not(.share) {
   line-height: normal;
   border-radius: 5px;
 }
-#content-core pre a {
+#content pre a {
   color: #fff !important;
   border-color: #fff !important;
 }
-#content-core pre a:hover,
-#content-core pre a:focus {
+#content pre a:hover,
+#content pre a:focus {
   color: #d9d9d9 !important;
   border-color: #d9d9d9 !important;
 }
