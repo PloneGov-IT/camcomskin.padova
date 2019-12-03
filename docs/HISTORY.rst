@@ -10,6 +10,8 @@ Changelog
   [cekk]
 - Add link to auto-registration with captcha.
   [cekk]
+- Fix styles for preformatted text
+  [nzambello]
 
 2.1.0 (2019-04-09)
 ------------------
