@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.0 (unreleased)
+2.2.0 (2020-01-10)
 ------------------
 
 - Move text under description in rating_topic_view
