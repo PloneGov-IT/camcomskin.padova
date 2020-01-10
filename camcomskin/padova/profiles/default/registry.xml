@@ -6,4 +6,7 @@
       <element>camcomskin.tiles.prenotazioni</element>
     </value>
   </record>
+  
+  <records interface="camcomskin.padova.interfaces.IPartecipazioneAttivaSettings" prefix="partecipazione.attiva" />
+
 </registry>

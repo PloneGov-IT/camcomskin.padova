@@ -39,7 +39,7 @@
               <tal:block repeat="item python:batch">
                 <div tal:define="item_type python:item.portal_type; item_class python:'topic-' + normalizeString(item_type);
                                  item_obj item/getObject;
-                                 item_comments python:view.get_comments(item_obj);
+                                 item_comments_count python:view.get_comments_count(item_obj);
                                  item_rating python:view.get_average_rating(item_obj);"
                       tal:attributes="class string:cciaaTopicItem $item_class">
 					         <div class="dataNews discreet" tal:content="python:toLocalizedTime(item.Date())">27/05/2012</div>
@@ -49,16 +49,29 @@
                     </h4>
                     <p tal:content="item/Description">Elemento</p>
                     <div class="comments-ratings">
-                      <div class="comments" tal:condition="item_comments">
+                      <div class="comments" tal:condition="item_comments_count">
                           <i class="fa fa-comments"></i>
-                          <tal:number content="item_comments" />
-                          <span tal:condition="python:item_comments == 1">Commento</span>
-                          <span tal:condition="python:item_comments != 1">Commenti</span>
+                          <tal:number content="item_comments_count" />
+                          <span tal:condition="python:item_comments_count == 1">Commento</span>
+                          <span tal:condition="python:item_comments_count != 1">Commenti</span>
                       </div>
-                      <span class="dash" tal:condition="python: item_comments and item_rating">&mdash;</span>
+                      <span class="dash" tal:condition="python: item_comments_count and item_rating">&mdash;</span>
                       <div class="ratings" tal:condition="item_rating">
                         <div class="rating-collection"
                              tal:attributes="data-rating item_rating">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="last-comments" tal:define="last_comments python:view.get_last_comments(item_obj)"
+                         tal:condition="last_comments">
+                      <strong>Ultimi commenti</strong>
+                      <div tal:repeat="comment last_comments" class="discussion">
+                        <div class="commentDate"
+                          tal:content="python:view.format_time(comment.modification_date)">
+                          8/23/2001 12:40:44 PM
+                        </div>
+                        <div class="commentBody">
+                          <span tal:replace="structure comment/getText" />
                         </div>
                       </div>
                     </div>
