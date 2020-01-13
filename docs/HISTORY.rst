@@ -4,6 +4,8 @@ Changelog
 2.2.1 (unreleased)
 ------------------
 
+- Added CCIAA layout tile collection view
+  [nzambello]
 - Added bandi tile collection view
   [nzambello]
 

@@ -409,6 +409,15 @@
       />
 
   <browser:page
+      name="cciaa_collection_renderer"
+      permission="zope2.View"
+      for="*"
+      class=".tile_collection_renderers.CCIAACollectionTileView"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/cciaa_collection_tile.pt"
+      />
+
+  <browser:page
       name="bandi_collection_renderer"
       permission="zope2.View"
       for="*"
