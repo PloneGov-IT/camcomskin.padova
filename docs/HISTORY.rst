@@ -6,6 +6,8 @@ Changelog
 
 - Added CCIAA layout tile collection view
   [nzambello]
+- Added bandi tile collection view
+  [nzambello]
 
 
 2.2.0 (2020-01-10)

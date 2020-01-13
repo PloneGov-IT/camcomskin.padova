@@ -491,6 +491,12 @@
         }
     }
 
+    &.bandi-collection {
+        .tileContent {
+            padding: 20px 10px;
+        }
+    }
+
     .tile-collection-container {
         position: relative;
         overflow: auto;
