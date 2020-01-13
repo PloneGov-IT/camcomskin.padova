@@ -4,7 +4,8 @@ Changelog
 2.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added CCIAA layout tile collection view
+  [nzambello]
 
 
 2.2.0 (2020-01-10)
