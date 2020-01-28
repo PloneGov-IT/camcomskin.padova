@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.1 (unreleased)
+2.2.1 (2020-01-28)
 ------------------
 
 - Added CCIAA layout tile collection view
