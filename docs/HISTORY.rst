@@ -4,7 +4,8 @@ Changelog
 2.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix date management and translations in bandi_collection_renderer.pt
+  [cekk]
 
 
 2.2.1 (2020-01-28)

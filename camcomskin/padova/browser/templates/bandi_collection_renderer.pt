@@ -49,11 +49,12 @@
                                            is_show_effective_visible python:show_effective in classes;
                                            show_scadenza_bando string:scadenza_bando;
                                            is_show_scadenza_bando_visible python: show_scadenza_bando in classes;
-                                           has_effective_date python:obj.effective.Date() != '1969/12/31';
+                                           has_effective_date python:obj.effective.Date() not in ['1969/12/31', '1000/01/01'];
                                            valid_scadenza python:helper_view.isValidDeadline(obj.getScadenza_bando)">
                             <tal:pubblicazione condition="python:is_show_effective_visible and has_effective_date">
                               <div class="bando-data-pubblicazione">
-                                <span class="labelTB" i18n:translate="bandi_published_on">Published on</span>:
+                                <span class="labelTB"
+                                      i18n:translate="bandi_published_on">Published on</span>:
                                 <span tal:content="python:here.toLocalizedTime(obj.effective)" />
                               </div>
                             </tal:pubblicazione>
