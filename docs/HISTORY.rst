@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.2 (unreleased)
+2.2.2 (2020-04-14)
 ------------------
 
 - Fix date management and translations in bandi_collection_renderer.pt
