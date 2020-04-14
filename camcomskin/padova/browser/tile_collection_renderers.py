@@ -3,6 +3,7 @@ from collective.tiles.collection.interfaces import ICollectionTileRenderer
 from plone import api
 from plone.api.exc import InvalidParameterError
 from Products.Five.browser import BrowserView
+from rer.bandi import bandiMessageFactory
 from ZODB.POSException import POSKeyError
 from zope.component import getUtility
 from zope.i18n import translate
@@ -21,14 +22,16 @@ class HelpersView(BrowserView):
     A set of helper functions for tile collection views.
     """
 
-    def get_image_tag(self, item, scale="thumb", direction="down", css_class=""):
+    def get_image_tag(
+        self, item, scale="thumb", direction="down", css_class=""
+    ):
         try:
             scale_view = api.content.get_view(
                 name="images", context=item, request=self.request
             )
-            return scale_view.scale("image", scale=scale, direction=direction).tag(
-                css_class=css_class
-            )
+            return scale_view.scale(
+                "image", scale=scale, direction=direction
+            ).tag(css_class=css_class)
         except (InvalidParameterError, POSKeyError, AttributeError, KeyError):
             # The object doesn't have an image field
             return ""
@@ -132,7 +135,7 @@ class HelpersView(BrowserView):
             )(self.context)
             return tipologia_bando in [x.value for x in voc_tipologia._terms]
         except LookupError:
-            return key
+            return tipologia_bando
 
     def isValidDeadline(self, date):
         """
@@ -162,7 +165,10 @@ class HelpersView(BrowserView):
         """
         scadenza_bando = bando.getScadenza_bando
         chiusura_procedimento_bando = bando.getChiusura_procedimento_bando
-        state = ('open', translate(_(u'Open'), context=self.request))
+        state = (
+            'open',
+            translate(bandiMessageFactory(u'Open'), context=self.request),
+        )
         if scadenza_bando and scadenza_bando.isPast():
             if (
                 chiusura_procedimento_bando
@@ -170,12 +176,17 @@ class HelpersView(BrowserView):
             ):
                 state = (
                     'closed',
-                    translate(_(u'Closed'), context=self.request),
+                    translate(
+                        bandiMessageFactory(u'Closed'), context=self.request
+                    ),
                 )
             else:
                 state = (
                     'inProgress',
-                    translate(_(u'In progress'), context=self.request),
+                    translate(
+                        bandiMessageFactory(u'In progress'),
+                        context=self.request,
+                    ),
                 )
         else:
             if (

@@ -14494,6 +14494,112 @@ body.tiles_page_view .portletNavigationTree nav.portletContent:after {
 dt.bandoTitle {
   margin-top: 1rem;
 }
+.bandoInfos .bandoStateClass,
+.bandoTitle .bandoStateClass {
+  font-size: 13px;
+  width: 57px;
+  line-height: 3rem;
+}
+h2.bandoTitle,
+.bandoInfos {
+  padding: 15px 0;
+}
+.tileContent .bandoInfos {
+  padding-left: 75px;
+}
+.bandoTitle,
+dt.bandoTitle,
+.bandoInfos {
+  position: relative;
+}
+.tileContent .bandoTitle .bandoStateClass,
+.tileContent dt.bandoTitle .bandoStateClass,
+.tileContent .bandoInfos .bandoStateClass {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+}
+.searchResults .bandoTitle .bandoStateClass,
+.searchResults dt.bandoTitle .bandoStateClass,
+.searchResults .bandoInfos .bandoStateClass {
+  float: left;
+}
+.bandoTitle .state-open,
+.bandoTitle .state-open.bandoStateClass,
+.bandoTitle .state-inProgress,
+.bandoTitle .state-inProgress.bandoStateClass,
+.bandoTitle .state-closed,
+.bandoTitle .state-closed.bandoStateClass,
+dt.bandoTitle .state-open,
+dt.bandoTitle .state-open.bandoStateClass,
+dt.bandoTitle .state-inProgress,
+dt.bandoTitle .state-inProgress.bandoStateClass,
+dt.bandoTitle .state-closed,
+dt.bandoTitle .state-closed.bandoStateClass,
+.bandoInfos .state-open,
+.bandoInfos .state-open.bandoStateClass,
+.bandoInfos .state-inProgress,
+.bandoInfos .state-inProgress.bandoStateClass,
+.bandoInfos .state-closed,
+.bandoInfos .state-closed.bandoStateClass {
+  padding: 15px 0 5px;
+  color: #1c2024;
+}
+.bandi-collection .bando-item {
+  position: relative;
+}
+.bandi-collection .bando-item h2.bandoTitle {
+  font-size: 120%;
+  font-weight: normal;
+  margin: 2em 0 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.bandi-collection .bando-item h2.bandoTitle a {
+  border: 0;
+  margin-left: 70px;
+}
+.bandi-collection .bando-item h2.bandoTitle a span {
+  border-bottom: 1px solid;
+}
+.bandi-collection .bando-item h2.bandoTitle .bandoStateClass {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.labelTB {
+  font-weight: bold;
+}
+.bandoDates {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.bandoDates .colspacer {
+  padding: 0 10px;
+}
+.bandi-collection .tile-wrapper {
+  padding: 20px 0;
+  position: relative;
+}
+.bandi-collection .showMore {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 10px 0;
+}
+.bandi-collection .showMore a {
+  border-bottom: 1px solid;
+}
+.bandi-collection ul.tileContent {
+  padding-left: 0;
+}
 #commenting:before,
 #commenting:after {
   content: ' ';
