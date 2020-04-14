@@ -40,17 +40,19 @@
                           <p class="bandoDescription"
                                 tal:condition="python:obj.Description"
                                     tal:content="obj/Description" />
-                          <p class="bandoType"
-                             tal:condition="python: helper_view.isTipologiaValid(obj.getTipologia_bando)"
-                             tal:content="python: helper_view.getTipologiaTitle(obj.getTipologia_bando)" />
-                          <div class="bandoDates"
-                               tal:condition="python:(is_show_effective_visible or is_show_scadenza_bando_visible) and (obj.effective!='None' or obj.getScadenza_bando)"
+                          <div class="bandoDetails"
+                               tal:condition="python:(is_show_effective_visible or is_show_scadenza_bando_visible) and (obj.effective!='None' or obj.getScadenza_bando) or helper_view.isTipologiaValid(obj.getTipologia_bando)"
                                tal:define="show_effective string:effective;
                                            is_show_effective_visible python:show_effective in classes;
                                            show_scadenza_bando string:scadenza_bando;
                                            is_show_scadenza_bando_visible python: show_scadenza_bando in classes;
                                            has_effective_date python:obj.effective.Date() not in ['1969/12/31', '1000/01/01'];
                                            valid_scadenza python:helper_view.isValidDeadline(obj.getScadenza_bando)">
+                            <div class="bandoType"
+                                 i18n:domain="rer.bandi"
+                                 tal:condition="python: helper_view.isTipologiaValid(obj.getTipologia_bando)">
+                                <span class="labelTB" i18n:translate="tipologia_bando_label">Announcement type</span>: <span tal:content="python: helper_view.getTipologiaTitle(obj.getTipologia_bando)" />
+                            </div>
                             <tal:pubblicazione condition="python:is_show_effective_visible and has_effective_date">
                               <div class="bando-data-pubblicazione">
                                 <span class="labelTB"
@@ -58,8 +60,8 @@
                                 <span tal:content="python:here.toLocalizedTime(obj.effective)" />
                               </div>
                             </tal:pubblicazione>
-                            <span class="labelTB colspacer"
-                                  tal:condition="python:is_show_effective_visible and has_effective_date and valid_scadenza and is_show_scadenza_bando_visible"> | </span>
+                            <!-- <span class="labelTB colspacer" -->
+                            <!--       tal:condition="python:is_show_effective_visible and has_effective_date and valid_scadenza and is_show_scadenza_bando_visible"> | </span> -->
                             <tal:scadenza_bando condition="python: valid_scadenza and is_show_scadenza_bando_visible">
                               <div class="bando-data-scadenza">
                                 <span  class="labelTB" i18n:translate="bando_scadenza_partecipazione">Deadline participation terms</span>:
