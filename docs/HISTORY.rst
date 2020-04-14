@@ -6,6 +6,8 @@ Changelog
 
 - Fix date management and translations in bandi_collection_renderer.pt
   [cekk]
+- Enhanced  bandi tile collection view
+  [nzambello]
 
 
 2.2.1 (2020-01-28)
