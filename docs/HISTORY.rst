@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 - Set allowAnonymousViewAbout to False by default.
+- Displayed comment button if there are no comments yet
   [cekk]
 
 

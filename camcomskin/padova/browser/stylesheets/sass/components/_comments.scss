@@ -134,13 +134,6 @@ $plone-padding-base-horizontal: 19px;
 #viewlet-below-content .loginbutton {
     margin: $plone-padding-base-horizontal 0;
 }
-//first button login out
-#viewlet-below-content .reply .loginbutton {
-    display: none;
-}
-#viewlet-below-content .reply ~ .reply .loginbutton {
-    display: inline-block;
-}
 
 //*// Moderation View
 #dobulkaction {
