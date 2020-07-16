@@ -4,18 +4,17 @@ Changelog
 2.2.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix changelog for pypi release.
+  [cekk]
 
 
 2.2.3 (2020-07-16)
 ------------------
 
 - Set allowAnonymousViewAbout to False by default.
-[cekk]
+  [cekk]
 - Displayed comment button if there are no comments yet
-[giuliaghisini]
-
-
+  [giuliaghisini]
 
 2.2.2 (2020-04-14)
 ------------------
