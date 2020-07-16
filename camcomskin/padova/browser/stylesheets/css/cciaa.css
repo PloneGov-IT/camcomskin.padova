@@ -14749,12 +14749,6 @@ dt.bandoTitle .state-closed.bandoStateClass,
 #viewlet-below-content .loginbutton {
   margin: 19px 0;
 }
-#viewlet-below-content .reply .loginbutton {
-  display: none;
-}
-#viewlet-below-content .reply ~ .reply .loginbutton {
-  display: inline-block;
-}
 #dobulkaction {
   margin: 0.3em 0;
 }
