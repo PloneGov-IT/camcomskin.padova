@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.3 (unreleased)
+2.2.3 (2020-07-16)
 ------------------
 
 - Set allowAnonymousViewAbout to False by default.
