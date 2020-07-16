@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.4 (unreleased)
+2.2.4 (2020-07-16)
 ------------------
 
 - Fix changelog for pypi release.
