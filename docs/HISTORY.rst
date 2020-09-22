@@ -4,7 +4,8 @@ Changelog
 2.2.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added font size handler for custom a11y page
+  [nzambello]
 
 
 2.2.6 (2020-09-22)
