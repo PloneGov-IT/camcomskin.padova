@@ -4,7 +4,8 @@ Changelog
 2.2.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Customize thank you page to show submission date.
+  [cekk]
 
 
 2.2.4 (2020-07-16)
