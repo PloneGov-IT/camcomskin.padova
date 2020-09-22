@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.5 (unreleased)
+2.2.5 (2020-09-22)
 ------------------
 
 - Customize thank you page to show submission date.
