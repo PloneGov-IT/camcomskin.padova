@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.6 (unreleased)
+2.2.6 (2020-09-22)
 ------------------
 
 - Fix font size adjustment for a11y from /accessibility-info
