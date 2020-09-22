@@ -5091,7 +5091,7 @@ p.hiddenStructure,
   color: inherit !important;
 }
 body.largeText {
-  font-size: 170%;
+  font-size: 23px;
 }
 #visual-portal-wrapper:before,
 #visual-portal-wrapper:after {
