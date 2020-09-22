@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.7 (unreleased)
+2.2.7 (2020-09-22)
 ------------------
 
 - Added font size handler for custom a11y page
