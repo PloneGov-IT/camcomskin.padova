@@ -4,7 +4,8 @@ Changelog
 2.2.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix font size adjustment for a11y from /accessibility-info
+  [nzambello]
 
 
 2.2.5 (2020-09-22)

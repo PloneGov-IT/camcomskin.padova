@@ -3,7 +3,7 @@
 p.hiddenStructure,
 #content p.hiddenStructure { margin:0; height: 0;}
 .state-published { color: inherit !important; }
-body.largeText {font-size: 170%;}
+body.largeText {font-size: $font-size-large;}
 
 #visual-portal-wrapper { @include clearfix; }
 
