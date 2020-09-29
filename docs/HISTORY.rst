@@ -4,7 +4,8 @@ Changelog
 2.2.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Styling thank you page for accessibility feedback form
+  [nzambello]
 
 
 2.2.7 (2020-09-22)
