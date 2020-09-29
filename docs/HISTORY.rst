@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.8 (unreleased)
+2.2.8 (2020-09-29)
 ------------------
 
 - Styling thank you page for accessibility feedback form
