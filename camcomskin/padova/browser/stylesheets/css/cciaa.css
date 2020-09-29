@@ -15084,4 +15084,14 @@ body.template-logged_out .social-login ul button:focus {
     margin-right: -20px;
   }
 }
+body.template-fg_thankspage_view_p3 #content blockquote {
+  float: none;
+  max-width: none;
+  margin-left: 0;
+  border: 5px solid #ccc;
+  font-size: inherit;
+}
+body.template-fg_thankspage_view_p3 #content blockquote dl dd {
+  margin-bottom: 1rem;
+}
 /*# sourceMappingURL=cciaa.css.map */
