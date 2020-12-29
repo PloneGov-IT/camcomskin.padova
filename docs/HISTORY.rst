@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.9 (unreleased)
+2.2.9 (2020-12-29)
 ------------------
 
 - Change social links in header
