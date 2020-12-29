@@ -1,11 +1,31 @@
 #header-social {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
     p {
         display: inline-block;
-        margin:0;
+        margin: 0;
         vertical-align: bottom;
         font-size: 0.9em;
+    }
+
+    .newsletter-link {
+        a {
+            color: #fff;
+            
+            &:hover,
+            &:focus {
+                color: #eee;
+                text-decoration: underline solid currentColor 1px !important;
+            }
+        }
+    }
+
+    .separator {
+        margin-left: 1em;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        height: 3rem;
     }
 
     ul {
@@ -43,6 +63,9 @@
                 }
                 &.sc-google:before {
                     @include make-fa('\f0d5', $brand-primary);
+                }
+                &.sc-linkedin:before {
+                    @include make-fa('\f0e1', $brand-primary);
                 }
                 &.sc-instagram:before {
                     @include make-fa('\f16d', $brand-primary);

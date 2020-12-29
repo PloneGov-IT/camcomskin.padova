@@ -4,7 +4,8 @@ Changelog
 2.2.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Change social links in header
+  [nzambello]
 
 
 2.2.8 (2020-09-29)

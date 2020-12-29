@@ -8159,13 +8159,38 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   border: 0;
 }
 #header-social {
-  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 #header-social p {
   display: inline-block;
   margin: 0;
   vertical-align: bottom;
   font-size: 0.9em;
+}
+#header-social .newsletter-link a {
+  color: #fff;
+}
+#header-social .newsletter-link a:hover,
+#header-social .newsletter-link a:focus {
+  color: #eee;
+  -webkit-text-decoration: underline solid currentColor 1px !important;
+  text-decoration: underline solid currentColor 1px !important;
+}
+#header-social .separator {
+  margin-left: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  height: 3rem;
 }
 #header-social ul {
   display: inline-block;
@@ -8218,6 +8243,14 @@ body.userrole-anonymous #portal-personaltools-wrapper {
   display: inline-block;
   font-family: FontAwesome;
   content: '';
+  color: #ac1b01;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#header-social ul li a.sc-linkedin:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: '';
   color: #ac1b01;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

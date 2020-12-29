@@ -1,7 +1,12 @@
 <div class="search-social-wrapper">
 
   <div id="header-social">
-    <p>Seguici su</p>
+    <p class="newsletter-link">
+      <a class="text-white" href="https://www.pd.camcom.it/camera-commercio/newsletter" title="Iscriviti alla newsletter">
+        Newsletter
+      </a>
+    </p>
+    <div class="separator"></div>
     <ul>
       <li>
         <a href="https://www.facebook.com/pdcamcom" title="Facebook" class="sc-facebook" target="_blank">
@@ -14,8 +19,8 @@
         </a>
       </li>
       <li>
-        <a href="https://plus.google.com/+pdcamcom/posts" title="Google+" class="sc-google" target="_blank">
-          <span>Google+</span>
+        <a href="https://www.linkedin.com/company/camera-di-commercio-di-padova" title="LinkedIn" class="sc-linkedin" target="_blank">
+          <span>LinkedIn</span>
         </a>
       </li>
       <li>
