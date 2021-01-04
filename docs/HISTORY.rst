@@ -4,7 +4,8 @@ Changelog
 2.2.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Newsletter link in header uppercase
+  [nzambello]
 
 
 2.2.9 (2020-12-29)
