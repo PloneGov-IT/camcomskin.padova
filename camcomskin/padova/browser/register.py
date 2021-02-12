@@ -37,17 +37,20 @@ class RegistrationForm(BaseForm):
     )
     def action_join(self, action, data):
         self.handle_join_success(data)
-        import pdb;pdb.set_trace()
-       
+      
         users = api.user.get_users(groupname='Site Administrators')
-        emails = [x.getProperty('email') for x in users]
-
-        mail_text="Un nuovo utente si è iscritto al forum."
+        portal = api.portal.get()
+        portal_email = portal.getProperty('email_from_address')
         mailsubject = "Registrazione nuovo utente"
-        for email in emails:
+        user_name = data.get('fullname')
+        user_email = data.get('email')
+        for admin in users:
+            admin_name = admin.getProperty('fullname')
+            admin_email = admin.getProperty('email')
             try:
+                mail_text="L' utente " + user_name  + " si e' iscritto al forum con l'email " + user_email  
                 mail_host = api.portal.get_tool(name='MailHost')
-                mail_host.send(mail_text, email, mailsubject, immediate=True)
+                mail_host.send(mail_text, admin_email, portal_email, mailsubject, immediate=True)
             except:
                 continue
 
