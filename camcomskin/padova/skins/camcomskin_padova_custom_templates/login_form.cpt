@@ -216,7 +216,7 @@
                             Forgot your password?
                         </strong>
                         <br>
-                        <strong>Non hai trovato quello che cerchi?</strong>
+                        <h3>Non hai trovato quello che cerchi?</h3>
                         <p class="discreet">
                             Contatta l'amministratore con il link <a tal:attributes="href string:${context/portal_url}/contact-info">www.pd.camcom.it/contact-info</a>.
                         </p>
