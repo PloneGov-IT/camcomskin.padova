@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.11 (unreleased)
+2.2.11 (2021-02-16)
 -------------------
 
 - Sending email to admins when a new user has been registered.
