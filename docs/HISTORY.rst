@@ -4,7 +4,10 @@ Changelog
 2.2.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Sending email to admins when a new user has been registered.
+  [daniele]
+- Changed login page.
+  [daniele]
 
 
 2.2.10 (2021-01-04)

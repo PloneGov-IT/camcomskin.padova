@@ -6,6 +6,7 @@ from quintagroup.formlib.captcha import CaptchaWidget
 from zope.formlib import form
 from plone import api
 from Products.CMFPlone import PloneMessageFactory as _
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 
 class ICCPDCaptchaSchema(Interface):
@@ -36,6 +37,23 @@ class RegistrationForm(BaseForm):
     )
     def action_join(self, action, data):
         self.handle_join_success(data)
+      
+        users = api.user.get_users(groupname='Site Administrators')
+        portal = api.portal.get()
+        portal_email = portal.getProperty('email_from_address')
+        mailsubject = "Registrazione nuovo utente"
+        user_name = data.get('fullname')
+        user_email = data.get('email')
+        for admin in users:
+            admin_name = admin.getProperty('fullname')
+            admin_email = admin.getProperty('email')
+            try:
+                mail_text="L' utente " + user_name  + " si e' iscritto al forum con l'email " + user_email  
+                mail_host = api.portal.get_tool(name='MailHost')
+                mail_host.send(mail_text, admin_email, portal_email, mailsubject, immediate=True)
+            except:
+                continue
+
 
         # XXX Return somewhere else, depending on what
         # handle_join_success returns?
