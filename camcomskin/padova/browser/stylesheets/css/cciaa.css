@@ -15128,4 +15128,13 @@ body.template-fg_thankspage_view_p3 #content blockquote {
 body.template-fg_thankspage_view_p3 #content blockquote dl dd {
   margin-bottom: 1rem;
 }
+#cc-banner .chefcookie__buttons a.context {
+  background-color: #007bb1;
+  font-size: inherit;
+}
+#cc-banner .chefcookie__buttons a.context:focus,
+#cc-banner .chefcookie__buttons a.context:hover {
+  background-color: #00587e;
+  border-color: #002d41;
+}
 /*# sourceMappingURL=cciaa.css.map */
