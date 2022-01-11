@@ -4,7 +4,8 @@ Changelog
 2.2.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Chefcookie styles.
+  [cekk]
 
 
 2.2.11 (2021-02-16)
