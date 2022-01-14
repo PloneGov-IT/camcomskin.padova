@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.3.1 (unreleased)
+2.3.1 (2022-01-14)
 ------------------
 
 - Update labels for prenotazioni.
