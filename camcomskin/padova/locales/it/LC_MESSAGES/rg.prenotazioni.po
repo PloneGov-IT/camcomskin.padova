@@ -21,3 +21,8 @@ msgstr ""
 #: ./browser/prenotazione_add.py:125
 msgid "description_agency"
 msgstr "Se la richiesta di appuntamento è per una pratica riguardante un'azienda indicarne la denominazione"
+
+#. Default: "Booking request for: ${name}"
+#: ./browser/prenotazione_print.py:26
+msgid "reservation_request"
+msgstr "Richiesta appuntamento ${name}"

@@ -20,12 +20,12 @@ msgstr ""
 #. Default: "Prenotazione da confermare"
 #: ./browser/prenotazione_add.py:144
 msgid "booking_to_be_confirmed"
-msgstr "Conferma dati prenotazione"
+msgstr "Controlla i dati e invia"
 
 #. Default: "We assigned you a booking time. Please review your data before confirming your booking"
 #: ./browser/prenotazione_add.py:148
 msgid "booking_confirmation_help"
-msgstr "Verifica i tuoi dati prima di inviare la richiesta"
+msgstr "Cliccare il tasto INVIA per inviare la richiesta"
 
 #. Default: "Conferma"
 #: ./browser/prenotazione_add.py:182
