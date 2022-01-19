@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.3.2 (unreleased)
+2.3.2 (2022-01-19)
 ------------------
 
 - Remove un-needed label in prenotazione_print_pdf.pt (that also generated an error with lxml).
