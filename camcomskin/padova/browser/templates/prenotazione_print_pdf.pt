@@ -61,10 +61,6 @@ Tel: <i>010.68.94.39</i>
         />
     </para>
     <spacer length="1cm" width="1mm"/>
-    <para style="bold">
-        La conferma sar&agrave; inviata alla mail
-    </para>
-    <spacer length="1cm" width="1mm"/>
     <tal:description condition="prenotazione/Description">
       <para style="bold">Oggetto:</para>
       <para>
