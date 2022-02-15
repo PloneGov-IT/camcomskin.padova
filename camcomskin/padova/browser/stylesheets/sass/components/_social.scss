@@ -85,7 +85,7 @@
                 &:focus,
                 &:hover {
                     &:before {
-                        background-color: transparentize(#fff, 0.8);
+                        background-color: $brand-primary-dark;
                         color: #fff;
                     }
                 }

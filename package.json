@@ -1,9 +1,12 @@
 {
-  "//":
-    "Put here only devDependencies, theme dependencies should stay inside of the theme folder.",
+  "//": "Put here only devDependencies, theme dependencies should stay inside of the theme folder.",
   "name": "camcomskin.padova",
   "version": "0.1.0",
-  "keywords": ["agid", "redturtle", "theme"],
+  "keywords": [
+    "agid",
+    "redturtle",
+    "theme"
+  ],
   "author": "RedTurtle Technology",
   "license": "GPL-2.0",
   "devDependencies": {
@@ -30,8 +33,7 @@
     "stylelint-config-recommended": "^2.1.0"
   },
   "scripts": {
-    "prettier-all":
-      "prettier --write 'camcomskin/padova/browser/stylesheets/sass/**/*.scss'",
+    "prettier-all": "prettier --write 'camcomskin/padova/browser/stylesheets/sass/**/*.scss'",
     "precommit": "lint-staged",
     "predevelop": "grunt compile",
     "develop": "grunt",
@@ -43,12 +45,19 @@
       "at-rule-no-unknown": [
         true,
         {
-          "ignoreAtRules": ["extends", "include", "mixin"]
+          "ignoreAtRules": [
+            "extends",
+            "include",
+            "mixin"
+          ]
         }
       ]
     }
   },
   "lint-staged": {
-    "*.{js,json,css}": ["prettier --write", "git add"]
+    "*.{js,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

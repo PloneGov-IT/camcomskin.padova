@@ -262,9 +262,9 @@
             li {
                 padding-bottom: 0.5em;
 
-                a {
-                    color: $text-color;
-                }
+                // a {
+                //     color: $text-color;
+                // }
             }
 
             @media (max-width: 500px) {
@@ -320,7 +320,7 @@
             ul {
                 list-style: none;
                 padding: 0 0 0 15px;
-                border-left: 6px solid #333;
+                border-left: 1px solid #ccc;
 
                 li {
                     padding: 0 0 10px;
@@ -330,7 +330,7 @@
             a {
                 display: inline;
                 font-weight: normal;
-                color: #333;
+                //color: #333;
                 font-size: 1em;
 
                 &:hover {
