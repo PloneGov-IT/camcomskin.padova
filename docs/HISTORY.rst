@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.3.3 (unreleased)
+2.4.0 (2022-03-01)
 ------------------
 
 - New agid colors.
