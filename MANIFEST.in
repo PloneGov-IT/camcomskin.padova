@@ -10,3 +10,4 @@ exclude .stylelintrc.json
 exclude Gruntfile.js
 exclude package.json
 exclude yarn.lock
+exclude package-lock.json
