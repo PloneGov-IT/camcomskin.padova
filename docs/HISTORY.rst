@@ -4,7 +4,8 @@ Changelog
 2.3.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- New agid colors.
+  [gghisini]
 
 
 2.3.2 (2022-01-19)
