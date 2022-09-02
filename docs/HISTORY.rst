@@ -4,7 +4,8 @@ Changelog
 2.4.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Do not download fonts from Google: now are in the theme.
+  [cekk]
 
 
 2.4.0 (2022-03-01)
