@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.4.1 (unreleased)
+3.0.0 (2022-09-02)
 ------------------
 
 - Do not download fonts from Google: now are in the theme.
