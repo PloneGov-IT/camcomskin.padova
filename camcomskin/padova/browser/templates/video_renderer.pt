@@ -33,9 +33,8 @@
                     tal:attributes="class python: 'colonna-1-di-4 ' + (oddrow and 'collectionItem even' or 'collectionItem odd')">
                     <div class="collectionItemWrapper">
                         <a href="#"
-                           data-pat-plone-modal="position: 'center middle';"
                            tal:attributes="href itemUrl;
-                                           class string:tile $item_type_class $item_wf_state_class pat-plone-modal;
+                                           class string:tile $item_type_class $item_wf_state_class video-renderer-modal;
                                            title obj/Description">
                             <div class="collectionItemImage">
                                 <span class="video-icon"></span>

@@ -4,7 +4,8 @@ Changelog
 3.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Handle chefcookie in video popup.
+  [cekk]
 
 
 3.0.1 (2022-09-02)
