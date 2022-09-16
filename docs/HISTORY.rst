@@ -1,7 +1,7 @@
 Changelog
 =========
 
-3.0.2 (unreleased)
+3.0.2 (2022-09-16)
 ------------------
 
 - Handle chefcookie in video popup.
