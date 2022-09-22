@@ -4,7 +4,8 @@ Changelog
 3.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix label for chefcookie placeholder.
+  [cekk]
 
 
 3.0.2 (2022-09-16)
