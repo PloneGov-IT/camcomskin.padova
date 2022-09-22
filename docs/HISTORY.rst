@@ -1,7 +1,7 @@
 Changelog
 =========
 
-3.0.3 (unreleased)
+3.0.3 (2022-09-22)
 ------------------
 
 - Fix label for chefcookie placeholder.
